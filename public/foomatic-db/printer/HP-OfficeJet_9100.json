@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_9100",
+        "make": "HP",
+        "model": "OfficeJet 9100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://productfinder.support.hp.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:officejet 9100 series;CMD:MLC,PCL,PML,DW-PCL,BIDI-ECP;CLASS:PRINTER;",
+                "commandset": "MLC,PCL,PML,DW-PCL,BIDI-ECP",
+                "manufacturer": "Hewlett-Packard",
+                "model": "officejet 9100 series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-HP",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-HP",
+                "ppd": "PPD/HP/hp_officejet_9100_series.ppd"
+            }
+        },
+        "comments": {
+            "en": "Multifunction device: printer/scanner/copier/fax. The integrated\n    flatbed scanner has an automatic document feeder and is\n    legal-sized.<p>\n\n    For basic printing functionality use the Postscript PPD.  For\n    advanced functionality such as printer status, maintenance\n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which\n    includes HPIJS). <b>NOTE:</b> The PostScript PPD which\n    is downloadable here is from HP, but is not included in the HPLIP\n    package (HPLIP would simply use a PCL PPD). To get the best out of\n    this printer use HPLIP together with the PostScript PPD from\n    here.<p>\n\n    Best output quality reachable with the HPLIP\n    driver, especially the 1200-dpi high resolution mode gives\n    excellent photo quality.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, the 2400x1200 dpi are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi, without\n    paper detection, intended for photo paper only.<p>\n\n    Copying works fine from the front panel.<p><p>\n\n      Consumables/Refills: HP 10 black, HP 11 color<p>"
+        }
+    }
+}

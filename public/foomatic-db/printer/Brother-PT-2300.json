@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Brother-PT-2300",
+        "make": "Brother",
+        "model": "PT-2300",
+        "pcmodel": "BR2300",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "url": "http://www.advizia.com/brother/ModelDetail.asp?From=&CtgID=1574&User=ptouch&PkgID=367039&Rnd=827",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;CMD:PT-CBP;MDL:2300;CLS:PRINTER;",
+                "commandset": "PT-CBP",
+                "description": "Brother PT-2300",
+                "manufacturer": "Brother",
+                "model": "PT-2300"
+            }
+        },
+        "functionality": "D",
+        "driver": "ptouch",
+        "comments": {
+            "en": "Prints 10mm per second.<p>\n\n    Consumables/Refills: Black on White Thermal Paper<br>\n    Fabric Tape Blue on White<br>\n    Flexi Tape<br>\n    Iron on Black Tape<br>\n    Security Tape Black on White<br>\n    Strong Adhesive Tape<br>\n    TZ tape widths w: 1=6mm, 2=9mm, 3=12mm, 4=18mm, 5=24mm<br>\n    TZ foreground colours f: 1=black, 2=red, 3=blue, 4=gold, 5=white<br>\n    TZ background colours b: 1=clear, 2=white, 3=black, 4=red, 5=blue, 6=yellow, 7=green, 8=gold<br>"
+        }
+    }
+}

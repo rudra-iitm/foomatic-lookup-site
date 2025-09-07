@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_M410",
+        "make": "Lexmark",
+        "model": "Optra M410",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/laser/Optra/M410.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "12ppm, 4MB printer.\n<br>The <a href=\"show_printer.cgi?recnum=Lexmark-Optra_M412\">M412</a> is rather faster and otherwise similar for not much more money."
+        }
+    }
+}

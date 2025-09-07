@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_480",
+        "make": "Epson",
+        "model": "Stylus Color 480",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc48sx/index.html",
+        "lang": {
+            "escp": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus COLOR 480",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 480"
+            },
+            "usb": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4;MDL:Stylus COLOR 480SXU;CLS:PRINTER;DES:EPSON Stylus COLOR 480SXU;",
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus COLOR 480SXU",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 480SXU"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Prints with Gimp-Print 4.1.5 or newer.<p>\n\n    You have no switches to eject paper, put it offline, power off, or\n    change cartdriges. All this functionality has to be done by\n    software.  Jean-Jacques Sarton has written a graphical utility\n    named \"<a href=\"http://xwtools.automatix.de/files/mtink.tar.gz\"><tt>mtink</tt></a>\" which does all\n    maintenance tasks on Epson inkjets, as nozzle check, had cleaning\n    head alignment, and even changing cartridges on the Epson Stylus\n    Color 480/580.<p>\n\n    The model 480 or 480SX is a parallel device; the model 480SXU is\n    USB only.<p>"
+        }
+    }
+}

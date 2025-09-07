@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Xante-Accel-a-Writer_4G",
+        "make": "Xante",
+        "model": "Accel-a-Writer 4G",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 20\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

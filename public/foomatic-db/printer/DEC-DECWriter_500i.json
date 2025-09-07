@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/DEC-DECWriter_500i",
+        "make": "DEC",
+        "model": "DECWriter 500i",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "djet500",
+        "comments": {
+            "en": "A DeskJet 500 clone built by Olivetti."
+        }
+    }
+}

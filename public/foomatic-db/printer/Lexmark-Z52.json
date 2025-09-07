@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Z52",
+        "make": "Lexmark",
+        "model": "Z52",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/Z52/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "LNPAP",
+                "description": "Lexmark Z52",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark Z52"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "R. Wisenoeker has integrated a Z52 driver into <a\n    href=\"show_driver.cgi?driver=stp\">Gimp-Print</a>. Please\n    download Gimp-Print 4.1.99b1 or a CVS snapshot to get the\n    driver.<p>\n\n    I have tested it with 2400x1200 dpi \"Highest Quality\"\n    with photo cartridge, Epson Premium Glossy Photo Paper and the\n    CUPS drivr of Gimp-Print, Excellent result, and faster than the\n    Epson Stylus Photo 1290, but slower than the lower\n    resolutions. (Sep 2001). Perhaps the only winprinter which works\n    \"Perfectly\" with free software.<p>\n\n    The output quality with 1200x1200 dpi and the Gimp-Print CUPS\n    driver (CVS from Feb 10, 2001) is excellent, but the printer is\n    terribly slow with this resolution. Using 600x600 dpi makes the\n    printing MUCH faster. To get images correct, you do not need to\n    change anything with 1200 dpi, set Gamma to 0.5 (500 in CUPS)\n    for 600 dpi and to 0.3 (300) for 300 dpi. The printout quality\n    is MUCH better than with a recent HP DeskJet printer and\n    Gimp-Print. The Linux/x86 binary driver provided by <a\n    href=\"http://www.lexmark.com\">Lexmark</a> (as\n    for the <a\n    href=\"show_printer.cgi?recnum=Lexmark-Z32\">Z32</a>)\n    is not needed.<p>\n\n    If you still want to use the Lexmark driver, you can obtain it by\n    simply following the \"Drivers\" link on the home\n    page. The drivers issued by Lexmark do not contain any CUPS or PDQ\n    configuration file, so use them either with LPD or with my <a\n    href=\"download/printing/lexmark-foomatic-kit.tar.gz\">Lexmark\n    Foomatic Kit</a>. Download it, uncompress it, and follow the\n    instructions of its README file. Due to having access to all\n    options of the driver it leads even to a better printout quality\n    than the Lexmark driver with its original configuration\n    software.<p>\n\n    A specially modified variant of the pbm2l7k driver works,\n    too (but not recommended, see above).<p><p>\n\n      Consumables/Refills: color + black or color + photo ink cartridge<p>"
+        }
+    }
+}

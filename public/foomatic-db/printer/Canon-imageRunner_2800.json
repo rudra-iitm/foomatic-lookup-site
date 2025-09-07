@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_2800",
+        "make": "Canon",
+        "model": "imageRunner 2800",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e, 6"
+            }
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Printer Kit-C1 (PostScript3 Emulation/PCL5e, XL) and Network Printer Kit-C2 (PCL5e, XL)\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

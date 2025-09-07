@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Generic-ZjStream_Printer",
+        "make": "Generic",
+        "model": "ZjStream Printer",
+        "mechanism": {
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "foo2zjs",
+        "comments": {
+            "en": "ZjStream printers understand a simple printer language that uses JBIG\n    compression to send a bitmap (raster) image of the printed page to\n    the printer.  This printer language was designed by Zenographics and\n    licensed by most major printer manufacturers for at least some of\n    their product line.  The printer language is highly efficient, but\n    requires the host computer to render characters, halftones, etc.\n\n    If you have a Windows driver for your printer and the \"About\" panel\n    for the driver lists Copyright Zenographics, then you probably have a\n    printer that understands the ZjStream language.\n\n    The \"foo2zjs\" driver in combination with Ghostscript might\n    possibly be made to work with these kinds of printers.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E210",
+        "make": "Lexmark",
+        "model": "E210",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/US/products/tech_specs/0,1231,MjI3MXwx,00.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "GDI",
+                "manufacturer": "Lexmark",
+                "model": "E210"
+            }
+        },
+        "functionality": "A",
+        "driver": "gdi",
+        "comments": {
+            "en": "Seems to be a relabeled Samsung ML-4500.<p>\n\n      Consumables/Refills: 2000 sheets per cartridge<p>"
+        }
+    }
+}

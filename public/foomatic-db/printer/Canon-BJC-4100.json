@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-4100",
+        "make": "Canon",
+        "model": "BJC-4100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.canon.com",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "BJ,LQ,BJL,BJRaster",
+                "manufacturer": "Canon",
+                "model": "BJC-4100"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc600",
+        "comments": {
+            "en": "Use gs option -sProcessColorModel=DeviceGray for bw.<p>\n\n      Consumables/Refills: cartridge w/head or just two ink tanks<p>"
+        }
+    }
+}

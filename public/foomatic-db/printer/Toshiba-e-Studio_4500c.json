@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-e-Studio_4500c",
+        "make": "Toshiba",
+        "model": "e-Studio 4500c",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 45\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-08-07"
+        }
+    }
+}

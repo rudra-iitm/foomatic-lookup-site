@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/Oce-3165PS",
+        "make": "Oce",
+        "model": "3165",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/General+office/3165E/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Oce",
+                    "ppd": "PPD/Oce/Oce-3165PS/1/OC3165_3.ppd"
+                },
+                {
+                    "id": "Postscript2-Oce",
+                    "ppd": "PPD/Oce/Others/OC3165_2.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "<b>Productive, high-speed digital workhorse</b><br/>\nFor printing and scanning in central environments.\n<UL>\n<LI>52 A4 prints per min </LI>\n<LI>Network connectivity for productive printing </LI>\n<LI>Optional network scan connectivity </LI> \n<LI>Digital mailbox for controlled printing </LI>\n<LI>Scan once, print many</LI>\n</UL><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

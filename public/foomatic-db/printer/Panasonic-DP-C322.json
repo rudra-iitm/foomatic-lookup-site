@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-DP-C322",
+        "make": "Panasonic",
+        "model": "DP-C322",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

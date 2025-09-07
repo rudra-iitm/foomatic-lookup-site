@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/106",
+        "arg_shortname": {
+            "en": "stcolor"
+        },
+        "arg_longname": {
+            "en": "Preconfiguration file"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "stcolor.ps"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "stcolor",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "none"
+        }
+    }
+}

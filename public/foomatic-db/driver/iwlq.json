@@ -1,0 +1,22 @@
+{
+    "driver": {
+        "@id": "driver/iwlq",
+        "name": "iwlq",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null
+        },
+        "comments": {
+            "en": "See Driver 'iwhi'."
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Apple-ImageWriter_LQ",
+                "comments": {
+                    "en": "LQ mode (Very high resolution)"
+                }
+            }
+        }
+    }
+}

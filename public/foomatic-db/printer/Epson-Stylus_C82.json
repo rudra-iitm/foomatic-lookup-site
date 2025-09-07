@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C82",
+        "make": "Epson",
+        "model": "Stylus C82",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/sohoprod/printers/inkjet/styc82/index.htm",
+        "lang": {
+            "escp": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C82",
+                "manufacturer": "EPSON",
+                "model": "Stylus C82"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Sophisticated, but not too expensive 4-ink small-office\n    printer. With 20ppm for black text (economy mode) it is very fast\n    for an inkjet, faster than many older desktop lasers. Very durable\n    water- and light proof printouts and high printing quality on\n    normal paper due to pigment inks.<p>\n\n    180 nozzles black, 3x60 nozzles for the colours, 3 pl droplets,\n    variable drop size.<p>\n\n    Parallel and USB ports.<p>\n\n    Full support in Gimp-Print 4.2.2 or newer (for older versions choose\n    the C80 as your printer model).<p>\n\n    This printer cannot be tested by sending plain text to it, as the\n    printer may or may not respond to the text.  The recommended way\n    to test the connection is by checking the ink level with the\n    <tt>escputil</tt> command as follows:<p>\n\n    <tt>escputil -i -u -r /dev/lp0</tt><p>\n\n    where /dev/lp0 should be replaced with the name of your printer\n    port.<p><p>\n\n      Consumables/Refills: Four separately changable cartridges for black and the\n\tcolours<p>"
+        }
+    }
+}

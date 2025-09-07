@@ -1,0 +1,28 @@
+{
+    "driver": {
+        "@id": "driver/pbmtozjs",
+        "name": "pbmtozjs",
+        "url": "http://www.openprinting.org/download/printing/pbmtozjs.c",
+        "obsolete": {
+            "@replace": "foo2zjs"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=pbmraw -r600%A%Z -sOutputFile=- - | pbmtozjs"
+        },
+        "comments": {
+            "en": "Driver for the HP LaserJet 1000 GDI printers. Perhaps it also works with\n    some other GDI printers made by QMS and Minolta (these manufacturer\n    names appear in the driver's source code).<p>\n\n    To set up the driver read the instructions in the beginning of the\n    one source file of which this driver consists.<p>\n\n    Description from Szalai Robert (szalai at ktk dot bme dot hu) the \n    author of the driver:<p>\n\n    <i>This filter converts pbm images (produced by Ghostscript)\n    to Zenographics ZJ-stream format. This utility makes possible to\n    use the HP LaserJet 1000 printer under Linux or other operating\n    systems. This program uses Markus Kuhn's jbig compression\n    library, which can be obtained from <a\n    href=\"http://www.cl.cam.ac.uk/~mgk25/jbigkit/\">http://www.cl.cam.ac.uk/~mgk25/jbigkit/</a>.\n    Information about the ZJS format can be found at Zenographics's\n    website <a\n    href=\"http://ddk.zeno.com/\">http://ddk.zeno.com/</a>.</i><p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-LaserJet_1000"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1005"
+                }
+            ]
+        }
+    }
+}

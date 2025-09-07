@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_810C",
+        "make": "HP",
+        "model": "DeskJet 810C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n\n    Older comments:<p>\n\n    Same printer as the HP DeskJet 812C, does 600x600 dpi in colour with\n    Gimp-Print 4.1.5 or newer (\"gimp-print\").<p>\n\n    Mostly works, but the color is a bit off.<p>\n\n    Redhat 6.x install (somewhat older user report):<p>\n\n    Download source for ghostscript 5.50 (not 6.0, not 5.1, and not\n    GNU ghostscript, which is installed in RH as an rpm).  Get the\n    cdj880 driver source and follow the directions and compile and\n    install gs 5.50.  (you can \"make install\" without\n    removing the RH ghostscript rpm, since 5.50 installs into\n    /usr/local/bin instead of /usr/bin).  Then you can hack around\n    printtool, using it to set up the username/password etc for the\n    printer, but then hand-modifying the /etc/printcap entry it\n    creates to say \"cdj880\" instead of whatever driver you\n    had to pick (I couldn't figure out how to get printtool to\n    list the driver as an option, thus the hack). It prints! (maybe\n    make sure /usr/local/bin is before /usr/bin in your PATH).<p>\n\n      Consumables/Refills: C6615AN Black, C1823D tri-color; each $25-30 via mail order<p>"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/222",
+        "arg_shortname": {
+            "en": "Postcards"
+        },
+        "arg_longname": {
+            "en": "Use Postcards"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "240",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dUseCard=true"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Generic-PCL_3_Printer",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_1120C",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_shortname_false": {
+            "en": "Sheets"
+        }
+    }
+}

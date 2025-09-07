@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_RX600",
+        "make": "Epson",
+        "model": "Stylus Photo RX600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier, similar to the\n    Epson Stylus RX500. See that entry for more info.<p>\n\n    The printing engine of this device is most probably the same as of\n    the Epson Stylus Photo R300, for which basic support is available\n    in Gimp-Print 5.0.x.  Fine tuning, testing, and support for\n    printing on CDs still has to be done.<p><p>\n\n      Consumables/Refills: 6 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

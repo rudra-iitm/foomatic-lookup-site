@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1651N",
+        "make": "Samsung",
+        "model": "ML-1651N",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.samsungusa.com/cgi-bin/nabc/product/b2c_product_detail.jsp?eUser=&prod_id=ML-1651N%2fXAA",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "PostScript Level3, PCL 5e, PCL 6 and Epson FX-850 emulation, parallel and\n    USB connection, 16ppm, 16 MB, 550 sheets Tray built-in.  10/100 BaseT\n    Network ready.<p>\n\n      Consumables/Refills: Toner and drum in one print cartridge. 8000 pages. Part numbers: ML-1650D8/XAA<p>"
+        }
+    }
+}

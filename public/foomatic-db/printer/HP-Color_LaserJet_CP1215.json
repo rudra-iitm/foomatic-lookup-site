@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_CP1215",
+        "make": "HP",
+        "model": "Color LaserJet CP1215",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "in",
+                    "relative": null,
+                    "top": "0.166666",
+                    "left": "0.166666",
+                    "right": "0.166666",
+                    "bottom": "0.166666"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-18972-3328060-15077-3328070-3422474.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP Color LaserJet CP1215;CMD:ZJS,HBS,PJL,ACL,HTTP;CLS:PRINTER;DES:HP Color LaserJet CP1215;",
+                "commandset": "ACL",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP Color LaserJet CP1215"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hp",
+        "comments": {
+            "en": "The Color LaserJet CP1215 is color laser printer with a 2008 street\n\tprice of $199 USD.  This printer is supported by the foo2hp\n\tprinter driver.<p>\n\n      Consumables/Refills: Q6000A  HP Color LaserJet black print cartridge  [Add $75.00]\n\t\tQ6001A  HP Color LaserJet cyan print cartridge  [Add $82.00]\n\t\tQ6002A  HP Color LaserJet yellow print cartridge  [Add $82.00]\n\t\tQ6003A  HP Color LaserJet magenta print cartridge  [Add $82.00] Part numbers: Q6000A, \n\t    Q6001A, \n\t    Q6002A, \n\t    Q6003A<p>"
+        }
+    }
+}

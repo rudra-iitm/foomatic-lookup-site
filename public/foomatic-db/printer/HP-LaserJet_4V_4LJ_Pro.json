@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4V_4LJ_Pro",
+        "make": "HP",
+        "model": "LaserJet 4V/4LJ Pro",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "A",
+        "driver": "lj4dithp",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Imported from old Red Hat japanese printer database"
+        }
+    }
+}

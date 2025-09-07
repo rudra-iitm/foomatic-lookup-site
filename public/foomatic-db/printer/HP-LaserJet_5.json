@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5",
+        "make": "HP",
+        "model": "LaserJet 5",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>"
+        }
+    }
+}

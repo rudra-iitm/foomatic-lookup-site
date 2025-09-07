@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-X920",
+        "make": "Lexmark",
+        "model": "X920",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark ;MDL:Lexmark X920 Series;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark X920 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_X920_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 36 pages/min<p>"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_455CA",
+        "make": "HP",
+        "model": "DesignJet 455CA",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Large-format inkjet printer.<p>\n\n      Consumables/Refills: 4 Cartriges (Cyan, Magenta, Yellow, Black)<p>"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/ppmtomd-NoReset",
+        "arg_shortname": {
+            "en": "NoReset"
+        },
+        "arg_longname": {
+            "en": "Reset after job"
+        },
+        "arg_execution": {
+            "arg_group": "CombinedJobs",
+            "arg_order": "220",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-noreset"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "Reset"
+        }
+    }
+}

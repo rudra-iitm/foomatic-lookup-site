@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-5000",
+        "make": "Canon",
+        "model": "BJC-5000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/bjc/bjc5000/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Dan Herrglock (?) reports on Usenet that this printer works \"fine\" with the bjc600 driver.\n<br>All other reports say that it's a paperweight, which makes sense since the very similar 5100 is definetly not using a known protocol.\n\n<br>\nMichael Cooke, CCSI Canon employee, reports that the BJC-5000 and 5100 are purely identical and are both Winprinters, truest to the form. He wonders how Dan got it to function...<p>\n\n      Consumables/Refills: BC20 $36.99 BC-21e $52.99 BCI-21Bk $8.99 BCI-21Clr $21.99 BC-22e<p>"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Generic-OAKT_Printer",
+        "make": "Generic",
+        "model": "OAKT Printer",
+        "mechanism": {
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "foo2oak",
+        "comments": {
+            "en": "OAKT printers understand a simple printer language that uses JBIG\n    compression to send a bitmap (raster) image of the printed page to the\n    printer.  This printer language was designed by Oak Technology (now Zoran)\n    and is licensed by (at least) HP for the Color LaserJet 1500.  The printer\n    language is highly efficient, but requires the host computer to render\n    characters, halftones, etc.\n\n    If you have a Windows driver for your printer and the \"About\" panel\n    for the driver lists Copyright Oak Technology or Zoran, then you may have\n    a printer that understands the OAKT language.  If you print to a file\n    and the first four characters of the file are \"OAKT\", then you have\n    a printer that understands the OAKT language.\n\n    There doesn't seem to be an official name for this language.  Oak\n    Technology calls it simply \"Raster Driver\".  That name is not specific\n    enough, so we have named it \"OAKT\", which are the first 4 characters\n    found in the printer stream.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

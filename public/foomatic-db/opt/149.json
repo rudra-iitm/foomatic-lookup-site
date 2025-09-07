@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/149",
+        "arg_shortname": {
+            "en": "Halftoning"
+        },
+        "arg_longname": {
+            "en": "Halftoning"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "-sDEVICE=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "lj5gray",
+                "arg_defval": "ev/881"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/881",
+                    "ev_longname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_shortname": {
+                        "en": "Grayscale"
+                    },
+                    "ev_driverval": "lj5gray"
+                },
+                {
+                    "@id": "ev/882",
+                    "ev_longname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_shortname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_driverval": "lj5mono"
+                }
+            ]
+        }
+    }
+}

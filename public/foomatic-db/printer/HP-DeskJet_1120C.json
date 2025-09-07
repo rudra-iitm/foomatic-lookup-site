@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_1120C",
+        "make": "HP",
+        "model": "DeskJet 1120C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL,MLC,PML",
+                "description": "Hewlett-Packard Deskjet 1120C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 1120C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Not tested in any great detail, but does work.<p>\n\n    Paul R. (wil at chelsea-fc dot com) reports this printer to work\n    with HP's HPLIP driver.<p>\n\n    Probably works with various color deskjet drivers including the\n    \"cdjXXX\" ones and\n    \"pcl3\"/\"hpdj\".<p>\n\n    Models Cse and Cxi are probably the same, with different bundled\n    software.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-1000",
+        "make": "Kyocera",
+        "model": "FS-1000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "postscript": null,
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;Model:Kyocera FS-1000;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "description": "Kyocera FS-1000",
+                "manufacturer": "Kyocera",
+                "model": "Kyocera FS-1000"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_FS-1000_en.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "In case of less than 4MB memory 600dpi may not work for all printouts\n      (for example use ljet4 with 300dpi instead) <br>\n      In case of duplex option use ljet4d for PCL5e and duplex <br>\n      PostScript option (use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript, <a href=\"ppd-doc.html\">Instructions</a>)\n    \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 10 pages/min<p>"
+        }
+    }
+}

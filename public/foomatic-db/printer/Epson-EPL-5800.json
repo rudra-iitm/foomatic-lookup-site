@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5800",
+        "make": "Epson",
+        "model": "EPL-5800",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/epl5800/",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eplaser",
+        "comments": {
+            "en": "Epson provides a free (LGPL) driver for this printer. With this\n     the printer should work to its full extent.<p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Hitachi-DDP_70_with_MicroPress",
+        "make": "Hitachi",
+        "model": "DDP 70 (with MicroPress)",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hitachi-koki.com/",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "I used the original PPD (supposedly just written to support MacOS\n    and MS Win printing) with CUPS, which can use LPD as a backend to\n    send the print data out. All options can be used: select 1 of 5\n    trays; choose A4, Letter, A3, A3 FullBleed etc.; duplex printing;\n    print on forms; 1-up, 2-up,...16-up; use watermarks; RipNHold; 2\n    output destinations with face up or down each etc.<p>\n\n    The device at the moment is run by a (MS Windows NT Server based)\n    Harlequin RIP which is upgraded by the MicroPress software; after\n    you've sent the job to the (NT-) RIP (which sends the binary\n    TIFF-like data to the output device), the RIP can keep your RIPped\n    data in the form of bitmapped pages for further manipulation:\n    preview, delete pages; insert pages from a different job; merge\n    jobs; rearrange the order of pages; use different imposition\n    schemes; delete areas on pages or move, invert, scale or rotate\n    them; paginate the pages etc.<p>\n\n    After the manipulations there is no need of re-RIPping; the\n    printers start printing immediately putting out paper. The system\n    is used for purposes like \"print on Demand\" (PoD),\n    personalised printing, print variable data, 1:1 marketing, jobs\n    that often need a re-print with some minor changes in between\n    print runs (when it is much more expensive to do the\n    time-consuming process to re-RIP the complete data again and\n    again).  It is a system for professional digital printing capable\n    of doing up to 400.000 prints per month per unit.<p>\n\n    The system is capable of running as a print cluster of up to 12\n    connected printer units which can share a huge job amongst\n    themselves or work on different ones each. (The maximum cluster\n    gives you 840 ppm and a monthly volume of 4.8 million\n    prints).<p>\n\n    (tested by Kurt Pfeifle)<p><p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

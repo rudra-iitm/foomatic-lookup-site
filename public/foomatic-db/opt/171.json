@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/171",
+        "arg_shortname": {
+            "en": "NextJobOnSameSheet"
+        },
+        "arg_longname": {
+            "en": "Next Job"
+        },
+        "arg_execution": {
+            "arg_group": "CombinedJobs",
+            "arg_order": "190",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-noreset"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "NextJobOnNewSheet"
+        }
+    }
+}

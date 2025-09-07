@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Dot_Matrix",
+        "make": "Epson",
+        "model": "Dot Matrix",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "216"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epsonc",
+        "comments": {
+            "en": "This is a placeholder for the hundreds of assorted dot-matrix printers that work with the Epson drivers."
+        }
+    }
+}

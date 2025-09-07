@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_P1202",
+        "make": "Xerox",
+        "model": "DocuPrint P1202",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL5E",
+                "manufacturer": "Xerox",
+                "model": "DocuPrint"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "This printer is really fast, it holds 250 Sheets of paper and the\n    printouts look nice (Although printouts from a Laserjet 1100 look\n    a bit finer). There exists a windows config utility so you need to\n    switch to windows if you wanna reconfig the printer. Toner is a\n    bit expensive but the printer itself was very cheap. There exists\n    a Postscript Level 2 Hardware Upgrade for this printer if you\n    don't want to fiddle with ghostscript. RAM is upgradeable\n    from initial 4MB to 36MB.<p>\n\n      Consumables/Refills: Toner (6000pages = 1900 ATS)<p>"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_EX",
+        "make": "Epson",
+        "model": "Stylus Photo EX",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/phoex_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo EX"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "A3 paperformat works.\n<br>\nWorks relatively well with the Stylus Color 600 upp files, such as stc600p.upp\n<br>\nThe Gimp/Ghostscript print driver (stp) supports this printer\nperfectly -- 1440x720, soft weave, 6 color dithering.<p>\n\n      Consumables/Refills: S020093 - Black cartridge, S020110 - Color cartridge<p>"
+        }
+    }
+}

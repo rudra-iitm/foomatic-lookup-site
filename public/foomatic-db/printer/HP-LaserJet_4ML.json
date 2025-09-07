@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4ML",
+        "make": "HP",
+        "model": "LaserJet 4ML",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p><p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

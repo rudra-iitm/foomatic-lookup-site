@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Scan_2500",
+        "make": "Epson",
+        "model": "Stylus Scan 2500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/allinone/ss25__/documentation.html",
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "The \"Product Manager Operating Systems\" of Epson France\n    told me that this device is compatible to the Epson Stylus Color\n    740 printer and the Epson GT 7000 scanner. Both these devices work\n    under free operating systems, so this device should be fully\n    functional. <p>\n\n    Works with the 2.2 kernel backported USB, and probably on kernel\n    2.4. It's unclear if there is any code to drive the scanner\n    via parallel port; is this a IEEE muxed parport device, or is it\n    running something funky?  <p>\n\n    The scanner was reported to work by a \"Steve\n    Morningthunder\" over in the <a\n    href=\"http://lhd.datapower.com/db/dispproduct.php3?DISP?1897\">LHD</a>:\n    Used usb-2.4.0-test2-pre~2.2.16-v3 backport to kernel 2.2.16 and\n    modified scanner.h in /drivers/usb/ to include<p>\n\n    <pre>\n   { 0x04b8, 0x0106 }, /* Stylus Scan 2500 */\n    </pre>\n \n    for the seiko/epson category.  <p>\n\n    The printer is reported to work with the stcolor driver; it almost\n    certainly works much better with the stp driver.  Someone will\n    have to experiment to determine which stp driver Model value to\n    use."
+        }
+    }
+}

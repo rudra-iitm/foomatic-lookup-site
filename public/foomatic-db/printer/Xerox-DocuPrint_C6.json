@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_C6",
+        "make": "Xerox",
+        "model": "DocuPrint C6",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=C6&cat=%2fEquipment%2fPrinting%2fDesktop&trk=/Printing/Desktop/C6/overview/",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "cdj550",
+        "comments": {
+            "en": "Select the HP Deskjet 550 tool and it will work perfectly! On my windows machine the paper was wet because it likes to float the ink around, on Linux this problem is solved! (I was not able to solve this under Windows).<p>\n\n      Consumables/Refills: Cartridge & Printhead (Cartridge = $30 in NL)<p>"
+        }
+    }
+}

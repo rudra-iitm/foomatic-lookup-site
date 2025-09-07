@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B2400",
+        "make": "Oki",
+        "model": "B2400",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Throughput = 21\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

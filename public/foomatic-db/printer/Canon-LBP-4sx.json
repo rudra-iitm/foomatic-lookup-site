@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-4sx",
+        "make": "Canon",
+        "model": "LBP-4sx",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet3",
+        "comments": {
+            "en": "Reported to work fine as a PCL laser by Alan Dickie.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

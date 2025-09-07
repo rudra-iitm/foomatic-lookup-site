@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/bjc250gs-Random",
+        "arg_shortname": {
+            "en": "Random"
+        },
+        "arg_longname": {
+            "en": "Randomization of Floyd-Steinberg"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "400",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dRandom=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "bjc250gs",
+                "arg_defval": "15"
+            }
+        },
+        "arg_max": "100",
+        "arg_min": "0"
+    }
+}

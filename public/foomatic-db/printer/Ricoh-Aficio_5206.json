@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_5206",
+        "make": "Ricoh",
+        "model": "Aficio 5206",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "400",
+                    "y": "400"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "This printer is driven by a Fiery XJ80e print server. It's a network printer, and it supports most protocols (IP, AppleTalk, Novell, etc.). The machine has a local parallel port and built in 10Base-T. I can't get it to work through 10Base-T, and it's too big to move for trying the parallel port."
+        }
+    }
+}

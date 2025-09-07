@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-2552W",
+        "make": "Samsung",
+        "model": "ML-2552W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "As the ML 2550, but with wireless LAN connection.<p>\n\n    Currently Samsung supports this printer with proprietary drivers\n    which come with the printer on its driver CD or can be downloaded\n    on the web sites of Samsung. Unfortunately, these drivers do not\n    work necessarily with all Linux distributions. You will therefore\n    probably get it more easily working by simply using it as a standard\n    PostScript printer with the PPD file from its driver CD.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

@@ -1,0 +1,287 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hpijs-pcl3-Model",
+        "arg_shortname": {
+            "en": "Model"
+        },
+        "arg_longname": {
+            "en": "Model"
+        },
+        "arg_execution": {
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2100",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2100"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2150",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2150"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2200",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2200"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2250",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2250"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2500",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2500"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2550",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2550"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2600",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2600"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2650",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Apollo-P-2650"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Sony-IJP-V100",
+                    "arg_defval": "ev/hpijs-pcl3-Model-Sony-IJP-V100"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2100",
+                    "ev_longname": {
+                        "en": "Apollo P-2100"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2100"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"P-2000U\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2150",
+                    "ev_longname": {
+                        "en": "Apollo P-2150"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2150"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"P-2000U\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2200",
+                    "ev_longname": {
+                        "en": "Apollo P-2200"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2200"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"APOLLO P-2200\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2250",
+                    "ev_longname": {
+                        "en": "Apollo P-2250"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2250"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"APOLLO P-2200\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2500",
+                    "ev_longname": {
+                        "en": "Apollo P-2500"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2500"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"APOLLO P2500/2600\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2550",
+                    "ev_longname": {
+                        "en": "Apollo P-2550"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2550"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"APOLLO P2500/2600\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2600",
+                    "ev_longname": {
+                        "en": "Apollo P-2600"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2600"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"APOLLO P2500/2600\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Apollo-P-2650",
+                    "ev_longname": {
+                        "en": "Apollo P-2650"
+                    },
+                    "ev_shortname": {
+                        "en": "Apollo-P-2650"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"APOLLO\" -sDeviceModel=\"APOLLO P2500/2600\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Model-Sony-IJP-V100",
+                    "ev_longname": {
+                        "en": "Sony IJP-V100"
+                    },
+                    "ev_shortname": {
+                        "en": "Sony-IJP-V100"
+                    },
+                    "ev_driverval": "-sDeviceManufacturer=\"HEWLETT-PACKARD\" -sDeviceModel=\"DESKJET 660\"",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Sony-IJP-V100"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

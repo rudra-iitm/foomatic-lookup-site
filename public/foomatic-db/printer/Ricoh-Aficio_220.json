@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_220",
+        "make": "Ricoh",
+        "model": "Aficio 220",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ricoh-europe.com/product/copier/core.htm?category=bw&product=a220",
+        "lang": {
+            "pcl": {
+                "@level": "5e/6"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono"
+    }
+}

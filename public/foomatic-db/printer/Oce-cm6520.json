@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Oce-cm6520",
+        "make": "Oce",
+        "model": "cm6520",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1800"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 65\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

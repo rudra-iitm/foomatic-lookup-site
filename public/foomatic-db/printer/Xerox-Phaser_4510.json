@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_4510",
+        "make": "Xerox",
+        "model": "Phaser 4510",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 45\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

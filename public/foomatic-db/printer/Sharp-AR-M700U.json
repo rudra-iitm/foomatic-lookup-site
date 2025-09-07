@@ -1,0 +1,62 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-M700U",
+        "make": "Sharp",
+        "model": "AR-M700U",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Sharp;MDL:Sharp AR-P19;",
+                "manufacturer": "Sharp",
+                "model": "Sharp AR-P19"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Sharp",
+                    "ppd": "PPD/Sharp/sham700u.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 70 pages/min<p>"
+        }
+    }
+}

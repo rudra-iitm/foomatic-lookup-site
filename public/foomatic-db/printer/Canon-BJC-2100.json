@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-2100",
+        "make": "Canon",
+        "model": "BJC-2100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.canon-europa.com/cgi-bin/parser.pl?page=products&index=1&product=862",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Canon;MDL:BJC-2100;",
+                "description": "Canon BJC-2100",
+                "manufacturer": "Canon",
+                "model": "BJC-2100"
+            },
+            "parallel": {
+                "description": "Unknown",
+                "manufacturer": "Canon Inc. (Kosugi Offic",
+                "model": "Unknown (1056)"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Compatible to the Canon BJC-4300. I (Till) got rather good results\n    with Gimp-Print 4.1.x (July 2001)<p>\n\n    User reports:<p>\n\n    Without Ghostscript options the page was not filled, but the\n    reoolution change to 360 ensured the page was correctly\n    filled.<p>\n\n    I have marked this as mostly working as I am unhappy with the\n    colour images (they are a bit blurred). As this is the first *nix\n    colour printer I have used/set-up I cannot really coment on\n    whether I am getting acceptable results or not.<p>\n\n    Finally, I am using the usb interface and have not touched the\n    parallel connector :-) I am using Corel Linux Second Edition for\n    reference.<p>\n\n    The german computer magazine c't - Magazin fuer\n    Computertechnik (21/2000) recommends for the Canon BJC\n    2100:<p>\n\n    Text: Uniprint, bjc610a8<br>\n\n    Photo: stp/1440x1440, sModel=bjc-2000 -sQuality=720x360 DPI\n    -sMediaType=Glossy Photo Paper -sInkType=Black/Color<br>\n\n    Stp gets rated 'very poor' for photo quality but is\n    still the best choice for this printer: \"The stp driver gave\n    the least catastrophical result.\"<p>\n\n      Consumables/Refills: BC-21e Colour, BC-22e Photo, BC-20 Black and BC-29F Flourescent<p>"
+        }
+    }
+}

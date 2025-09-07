@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Oce-cm4520",
+        "make": "Oce",
+        "model": "cm4520",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1800"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 45\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

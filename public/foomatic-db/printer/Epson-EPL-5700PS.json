@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5700PS",
+        "make": "Epson",
+        "model": "EPL-5700PS",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/laser/epl57i/index.html",
+        "lang": {
+            "postscript": null,
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "This printer is not to be confused with the European-market <a\n    href=\"show_printer.cgi?recnum=Epson-EPL-5700L\">EPL-5700L</a>,\n    which is a winprinter (but is supported though).<p>\n\n      Consumables/Refills: toner (UKP60), electrostatic drum (UKP40)<p>"
+        }
+    }
+}

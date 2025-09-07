@@ -1,0 +1,149 @@
+{
+    "driver": {
+        "@id": "driver/pxlcolor",
+        "name": "pxlcolor",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE%B%A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 1200dpi"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Driver for color PCL 6 printers, much faster than the\n    \"lj5gray\" drivers.<p>\n\n    The \"pxlmono\" and the \"pxlcolor\" driver are the same code, the\n    difference is only that the \"pxlcolor\" gives colour and the\n    \"pxlmono\" grayscale output. This entry for the \"pxlcolor\" driver\n    lists only color printers. See the \"<a href=\"show_driver.cgi?driver=pxlmono\">pxlmono</a>\" driver entry\n    for monochrome printers.<p>\n\n    Due to a bug in Ghostscript Duplex does not work with the\n    \"pxlmono\" and the \"pxlcolor\" drivers. Here is a <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pxl-patches/duplex.patch\">patch</a>\n    for GPL Ghostscript 8.63. This patch is needed so that the Duplex\n    option of the PPDs from this site works. Setting Duplex with PJL\n    commands does not work.<p>\n\n    The resolution must be given both with the \"-r\" option\n    on the command line of Ghostscript and as PJL command. Here is a\n    <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pxl-patches/resolution.patch\">patch</a>\n    for GPL Ghostscript 8.63 so that giving the PJL commands is not\n    necessary any more. This patch is needed for the resolution option\n    of the PPDs of this site to work.<p>\n\n    Another Ghostscript bug in the driver broke paper input tray\n    selection. This <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pxl-patches/inputslot.patch\">patch</a>\n    for GPL Ghostscript 8.63 fixes the problem and allows to set the\n    input tray with the \"-dMediaPosition=X\" commmand line\n    option for Ghostscript. \"X\" is an integer number which\n    depends on the printer model and tray. For HP \"0\" is\n    usually the printer default, \"1\" automatic selection,\n    \"2\" manual feed, \"4\" the upper, and\n    \"5\" the lower tray. Note that for PCL 5/5e these numbers\n    are different. This patch is required so that tray selection with\n    the PPDs of this site works.<p>\n\n    GPL Ghostscript 8.63 comes with a CUPS filter (\"pstopxl\") and 2\n    PPD files for the \"pxlmono\" and \"pxlcolor\" drivers. Note that you\n    will need all the three patches mentioned here to make the options\n    in the PPD files actually work. With this <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-cups-patches/pstopxl-pdf-input.patch\">patch</a>\n    the filter and the PPDs will be made ready for <a\n    href=\"https://www.linuxfoundation.org/en/OpenPrinting/PDF_as_Standard_Print_Job_Format\">PDF\n    input</a>.<p>\n\n    The patches are all applied to GPL Ghostscript from version 8.64\n    on, so they are not needed any more with this version or later\n    versions of Ghostscript.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-HL-2400CeN"
+                },
+                {
+                    "id": "printer/Brother-HL-2600CN"
+                },
+                {
+                    "id": "printer/Brother-HL-3400CN"
+                },
+                {
+                    "id": "printer/Brother-HL-3450CN"
+                },
+                {
+                    "id": "printer/Brother-HL-4000CN"
+                },
+                {
+                    "id": "printer/Brother-HL-4040CN"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_C2550"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_C5058"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_C5068"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_C5185"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_C5185i"
+                },
+                {
+                    "id": "printer/Dell-3000cn"
+                },
+                {
+                    "id": "printer/Dell-3100cn"
+                },
+                {
+                    "id": "printer/Generic-PCL_6_PCL_XL_Printer"
+                },
+                {
+                    "id": "printer/HP-Business_Inkjet_3000"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_2500"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_4500"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_4550"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_4600"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5000"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5500"
+                },
+                {
+                    "id": "printer/Lexmark-C720n"
+                },
+                {
+                    "id": "printer/Oki-C8800"
+                },
+                {
+                    "id": "printer/Panasonic-DP-180"
+                },
+                {
+                    "id": "printer/Panasonic-DP-C265"
+                },
+                {
+                    "id": "printer/Panasonic-DP-C305"
+                },
+                {
+                    "id": "printer/Panasonic-DP-C322"
+                },
+                {
+                    "id": "printer/Panasonic-DP-C405"
+                },
+                {
+                    "id": "printer/Samsung-CLP-350"
+                },
+                {
+                    "id": "printer/Samsung-CLP-550"
+                },
+                {
+                    "id": "printer/Samsung-CLP-550N"
+                },
+                {
+                    "id": "printer/Samsung-CLP-650"
+                },
+                {
+                    "id": "printer/Samsung-CLP-650N"
+                },
+                {
+                    "id": "printer/Samsung-CLP-660N"
+                },
+                {
+                    "id": "printer/Samsung-CLP-660ND"
+                },
+                {
+                    "id": "printer/Toshiba-e-Studio_220cp"
+                },
+                {
+                    "id": "printer/Toshiba-e-Studio_2830c"
+                },
+                {
+                    "id": "printer/Toshiba-e-Studio_3530c"
+                },
+                {
+                    "id": "printer/Toshiba-e-Studio_4500c"
+                },
+                {
+                    "id": "printer/Toshiba-e-Studio_4520c"
+                },
+                {
+                    "id": "printer/Toshiba-e-Studio_5500c"
+                },
+                {
+                    "id": "printer/Xerox-WorkCentre_7345"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3160N"
+                }
+            ]
+        }
+    }
+}

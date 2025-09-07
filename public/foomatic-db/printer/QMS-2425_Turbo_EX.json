@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/QMS-2425_Turbo_EX",
+        "make": "QMS",
+        "model": "2425 Turbo EX",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.qms.com/products/monochrome/2425/2425turboex.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript"
+    }
+}

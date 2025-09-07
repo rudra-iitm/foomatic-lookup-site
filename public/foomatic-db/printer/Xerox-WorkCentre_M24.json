@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_M24",
+        "make": "Xerox",
+        "model": "WorkCentre M24",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.office.xerox.com/multifunction-printer/color-multifunction/workcentre-m24/enus.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 13\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

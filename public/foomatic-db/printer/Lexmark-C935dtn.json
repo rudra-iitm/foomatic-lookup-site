@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C935dtn",
+        "make": "Lexmark",
+        "model": "C935dtn",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 45\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/stc800X.upp",
+        "name": "stc800X.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc800ih.upp, stc800pl.upp,\n      stc800p.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_Color_800",
+                    "comments": {
+                        "en": "Up to 1440x720dpi 32-bit CMYK, 62-pin, inkjet paper"
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_850"
+                }
+            ]
+        }
+    }
+}

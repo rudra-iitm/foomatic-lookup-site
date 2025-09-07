@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-610",
+        "make": "Canon",
+        "model": "BJC-610",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc600",
+        "comments": {
+            "en": "Uses bjc610*.upp files; see driver links.\n<br>Different uniprint drivers for 360/720dpi printing and different paper types."
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "driver": {
+        "@id": "driver/ppmtomd",
+        "name": "ppmtomd",
+        "url": "http://ppmtomd.julianbradfield.org/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dBATCH -dPARANOIDSAFER -sDEVICE=ppmraw -sOutputFile=-%A%B -informat Colour%C"
+        },
+        "comments": {
+            "en": "This driver works on the MicroDry thermal transfer printers: The\n    Alps MD series, the Citizen printiva series, and the Okidata DP\n    series. It is the successor of the \"ppmtocpva\"\n    driver.<p>\n\n    Note that the \"<tt>-autoshift</tt>\" feature\n    is broken in the versions 1.0.2 and older. This is fixed in\n    1.0.3.<p>\n\n    From version 1.1 on the Dye Sublimation mode is fully\n    supported. The VPhoto mode and VPhoto primer support are available\n    from version 1.3 on.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Alps-MD-1000"
+                },
+                {
+                    "id": "printer/Alps-MD-1300"
+                },
+                {
+                    "id": "printer/Alps-MD-1500"
+                },
+                {
+                    "id": "printer/Alps-MD-2000"
+                },
+                {
+                    "id": "printer/Alps-MD-2010"
+                },
+                {
+                    "id": "printer/Alps-MD-2300"
+                },
+                {
+                    "id": "printer/Alps-MD-4000"
+                },
+                {
+                    "id": "printer/Alps-MD-5000"
+                },
+                {
+                    "id": "printer/Alps-MD-5500"
+                },
+                {
+                    "id": "printer/Citizen-printiva1700"
+                },
+                {
+                    "id": "printer/Citizen-printiva600C"
+                },
+                {
+                    "id": "printer/Citizen-printiva600U"
+                },
+                {
+                    "id": "printer/Citizen-printiva700"
+                },
+                {
+                    "id": "printer/Oki-DP_5000"
+                }
+            ]
+        }
+    }
+}

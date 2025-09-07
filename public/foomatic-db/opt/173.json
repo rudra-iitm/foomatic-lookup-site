@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/173",
+        "arg_shortname": {
+            "en": "Banding"
+        },
+        "arg_longname": {
+            "en": "Banding"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "210",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-banding"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "NoBanding"
+        }
+    }
+}

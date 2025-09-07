@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-M1246",
+        "make": "Lexmark",
+        "model": "M1246",
+        "mechanism": null,
+        "lang": {
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark ;MDL:Lexmark M1246;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark M1246"
+            }
+        },
+        "functionality": "A",
+        "driver": "PCL6",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "PCL6"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_M1200_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 46 pages/min<p>"
+        }
+    }
+}

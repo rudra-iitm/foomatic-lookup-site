@@ -1,0 +1,62 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-168S",
+        "make": "Sharp",
+        "model": "AR-168S",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Sharp;MDL:Sharp AR-NB2;",
+                "manufacturer": "Sharp",
+                "model": "Sharp AR-NB2"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Sharp",
+                    "ppd": "PPD/Sharp/shar168s.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 16 pages/min<p>"
+        }
+    }
+}

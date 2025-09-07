@@ -1,0 +1,60 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-1200",
+        "make": "Kyocera",
+        "model": "FS-1200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;Model:Kyocera FS-1200;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "description": "Kyocera FS-1200",
+                "manufacturer": "Kyocera",
+                "model": "Kyocera FS-1200"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_FS-1200_en.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "4-12 MB RAM (depends on the model);\n      Works very good; tested on a SuSE 6.2 <br>\n      Use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript,\n      <a href=\"ppd-doc.html\">Instructions</a> <br>\n      Use ljet4 for PCL5e <br>\n      In case of duplex option use ljet4d for PCL5e and duplex <br>\n      Using pxlmono for PCL6 may be the fastest way to get good printouts.\n    \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 12 pages/min<p>"
+        }
+    }
+}

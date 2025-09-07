@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_P2055d",
+        "make": "HP",
+        "model": "LaserJet P2055d",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/pscmisc/vac/us/product_pdfs/3662052.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "PJL,POSTSCRIPT,PCL,PCLXL",
+                "description": "HP LaserJet P2055d",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet P2055d"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Postscript level 3 and duplex out of the box, USB connection.\n\n    For basic printing functionality use the Postscript PPD."
+        }
+    }
+}

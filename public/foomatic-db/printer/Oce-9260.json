@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Oce-9260",
+        "make": "Oce",
+        "model": "9260",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oce;MDL:Oce 9260;",
+                "manufacturer": "Oce",
+                "model": "Oce 9260"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript2-Oce",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript2-Oce",
+                    "ppd": "PPD/Oce/Others/OC9260_2.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 60 pages/min<p>"
+        }
+    }
+}

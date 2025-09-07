@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Seiko-SLP_Plus",
+        "make": "Seiko",
+        "model": "SLP Plus",
+        "url": "http://www.seiksmart.com/products/printers.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "slap",
+        "contrib_url": "http://members.tripod.com/uutil/slap",
+        "comments": {
+            "en": "Not a postscript or pcl driver; slap only prints text in various fonts.<p>\n\n      Consumables/Refills: None; uses Seiko Instruments thermal labels<p>"
+        }
+    }
+}

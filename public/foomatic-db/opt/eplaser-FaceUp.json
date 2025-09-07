@@ -1,0 +1,91 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/eplaser-FaceUp",
+        "arg_shortname": {
+            "en": "FaceUp"
+        },
+        "arg_longname": {
+            "en": "Page Facing Up"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "160",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dFaceUp"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-AL-C8500",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-AL-C8500PS",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-AL-C8600",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-AL-C8600_PS3",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-AL-C9100",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-8000C",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-8200C",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-8300C",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-8500C",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-8800C",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-9600",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-9600S",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Epson-LP-9800C",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_shortname_false": {
+            "en": "FaceDown"
+        }
+    }
+}

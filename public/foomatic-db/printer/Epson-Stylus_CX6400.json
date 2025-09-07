@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_CX6400",
+        "make": "Epson",
+        "model": "Stylus CX6400",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier.<p>\n\n    In contrary to the CX5400 this device has memory card slots, so\n    that you can print photos directly from your camera's card, but\n    you can also scan documents or photos onto a memory card, for\n    example for usage with a PDA.<p>\n\n    The printing engine is compatible to the one of the Epson Stylus\n    C84, see that printer entry for more info. All but full-bleed\n    works with Gimp-Print 4.2.6 or newer or 4.3.24 or newer.<p>\n\n    Scanning should work as described for the Epson Stylus CX3200 and\n    CX5200, best with kernel 2.4.21 or later. To make the \"epson\"\n    backend of <a\n    href=\"http://www.sane-project.org/\">SANE</a> recognizing\n    this device, you have to add a line like<p>\n\n    <tt>usb 0x4b8 0x805</tt><p>\n\n    to the <tt>/etc/sane.d/epson.conf</tt> file where the\n    two hexadecimal numbers are the vendor and product IDs of your\n    scanner. You find the actual IDs in\n    <tt>/proc/bus/usb/devices</tt>. Search for an entry\n    for an Epson device (the model name can be different to \"CX6400\"\n    as often the Epson devices report their japanese market name) and\n    in the line beginning with \"<tt>P</tt>\" directly above\n    the line with the manufacturer name you find the hexadecimal\n    vendor and product IDs.<p>\n\n    Copying should just work with the front panel of the\n    device.<p><p>\n\n      Consumables/Refills: 4 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

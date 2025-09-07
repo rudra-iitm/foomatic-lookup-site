@@ -1,0 +1,67 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-6500plus",
+        "make": "Kyocera",
+        "model": "FS-6500+",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "postscript": null,
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;Model:Kyocera FS-6500+;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "description": "Kyocera FS-6500+",
+                "manufacturer": "Kyocera",
+                "model": "Kyocera FS-6500+"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4d",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_FS-6500+_en.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "PCL5e but limited to 300x300dpi <br>\n      In case of duplex option use ljet4d for PCL5e and duplex <br>\n      PostScript option (use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript, <a href=\"ppd-doc.html\">Instructions</a>)\n    \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 12 pages/min<p>"
+        }
+    }
+}

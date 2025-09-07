@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Z51",
+        "make": "Lexmark",
+        "model": "Z51",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/Z51/",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "LNPAP",
+                "description": "Lexmark Z51",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark Z51"
+            }
+        },
+        "functionality": "D",
+        "driver": "pbm2l7k",
+        "comments": {
+            "en": "Known to work with Henryk's l7k driver and the lx5000 driver."
+        }
+    }
+}

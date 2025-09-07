@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_900",
+        "make": "Epson",
+        "model": "Stylus Photo 900",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4;MDL:Stylus Photo 900;CLS:PRINTER;DES:EPSON Stylus Photo 900;",
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo 900",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 900"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6-color CMYKcm printing, roll paper feeder, Tray for direct\n    printing on CDs, USB and parallel port.<p>\n\n    The printer is compatible to the Epson Stylus Photo 915, so choose\n    this model (using the Gimp-Print driver) as long as the Epson\n    Stylus Photo 900 is not explicitly supported by\n    Gimp-Print.<p>"
+        }
+    }
+}

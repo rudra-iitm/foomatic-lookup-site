@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Z13",
+        "make": "Lexmark",
+        "model": "Z13",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/Z13/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Ultra-cheap (40$) inkjet printer, allows only to use one cartridge\n    at a time, either 3-color (32$) or black (29$). Coming with only a\n    colour cartridge and Lexmark cartridges being known to be\n    expensive this printer is a very expensive solution in terms of\n    the per-page cost. In addition probably the mechanics is very\n    flimsy. I (Till) have the Z22 in my test rack and this model is\n    already bad enough, and in addition, a simple calculation tells\n    you that they sell you the mechanics for only 8 bucks, assuming\n    that the cartridge coming with the printer is not a half-full\n    starter cartridge. So one can even not recommend this printer to\n    Windows users.<p>\n\n    Unfortunately, there is no free software driver, but <a\n    href=\"http://www.lexmark.com\">Lexmark</a>\n    provides a Linux/x86 binary-only driver. To get it, simply follow\n    the \"Drivers\" link on the home page. The drivers issued\n    by Lexmark do not contain any CUPS or PDQ configuration file, so\n    use them either with LPD or with my <a\n    href=\"download/printing/lexmark-foomatic-kit.tar.gz\">Lexmark\n    Foomatic Kit</a>. Download it, uncompress it, and follow the\n    instructions of its README file. Due to having access to all\n    options of the driver it leads even to a better printout quality\n    than the Lexmark driver with its original configuration\n    software.<p>\n\n    There are unsubstantiated rumours that this printer does now work\n    with one of the free Lexmark drivers.  If so do tell!<p>\n\n      Consumables/Refills: color or black ink cartridge<p>"
+        }
+    }
+}

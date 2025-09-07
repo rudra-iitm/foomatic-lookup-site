@@ -1,0 +1,50 @@
+{
+    "printer": {
+        "@id": "printer/Brother-DCP-8045D",
+        "make": "Brother",
+        "model": "DCP-8045D",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "relative": null,
+                    "top": "12",
+                    "left": "12",
+                    "right": "12",
+                    "bottom": "12"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Brother",
+                "ppd": "PPD/Brother/BR8045_2_GPL.ppd"
+            }
+        },
+        "comments": {
+            "en": "Understands PCL5e, PCL 6, PostScript Level 3 and also the proprietary\n    language of the cheaper models.<p>\n\n    Note: Selection of the \"HQ1200\" resolution (2400x600 dpi) is only\n    possible with the \"hl7x0\" driver.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

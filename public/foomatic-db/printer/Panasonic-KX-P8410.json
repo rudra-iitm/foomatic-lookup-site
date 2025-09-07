@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P8410",
+        "make": "Panasonic",
+        "model": "KX-P8410",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/PCSC/PCPC/printers/p8410i.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Requires more than std 8M RAM for 1200dpi.\nSupports upto 72megs RAM\n<br>No hint of non-Windows support.\nUses Panasonic GDI format.\nSupports both SCSI2 and Parallel input.<p>\n\n      Consumables/Refills: CMYK toners, fuser, Oil Roll<p>"
+        }
+    }
+}

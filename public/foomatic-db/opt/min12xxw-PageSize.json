@@ -1,0 +1,290 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/min12xxw-PageSize",
+        "arg_shortname": {
+            "en": "PageSize"
+        },
+        "arg_longname": {
+            "en": "Page Size"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_forced_composite": null,
+            "arg_proto": null
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "min12xxw",
+                "arg_defval": "ev/min12xxw-PageSize-Letter"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/min12xxw-PageSize-A4",
+                    "ev_longname": {
+                        "en": "A4"
+                    },
+                    "ev_shortname": {
+                        "en": "A4"
+                    },
+                    "ev_driverval": "DriverPageSize=A4 GSPageSize=A4"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-A5",
+                    "ev_longname": {
+                        "en": "A5"
+                    },
+                    "ev_shortname": {
+                        "en": "A5"
+                    },
+                    "ev_driverval": "DriverPageSize=A5 GSPageSize=A5"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Env10",
+                    "ev_longname": {
+                        "en": "Envelope #10"
+                    },
+                    "ev_shortname": {
+                        "en": "Env10"
+                    },
+                    "ev_driverval": "DriverPageSize=Env10 GSPageSize=Env10"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-EnvC5",
+                    "ev_longname": {
+                        "en": "Envelope C5"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvC5"
+                    },
+                    "ev_driverval": "DriverPageSize=EnvC5 GSPageSize=EnvC5"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-EnvC6",
+                    "ev_longname": {
+                        "en": "Envelope C6"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvC6"
+                    },
+                    "ev_driverval": "DriverPageSize=EnvC6 GSPageSize=EnvC6"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-EnvDL",
+                    "ev_longname": {
+                        "en": "Envelope DL"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvDL"
+                    },
+                    "ev_driverval": "DriverPageSize=EnvDL GSPageSize=EnvDL"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-EnvISOB5",
+                    "ev_longname": {
+                        "en": "Envelope B5"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvISOB5"
+                    },
+                    "ev_driverval": "DriverPageSize=EnvISOB5 GSPageSize=EnvISOB5"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-EnvMonarch",
+                    "ev_longname": {
+                        "en": "Envelope Monarch"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvMonarch"
+                    },
+                    "ev_driverval": "DriverPageSize=EnvMonarch GSPageSize=EnvMonarch"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Executive",
+                    "ev_longname": {
+                        "en": "Executive"
+                    },
+                    "ev_shortname": {
+                        "en": "Executive"
+                    },
+                    "ev_driverval": "DriverPageSize=Executive GSPageSize=Executive"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Folio",
+                    "ev_longname": {
+                        "en": "Folio"
+                    },
+                    "ev_shortname": {
+                        "en": "Folio"
+                    },
+                    "ev_driverval": "DriverPageSize=Folio GSPageSize=Folio"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Hagaki",
+                    "ev_longname": {
+                        "en": "Hagaki"
+                    },
+                    "ev_shortname": {
+                        "en": "Hagaki"
+                    },
+                    "ev_driverval": "DriverPageSize=Hagaki GSPageSize=Hagaki"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-HalfLetter",
+                    "ev_longname": {
+                        "en": "Half Letter"
+                    },
+                    "ev_shortname": {
+                        "en": "HalfLetter"
+                    },
+                    "ev_driverval": "DriverPageSize=HalfLetter GSPageSize=HalfLetter"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Legal",
+                    "ev_longname": {
+                        "en": "Legal"
+                    },
+                    "ev_shortname": {
+                        "en": "Legal"
+                    },
+                    "ev_driverval": "DriverPageSize=Legal GSPageSize=Legal"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Letter",
+                    "ev_longname": {
+                        "en": "Letter"
+                    },
+                    "ev_shortname": {
+                        "en": "Letter"
+                    },
+                    "ev_driverval": "DriverPageSize=Letter GSPageSize=Letter"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-Oufuku",
+                    "ev_longname": {
+                        "en": "Oufuku"
+                    },
+                    "ev_shortname": {
+                        "en": "Oufuku"
+                    },
+                    "ev_driverval": "DriverPageSize=Oufuku GSPageSize=Oufuku"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w255h581",
+                    "ev_longname": {
+                        "en": "Choukei-4Gou"
+                    },
+                    "ev_shortname": {
+                        "en": "w255h581"
+                    },
+                    "ev_driverval": "DriverPageSize=w255h581 GSPageSize=w255h581"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w261h468",
+                    "ev_longname": {
+                        "en": "Envelope 6 1/2"
+                    },
+                    "ev_shortname": {
+                        "en": "w261h468"
+                    },
+                    "ev_driverval": "DriverPageSize=w261h468 GSPageSize=w261h468"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w278h539",
+                    "ev_longname": {
+                        "en": "JIS Yokei 6-gou"
+                    },
+                    "ev_shortname": {
+                        "en": "w278h539"
+                    },
+                    "ev_driverval": "DriverPageSize=w278h539 GSPageSize=w278h539"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w298h666",
+                    "ev_longname": {
+                        "en": "JIS Yokei 2-gou"
+                    },
+                    "ev_shortname": {
+                        "en": "w298h666"
+                    },
+                    "ev_driverval": "DriverPageSize=w298h666 GSPageSize=w298h666"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w340h499",
+                    "ev_longname": {
+                        "en": "JIS Yokei 1-gou"
+                    },
+                    "ev_shortname": {
+                        "en": "w340h499"
+                    },
+                    "ev_driverval": "DriverPageSize=w340h499 GSPageSize=w340h499"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w340h666",
+                    "ev_longname": {
+                        "en": "JIS Yokei 0-gou"
+                    },
+                    "ev_shortname": {
+                        "en": "w340h666"
+                    },
+                    "ev_driverval": "DriverPageSize=w340h666 GSPageSize=w340h666"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w369h524",
+                    "ev_longname": {
+                        "en": "Chinese 32K"
+                    },
+                    "ev_shortname": {
+                        "en": "w369h524"
+                    },
+                    "ev_driverval": "DriverPageSize=w369h524 GSPageSize=w369h524"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w524h737",
+                    "ev_longname": {
+                        "en": "Chinese 16K"
+                    },
+                    "ev_shortname": {
+                        "en": "w524h737"
+                    },
+                    "ev_driverval": "DriverPageSize=w524h737 GSPageSize=w524h737"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w567h839",
+                    "ev_longname": {
+                        "en": "Quad postcard"
+                    },
+                    "ev_shortname": {
+                        "en": "w567h839"
+                    },
+                    "ev_driverval": "DriverPageSize=w567h839 GSPageSize=w567h839"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w612h756",
+                    "ev_longname": {
+                        "en": "G. Letter"
+                    },
+                    "ev_shortname": {
+                        "en": "w612h756"
+                    },
+                    "ev_driverval": "DriverPageSize=w612h756 GSPageSize=w612h756"
+                },
+                {
+                    "@id": "ev/min12xxw-PageSize-w612h936",
+                    "ev_longname": {
+                        "en": "G. Legal"
+                    },
+                    "ev_shortname": {
+                        "en": "w612h936"
+                    },
+                    "ev_driverval": "DriverPageSize=w612h936 GSPageSize=w612h936"
+                }
+            ]
+        }
+    }
+}

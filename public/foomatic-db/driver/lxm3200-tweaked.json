@@ -1,0 +1,46 @@
+{
+    "driver": {
+        "@id": "driver/lxm3200-tweaked",
+        "name": "lxm3200-tweaked",
+        "url": "http://www.openprinting.org/download/printing/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=lxm3200%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Tweaked version of Daniel Gordini's \"lxm3200\" driver for\n    the Lexmark 3200. Boer Attila (boera at unitbv dot ro) and Tomas\n    Groth (tomasgroth at hotmail dot com) discovered that this driver\n    works also on the Z12 and the Z31 when one does some small\n    tweaking on it. So they have made a modified version of the\n    original driver, with an additional\n    \"<tt>-dmodel=</tt><i>n</i>\"\n    (Lexmark 3200: <i>n</i><tt> = 0</tt>, Z12:\n    <i>n</i><tt> = 1</tt>, Z31:\n    <i>n</i><tt> = 2</tt>) option to fit the\n    driver to the appropriate model.<p>\n\n    Notes:<p>\n\n    The 1200 dpi will come out somewhat dark, correct this by the\n    gamma correction of CUPS, or use the 600dpi resolution (native\n    resolution of the printer).<p>\n\n    Unidirectional printing on the Z12 and the Z31 is possible and gives a\n    much higher printout quality.<p>\n\n    From the Z31 there came out models which need different margin\n    settings. If the print head of your Z31 goes over the end of its\n    rails and makes strange noise, use the\n    \"<tt>-dz31m=</tt><i>x</i>\"\n    option where <i>x</i> is an integer number adjusting\n    the margins. Default (when not using the option) is 100, You\n    should try something like 300, but other values can also\n    apply.<p>\n\n    The Compaq IJ750 is a rebadged Lexmark 3200, so use it with\n    \"<tt>-dmodel=0</tt>\".<p>\n\n    The Z22 and Z32 have protocols similar to the Lexmark 3200 and\n    work partially with this driver\n    (\"<tt>-dmodel=0</tt>\"). Note that you have\n    to turn off and on the Z22/Z32 after the job has finished. For\n    black text printing this driver is usable on the Z22/Z32. But note\n    that these printers are not officially supported by this\n    driver. Use Lexmark's drivers for the Z22/Z32.<p>\n\n    This driver is also in the CVS of <a\n    href=\"http://www.cups.org/ghostscript.php\">ESP\n    Ghostscript</a> (\"lxm3200\" device). When one does\n    not use the\n    \"<tt>-dmodel=</tt><i>n</i>\"\n    option, the driver behaves as the original \"lxm3200\"\n    driver.<p>\n\n    Alternative download place (probably not the newest version):\n    <a\n    href=\"http://www.distantvoices.org/\">http://www.distantvoices.org/</a>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Compaq-IJ750"
+                },
+                {
+                    "id": "printer/Lexmark-3200"
+                },
+                {
+                    "id": "printer/Lexmark-Z12",
+                    "comments": {
+                        "en": "To avoid that the printer makes strange noise, print only in\n    bidirectional mode (\"-dbidir=1\"). This printer is only\n    tested with the black cartridge."
+                    }
+                },
+                {
+                    "id": "printer/Lexmark-Z22",
+                    "comments": {
+                        "en": "You have to turn off and on the printer after the job has\n    finished. For black text printing this driver is usable on the\n    Z22/Z32."
+                    }
+                },
+                {
+                    "id": "printer/Lexmark-Z31"
+                },
+                {
+                    "id": "printer/Lexmark-Z32",
+                    "comments": {
+                        "en": "You have to turn off and on the printer after the job has\n    finished. For black text printing this driver is usable on the\n    Z22/Z32."
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-Phaser_IISX",
+        "make": "Tektronix",
+        "model": "Phaser IISX",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "20 meg of ram, scsi disk.\nmuch faster than PX<p>\n\n      Consumables/Refills: Dye Sublimation, Special Paper<p>"
+        }
+    }
+}

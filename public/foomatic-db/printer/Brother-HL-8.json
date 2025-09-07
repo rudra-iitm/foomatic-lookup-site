@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-8",
+        "make": "Brother",
+        "model": "HL-8",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljetplus",
+        "comments": {
+            "en": "Essentially a LaserJet II with 512K RAM.  I put in an extra\n2MB module so I could print full-page 300dpi, otherwise you\ncan only do 150dpi. (Addition by tpo2:)\nThe printer doesn't really work without mem-extension here.\nIt does print out -some- pages, but not f.ex. pages with\n(small) images in it, multiple pages on on sheet (mpage -2)\netc., even with 150dpi. (anybody with mem-extensions to give\naway can contact me at tpo2@spin.ch)<p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: toner (same as LaserJet II)<p>"
+        }
+    }
+}

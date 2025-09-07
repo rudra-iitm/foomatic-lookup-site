@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_M118",
+        "make": "Xerox",
+        "model": "WorkCentre M118",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MANUFACTURER:XEROX;COMMAND SET:;MODEL:WorkCentre M118;CLASS:PRINTER;COMPATIBLE ID:;DESCRIPTION:XEROX WorkCentre M118;",
+                "description": "XEROX WorkCentre M118",
+                "manufacturer": "XEROX",
+                "model": "WorkCentre M118"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xxrm118.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 18\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-21\n      \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 18 pages/min<p>"
+        }
+    }
+}

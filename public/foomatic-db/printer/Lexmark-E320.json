@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E320",
+        "make": "Lexmark",
+        "model": "E320",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet4d",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                }
+            ]
+        },
+        "comments": {
+            "en": null
+        }
+    }
+}

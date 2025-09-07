@@ -1,0 +1,297 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/57",
+        "arg_shortname": {
+            "en": "Model"
+        },
+        "arg_longname": {
+            "en": "Model"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-v %s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pnm2ppa",
+                    "printer": "printer/HP-DeskJet_1000C",
+                    "arg_defval": "ev/574"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pnm2ppa",
+                    "printer": "printer/HP-DeskJet_710C",
+                    "arg_defval": "ev/569"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pnm2ppa",
+                    "printer": "printer/HP-DeskJet_712C",
+                    "arg_defval": "ev/570"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pnm2ppa",
+                    "printer": "printer/HP-DeskJet_720C",
+                    "arg_defval": "ev/571"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pnm2ppa",
+                    "printer": "printer/HP-DeskJet_722C",
+                    "arg_defval": "ev/572"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pnm2ppa",
+                    "printer": "printer/HP-DeskJet_820C",
+                    "arg_defval": "ev/573"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/569",
+                    "ev_longname": {
+                        "en": "HP DeskJet 710C"
+                    },
+                    "ev_shortname": {
+                        "en": "DJ710C"
+                    },
+                    "ev_driverval": "710",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_1000C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_712C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_720C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_722C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_820C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/570",
+                    "ev_longname": {
+                        "en": "HP DeskJet 712C"
+                    },
+                    "ev_shortname": {
+                        "en": "DJ712C"
+                    },
+                    "ev_driverval": "712",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_1000C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_710C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_720C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_722C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_820C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/571",
+                    "ev_longname": {
+                        "en": "HP DeskJet 720C"
+                    },
+                    "ev_shortname": {
+                        "en": "DJ720C"
+                    },
+                    "ev_driverval": "720",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_1000C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_710C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_712C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_722C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_820C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/572",
+                    "ev_longname": {
+                        "en": "HP DeskJet 722C"
+                    },
+                    "ev_shortname": {
+                        "en": "DJ722C"
+                    },
+                    "ev_driverval": "722",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_1000C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_710C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_712C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_720C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_820C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/573",
+                    "ev_longname": {
+                        "en": "HP DeskJet 820Cse and 820Cxi"
+                    },
+                    "ev_shortname": {
+                        "en": "DJ820C"
+                    },
+                    "ev_driverval": "820",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_1000C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_710C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_712C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_720C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_722C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/574",
+                    "ev_longname": {
+                        "en": "HP DeskJet 1000Cse and 1000Cxi"
+                    },
+                    "ev_shortname": {
+                        "en": "DJ1000C"
+                    },
+                    "ev_driverval": "1000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_710C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_712C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_720C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_722C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pnm2ppa",
+                                "printer": "printer/HP-DeskJet_820C"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-Multipass_L6000",
+        "make": "Canon",
+        "model": "Multipass L6000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/multi/l6000/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Multifunction device (fax/copier/etc).\n<br>Vendor FAQ says no support for DOS apps at all.\n<br>Matt Berger tried various drivers with no luck.<p>\n\n      Consumables/Refills: Canon FX-3 cartridge<p>"
+        }
+    }
+}

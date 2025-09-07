@@ -1,0 +1,59 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6350DP",
+        "make": "Xerox",
+        "model": "Phaser 6350DP",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;CMD:Adobe PostScript 3, PCL;MDL:Phaser 6350DP;CLS:Printer;DES:Xerox Phaser 6350, Color Laser Printer, PostScript 3, Letter/A4 Size",
+                "commandset": "Adobe PostScript 3, PCL",
+                "description": "Xerox Phaser 6350, Color Laser Printer, PostScript 3, Letter/A4 Size",
+                "manufacturer": "Xerox",
+                "model": "Phaser 6350DP"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx6350dp.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 36\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 36 pages/min<p>"
+        }
+    }
+}

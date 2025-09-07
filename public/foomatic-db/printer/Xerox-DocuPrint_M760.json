@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_M760",
+        "make": "Xerox",
+        "model": "DocuPrint M760",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "url": "ftp://ftp.xerox.com/pub/",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "pcl3",
+        "comments": {
+            "en": "This printer has a PCL3 core, but very stretched so it is able to\n    control the new printhead technology. It is the same as the Sharp\n    AJ-2000 and therefore it works with the \"sharp.upp\" and\n    the \"pcl3\" drivers.<p>\n\n    The Sharp AJ-1800/1805/2000/2005 and the Xerox DocuPrint M750/M760\n    are very similar and can all be used with the same drivers. For\n    how to get the best out of these printers, see the page of the <a\n    href=\"show_printer.cgi?recnum=Sharp-AJ-2000\">Sharp\n    AJ-2000</a>.<p>"
+        }
+    }
+}

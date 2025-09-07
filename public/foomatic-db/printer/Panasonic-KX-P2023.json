@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P2023",
+        "make": "Panasonic",
+        "model": "KX-P2023",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/host/support/2023.htm",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "It will only print the left 2/3 of a page if you have\nthe text printing mode set to 16cpi. Best results\nif you leave the poweron modes to default and make\nsure it is using the epson codeset."
+        }
+    }
+}

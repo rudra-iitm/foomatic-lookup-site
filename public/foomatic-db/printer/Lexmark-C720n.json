@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C720n",
+        "make": "Lexmark",
+        "model": "C720n",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-07-30"
+        }
+    }
+}

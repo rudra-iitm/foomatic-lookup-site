@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-M1145",
+        "make": "Lexmark",
+        "model": "M1145",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark;MDL:Lexmark M1145;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark M1145"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_M1100_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 36 pages/min<p>"
+        }
+    }
+}

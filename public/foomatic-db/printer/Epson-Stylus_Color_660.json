@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_660",
+        "make": "Epson",
+        "model": "Stylus Color 660",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc660_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "I have only tested at 1440x720 with uniprint.  Printing is\nextremely slow at that resolution, but text quality is excellent.\nImages seem to be a bit posterized. I haven't played with any\n(e.g. ghostscript) settings to see if this can be fixed.\n<br>\nThe new Epson driver based on the Gimp print plugin code (stp)\nproduces somewhat better results.  It should be perfect now.<p>\n\n      Consumables/Refills: Separate black and color ink cartridges<p>"
+        }
+    }
+}

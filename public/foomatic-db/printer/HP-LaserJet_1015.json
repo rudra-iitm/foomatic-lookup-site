@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1015",
+        "make": "HP",
+        "model": "LaserJet 1015",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.shopping.hp.com/cgi-bin/hpdirect/shopping/scripts/product_detail/product_detail_view.jsp?BV_SessionID=@@@@2054406155.1109190045@@@@&BV_EngineID=ccdladddmehjidmcfngcfkmdflldfgf.0&landing=null&category=laserjets_bw&subcat1=entry_level&product_cod",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "FastRaster",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp LaserJet 1015"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Cheap, compact desktop laser printer, foldable tray for 150\n    sheets, A4/Letter/Legal, up to 14 pages/min. Somewhat faster than\n    the LaserJet 1010, \"Fastres 1200\" resolution enhancement.<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    In contrary to the LaserJet 1010/1012 this printer understands the\n    full PCL 5e and is therefore absolutely compatible to many older\n    HP laser printers as the LaserJet 4 or LaserJet 1100. So it can\n    not only be used with standard drivers as HPIJS, Gimp-Print, or\n    \"ljet4\" but also print plain text.<p><p>\n\n      Consumables/Refills: Toner and drum in one cartridge (18000 pages)<p>"
+        }
+    }
+}

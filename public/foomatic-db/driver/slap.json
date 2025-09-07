@@ -1,0 +1,45 @@
+{
+    "driver": {
+        "@id": "driver/slap",
+        "name": "slap",
+        "url": "http://www.shelldozer.im/slap/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "For this driver foomatic configuration files cannot be generated because the\ndriver only supports text printing, no bitmap graphics, and so it is not\npossible to print PostScript files."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Seiko-SLP"
+                },
+                {
+                    "id": "printer/Seiko-SLP-100"
+                },
+                {
+                    "id": "printer/Seiko-SLP-200"
+                },
+                {
+                    "id": "printer/Seiko-SLP-240"
+                },
+                {
+                    "id": "printer/Seiko-SLP_120"
+                },
+                {
+                    "id": "printer/Seiko-SLP_220"
+                },
+                {
+                    "id": "printer/Seiko-SLP_EZ30"
+                },
+                {
+                    "id": "printer/Seiko-SLP_Plus"
+                },
+                {
+                    "id": "printer/Seiko-SLP_Pro"
+                }
+            ]
+        }
+    }
+}

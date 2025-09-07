@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_693C",
+        "make": "HP",
+        "model": "DeskJet 693C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/printers/support_doc/bpd03531.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Other drivers as Gimp-Print\n    (\"gimp-print\"/\"stp\") or some of the\n    \"cdj...\" work, too.<p><p>\n\n      Consumables/Refills: HP 51629A/G (black), HP 51649A (color), C1816A (photo)<p>"
+        }
+    }
+}

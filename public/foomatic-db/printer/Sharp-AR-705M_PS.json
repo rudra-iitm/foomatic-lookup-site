@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-705M_PS",
+        "make": "Sharp",
+        "model": "AR-705M PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sh705mj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 70\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-20"
+        }
+    }
+}

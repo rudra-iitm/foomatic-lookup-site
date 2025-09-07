@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/IBM-4029_030_LaserPrinter_10",
+        "make": "IBM",
+        "model": "4029 030 LaserPrinter 10",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "ftp://ftp.lexmark.com/pub/driver/printer_utilities/4029UGB1.EXE",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "ljet3",
+        "comments": {
+            "en": "Supports PCL4, IBM PPDS, Plotter GL, and Hex Trace emulation. May work in 300 \ndpi mode with Ghostscript.\n<p>\nThere is apparently also a Postscript version or module or something.<p>\n\n      Consumables/Refills: IBM #1380200 / 1380520<p>"
+        }
+    }
+}

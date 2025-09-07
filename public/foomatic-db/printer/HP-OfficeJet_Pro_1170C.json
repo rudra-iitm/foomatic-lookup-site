@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_Pro_1170C",
+        "make": "HP",
+        "model": "OfficeJet Pro 1170C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HEWLETT-PACKARD;MDL:OFFICEJET PRO 1170C SERIES;CMD:PCL,MLC,PML,PJL;CLS:PRINTER;DES:Hewlett-Packard OfficeJet Pro 1170C Series;",
+                "commandset": "PCL,MLC,PML,PJL",
+                "description": "Hewlett-Packard OfficeJet Pro 1170C Series",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "OFFICEJET PRO 1170C SERIES"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multi-function device: Printing, scanning, copying.\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n\n    Also known to work reasonably with the \"cdj550\"\n    driver.<p>\n\n    Probably also works well with the \"pcl3\"\n    driver.<p>\n\n    Known variants: Cse, Cxi; these differ by software bundle only.<p>\n\n    Obsolete; HP suggests the OfficeJet G55.<p>\n\n      Consumables/Refills: 2 cartridges: black, color<p>"
+        }
+    }
+}

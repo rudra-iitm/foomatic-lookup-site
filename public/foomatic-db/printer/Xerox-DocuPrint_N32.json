@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_N32",
+        "make": "Xerox",
+        "model": "DocuPrint N32",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://xerox.networkprinters.com/products/N32/index.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Xerox",
+                "ppd": "PPD/Xerox/xrxn32.ppd"
+            }
+        },
+        "comments": {
+            "en": "Printer also supports PCL5e. \nGeneric PS filters do not support full printer functionality of stapling,\nmedia type support, or output destinations.<br>\nA wonderful workhorse of a printer.<br>\nAll the features should work via PJL commands.<p>\n\n      Consumables/Refills: Toner Cartridge, Fuser<p>"
+        }
+    }
+}

@@ -1,0 +1,431 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/81",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "eps9high",
+                    "arg_defval": "ev/651"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "eps9mid",
+                    "arg_defval": "ev/651"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "epson",
+                    "arg_defval": "ev/642"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "epsonc",
+                    "arg_defval": "ev/642"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/642",
+                    "ev_longname": {
+                        "en": "60x60 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "60x60dpi"
+                    },
+                    "ev_driverval": "60x60",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/643",
+                    "ev_longname": {
+                        "en": "60x180 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "60x180dpi"
+                    },
+                    "ev_driverval": "60x180"
+                },
+                {
+                    "@id": "ev/644",
+                    "ev_longname": {
+                        "en": "120x60 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "120x60dpi"
+                    },
+                    "ev_driverval": "120x60",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/645",
+                    "ev_longname": {
+                        "en": "120x180 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "120x180dpi"
+                    },
+                    "ev_driverval": "120x180"
+                },
+                {
+                    "@id": "ev/646",
+                    "ev_longname": {
+                        "en": "180x60 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "180x60dpi"
+                    },
+                    "ev_driverval": "180x60",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/647",
+                    "ev_longname": {
+                        "en": "180x180 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "180x180dpi"
+                    },
+                    "ev_driverval": "180x180",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/648",
+                    "ev_longname": {
+                        "en": "240x60 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "240x60dpi"
+                    },
+                    "ev_driverval": "240x60",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/649",
+                    "ev_longname": {
+                        "en": "240x180 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "240x180dpi"
+                    },
+                    "ev_driverval": "240x180"
+                },
+                {
+                    "@id": "ev/650",
+                    "ev_longname": {
+                        "en": "60x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "60x72dpi"
+                    },
+                    "ev_driverval": "60x72",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/651",
+                    "ev_longname": {
+                        "en": "60x216 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "60x216dpi"
+                    },
+                    "ev_driverval": "60x216"
+                },
+                {
+                    "@id": "ev/652",
+                    "ev_longname": {
+                        "en": "120x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "120x72dpi"
+                    },
+                    "ev_driverval": "120x72",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/653",
+                    "ev_longname": {
+                        "en": "120x216 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "120x216dpi"
+                    },
+                    "ev_driverval": "120x216"
+                },
+                {
+                    "@id": "ev/654",
+                    "ev_longname": {
+                        "en": "180x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "180x72dpi"
+                    },
+                    "ev_driverval": "180x72",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/655",
+                    "ev_longname": {
+                        "en": "180x216 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "180x216dpi"
+                    },
+                    "ev_driverval": "180x216",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/656",
+                    "ev_longname": {
+                        "en": "240x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "240x72dpi"
+                    },
+                    "ev_driverval": "240x72",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/657",
+                    "ev_longname": {
+                        "en": "240x216 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "240x216dpi"
+                    },
+                    "ev_driverval": "240x216"
+                },
+                {
+                    "@id": "ev/658",
+                    "ev_longname": {
+                        "en": "360x60 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "360x60dpi"
+                    },
+                    "ev_driverval": "360x60",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "epsonc"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/659",
+                    "ev_longname": {
+                        "en": "360x180 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "360x180dpi"
+                    },
+                    "ev_driverval": "360x180",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "epsonc"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/660",
+                    "ev_longname": {
+                        "en": "360x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "360x72dpi"
+                    },
+                    "ev_driverval": "360x72",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "epsonc"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/661",
+                    "ev_longname": {
+                        "en": "360x216 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "360x216dpi"
+                    },
+                    "ev_driverval": "360x216",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "eps9high"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "eps9mid"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "epsonc"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

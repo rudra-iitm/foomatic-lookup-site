@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_II",
+        "make": "Epson",
+        "model": "Stylus Color II",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc2___/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "contrib_url": "http://eunuchs.org/epson/index.html",
+        "comments": {
+            "en": "Uniprint parameter files stc2.upp, stc2_h.upp.<p>\n\n    CMY 3-color OR Black-only printing; the black ink can't mix!<p>\n\n      Consumables/Refills: dual cartridges - color/black<p>"
+        }
+    }
+}

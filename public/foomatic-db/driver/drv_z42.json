@@ -1,0 +1,34 @@
+{
+    "driver": {
+        "@id": "driver/drv_z42",
+        "name": "drv_z42",
+        "url": "http://www.openprinting.org/download/printing/drv_z42-0.4.3.tar.bz2",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "%Dgs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=bitcmyk -sPAPERSIZE=$size -r${hdpi}x600 %A%Z -sOutputFile=- - | z42_cmyk size=$size hdpi=$hdpi%B"
+        },
+        "comments": {
+            "en": "The original site of the driver <a\n    href=\"http://www.xs4all.nl/~pastolk/\">http://www.xs4all.nl/~pastolk/</a>\n    is not accessible any more. Probably this driver is not maintained\n    any more. The driver source code is re-hosted here at\n    OpenPrinting. Please use the \"Web page:\" link to download the\n    driver.<p>\n\n    Simple driver for the Lexmark Z42 and Z43, does up to 1200x600 dpi\n    in 4-ink colour (CMYK), 3-ink colour (CMY, using only the colour\n    ink cartridge), or in grayscale (using only the black ink\n    cartridge). The driver is still in an experimental state, bug\n    reports to the author and the Lexmark forum on this site are\n    welcome.<p>\n\n    The driver package contains also a tool for changing the\n    cartridges and aligning the print heads."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Compaq-IJ1200"
+                },
+                {
+                    "id": "printer/Lexmark-X73"
+                },
+                {
+                    "id": "printer/Lexmark-Z42"
+                },
+                {
+                    "id": "printer/Lexmark-Z43"
+                }
+            ]
+        }
+    }
+}

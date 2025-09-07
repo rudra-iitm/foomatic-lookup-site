@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/pentaxpj-OutputType",
+        "arg_shortname": {
+            "en": "OutputType"
+        },
+        "arg_longname": {
+            "en": "Output Type"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "110",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pentaxpj",
+                "arg_defval": "ev/pentaxpj-OutputType-Text"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pentaxpj-OutputType-Graphics",
+                    "ev_longname": {
+                        "en": "Graphics"
+                    },
+                    "ev_shortname": {
+                        "en": "Graphics"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/pentaxpj-OutputType-Text",
+                    "ev_longname": {
+                        "en": "Text"
+                    },
+                    "ev_shortname": {
+                        "en": "Text"
+                    },
+                    "ev_driverval": "-T"
+                }
+            ]
+        }
+    }
+}

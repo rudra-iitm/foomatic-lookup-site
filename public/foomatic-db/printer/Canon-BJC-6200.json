@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-6200",
+        "make": "Canon",
+        "model": "BJC-6200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.canon-europa.com/cgi-bin/parser.pl?page=products&product=863&prodtype=23&subprodtype=24",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "BJL,BJRaster3,BSCC,TXT01,BJSca",
+                "description": "Canon BJC-6200",
+                "manufacturer": "Canon",
+                "model": "BJC-6200"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "C't magazine reports of the stp driver 4.0beta with this printer:\n \nStp gets rated 'sufficient' for photo quality. \"The test photo was\nprinted in decent quality, generally correct colors and a sharpness that\nmade us happy. The somewhat coarse looking raster and the light stripe\nartifacts however drop the rating to 'sufficient'\".\n<p>\nThe STP driver printed our test letter too far down on the page. Also\nthe text page was quite dark and with a green tint, but nicely rastered\nand clean text. \"If you do not need grey areas, you may want to use this\ndriver [stp].\n \n...this is about what one would expect; the Canon support in stp is only just beginning."
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E120",
+        "make": "Lexmark",
+        "model": "E120",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "NPAP, PJL",
+                "description": "Lexmark E120",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark E120"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03<p>\n\n      You can use this printer using the PCL 5e language. Pressing the\n      \"Print\" button on the printer (when the printer is idle) you\n      will get a technical sheet regarding the printer's internal\n      settings.<p>"
+        }
+    }
+}

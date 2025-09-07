@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-7004",
+        "make": "Canon",
+        "model": "BJC-7004",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/bjc/bjc7004/index.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "bjc800",
+        "comments": {
+            "en": "Works at 600x600.<p>\n\nTry also to the\n\"<a href=\"http://www.openprinting.org/show_driver.cgi?driver=stp\">stp</a>\"\ndriver choosing the Canon BJC 7000 or 7100 as printer model."
+        }
+    }
+}

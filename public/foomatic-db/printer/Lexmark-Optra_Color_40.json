@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Color_40",
+        "make": "Lexmark",
+        "model": "Optra Color 40",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/OptraColor/40.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL 5 Emulation, PostScript Le",
+                "description": "Lexmark OptraColor 40",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark OptraColor 40"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also groks PCL 5c.\n<br>Model 40n includes network interface and 12M RAM.\n<br>CMYK or CMYKcm color printing.\n<br>Colors are a bit muddy on uncoated paper, but on good coated paper photos print wonderfully.\n<br>Print head loading/alignment/etc requires <a href=\"/download/printing/cartutil.c\">special software</a> or better, <a href=\"http://pup.sourceforge.net/\">this GUI tool</a>.\n<br>I have a Gimp patch to support color model and print quality selection.\n<br>Uses generic 72-pin FPM DRAM SIMM (EDO also works);  you'll want at least 16BM on top of the base 4MB .  If you want 32MB, one user reports that a \"32MB EDO, 72pin SIMM 60ns 8x32 2K\" module works for him.\n<br>I (Grant) own this printer and am very happy with it.\n<br>This printer has been discontinued, but keeps turning up on closeout at variosu vendors like buy.com clearance, ebay, egghead, etc.<p>\n\n      Consumables/Refills: CMY and K, or CMY and Kcm; two cartridges<p>"
+        }
+    }
+}

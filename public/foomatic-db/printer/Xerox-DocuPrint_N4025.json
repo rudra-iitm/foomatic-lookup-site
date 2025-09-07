@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_N4025",
+        "make": "Xerox",
+        "model": "DocuPrint N4025",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;MDL:Xerox DocuPrint N4025;",
+                "manufacturer": "Xerox",
+                "model": "Xerox DocuPrint N4025"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrxn4025.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 40 pages/min<p>"
+        }
+    }
+}

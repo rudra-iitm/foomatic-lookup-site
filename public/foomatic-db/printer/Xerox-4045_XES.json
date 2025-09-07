@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-4045_XES",
+        "make": "Xerox",
+        "model": "4045 XES",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.xerox.com",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "xes"
+    }
+}

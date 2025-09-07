@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Olivetti-JP470",
+        "make": "Olivetti",
+        "model": "JP470",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "III+"
+            }
+        },
+        "functionality": "A",
+        "driver": "cdj500",
+        "comments": {
+            "en": "I have never traied yet to print using linux.\nI have just used this printer with windows 95 untill now.\nIt's the first time that I install Linux Mandrake 7.0!!!!!\nSorry...I'm very ignorant.... Sob,Sob..."
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Canon-MultiPASS_C3500",
+        "make": "Canon",
+        "model": "MultiPASS C3500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/multi/c3500/",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MultiPass 2.1",
+                "description": "Canon MultiPASS C3500",
+                "manufacturer": "Canon",
+                "model": "MultiPASS C3500"
+            }
+        },
+        "functionality": "D",
+        "driver": "bjc600",
+        "comments": {
+            "en": "Using Ghostscript 5.1, can get\nreasonable 360x360 output using the\n'bjc600' driver.  No support is\navailable for scanning or faxing\nvia SANE or any fax program I've\nyet seen for Linux\n\nNote that you do have to configure\nthe printer to run in 'DOS\nemulation' mode in order to get it\nto print properly through\nGhostscript.\n\nFrom speaking with several different\nCanon representatives, Canon is\ntaking the position that it \"never\nclaimed to support any operating\nsystem other than Windows 95/98/NT\nin [their] marketing literature.\"\nand refuses to issue any information\nto developers in order to have\nsuitable drivers developed for this\nprinter (even knowing that they'd\nbe having the development done at\nzero cost to themselves).<p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

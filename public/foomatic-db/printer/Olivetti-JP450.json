@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Olivetti-JP450",
+        "make": "Olivetti",
+        "model": "JP450",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "djet500"
+    }
+}

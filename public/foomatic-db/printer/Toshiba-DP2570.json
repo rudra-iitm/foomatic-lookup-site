@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-DP2570",
+        "make": "Toshiba",
+        "model": "DP2570",
+        "mechanism": {
+            "laser": null
+        },
+        "url": "http://www.eid.toshiba.com/support/drivers/KR-7015.shtml",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "The printer does support Postscript 2 to some extent.  The current driver release does not contain a ppd, however older versions of the driver intended for nt4 and early windows 2000 releases do contain a functional ppd file."
+        }
+    }
+}

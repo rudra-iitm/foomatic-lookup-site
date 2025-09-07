@@ -1,0 +1,56 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-3450CN",
+        "make": "Brother",
+        "model": "HL-3450CN",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl3450cn/hl3450cn_ove.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother HL-3450CN series;",
+                "manufacturer": "Brother",
+                "model": "Brother HL-3450CN series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BR3450CN_GPL.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Color laser printer, A3/13x19 wide format, PCL 5c, PCL 6,\n    PostScript Level 3, 6 ppm colour, 24 ppm grayscale. 10/100 MBit\n    ethernet connection.<p>\n\n    Best results are probably obtained when the printer is used in\n    PostScript mode with a PPD file from the printer's driver\n    CD.<p>\n\n    <p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

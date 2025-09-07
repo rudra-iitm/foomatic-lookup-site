@@ -1,0 +1,100 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-Dither",
+        "arg_shortname": {
+            "en": "Dither"
+        },
+        "arg_longname": {
+            "en": "Dithering"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "140",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-dither %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "ev/ppmtomd-Dither-Halftone"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-Dither-Black",
+                    "ev_longname": {
+                        "en": "Monochrome printing, standard black cartridge"
+                    },
+                    "ev_shortname": {
+                        "en": "Black"
+                    },
+                    "ev_driverval": "Black"
+                },
+                {
+                    "@id": "ev/ppmtomd-Dither-EconoBlack",
+                    "ev_longname": {
+                        "en": "Monochrome printing, re-usable economy black cartr"
+                    },
+                    "ev_shortname": {
+                        "en": "EconoBlack"
+                    },
+                    "ev_driverval": "EconoBlack"
+                },
+                {
+                    "@id": "ev/ppmtomd-Dither-FloydSteinberg",
+                    "ev_longname": {
+                        "en": "Floyd-Steinberg (not recommended for MicroDry)"
+                    },
+                    "ev_shortname": {
+                        "en": "FloydSteinberg"
+                    },
+                    "ev_driverval": "FloydSteinberg"
+                },
+                {
+                    "@id": "ev/ppmtomd-Dither-Halftone",
+                    "ev_longname": {
+                        "en": "Halftone"
+                    },
+                    "ev_shortname": {
+                        "en": "Halftone"
+                    },
+                    "ev_driverval": "Halftone"
+                },
+                {
+                    "@id": "ev/ppmtomd-Dither-MultiColour",
+                    "ev_longname": {
+                        "en": "More than 4 colors, colors one page at a time"
+                    },
+                    "ev_shortname": {
+                        "en": "MultiColour"
+                    },
+                    "ev_driverval": "MultiColour"
+                },
+                {
+                    "@id": "ev/ppmtomd-Dither-None",
+                    "ev_longname": {
+                        "en": "No dithering"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "None"
+                },
+                {
+                    "@id": "ev/ppmtomd-Dither-Square",
+                    "ev_longname": {
+                        "en": "Square (experimental, not recommended)"
+                    },
+                    "ev_shortname": {
+                        "en": "Square"
+                    },
+                    "ev_driverval": "Square"
+                }
+            ]
+        }
+    }
+}

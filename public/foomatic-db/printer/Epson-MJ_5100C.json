@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-MJ_5100C",
+        "make": "Epson",
+        "model": "MJ 5100C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Pro XL+.<p>\n\n    The best quality you should get with\n    \"gimp-print\".<p>\n\n    Referring to stcolor: Not as good as native NT4 driver on\n    images, but quite useable; don't forget to enable weaving;\n    Uniprint works also. <p><p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LN17",
+        "make": "DEC",
+        "model": "LN17",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.digital.com/printers/srvcs/prt_docs_ln17.html",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "An extended PCL command to engage 1200dpi raster mode is documented in the user\nmanual at the above website (website not available any more, anyone knows an\nalternative one?).\n<br>It should be trivial to extend the ljet4 driver to support this if it\ndoesn't already.\n<br>The LN17ps model supports Postscript."
+        }
+    }
+}

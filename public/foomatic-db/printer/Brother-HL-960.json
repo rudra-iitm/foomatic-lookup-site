@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-960",
+        "make": "Brother",
+        "model": "HL-960",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e"
+    }
+}

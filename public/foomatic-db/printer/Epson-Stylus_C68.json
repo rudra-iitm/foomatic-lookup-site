@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C68",
+        "make": "Epson",
+        "model": "Stylus C68",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C68",
+                "manufacturer": "EPSON",
+                "model": "Stylus C68"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint"
+    }
+}

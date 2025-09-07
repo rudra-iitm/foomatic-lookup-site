@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-MC_7000",
+        "make": "Epson",
+        "model": "MC 7000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Pro 7500.<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/NEC-Silentwriter_95f",
+        "make": "NEC",
+        "model": "Silentwriter 95f",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": null
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "This printer has 3 input ports: Centronics parallel, serial,\n    Appletalk.<p>\n\n    The MC68000 processor is supposed to recognize which input needs\n    attending. I have only the parallel port hooked up.<p>\n\n    The parallel port seemed to work fine when the BIOS settings for\n    it were SPP instead of anything fancy, like EPP or ECP.<p>\n\n    My setup was Linux 2.2.5 (a la SuSE 6.1).<p>\n\n    My /etc/printcap lacked a trailing colon after the sh\n    specification which caused lpd not to work until it was\n    fixed.<p>\n\n    It has both PostScript and PCL emulation modes, but I only use the\n    PostScript mode.<p><p>\n\n      Consumables/Refills: toner cartridge<p>"
+        }
+    }
+}

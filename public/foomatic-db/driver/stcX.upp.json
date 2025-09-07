@@ -1,0 +1,38 @@
+{
+    "driver": {
+        "@id": "driver/stcX.upp",
+        "name": "stcX.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 720dpi"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc.upp, stc_h.upp, stc_l.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_Color"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_440"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_460"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_I"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_PRO"
+                }
+            ]
+        }
+    }
+}

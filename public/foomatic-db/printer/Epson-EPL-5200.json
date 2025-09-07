@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5200",
+        "make": "Epson",
+        "model": "EPL-5200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.epson.com",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3"
+    }
+}

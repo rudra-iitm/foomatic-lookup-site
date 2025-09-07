@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-Phaser_350",
+        "make": "Tektronix",
+        "model": "Phaser 350",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.officeprinting.xerox.com/products/Z350/sprt.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "This printer works well with CUPS. It is a Postscript printer."
+        }
+    }
+}

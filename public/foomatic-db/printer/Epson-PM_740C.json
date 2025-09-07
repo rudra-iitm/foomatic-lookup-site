@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_740C",
+        "make": "Epson",
+        "model": "PM 740C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Probably japanese equivalent of the Epson Stylus Photo 900.<p>\n\n    6-color CMYKcm printing, roll paper feeder, Tray for direct\n    printing on CDs, USB and parallel port.<p>\n\n    The printer is compatible to the Epson Stylus Photo 915, so choose\n    this model (using the Gimp-Print driver) as long as the Epson PM\n    740C is not explicitly supported by Gimp-Print.<p>"
+        }
+    }
+}

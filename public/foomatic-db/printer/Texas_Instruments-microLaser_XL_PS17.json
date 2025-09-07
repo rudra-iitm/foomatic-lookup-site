@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Texas_Instruments-microLaser_XL_PS17",
+        "make": "Texas Instruments",
+        "model": "microLaser XL PS17",
+        "url": "ftp://ftp.tallygenicom.com/pub/genicom/docs/ti/dsTI-mLXL.pdf",
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

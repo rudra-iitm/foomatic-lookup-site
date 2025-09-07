@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LQ-500",
+        "make": "Epson",
+        "model": "LQ-500",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "180"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/dotmatrix/lq500_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "I configured it using the RedHat\n\"printtool\" program.  I selected\n\"Epson Dot Matrix, 24 pin\" and the\n180x180 resolution output.  360x180\nalso works, but it's slower and\ndoesn't look much better.<p>\n\n      Consumables/Refills: ribbon cartridge ($5)<p>"
+        }
+    }
+}

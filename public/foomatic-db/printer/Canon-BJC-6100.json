@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-6100",
+        "make": "Canon",
+        "model": "BJC-6100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.canon.co.uk/cgi-bin/parser.pl?page=products&product=391&prodtype=9&subprodtype=35&range=",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "The optional scanner cartridge does not currently work with free software.\n<br>Sold outsite the US - yes, available in the UK.\n<br>I only have the stp team's report on this printer; someone who actually has one should offer a report.<p>\n\n      Consumables/Refills: two cartridges with individual tanks<p>"
+        }
+    }
+}

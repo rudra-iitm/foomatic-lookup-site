@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Oce-9050",
+        "make": "Oce",
+        "model": "9050",
+        "mechanism": {
+            "impact": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null
+        },
+        "functionality": "A",
+        "driver": "oce9050",
+        "comments": {
+            "en": "The information about this printer shown here is only based in the\n    source code of the \"oce9050\" Ghostscript driver. I have\n    only entered it to obtain foomatic configuration files for this\n    printer. Any information about this printer is welcome."
+        }
+    }
+}

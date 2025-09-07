@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_N4512PS",
+        "make": "Xerox",
+        "model": "DocuPrint N4512PS",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.officeprinting.xerox.com/cgi-bin/product.pl?product=X4512",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Xerox DocuPrint N4512 with PostScript module. 12 pages/min, 15\n      sec until the first page comes out, 2 x 250 sheet, max. page\n      size is Legal, built-in duplex unit. network card (included in\n      \"N\" model), additional paper trays, envelope feeder\n      available as options. 2 MB standard, expandable to 50 MB with\n      4MB or 16MB 60/70ns EDO or FastPage SIMMs.<br>\n\n      Understands PostScript, PCL 5e, and PJL, so there is no problem\n      to use it under free operating systems. one can use also use PJL\n      utilities (as <a\n      href=\"http://pup.sourceforge.net\">PUP</a>) to\n      change default settings. There is also the proprietary printing\n      software \"CentreWare\" (for LPD or LPRng systems, see\n      section for downloadable software, platform \"UNIX\" on\n      the printer's web page).<p>\n\n      Consumables/Refills: Toner Cartridge (15000 pages), Drum Cartridge (30000 pages)<p>"
+        }
+    }
+}

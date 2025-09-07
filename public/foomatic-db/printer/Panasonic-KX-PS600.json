@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-PS600",
+        "make": "Panasonic",
+        "model": "KX-PS600",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "?"
+            }
+        },
+        "functionality": "D",
+        "comments": {
+            "en": "Probably PCL"
+        }
+    }
+}

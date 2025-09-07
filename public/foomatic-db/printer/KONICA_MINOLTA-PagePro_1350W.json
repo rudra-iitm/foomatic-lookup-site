@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-PagePro_1350W",
+        "make": "KONICA MINOLTA",
+        "model": "PagePro 1350W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "NA",
+                "description": "KONICA MINOLTA PP1350W",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "PP1350W"
+            }
+        },
+        "functionality": "B",
+        "driver": "min12xxw",
+        "comments": {
+            "en": "Low cost laser."
+        }
+    }
+}

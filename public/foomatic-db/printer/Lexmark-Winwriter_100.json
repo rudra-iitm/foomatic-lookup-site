@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Winwriter_100",
+        "make": "Lexmark",
+        "model": "Winwriter 100",
+        "mechanism": {
+            "inkjet": null
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "F"
+    }
+}

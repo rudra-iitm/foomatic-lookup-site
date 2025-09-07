@@ -1,0 +1,57 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/pjl-Samsung-ML-1650-AllowReprint",
+        "arg_shortname": {
+            "en": "AllowReprint"
+        },
+        "arg_longname": {
+            "en": "Allow use of 'Reprint' button"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET REPRINT=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "printer": "printer/Samsung-ML-1650",
+                    "arg_defval": "ev/pjl-Samsung-ML-1650-Yes"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/Samsung-ML-1651N",
+                    "arg_defval": "ev/pjl-Samsung-ML-1650-Yes"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pjl-Samsung-ML-1650-No",
+                    "ev_longname": {
+                        "en": "No"
+                    },
+                    "ev_shortname": {
+                        "en": "No"
+                    },
+                    "ev_driverval": "OFF"
+                },
+                {
+                    "@id": "ev/pjl-Samsung-ML-1650-Yes",
+                    "ev_longname": {
+                        "en": "Yes"
+                    },
+                    "ev_shortname": {
+                        "en": "Yes"
+                    },
+                    "ev_driverval": "ON"
+                }
+            ]
+        }
+    }
+}

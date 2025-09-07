@@ -1,0 +1,32 @@
+{
+    "driver": {
+        "@id": "driver/dplix",
+        "name": "dplix",
+        "url": "http://www.openprinting.org/download/printing/dplix/",
+        "obsolete": {
+            "@replace": "pxldpl"
+        },
+        "supplier": "dplix project",
+        "thirdpartysupplied": null,
+        "license": "GPL",
+        "shortdescription": {
+            "en": "Driver for the Dell 3010cn color laser printer (DPL language)"
+        },
+        "functionality": {
+            "maxresx": "600",
+            "maxresy": "600",
+            "color": null
+        },
+        "execution": {
+            "cups": null
+        },
+        "comments": {
+            "en": "From original \"INSTALL\" file:<p>\n\n    <i>This driver is for the Dell 3010cn color laser\n    printer. It's basically a rebadged Fuji-Xerox printer, with some\n    fairly advanced features. Of course, none of the features it has\n    are tied to the Windows(tm) OS in any way, shape, or form. But,\n    due to the short-sightedness of all the companies involved with\n    the manufacture of this printer, it was presented as such even\n    though something as trivial as documentation would have gone a\n    long way towards redeeming this particular oversight. But enough\n    ranting, we have mended the situation with the present\n    driver. :-)</i><p>\n\n    The driver is still in a very basic state and has several TODOs,\n    but it makes the printer at least working.<p>\n\n    As the PPD file is contained in the driver package we will not\n    provide PPD files here on OpenPrinting.<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Dell-3010cn"
+            }
+        }
+    }
+}

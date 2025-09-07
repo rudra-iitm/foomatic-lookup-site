@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_630C",
+        "make": "HP",
+        "model": "DeskJet 630C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 630C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 630C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This printer comes only with a 3-colour (CMY) cartridge. So if you\n    do not buy an additional black cartridge text printing gets slow\n    and expensive.<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Other drivers as Gimp-Print\n    (\"gimp-print\"/\"stp\") or some of the\n    \"cdj...\" work, too.<p><p>\n\n      Consumables/Refills: HP C6614AN (black), HP 51649A (color), C1816A (photo)<p>"
+        }
+    }
+}

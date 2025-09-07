@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6115MFP",
+        "make": "Xerox",
+        "model": "Phaser 6115MFP",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://www.office.xerox.com/multifunction-printer/color-multifunction/phaser-6115mfp/enus.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2lava",
+        "comments": {
+            "en": "The Xerox Phaser 6115MFP is a color multifunction printer with a 2007\n\tstreet price of $799 USD.\n\n\tThis printer is supported by the foo2lava open software printer\n\tdriver.<p>\n\n      Consumables/Refills: Toner Cyan (4500 prints) - $160\n\t\tToner Magenta (4500 prints) - $160\n\t\tToner Yellow (4500 prints) - $160\n\t\tToner Black (4500 prints) - $100\n\t\tImaging Unit (20000 prints) - $160 Part numbers: 113R00693, \n\t    113R00694, \n\t    113R00695, \n\t    113R00692, \n\t    113R00691<p>"
+        }
+    }
+}

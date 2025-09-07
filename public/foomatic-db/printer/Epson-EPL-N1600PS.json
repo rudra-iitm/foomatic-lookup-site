@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-N1600PS",
+        "make": "Epson",
+        "model": "EPL-N1600PS",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/epl5800/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "PostScript version of the EPL-N1600<p><p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Dell-1110",
+        "make": "Dell",
+        "model": "1110",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.dell.com",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Dell;CMD:GDI;MDL:Laser Printer 1110;CLS:PRINTER;MODE:GDI;STATUS:IDLE;",
+                "manufacturer": "Dell",
+                "model": "Laser Printer 1110"
+            }
+        },
+        "functionality": "A",
+        "driver": "splix",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gdi"
+                },
+                {
+                    "id": "splix"
+                }
+            ]
+        }
+    }
+}

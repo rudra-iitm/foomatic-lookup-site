@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/Lanier-SP_5200DN",
+        "make": "Lanier",
+        "model": "SP 5200DN",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lanier.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:LANIER;MDL:SP 5200DN;CMD:POSTSCRIPT,PDF;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-Lanier",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Lanier",
+                    "ppd": "PPD/Lanier/PS/Lanier-SP_5200DN_PS.ppd"
+                },
+                {
+                    "id": "PDF-Lanier",
+                    "ppd": "PPD/Lanier/PDF/Lanier-SP_5200DN_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 47."
+        }
+    }
+}

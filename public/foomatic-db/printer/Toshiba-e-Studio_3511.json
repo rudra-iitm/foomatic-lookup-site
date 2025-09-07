@@ -1,0 +1,50 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-e-Studio_3511",
+        "make": "Toshiba",
+        "model": "e-Studio 3511",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.eid.toshiba.com/support/drivers/index.shtml",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "3"
+            },
+            "hpgl2": null,
+            "tiff": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "TOSHIBA e-STUDIO3511"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Toshiba",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Toshiba",
+                    "ppd": "PPD/Toshiba/TOSHIBA_EST4511_451c_CUPS.ppd"
+                }
+            ]
+        }
+    }
+}

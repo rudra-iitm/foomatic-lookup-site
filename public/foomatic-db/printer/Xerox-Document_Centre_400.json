@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Document_Centre_400",
+        "make": "Xerox",
+        "model": "Document Centre 400",
+        "mechanism": {
+            "laser": null
+        },
+        "url": "http://www.xerox.com",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e"
+    }
+}

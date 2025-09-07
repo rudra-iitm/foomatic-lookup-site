@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_980",
+        "make": "Epson",
+        "model": "Stylus Color 980",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESC/P2",
+                "manufacturer": "Epson",
+                "model": "Stylus Color 980"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Works perfectly with Gimp-Print.<p>"
+        }
+    }
+}

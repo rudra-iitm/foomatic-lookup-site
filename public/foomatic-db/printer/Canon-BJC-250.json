@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-250",
+        "make": "Canon",
+        "model": "BJC-250",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "BJ,LQ,BJL,BJRaster,BSCC",
+                "description": "Canon BJC-250",
+                "manufacturer": "Canon",
+                "model": "BJC-250"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint"
+    }
+}

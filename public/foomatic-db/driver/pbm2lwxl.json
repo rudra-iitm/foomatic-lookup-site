@@ -1,0 +1,52 @@
+{
+    "driver": {
+        "@id": "driver/pbm2lwxl",
+        "name": "pbm2lwxl",
+        "url": "http://www.freelabs.com/~whitis/software/pbm2lwxl/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -sDEVICE=pbm -sOutputFile=- -q -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE%A -dPARANOIDSAFER - -c quit | pnmflip -cw | pnmnoraw | pbm2lwxl"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Avery-Personal_Label_Printer"
+                },
+                {
+                    "id": "printer/Avery-Personal_Label_Printerplus"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-ASCIIplus"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-ASCII_250"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-EL40"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-EL60"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-LabelWriter_II"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-LabelWriter_XL"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-LabelWriter_XLplus"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-SE250"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-SE250plus"
+                },
+                {
+                    "id": "printer/Dymo-CoStar-Turbo"
+                }
+            ]
+        }
+    }
+}

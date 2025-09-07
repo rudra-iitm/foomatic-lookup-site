@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1100",
+        "make": "HP",
+        "model": "LaserJet 1100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PJL",
+                "description": "HP LaserJet 1100 Printer",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 1100"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "Overall, a nice, pretty, cheap ($400+ US) laser.  Comes in a\n    variety of bundlings; i.e. 1100se, 1100xi.)  This printer can be\n    converted to an 1100A with a scanner attachment (list US$150).\n    For the status of the scanner see the <a\n    href=\"show_printer.cgi?recnum=HP-LaserJet_1100A\">1100A</a>.\n    This printer is slow with Ghostscript versions prior to\n    5.50.<p>\n    \n    For basic printing functionality use the <a\n    href=\"http://hplipopensource.com/\">HPIJS driver\n    </a>. For advanced functionality such as printer status and\n    maintenance features, use the <a\n    href=\"http://hplipopensource.com/\"> HPLIP driver</a>\n    (which includes HPIJS).<p>\n\n    Unfortunately, this printer has a little hardware problem: The\n    paper separation pad hardens with the time and the printer pulls\n    in several sheets of paper at once. HP is aware of this and\n    offered a kit to fix this without needing to disassemble the\n    printer for free. Unfortunately, HP discontinued this kit. You can\n    perhaps get these kits from other suppliers online for around 10\n    USD.<p>\n\n    The HP LaserJet 1100 has the same engine as the Canon LBP-320,\n    LBP-320 PRO, and LBP-350, and these have the same hardware\n    problem. It is quite feasible to solve this by gluing a 0.5mm\n    rubber strip over the hardened grey separation pad.<p><p>\n\n      Consumables/Refills: Cartridge containing toner and drum in one unit<p>"
+        }
+    }
+}

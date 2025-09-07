@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_9050_MFP",
+        "make": "HP",
+        "model": "LaserJet 9050 MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_G85",
+        "make": "HP",
+        "model": "OfficeJet G85",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:OfficeJet G85;CMD:MLC,PCL,PML,SCL;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard OfficeJet G Series;",
+                "commandset": "MLC,PCL,PML,SCL",
+                "description": "Hewlett-Packard OfficeJet G Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "OfficeJet G85"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multifunction device: print/copy/scan/fax.<p>\n\n    Same as an <a\n    href=\"show_printer.cgi?recnum=HP-OfficeJet_G55\">OfficeJet\n    G55</a>, but with an automatic document feeder (ADF) and fax\n    capability.  See that printer's entry for scanning and other\n    driver information.<p>\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E350d",
+        "make": "Lexmark",
+        "model": "E350d",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG: Lexmark International ;MDL: Lexmark E350d",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark E350d"
+            },
+            "parallel": {
+                "commandset": "PCL 6 Emulation, PostScript Le",
+                "description": "Lexmark E350d",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark E350d"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_E350d.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 35\n\n      Foomatic entry made by PPDtoXML T/G 0.05\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 35 pages/min<p>"
+        }
+    }
+}

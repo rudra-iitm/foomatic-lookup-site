@@ -1,0 +1,25 @@
+{
+    "driver": {
+        "@id": "driver/pbm2ppa",
+        "name": "pbm2ppa",
+        "url": "http://sourceforge.net/project/?group_id=1322",
+        "obsolete": {
+            "@replace": "pnm2ppa"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "Old grayscale driver for HP DeskJet PPA printers\n<p>\nPlease use the \"pnm2ppa\" driver, it supports both grayscale and colour printing."
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/HP-DeskJet_820C",
+                "comments": {
+                    "en": "bw only"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-TX133_TX135_Series",
+        "make": "Epson",
+        "model": "TX133 TX135 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:TX133 TX135;CLS:PRINTER;DES:EPSON TX133 TX135",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON TX133 TX135",
+                "manufacturer": "EPSON",
+                "model": "TX133 TX135"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201101w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201101w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

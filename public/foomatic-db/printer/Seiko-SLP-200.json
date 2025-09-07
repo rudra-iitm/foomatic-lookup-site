@@ -1,0 +1,16 @@
+{
+    "printer": {
+        "@id": "printer/Seiko-SLP-200",
+        "make": "Seiko",
+        "model": "SLP-200",
+        "url": "http://www.seickosmart.com/products/slp200.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "slap",
+        "comments": {
+            "en": "Not a postscript or pcl driver; slap only prints text in various fonts.<p>\n\n      Consumables/Refills: None; uses Seiko Instruments thermal labels<p>"
+        }
+    }
+}

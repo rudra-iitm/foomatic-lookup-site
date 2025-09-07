@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LIPS-IIplus",
+        "make": "Canon",
+        "model": "LIPS-II+",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "240"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "lips2p",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

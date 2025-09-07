@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Fujifilm-Printpix-CX-400",
+        "make": "Fujifilm",
+        "model": "Printpix-CX-400",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "310",
+                    "y": "310"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Dye-sublimation photo printer, full 24-bit color depth (256 levels\n    per CMY color component), full-bleed (border-less). 310dpi,\n    4in/10cm width roll paper (max. 4x7in/18x10cm). Produces\n    laboratory-like photos. Does not print on normal paper.<p>\n\n    Memory card reader and 1.8inch LCD for printing from the camera's\n    memory cards.<p>\n\n    TV connector, so the printer can also be used to show digital\n    photos without PC.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

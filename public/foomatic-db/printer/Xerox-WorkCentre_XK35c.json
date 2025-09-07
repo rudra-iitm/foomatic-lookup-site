@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_XK35c",
+        "make": "Xerox",
+        "model": "WorkCentre XK35c",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=XK35c&cat=%2fEquipment%2fPrinting%2fDesktop&trk=/Printing/Desktop/XK35c/ove",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "lex5700",
+        "comments": {
+            "en": "Multifunction device, based on Lexmark printing mechanism.\n      <p>\n\n      Try these drivers: lm5000, lxm5700, lxm3200, pbm2l2030, pbm2l7k.\n      <p>\n\n      The Lexmark 5700 driver runs it in bw only; Mike Maddux offered\n      a report of this working, even \"through\" a parallel\n      Zip drive.<p>\n\n      Consumables/Refills: Color and black cartridge<p>"
+        }
+    }
+}

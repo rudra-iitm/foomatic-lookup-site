@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-4310SP",
+        "make": "Canon",
+        "model": "BJC-4310SP",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "bjc600",
+        "comments": {
+            "en": "Colour doesn't work for less than 24 bits/pixel.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

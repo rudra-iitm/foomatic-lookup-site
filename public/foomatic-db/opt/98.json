@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/98",
+        "arg_shortname": {
+            "en": "Unidirectional"
+        },
+        "arg_longname": {
+            "en": "Head motion"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dUnidirectional"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "stcolor",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "Bidirectional"
+        }
+    }
+}

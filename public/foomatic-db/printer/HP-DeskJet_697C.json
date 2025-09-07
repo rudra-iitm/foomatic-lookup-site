@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_697C",
+        "make": "HP",
+        "model": "DeskJet 697C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 690C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 690C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Older user comments:<p>\n\n    Using LPRng with apsfilter as the \"if\".  Send all non-ps\n    documents through a2ps, and then everything out through\n    Ghostscript. Still need to setup color printcap entries (I\n    haven't had a need yet) but I don't foresee any problems\n    with this.<p>\n\n    Hardware only does 600x300 in color.<p>\n\n    So this printer should work with some or all of the\n    \"cdj670\", \"cdj550\", or\n    \"pcl3\"/\"hpdj\" drivers. The very finest\n    printing modes are probably not supported, nor is head\n    alignment.<p><p>\n\n      Consumables/Refills: HP51649A (color); HP51629A (black)<p>"
+        }
+    }
+}

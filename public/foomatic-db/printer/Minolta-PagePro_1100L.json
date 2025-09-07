@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_1100L",
+        "make": "Minolta",
+        "model": "PagePro 1100L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Unlike its big brother, the PagePro 1100, the 1100L is strictly a\n    Windows GDI printer.  It is unlikely that there will ever be Linux\n    drivers for the PagePro 1100L.<p>\n\n    Perhaps one can get it to work with the \"<a\n    href=\"show_driver.cgi?driver=pbmtozjs\">pbmtozjs</a>\"\n    driver, in its source code \"Minolta\" is mentioned. Please post on\n    the Minolta forum on this site if you make the printer working\n    this way.<p>"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-1020_Business",
+        "make": "Lexmark",
+        "model": "1020 Business",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "pcl3",
+        "comments": {
+            "en": "This business edition, model 4078-001, has PCL.\n<br>Known to print fine at 300dpi, black-only.\n<br>Works in color, too.\n<br>Note that the non-business 1020 does  not , and is a paperweight.\n<br>This printer is much slower in PCL mode than in proprietary mode.<p>\n\n      Consumables/Refills: color OR black cartridge<p>"
+        }
+    }
+}

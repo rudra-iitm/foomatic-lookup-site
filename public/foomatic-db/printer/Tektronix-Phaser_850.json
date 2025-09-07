@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-Phaser_850",
+        "make": "Tektronix",
+        "model": "Phaser 850",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Built-in Ethernet.  Print to it as if it were a *nix box, spool name ps.<p>\n\n      Consumables/Refills: Wax Blocks<p>"
+        }
+    }
+}

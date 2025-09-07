@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_935",
+        "make": "Epson",
+        "model": "Stylus Photo 935",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo 935",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 935"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6-color 4-pl CMYKcm printing.<br>\n\n    Roll paper feeder, USB or Parallel."
+        }
+    }
+}

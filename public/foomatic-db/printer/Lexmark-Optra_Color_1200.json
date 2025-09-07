@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Color_1200",
+        "make": "Lexmark",
+        "model": "Optra Color 1200",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/laser/OptraColor/1200.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "CMYK color printing.\n<br>Also speaks PCL 5c and 6.\n<br>Model 1200n includes network port.<p>\n\n      Consumables/Refills: 4 separate toner cartridges, black and color photoconductor roll<p>"
+        }
+    }
+}

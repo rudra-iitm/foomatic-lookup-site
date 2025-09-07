@@ -1,0 +1,55 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-4070CDW",
+        "make": "Brother",
+        "model": "HL-4070CDW",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother HL-4070CDW;",
+                "manufacturer": "Brother",
+                "model": "Brother HL-4070CDW"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BR4070_2_GPL.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Maximum paper width: 8.7 inches / 22.0 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

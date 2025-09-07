@@ -1,0 +1,165 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/78",
+        "arg_shortname": {
+            "en": "ColorMode"
+        },
+        "arg_longname": {
+            "en": "Color Mode"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dBitsPerPixel=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "cdj500",
+                    "arg_defval": "ev/78-3"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj550",
+                    "arg_defval": "ev/78-3"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "declj250",
+                    "arg_defval": "ev/78-3"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "dj505j",
+                    "arg_defval": "ev/78-8"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "dnj650c",
+                    "arg_defval": "ev/78-3"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pj",
+                    "arg_defval": "ev/78-3"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pjxl",
+                    "arg_defval": "ev/78-3"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pjxl300",
+                    "arg_defval": "ev/78-3"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/78-1",
+                    "ev_longname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_shortname": {
+                        "en": "BlackAndWhite"
+                    },
+                    "ev_driverval": "1",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "driver": "cdj550"
+                        }
+                    }
+                },
+                {
+                    "@id": "ev/78-16",
+                    "ev_longname": {
+                        "en": "Floyd-Steinberg Color (Low Memory)"
+                    },
+                    "ev_shortname": {
+                        "en": "FloydSteinbergColorLowMem"
+                    },
+                    "ev_driverval": "16"
+                },
+                {
+                    "@id": "ev/78-24",
+                    "ev_longname": {
+                        "en": "Floyd-Steinberg Color"
+                    },
+                    "ev_shortname": {
+                        "en": "FloydSteinbergColor"
+                    },
+                    "ev_driverval": "24"
+                },
+                {
+                    "@id": "ev/78-3",
+                    "ev_longname": {
+                        "en": "Normal Color"
+                    },
+                    "ev_shortname": {
+                        "en": "NormalColor"
+                    },
+                    "ev_driverval": "3"
+                },
+                {
+                    "@id": "ev/78-32",
+                    "ev_longname": {
+                        "en": "Best Quality Color"
+                    },
+                    "ev_shortname": {
+                        "en": "BestQualityColor"
+                    },
+                    "ev_driverval": "32",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "cdj500"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "declj250"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "dj505j"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "dnj650c"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pj"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pjxl"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pjxl300"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/78-8",
+                    "ev_longname": {
+                        "en": "Floyd-Steinberg Gray"
+                    },
+                    "ev_shortname": {
+                        "en": "FloydSteinbergGray"
+                    },
+                    "ev_driverval": "8"
+                }
+            ]
+        }
+    }
+}

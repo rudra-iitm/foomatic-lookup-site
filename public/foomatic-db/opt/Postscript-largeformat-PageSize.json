@@ -1,0 +1,699 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/Postscript-largeformat-PageSize",
+        "arg_shortname": {
+            "en": "PageSize"
+        },
+        "arg_longname": {
+            "en": "Page Size"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "Z",
+            "arg_postscript": null,
+            "arg_proto": "<</PageSize[%s]/ImagingBBox null>>setpagedevice"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-DesignJet_3500CP",
+                    "arg_defval": "ev/Postscript-largeformat-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-DesignJet_5500ps",
+                    "arg_defval": "ev/Postscript-largeformat-PageSize-Letter"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-11x14",
+                    "ev_longname": {
+                        "en": "11x14"
+                    },
+                    "ev_shortname": {
+                        "en": "11x14"
+                    },
+                    "ev_driverval": "792 1008"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-11x17",
+                    "ev_longname": {
+                        "en": "11x17"
+                    },
+                    "ev_shortname": {
+                        "en": "11x17"
+                    },
+                    "ev_driverval": "792 1224"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-13x19",
+                    "ev_longname": {
+                        "en": "13x19"
+                    },
+                    "ev_shortname": {
+                        "en": "13x19"
+                    },
+                    "ev_driverval": "936 1368"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-16x20",
+                    "ev_longname": {
+                        "en": "16x20"
+                    },
+                    "ev_shortname": {
+                        "en": "16x20"
+                    },
+                    "ev_driverval": "1152 1440"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-16x24",
+                    "ev_longname": {
+                        "en": "16x24"
+                    },
+                    "ev_shortname": {
+                        "en": "16x24"
+                    },
+                    "ev_driverval": "1152 1728"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-2A",
+                    "ev_longname": {
+                        "en": "2A"
+                    },
+                    "ev_shortname": {
+                        "en": "2A"
+                    },
+                    "ev_driverval": "3370 4768"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-4A",
+                    "ev_longname": {
+                        "en": "4A"
+                    },
+                    "ev_shortname": {
+                        "en": "4A"
+                    },
+                    "ev_driverval": "4768 6749"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-8x10",
+                    "ev_longname": {
+                        "en": "8x10"
+                    },
+                    "ev_shortname": {
+                        "en": "8x10"
+                    },
+                    "ev_driverval": "576 720"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-8x12",
+                    "ev_longname": {
+                        "en": "8x12"
+                    },
+                    "ev_shortname": {
+                        "en": "8x12"
+                    },
+                    "ev_driverval": "576 864"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-A0",
+                    "ev_longname": {
+                        "en": "A0"
+                    },
+                    "ev_shortname": {
+                        "en": "A0"
+                    },
+                    "ev_driverval": "2384 3370"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-A1",
+                    "ev_longname": {
+                        "en": "A1"
+                    },
+                    "ev_shortname": {
+                        "en": "A1"
+                    },
+                    "ev_driverval": "1684 2384"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-A2",
+                    "ev_longname": {
+                        "en": "A2"
+                    },
+                    "ev_shortname": {
+                        "en": "A2"
+                    },
+                    "ev_driverval": "1191 1684"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-A3",
+                    "ev_longname": {
+                        "en": "A3"
+                    },
+                    "ev_shortname": {
+                        "en": "A3"
+                    },
+                    "ev_driverval": "842 1191"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-A4",
+                    "ev_longname": {
+                        "en": "A4"
+                    },
+                    "ev_shortname": {
+                        "en": "A4"
+                    },
+                    "ev_driverval": "595 842"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-A5",
+                    "ev_longname": {
+                        "en": "A5"
+                    },
+                    "ev_shortname": {
+                        "en": "A5"
+                    },
+                    "ev_driverval": "421 595"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-AnsiA",
+                    "ev_longname": {
+                        "en": "ANSI A"
+                    },
+                    "ev_shortname": {
+                        "en": "AnsiA"
+                    },
+                    "ev_driverval": "612 792"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-AnsiB",
+                    "ev_longname": {
+                        "en": "ANSI B"
+                    },
+                    "ev_shortname": {
+                        "en": "AnsiB"
+                    },
+                    "ev_driverval": "792 1224"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-AnsiC",
+                    "ev_longname": {
+                        "en": "ANSI C"
+                    },
+                    "ev_shortname": {
+                        "en": "AnsiC"
+                    },
+                    "ev_driverval": "1224 1584"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-AnsiD",
+                    "ev_longname": {
+                        "en": "ANSI D"
+                    },
+                    "ev_shortname": {
+                        "en": "AnsiD"
+                    },
+                    "ev_driverval": "1584 2448"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-AnsiE",
+                    "ev_longname": {
+                        "en": "ANSI E"
+                    },
+                    "ev_shortname": {
+                        "en": "AnsiE"
+                    },
+                    "ev_driverval": "2448 3168"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ArchA",
+                    "ev_longname": {
+                        "en": "Arch A"
+                    },
+                    "ev_shortname": {
+                        "en": "ArchA"
+                    },
+                    "ev_driverval": "648 864"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ArchB",
+                    "ev_longname": {
+                        "en": "Arch B"
+                    },
+                    "ev_shortname": {
+                        "en": "ArchB"
+                    },
+                    "ev_driverval": "864 1296"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ArchC",
+                    "ev_longname": {
+                        "en": "Arch C"
+                    },
+                    "ev_shortname": {
+                        "en": "ArchC"
+                    },
+                    "ev_driverval": "1296 1728"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ArchD",
+                    "ev_longname": {
+                        "en": "Arch D"
+                    },
+                    "ev_shortname": {
+                        "en": "ArchD"
+                    },
+                    "ev_driverval": "1728 2592"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ArchE",
+                    "ev_longname": {
+                        "en": "Arch E"
+                    },
+                    "ev_shortname": {
+                        "en": "ArchE"
+                    },
+                    "ev_driverval": "2592 3456"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-C0",
+                    "ev_longname": {
+                        "en": "C0"
+                    },
+                    "ev_shortname": {
+                        "en": "C0"
+                    },
+                    "ev_driverval": "2599 3676"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-C1",
+                    "ev_longname": {
+                        "en": "C1"
+                    },
+                    "ev_shortname": {
+                        "en": "C1"
+                    },
+                    "ev_driverval": "1836 2599"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-C2",
+                    "ev_longname": {
+                        "en": "C2"
+                    },
+                    "ev_shortname": {
+                        "en": "C2"
+                    },
+                    "ev_driverval": "1298 1836"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-C3",
+                    "ev_longname": {
+                        "en": "C3"
+                    },
+                    "ev_shortname": {
+                        "en": "C3"
+                    },
+                    "ev_driverval": "918 1298"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-C4",
+                    "ev_longname": {
+                        "en": "C4"
+                    },
+                    "ev_shortname": {
+                        "en": "C4"
+                    },
+                    "ev_driverval": "649 918"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-C5",
+                    "ev_longname": {
+                        "en": "C5"
+                    },
+                    "ev_shortname": {
+                        "en": "C5"
+                    },
+                    "ev_driverval": "459 649"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Custom",
+                    "ev_longname": {
+                        "en": "Custom Size"
+                    },
+                    "ev_shortname": {
+                        "en": "Custom"
+                    },
+                    "ev_driverval": "0 0"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Env10",
+                    "ev_longname": {
+                        "en": "Envelope #10"
+                    },
+                    "ev_shortname": {
+                        "en": "Env10"
+                    },
+                    "ev_driverval": "297 684"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-EnvC5",
+                    "ev_longname": {
+                        "en": "Envelope C5"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvC5"
+                    },
+                    "ev_driverval": "459 649"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-EnvDL",
+                    "ev_longname": {
+                        "en": "Envelope DL"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvDL"
+                    },
+                    "ev_driverval": "312 624"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-EnvMonarch",
+                    "ev_longname": {
+                        "en": "Envelope Monarch"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvMonarch"
+                    },
+                    "ev_driverval": "279 540"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Executive",
+                    "ev_longname": {
+                        "en": "Executive"
+                    },
+                    "ev_shortname": {
+                        "en": "Executive"
+                    },
+                    "ev_driverval": "522 756"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ISOB0",
+                    "ev_longname": {
+                        "en": "B0 (ISO)"
+                    },
+                    "ev_shortname": {
+                        "en": "ISOB0"
+                    },
+                    "ev_driverval": "2834 4008"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ISOB1",
+                    "ev_longname": {
+                        "en": "B1 (ISO)"
+                    },
+                    "ev_shortname": {
+                        "en": "ISOB1"
+                    },
+                    "ev_driverval": "2004 2834"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ISOB2",
+                    "ev_longname": {
+                        "en": "B2 (ISO)"
+                    },
+                    "ev_shortname": {
+                        "en": "ISOB2"
+                    },
+                    "ev_driverval": "1417 2004"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ISOB3",
+                    "ev_longname": {
+                        "en": "B3 (ISO)"
+                    },
+                    "ev_shortname": {
+                        "en": "ISOB3"
+                    },
+                    "ev_driverval": "1000 1417"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ISOB4",
+                    "ev_longname": {
+                        "en": "B4 (ISO)"
+                    },
+                    "ev_shortname": {
+                        "en": "ISOB4"
+                    },
+                    "ev_driverval": "708 1000"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-ISOB5",
+                    "ev_longname": {
+                        "en": "B5 (ISO)"
+                    },
+                    "ev_shortname": {
+                        "en": "ISOB5"
+                    },
+                    "ev_driverval": "498 708"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-JISB0",
+                    "ev_longname": {
+                        "en": "B0 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "JISB0"
+                    },
+                    "ev_driverval": "2919 4127"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-JISB1",
+                    "ev_longname": {
+                        "en": "B1 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "JISB1"
+                    },
+                    "ev_driverval": "2063 2919"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-JISB2",
+                    "ev_longname": {
+                        "en": "B2 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "JISB2"
+                    },
+                    "ev_driverval": "1459 2063"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-JISB3",
+                    "ev_longname": {
+                        "en": "B3 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "JISB3"
+                    },
+                    "ev_driverval": "1029 1459"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-JISB4",
+                    "ev_longname": {
+                        "en": "B4 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "JISB4"
+                    },
+                    "ev_driverval": "727 1029"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-JISB5",
+                    "ev_longname": {
+                        "en": "B5 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "JISB5"
+                    },
+                    "ev_driverval": "518 727"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Ledger",
+                    "ev_longname": {
+                        "en": "Ledger"
+                    },
+                    "ev_shortname": {
+                        "en": "Ledger"
+                    },
+                    "ev_driverval": "1224 792"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Legal",
+                    "ev_longname": {
+                        "en": "US Legal"
+                    },
+                    "ev_shortname": {
+                        "en": "Legal"
+                    },
+                    "ev_driverval": "612 1008"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Letter",
+                    "ev_longname": {
+                        "en": "US Letter"
+                    },
+                    "ev_shortname": {
+                        "en": "Letter"
+                    },
+                    "ev_driverval": "612 792"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-RA0",
+                    "ev_longname": {
+                        "en": "RA0"
+                    },
+                    "ev_shortname": {
+                        "en": "RA0"
+                    },
+                    "ev_driverval": "2437 3458"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-RA1",
+                    "ev_longname": {
+                        "en": "RA1"
+                    },
+                    "ev_shortname": {
+                        "en": "RA1"
+                    },
+                    "ev_driverval": "1729 2437"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-RA2",
+                    "ev_longname": {
+                        "en": "RA2"
+                    },
+                    "ev_shortname": {
+                        "en": "RA2"
+                    },
+                    "ev_driverval": "1218 1729"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-RA3",
+                    "ev_longname": {
+                        "en": "RA3"
+                    },
+                    "ev_shortname": {
+                        "en": "RA3"
+                    },
+                    "ev_driverval": "864 1218"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-RA4",
+                    "ev_longname": {
+                        "en": "RA4"
+                    },
+                    "ev_shortname": {
+                        "en": "RA4"
+                    },
+                    "ev_driverval": "609 864"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SRA0",
+                    "ev_longname": {
+                        "en": "SRA0"
+                    },
+                    "ev_shortname": {
+                        "en": "SRA0"
+                    },
+                    "ev_driverval": "2551 3628"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SRA1",
+                    "ev_longname": {
+                        "en": "SRA1"
+                    },
+                    "ev_shortname": {
+                        "en": "SRA1"
+                    },
+                    "ev_driverval": "1814 2551"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SRA2",
+                    "ev_longname": {
+                        "en": "SRA2"
+                    },
+                    "ev_shortname": {
+                        "en": "SRA2"
+                    },
+                    "ev_driverval": "1275 1814"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SRA3",
+                    "ev_longname": {
+                        "en": "SRA3"
+                    },
+                    "ev_shortname": {
+                        "en": "SRA3"
+                    },
+                    "ev_driverval": "907 1275"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SRA4",
+                    "ev_longname": {
+                        "en": "SRA4"
+                    },
+                    "ev_shortname": {
+                        "en": "SRA4"
+                    },
+                    "ev_driverval": "637 907"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SuperA",
+                    "ev_longname": {
+                        "en": "Super A"
+                    },
+                    "ev_shortname": {
+                        "en": "SuperA"
+                    },
+                    "ev_driverval": "644 1008"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-SuperB",
+                    "ev_longname": {
+                        "en": "Super B"
+                    },
+                    "ev_shortname": {
+                        "en": "SuperB"
+                    },
+                    "ev_driverval": "936 1368"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-Tabloid",
+                    "ev_longname": {
+                        "en": "Tabloid"
+                    },
+                    "ev_shortname": {
+                        "en": "Tabloid"
+                    },
+                    "ev_driverval": "792 1224"
+                },
+                {
+                    "@id": "ev/Postscript-largeformat-PageSize-TabloidExtra",
+                    "ev_longname": {
+                        "en": "Tabloid Extra"
+                    },
+                    "ev_shortname": {
+                        "en": "TabloidExtra"
+                    },
+                    "ev_driverval": "864 1296"
+                }
+            ]
+        }
+    }
+}

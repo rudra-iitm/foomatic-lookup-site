@@ -1,0 +1,53 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_2200",
+        "make": "Canon",
+        "model": "imageRunner 2200",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.canon-europe.com/for_work/products/office_print_copy_solutions/digital_ir_series/ir2020i/index.asp",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e, 6"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Canon iR2200"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Printer Kit-C1 (PostScript3 Emulation/PCL5e, XL) and Network Printer Kit-C2 (PCL5e, XL). Additional PDL: UFRII LT\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

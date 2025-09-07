@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C310dn",
+        "make": "Oki",
+        "model": "C310dn",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.oki.co.uk/printers/colour-printers/workgroup-printers/detail.aspx?prodid=tcm:122-107685-16",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2hiperc",
+        "comments": {
+            "en": "The Oki C310dn is a networked color laser printer with a\n      2010 street price of $400 USD.  This printer is supported\n      by the foo2hiperc open software printer driver.<p>\n\n      Consumables: Separate toner cartridges black (1500 prints,\n      ~$32), yellow/magenta/cyan (1500 prints, ~$65 each), separate\n      drums black (15000 prints, ~$100), yellow/magenta/cyan (1500\n      prints, ~$120 each)"
+        }
+    }
+}

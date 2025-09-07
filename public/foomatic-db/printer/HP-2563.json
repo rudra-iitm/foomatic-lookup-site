@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/HP-2563",
+        "make": "HP",
+        "model": "2563",
+        "mechanism": {
+            "impact": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "lp2563",
+        "comments": {
+            "en": "An old line printer.\n    \n    For basic printing functionality use the <a href=\"http://hplipopensource.com/\">HPIJS driver </a>. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplip.sf.net/\">HPLIP driver</a> (which includes HPIJS). <p>"
+        }
+    }
+}

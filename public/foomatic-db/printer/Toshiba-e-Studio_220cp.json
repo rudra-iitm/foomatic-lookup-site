@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-e-Studio_220cp",
+        "make": "Toshiba",
+        "model": "e-Studio 220cp",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 22\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-08-07"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-P-2002",
+        "make": "Kyocera",
+        "model": "P-2002",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "4"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;MDL:P-2002;",
+                "description": "Kyocera P-2002",
+                "manufacturer": "Kyocera",
+                "model": "P-2002"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript,\n      <a href=\"ppd-doc.html\">Instructions</a> <br>\n      PCL4 as well (use ljetplus or laserjet for PCL4)"
+        }
+    }
+}

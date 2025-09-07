@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_XD120f",
+        "make": "Xerox",
+        "model": "WorkCentre XD120f",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Another WinPrinter<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

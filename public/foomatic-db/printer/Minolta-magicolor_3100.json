@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-magicolor_3100",
+        "make": "Minolta",
+        "model": "magicolor 3100",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "5",
+                    "left": "5",
+                    "right": "5",
+                    "bottom": "5"
+                }
+            }
+        },
+        "url": "http://www.minolta-qms.com/products/color/mc3100/index.asp",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "The magicolor 3100 is a PostScript-capable network color\n\tlaser printer."
+        }
+    }
+}

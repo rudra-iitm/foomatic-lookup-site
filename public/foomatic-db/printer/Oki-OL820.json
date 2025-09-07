@@ -1,0 +1,16 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL820",
+        "make": "Oki",
+        "model": "OL820",
+        "mechanism": {
+            "led": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "?"
+            }
+        },
+        "functionality": "D"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Microline_IBM_compatible_9_pin",
+        "make": "Oki",
+        "model": "Microline IBM compatible 9 pin",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "144"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "okiibm",
+        "comments": {
+            "en": "The information about this printer shown here is only based in the source code\nof the \"okiibm\" Ghostscript driver. I have only entered it to obtain foomatic\nconfiguration files for this printer. Any information about this printer is\nwelcome.<p>\n\n      Consumables/Refills: Ribbon<p>"
+        }
+    }
+}

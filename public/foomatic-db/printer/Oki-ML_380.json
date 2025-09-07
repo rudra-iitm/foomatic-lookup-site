@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Oki-ML_380",
+        "make": "Oki",
+        "model": "ML 380",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "I'm sorry for the uncomplete information, but I'm a newbie<p>\n\n      Consumables/Refills: ribbon<p>"
+        }
+    }
+}

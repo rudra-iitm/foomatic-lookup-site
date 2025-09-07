@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Oce-PPC3094PS",
+        "make": "Oce",
+        "model": "PPC3094",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "PPD/Oce/Proddoc/vp30xxppcontrspec.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Oce",
+                "ppd": "PPD/Oce/Oce-PPC3094PS/1/OP3094_3.ppd"
+            }
+        },
+        "comments": {
+            "en": "<b>Networks bring together formerly distinct print environments, like central IT, printroom andthe office. But how can your enterprise capitalise on network printing in theseenvironments? The Power Print Controller can help. Its unique design handles multiple printstreams from a variety of environments totally independently of host, network andapplication. All that, in one intelligent controller.</b><br/>\n<UL>\n<LI>Supports the Oce VarioPrint 3070, 70 ppm, Oce VarioPrint 3090, 85 ppm, Oce VarioPrint 3110, 105 ppm, Oce Varioprint 5115, 115 ppm and Oce 5160, 160 ppm cutsheet printers</LI>\n<LI>Allows intelligent processing at job and page levels with Job Automation Control (JAC)</LI>\n<LI>Supports multiple PDLs and datastreams: PostScript, PCL, TIFF and ASCII</LI>\n<LI>Prints productively from multiple sources withsimultaneous acceptance and spooling of datafrom host and network environments</LI>\n<LI>Automatically merges print job data with electronic forms</LI>\n<LI>Integrates easily into existing networks, applications or platforms</LI>\n</UL><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-1435",
+        "make": "Brother",
+        "model": "HL-1435",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl1435/hl1435_ove.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Do not confuse this printer with the <a\n    href=\"show_printer.cgi?recnum=Brother-HL-1430\">Brother\n    HL-1430</a><p>, this printer does not understand PCL\n    as most other Brother laser printers and therefore does not work\n    with free software.<p>\n\n    Perhaps it works with the \"<a\n    href=\"show_driver.cgi?driver=hl7x0\">hl7x0</a>\"\n    driver, but there is no user report so far.<p>\n\n    <p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

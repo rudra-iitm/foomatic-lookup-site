@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_648C",
+        "make": "HP",
+        "model": "DeskJet 648C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Also compatible with the DeskJet 600, so the drivers for that\n    model work.<p><p>\n\n      Consumables/Refills: cartridges: $34 (black), $30 (color), $35 (photo)<p>"
+        }
+    }
+}

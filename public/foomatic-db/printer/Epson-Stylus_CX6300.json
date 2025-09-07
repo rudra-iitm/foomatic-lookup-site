@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_CX6300",
+        "make": "Epson",
+        "model": "Stylus CX6300",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus CX6300",
+                "manufacturer": "EPSON",
+                "model": "Stylus CX6300"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier.<p>\n\n    Maximum paper size A4/Letter/Legal.<p>\n\n    Printing engine of the Epson Stylus C84.<p>\n\n    Scanning should work with <a\n    href=\"http://www.sane-project.org/\">SANE</a> using\n    Epson's <a\n    href=\"http://www.avasys.jp/english/linux_e/dl_scan.html\">IScan</a>\n    or perhaps also with SANE's \"<tt>epson</tt>\"\n    backend.<p>\n\n    Copying should just work with the front panel of the\n    device.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

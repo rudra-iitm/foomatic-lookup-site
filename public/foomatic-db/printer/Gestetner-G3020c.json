@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Gestetner-G3020c",
+        "make": "Gestetner",
+        "model": "G3020c",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.gestetner.com",
+        "lang": {
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:GESTETNER;MDL:G3020c;CMD:PCLXL;"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlcolor-Gestetner",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor-Gestetner",
+                "ppd": "PPD/Gestetner/PXL/Gestetner-G3020c_PXL.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh and Gestetner printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller.\n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file.\n\nDownload the driver package if you want to install all drivers (100+).<p>\n\nThroughput 20."
+        }
+    }
+}

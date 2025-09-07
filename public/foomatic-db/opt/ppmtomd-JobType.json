@@ -1,0 +1,70 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-JobType",
+        "arg_shortname": {
+            "en": "JobType"
+        },
+        "arg_longname": {
+            "en": "Job Type"
+        },
+        "arg_execution": {
+            "arg_group": "CombinedJobs",
+            "arg_order": "150",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "ev/ppmtomd-JobType-SinglePass"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-JobType-FirstPass",
+                    "ev_longname": {
+                        "en": "First pass of an overlayed printout"
+                    },
+                    "ev_shortname": {
+                        "en": "FirstPass"
+                    },
+                    "ev_driverval": "-firstpass"
+                },
+                {
+                    "@id": "ev/ppmtomd-JobType-LastPass",
+                    "ev_longname": {
+                        "en": "Last pass of an overlayed printout"
+                    },
+                    "ev_shortname": {
+                        "en": "LastPass"
+                    },
+                    "ev_driverval": "-lastpass"
+                },
+                {
+                    "@id": "ev/ppmtomd-JobType-MiddlePass",
+                    "ev_longname": {
+                        "en": "Middle pass of an overlayed printout"
+                    },
+                    "ev_shortname": {
+                        "en": "MiddlePass"
+                    },
+                    "ev_driverval": "-midpass"
+                },
+                {
+                    "@id": "ev/ppmtomd-JobType-SinglePass",
+                    "ev_longname": {
+                        "en": "Single Pass Job"
+                    },
+                    "ev_shortname": {
+                        "en": "SinglePass"
+                    },
+                    "ev_driverval": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-300",
+        "make": "Samsung",
+        "model": "CLP-300",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/PrinterandMultifunction/ColorLaserPrinters/CLP_300NXAA.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "splix",
+        "comments": {
+            "en": "The Samsung CLP-300 is USB-only and the Samsung CLP-300N has a\n      network connector.<p>\n\n      This is a cheap color laser printer with a proprietary\n      language. Samsung provides a closed-source driver on their web\n      site, the \"Unified Linux Driver\", a driver package\n      containing CUPS drivers and PPDs for all Samsung\n      printers. Version 2.00.90 and newer supports also this\n      printer. Output is raster-only, and due to glitches in the\n      software, monochrome sources are output as color (visible flecks\n      of cyan, magenta, and yellow). It is also not easy to install\n      this driver in arbitrary distributions. See the user reports in\n      the <a\n      href=\"show_printer.cgi?recnum=Samsung-CLP-510\">entry\n      for the CLP-510</a>.<p>\n\n      As the first free software printer driver Rick Richardson's\n      foo2qpdl supports this printer, but the driver still needs\n      testing. So please try out this printer with both foo2qpdl and\n      SpliX and report your results to the authors of the drivers and\n      here on the site. SpliX seems to produce better color\n      output.<p>\n\n      Consumables/Refills: Toner Black (2000 prints) - $54, Toner\n      Yellow (1000 prints) - $45, Toner Magenta (1000 prints) - $45,\n      Toner Cyan (1000 prints) - $45, Waste Toner (5000 prints) - $10,\n      Drum Kit (20000 prints) - $96 Part numbers: CLP-K300A,\n      CLP-Y300A, CLP-M300A, CLP-C300A, CLP-W300A, CLP-R300A<p>"
+        }
+    }
+}

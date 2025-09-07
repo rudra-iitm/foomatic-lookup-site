@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_CX5400",
+        "make": "Epson",
+        "model": "Stylus CX5400",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus CX5400",
+                "manufacturer": "EPSON",
+                "model": "Stylus CX5400"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier.<p>\n\n    The printing engine is compatible to the one of the Epson Stylus\n    C84, see that printer entry for more info. All but full-bleed\n    works with Gimp-Print 4.2.6 or newer or 4.3.24 or newer.<p>\n    Current gimp-print versions have specific support for this device.\n\n    Scanning should work as described for the Epson Stylus CX3200 and\n    CX5200, best with kernel 2.4.21 or later. To make the \"epson\"\n    backend of <a\n    href=\"http://www.sane-project.org/\">SANE</a> recognizing\n    this device, you have to add a line like<p>\n\n    <tt>usb 0x4b8 0x805</tt><p>\n\n    to the <tt>/etc/sane.d/epson.conf</tt> file where the\n    two hexadecimal numbers are the vendor and product IDs of your\n    scanner. You find the actual IDs in\n    <tt>/proc/bus/usb/devices</tt>. Search for an entry\n    for an Epson device (the model name can be different to \"CX5400\"\n    as often the Epson devices report their japanese market name) and\n    in the line beginning with \"<tt>P</tt>\" directly above\n    the line with the manufacturer name you find the hexadecimal\n    vendor and product IDs.<p>\n\n    Copying should just work with the front panel of the\n    device.<p><p>\n\n      Consumables/Refills: 4 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

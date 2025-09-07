@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-4076",
+        "make": "Lexmark",
+        "model": "4076",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Works with drivers for the HP DeskJet 500<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

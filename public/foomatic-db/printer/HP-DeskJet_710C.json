@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_710C",
+        "make": "HP",
+        "model": "DeskJet 710C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "SCP,VLINK",
+                "description": "Hewlett-Packard Deskjet 710 Series",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 710C"
+            }
+        },
+        "functionality": "A",
+        "driver": "pnm2ppa",
+        "comments": {
+            "en": "PPA printer, does not work with PCL drivers (as HPLIP,\n    \"gimp-print\", \"cdjXXX\", \"pcl3\", ...)\n    <p>\n\n    The \"Cse\" and \"Cxi\" are probably the same\n    hardware but shipped with different Windows toys.<p>\n\n      Consumables/Refills: Black 51645A, 51645G, C6615A - Colour C1823A<p>"
+        }
+    }
+}

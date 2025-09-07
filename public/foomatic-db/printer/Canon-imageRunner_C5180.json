@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_C5180",
+        "make": "Canon",
+        "model": "imageRunner C5180",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            }
+        },
+        "functionality": "B",
+        "driver": "cljet5",
+        "drivers": {
+            "driver": {
+                "id": "cljet5"
+            }
+        },
+        "comments": {
+            "en": "Postscript 3 is optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

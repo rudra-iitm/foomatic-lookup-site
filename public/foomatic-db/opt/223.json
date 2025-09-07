@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/223",
+        "arg_shortname": {
+            "en": "Manual"
+        },
+        "arg_longname": {
+            "en": "Manual Feed of Paper"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "155",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dManualFeed"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pcl3",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "Automatic"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Apple-ImageWriter_LQ",
+        "make": "Apple",
+        "model": "ImageWriter LQ",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "320",
+                    "y": "216"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "iwhi"
+    }
+}

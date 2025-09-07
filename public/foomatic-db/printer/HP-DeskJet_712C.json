@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_712C",
+        "make": "HP",
+        "model": "DeskJet 712C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "SCP,VLINK",
+                "description": "Hewlett-Packard DeskJet 710 Series",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 710C"
+            }
+        },
+        "functionality": "A",
+        "driver": "pnm2ppa",
+        "comments": {
+            "en": "PPA printer, does not work with PCL drivers (as HPLIP,\n    \"gimp-print\", \"cdjXXX\", \"pcl3\", ...)\n    <p>\n\n    The \"Cse\" and \"Cxi\" are probably the same\n    hardware but shipped with different Windows toys."
+        }
+    }
+}

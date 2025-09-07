@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P4450",
+        "make": "Panasonic",
+        "model": "KX-P4450",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/PCSC/PCPC/printers/p4440i.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljetplus",
+        "comments": {
+            "en": "1M RAM std, 5M max."
+        }
+    }
+}

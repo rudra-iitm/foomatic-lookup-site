@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S100",
+        "make": "Canon",
+        "model": "S100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.canon-europa.com/CEPF_DB/parser.pl?page=products&index=2&product=1027",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "BJL,BJRaster,BSCC,TXT01",
+                "description": "Canon S100SP",
+                "manufacturer": "Canon",
+                "model": "S100SP"
+            }
+        },
+        "functionality": "B",
+        "driver": "bjc600",
+        "comments": {
+            "en": "Successor of the Canon BJC-2100, compatible to the BJC-2100 and \n    BJC-4300.<p>\n\n      Consumables/Refills: BC-21e Colour (100 pages), BC-20 Black (740 pages)<p>"
+        }
+    }
+}

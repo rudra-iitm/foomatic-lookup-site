@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C5540_MFP",
+        "make": "Oki",
+        "model": "C5540 MFP",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 24\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/SiPix-Pocket_Printer_A6",
+        "make": "SiPix",
+        "model": "Pocket Printer A6",
+        "pcmodel": "POPRA6",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "sipixa6.upp",
+        "comments": {
+            "en": "Thermal printer, paper size A6 or 10.5 cm wide roll paper.<p>\n\n      This printer is mainly intended to use with PDAs. It is is very\n      compact (only 15 x 10 x 2.5 cm or 6 x 4 x 1 inches) and can be\n      run with batteries.<p>\n\n      Connectian via serial port.<p>\n\n      See setup instructions on the driver page.<p><p>\n\n      Consumables/Refills: Thermal Paper, sheets A6 or roll 10.5 cm wide<p>"
+        }
+    }
+}

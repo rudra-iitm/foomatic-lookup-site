@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Epson-ActionLaser_II",
+        "make": "Epson",
+        "model": "ActionLaser II",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/laser/al2___/index.html",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "A straightforward Laserjet 2 clone; speaks PCL and has various LQ emulations.<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

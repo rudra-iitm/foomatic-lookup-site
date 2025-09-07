@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4400",
+        "make": "Oki",
+        "model": "B4400",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/rola/html/nf/b4400blackspec.html",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Max resolution with HPIJS driver (\"hpijs-pcl5e\"): 600x600 dpi<p>\n\n      Adding the following to the PPD file for the \"pxlmono\" driver\n      enables toner saving and toner density adjustments:<p>\n\n<tt><pre>\n*OpenGroup: Adjustment/Adjustment\n\n*OpenUI *Economode/Toner Saving: PickOne\n*FoomaticRIPOption Economode: enum JCL A\n*OrderDependency: 160 AnySetup *Economode\n*DefaultEconomode: Medium\n*Economode Off/Off: \"%% FoomaticRIPOptionSetting: Economode=Off\"\n*FoomaticRIPOptionSetting Economode=Off: \"SET ECONOMODE=OFF\"\n*Economode Medium/Medium: \"%% FoomaticRIPOptionSetting: Economode=Medium\"\n*FoomaticRIPOptionSetting Economode=Medium: \"SET ECONOMODE=ON\"\n*Economode Light/Light: \"%% FoomaticRIPOptionSetting: Economode=Light\"\n*FoomaticRIPOptionSetting Economode=Light: \"SET ECONOMODE=LIGHT\"\n*CloseUI: *Economode\n\n*OpenUI *TonerDensity/Toner Density: PickOne\n*FoomaticRIPOption TonerDensity: enum JCL A\n*OrderDependency: 100 AnySetup *TonerDensity\n*DefaultTonerDensity: Medium\n*TonerDensity Light/Light: \"%% FoomaticRIPOptionSetting: TonerDensity=Light\"\n*FoomaticRIPOptionSetting TonerDensity=Light: \"SET DENSITY=-2\"\n*TonerDensity Lighter/Lighter: \"%% FoomaticRIPOptionSetting: TonerDensity=Lighter\"\n*FoomaticRIPOptionSetting TonerDensity=Lighter: \"SET DENSITY=-1\"\n*TonerDensity Medium/Meduim: \"%% FoomaticRIPOptionSetting: TonerDensity=Medium\"\n*FoomaticRIPOptionSetting TonerDensity=Medium: \"SET DENSITY=0\"\n*TonerDensity Darker/Darker: \"%% FoomaticRIPOptionSetting: TonerDensity=Darker\"\n*FoomaticRIPOptionSetting TonerDensity=Darker: \"SET DENSITY=1\"\n*TonerDensity Dark/Dark: \"%% FoomaticRIPOptionSetting: TonerDensity=Dark\"\n*FoomaticRIPOptionSetting TonerDensity=Dark: \"SET DENSITY=2\"\n*CloseUI: *TonerDensity\n\n*CloseGroup: Adjustment\n</pre></tt><p>\n\n      You can also get the appropriately patched PPD <a\n      href=\"http://injiniero.es/descargas/B4400.ppd\">here</a>.<p>\n      \n      Throughput = 26<p>\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-06-23<p>"
+        }
+    }
+}

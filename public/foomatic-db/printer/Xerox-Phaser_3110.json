@@ -1,0 +1,12 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_3110",
+        "make": "Xerox",
+        "model": "Phaser 3110",
+        "functionality": "B",
+        "driver": "gdi",
+        "comments": {
+            "en": "Compatible with the Samsumg ML-1210"
+        }
+    }
+}

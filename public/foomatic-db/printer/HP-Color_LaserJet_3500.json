@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_3500",
+        "make": "HP",
+        "model": "Color LaserJet 3500",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Hewlett-Packard;CMD:PJL,PML,DW-PCL,JR4.0;1284.4DL:4d,4e,1;MDL:hp color LaserJet 3500;CLS:PRINTER;DES:Hewlett-Packard color LaserJet 3500;",
+                "commandset": "PJL,PML,DW-PCL,JR4.0",
+                "description": "Hewlett-Packard color LaserJet 3500",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp color LaserJet 3500"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxljr",
+        "comments": {
+            "en": "Low-cost, reliable, Narrow format paper sizes. In-line color\n    printing.<p>\n\n    For highest print quality without proprietary plug-in use the\n    <a\n    href=\"http://hp-pxl-jetready.sourceforge.net/\">\"pxljr\"\n    driver </a>, for working duplex use \"<a\n    href=\"http://hplipopensource.com/\">hpijs</a>\". For\n    advanced functionality such as printer status and maintenance\n    features, use the <a href=\"http://hplipopensource.com/\">\n    HPLIP software</a> together with HPLIP or\n    \"pxljr\". <p>\n\n    Various flavors are available, with networking, duplexer,\n    etc.<p><p>\n\n      Consumables/Refills: 1 toner cartridge for each color, imaging drum<p>"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_330s",
+        "make": "Canon",
+        "model": "imageRunner 330s",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Laser copier/network printer."
+        }
+    }
+}

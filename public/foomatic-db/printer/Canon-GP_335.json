@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Canon-GP_335",
+        "make": "Canon",
+        "model": "GP 335",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "Http://www.canon.com.au/products/copiers/gp335.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Intergrated Digital Copier/Printer.\nPrinting is option, either dual\npersonallity Postscript level3/PCL5e \nor plain 'ol PCL5e. Faxing and \nscanning(scsi)option. also available. \nBulletproof 33 pages per minute. \nThe Postscript Version works nicely \nwith Linux. Has inbuilt \"Webserver\" \nPublishes Direct/Print/Hold queues \non any network. \nPrinting to the hold queue allows\nyou to edit the job with the full \nfeatures of the machine available\ni.e. Staple,sort,collate,d/sided \netc. etc before actually printing\nJob.<p>\n\n      Consumables/Refills: Separate toner cartridge<p>"
+        }
+    }
+}

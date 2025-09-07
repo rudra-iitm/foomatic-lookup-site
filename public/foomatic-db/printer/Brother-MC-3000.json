@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MC-3000",
+        "make": "Brother",
+        "model": "MC-3000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.brother.com/eu-printer/info/mc3000/mc3000.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "epson",
+        "comments": {
+            "en": "This is a GDI (winprinter) printer/scanner/copier, with ESC/P support<br>\nCould only get it working under Unix with esc/p (the Ghostscript epson driver),\n- output is in b/w 360x180dpi :(<br>\nScanning won't work at all.<p>\n\n      Consumables/Refills: 4 cartridges, 3 colour, 1 black<p>"
+        }
+    }
+}

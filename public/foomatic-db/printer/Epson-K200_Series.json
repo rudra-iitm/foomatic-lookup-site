@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-K200_Series",
+        "make": "Epson",
+        "model": "K200 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:K200;CLS:PRINTER;DES:EPSON K200",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON K200",
+                "manufacturer": "EPSON",
+                "model": "K200"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-k100-k200-series",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-k100-k200-series"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

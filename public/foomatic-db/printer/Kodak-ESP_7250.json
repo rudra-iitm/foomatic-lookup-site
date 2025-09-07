@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Kodak-ESP_7250",
+        "make": "Kodak",
+        "model": "ESP 7250",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "functionality": "D",
+        "driver": "c2esp",
+        "drivers": {
+            "driver": {
+                "id": "c2esp"
+            }
+        }
+    }
+}

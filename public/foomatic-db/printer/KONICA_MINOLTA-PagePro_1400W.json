@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-PagePro_1400W",
+        "make": "KONICA MINOLTA",
+        "model": "PagePro 1400W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "NA",
+                "description": "KONICA MINOLTA PP1400W",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "PP1400W"
+            }
+        },
+        "functionality": "B",
+        "driver": "min12xxw",
+        "comments": {
+            "en": "Low cost laser."
+        }
+    }
+}

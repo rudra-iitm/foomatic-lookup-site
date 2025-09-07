@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Canon-i450",
+        "make": "Canon",
+        "model": "i450",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.usa.canon.com/consumer/controller?act=SupportDetailAct&fca\ntegoryid=232&modelid=8740",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Canon;CMD:BJL,BJRaster3,BSCC,TXT01;MDL:i450;CLS:PRINTER;DES:Canon i450;VER:1.00;STA:20;",
+                "commandset": "BJL,BJRaster3,BSCC,TXT01",
+                "description": "Canon i450",
+                "manufacturer": "Canon",
+                "model": "i450"
+            }
+        },
+        "functionality": "D",
+        "driver": "bjc800",
+        "drivers": {
+            "driver": {
+                "id": "bjc800",
+                "comments": {
+                    "en": "You have to adjust the resolution values in the ppd to the\n          correct values: 150x150, 300x300, 600x600 and\n          1200x1200. Nevertheless it seems to work in 600dpi only, for\n          other values the scaling is not correct."
+                }
+            }
+        },
+        "comments": {
+            "en": "Consumables/Refills: Refill: BCI-24 ink tank $7 black, $18.50 color<p>"
+        }
+    }
+}

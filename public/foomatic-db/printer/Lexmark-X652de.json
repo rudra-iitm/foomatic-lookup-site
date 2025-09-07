@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-X652de",
+        "make": "Lexmark",
+        "model": "X652de",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG: Lexmark ;MDL: Lexmark X652de",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark X652de"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_X652de.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 36 pages/min<p>"
+        }
+    }
+}

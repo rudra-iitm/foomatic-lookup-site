@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_3045",
+        "make": "Xerox",
+        "model": "WorkCentre 3045",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.office.xerox.com/multifunction-printer/multifunction-under-30ppm/workcentre-3045/enae.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Xerox WorkCentre 3045"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Xerox WorkCentre 3045(USB) and 3045ni (network)\n\tis a monochrome MFP printer with a 2013 street price of $150.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

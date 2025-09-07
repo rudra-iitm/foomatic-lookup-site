@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4600",
+        "make": "Oki",
+        "model": "B4600",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com.sg/binaryData/18733/B4400_B4600.pdf",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "OKI OkiLAN 8150e Rev.P2.03 10/100BASE Ethernet PrintServer: Attached to B4600 Rev.H2.03 : (C)2006 Oki Data Corporation"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Toner tube is about $120 (7K pages), drum cartridge is $125 (its resource is about 25K pages). Toner refilling is possible, but be careful, these printers are picky about original toner. YMMV.\n      \n      Throughput = 26\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-06-23"
+        }
+    }
+}

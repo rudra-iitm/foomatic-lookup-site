@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_P1000",
+        "make": "HP",
+        "model": "PhotoSmart P1000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HEWLETT-PACKARD;MDL:PHOTOSMART P1000;CMD:MLC,PCL,PML;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard PhotoSmart P1000;",
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard PhotoSmart P1000",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "PHOTOSMART P1000"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This is essentially the same printer as the PhotoSmart 1100,\n    except for the missing duplexer. It has ports on the side for\n    inserting SmartMedia and CompactFlash digital \"film\" and\n    has an LCD panel that lets you select pictures from the\n    \"film\" to print.<p>\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> \n    (which includes HPIJS). <p><p>\n\n      Consumables/Refills: Refill: 1 black, 1 color cartridge<p>"
+        }
+    }
+}

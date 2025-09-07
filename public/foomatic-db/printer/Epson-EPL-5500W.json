@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5500W",
+        "make": "Epson",
+        "model": "EPL-5500W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Doesn't seem to print without its \"Windows Printing System\". Connected to a Windows box the software emulates Laserjet2. This allows you to print via Samba with 300x300 dpi.\n<br>Keep in mind that there is no support for any Windows but Win95 and Win3.1(1).\n<br>Prints out completely black pages if Windows Box has not enough memory available.\n<br>Important! Mind the \"W\", there's a EPL-5500 without \"W\", too, this one might work."
+        }
+    }
+}

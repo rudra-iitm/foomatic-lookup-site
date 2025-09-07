@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_720C",
+        "make": "HP",
+        "model": "DeskJet 720C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "SCP,VLINK",
+                "description": "Hewlett-Packard DeskJet 720 Series",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 720"
+            }
+        },
+        "functionality": "A",
+        "driver": "pnm2ppa",
+        "comments": {
+            "en": "PPA printer, does not work with PCL drivers (as HPLIP,\n    \"gimp-print\", \"cdjXXX\", \"pcl3\", ...)\n    <p>\n\n    The \"Cse\" and \"Cxi\" are probably the same\n    hardware but shipped with different Windows toys.<p>\n\n      Consumables/Refills: Colour and black cartridges - Black=$29.99, Color=$32.99<p>"
+        }
+    }
+}

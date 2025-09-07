@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6121MFP",
+        "make": "Xerox",
+        "model": "Phaser 6121MFP",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://www.xerox.co.uk/office/multifunction-printer/colour-multifunction/phaser-6121mfp/engb.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Xerox Phaser 6121MFP"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2lava",
+        "comments": {
+            "en": "The magicolor 1690MF is a network color laser AIO with a\n      2009 street price of $300 USD.  This printer is supported\n      by the foo2lava open software printer driver.<p>\n\n      It is also OEM'ed by Xerox.<p>\n\n      Consumables: Separate toner cartridges black (4500 prints,\n      ~$79), yellow/magenta/cyan (4500 prints, ~$119 each), drum kit\n      (45000 prints, ~$149)"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_CP3505",
+        "make": "HP",
+        "model": "Color LaserJet CP3505",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Various flavors are available, with networking, extra trays,\n    etc.<p><p>\n\n      Consumables/Refills: 1 print cartridge per color (Cyan, Magenta, Yellow, blacK)<p>"
+        }
+    }
+}

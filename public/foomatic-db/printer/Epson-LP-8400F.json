@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-8400F",
+        "make": "Epson",
+        "model": "LP-8400F",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.i-love-epson.co.jp/products/back/hyou/lp8400f_fx.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "eplaser-jp",
+        "comments": {
+            "en": "Epson provides a free (LGPL) driver for this printer. With this\n    the printer should work to its full extent.<p><p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

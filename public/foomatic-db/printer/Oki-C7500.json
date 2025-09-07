@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C7500",
+        "make": "Oki",
+        "model": "C7500",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oki;MDL:C7500;",
+                "manufacturer": "Oki",
+                "model": "C7500"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oki",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/ok7500u1.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_4600N",
+        "make": "NEC",
+        "model": "SuperScript 4600N",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "The name of the remote queue is PORT1.\n<p>\nThis printer did not work well at all with RedHat 6.1's  lpr  package.<br>\nSymptoms: Only one job would print, lpq would sometimes hang, and then the\nprint queue needed to be cleaned out, and lpd restarted.  lpr-0.41-2 \nis what comes with RH 6.1.<br>\nSolution: Upgrade to  lpr-0.50-7.6.x.  Works great!\n<p>\nThis printer takes over a minute to warm up from power saver mode.\nWhile warming up, lpq will report \"PrinterError: WARMING UP\".\nIt's not really an error.<p>\n\n      Consumables/Refills: Separate CYMK color toner cartridges<p>"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_2200C",
+        "make": "Epson",
+        "model": "PM 2200C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo EX3.<p>\n\n    Wide-format version of the Epson Stylus Photo 720<p>\n\n    6 color CMYKcm printer.<p>"
+        }
+    }
+}

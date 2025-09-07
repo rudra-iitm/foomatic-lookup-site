@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-S22_Series",
+        "make": "Epson",
+        "model": "S22 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Epson Stylus S22;CLS:PRINTER;DES:EPSON Epson Stylus S22",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus S22",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus S22"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-n10-nx127",
+        "drivers": {
+            "driver": {
+                "id": "epson-n10-nx127"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

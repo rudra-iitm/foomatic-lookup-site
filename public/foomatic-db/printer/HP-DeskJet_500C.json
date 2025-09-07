@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_500C",
+        "make": "HP",
+        "model": "DeskJet 500C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Uses CMY or K catridge, user has to switch.<p>\n\n      Consumables/Refills: color or bw cartridge<p>"
+        }
+    }
+}

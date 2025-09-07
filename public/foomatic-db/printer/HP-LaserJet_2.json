@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_2",
+        "make": "HP",
+        "model": "LaserJet 2",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    This printer works fine if it has 2+ MB of RAM, otherwise it only\n    prints half a page at a time. It only has 384kB by default.  It\n    can be upgraded easily and cheaply.<p>\n\n    Noticed Difficulities w/ sending to a Win2k SMB Share from Linux\n    for the HPLJII.<p>\n\n    Experience from a user: <p>\n\n    ASCII comes out fine.<p>\n\n    - send eof after job (yes)<p>\n\n    - Fix stair stepping (yes)<p>\n\n    <p>\n\n    Using ghostscript and HP Laserjet driver, pages are shifted up a\n    little (1/8 inch).<p>\n\n    - experimentation with margins does not seem to help<p>\n\n    <p>\n\n    Sending windows jobs via samba works excellent!<p>\n\n      Consumables/Refills: HP Model 92295A Toner $70<p>"
+        }
+    }
+}

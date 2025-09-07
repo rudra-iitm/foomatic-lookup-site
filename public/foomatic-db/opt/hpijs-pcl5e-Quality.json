@@ -1,0 +1,174 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hpijs-pcl5e-Quality",
+        "arg_shortname": {
+            "en": "Quality"
+        },
+        "arg_longname": {
+            "en": "Resolution, Quality"
+        },
+        "arg_execution": {
+            "arg_group": "Extra",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-600GrayscaleK"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "printer": "printer/Canon-LBP-430",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "printer": "printer/Kyocera-FS-6500",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "printer": "printer/Kyocera-FS-6500plus",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "printer": "printer/Oki-OL410e",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "printer": "printer/Oki-Super_6e",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "printer": "printer/Ricoh-Aficio_401",
+                    "arg_defval": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hpijs-pcl5e-Quality-300DraftGrayscaleK",
+                    "ev_longname": {
+                        "en": "300 dpi, Draft"
+                    },
+                    "ev_shortname": {
+                        "en": "300DraftGrayscaleK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=1,Quality:ColorMode=0,Quality:MediaType=0,Quality:PenSet=0"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5e-Quality-300GrayscaleK",
+                    "ev_longname": {
+                        "en": "300x300 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "300GrayscaleK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=0,Quality:ColorMode=0,Quality:MediaType=0,Quality:PenSet=0",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl5e"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Canon-LBP-430"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Kyocera-FS-6500"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Kyocera-FS-6500plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Oki-OL410e"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Oki-Super_6e"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Ricoh-Aficio_401"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl5e-Quality-600GrayscaleK",
+                    "ev_longname": {
+                        "en": "600x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "600GrayscaleK"
+                    },
+                    "ev_driverval": "600 -sIjsParams=Quality:Quality=0,Quality:ColorMode=0,Quality:MediaType=0,Quality:PenSet=0",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl5e"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Canon-LBP-430"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Kyocera-FS-6500"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Kyocera-FS-6500plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Oki-OL410e"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Oki-Super_6e"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl5e",
+                                "printer": "printer/Ricoh-Aficio_401"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_M1522n_MFP",
+        "make": "HP",
+        "model": "LaserJet M1522n MFP",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 24\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-06"
+        }
+    }
+}

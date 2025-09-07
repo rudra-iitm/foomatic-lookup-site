@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Dell-3010cn",
+        "make": "Dell",
+        "model": "3010cn",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Dell;CMD:PJL,RASTER,DOWNLOAD,DPL;MDL:Color Laser 3010cn;DES:Dell Color Laser 3010cn;CLS:PRINTER;STS:AAAMAwAAAAAAAgJ/ZCNkI2QjZCNkAwAzcJoAAAAAwAAAAAAAAAAQDA==;",
+                "commandset": "PJL,RASTER,DOWNLOAD,DPL",
+                "description": "Dell Color Laser 3010cn",
+                "manufacturer": "Dell",
+                "model": "Color Laser 3010cn"
+            },
+            "snmp": {
+                "description": "Dell Color Laser 3010cn"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxldpl",
+        "comments": {
+            "en": "Cheap color laser printer. In contrary to several other color\n      laser printers from Dell this model does not understand\n      PostScript or unpatched PCL. It understands PCL-XL only if\n      one sends the PJL command \"ENTER LANGUAGE = DPL\" before sending\n      the actual PCL-XL job. This is implemented in the \"pxldpl\" driver\n      which patches the output of Ghostscript's \"pxlcolor\" driver\n      appropriately.<p>\n\n      Dell presents the printer as a Windows-only printer. It is a\n      rebadged Fuji-Xerox PLW type printer, most probably the\n      DocuPrint C2090 FS.<p><p>\n\n      Consumables/Refills: ~$70US per color cartridge<p>"
+        }
+    }
+}

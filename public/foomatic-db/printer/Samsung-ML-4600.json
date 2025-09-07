@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-4600",
+        "make": "Samsung",
+        "model": "ML-4600",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://samsungelectronics.com/printer/uk/product/printer/ml4600.html",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "The printer has an emulation for PCL6.\nNot try to check that ... runs perfectly\nwith PCL5 drivers like ljet4."
+        }
+    }
+}

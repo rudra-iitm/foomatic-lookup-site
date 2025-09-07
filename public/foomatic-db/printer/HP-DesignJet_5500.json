@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_5500",
+        "make": "HP",
+        "model": "DesignJet 5500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "5",
+                    "left": "5",
+                    "right": "5",
+                    "bottom": "12"
+                }
+            }
+        },
+        "url": "http://h20022.www2.hp.com/busprod/specifications/0,12513,series=82218^type=18972^category=64182,00.html?lsidebarLayId=79&rsidebarLayId=64",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "cdnj500",
+        "comments": {
+            "en": "Large-format 6-ink printer, 42 inches or 60 inches wide.<p>\n\n    According to user reports compatible to the DesignJet 100,\n    DesignJet 500, DesignJet 800, DesignJet 5000 and DesignJet 5500,\n    because they all use the same Windows driver. But be careful, the\n    DesignJet 120 uses a different Windows driver.<p>\n\n    There are also drivers for HP's RTL language under\n    developement in both the CUPS/CUPSDDK 1.2 and Gutenprint\n    projects.<p>\n\n    You can also send HP-GL/2 drawings and JPEG images directly to the\n    printer.<p>\n\n    There is also a more expensive PostScript version which is\n    probably the better choice for use with free software.<p><p>\n\n      Consumables/Refills: 6 cartridges (CMYcmK)<p>"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/119",
+        "arg_shortname": {
+            "en": "Quality"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "@%s.upp"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "stcX.upp",
+                "arg_defval": "ev/770"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/770",
+                    "ev_longname": {
+                        "en": "360x360dpi, 32-bit CMYK"
+                    },
+                    "ev_shortname": {
+                        "en": "360dpi.32bpp"
+                    },
+                    "ev_driverval": "stc"
+                },
+                {
+                    "@id": "ev/771",
+                    "ev_longname": {
+                        "en": "360x360dpi, 4-bit, PostScript halftoning, weaved"
+                    },
+                    "ev_shortname": {
+                        "en": "360dpi.4bpp"
+                    },
+                    "ev_driverval": "stc_l"
+                },
+                {
+                    "@id": "ev/772",
+                    "ev_longname": {
+                        "en": "720x720dpi, 32-bit CMYK, weaved"
+                    },
+                    "ev_shortname": {
+                        "en": "720dpi"
+                    },
+                    "ev_driverval": "stc_h"
+                }
+            ]
+        }
+    }
+}

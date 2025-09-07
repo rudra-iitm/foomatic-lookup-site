@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-MX521adte",
+        "make": "Lexmark",
+        "model": "MX521adte",
+        "mechanism": null,
+        "lang": {
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark ;MDL:Lexmark MX521adte;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark MX521adte"
+            }
+        },
+        "functionality": "A",
+        "driver": "PCL6",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "PCL6"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_MX520_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 46 pages/min<p>"
+        }
+    }
+}

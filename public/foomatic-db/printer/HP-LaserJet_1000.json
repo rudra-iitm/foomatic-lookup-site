@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1000",
+        "make": "HP",
+        "model": "LaserJet 1000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/hplaserjet45675.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:hp LaserJet 1000;CMD:ZJS;CLS:PRINTER;DES:hp LaserJet 1000;",
+                "commandset": "ZJS",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp LaserJet 1000"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2zjs",
+        "comments": {
+            "en": "This printer is supported by the foo2zjs free software printer driver.\n    <p>\n\n    The printer has a USB\n    connection. It has only 1 MB of RAM and 32 kB of ROM.<p>\n\n    The firmware of the printer must be uploaded after turning it\n    on.  You can use a hotplug/udev script which comes with foo2zjs,\n    or do it manually:\n    \"<tt>cat /usr/share/foo2zjs/firmware/sihp1000.dl >\n    /dev/usb/lp0</tt>\".<p>\n\n      Consumables/Refills: Cartridge containing toner and imaging drum<p>"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-N2750",
+        "make": "Epson",
+        "model": "EPL-N2750",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/epln2750/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eplaser",
+        "comments": {
+            "en": "A3/11x17 large format laser<p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

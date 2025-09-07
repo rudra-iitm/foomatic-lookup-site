@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-KM-1635",
+        "make": "Kyocera",
+        "model": "KM-1635",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "in",
+                    "relative": null,
+                    "top": "0.166666",
+                    "left": "0.166666",
+                    "right": "0.166666",
+                    "bottom": "0.166666"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.eu/index/products/product/km1635.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "foo2oak-z1",
+        "comments": {
+            "en": "The KM-1635 is a copier.  Only the print function is supported.<p>\n\n      Consumables/Refills: Toner Black (15000 prints) - $70\n\t\tImaging Drum (150000 prints) - $160 Part numbers: tk410<p>"
+        }
+    }
+}

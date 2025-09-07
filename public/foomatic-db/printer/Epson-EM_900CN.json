@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EM_900CN",
+        "make": "Epson",
+        "model": "EM 900CN",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "drivers": {
+            "driver": {
+                "id": "gutenprint"
+            }
+        },
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 900N.<p>\n\n      The Gutenprint driver does not work for the 900N (ethernet) printer;\n      it prints part of the page and hangs.  (Ed: is this still true?)\n      <p>\n\n      It should(tm) work perfectly with the Gutenprint driver.<p>\n\n      Consumables/Refills: Black cartridge and 3-ink color cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Canon-iP4000",
+        "make": "Canon",
+        "model": "iP4000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AJ-2005",
+        "make": "Sharp",
+        "model": "AJ-2005",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.sharpelectronics.com/",
+        "lang": {
+            "pcl": {
+                "@level": "3?"
+            }
+        },
+        "functionality": "B",
+        "driver": "pcl3",
+        "comments": {
+            "en": "Similar printer to the Xerox DocuPrint M760, the printer probably\n    does up to 1200 dpi, but the drivers shown here do only 600 dpi.<p>\n\n    The Sharp AJ-1800/1805/2000/2005 and the Xerox DocuPrint M750/M760\n    are very similar and can all be used with the same drivers. For\n    how to get the best out of these printers, see the page of the <a\n    href=\"show_printer.cgi?recnum=Sharp-AJ-2000\">Sharp\n    AJ-2000</a>.<p><p>\n\n      Consumables/Refills: Seperately exchangable tanks for each colour<p>"
+        }
+    }
+}

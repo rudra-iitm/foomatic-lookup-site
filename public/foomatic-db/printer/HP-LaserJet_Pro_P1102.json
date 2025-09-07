@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_Pro_P1102",
+        "make": "HP",
+        "model": "LaserJet Pro P1102",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/my/en/sm/WF06b/18972-18972-3328059-3328066-3328066-4110394-4110395.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet Professional P1102;CMD:ZJS,PJL,ACL,HTTP;CLS:PRINTER;DES:HP LaserJet Professional P1102;FWVER:20090924;",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet Professional P1102",
+                "commandset": "ZJS,PJL,ACL,HTTP"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2zjs-z2",
+        "comments": {
+            "en": "This printer is supported by the foo2zjs free software printer driver.\n      <p>\n\n      The printer is faster than the LaserJet 1000 and has a USB\n      connection.<p>\n\n      Consumables: Print cartridge (1600 prints), ~$68 (part no. CE285A)"
+        }
+    }
+}

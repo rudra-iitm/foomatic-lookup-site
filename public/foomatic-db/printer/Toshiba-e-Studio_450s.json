@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-e-Studio_450s",
+        "make": "Toshiba",
+        "model": "e-Studio 450s",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 45\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-08-07"
+        }
+    }
+}

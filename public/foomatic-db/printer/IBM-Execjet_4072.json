@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/IBM-Execjet_4072",
+        "make": "IBM",
+        "model": "Execjet 4072",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bj200",
+        "comments": {
+            "en": "found on www.newdealinc.com/support/ts/272ibm.htm<p>\n\n      Consumables/Refills: cartridge, about 20$<p>"
+        }
+    }
+}

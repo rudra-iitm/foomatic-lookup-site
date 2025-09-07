@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-XP-950_Series",
+        "make": "Epson",
+        "model": "XP-950 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:XP-950 Series;CLS:PRINTER;DES:EPSON XP-950 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON XP-950 Series",
+                "manufacturer": "EPSON",
+                "model": "XP-950 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201305w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201305w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

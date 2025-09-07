@@ -1,0 +1,87 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/95",
+        "arg_shortname": {
+            "en": "Duplex"
+        },
+        "arg_longname": {
+            "en": "Double-Sided Printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "ljet3d",
+                    "arg_defval": "ev/705"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ljet4d",
+                    "arg_defval": "ev/705"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "oki4w",
+                    "arg_defval": "ev/705"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxlcolor",
+                    "arg_defval": "ev/705"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxldpl",
+                    "arg_defval": "ev/705"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxlmono",
+                    "arg_defval": "ev/705"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/703",
+                    "ev_longname": {
+                        "en": "On (Flip on Short Edge)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexTumble"
+                    },
+                    "ev_driverval": "-dDuplex -dTumble"
+                },
+                {
+                    "@id": "ev/704",
+                    "ev_longname": {
+                        "en": "On (Flip on Long Edge)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexNoTumble"
+                    },
+                    "ev_driverval": "-dDuplex"
+                },
+                {
+                    "@id": "ev/705",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": null
+                }
+            ]
+        }
+    }
+}

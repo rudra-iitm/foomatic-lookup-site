@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/Infotec-Pro_8310",
+        "make": "Infotec",
+        "model": "Pro 8310",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.infotec.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:INFOTEC;MDL:Pro 8310;CMD:POSTSCRIPT,PDF;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-Infotec",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Infotec",
+                    "ppd": "PPD/Infotec/PS/Infotec-Pro_8310_PS.ppd"
+                },
+                {
+                    "id": "PDF-Infotec",
+                    "ppd": "PPD/Infotec/PDF/Infotec-Pro_8310_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "If you use the Adobe PostScript(R) option, select the [Adobe PostScript] option from [PostScript] drop-down list of [Installable Options] tab. <p>\n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh, Lanier, Savin, NRG, Infotec, and Gestetner printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 111."
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-MJ_8000C",
+        "make": "Epson",
+        "model": "MJ 8000C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 3000.<p>\n\n    Old reports for the Epson Stylus Color 3000:<p>\n\n    Using the stcolor drivers, max resolution is 360dpi.  Most other\n    features are working, though. Epson sends a RIP module with the\n    windows drivers that is a PS to ESC P/2 converter. I bought the\n    printer expecting it to have native PS but it\n    doesn't.<p>\n\n    Should work quite well with the stp gimp-print driver.  Someone\n    let me know if it qualifies for perfect. (The gimp-print folks say\n    that it does; good enough for me).<p><p>\n\n      Consumables/Refills: 4 separate ink cartridges<p>"
+        }
+    }
+}

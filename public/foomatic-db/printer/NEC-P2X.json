@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/NEC-P2X",
+        "make": "NEC",
+        "model": "P2X",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/Pwriter/p32/spec1.htm",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "necp2xX.upp",
+        "comments": {
+            "en": "Uniprint parameter file necp2x.upp/necp2x6.upp<p>\n\n      Consumables/Refills: ribbon<p>"
+        }
+    }
+}

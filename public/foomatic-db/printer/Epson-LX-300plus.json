@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LX-300plus",
+        "make": "Epson",
+        "model": "LX-300+",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ibmpro"
+    }
+}

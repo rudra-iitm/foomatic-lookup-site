@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-F-1200S",
+        "make": "Kyocera",
+        "model": "F-1200S",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;MDL:F-1200S;",
+                "description": "Kyocera F-1200S",
+                "manufacturer": "Kyocera",
+                "model": "F-1200S"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljetplus"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-XC8160de",
+        "make": "Lexmark",
+        "model": "XC8160de",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark International ;MDL:Lexmark XC8160de;",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark XC8160de"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "PCL6"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_XC8100_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 36 pages/min<p>"
+        }
+    }
+}

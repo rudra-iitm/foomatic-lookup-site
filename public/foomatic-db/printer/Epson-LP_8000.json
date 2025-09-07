@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP_8000",
+        "make": "Epson",
+        "model": "LP 8000",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "lp8000"
+    }
+}

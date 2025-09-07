@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/lxm5700m",
+        "name": "lxm5700m",
+        "url": "http://www.ultranet.com/~setaylor/papers.htm",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=lxm5700m %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Monochrome driver for the Lexmark 5700. Fast and less memory\n    consuming alternative to the \"pbm2l7k\" colour driver. You should\n    have it installed when you do not only use your printer for images\n    but also for letters and listings."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Compaq-IJ900"
+                },
+                {
+                    "id": "printer/Lexmark-5700"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_XJ8C"
+                },
+                {
+                    "id": "printer/Xerox-WorkCentre_470cx"
+                }
+            ]
+        }
+    }
+}

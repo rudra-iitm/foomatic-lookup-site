@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-RPDL_II_Laser_Printer",
+        "make": "Ricoh",
+        "model": "RPDL II Laser Printer",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "400",
+                    "y": "400"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "rpdl",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

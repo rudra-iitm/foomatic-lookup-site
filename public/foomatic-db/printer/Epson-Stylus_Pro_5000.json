@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Pro_5000",
+        "make": "Epson",
+        "model": "Stylus Pro 5000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://prographics.epson.com/products/stypro5000/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Working in gimp-print 4.1.8.<p>"
+        }
+    }
+}

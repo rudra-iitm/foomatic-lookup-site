@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_5",
+        "make": "HP",
+        "model": "Color LaserJet 5",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>"
+        }
+    }
+}

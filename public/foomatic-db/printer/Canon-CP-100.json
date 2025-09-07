@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-CP-100",
+        "make": "Canon",
+        "model": "CP-100",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "comments": {
+            "en": "Portable dye-sublimation photo printer in 4x6inch/10x15cm photo\n    size. 300 dpi, full 24-bit color depth (256 levels per CMY color\n    component), full-bleed (border-less). Produces laboratory-like\n    photos. Does not print on normal paper.<p>\n\n    Can be connected to the USB port of many Canon cameras for direct\n    printing controlled by the camera.<p>\n\n    A driver for this printer is under developemnt by the <a\n    href=\"http://gimp-print.sf.net/\">Gimp-Print</a>\n    project. The printer should work with the version 4.3.20 or newer\n    of the development line.<p><p>\n\n      Consumables/Refills: Packs with special paper and three-color ribbon<p>"
+        }
+    }
+}

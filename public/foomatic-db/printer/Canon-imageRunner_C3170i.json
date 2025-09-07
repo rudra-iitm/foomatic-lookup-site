@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_C3170i",
+        "make": "Canon",
+        "model": "imageRunner C3170i",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

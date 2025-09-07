@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Oce-cm2520",
+        "make": "Oce",
+        "model": "cm2520",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Generic;MDL:25C-1;",
+                "manufacturer": "Generic",
+                "model": "25C-1"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce-KM",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oce-KM",
+                    "ppd": "PPD/Oce/Others/Oce-cm2520.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.0 inches / 30.5 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 25 pages/min<p>"
+        }
+    }
+}

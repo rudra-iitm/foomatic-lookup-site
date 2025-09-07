@@ -1,0 +1,51 @@
+{
+    "driver": {
+        "@id": "driver/rastertokmXXXXdl",
+        "name": "rastertokmXXXXdl",
+        "url": "http://printer.konicaminolta.com/support/index_ds.html",
+        "supplier": "KONICA MINOLTA",
+        "manufacturersupplied": "KONICA MINOLTA|Minolta",
+        "license": "GPL",
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "http://printer.konicaminolta.com/support/index_ds.html",
+                "@level": "voluntary",
+                "#text": "KONICA MINOLTA Printer Support Site"
+            }
+        },
+        "shortdescription": {
+            "en": "Free software printer drivers for the magicolor DL series from\n   KONICA MINOLTA"
+        },
+        "functionality": {
+            "maxresx": "2400",
+            "maxresy": "600",
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100"
+        },
+        "execution": {
+            "cups": null
+        },
+        "comments": {
+            "en": "Drivers for the KONICA MINOLTA magicolor DL series, supplied by\n    KONICA MINOLTA.<p>\n\n    The KONICA MINOLTA magicolor DL series are rather cheap color\n    laser printers with a Zenographics-based protocol. Some of them\n    are therefore also supported by the \"foo2zjs\" driver. Note that\n    there is also a KONICA MINOLTA magicolor W series which has no\n    Linux support from KONICA MINOLTA. At least some of them work with\n    the \"m2300w\" and \"m2400w\" drivers.<p>\n\n    The drivers which KONICA MINOLTA supplies for the magicolor DL\n    series are entirely free software, there are no binary-only pieces\n    inside. So you can compile, and optimize the driver for your\n    system platform, security-audit the code and make the driver also\n    part of a Linux distribution,<p>\n\n    The drivers are CUPS raster drivers. So they need the CUPS\n    libraries, and Ghostscript with the \"cups\" device built-in (for\n    example ESP Ghostscript). PPD files come with the driver package,\n    therefore no PPDs are available on OpenPrinting.<p>\n\n    The drivers support all functionality of the printers except\n    \"EAIDC\" (automatically adjust halftone during the jobs). Even\n    color management is supported and appropriate ICC profiles are\n    included in the driver package.<p>\n\n    The KONICA MINOLTA magicolor 2300 DL is not officially supported\n    but works with the driver and PPD file for the 2430 DL. Mote that\n    there is also a Minolta magicolor 2300 DL (without \"KONICA\") which\n    is similar but not exactly the same. If someone of you has this\n    model, please report here whether it also works.<p>\n\n    To obtain the drivers, go to the site mentioned here, choose your\n    printer model under \"Color Laser\", and then choose \"Linux\" under\n    \"Drivers, PPDs, & Utilities\". You can also find the drivers <a\n    href=\"http://www.openprinting.org/download/printing/konicaminolta/\">here\n    on OpenPrinting</a>, but be aware that they are perhaps\n    not up-to-date.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2300_DL"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2430_DL"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_5430_DL"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_5440_DL"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-2010",
+        "make": "Canon",
+        "model": "BJC-2010",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer is the same hardware as the BJC-2000, only the\n    contents of the retail package is different. So one can use the\n    drivers as listed on the <a\n    href=\"show_printer.cgi?recnum=Canon-BJC-2000\">BJC-2000 entry\n    page</a> or choose the \"BJC-2000\" as one's\n    printer model in printer configuration programs.<p><p>\n\n      Consumables/Refills: BC20 $36.99 BC-21e $52.99 BCI-21Bk $8.99 BCI-21Clr $21.99<p>"
+        }
+    }
+}

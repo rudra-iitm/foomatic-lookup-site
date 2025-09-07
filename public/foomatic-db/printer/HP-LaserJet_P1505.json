@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_P1505",
+        "make": "HP",
+        "model": "LaserJet P1505",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF25a/18972-18972-3328059-14638-3328066-3435666.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet P1505;CMD:ACL;CLS:PRINTER;DES:HP LaserJet P1505;FWVER:20070910;",
+                "commandset": "XQX",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet P1505"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2xqx",
+        "comments": {
+            "en": "This printer is supported by the foo2xqx free software printer driver.\n    <p><p>\n\n      Consumables/Refills: Cartridge containing toner and imaging drum<p>"
+        }
+    }
+}

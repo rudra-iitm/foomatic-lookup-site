@@ -1,0 +1,36 @@
+{
+    "driver": {
+        "@id": "driver/Postscript-Lexmark",
+        "name": "Postscript-Lexmark",
+        "url": "http://www.lexmark.com/",
+        "supplier": "Lexmark",
+        "manufacturersupplied": "Lexmark",
+        "license": "BSD (modified)",
+        "licensetext": {
+            "en": "******************************************************************************\n\n \tProduced by Lexmark International, Inc.\n\n\tCopyright 2008 Lexmark International, Inc. All rights reserved.\n\n******************************************************************************\n\tLicense\n******************************************************************************\n\nRedistribution of this file, with or without modification, is permitted \nprovided that the following conditions are met:\n\n \tRedistributions of this file must reproduce the above copyright notice, \n\tthis list of conditions and the following disclaimer in the file and \n\tdocumentation and/or other materials provided with the distribution.\n\n\tNeither the name of Lexmark International, Inc. nor the names of its \n\tcontributors may be used to endorse or promote products derived \n\tfrom this file without specific prior written permission.\n\nTHIS FILE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND \nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE \nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL \nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR \nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER \nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, \nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE \nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+        },
+        "shortdescription": {
+            "en": "Manufacturer-supplied PPD files for Lexmark's PostScript printers"
+        },
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "openprinting-ppds-postscript-lexmark"
+            }
+        },
+        "functionality": {
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100"
+        },
+        "execution": {
+            "postscript": null
+        },
+        "comments": {
+            "en": "<B>All PPD files of this driver entry are available in the <A href=\"https://github.com/OpenPrinting/ps-printer-app\">PostScript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ps-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      Under this entry Lexmark's PPD files for their PostScript printers\n      are hosted. PostScript printers are supported natively in Linux\n      and Unix environments, so you only need the PPD file for your\n      printer, no driver executables, to get access to all printing\n      functionality. The PPD contains all information about properties\n      and user-settable options which are specific to the printer and\n      makes printing dialogs show these options and allow the user to\n      control all the printer's functionality.<p>\n\n      The PPDs only support the printing functionality of the\n      printers. To use extra functionality, like scanning and faxing\n      you will need additional drivers.<p>\n\n      Note that these printers work, like all other PostScript\n      printers, with <a\n      href=\"show_driver.cgi?driver=Postscript\">generic PostScript\n      PPD files</a>, but then you will not get access to all the\n      printer specific functionality.<p>"
+        }
+    }
+}

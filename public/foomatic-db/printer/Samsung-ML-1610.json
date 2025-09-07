@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1610",
+        "make": "Samsung",
+        "model": "ML-1610",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/PrinterandMultifunction/BlackWhiteLaserPrintersforHomeandHomeOffice/ML_1610XAA.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Samsung;CMD:GDI;MDL:ML-1610;CLS:PRINTER;MODE:GDI;STATUS:IDLE;",
+                "commandset": "GDI",
+                "manufacturer": "Samsung",
+                "model": "ML-1610"
+            }
+        },
+        "functionality": "A",
+        "driver": "splix",
+        "comments": {
+            "en": "User comment:<p>\n\n    Samsung also has a driver <a href=\"http://www.samsung.com/support/productsupport/download/FileView.aspx?cttfileid=303020&type=Printer+and+Multifunction&typecode=&subtype=Black+%26+White+Laser+Printers+for+Home+and+Home+Office&subtypecode=&cmssubtypecode=&model=ML-1610/XAA&filetype=DR&language=&LSSI=/include/SSI/us_left/LMenu_PrinterandMultifunction_BlackWhiteLaserPrintersforHomeandHomeOffice.sec&RSSI=/include/SSI/us_right/RMenu_PrinterandMultifunction.sec\"> here</a> which I didn't try yet.\n<p>\n\n===<br>\nA report on using the Samsung driver and installing this printer on Slackware.<p>\n\n<a href=\"http://www.linuxpackages.net/forum/viewtopic.php?t=15246\">http://www.linuxpackages.net/forum/viewtopic.php?t=15246</a><p>\n\nIt works perfectly fine, although there is a peculiar 'error' logging in /var/log/cups/error_log - 'media tray empty!' after every print job, but it doesn't seem to affect the printer (or CUPS) at all.<p>\nThe 'media try empty' error message is a bug in CUPS, and is fixed from:<p>\n\nCHANGES IN CUPS V1.1.21rc1\n        - The USB backend incorrectly reported \"media tray\n          empty\" (STR #660)\n<br>===<p>\n\n<em>My experience on Gentoo:</em>\nSamsung offers an tar.gz package, which contains a GUI installer. The installation is quick and flawlessly. You can use CUPS or LPRng as backend. The installer also offers to install a printer management GUI and to integrate that with KDE/Gnome. (This GUI seems to be able to manage other CUPS printers, too; I didn't try that, however.)<p>\n\nThe driver package also contains a set of .ppd files among which is one for the ML-1610, appearently for PS Level 3.<p>\n\nAs the installation went smooth and the printer works fine, I'm setting the status to \"Perfectly\".<p><p>\n\n      Consumables/Refills: Single toner cartridge / 2,000 pages (ships with 1,000-page starter toner cartridge)<p>"
+        }
+    }
+}

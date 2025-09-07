@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Star-NL-10",
+        "make": "Star",
+        "model": "NL-10",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "216"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "Alternate drivers: eps9mid, eps9high\n<br>Margin adjustments may need some tuning.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

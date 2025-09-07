@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Apple-StyleWriter_I",
+        "make": "Apple",
+        "model": "StyleWriter I",
+        "mechanism": {
+            "inkjet": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "lpstyl",
+        "comments": {
+            "en": "Listed as supported in lpstyl documentation."
+        }
+    }
+}

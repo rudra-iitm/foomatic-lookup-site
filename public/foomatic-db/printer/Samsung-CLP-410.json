@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-410",
+        "make": "Samsung",
+        "model": "CLP-410",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:SPLC,PCL5E,PCL6,PS3,PDF,TIFF,JPEG,FWV,PIC,EXT;MDL:CLP-410 Series;CLS:PRINTER;MODE:SPL7,R000203;",
+                "manufacturer": "Samsung",
+                "model": "CLP-410 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_CLP-410_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>"
+        }
+    }
+}

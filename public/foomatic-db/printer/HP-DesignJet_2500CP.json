@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_2500CP",
+        "make": "HP",
+        "model": "DesignJet 2500CP",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-HP",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-HP",
+                "ppd": "PPD/HP/HP_DesignJet_2500CP_PS3.ppd"
+            }
+        },
+        "comments": {
+            "en": "Large-format printer.<p>\n\n    PostScript seems to be an optional feature. Reported to work with\n    Gimp-Print.<p><p>\n\n      Consumables/Refills: 4 Cartridges: Black, Cyan, Magenta, Yellow<p>"
+        }
+    }
+}

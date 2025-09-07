@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-600",
+        "make": "Canon",
+        "model": "LBP-600",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Reputed not to work by \"Franko\".  I guess it's just like the LBP-660."
+        }
+    }
+}

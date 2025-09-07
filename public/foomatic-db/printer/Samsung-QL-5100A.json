@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-QL-5100A",
+        "make": "Samsung",
+        "model": "QL-5100A",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsungcanada.com/products/offauto/QL5100A.htm",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "The ljet4 driver works perfectly\nwithout modification. Unlike the \noriginal HP LaserJet 4, the\nSamsung QL5100A supports the HP\nPJL.<p>\n\n      Consumables/Refills: Combined toner/drum cartrige<p>"
+        }
+    }
+}

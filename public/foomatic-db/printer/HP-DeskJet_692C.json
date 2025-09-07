@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_692C",
+        "make": "HP",
+        "model": "DeskJet 692C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Older user comments:<p>\n\n    See the driver's home page (the \"cdj670\" link from\n    the table below) for documentation and limitations.  Various modes\n    and papertypes are supported.<p>\n\n    Use the cdj550 driver with 1 bit per pixel for fast black-only\n    printing.<p><p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

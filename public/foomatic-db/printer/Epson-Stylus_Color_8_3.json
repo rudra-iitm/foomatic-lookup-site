@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_8_3",
+        "make": "Epson",
+        "model": "Stylus Color 8 3",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc8q__/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Works perfectly with Gimp-Print 4.2.x.<p>"
+        }
+    }
+}

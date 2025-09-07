@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_P2015",
+        "make": "HP",
+        "model": "LaserJet P2015",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,MLC,BIDI-ECP,PCL,POSTSCRIP",
+                "description": "Hewlett-Packard LaserJet P2015 series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet P2015 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n  PCL 5e and 6 with Postscript 2 emulation, out of the box, parallel and\nUSB connection,  250-sheet tray built-in, extra 250-sheet tray available.<p>"
+        }
+    }
+}

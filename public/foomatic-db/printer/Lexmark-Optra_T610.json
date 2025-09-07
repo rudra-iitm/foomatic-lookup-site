@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_T610",
+        "make": "Lexmark",
+        "model": "Optra T610",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/laser/OptraT/T610.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "15ppm, 350-sheet feeder, 4/8MB memory std."
+        }
+    }
+}

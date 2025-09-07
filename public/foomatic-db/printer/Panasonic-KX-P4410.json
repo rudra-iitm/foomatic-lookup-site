@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P4410",
+        "make": "Panasonic",
+        "model": "KX-P4410",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet2p"
+    }
+}

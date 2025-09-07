@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EP_302",
+        "make": "Epson",
+        "model": "EP-302",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:EP-302;CLS:PRINTER;DES:EPSON EP-302",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON EP-302",
+                "manufacturer": "EPSON",
+                "model": "EP-302"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-ep-302",
+        "drivers": {
+            "driver": {
+                "id": "epson-ep-302"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

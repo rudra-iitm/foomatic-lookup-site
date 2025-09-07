@@ -1,0 +1,36 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/eplaser-Landscape",
+        "arg_shortname": {
+            "en": "Landscape"
+        },
+        "arg_longname": {
+            "en": "Orientation"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "160",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dLandscape"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "eplaser",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "eplaser-jp",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_shortname_false": {
+            "en": "Portrait"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P8475",
+        "make": "Panasonic",
+        "model": "KX-P8475",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/PCSC/PCPC/printers/p8475i.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also PCL5.\n<br>8M RAM std, full resolution requires 24M.\n<br>SCSI interface\n<br>various network options<p>\n\n      Consumables/Refills: CMYK toners, fuser, imager, transfer kit<p>"
+        }
+    }
+}

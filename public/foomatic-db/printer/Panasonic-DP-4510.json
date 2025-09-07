@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-DP-4510",
+        "make": "Panasonic",
+        "model": "DP-4510",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/business/office/pub/spec_sheets/dp4510ss.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "PostScript 3 is optional\n      \n      Throughput = 45\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_6ex",
+        "make": "Minolta",
+        "model": "PagePro 6ex",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL5e,PJL,WinStyle",
+                "manufacturer": "Minolta",
+                "model": "PagePro   6e"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "<b>Important</b>: The <a\n    href=\"show_printer.cgi?recnum=Minolta-PagePro_6L\">Minolta PagePro\n    6L</a> is a different printer. This rating does not apply to\n    the 6L<p>\n\n    Graphics comes out too dark.<p>"
+        }
+    }
+}

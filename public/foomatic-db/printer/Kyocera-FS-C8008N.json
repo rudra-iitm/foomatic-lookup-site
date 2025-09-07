@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-C8008N",
+        "make": "Kyocera",
+        "model": "FS-C8008N",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera Mita;Model:Kyocera Mita FS-C8008N;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "manufacturer": "Kyocera Mita",
+                "model": "Kyocera Mita FS-C8008N"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_Mita_FS-C8008N_en.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.2 inches / 31.0 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 4 pages/min<p>"
+        }
+    }
+}

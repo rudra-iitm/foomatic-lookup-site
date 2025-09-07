@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_3450",
+        "make": "Xerox",
+        "model": "Phaser 3450",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;MDL:Xerox Phaser 3450;",
+                "manufacturer": "Xerox",
+                "model": "Xerox Phaser 3450"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx3450.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 25\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-21\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 25 pages/min<p>"
+        }
+    }
+}

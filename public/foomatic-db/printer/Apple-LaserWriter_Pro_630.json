@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Apple-LaserWriter_Pro_630",
+        "make": "Apple",
+        "model": "LaserWriter Pro 630",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "ftp://manuals.info.apple.com/Apple_Support_Area/Manuals/printers/0302508LW600630Pro.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "contrib_url": "http://saf.bio.caltech.edu/pub/software/linux_or_unix_tools/pap_backend_with_cups.txt",
+        "comments": {
+            "en": "Works with no hassle as generic Postscript parallel\n    printer.<p>\n\n    Works slightly faster over ethernet, but requires an AAUI to\n    10baseT adaptor on the printer, and the netatalk package\n    installed.<p>\n\n    To use as an Appletalk printer under LPRng (RedHat 7.x), configure\n    with printtool as a local printer attached to /dev/null, then edit\n    $spooldir/general.cfg and change PRINTER_TYPE=ATALK, and create a\n    file in the spooldir called \".paprc\" containing the Appletalk name\n    of the printer (the default is \"Laserwriter\"). Contrary to the\n    netatalk HOWTO, comments in this file will screw things up\n    (because of dumb code in LPRng's master filter).<p>\n\n    With CUPS (RedHat 9), install David Mathog's pap backend\n    driver\n    (http://saf.bio.caltech.edu/pub/software/linux_or_unix_tools/pap)\n    into /usr/lib/cups/backend.  Change the paths to pap and psf to\n    \"/usr/bin/pap\" and \"/usr/sbin/psf\" respectively (not\n    /usr/local/(s)bin), and chmod 755 it.  Then use CUPS's\n    web-based config.  Or use RedHat printconf to create a local\n    printer on /dev/null, then edit the DeviceURI in\n    /etc/cups/printers.conf to read \"pap://Laserwriter\".  If you have\n    several Laserwiters, read the real instructions for the pap\n    backend at <a\n    href=\"http://saf.bio.caltech.edu/pub/software/linux_or_unix_tools/pap_backend_with_cups.txt\">http://saf.bio.caltech.edu/pub/software/linux_or_unix_tools/pap_backend_with_cups.txt</a><p>\n\n    Changing the AppleTalk name, setting resolution (300dpi or 600pdi)\n    and enable/disabling test-page-at-power-up needs a Mac (or in my\n    case, an Amiga with ShapeShifter - maybe MOL works, or\n    UAE+Shapeshifter, but I don't know if they support device-level\n    access to the network card) and Apple's printer control software\n    (available from ftp.apple.com).<p>\n\n    Thanks to Duncan Gibb (linuxprinting at duncangibb dot com) for\n    these comments.<p><p>\n\n      Consumables/Refills: Toner units US$50-60, UKP30-40, life about 6000 pages<p>"
+        }
+    }
+}

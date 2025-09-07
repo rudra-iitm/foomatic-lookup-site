@@ -1,0 +1,56 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4300",
+        "make": "Oki",
+        "model": "B4300",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oki;MDL:B4300;",
+                "manufacturer": "Oki",
+                "model": "B4300"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/ok4300u1.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 19\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 18 pages/min<p>"
+        }
+    }
+}

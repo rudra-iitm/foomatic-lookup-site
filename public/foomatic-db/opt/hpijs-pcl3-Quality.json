@@ -1,0 +1,570 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hpijs-pcl3-Quality",
+        "arg_shortname": {
+            "en": "Quality"
+        },
+        "arg_longname": {
+            "en": "Resolution, Print Quality, Ink Type, Media Type"
+        },
+        "arg_execution": {
+            "arg_group": "Extra",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2100",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2150",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2200",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2250",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2500",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2550",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2600",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Apollo-P-2650",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMY"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl3",
+                    "printer": "printer/Sony-IJP-V100",
+                    "arg_defval": "ev/hpijs-pcl3-Quality-300ColorCMYK"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300ColorCMY",
+                    "ev_longname": {
+                        "en": "300 dpi, Color, Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "300ColorCMY"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=0,Quality:ColorMode=2,Quality:MediaType=0,Quality:PenSet=1",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300ColorCMYK",
+                    "ev_longname": {
+                        "en": "300 dpi, Color, Black + Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "300ColorCMYK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=0,Quality:ColorMode=2,Quality:MediaType=0,Quality:PenSet=2",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Sony-IJP-V100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300DraftColorCMY",
+                    "ev_longname": {
+                        "en": "300 dpi, Draft, Color, Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "300DraftColorCMY"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=1,Quality:ColorMode=2,Quality:MediaType=0,Quality:PenSet=1",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300DraftColorCMYK",
+                    "ev_longname": {
+                        "en": "300 dpi, Draft, Color, Black + Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "300DraftColorCMYK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=1,Quality:ColorMode=2,Quality:MediaType=0,Quality:PenSet=2",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Sony-IJP-V100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300DraftGrayscaleCMYK",
+                    "ev_longname": {
+                        "en": "300 dpi, Draft, Grayscale, Black + Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "300DraftGrayscaleCMYK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=1,Quality:ColorMode=0,Quality:MediaType=0,Quality:PenSet=2",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Sony-IJP-V100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300GrayscaleCMYK",
+                    "ev_longname": {
+                        "en": "300 dpi, Grayscale, Black + Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "300GrayscaleCMYK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=0,Quality:ColorMode=0,Quality:MediaType=0,Quality:PenSet=2",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Sony-IJP-V100"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-300PhotoCMYcmK",
+                    "ev_longname": {
+                        "en": "300 dpi, Photo, Photo + Color Cartr., Premium Pape"
+                    },
+                    "ev_shortname": {
+                        "en": "300PhotoCMYcmK"
+                    },
+                    "ev_driverval": "300 -sIjsParams=Quality:Quality=2,Quality:ColorMode=2,Quality:MediaType=1,Quality:PenSet=4",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/hpijs-pcl3-Quality-600x300BestGrayscaleCMYK",
+                    "ev_longname": {
+                        "en": "600x300 dpi, Best, Grayscale, Black + Color Cartr."
+                    },
+                    "ev_shortname": {
+                        "en": "600x300BestGrayscaleCMYK"
+                    },
+                    "ev_driverval": "600x300 -sIjsParams=Quality:Quality=2,Quality:ColorMode=0,Quality:MediaType=0,Quality:PenSet=2",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "hpijs-pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2150"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2200"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2500"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2550"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2600"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Apollo-P-2650"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "hpijs-pcl3",
+                                "printer": "printer/Sony-IJP-V100"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

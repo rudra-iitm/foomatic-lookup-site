@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLX-982x",
+        "make": "Samsung",
+        "model": "CLX-982x",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,FAX,FWV,EXT;MDL:CLX-982x Series;CLS:PRINTER;CID:SA_PCL6_Color;",
+                "manufacturer": "Samsung",
+                "model": "CLX-982x Series"
+            },
+            "snmp": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,PDF,TIFF,JPEG,FAX,FWV,EXT;MDL:CLX-982x Series;CLS:PRINTER;CID:SA_PCL6_Color;MODE:FAX2,SCN;",
+                "manufacturer": "Samsung",
+                "model": "CLX-982x Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_CLX-982x_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.6 inches / 32.0 cm\n      (Wide format printer)<p>"
+        }
+    }
+}

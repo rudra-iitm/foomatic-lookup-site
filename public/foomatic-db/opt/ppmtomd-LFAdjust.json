@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/ppmtomd-LFAdjust",
+        "arg_shortname": {
+            "en": "LFAdjust"
+        },
+        "arg_longname": {
+            "en": "Line Feed Adjustment"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "200",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-lfadjust %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "0"
+            }
+        },
+        "arg_max": "127",
+        "arg_min": "-128"
+    }
+}

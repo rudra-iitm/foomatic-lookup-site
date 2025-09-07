@@ -1,0 +1,57 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/142",
+        "arg_shortname": {
+            "en": "Dither"
+        },
+        "arg_longname": {
+            "en": "Dithering"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "130",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dDither=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "md2k",
+                    "arg_defval": "ev/864"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md5k",
+                    "arg_defval": "ev/864"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/864",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "On"
+                    },
+                    "ev_driverval": "true"
+                },
+                {
+                    "@id": "ev/865",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "Off"
+                    },
+                    "ev_driverval": "false"
+                }
+            ]
+        }
+    }
+}

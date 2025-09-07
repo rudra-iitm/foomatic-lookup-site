@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet",
+        "make": "HP",
+        "model": "LaserJet",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": null
+        }
+    }
+}

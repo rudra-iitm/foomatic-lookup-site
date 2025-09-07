@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_3100",
+        "make": "HP",
+        "model": "LaserJet 3100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MANUFACTURER:Hewlett-Packard;COMMAND SET:HP GDI;MODEL:HP LaserJet 3100;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard LaserJet 3100 MFP;",
+                "commandset": "HP GDI",
+                "description": "Hewlett-Packard LaserJet 3100 MFP",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 3100"
+            }
+        },
+        "functionality": "F",
+        "contrib_url": "/download/printing/hplj_3100_3150/",
+        "comments": {
+            "en": "Multifunction device - copier/scanner/fax/etc.<p>\n\n    PCL 4 emulation appears to be host-based.<p>\n\n    Known variants: 3100xi (US retail), 3100se (US business). 3100 is\n    international model.<p>\n\n    Not usable with free software: an HP tech support person told that\n    half of the 3100's functionality is handled by the\n    Windows-only drivers. Thus, even if you were on a Windows machine\n    and go to the DOS prompt, doing \"DIR &gt; LPT1:\"\n    will fail; everything has to go through the windows\n    drivers. (sigh)<p>\n\n    According to the <a\n    href=\"http://hpoj.sourceforge.net/suplist.shtml\">hpoj\n    project</a>:<p>\n\n    <i>...if you have a LaserJet 3150 connected to an HP\n    JetDirect 70X/170X/300X/500X with firmware x.08.xx or later, you\n    can scan using the JetDirect's embedded web\n    server.</i><p>\n\n    So this is a multifunction device that only scans!<p>\n\n    If you have the luxury of a seperate MS Windows box, you can share\n    the printer in the following manner:<p>\n \n    After installing the normal drivers and JetSuite (HP software),\n    add yet another printer. Use the LPT1: port and HP LasertJet II as\n    the driver, then share this printer. You can now access this share\n    via Linux as an SMB client; use the vanilla \"laserjet\"\n    driver. The PCL emulation will complain, though the printout is\n    fine thus far. You can turn off the complaints by editing your\n    $WINDIR\\JETSUITE.INI and in the \"[PCLEmulation]\"\n    section, set \"DisplayWarning=no\".<p>\n\n    <a\n    href=\"/download/printing/hplj_3100_3150/\">Reverse-engeneering\n    efforts</a> on the printer's protocol have already\n    started, but were not finished. Anyone who makes this device\n    finally working with free software please report on the the HP\n    Forum here on OpenPrinting.<p>\n\n    Unfortunately, this printer has a little hardware problem: The\n    paper separation pad hardens with the time and the printer pulls\n    in several sheets of paper at once. HP is aware of this and offers\n    a kit to fix this without needing to disassemble the printer for\n    free. It can be ordered for delivery into any country via their\n    <a href=\"http://h20015.www2.hp.com/en/document.jhtml?lc=en&docName=bpl08107\">web site</a>.<p><p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

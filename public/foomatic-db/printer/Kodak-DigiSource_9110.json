@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Kodak-DigiSource_9110",
+        "make": "Kodak",
+        "model": "DigiSource 9110",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.danka.de/Produkte/SystemeSW_KodakDS9110.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "See model Heidelberg Digimaster 9110 for more info as this is the\n    printers new brand name after Kodak has sold most of its printer\n    technology and manufacturing capacities to Heidelberg.<p>\n\n    (Info supplied by Kurt Pfeifle)<p><p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

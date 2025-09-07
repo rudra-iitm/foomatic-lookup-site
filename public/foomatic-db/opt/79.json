@@ -1,0 +1,104 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/79",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "ap3250",
+                    "arg_defval": "ev/638"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj10e",
+                    "arg_defval": "ev/638"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj200",
+                    "arg_defval": "ev/638"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "sj48",
+                    "arg_defval": "ev/638"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "st800",
+                    "arg_defval": "ev/638"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/635",
+                    "ev_longname": {
+                        "en": "180x180 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "180x180dpi"
+                    },
+                    "ev_driverval": "180x180"
+                },
+                {
+                    "@id": "ev/636",
+                    "ev_longname": {
+                        "en": "360x180 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "360x180dpi"
+                    },
+                    "ev_driverval": "360x180"
+                },
+                {
+                    "@id": "ev/637",
+                    "ev_longname": {
+                        "en": "180x360 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "180x360dpi"
+                    },
+                    "ev_driverval": "180x360",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ap3250"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "st800"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/638",
+                    "ev_longname": {
+                        "en": "360x360 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "360x360dpi"
+                    },
+                    "ev_driverval": "360x360"
+                }
+            ]
+        }
+    }
+}

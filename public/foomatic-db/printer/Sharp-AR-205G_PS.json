@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-205G_PS",
+        "make": "Sharp",
+        "model": "AR-205G PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sh205gj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 20\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

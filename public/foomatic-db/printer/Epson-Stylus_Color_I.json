@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_I",
+        "make": "Epson",
+        "model": "Stylus Color I",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/styc__/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Uniprint files:<p>\n    stc.upp = 360x360<br>\n    stc_h.upp = 720x720<br>\n    stc_l.upp = 360x360 noWeave<p>\n\n    Best quality probably from the\n    \"stp\"/\"gimp-print\" drivers."
+        }
+    }
+}

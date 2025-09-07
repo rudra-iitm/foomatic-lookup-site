@@ -1,0 +1,63 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-BC260",
+        "make": "Sharp",
+        "model": "AR-BC260",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Sharp;MDL:Sharp AR-PK4;",
+                "manufacturer": "Sharp",
+                "model": "Sharp AR-PK4"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Sharp",
+                    "ppd": "PPD/Sharp/shabc260.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.0 inches / 30.5 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 26 pages/min<p>"
+        }
+    }
+}

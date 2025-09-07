@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-C5016N",
+        "make": "Kyocera",
+        "model": "FS-C5016N",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera Mita;Model:Kyocera Mita FS-C5016N;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "manufacturer": "Kyocera Mita",
+                "model": "Kyocera Mita FS-C5016N"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_Mita_FS-C5016N_en.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 16 pages/min<p>"
+        }
+    }
+}

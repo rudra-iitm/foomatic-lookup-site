@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX-436A_Series",
+        "make": "Epson",
+        "model": "PX-436A Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:PX-436A Series;CLS:PRINTER;DES:EPSON PX-436A Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON PX-436A Series",
+                "manufacturer": "EPSON",
+                "model": "PX-436A Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201303j",
+        "drivers": {
+            "driver": {
+                "id": "epson-201303j"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

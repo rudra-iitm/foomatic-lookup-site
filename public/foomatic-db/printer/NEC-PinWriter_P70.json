@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/NEC-PinWriter_P70",
+        "make": "NEC",
+        "model": "PinWriter P70",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "necp6",
+        "comments": {
+            "en": "Color is an optional feature for this printer.\nBasically you could by a replacement part to enable color printing."
+        }
+    }
+}

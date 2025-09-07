@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C752b",
+        "make": "Lexmark",
+        "model": "C752b",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Lexmark-black-only",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark-black-only",
+                    "ppd": "PPD/Lexmark/PS/Lexmark-C752b.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 20\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

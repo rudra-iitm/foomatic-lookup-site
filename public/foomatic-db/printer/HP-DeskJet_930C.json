@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_930C",
+        "make": "HP",
+        "model": "DeskJet 930C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 930C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 930C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    The best output one gets with HP's HPIJS 1.3 or newer. If you\n    cannot update to HPIJS 1.3 for some reason, you can also use HPIJS\n    1.2.2 with the patches from Matthias Bunte and Richard\n    Spencer-Smith (\"hpijs-rss\"). The Gimp-Print driver also\n    works (Model setting: \"pcl-900\"), but only up to 600\n    dpi.<p>\n\n    Older comments:<P>\n\n    If you install this printer with the \"printtool\"\n    program, change RESOLUTION to 600x600 in file\n    /var/spool/lpd/lp/postscript.cfg. Otherwise it will only print\n    in 300x300.<P>\n\n    The german computer magazine c't -\n    Magazin fuer Computertechnik (21/2000)\n    recommends for the HP DeskJet 930C:<br>\n    Text: cdj670/300x300<br>\n    Photo: Uniprint, cdj550<br>\n    STP not tested.<p>\n\n      Consumables/Refills: Separate BW+color cartridge, used simultaniously<p>"
+        }
+    }
+}

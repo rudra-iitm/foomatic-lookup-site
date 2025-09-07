@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_882C",
+        "make": "HP",
+        "model": "DeskJet 882C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n\n    Older comments:<p>\n\n    Should work perfectly with the cdj880 driver; let us know (the\n    author says, only for photos, not for text)!<p>\n\n    I got a report from elenstev@mesatop.com that with the cdj880\n    driver (in GS 5.50) this printer only works in draft and\n    presentation quality, the normal quality does not work. RET on/off\n    seems to have no effect for him. This bug does not appear any more\n    in GNU Ghostscript 6.51<p>\n\n    Works well with hpdj/pcl3 at 300dpi.<p>\n\n    Works OK at 600dpi with cdj850 driver, although colors are faded.\n    <p>\n\n    Brian, a Usenet contributor, is working with the hpdj/pcl3 author\n    to improve support.<p>\n\n    This is the same printer as the 880, with a retail box and idiot\n    consumer software.<p>\n\n    600dpi+ modes, and proper color modes are not documented by HP;\n    reverse engineering efforts are not complete."
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/146",
+        "arg_shortname": {
+            "en": "EcoBlack"
+        },
+        "arg_longname": {
+            "en": "Black color saving"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "170",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dEcoBlack"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "md2k",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md5k",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_shortname_false": {
+            "en": "NormalBlack"
+        }
+    }
+}

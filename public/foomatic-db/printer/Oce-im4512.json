@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Oce-im4512",
+        "make": "Oce",
+        "model": "im4512",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 45\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

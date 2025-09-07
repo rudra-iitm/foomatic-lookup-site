@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/103",
+        "arg_shortname": {
+            "en": "CurlCorrectionAlways"
+        },
+        "arg_longname": {
+            "en": "Curl Correction"
+        },
+        "arg_execution": {
+            "arg_group": "Finishing",
+            "arg_order": "110",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-curlcorrection"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "CurlCorrectionAfterFinal"
+        }
+    }
+}

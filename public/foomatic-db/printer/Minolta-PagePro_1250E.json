@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_1250E",
+        "make": "Minolta",
+        "model": "PagePro 1250E",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.minolta-qms.com/products/monochrome/pp1250E/index.asp",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "PostScript/PCL laser.  Not to be confused wiht the\n     1250<b>W</b>, a host-based device."
+        }
+    }
+}

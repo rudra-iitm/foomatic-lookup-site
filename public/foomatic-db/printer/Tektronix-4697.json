@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-4697",
+        "make": "Tektronix",
+        "model": "4697",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "216",
+                    "y": "216"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "tek4696",
+        "comments": {
+            "en": "Just change the resolution in the\n4696 driver<p>\n\n      Consumables/Refills: No cartridge, individal ink refills<p>"
+        }
+    }
+}

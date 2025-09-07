@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-8200C",
+        "make": "Epson",
+        "model": "LP-8200C",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.i-love-epson.co.jp/products/back/hyou/printer/lp8200c.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "eplaser-jp",
+        "comments": {
+            "en": "Large format (A3/11x17) colour laser printer<p>\n      Epson provides a free (LGPL) driver for this printer. With this the\n      printer works to its full extent.<p>\n      A scanning add-on for this printer is available, so that one can make\n      an multi-function device (printing, scanning, copying) out of it.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

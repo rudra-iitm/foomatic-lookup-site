@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S800",
+        "make": "Canon",
+        "model": "S800",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://consumer.usa.canon.com/printers/s800/index.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer is similar to the Canon BJC 8200.<p>\n\n      Consumables/Refills: 6 independent ink tanks<p>"
+        }
+    }
+}

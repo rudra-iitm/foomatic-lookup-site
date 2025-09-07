@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_450cp",
+        "make": "Xerox",
+        "model": "WorkCentre 450cp",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=wc450cp&cat=%2fEquipment%2fPrinting%2fMultifunction&catOID=-8162",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "cdj550",
+        "comments": {
+            "en": "Reported to work with cdj550 driver, which may be limited to 300dpi?\n<br>Multifunction device; no Linux support for other features."
+        }
+    }
+}

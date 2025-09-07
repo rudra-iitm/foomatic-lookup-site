@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-7000P",
+        "make": "Samsung",
+        "model": "ML-7000P",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.samsungtelecom.com",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "This is a true blood PCL6 Printer and will function completly with\n    PCL 5 drivers, though the \"print on both side of paper\"\n    control need to be issued from the printer control panel and will\n    not work through the software in Linux<p>\n\n      Consumables/Refills: ML+7000D8/XAR<p>"
+        }
+    }
+}

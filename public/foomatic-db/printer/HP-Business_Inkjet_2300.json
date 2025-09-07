@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/HP-Business_Inkjet_2300",
+        "make": "HP",
+        "model": "Business Inkjet 2300",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF06a/18972-236251-236261-24728-f51-306738.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL5e,PCL6,POSTSCRIPT",
+                "description": "Hewlett-Packard Business Inkjet 2300",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP BUSINESS INKJET 2300"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "When used with HP's HPLIP driver, this printer\n    does the dithering and color adjustment internally. As input it\n    takes simple RGB data as used for screen display.<p>\n\n    For basic printing functionality use the Postscript PPD. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplipopensource.com/\">HPLIP driver</a> (which includes HPIJS). <p><p>\n\n      Consumables/Refills: 4 cartridges: one for each color of CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

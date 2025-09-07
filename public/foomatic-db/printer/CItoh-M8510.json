@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/CItoh-M8510",
+        "make": "CItoh",
+        "model": "M8510",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "100",
+                    "y": "100"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "m8510",
+        "comments": {
+            "en": "Special-purpose gs driver; should work fine."
+        }
+    }
+}

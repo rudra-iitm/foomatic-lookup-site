@@ -1,0 +1,180 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/bjc250gs-MediaType",
+        "arg_shortname": {
+            "en": "MediaType"
+        },
+        "arg_longname": {
+            "en": "Media Type"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "120",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sMedia=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "false",
+                "driver": "bjc250gs",
+                "arg_defval": "ev/bjc250gs-MediaType-Plain"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/bjc250gs-MediaType-BackprintFilm",
+                    "ev_longname": {
+                        "en": "Back Print Film"
+                    },
+                    "ev_shortname": {
+                        "en": "BackprintFilm"
+                    },
+                    "ev_driverval": "BackprintFilm"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Banner",
+                    "ev_longname": {
+                        "en": "Banner"
+                    },
+                    "ev_shortname": {
+                        "en": "Banner"
+                    },
+                    "ev_driverval": "Banner"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Card",
+                    "ev_longname": {
+                        "en": "Card Stock"
+                    },
+                    "ev_shortname": {
+                        "en": "Card"
+                    },
+                    "ev_driverval": "Card"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Coated",
+                    "ev_longname": {
+                        "en": "Coated Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Coated"
+                    },
+                    "ev_driverval": "CoatedPaper"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Envelope",
+                    "ev_longname": {
+                        "en": "Envelope"
+                    },
+                    "ev_shortname": {
+                        "en": "Envelope"
+                    },
+                    "ev_driverval": "Envelope"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-FullBleed",
+                    "ev_longname": {
+                        "en": "Full Bleed"
+                    },
+                    "ev_shortname": {
+                        "en": "FullBleed"
+                    },
+                    "ev_driverval": "FullBleed"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Glossy",
+                    "ev_longname": {
+                        "en": "Glossy Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Glossy"
+                    },
+                    "ev_driverval": "GlossyPaper"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-HighGlossyFilm",
+                    "ev_longname": {
+                        "en": "Highly Glossy Film"
+                    },
+                    "ev_shortname": {
+                        "en": "HighGlossyFilm"
+                    },
+                    "ev_driverval": "HighGlossyFilm"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-HiRes1",
+                    "ev_longname": {
+                        "en": "High Resolution Paper 1"
+                    },
+                    "ev_shortname": {
+                        "en": "HiRes1"
+                    },
+                    "ev_driverval": "HighResolutionPaper"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-HiRes2",
+                    "ev_longname": {
+                        "en": "High Resolution Paper 2"
+                    },
+                    "ev_shortname": {
+                        "en": "HiRes2"
+                    },
+                    "ev_driverval": "HighResPaper"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Other",
+                    "ev_longname": {
+                        "en": "Other media type"
+                    },
+                    "ev_shortname": {
+                        "en": "Other"
+                    },
+                    "ev_driverval": "Other"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-PaperWithLead",
+                    "ev_longname": {
+                        "en": "Paper With Lead"
+                    },
+                    "ev_shortname": {
+                        "en": "PaperWithLead"
+                    },
+                    "ev_driverval": "PaperWithLead"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Plain",
+                    "ev_longname": {
+                        "en": "Plain Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Plain"
+                    },
+                    "ev_driverval": "PlainPaper"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Textile",
+                    "ev_longname": {
+                        "en": "Textile"
+                    },
+                    "ev_shortname": {
+                        "en": "Textile"
+                    },
+                    "ev_driverval": "Textile"
+                },
+                {
+                    "@id": "ev/bjc250gs-MediaType-Transparency",
+                    "ev_longname": {
+                        "en": "Transparent Film"
+                    },
+                    "ev_shortname": {
+                        "en": "Transparency"
+                    },
+                    "ev_driverval": "TransparencyFilm"
+                }
+            ]
+        }
+    }
+}

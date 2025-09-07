@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-6000",
+        "make": "Canon",
+        "model": "BJC-6000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/bjc/bjc6000/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "BJL,BJRaster3,BSCC,TXT",
+                "description": "Canon BJC-6000",
+                "manufacturer": "Canon",
+                "model": "BJC-6000"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "contrib_url": "http://gimp-print.sourceforge.net/",
+        "comments": {
+            "en": "I (thaller@ph.tum.de) set it to Partially since I've got it going @ 360x360 and\n 720x720 dpi with the uniprint driver. See the More Info link for BJC-6000 upp \nfiles.\n<br>Currently prints in color at 360dpi or 720dpi on plain paper.\n<br>Colors are slightly imperfect but improving.  \n<br>Support for interesting papers (glossy, photo, transparency, etc) is not \navailable, although the driver author has some ideas.\n<br>Andy Thaller also provides a utility program to contorl alignment, \ncleaning, etc.\n<br>The gimp-print-driver supports this model much better than the solutions \nabove. Additionaly, using the CUPS-drivers supplied with the gimp-print-plugin, \nalmost perfect color output can be produced. Small limitations with 6-color \nprinting lead me to choose status \"Mostly\" for this model.\n<br>NB: the gimp-print-plugin also supports many other Canon BJC models - \nconsult the homepage for a complete list.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

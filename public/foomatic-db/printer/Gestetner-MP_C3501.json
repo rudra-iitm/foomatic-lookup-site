@@ -1,0 +1,54 @@
+{
+    "printer": {
+        "@id": "printer/Gestetner-MP_C3501",
+        "make": "Gestetner",
+        "model": "MP C3501",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Gestetner;MDL:MP C3501;CMD:POSTSCRIPT,PDF;",
+                "manufacturer": "Gestetner",
+                "model": "MP C3501",
+                "commandset": "POSTSCRIPT"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-Gestetner",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Gestetner",
+                    "ppd": "PPD/Gestetner/PS/Gestetner-MP_C3501_PS.ppd"
+                },
+                {
+                    "id": "pxlcolor-Gestetner",
+                    "ppd": "PPD/Gestetner/PXL/Gestetner-MP_C3501_PXL.ppd"
+                },
+                {
+                    "id": "PDF-Gestetner",
+                    "ppd": "PPD/Gestetner/PDF/Gestetner-MP_C3501_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Optional Adobe Postscript 3. <p>\n\nUse Postscript driver for best result <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Does_my_printer_support_Postscript_.2F_PCL_XL_.2F_PCL5_.3F\"> if your printer supports Postscript. </a> <p>\n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>"
+        }
+    }
+}

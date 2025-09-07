@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_C5185",
+        "make": "Canon",
+        "model": "imageRunner C5185",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor"
+            }
+        },
+        "comments": {
+            "en": "Postscript 3 is optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

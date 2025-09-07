@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_T614",
+        "make": "Lexmark",
+        "model": "Optra T614",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/laser/OptraT/T614.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "25ppm, 600-sheet feeder, 8/16MB RAM."
+        }
+    }
+}

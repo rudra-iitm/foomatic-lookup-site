@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Texas_Instruments-microLaser_PowerPro_12",
+        "make": "Texas Instruments",
+        "model": "microLaser PowerPro 12",
+        "url": "ftp://ftp.tallygenicom.com/pub/genicom/docs/ti/dsTI-mLPowerPro.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 12\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX_204",
+        "make": "Epson",
+        "model": "PX-204",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:PX-204;CLS:PRINTER;DES:EPSON PX-204",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON PX-204",
+                "manufacturer": "EPSON",
+                "model": "PX-204"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201106j",
+        "drivers": {
+            "driver": {
+                "id": "epson-201106j"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

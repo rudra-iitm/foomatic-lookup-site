@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_100C",
+        "make": "NEC",
+        "model": "SuperScript 100C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss100c/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "pcl3",
+        "comments": {
+            "en": "Printer only capable of 300x300 in color.\n<br>Should(tm) work perfectly; change this if so!\n<br>CMY 3 color printing, or black-only w/black cart."
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C780",
+        "make": "Lexmark",
+        "model": "C780",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG: Lexmark International ;MDL: Lexmark C780",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark C780"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_C780.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 35 pages/min<p>"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_720",
+        "make": "Epson",
+        "model": "Stylus Photo 720",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com.au/products/home_and_office/stylusPhoto720.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Reported to work perfectly in the latest stp driver's documentation.\nIs 6 color CMYKcm printer."
+        }
+    }
+}

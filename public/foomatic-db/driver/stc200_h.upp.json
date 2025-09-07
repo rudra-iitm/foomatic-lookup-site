@@ -1,0 +1,24 @@
+{
+    "driver": {
+        "@id": "driver/stc200_h.upp",
+        "name": "stc200_h.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs @stc200_h.upp -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 360x720dpi"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc200_h.upp<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Epson-Stylus_Color_200"
+            }
+        }
+    }
+}

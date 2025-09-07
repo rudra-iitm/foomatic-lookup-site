@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LN03",
+        "make": "DEC",
+        "model": "LN03",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ln03",
+        "comments": {
+            "en": "Serial Port Printer \nRequires\n        :lp=/dev/cua0:\n        :br#9600:\nin printcap\n\n178,000 pages and still perfect.<p>\n\n      Consumables/Refills: Powdered Toner<p>"
+        }
+    }
+}

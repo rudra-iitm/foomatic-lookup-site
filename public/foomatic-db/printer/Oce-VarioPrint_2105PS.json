@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Oce-VarioPrint_2105PS",
+        "make": "Oce",
+        "model": "VarioPrint 2105",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/Central+reproduction/VP2105/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oce;MDL:Oce VP2105 PS3;",
+                "manufacturer": "Oce",
+                "model": "Oce VP2105 PS3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "ljet3"
+                },
+                {
+                    "id": "ljet3d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oce",
+                    "ppd": "PPD/Oce/Oce-VarioPrint_2105PS/1/OCVP2105.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "<b>Modular scan, print and copy production system</b><br/>\nGateway to scalable document production\n<UL>\n<LI>Digital copier printer with 101 A4 prints per min </LI>\n<LI>Concurrent processing </LI>\n<LI>Copy and print queue management </LI>\n<LI>Scan-to-mailbox </LI>\n</UL>\n    \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 100 pages/min<p><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

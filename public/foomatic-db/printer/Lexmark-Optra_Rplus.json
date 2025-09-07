@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Rplus",
+        "make": "Lexmark",
+        "model": "Optra R+",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL 5 Emulation, PostScript Le",
+                "description": "Lexmark Optra LaserPrinter",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark Optra LaserPrinter"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also speaks PCL level 5.\nFor 1200DPI use Postscript Level 2.\nStd 2MB RAM adequate for 600DPI\nPostscript, RAM is expandable to\n64MB using 72pin SIMMs.<p>\n\n      Consumables/Refills: Cartridge. Lasts about 14000 pages. Costs about 150GBP<p>"
+        }
+    }
+}

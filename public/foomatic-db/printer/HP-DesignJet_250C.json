@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_250C",
+        "make": "HP",
+        "model": "DesignJet 250C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Large-format inkjet printer.<p>\n\n    600 dpi in grayscale, only 300 dpi in color.<p><p>\n\n      Consumables/Refills: 4 Cartriges (Cyan, Magenta, Yellow, Black)<p>"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_M5035_MFP",
+        "make": "HP",
+        "model": "LaserJet M5035 MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,POSTSCRIPT,PJL,PCLXL,P",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet M5035 MFP"
+            },
+            "snmp": {
+                "description": "HP LaserJet M5035 MFP"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD.\n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p><p>\n\n      Consumables/Refills: Toner and drum in one cartridge (18000 pages)<p>"
+        }
+    }
+}

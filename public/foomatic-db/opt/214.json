@@ -1,0 +1,157 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/214",
+        "arg_shortname": {
+            "en": "Duplex"
+        },
+        "arg_longname": {
+            "en": "Double-Sided Printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "160",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dDuplex=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Generic-PCL_3_Printer",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_940C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_950C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_952C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_960C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_970C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_980C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_990C",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_G95",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1000",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1100",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1115",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1215",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1218",
+                    "arg_defval": "ev/1045"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1315",
+                    "arg_defval": "ev/1045"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1045",
+                    "ev_longname": {
+                        "en": "Printer Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": "null"
+                },
+                {
+                    "@id": "ev/1046",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "false"
+                },
+                {
+                    "@id": "ev/1047",
+                    "ev_longname": {
+                        "en": "On (Flip on Long Edge)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexNoTumble"
+                    },
+                    "ev_driverval": "true -dTumble=false"
+                },
+                {
+                    "@id": "ev/1048",
+                    "ev_longname": {
+                        "en": "On (Flip on Short Edge)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexTumble"
+                    },
+                    "ev_driverval": "true -dTumble=true"
+                }
+            ]
+        }
+    }
+}

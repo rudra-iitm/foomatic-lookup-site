@@ -1,0 +1,30 @@
+{
+    "driver": {
+        "@id": "driver/lz11-V2",
+        "name": "lz11-V2",
+        "url": "http://sourceforge.net/projects/lz11",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "The driver lz11-V2 is an improvement of the lz11 driver, which was\n  first released in 2002. Additionally to the features of lz11,\n  which include variable page sizes and ink saving, the lz11-V2\n  version comes with a backward compatibility mode for the filters\n  \"cZ11\" and \"cZ11somsom\". While the cZ11 filter is emulated in an\n  improved way, which helps to save ink and takes away the grayish look\n  of color prints, the cZ11somsom emulation only supports the basic\n  properties (as InkType and DitherPPI). Ink weighting is not included,\n  but merely needed, because of a new pixel placement algorithm for\n  black and color ink.<p>\n\n  \"Highlights\" of the lz11-V2 are: further improved printing speed for\n  black ink and a tool to align the skew of the black ink cartridge.\n  A smooth-dithering algorithm for black and color prints was added.\n  The driver comes with an improved set of installation and utility\n  scripts that support automatic installation-option-checking,\n  testpage-printing, black-ink-adjustment, automatic installation of\n  foomatic-xml-files as well as automatic installation of the included\n  PPD files for CUPS and PPR. For backward compatibility reason the\n  Ghostscript device emulation (as \"hpdj\", \"epsonc\", ...) is still\n  included, but should never be offered on \"modern\" Linux installations.\n  <p>\n\n  The original driver-code \"cZ11\" was written by Christian Kornblum\n  in 2001 (this code still is the backbone of this filter).\n  It got enhancements and bug fixes from Som-Som, Erik Bernhardson,\n  Mihael Hategan, Ullrich Sigwanz and Till Kamppeter.<p>\n\n  <b>Warning</b>:This driver is known not to work with the\n  Z31 and Z51. In fact, it is known to hose those printers' flash in\n  some circumstances!<p>\n\n  Foomatic data to generate the PPD files is included with the driver,\n  therefore we do not provide this data and PPDs here on the\n  OpenPrinting site,<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Compaq-IJ300",
+                    "comments": {
+                        "en": "BW and Color at 600dpi, ink density adjustment, different rendering\n        algorithms, ink cartridge adjustment"
+                    }
+                },
+                {
+                    "id": "printer/Lexmark-Z11",
+                    "comments": {
+                        "en": "BW and Color at 600dpi, ink density adjustment, different rendering\n    algorithms, ink cartridge adjustment"
+                    }
+                }
+            ]
+        }
+    }
+}

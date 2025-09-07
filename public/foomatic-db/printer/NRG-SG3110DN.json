@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/NRG-SG3110DN",
+        "make": "NRG",
+        "model": "SG3110DN",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.nrg.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:NRG;MDL:SG3110DN;CMD:PCLXL;"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlcolor-NRG",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor-NRG",
+                "ppd": "PPD/NRG/PXL/NRG-SG3110DN_PXL.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh, Lanier, Savin, NRG, Infotec, and Gestetner printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 30."
+        }
+    }
+}

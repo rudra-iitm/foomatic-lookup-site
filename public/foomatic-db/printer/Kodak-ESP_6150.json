@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Kodak-ESP_6150",
+        "make": "Kodak",
+        "model": "ESP 6150",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "functionality": "D",
+        "driver": "c2esp",
+        "drivers": {
+            "driver": {
+                "id": "c2esp"
+            }
+        }
+    }
+}

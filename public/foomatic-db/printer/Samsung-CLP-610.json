@@ -1,0 +1,61 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-610",
+        "make": "Samsung",
+        "model": "CLP-610",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/my/products/printer/lasercolorprinter/clp_610ndxss.asp",
+        "lang": {
+            "proprietary": null,
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:SPLC,PCL5E,PCL6;MDL:CLP-610 Series;CLS:PRINTER;",
+                "manufacturer": "Samsung",
+                "model": "CLP-610 Series"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor-Samsung",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "pxlcolor"
+                },
+                {
+                    "id": "pxlcolor-Samsung",
+                    "ppd": "PPD/Samsung/PXL/Samsung_CLP-610_Series_PXL.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "The Samsung CLP-610 is a networked color laser printer with a\n\t2008 street price of $330 USD.  This printer is supported\n\tby the foo2qpdl open software printer driver.<p>\n\n      Consumables/Refills: Toner Black (4000 prints) - $80\n\t\tToner Yellow (4000 prints) - $110\n\t\tToner Magenta (4000 prints) - $110\n\t\tToner Cyan (4000 prints) - $110\n\t\tTransfer Belt (35000 prints) - $47 Part numbers: CLP-K600A, \n\t    CLP-Y600A, \n\t    CLP-M600A, \n\t    CLP-C600A, \n\t    CLP-T600A<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Apple-LaserWriter_NT",
+        "make": "Apple",
+        "model": "LaserWriter NT",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": null
+        },
+        "functionality": "B",
+        "driver": "Postscript1",
+        "comments": {
+            "en": "Works via serial port; see more info for a report detailing Red Hat\n      5.1 setup.<br>\n\n      Only problem is that 5% of jobs need to be sent twice due to some\n      serial snafu."
+        }
+    }
+}

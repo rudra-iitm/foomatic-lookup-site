@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Star-StarJet_48",
+        "make": "Star",
+        "model": "StarJet 48",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "sj48"
+    }
+}

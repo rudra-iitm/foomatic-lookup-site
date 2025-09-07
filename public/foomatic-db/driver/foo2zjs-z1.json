@@ -1,0 +1,42 @@
+{
+    "driver": {
+        "@id": "driver/foo2zjs-z1",
+        "name": "foo2zjs-z1",
+        "url": "http://foo2zjs.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This driver will also work for the HP LaserJet\n      1018, 1020, 1022, P2035, and other\n      Zenographics-based printers.\n\n      <p>\n\n      PPD files (and the Foomatic XML files to generate them) come\n      with the driver, therefore we do not supply PPDs here on the\n      OpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-LaserJet_1018"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1020"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1022"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1022n"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1022nw"
+                },
+                {
+                    "id": "printer/HP-LaserJet_P2035"
+                },
+                {
+                    "id": "printer/HP-LaserJet_P2035n"
+                },
+                {
+                    "id": "printer/HP-LaserJet_M1319_MFP"
+                }
+            ]
+        }
+    }
+}

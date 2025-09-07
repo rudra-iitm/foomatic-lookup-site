@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-5000",
+        "make": "Lexmark",
+        "model": "5000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www2.lexmark.com/TSCTODAY.NSF/Description%2FBy+Inkjet?OpenView&Start=1&Count=500&Expand=12#12",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "pbm2l7k",
+        "comments": {
+            "en": "Works in color and bw at 600  \nBidirectional/1200dpi printing is not yet supported.\n<br>Alignment and head cleaning supported by sending data files to the\nraw device.  These files available at the driver site.\n<br>DryingTime an black-only run time parameters.\n<br>The photo cartridge in not supported.\n<br>A description of the protocol is at http://www.powerup.com.au/~pbwest/lexmark/protocol.html\n<br>Also works about as well with the Lexmark 7000 driver kit; see that printer for more information.<p>\n\n      Consumables/Refills: Cartridges: Black, Colour, Photo<p>"
+        }
+    }
+}

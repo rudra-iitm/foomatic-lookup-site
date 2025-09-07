@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_Pro_P1566",
+        "make": "HP",
+        "model": "LaserJet Pro P1566",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-236251-236263-14638-f51-439423.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet Pro P1566;CMD:ACL;CLS:PRINTER;DES:HP LaserJet Pro P1566;",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet Pro P1566",
+                "commandset": "ACL"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2zjs-z2",
+        "comments": {
+            "en": "This printer is supported by the foo2zjs free software printer driver.\n      <p>\n\n      The printer is faster than the LaserJet 1000 and has a USB\n      connection.<p>\n\n      Consumables: Print cartridge (2000 prints), ~$65 (part no. Q2612A)"
+        }
+    }
+}

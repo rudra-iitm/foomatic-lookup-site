@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_660C",
+        "make": "HP",
+        "model": "DeskJet 660C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj660cz.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 660C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 660C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p><p>\n\n      Consumables/Refills: dual cartridges<p>"
+        }
+    }
+}

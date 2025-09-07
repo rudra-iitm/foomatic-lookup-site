@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_750C_Plus",
+        "make": "HP",
+        "model": "DesignJet 750C Plus",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Large-format inkjet printer.<p>\n\n    600 dpi in grayscale, only 300 dpi in color.<p>\n\n    Works \"almost\" - RGB data is sent to the plotter.<p>\n\n    The CMYK mode of the \"B\"-Models and the 75x Series is\n    not supported. Images are somewhat \"greenish\"; gray is\n    composed of CMY. Nice for really LARGE printouts ... (ISO A4-A0),\n    (ANSI A, B...), (DIN C4, C3...)...<p>\n\n    Driver: With HP RTL and PostScript color resolution is always\n    300x300 dpi.<p>\n\n    Addressable 600 dpi using sharp lines for vector graphics in\n    HP-GL/2.<p><p>\n\n      Consumables/Refills: 4 Cartriges<p>"
+        }
+    }
+}

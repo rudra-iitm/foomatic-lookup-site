@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-2250",
+        "make": "Samsung",
+        "model": "ML-2250",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "User report:<p>\n\nSample of APS-Filter printcap file (ESP Ghostscript must be installed, as it provides the \"gdi\"/\"samsunggdi\" driver):<p>\n\n<pre><tt> \n# APS1_BEGIN:printer1 \n# - don't delete start label for apsfilter printer1 \n# - no other printer defines between BEGIN and END LABEL \nlp|samsunggdi;r=600x600;q=medium;c=gray;p=a4;m=auto:\\ \n    :lp=/dev/usb/lp0:\\ \n    :if=/etc/apsfilter/basedir/bin/apsfilter:\\ \n    :sd=/var/spool/lpd/lp:\\ \n    :lf=/var/spool/lpd/lp/log:\\ \n    :af=/var/spool/lpd/lp/acct:\\ \n    :mx#0:\\ \n    :sh: \n# APS1_END - don't delete this \n</tt></pre>\n \nSample of SETUP.cfg file from apsfilter:<p>\n\n<pre><tt>\nPRINTER='samsunggdi' \nRESOLUTION='600x600' \nCOLOR='gray' \nPAPER='a4' \nMETHOD='auto' \nQUALITY='medium' \nINTERFACE='parallel' \nDEVICE='/dev/usb/lp0' \nBAUDRATE='' \nHANDSHAKE='' \nWORDLENGTH='' \nPARITY='' \nSTARTBITS='' \nSTOPBITS='' \nSMB_SERVER='' \nSMB_IP='' \nSMB_PRINTER='' \nSMB_WORKGROUP='' \nSMB_USER='' \nSMB_PASSWD='' \nNCP_SERVER='' \nNCP_PRINTER='' \nNCP_USER='' \nNCP_PASSWD='' \nrm='' \nrp='' \n</tt></pre>\n \nMain hack is to manualy seting PRINTER='samsunggdi' default not exist \nin menu from SETUP script of apsfiler.And rerun setup script to create \nprintcap file.<p>"
+        }
+    }
+}

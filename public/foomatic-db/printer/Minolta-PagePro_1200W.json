@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_1200W",
+        "make": "Minolta",
+        "model": "PagePro 1200W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "min12xxw",
+        "comments": {
+            "en": "Low cost laser. Does not understand PCL or PostScript."
+        }
+    }
+}

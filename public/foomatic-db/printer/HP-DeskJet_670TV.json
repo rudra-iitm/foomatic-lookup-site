@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_670TV",
+        "make": "HP",
+        "model": "DeskJet 670TV",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj670tv.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    A printhead alignment tool called \"powercolor\" is\n    available in metalab's <a\n    href=\"http://metalab.unc.edu/pub/linux/system/printing/\">system/printing</a>.<p><p>\n\n      Consumables/Refills: dual cartridges<p>"
+        }
+    }
+}

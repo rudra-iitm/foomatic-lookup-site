@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC-9050",
+        "make": "Brother",
+        "model": "MFC-9050",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "D",
+        "driver": "hl7x0",
+        "comments": {
+            "en": "Antti Kaihola reports that the hl7x0 driver can print on this\n    device at 600x600.<p>\n\n    Scanning/faxing/etc is not known to work with any driver.\n    <p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p>"
+        }
+    }
+}

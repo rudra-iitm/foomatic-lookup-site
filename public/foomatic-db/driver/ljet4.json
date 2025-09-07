@@ -1,0 +1,806 @@
+{
+    "driver": {
+        "@id": "driver/ljet4",
+        "name": "ljet4",
+        "url": "http://www.ghostscript.com/",
+        "supplier": "GPL Ghostscript",
+        "thirdpartysupplied": null,
+        "license": "GPL",
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "http://forums.openprinting.org/",
+                "@level": "voluntary",
+                "#text": "OpenPrinting forums"
+            }
+        },
+        "shortdescription": {
+            "en": "Built-in Ghostscript driver for PCL 5e laser printers"
+        },
+        "functionality": {
+            "maxresx": "600",
+            "maxresy": "600",
+            "monochrome": null,
+            "text": "90",
+            "lineart": "90",
+            "graphics": "60",
+            "photo": "30",
+            "speed": "90"
+        },
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ljet4%B%A%Z -sOutputFile=-%C -f -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Ghostscript's HP LaserJet 4 (PCL 5e) driver.<p>\n\n    \"ljet4\" is the classical Ghostscript driver for PCL 5e\n    printers. It is probably widely used, as it is part of Ghostscript\n    and does not require any extra software, but before Ghostscript\n    8.x its output quality was lousy and one has searched for\n    alternative drivers. From Ghostscript 8.x the well-tempered\n    screening was introduced which gives much better quality for\n    half-tone images. You can make use of it by downloading the PPD\n    file for your printer here and using the \"HalftoningAlgorithm\"\n    option.<p>\n\n    The <a\n    href=\"show_driver.cgi?driver=lj4dith\">\"lj4dith\"</a>\n    Ghostscript driver which uses Floyd-Steinberg dithering to improve\n    the image output quality. Unfortunately, this driver has problems\n    with the margins. The document is not placed exactly at the same\n    position as with the \"ljet4\" driver. The page seems to be shifted\n    to the upper right, probably due to the upper and right\n    unprintable borders not taken into account. Formerly, you could\n    use the driver with the same PPD file as \"ljet4\", simply by\n    switching an option, but we have removed this feature due to the\n    paper size problem. Use Well-Tempered screening if you want to\n    enhance the image printing quality.<p>\n\n    Use the <a\n    href=\"show_driver.cgi?driver=ljet4d\">\"ljet4d\"</a>\n    Ghostscript driver for Duplex (double-sided printing)\n    support.<p>\n\n    A Ghostscript bug in the driver breaks paper input tray\n    selection. This <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pcl-patches/inputslot.patch\">patch</a>\n    for GPL Ghostscript 8.63 fixes the problem and allows to set the\n    input tray with the \"-dMediaPosition=X\" commmand line\n    option for Ghostscript. \"X\" is an integer number which\n    depends on the printer model and tray. For HP \"0\" is\n    usually the printer default, \"7\" automatic selection,\n    \"2\" manual feed, \"1\" the upper, and\n    \"4\" the lower tray. Note that for PCL 6/XL these numbers\n    are different. The patch is required for Ghostscript 8.63 and\n    older so that tray selection with the PPDs of this site works. The\n    bug is fixed in Ghostscript 8.64 or newer.<p>\n\n    A good PCL 5e driver is <a\n    href=\"show_driver.cgi?driver=hpijs-pcl5e\">HPIJS</a>\n    which is developed by HP to support their non-PostScript laser\n    printers. <a\n    href=\"show_driver.cgi?driver=gutenprint\">Gutenprint</a>\n    supports even PCL 4, 5, and 5e so that it serves as an alternative\n    driver even for older printers. Gutenprint has many dithering\n    algorithms to choose, but most are optimized for inkjets.<p>\n\n    Note that many printers listed as supported by this driver also\n    understand PCL-XL and so they can be used with the\n    \"lj5gray\" and\n    \"pxlmono\"/\"pxlcolor\" drivers which give a much\n    higher output quality and resolutions up to 1200 dpi,<p>\n\n    Unfortunately, the PCL drivers are not always absolutely\n    compatible with every printer."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-DCP-8045D"
+                },
+                {
+                    "id": "printer/Brother-HL-1050"
+                },
+                {
+                    "id": "printer/Brother-HL-1060"
+                },
+                {
+                    "id": "printer/Brother-HL-1070",
+                    "comments": {
+                        "en": "Printer also speaks PCL 6."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-10h"
+                },
+                {
+                    "id": "printer/Brother-HL-1250"
+                },
+                {
+                    "id": "printer/Brother-HL-1260",
+                    "comments": {
+                        "en": "Possibly more memory-efficient for small-memory printers."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-1270N",
+                    "comments": {
+                        "en": "300 or 600 dpi PCL driver.  Probably more memory-efficient for\n    small-memory printers."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-1430"
+                },
+                {
+                    "id": "printer/Brother-HL-1440"
+                },
+                {
+                    "id": "printer/Brother-HL-1450"
+                },
+                {
+                    "id": "printer/Brother-HL-1470N"
+                },
+                {
+                    "id": "printer/Brother-HL-1650"
+                },
+                {
+                    "id": "printer/Brother-HL-1660e",
+                    "comments": {
+                        "en": "300 or 600dpi PCL driver."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-1670N"
+                },
+                {
+                    "id": "printer/Brother-HL-1850"
+                },
+                {
+                    "id": "printer/Brother-HL-1870N"
+                },
+                {
+                    "id": "printer/Brother-HL-2060",
+                    "comments": {
+                        "en": "300 or 600dpi PCL driver."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-2070N"
+                },
+                {
+                    "id": "printer/Brother-HL-2140"
+                },
+                {
+                    "id": "printer/Brother-HL-2170W"
+                },
+                {
+                    "id": "printer/Brother-HL-5030",
+                    "comments": {
+                        "en": "300 or 600dpi PCL driver."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-5040",
+                    "comments": {
+                        "en": "300 or 600dpi PCL driver."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-5050",
+                    "comments": {
+                        "en": "300 or 600dpi PCL driver."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-5070N",
+                    "comments": {
+                        "en": "300 or 600dpi PCL driver."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-5140"
+                },
+                {
+                    "id": "printer/Brother-HL-5150D"
+                },
+                {
+                    "id": "printer/Brother-HL-5170DN"
+                },
+                {
+                    "id": "printer/Brother-HL-660"
+                },
+                {
+                    "id": "printer/Brother-HL-760"
+                },
+                {
+                    "id": "printer/Brother-HL-960",
+                    "comments": {
+                        "en": "The Brother HL-960 seems to work perfectly with the HP LaserJet 4\n    driver."
+                    }
+                },
+                {
+                    "id": "printer/Canon-GP_335",
+                    "comments": {
+                        "en": "PCL printing also supported."
+                    }
+                },
+                {
+                    "id": "printer/Canon-imageRunner_330s"
+                },
+                {
+                    "id": "printer/Canon-LBP-1000",
+                    "comments": {
+                        "en": "Does also 1200 dpi without needing PJL commands."
+                    }
+                },
+                {
+                    "id": "printer/Canon-LBP-1260"
+                },
+                {
+                    "id": "printer/Canon-LBP-1760"
+                },
+                {
+                    "id": "printer/Canon-LBP-430"
+                },
+                {
+                    "id": "printer/DEC-LN17"
+                },
+                {
+                    "id": "printer/Epson-AL-C1900",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C1900_PS3",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C2000",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C2000_PS3",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C4000",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C4000_PS3",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C4100",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C8500",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C8500PS",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C8600",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-AL-C8600_PS3",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Epson-EPL-5700"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800",
+                    "comments": {
+                        "en": "This driver seems to work only in 300dpi mode."
+                    }
+                },
+                {
+                    "id": "printer/Epson-EPL-5800PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-N1600"
+                },
+                {
+                    "id": "printer/Epson-EPL-N1600PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050plus"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050PSplus"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2120"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2500"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2500_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2750"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2750PS"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_10V"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_16DV"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_20W"
+                },
+                {
+                    "id": "printer/Generic-PCL_5c_Printer",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Generic-PCL_5e_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_6_PCL_XL_Printer",
+                    "comments": {
+                        "en": "Only up to 600 dpi, grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_4550"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_4600"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5000"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1015"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1100A"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1150"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1220"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1300"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2100",
+                    "comments": {
+                        "en": "works to 600dpi"
+                    }
+                },
+                {
+                    "id": "printer/HP-LaserJet_2100M",
+                    "comments": {
+                        "en": "works to 600dpi"
+                    }
+                },
+                {
+                    "id": "printer/HP-LaserJet_2200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2300"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3200m"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3200se"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3390"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3392"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3P_w_PCL5"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4050",
+                    "comments": {
+                        "en": "to 600dpi"
+                    }
+                },
+                {
+                    "id": "printer/HP-LaserJet_4100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4L"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4M",
+                    "comments": {
+                        "en": "For PCL"
+                    }
+                },
+                {
+                    "id": "printer/HP-LaserJet_4ML"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4Si"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4V"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4_Plus"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5L"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5Si"
+                },
+                {
+                    "id": "printer/HP-LaserJet_6"
+                },
+                {
+                    "id": "printer/HP-LaserJet_6L"
+                },
+                {
+                    "id": "printer/HP-LaserJet_6P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_8150"
+                },
+                {
+                    "id": "printer/HP-LaserJet_9000"
+                },
+                {
+                    "id": "printer/IBM-Infoprint_12",
+                    "comments": {
+                        "en": "Prints fine at 600x600 using ljet4."
+                    }
+                },
+                {
+                    "id": "printer/IBM-Page_Printer_3112",
+                    "comments": {
+                        "en": "Printer emulates PCL 5"
+                    }
+                },
+                {
+                    "id": "printer/Infotec-4651_MF"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1010"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1050"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1200"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1600plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1700plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1900"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3600plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3700plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5800C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5900C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600_KPDL-2"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6500"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6500plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-680"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-8000C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9100DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9500DN"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1810"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2030"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-3530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-6230"
+                },
+                {
+                    "id": "printer/Lexmark-E230"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_E"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_E321"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_Eplus"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1100"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6e"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6ex"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_8"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1400"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1800"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_660i"
+                },
+                {
+                    "id": "printer/Oki-B4350"
+                },
+                {
+                    "id": "printer/Oki-Okipage_10e"
+                },
+                {
+                    "id": "printer/Oki-Okipage_10ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_14ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6e"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_8p"
+                },
+                {
+                    "id": "printer/Oki-OL410e"
+                },
+                {
+                    "id": "printer/Oki-OL810ex"
+                },
+                {
+                    "id": "printer/Oki-Super_6e"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_220"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_401"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_700"
+                },
+                {
+                    "id": "printer/Samsung-ML-1250",
+                    "comments": {
+                        "en": "Up to 600dpi"
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1450"
+                },
+                {
+                    "id": "printer/Samsung-ML-1450PS"
+                },
+                {
+                    "id": "printer/Samsung-ML-1650"
+                },
+                {
+                    "id": "printer/Samsung-ML-1651N"
+                },
+                {
+                    "id": "printer/Samsung-ML-1750"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150PS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2151N"
+                },
+                {
+                    "id": "printer/Samsung-ML-2151NPS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2152W"
+                },
+                {
+                    "id": "printer/Samsung-ML-2152WPS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2250",
+                    "comments": {
+                        "en": "The Foomatic/ljet4 driver works with this printer. One can use the PPD File for the ML-2552W. Only 600 dpi is supported and the lighter printing tones are not visible."
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2550"
+                },
+                {
+                    "id": "printer/Samsung-ML-2551N"
+                },
+                {
+                    "id": "printer/Samsung-ML-2552W"
+                },
+                {
+                    "id": "printer/Samsung-ML-4600"
+                },
+                {
+                    "id": "printer/Samsung-ML-5000a"
+                },
+                {
+                    "id": "printer/Samsung-ML-6000"
+                },
+                {
+                    "id": "printer/Samsung-ML-6100"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000N"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000P"
+                },
+                {
+                    "id": "printer/Samsung-ML-7050"
+                },
+                {
+                    "id": "printer/Samsung-ML-7300"
+                },
+                {
+                    "id": "printer/Samsung-ML-7300N"
+                },
+                {
+                    "id": "printer/Samsung-ML-85"
+                },
+                {
+                    "id": "printer/Samsung-QL-5100A"
+                },
+                {
+                    "id": "printer/Samsung-QL-6050"
+                },
+                {
+                    "id": "printer/Sharp-AR-161"
+                },
+                {
+                    "id": "printer/Xerox-Able_1406"
+                },
+                {
+                    "id": "printer/Xerox-Document_Centre_400"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_4508"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_N4512"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_N4512PS"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P1202"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P8e"
+                }
+            ]
+        }
+    }
+}

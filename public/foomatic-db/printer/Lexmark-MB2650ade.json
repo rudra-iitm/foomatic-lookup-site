@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-MB2650ade",
+        "make": "Lexmark",
+        "model": "MB2650ade",
+        "mechanism": null,
+        "lang": {
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark ;MDL:Lexmark MB2650ade;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark MB2650ade"
+            }
+        },
+        "functionality": "A",
+        "driver": "PCL6",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "PCL6"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_MB2600_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 50 pages/min<p>"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Z53",
+        "make": "Lexmark",
+        "model": "Z53",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/Z53/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer is absolutely compatible to the Z52, so it works perfectly\n    when one configures it as a Z52 with Gimp-Print 4.2.x.<p>\n\n    <a\n    href=\"http://www.lexmark.com\">Lexmark</a>\n    provides a Linux/x86 binary-only driver. To get it, simply follow\n    the \"Drivers\" link on the home page. The drivers issued\n    by Lexmark do not contain any CUPS or PDQ configuration file, so\n    use them either with LPD or with my <a\n    href=\"download/printing/lexmark-foomatic-kit.tar.gz\">Lexmark\n    Foomatic Kit</a>. Download it, uncompress it, and follow the\n    instructions of its README file. Due to having access to all\n    options of the driver it leads even to a better printout quality\n    than the Lexmark driver with its original configuration\n    software.<p><p>\n\n      Consumables/Refills: color + black or color + photo ink cartridge<p>"
+        }
+    }
+}

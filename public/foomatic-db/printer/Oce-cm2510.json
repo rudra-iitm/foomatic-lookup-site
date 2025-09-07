@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Oce-cm2510",
+        "make": "Oce",
+        "model": "cm2510",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 25\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

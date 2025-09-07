@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-1800",
+        "make": "Epson",
+        "model": "LP-1800",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.i-love-epson.co.jp/products/back/hyou/lp1800_2.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "eplaser-jp",
+        "comments": {
+            "en": "Epson provides a free (LGPL) driver for this printer. With this\n    the printer should work to its full extent.<p><p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

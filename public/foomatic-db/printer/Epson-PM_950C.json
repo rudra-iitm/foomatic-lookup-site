@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_950C",
+        "make": "Epson",
+        "model": "PM 950C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 950/960.<p>\n\n      7-ink (CcMmYyK) high-end photo printer with roll feeder,\n      automatic paper cutter, full bleed (borderless) printing, prints\n      also directly on CDs.<p>\n    \n      96 nozzles per color.<p>\n\n      USB and Parallel.<p>\n\n      4- and 6-ink printing supported in Gimp-Print 4.2.2rc2, 4.3.4, or\n      newer. 7-ink printing support is under development. Testers are\n      welcome.<p><p>\n\n      Consumables/Refills: 7 separate ink tanks: Cyan, light cyan, magenta, light magenta,\n\tyellow, dark yellow<p>"
+        }
+    }
+}

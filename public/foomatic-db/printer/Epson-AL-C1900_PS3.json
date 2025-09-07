@@ -1,0 +1,54 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AL-C1900_PS3",
+        "make": "Epson",
+        "model": "AL-C1900 PS3",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/alasc1900/index.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e (gray"
+            },
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Epson;MDL:AL-C1900 PS3;",
+                "manufacturer": "Epson",
+                "model": "AL-C1900 PS3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Epson",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Epson",
+                    "ppd": "PPD/Epson/epalc190.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "PostScript version of the AL-C1900<p>\n      Epson provides a free (LGPL) driver for this printer. With this the\n      printer should work to its full extent.<p>"
+        }
+    }
+}

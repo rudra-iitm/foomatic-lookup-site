@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_6000",
+        "make": "Canon",
+        "model": "imageRunner 6000",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "PostScript is optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

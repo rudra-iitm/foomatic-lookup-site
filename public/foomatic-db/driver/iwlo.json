@@ -1,0 +1,36 @@
+{
+    "driver": {
+        "@id": "driver/iwlo",
+        "name": "iwlo",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null
+        },
+        "comments": {
+            "en": "See Driver 'iwhi'."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apple-ImageWriter",
+                    "comments": {
+                        "en": "Low resolution"
+                    }
+                },
+                {
+                    "id": "printer/Apple-ImageWriter_II",
+                    "comments": {
+                        "en": "Low resolution"
+                    }
+                },
+                {
+                    "id": "printer/Apple-ImageWriter_LQ",
+                    "comments": {
+                        "en": "Low resolution"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "driver": {
+        "@id": "driver/ptouch",
+        "name": "ptouch",
+        "pcdriver": "PT",
+        "url": "https://github.com/philpem/printer-driver-ptouch",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n    <iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    CUPS raster driver for Brother's P-Touch label printers.<p>\n\n    Foomatic data to generate the PPD files is included with the\n    driver, therefore we do not provide this data and PPDs here on the\n    OpenPrinting site.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-PT-1500PC"
+                },
+                {
+                    "id": "printer/Brother-PT-18R"
+                },
+                {
+                    "id": "printer/Brother-PT-1950"
+                },
+                {
+                    "id": "printer/Brother-PT-1950VP"
+                },
+                {
+                    "id": "printer/Brother-PT-1960"
+                },
+                {
+                    "id": "printer/Brother-PT-2300"
+                },
+                {
+                    "id": "printer/Brother-PT-2420PC"
+                },
+                {
+                    "id": "printer/Brother-PT-2450DX"
+                },
+                {
+                    "id": "printer/Brother-PT-2500PC"
+                },
+                {
+                    "id": "printer/Brother-PT-2600"
+                },
+                {
+                    "id": "printer/Brother-PT-2610"
+                },
+                {
+                    "id": "printer/Brother-PT-3600"
+                },
+                {
+                    "id": "printer/Brother-PT-550A"
+                },
+                {
+                    "id": "printer/Brother-PT-9200DX"
+                },
+                {
+                    "id": "printer/Brother-PT-9200PC"
+                },
+                {
+                    "id": "printer/Brother-PT-9400"
+                },
+                {
+                    "id": "printer/Brother-PT-9500PC"
+                },
+                {
+                    "id": "printer/Brother-PT-9600"
+                },
+                {
+                    "id": "printer/Brother-PT-PC"
+                },
+                {
+                    "id": "printer/Brother-QL-500"
+                },
+                {
+                    "id": "printer/Brother-QL-550"
+                },
+                {
+                    "id": "printer/Brother-QL-650TD"
+                }
+            ]
+        }
+    }
+}

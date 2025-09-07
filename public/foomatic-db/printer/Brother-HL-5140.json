@@ -1,0 +1,68 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-5140",
+        "make": "Brother",
+        "model": "HL-5140",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.2",
+                    "left": "6.01",
+                    "right": "6.01",
+                    "bottom": "4.2"
+                },
+                "exception": [
+                    {
+                        "@PageSize": "Executive",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Legal",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Letter",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    }
+                ]
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl5140/hl5140_ove.html",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,PCL,PCLXL",
+                "manufacturer": "Brother",
+                "model": "HL-5140 series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hl1250",
+        "comments": {
+            "en": "21 pages per minute, PCL 5e and PCL 6, 8 MB (136 MB max.), one\n    tray for 250 sheets (max A4/Legal, a second tray can be added),\n    parallel, USB 2.0.<p>\n\n    Highest resolution with \"pxlmono\" (PCL 6) seems to be 1200x1200\n    dpi, but complicated graphics (especially with bitmaps) is very\n    slow, full-page bitmaps in 1200 dpi can even make the printer\n    hang, usual documents (as e-mail from Mozilla) come out\n    quickly.<p>\n\n    \"hl1250\", the PCL-5e driver prints up to 1200x600 dpi. Much faster\n    on bitmap graphics. In general, very fast with all\n    documents.<p>\n\n    Brother provides a <a\n    href=\"http://solutions.brother.com/linux/\">driver</a>,\n    too, but binary-only and only for LPD/LPRng. According to the\n    printout quality it is based on the \"ljet4\" Ghostscript\n    driver. \"pxlmono\", \"gimp-print\" (600 dpi), and \"hpijs-pcl5e\" (600 dpi)\n    give a better grayscale quality and all special features of the\n    printer are accessible by PJL commands.<p>\n\n    There is no manual in the box, you find it as PDF file on the CD\n    with the Windows/Mac drivers.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

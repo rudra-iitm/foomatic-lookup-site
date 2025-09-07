@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/HP-Photosmart_C309g",
+        "make": "HP",
+        "model": "Photosmart C309g",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-18972-238444-421635-410635-3984414.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "A",
+        "contrib_url": "http://h30434.www3.hp.com/t5/Other-printing-questions/Photosmart-Premium-C309G-Linux-compatible/m-p/139441"
+    }
+}

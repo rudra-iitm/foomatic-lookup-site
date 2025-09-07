@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-TASKalfa_400ci_KPDL",
+        "make": "Kyocera",
+        "model": "TASKalfa 400ci KPDL",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;MODEL:Kyocera TASKalfa 400ci;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "manufacturer": "Kyocera",
+                "model": "Kyocera TASKalfa 400ci"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_TASKalfa_400ci.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 40 pages/min<p>"
+        }
+    }
+}

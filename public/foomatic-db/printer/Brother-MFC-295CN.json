@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC-295CN",
+        "make": "Brother",
+        "model": "MFC-295CN",
+        "mechanism": {
+            "inkjet": null
+        },
+        "autodetect": {
+            "general": {
+                "manufacturer": "Brother",
+                "model": "MFC-295CN"
+            }
+        },
+        "functionality": "F"
+    }
+}

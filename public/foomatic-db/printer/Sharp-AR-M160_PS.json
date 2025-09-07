@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-M160_PS",
+        "make": "Sharp",
+        "model": "AR-M160 PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sharm160.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 16\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

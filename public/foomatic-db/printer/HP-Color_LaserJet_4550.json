@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_4550",
+        "make": "HP",
+        "model": "Color LaserJet 4550",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236268-15077-236268-27901-21860-21864.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,PCL,POSTSCRIPT,PCLXL,PJL",
+                "description": "Hewlett-Packard Color LaserJet 4550",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP Color LaserJet 4550"
+            },
+            "snmp": {
+                "description": "HP Color LaserJet 4550"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Successor of the Color LaserJet 4500. Various flavors are available,\n    with networking, duplexer, etc.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

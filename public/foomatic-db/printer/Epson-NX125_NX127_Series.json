@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-NX125_NX127_Series",
+        "make": "Epson",
+        "model": "NX125 NX127 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Epson Stylus NX125 NX127;CLS:PRINTER;DES:EPSON Epson Stylus NX125 NX127",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus NX125 NX127",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus NX125 NX127"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-n10-nx127",
+        "drivers": {
+            "driver": {
+                "id": "epson-n10-nx127"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

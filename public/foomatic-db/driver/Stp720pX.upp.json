@@ -1,0 +1,26 @@
+{
+    "driver": {
+        "@id": "driver/Stp720pX.upp",
+        "name": "Stp720pX.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: Stp720pl.upp, Stp720p.upp<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Epson-Stylus_Photo_720",
+                "comments": {
+                    "en": "360/720 DPI, can be used with Parallel or USB interfaces."
+                }
+            }
+        }
+    }
+}

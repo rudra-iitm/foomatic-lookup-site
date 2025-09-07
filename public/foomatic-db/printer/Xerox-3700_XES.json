@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-3700_XES",
+        "make": "Xerox",
+        "model": "3700 XES",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "xes"
+    }
+}

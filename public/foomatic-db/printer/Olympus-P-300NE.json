@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Olympus-P-300NE",
+        "make": "Olympus",
+        "model": "P-300NE",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "306",
+                    "y": "306"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "comments": {
+            "en": "Portable dye-sublimation photo printer in 4x6inch/10x15cm/A6 photo\n    size. 300 dpi, full 24-bit color depth (256 levels per CMY color\n    component), full-bleed (border-less). Produces laboratory-like\n    photos. Does not print on normal paper. Parallel port\n    connection<p>\n\n    A driver for this printer is under developemnt by the <a\n    href=\"http://gimp-print.sf.net/\">Gimp-Print</a>\n    project. The printer should work with the version 4.3.16 or newer\n    of the development line.<p><p>\n\n      Consumables/Refills: Packs with special paper and three-color ribbon<p>"
+        }
+    }
+}

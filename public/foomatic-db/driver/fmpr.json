@@ -1,0 +1,20 @@
+{
+    "driver": {
+        "@id": "driver/fmpr",
+        "name": "fmpr",
+        "url": "http://www.openprinting.org/download/japanese_printers/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=fmpr%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      Special japanese printer driver."
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Fujitsu-FMPR"
+            }
+        }
+    }
+}

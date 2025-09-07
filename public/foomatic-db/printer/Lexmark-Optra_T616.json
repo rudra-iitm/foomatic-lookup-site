@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_T616",
+        "make": "Lexmark",
+        "model": "Optra T616",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/laser/OptraT/T616.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "35ppm, 1100-sheet feeder, 16MB RAM."
+        }
+    }
+}

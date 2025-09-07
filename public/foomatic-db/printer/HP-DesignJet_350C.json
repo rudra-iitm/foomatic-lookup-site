@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_350C",
+        "make": "HP",
+        "model": "DesignJet 350C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "dnj650c",
+        "comments": {
+            "en": "Works with dnj650c driver.  I have had no problems. <p>"
+        }
+    }
+}

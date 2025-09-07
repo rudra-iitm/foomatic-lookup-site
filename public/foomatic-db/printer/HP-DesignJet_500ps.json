@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_500ps",
+        "make": "HP",
+        "model": "DesignJet 500ps",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "dnj650c",
+        "comments": {
+            "en": "Large-format printer.<p>\n\n    This is not a PostScript printer, the \"ps\" in the name is\n    misleading.<p>\n\n    Thanks to Oleksandr Shneyder (oleksandr dot shneyder at\n    treuchtlingen dot de) for the info about getting this printer to\n    work.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

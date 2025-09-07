@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_800",
+        "make": "Epson",
+        "model": "Stylus 800",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "stcolor"
+    }
+}

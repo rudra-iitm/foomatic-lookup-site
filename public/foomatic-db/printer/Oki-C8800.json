@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C8800",
+        "make": "Oki",
+        "model": "C8800",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oki.com.sg/binaryData/23045/C8800Specr1.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/OK8800_a.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 32\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-25"
+        }
+    }
+}

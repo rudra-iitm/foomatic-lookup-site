@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C45",
+        "make": "Epson",
+        "model": "Stylus C45",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C45",
+                "manufacturer": "EPSON",
+                "model": "Stylus C45"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Cheap 4-ink home printer with a medium resolution (2880x720\n    dpi).<p>"
+        }
+    }
+}

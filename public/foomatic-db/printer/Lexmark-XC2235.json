@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-XC2235",
+        "make": "Lexmark",
+        "model": "XC2235",
+        "mechanism": {
+            "color": null
+        },
+        "lang": {
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark ;MDL:Lexmark XC2235;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark XC2235"
+            }
+        },
+        "functionality": "A",
+        "driver": "PCL6",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "PCL6"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_XC2200_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 40 pages/min<p>"
+        }
+    }
+}

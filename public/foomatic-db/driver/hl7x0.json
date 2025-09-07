@@ -1,0 +1,72 @@
+{
+    "driver": {
+        "@id": "driver/hl7x0",
+        "name": "hl7x0",
+        "url": "http://www.ghostscript.com/",
+        "supplier": "Ghostscript",
+        "thirdpartysupplied": null,
+        "license": "GPL",
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "http://forums.openprinting.org/list.php?24",
+                "@level": "voluntary",
+                "#text": "OpenPrinting forum for Brother printers"
+            }
+        },
+        "shortdescription": {
+            "en": "Driver for Brother's proprietary printer language (works also on the PCL/PS models)"
+        },
+        "functionality": {
+            "maxresx": "2400",
+            "maxresy": "600",
+            "monochrome": null,
+            "text": "95",
+            "lineart": "95",
+            "graphics": "65",
+            "photo": "35",
+            "speed": "100"
+        },
+        "execution": {
+            "ghostscript": null,
+            "prototype": "RES=%E; gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=hl7x0%A%Z -r$RES -sOutputFile=-%C -f - | perl -e 'my $u = \"%U\"; my $j = \"%T\"; my $p = \"%F\"; my $r = \"'$RES'\"; my $e = \"%G\"; my $m = \"%H\"; my $d = \"%I\"; my $t = \"%J\"; my $pcmd = \"\"; if ($p =~ /^\\d\\d\\d\\d$/) {$u =~ s/\\%U//; $u ||= \"Unknown\"; $j =~ s/\\%T//; $j ||= \"Unknown\"; $u = chr(length($u) + 1) . $u . \"\\x00\"; $j = chr(length($j) + 1) . $j . \"\\x00\"; $p = chr(length($p) + 1) . $p . \"\\x00\"; $pcmd = \"\\@U1$u$j$p\"}; my $rcode = \"\\x00\"; if ($r =~ /^150(|x150)$/) {$rcode = \"\\x0a\"} elsif ($r =~ /^300(|x300)$/) {$rcode = \"\\x05\"} elsif ($r =~ /^600(|x600)$/) {$rcode = \"\\x00\"} elsif ($r =~ /^1200(|x1200)$/) {$rcode = \"\\x0f\"}; my $rcmd = \"\\@L$rcode\"; my $ecmd = ($e =~ /^[0123]$/ ? \"\\@E\" . chr($e) : \"\"); my $mcmd = ($m =~ /^[012345678]$/ ? \"\\@J\\x00\" . chr($m) : \"\"); my $dcmd = ($d =~ /^[12]$/ ? \"\\@O$d\" : \"\"); my $tcmd = ($t =~ /^[12MOo]$/ ? \"\\@S$t\" : \"\"); my $did = 0; while (<>) {if (!$did) {s/\\@L./$pcmd$rcmd$ecmd$mcmd$dcmd$tcmd/s && $did ++}; print}'",
+            "prototype_pdf": "RES=%E; gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=hl7x0%A%Z -r$RES -sOutputFile=-%C -f - | perl -e 'my $u = \"%U\"; my $j = \"%T\"; my $p = \"%F\"; my $r = \"'$RES'\"; my $e = \"%G\"; my $m = \"%H\"; my $d = \"%I\"; my $t = \"%J\"; my $pcmd = \"\"; if ($p =~ /^\\d\\d\\d\\d$/) {$u =~ s/\\%U//; $u ||= \"Unknown\"; $j =~ s/\\%T//; $j ||= \"Unknown\"; $u = chr(length($u) + 1) . $u . \"\\x00\"; $j = chr(length($j) + 1) . $j . \"\\x00\"; $p = chr(length($p) + 1) . $p . \"\\x00\"; $pcmd = \"\\@U1$u$j$p\"}; my $rcode = \"\\x00\"; if ($r =~ /^150(|x150)$/) {$rcode = \"\\x0a\"} elsif ($r =~ /^300(|x300)$/) {$rcode = \"\\x05\"} elsif ($r =~ /^600(|x600)$/) {$rcode = \"\\x00\"} elsif ($r =~ /^1200(|x1200)$/) {$rcode = \"\\x0f\"}; my $rcmd = \"\\@L$rcode\"; my $ecmd = ($e =~ /^[0123]$/ ? \"\\@E\" . chr($e) : \"\"); my $mcmd = ($m =~ /^[012345678]$/ ? \"\\@J\\x00\" . chr($m) : \"\"); my $dcmd = ($d =~ /^[12]$/ ? \"\\@O$d\" : \"\"); my $tcmd = ($t =~ /^[12MOo]$/ ? \"\\@S$t\" : \"\"); my $did = 0; while (<>) {if (!$did) {s/\\@L./$pcmd$rcmd$ecmd$mcmd$dcmd$tcmd/s && $did ++}; print}'"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Fortunately, Brother uses the same protocol for their host-based\n    printers for many years and an appropriate driver is embedded in\n    Ghostscript, named \"hl7x0\". Unfortunately the driver was not\n    updated for the additional options and resolutions of newer\n    Brother printers, so that simply using the driver does only give\n    very basic support for the current models (only 600 dpi, no\n    Duplex, no tray selection, ...).<p>\n\n    Recently <a\n    href=\"http://sourceforge.net/projects/hbp-for-brother\">the\n    Windows driver output of the newer models was\n    investigated</a> and it turned out that for the additional\n    options only the appropriate commands need to be inserted at the\n    beginning of the data stream.<p>\n\n    On the mentioned site you find a PDF file with documentation about\n    the options and a filter for inserting them into the output data\n    stream of Ghostscript. As probably many distributions will not\n    include this filter, the Foomatic data and the resulting PPD files\n    here fo all this work without needing the filter. So you only need\n    the PPD from here and the Ghostscript which comes with your\n    distribution and you will have access to all resolutions including\n    HQ1200 (2400x600 dpi), economy mode, media types, duplex, tray\n    selection, and even password-protected printing (aka \"Locked\n    Print\" or \"Secured Print\").<p>\n\n    Note that not all settings are available on all printers,\n    especially on older models. On some printers you will get a\n    shifted page if you use a low resolution. Use 600 dpi in such a\n    case. Please report everything on our Brother forum, so that we\n    can exclude unsuitable settings from the PPDs.<p>\n\n    With the \"HQ1200\" resolution setting the economy mode and duplex\n    settings are ignored. You will always get one-sided printouts with\n    standard toner density.<p>\n\n    Try this driver also with PostScript and PCL printers from Brother\n    (use simply a PPD file for a printer which is listed as supported\n    by this driver). Do you get better/faster results or more\n    functionality? Please report on the Brother forum.<p>\n\n    If you have a monchrome laser from Brother which is not listed at\n    all on the OpenPrinting site, start trying with this driver and\n    report on the Brother forum.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-DCP-8045D"
+                },
+                {
+                    "id": "printer/Brother-HL-1020"
+                },
+                {
+                    "id": "printer/Brother-HL-1040",
+                    "comments": {
+                        "en": "Works for 300 or 600dpi; faster than PCL."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-720"
+                },
+                {
+                    "id": "printer/Brother-HL-730"
+                },
+                {
+                    "id": "printer/Brother-HL-820"
+                },
+                {
+                    "id": "printer/Brother-MFC-8300"
+                },
+                {
+                    "id": "printer/Brother-MFC-9050",
+                    "comments": {
+                        "en": "Prints at 600dpi."
+                    }
+                }
+            ]
+        }
+    }
+}

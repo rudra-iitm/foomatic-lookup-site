@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_842C",
+        "make": "HP",
+        "model": "DeskJet 842C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 840C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 840C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Ed: HP provides the <a\n    href=\"show_driver.cgi?driver=hpijs\">HPLIP\n    driver</a>, which drives this printer perfectly for\n    colour/photo jobs. See that driver entry for more information. For\n    grayscale probably Gimp-Print is the best choice.<p>\n\n    As for use with other drivers: <p>\n\n    This is the same printer as the DeskJet 840C; see <a\n    href=\"show_printer.cgi?recnum=HP-DeskJet_840C\">that\n    entry</a> for more info.  HP's web site lists the same\n    software documentation for the 810, 830, and 840 series printers,\n    so any drivers that work with one will probably work with the\n    others as well.<p>\n\n    The black print resolutions are 300x300, 600x300, and 600x600.\n    The color print resolution is 300x300 normally, but can\n    theoretically go up to 600x1200 via \"PhotoREt II\" (C-REt\n    II).<p>\n\n    This printer does not work with the \"cdj850\" driver, but\n    it works with the \"cdj880\" driver.<p>\n\n      Consumables/Refills: HP #15 black, HP #17 color, ~$25 each<p>"
+        }
+    }
+}

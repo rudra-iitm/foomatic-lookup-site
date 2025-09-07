@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okijet_2010",
+        "make": "Oki",
+        "model": "Okijet 2010",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oki.ie/2010.htm",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Offers PCL 3 emulation for DOS apps in Windows DOS box.\n<br>compatible with HP 500c in Windows DOS box.\n<br>dual head\n<br>(parallel port)<p>\n\n      Consumables/Refills: 2 cartridge (BW / color)<p>"
+        }
+    }
+}

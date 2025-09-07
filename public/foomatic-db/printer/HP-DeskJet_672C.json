@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_672C",
+        "make": "HP",
+        "model": "DeskJet 672C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    A printhead alignment tool is available in metalab's\n    system/printing directory.<p>\n\n    Same printer as the <a\n    href=\"show_printer.cgi?recnum=HP-DeskJet_670C\">DeskJet\n    670C</a>.<p>\n\n    Color printing with the GS \"cdj670\" driver is noticably\n    inferior to Windows drivers.  It'll do the job for web pages\n    and diagrams, but trying to print your color pictures will depress\n    you.  Printing with the ESP Print Pro demo is also not up to\n    snuff.<p>\n\n      Consumables/Refills: separate color/black cartridge, about $35<p>"
+        }
+    }
+}

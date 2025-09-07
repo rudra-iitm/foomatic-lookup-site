@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/62",
+        "arg_shortname": {
+            "en": "PrintTwice"
+        },
+        "arg_longname": {
+            "en": "How often every dot is printed"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "120",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-fine"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "PrintOnce"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_1280",
+        "make": "Epson",
+        "model": "Stylus Photo 1280",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/pho128/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "48 nozzles per color; 6 color CMYKcm process.<br>\n      USB and Parallel.<br>\n      13 inch wide paper path.<br>\n      4 picoliter dots."
+        }
+    }
+}

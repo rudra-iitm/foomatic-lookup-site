@@ -1,0 +1,87 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/221",
+        "arg_shortname": {
+            "en": "Passes"
+        },
+        "arg_longname": {
+            "en": "Print Head Passes per Line"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "230",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "cdj500",
+                    "arg_defval": "ev/1076"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj550",
+                    "arg_defval": "ev/1076"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "dj505j",
+                    "arg_defval": "ev/1076"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "arg_defval": "ev/1076"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1065",
+                    "ev_longname": {
+                        "en": "1 Pass (Fastest)"
+                    },
+                    "ev_shortname": {
+                        "en": "1"
+                    },
+                    "ev_driverval": "-dShingling=0"
+                },
+                {
+                    "@id": "ev/1066",
+                    "ev_longname": {
+                        "en": "2 Passes (50% of the dots/pass)"
+                    },
+                    "ev_shortname": {
+                        "en": "2"
+                    },
+                    "ev_driverval": "-dShingling=1"
+                },
+                {
+                    "@id": "ev/1067",
+                    "ev_longname": {
+                        "en": "4 Passes (25% of the dots/pass)"
+                    },
+                    "ev_shortname": {
+                        "en": "4"
+                    },
+                    "ev_driverval": "-dShingling=2"
+                },
+                {
+                    "@id": "ev/1076",
+                    "ev_longname": {
+                        "en": "Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2035",
+        "make": "Brother",
+        "model": "HL-2035",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://solutions.brother.com/linux/en_us/index.html",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Brother;CMD:PJL,HBP;MDL:HL-2030 series;CLS:PRINTER;",
+                "commandset": "PJL,HBP",
+                "manufacturer": "Brother",
+                "model": "HL-2030 series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Brother's HL-2030 driver for CUPS",
+                    "comments": {
+                        "en": "This gives a choice of 300dpi, 600dpi (default) or\n          HQ1200dpi. The test page under the default 600dpi is much\n          better. This test page (Ubuntu/GPL Ghostscript Version: 3010\n          Revision: 861) has six lines as border. One gets six lines\n          at top and bottom and five of each side. Thus the printing\n          zone now leaves out 4 mm at top and bottom and 6 mm on both\n          sides."
+                    }
+                },
+                {
+                    "id": "gimp-print"
+                },
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hl1250",
+                    "comments": {
+                        "en": "Under Ubuntu 8.04, the printer is immediately recognized as\n\t  \"usb://Brother HL-2030 series\" The configuration\n\t  system (system-config-printer 0.7.81 from Red Hat, Inc.\n\t  <a\n\t  href=\"http://cyberelk.net/tim/software/system-config-printer/)\">http://cyberelk.net/tim/software/system-config-printer/)</a>\n\t  proposes the choice of a lot of different drivers but\n\t  recommends \"Brother HL-2060 Foomatic/hl1250\" This\n\t  gives a choice of 300DPI, 600DPI or 1200x600DPI (default 300\n\t  dpi). The test page under the default 300DPI is reasonably\n\t  good. This test page (Ubuntu/GPL Ghostscript Version: 3010\n\t  Revision: 861) has six lines as border. From these I get\n\t  only three lines above and five down. The six lines are\n\t  visible on the sides with equal margin outside. As such, the\n\t  printing zone seems to leave out 4 mm above and 8 or 9 mm at\n\t  bottom and 4 mm or less on the sides."
+                    }
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "ljet4"
+                }
+            ]
+        },
+        "contrib_url": "http://www.meeus-d.be/linux/brohl2035.html",
+        "comments": {
+            "en": "<p><b>User comment:</b> I bought this printer\n      today (22-9-2008) and I am using it at home to print text. I did\n      not test all its possibilities and I am not going to. Therefore\n      I choose \"Mostly\", but maybe it deserves more. When\n      printing photographs at HQ1200dpi you sometimes get an second\n      page stating \"There is not enough memory... The printer has\n      printed at a reduced resolution\". This is funny because a\n      GDI printer is supposed to have a little memory because the job\n      is done by the computer. But if you really wanted to print\n      photos, you would buy a good colour printer. Let me say that it\n      is quite noisy when printing but that this is not an issue\n      because it very soon goes back to sleep and that it is a\n      noiseless sleep. I find it a real advantage that it has a true\n      closed paper tray (250 sheets). Some printers in that category\n      have a protruding paper tray (for 100 \u00e0 150 sheets) in the good\n      old deskjet style. A closed tray under the printer lets no dust\n      in and takes less valuable real estate (as they say in American\n      computer magazines) from your desk.</p>\n\n      <p>Brother proposes its own software on the page <a\n      href=\"http://solutions.brother.com/linux/en_us/index.html\">http://solutions.brother.com/linux/en_us/index.html</a>.\n      Under HL-2035, it sends back to HL-2030. I downloaded\n      <code>brhl2030lpr-2.0.1-1.i386.deb</code> and\n      installed it by simply double clicking it (not in a terminal and\n      not with the suggested <code>--force-all\n      --force-architecture</code>).  I downloaded\n      <code>cupswrapperHL2030-2.0.1-2.i386.deb</code> and\n      installed it by simply double clicking it, but that gave an\n      error.  I then read and applied the \"pre-required\n      procedures\" for Ubuntu 8.04 on Brother's web site,\n      installed again (again without the suggested\n      <code>--force-all --force-architecture</code>) and\n      that was successful. I choose the <code>Brother HL2030 for\n      CUPS</code> driver, that I suppose was the one I just\n      installed with the Debian package.</p>\n\n      <p><b>Update.</b> After I did this, I\n      discovered in the forum that Debian packages are available in\n      the Multiverse repository for Ubuntu 8.04. These are supposed to\n      be improved versions from Brother's. Therefore, under\n      Ubuntu (and maybe with Debian or other Debian derivatives),\n      simply read <a\n      href=\"https://wiki.ubuntu.com/BrotherDriverPackaging\">https://wiki.ubuntu.com/BrotherDriverPackaging</a>\n      and install the appropriate packages. Through Synaptic,\n      selecting <code>brother-cups-wrapper-laser</code> is\n      sufficient, the lpr stuff being installed as a dependency. This\n      uninstalls Brother's packages. This leaves the printer\n      without any driver during installation and it could be necessary\n      to reactivate the printer after installation.</p>\n\n      Consumables/Refills: Toner TN-2005 (up to 1500 pages) ; Drum\n      DR-2005 (up to 12 000 pages)</p>"
+        }
+    }
+}

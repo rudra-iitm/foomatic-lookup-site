@@ -1,0 +1,52 @@
+{
+    "driver": {
+        "@id": "driver/cdj500",
+        "name": "cdj500",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -r300x300 -sDEVICE=cdj500%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Citizen-ProJet_IIc"
+                },
+                {
+                    "id": "printer/DEC-DECwriter_520ic"
+                },
+                {
+                    "id": "printer/HP-DeskJet_350C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_400"
+                },
+                {
+                    "id": "printer/HP-DeskJet_420C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_500C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_540"
+                },
+                {
+                    "id": "printer/Olivetti-JP350S"
+                },
+                {
+                    "id": "printer/Olivetti-JP470"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_C11",
+                    "comments": {
+                        "en": "\"cdjcolor\" mentioned in the Notes\nis actually the (Aladdin) cdj500\ndriver with a flag compiled in to\nforce to 24 bit colour in the\ninternal CMY map."
+                    }
+                }
+            ]
+        }
+    }
+}

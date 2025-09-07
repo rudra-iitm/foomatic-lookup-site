@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/196",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "@Stp720%s.upp"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "Stp720pX.upp",
+                "arg_defval": "ev/976"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/976",
+                    "ev_longname": {
+                        "en": "360x360 DPI, Plain Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "360dpi"
+                    },
+                    "ev_driverval": "pl"
+                },
+                {
+                    "@id": "ev/977",
+                    "ev_longname": {
+                        "en": "720x720 DPI, Plain Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "720dpi"
+                    },
+                    "ev_driverval": "p"
+                }
+            ]
+        }
+    }
+}

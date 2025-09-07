@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C9800",
+        "make": "Oki",
+        "model": "C9800",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 36\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

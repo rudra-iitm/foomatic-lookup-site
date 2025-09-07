@@ -1,0 +1,97 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/69",
+        "arg_shortname": {
+            "en": "Quality"
+        },
+        "arg_longname": {
+            "en": "Print Quality"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "110",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dQuality=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "cdj1600",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj670",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj850",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj880",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj890",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj970",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdnj500",
+                    "arg_defval": "ev/618"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "chp2200",
+                    "arg_defval": "ev/618"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/618",
+                    "ev_longname": {
+                        "en": "Normal"
+                    },
+                    "ev_shortname": {
+                        "en": "normal"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/619",
+                    "ev_longname": {
+                        "en": "Presentation"
+                    },
+                    "ev_shortname": {
+                        "en": "presentation"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/620",
+                    "ev_longname": {
+                        "en": "Draft"
+                    },
+                    "ev_shortname": {
+                        "en": "draft"
+                    },
+                    "ev_driverval": "-1"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-1270N",
+        "make": "Brother",
+        "model": "HL-1270N",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl1270n/hl1270n_ove.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hl1250",
+        "comments": {
+            "en": "Plug and Print. Flawless.\n<br>\n1200x600 mode requires a different driver. I can't tell the difference when using 600x600.\n<br>\nSupports Parallel, USB, and Ethernet out of the box. \n<br>\nComes with 4MB of RAM upgradable to 36MB with a single 72-pin SIMM. \n<br>\nEmulates PCL6 and Level 2 Postscript.<p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: Toner TN430 (3k pages) or TN460 (6k pages) DR400 Drum Unit<p>"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-600",
+        "make": "Canon",
+        "model": "BJC-600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc600",
+        "contrib_url": "http://www.cs.wisc.edu/~ghost/aladdin/doc/Devices.htm",
+        "comments": {
+            "en": "Specific GS driver written for this printer.<p>\n\n      Consumables/Refills: separate cmyk cartidges, ~$15-$20<p>"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "printer": {
+        "@id": "printer/Apple-StyleWriter_II",
+        "make": "Apple",
+        "model": "StyleWriter II",
+        "mechanism": {
+            "inkjet": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "lpstyl"
+    }
+}

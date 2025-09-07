@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_2000P",
+        "make": "Epson",
+        "model": "Stylus Photo 2000P",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Not well tuned yet in the stp driver.  It can be expected to work well in the future."
+        }
+    }
+}

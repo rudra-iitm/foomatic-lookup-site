@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_915",
+        "make": "Epson",
+        "model": "Stylus Photo 915",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/photo/styphoto895/index.htm",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo 915",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 915"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer has a PCMCIA Type II slot to read memory cards of\n    digital cameras via an appropriate PCMCIA adapter, so one can\n    print photos without PC, photo download with free\n    software does only work with kernel 2.4.21 or later. The memory card can be simply mounted as a\n    USB-mass-storage device then.<p>\n\n    6-color CMYKcm printing.<p>\n\n    Roll paper feeder, USB only.<p>"
+        }
+    }
+}

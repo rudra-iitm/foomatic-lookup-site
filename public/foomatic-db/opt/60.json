@@ -1,0 +1,70 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/60",
+        "arg_shortname": {
+            "en": "GammaFile"
+        },
+        "arg_longname": {
+            "en": "Gamma Correction File"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "113",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pnm2ppa",
+                "arg_defval": "ev/pnm2ppa-GammaFile-Default"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pnm2ppa-GammaFile-Best",
+                    "ev_longname": {
+                        "en": "Best Quality (/etc/pnm2ppa.gamma_best)"
+                    },
+                    "ev_shortname": {
+                        "en": "Best"
+                    },
+                    "ev_driverval": "-F /etc/pnm2ppa.gamma_best"
+                },
+                {
+                    "@id": "ev/pnm2ppa-GammaFile-Default",
+                    "ev_longname": {
+                        "en": "Default (/etc/pnm2ppa.gamma)"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/pnm2ppa-GammaFile-None",
+                    "ev_longname": {
+                        "en": "None"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "--noGamma"
+                },
+                {
+                    "@id": "ev/pnm2ppa-GammaFile-Normal",
+                    "ev_longname": {
+                        "en": "Normal Quality (/etc/pnm2ppa.gamma_normal)"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal"
+                    },
+                    "ev_driverval": "-F /etc/pnm2ppa.gamma_normal"
+                }
+            ]
+        }
+    }
+}

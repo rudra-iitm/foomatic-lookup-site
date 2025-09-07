@@ -1,0 +1,59 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_5500DT",
+        "make": "Xerox",
+        "model": "Phaser 5500DT",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;CMD:Adobe PostScript 3, PCL;MDL:Phaser 5500DT;CLS:Printer;DES:Xerox Phaser 5500 Laser Printer, PostScript 3, Letter/A4/Tabloid/A3 Size",
+                "commandset": "Adobe PostScript 3, PCL",
+                "description": "Xerox Phaser 5500 Laser Printer, PostScript 3, Letter/A4/Tabloid/A3 Size",
+                "manufacturer": "Xerox",
+                "model": "Phaser 5500DT"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx5500dt.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 50\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25\n      \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 50 pages/min<p>"
+        }
+    }
+}

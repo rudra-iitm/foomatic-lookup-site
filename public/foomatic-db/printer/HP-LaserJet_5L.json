@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5L",
+        "make": "HP",
+        "model": "LaserJet 5L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "relative": null,
+                    "top": "12",
+                    "left": "18",
+                    "right": "18",
+                    "bottom": "12"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL5,PJL",
+                "description": "Hewlett-Packard LaserJet 5L Printer",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 5L"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4",
+        "comments": {
+            "en": "For basic printing functionality use the \"ljet4\" or the <a\n    href=\"http://hplipopensource.com/\">HPIJS driver\n    </a>. For advanced functionality such as printer status and\n    maintenance features, use the <a\n    href=\"http://hplipopensource.com/\"> HPLIP\n    driver</a> (which includes HPIJS but works also together\n    with \"ljet4\").<p>\n\n    Remember that the 5L is more like the LaserJet 4 family than the\n    LaserJet 5 family (as with most \"L\" printers from\n    HP). For example it does not work with the\n    \"lj5gray\" drivers but only with the\n    \"ljet4\" or \"lj4dith\" drivers (and\n    Gimp-Print or HPIJS).<p>\n\n    Getting more RAM is highly recommended; with only the standard\n    1Meg you may be unable to print some jobs. It is recommended to\n    stay at 300 dpi without extra memory, and on that resolution\n    \"ljet4\" is the better driver than HPIJS.<p><p>\n\n      Consumables/Refills: Toner ($50-60)<p>"
+        }
+    }
+}

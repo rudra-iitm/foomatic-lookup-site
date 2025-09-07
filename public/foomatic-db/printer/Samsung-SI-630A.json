@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-SI-630A",
+        "make": "Samsung",
+        "model": "SI-630A",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.samsungelectronics.com",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pcl3",
+        "comments": {
+            "en": "Under Mandrake 7.0-2 printing is perfectly with the HP 500 series driver."
+        }
+    }
+}

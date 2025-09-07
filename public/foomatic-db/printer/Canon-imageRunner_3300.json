@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_3300",
+        "make": "Canon",
+        "model": "imageRunner 3300",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e, 6"
+            }
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Printer Kit C1 is needed for PostScript and PCL, C2 for PCL\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

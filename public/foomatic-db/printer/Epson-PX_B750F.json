@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX_B750F",
+        "make": "Epson",
+        "model": "PX-B750F",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:PX-B750F;CLS:PRINTER;DES:EPSON PX-B750F",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON PX-B750F",
+                "manufacturer": "EPSON",
+                "model": "PX-B750F"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201113j",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-201113j"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

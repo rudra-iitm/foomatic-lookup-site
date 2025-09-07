@@ -1,0 +1,87 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/70",
+        "arg_shortname": {
+            "en": "RET"
+        },
+        "arg_longname": {
+            "en": "Resolution Enhancement"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "120",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dRetStatus=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "cdj1600",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj670",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj850",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj880",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj890",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj970",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "cdnj500",
+                    "arg_defval": "ev/621"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "chp2200",
+                    "arg_defval": "ev/621"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/621",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "on"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/622",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "off"
+                    },
+                    "ev_driverval": "0"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_750C",
+        "make": "NEC",
+        "model": "SuperScript 750C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss750c/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "3+"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "pcl3",
+        "comments": {
+            "en": "CMYK four-color printing or black-only; two heads.\n<br>Should(tm) work perfectly; if you have one and it does, change this entry!<p>\n\n      Consumables/Refills: ink cartridges, one per head.<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LA50",
+        "make": "DEC",
+        "model": "LA50",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "144",
+                    "y": "72"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "la50"
+    }
+}

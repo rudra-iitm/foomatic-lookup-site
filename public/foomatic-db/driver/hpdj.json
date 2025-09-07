@@ -1,0 +1,187 @@
+{
+    "driver": {
+        "@id": "driver/hpdj",
+        "name": "hpdj",
+        "url": "http://home.vrweb.de/martin.lottermoser/pcl3/index.html",
+        "obsolete": {
+            "@replace": "pcl3"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=hpdj%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "Martin Lottermoser's general-purpose PCL 3+ Ghostscript\n    driver. The development of this driver is continued under the name\n    \"<a href=\"show_driver.cgi?driver=pcl3\">pcl3</a>\". This\n    database entry serves for the case that your distro has the \"hpdj\"\n    driver compiled into Ghostscript and you do not want to recompile\n    it to get \"pcl3\" into it. If you compile Ghostscript you should\n    prefer to directly use \"pcl3\".<p>\n\n    It is known to work reasonably well with a wide assortment of PCL\n    DeskJets. This driver has many options; be sure to consult the\n    man page gs-hpdj(1) for more information.<p>\n\n    For many printers, the <a\n    href=\"show_driver.cgi?driver=hpijs\">HPIJS</a> driver may\n    produce better color output."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apollo-P-1200",
+                    "comments": {
+                        "en": "Bound to work."
+                    }
+                },
+                {
+                    "id": "printer/Apollo-P-1220_Barbie"
+                },
+                {
+                    "id": "printer/Apollo-P-1250"
+                },
+                {
+                    "id": "printer/Generic-PCL_3_Printer"
+                },
+                {
+                    "id": "printer/HP-2000C"
+                },
+                {
+                    "id": "printer/HP-2500C"
+                },
+                {
+                    "id": "printer/HP-DesignJet_ColorPro_CAD"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1220C",
+                    "comments": {
+                        "en": "Bound to work."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_340C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_350C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_400",
+                    "comments": {
+                        "en": "Tested in mono only"
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_500"
+                },
+                {
+                    "id": "printer/HP-DeskJet_500C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_510"
+                },
+                {
+                    "id": "printer/HP-DeskJet_520"
+                },
+                {
+                    "id": "printer/HP-DeskJet_540"
+                },
+                {
+                    "id": "printer/HP-DeskJet_540C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_550C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_560C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_610C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_610CL"
+                },
+                {
+                    "id": "printer/HP-DeskJet_612C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_660C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_694C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_840C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_842C",
+                    "comments": {
+                        "en": "This driver produces the best text output, bar none."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_850C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_855C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_880C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_882C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_932C",
+                    "comments": {
+                        "en": "Works well and included with some distributions, including debian."
+                    }
+                },
+                {
+                    "id": "printer/HP-OfficeJet"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_300"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_330"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_350"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_625"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_635"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_LX"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_Pro_1175C"
+                },
+                {
+                    "id": "printer/HP-PSC_500"
+                },
+                {
+                    "id": "printer/Lexmark-1020_Business"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_100C"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_150C"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_650C"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_750C"
+                },
+                {
+                    "id": "printer/Samsung-SI-630A"
+                },
+                {
+                    "id": "printer/Sharp-AJ-1800",
+                    "comments": {
+                        "en": "pcl3 driver which prints b&amp;w with some slight tweaking."
+                    }
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_C11",
+                    "comments": {
+                        "en": "hpdj driver (updated to new name\npcl3) works perfectly in B+W.\n\nColor works with 3-bit depth\nmode using the cdjcolor driver\n(from GS)"
+                    }
+                }
+            ]
+        }
+    }
+}

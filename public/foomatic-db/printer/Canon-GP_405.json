@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Canon-GP_405",
+        "make": "Canon",
+        "model": "GP 405",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.canon.com.au/products/copiers/gp405.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Canon GP300-405PSPCL"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Large networked copier/printer; works well.\nSee GP 335 for more comments."
+        }
+    }
+}

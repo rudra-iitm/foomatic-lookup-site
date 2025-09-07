@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/m2300w-psnup",
+        "arg_shortname": {
+            "en": "Multipage"
+        },
+        "arg_longname": {
+            "en": "Multipage"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "170",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "m2300w",
+                "arg_defval": "ev/m2300w-psnup-none"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/m2300w-psnup-2up",
+                    "ev_longname": {
+                        "en": "2up"
+                    },
+                    "ev_shortname": {
+                        "en": "2up"
+                    },
+                    "ev_driverval": "-2"
+                },
+                {
+                    "@id": "ev/m2300w-psnup-4up",
+                    "ev_longname": {
+                        "en": "4up"
+                    },
+                    "ev_shortname": {
+                        "en": "4up"
+                    },
+                    "ev_driverval": "-4"
+                },
+                {
+                    "@id": "ev/m2300w-psnup-none",
+                    "ev_longname": {
+                        "en": "None"
+                    },
+                    "ev_shortname": {
+                        "en": "none"
+                    },
+                    "ev_driverval": null
+                }
+            ]
+        }
+    }
+}

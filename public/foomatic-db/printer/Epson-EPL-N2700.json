@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-N2700",
+        "make": "Epson",
+        "model": "EPL-N2700",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Epson;MDL:EPL-N2700;",
+                "manufacturer": "Epson",
+                "model": "EPL-N2700"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Epson",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Epson",
+                    "ppd": "PPD/Epson/epln2700.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 27 pages/min<p>"
+        }
+    }
+}

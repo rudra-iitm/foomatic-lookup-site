@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-CP-330",
+        "make": "Canon",
+        "model": "CP-330",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Portable dye-sublimation photo printer in 4x6inch/10x15cm photo\n    size or special panorama mode 4x8in/10x20cm. 300 dpi, full 24-bit\n    color depth (256 levels per CMY color component), full-bleed\n    (border-less). Produces laboratory-like photos. Does not print on\n    normal paper.<p>\n\n    Can be connected to the USB port of many digital cameras for\n    direct printing controlled by the camera (Canon Direct Print,\n    PictBridge).<p>\n\n    IrDA port.<p><p>\n\n      Consumables/Refills: Packs with special paper and three-color ribbon<p>"
+        }
+    }
+}

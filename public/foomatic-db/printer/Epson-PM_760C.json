@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_760C",
+        "make": "Epson",
+        "model": "PM 760C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 720.<p>\n\n    Reported to work perfectly in the latest \"gimp-print\"\n    driver's documentation.<p>\n\n    Is 6 color CMYKcm printer.<p>"
+        }
+    }
+}

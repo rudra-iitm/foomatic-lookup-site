@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Star-LC24-100",
+        "make": "Star",
+        "model": "LC24-100",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "necp6",
+        "comments": {
+            "en": "<P>It may be necessary to turn the\nprinter off and on when switching\nresolution (I only tried high\nresolution once, but I have used\n360x180 for years). \n<P>This is an old but durable\nprinter, I have used it for 5 years\nwith no problems. \n<P>The printer is no\nlonger being sold, but the manual\nthat shipped with it contains full\nprogramming documentation of all\nprinter features making it possible\nto write your own drivers for any\nOS or application.<p>\n\n      Consumables/Refills: Kores Gr. 691 Star LC24-10 approx. $12.50<p>"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C50",
+        "make": "Epson",
+        "model": "Stylus C50",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Cheap 4-ink home printer with a medium resolution (1440x720 dpi),\n    but faster than the Stylus C42 printers and with 4 pl ink \n    drops.<p>\n\n    Should work with the Gimp-Print driver for the Epson Stylus C42\n    printers, but probably with limited quality in the highest\n    resolution.<p>"
+        }
+    }
+}

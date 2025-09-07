@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-SP_377SFNwX",
+        "make": "Ricoh",
+        "model": "SP 377SFNwX",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:RICOH;MDL:SP 377SFNwX;CMD:PCLXL;"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono-Ricoh",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono-Ricoh",
+                "ppd": "PPD/Ricoh/PXL/Ricoh-SP_377SFNwX_PXL.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller.\n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file.\n\nDownload the driver package if you want to install all drivers (100+).<p>\n\nThroughput 28."
+        }
+    }
+}

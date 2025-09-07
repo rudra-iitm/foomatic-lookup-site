@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_3040",
+        "make": "Xerox",
+        "model": "Phaser 3040",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.office.xerox.com/printers/laser-printers/phaser-3040/enin.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Xerox Phaser 3040"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Xerox Phaser 3040\n\tis a monochrome printer with a 2016 street price of $90.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-4Ve",
+        "make": "Brother",
+        "model": "HL-4Ve",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet"
+    }
+}

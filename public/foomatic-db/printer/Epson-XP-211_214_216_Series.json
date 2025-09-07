@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-XP-211_214_216_Series",
+        "make": "Epson",
+        "model": "XP-211 214 216 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:XP-211 214 216 Series;CLS:PRINTER;DES:EPSON XP-211 214 216 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON XP-211 214 216 Series",
+                "manufacturer": "EPSON",
+                "model": "XP-211 214 216 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201304w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201304w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

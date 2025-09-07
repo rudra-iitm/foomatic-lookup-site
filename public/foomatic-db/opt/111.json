@@ -1,0 +1,53 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/111",
+        "arg_shortname": {
+            "en": "PJLResolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET RESOLUTION = %s"
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/742",
+                    "ev_longname": {
+                        "en": "300x300 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "300"
+                    },
+                    "ev_driverval": "300"
+                },
+                {
+                    "@id": "ev/743",
+                    "ev_longname": {
+                        "en": "600x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "600"
+                    },
+                    "ev_driverval": "600"
+                },
+                {
+                    "@id": "ev/744",
+                    "ev_longname": {
+                        "en": "1200x1200 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "1200"
+                    },
+                    "ev_driverval": "1200"
+                }
+            ]
+        }
+    }
+}

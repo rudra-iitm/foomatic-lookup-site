@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6360",
+        "make": "Xerox",
+        "model": "Phaser 6360",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 42\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

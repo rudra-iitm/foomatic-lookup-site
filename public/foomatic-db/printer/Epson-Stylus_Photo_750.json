@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_750",
+        "make": "Epson",
+        "model": "Stylus Photo 750",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/pho750/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo 750",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 750"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "A 6 color CMYKcm printer.\n<p>Annotation from <a href=\"mailto:olivier.delsol at usa dot net\">\nOlivier Delsol</a>(03.16.1999):\n<br>\nThe 750 works in 4 color mode with the upp files written by DEPontius for the 740 and ghostscript 5.50, such as stc740.upp \n<br>See the Stylus 740 entry for a link.\n<br>\n<br>Annotation from <a href=\"mailto:mmclure@mclure.org\">Manuel McLure</a> (06/13/2000)<br>\nThis printer prints beautifully using the gimp-print driver from\n<a href=\"http://gimp-print.sourceforge.net\">http://gimp-print.sourceforge.net</a>.<br>\nThe \"Stylus Photo\" gimp-print driver can be inserted into ghostscript as the \"stp\" driver, see\ninstructions on the above site.<p>\n\n      Consumables/Refills: BW cartridge + single 6color cartridge<p>"
+        }
+    }
+}

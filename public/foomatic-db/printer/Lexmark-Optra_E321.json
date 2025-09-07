@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_E321",
+        "make": "Lexmark",
+        "model": "Optra E321",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PCL 5 Emulation, PostScript Le",
+                "description": "Lexmark E321",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark E321"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "20ppm monochrome laser, standard PCL 5e"
+        }
+    }
+}

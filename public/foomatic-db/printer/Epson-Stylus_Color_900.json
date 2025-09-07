@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_900",
+        "make": "Epson",
+        "model": "Stylus Color 900",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc900_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,PRPXL24,BDC,D4",
+                "description": "EPSON Stylus COLOR 900",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 900"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "The gimp driver doesn't work for the 900N (ethernet) printer; it\nprints part of the page and hangs.  (Ed: is this still true?)\n<p>\nIt should(tm) work perfectly with the stp driver.<p>\n\n      Consumables/Refills: T003011 - $25 for black $30 for Color<p>"
+        }
+    }
+}

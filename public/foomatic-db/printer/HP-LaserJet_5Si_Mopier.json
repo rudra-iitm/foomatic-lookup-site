@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5Si_Mopier",
+        "make": "HP",
+        "model": "LaserJet 5Si Mopier",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HP;MDL:HP LaserJet 5Si;",
+                "manufacturer": "HP",
+                "model": "HP LaserJet 5Si"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hplip"
+                },
+                {
+                    "id": "Postscript"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 24 pages/min<p>"
+        }
+    }
+}

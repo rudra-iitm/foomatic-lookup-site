@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Generic-PostScript_Printer",
+        "make": "Generic",
+        "model": "PostScript Printer",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "This entry allows you to use any PostScript printer with Foomatic,\n    at least with the basic options.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic database</a>\n    and if you don't have a <a\n    href=\"/download/PPD/\">native PPD file</a> for\n    it. See our <a href=\"ppd-doc.html\">PPD\n    instructions</a> and the \"<a\n    href=\"show_driver.cgi?driver=Postscript\">Postscript</a>\"\n    driver entry for more information.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your printer. Use\n    the \"<a\n    href=\"show_driver.cgi?driver=Postscript1\">Postscript1</a>\"\n    driver if you have a printer only understanding PostScript Level\n    1.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

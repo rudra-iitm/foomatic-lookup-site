@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Color_1275",
+        "make": "Lexmark",
+        "model": "Optra Color 1275",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also speaks PCL 5c and 6.\n<br>Model 1275n includes network port.\n<br>CMYK color printing.<p>\n\n      Consumables/Refills: 4 separate toner cartridges, one photoconductor/fuser roll<p>"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_G95",
+        "make": "HP",
+        "model": "OfficeJet G95",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:OfficeJet G95;CMD:MLC,PCL,PML,SCL;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard OfficeJet G Series;",
+                "commandset": "MLC,PCL,PML,SCL",
+                "description": "Hewlett-Packard OfficeJet G Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "OfficeJet G95"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multifunction device: print/copy/scan/fax.<p>\n\n    High-end variation of the <a\n    href=\"show_printer.cgi?recnum=HP-OfficeJet_G55\">OfficeJet\n    G55</a> theme, with automatic document feeder (ADF), fax\n    capability, print duplexer, and JetDirect 170X print server; see\n    that entry for scanning and other driver information. Use the\n    HPLIP, \"cdj970\" or \"pcl3\" driver\n    for duplex support, the HPLIP from HP gives the best\n    output quality.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>"
+        }
+    }
+}

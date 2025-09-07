@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B6300",
+        "make": "Oki",
+        "model": "B6300",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.okidata.com.sg/binaryData/20684/B6000Series.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 34\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26"
+        }
+    }
+}

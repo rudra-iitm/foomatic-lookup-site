@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_950",
+        "make": "Epson",
+        "model": "Stylus Photo 950",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/photo/styphoto950/index.htm",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6-ink (CcMmYK) high-end photo printer with roll feeder,\n      automatic paper cutter, full bleed (borderless) printing, prints\n      also directly on CDs.<p>\n    \n      96 nozzles per color.<p>\n\n      USB and Parallel.<p>\n\n      Supported in Gimp-Print 4.2.2rc2, 4.3.4, or newer.<p>\n\n      In the U. S. sold as Epson Stylus Photo 960.<p><p>\n\n      Consumables/Refills: 6 separate ink tanks: Cyan, light cyan, magenta, light magenta,\n\tyellow, black<p>"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_1270",
+        "make": "Epson",
+        "model": "Stylus Photo 1270",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/pho127/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "48 nozzles per color; 6 color CMYKcm process.\n<br>USB and Parallel.\n<br>12.75 inch wide paper path.\n<br>4 picoliter dots.  One of the best Epsons for color and quality."
+        }
+    }
+}

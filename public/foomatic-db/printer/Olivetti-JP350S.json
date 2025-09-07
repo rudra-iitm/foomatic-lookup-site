@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Olivetti-JP350S",
+        "make": "Olivetti",
+        "model": "JP350S",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.olivettilexikon.com/customercare/jp.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "The manual says it's a deskjet plus compatible, but selecting that in ghostscript doesn't work use laserjet instead\n\nThere is a color cartridge available for this printer, but I don't have it so I don't know if it works. According to olivetti it's hp deskjet 500c compatible<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/Postscript-Duplex",
+        "arg_shortname": {
+            "en": "Duplex"
+        },
+        "arg_longname": {
+            "en": "Double-Sided Printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "130",
+            "arg_spot": "Z",
+            "arg_postscript": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "Postscript",
+                "arg_defval": "ev/909"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/909",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "<</Duplex false>>setpagedevice"
+                },
+                {
+                    "@id": "ev/910",
+                    "ev_longname": {
+                        "en": "Long Edge (Standard)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexNoTumble"
+                    },
+                    "ev_driverval": "<</Duplex true /Tumble false>>setpagedevice"
+                },
+                {
+                    "@id": "ev/911",
+                    "ev_longname": {
+                        "en": "Short Edge (Flip)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexTumble"
+                    },
+                    "ev_driverval": "<</Duplex true /Tumble true>>setpagedevice"
+                }
+            ]
+        }
+    }
+}

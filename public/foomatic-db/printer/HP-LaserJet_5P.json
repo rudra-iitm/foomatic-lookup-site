@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5P",
+        "make": "HP",
+        "model": "LaserJet 5P",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL5,PJL",
+                "description": "Hewlett-Packard LaserJet 5P Printer",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 5P"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Reported not to work with the\n    \"lj5gray\" drivers, use the\n    \"ljet4\" or \"lj4dith\" drivers (or Gimp-Print or\n    HPIJS) instead.<p>\n\n    This printer seems to be more similar to the HP LaserJet 5L than\n    to the other printers in the LaserJet 5 series.<p>\n\n      Consumables/Refills: HP Toner Cartridge C3903A<p>"
+        }
+    }
+}

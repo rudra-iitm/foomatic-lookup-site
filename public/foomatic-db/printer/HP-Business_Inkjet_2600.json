@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-Business_Inkjet_2600",
+        "make": "HP",
+        "model": "Business Inkjet 2600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236261-24728-f17-33052-33053-33054.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplipopensource.com/\">HPLIP driver</a> (which includes HPIJS). <p>\n\t       \n    CMYK printing, Large format: 13x19inch/A3 paper.<p>\n\n    PostScript/PCL5 printer;<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

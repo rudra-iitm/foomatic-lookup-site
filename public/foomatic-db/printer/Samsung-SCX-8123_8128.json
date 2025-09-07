@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-SCX-8123_8128",
+        "make": "Samsung",
+        "model": "SCX-8123 8128",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,PDF,TIFF,JPEG,URF,FAX,FWV,EXT;MDL:SCX-8123 8128 Series;CLS:PRINTER;MODE:FAX3,SCN;",
+                "manufacturer": "Samsung",
+                "model": "SCX-8123 8128 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_SCX-8123_8128_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>"
+        }
+    }
+}

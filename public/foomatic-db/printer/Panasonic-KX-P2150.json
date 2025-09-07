@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P2150",
+        "make": "Panasonic",
+        "model": "KX-P2150",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "144",
+                    "y": "240"
+                }
+            }
+        },
+        "lang": {
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ibmpro",
+        "comments": {
+            "en": "<p>aka  PanaPrinter 192 ; 9-pin printer; emulates Epson FX-86e/FX-800 (standard mode)or IBM ProPrinter II (IBM mode, which is not used under Linux)  \n\n<p>Works  perfectly  using  ibmpro  GS driver in standard mode.  Red Hat Linux does not support  ibmpro  in printtool and rhs-printfilters components.  To use  ibmpro  GS driver in RH, uninstall those two components and install 3rd party print manager like APSFilter.\n\n<p>Works  mostly  using  epson  GS driver in standard mode.  Alignment problems exist for printing lines after attempting to print graphics, tables, figures, and/or equations in Postscript documents (using Ghostscript).  \n\n<p>Works  perfectly  using  epson  driver if Postscript document contains only text or document is raw ASCII.\n\n<p><p>\n\n      Consumables/Refills: ribbon cartridge<p>"
+        }
+    }
+}

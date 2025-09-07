@@ -1,0 +1,44 @@
+{
+    "driver": {
+        "@id": "driver/epsonepl",
+        "name": "epsonepl",
+        "url": "http://sourceforge.net/projects/epsonepl/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ijs": null,
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "relative": null,
+                    "top": "12",
+                    "left": "12",
+                    "right": "12",
+                    "bottom": "12"
+                }
+            },
+            "ppdentry": "*DefaultResolution: 1200x600dpi"
+        },
+        "comments": {
+            "en": "The printers of Epson's EPL \"L\" series do not understand PCL 5e,\n    PCL 6, or PostScript and so they do not work with standard\n    drivers; they can only be driven through a proprietary\n    language.<p>\n\n    An independent driver was developed in the <a\n    href=\"http://sourceforge.net/projects/epsonepl/\">\n    epsonepl</a> project.<p>\n\n    The driver is IJS-based, GNU Ghostscript 6.53 onwards, AFPL\n    Ghostscript 7.04 onwards, or ESP Ghostscript 7.x onwards is\n    required.<p>\n\n    This project is not endorsed by nor affiliated with\n    Epson.<p>\n\n    This driver is reported to work both on the parallel and on the\n    USB port.<p>\n\n    Foomatic data to generate the PPD files is included with the\n    driver, therefore we do not provide this data and PPDs here on the\n    OpenPrinting site,<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-EPL-5700L"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800L"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900L"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100L"
+                },
+                {
+                    "id": "printer/Epson-EPL-6200L"
+                }
+            ]
+        }
+    }
+}

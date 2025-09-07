@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C61",
+        "make": "Epson",
+        "model": "Stylus C61",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.epson.com/cgi-bin/Store/index.jsp",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer is the same as the C62, but in Australia and New\n    Zealand it is sold under the name C61.<p>\n\n    4-ink home printer with a high resolution (Epson claims 5760x720\n    dpi), parallel and USB port.<p>\n\n    Supported by Gimp-Print 4.2.2 or newer (use it as a C60 with older\n    Gimp-Print versions). The output quality is excellent, nearly as\n    good as the quality of the Epson Stylus Photo (6-ink)\n    printers.<p>\n\n    As this printer has only a minimum ink droplet size of 4pl\n    5760x720 dpi will not give a visibly better output quality as\n    2880x720 dpi. So this printer can be rated as\n    \"Perfectly\" working also if its 5760x720 dpi mode (if it\n    is really implemented in the hardware) is not supported by\n    Gimp-Print.<p>\n\n    But Gimp-Print allows to print with this printer in 2880x1440 dpi\n    and 1440x1440 dpi. So it is at least possible to print with the\n    same amount of pixels per square meter as Epson promises.<p>"
+        }
+    }
+}

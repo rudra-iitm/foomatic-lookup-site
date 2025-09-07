@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_R220",
+        "make": "Epson",
+        "model": "Stylus Photo R220",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo R220",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo R220"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Most probably the same printing engine/firmware as the Epson\n    Stylus Photo R300.<p>\n\n    6-color CMYKcm printing.<p><p>\n\n      Consumables/Refills: 6 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

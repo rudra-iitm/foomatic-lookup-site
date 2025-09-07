@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_Inkjet_Printer_CP1700",
+        "make": "HP",
+        "model": "Color Inkjet Printer CP1700",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/data_sheet/c6436a.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML,DESKJET,DW-PCL",
+                "description": "HP Color Inkjet CP1700",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP Color Inkjet CP1700"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "Professional, wide-format, fast, photo-capable 4-ink\n    printer. \"D\" model with duplex unit available.<p>\n\n    Best output quality reachable with the HPLIP\n    driver, especially the 1200-dpi high resolution mode gives\n    excellent photo quality.<p>\n\n    For basic printing functionality use the <a href=\"http://hplipopensource.com/\">HPIJS driver </a>. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplip.sf.net/\">HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Other drivers, as Gimp-Print, probably work also, but are limited\n    to 600 dpi.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, the 2400x1200 dpi are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi, without\n    paper detection, intended for photo paper only.<p>\n\n    The duplex unit of the \"D\" nodel is not supported by\n    Gimp-Print, but by HP's HPLIP, \"cdj970\"\n    or \"pcl3\".<p><p>\n\n      Consumables/Refills: Color(CMY), Black<p>"
+        }
+    }
+}

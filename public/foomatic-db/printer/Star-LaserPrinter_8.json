@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Star-LaserPrinter_8",
+        "make": "Star",
+        "model": "LaserPrinter 8",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Appears to have assorted older emulations, including laserjet.\n<br>I don't know if it has enough memory to print a full page bitmap as the laserjet driver will tend to do."
+        }
+    }
+}

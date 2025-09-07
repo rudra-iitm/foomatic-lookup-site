@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_3535",
+        "make": "HP",
+        "model": "DeskJet 3535",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236261-14438-f13-305967-305969-305971.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Does not understand PCL as most other DeskJets, it uses the\n    so-called \"Lightweight Imaging Device Interface\n    Language\" (LIDIL).<p><p>\n\n      Consumables/Refills: 1 colour (CMY) cartridge or 1 black (K) cartridge<p>"
+        }
+    }
+}

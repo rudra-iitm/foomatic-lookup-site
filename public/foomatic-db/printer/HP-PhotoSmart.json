@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart",
+        "make": "HP",
+        "model": "PhotoSmart",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/psprntr.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "This is HP's first printer made especially for printing\n    photos, it takes A4/Letter as maximum paper sizes (no Legal paper)\n    and works exclusively with a 6-color printing process\n    (CcMmYK). Due to the black ink being together with the light cyan\n    and light magenta ink in one cartridge it is totally uneconomic to\n    print text and office work with this printer.<p>\n\n    The protocol of this printer is different to the one of the\n    DeskJet and of the later PhotoSmart models, especially HP says\n    that it does not work under DOS because it has no built-in\n    fonts. A driver to use this printer under free operating systems\n    is not known.<p><p>\n\n      Consumables/Refills: Refill: 1 CMY cartridge (#844) and 1 cmK cartridge (#845)<p>"
+        }
+    }
+}

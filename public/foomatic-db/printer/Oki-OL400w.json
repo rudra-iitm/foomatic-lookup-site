@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL400w",
+        "make": "Oki",
+        "model": "OL400w",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "oki4w",
+        "comments": {
+            "en": "The OL400w works fine with all Foomatic-supported spoolers with\n    the oki4w driver.<br>\n\n    This printer, while it works, is not recommended for non-Windows\n    users."
+        }
+    }
+}

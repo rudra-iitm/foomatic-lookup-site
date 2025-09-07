@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-N2050PSplus",
+        "make": "Epson",
+        "model": "EPL-N2050PS+",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/epln2050p/index.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eplaser",
+        "comments": {
+            "en": "PostScript version of the EPL-N2050+<p>\n      Epson provides a free (LGPL) driver for this printer. With this the\n      printer should work to its full extent.<p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

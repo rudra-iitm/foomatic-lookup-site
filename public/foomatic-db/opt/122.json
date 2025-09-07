@@ -1,0 +1,80 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/122",
+        "arg_shortname": {
+            "en": "Darkness"
+        },
+        "arg_longname": {
+            "en": "Darkness"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%FAKEOKI DARKNESS=%s\\n"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "oki4drv",
+                "arg_defval": "ev/789"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/787",
+                    "ev_longname": {
+                        "en": "Darkest"
+                    },
+                    "ev_shortname": {
+                        "en": "Darkest"
+                    },
+                    "ev_driverval": "-2"
+                },
+                {
+                    "@id": "ev/788",
+                    "ev_longname": {
+                        "en": "Dark"
+                    },
+                    "ev_shortname": {
+                        "en": "Dark"
+                    },
+                    "ev_driverval": "-1"
+                },
+                {
+                    "@id": "ev/789",
+                    "ev_longname": {
+                        "en": "Normal"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/790",
+                    "ev_longname": {
+                        "en": "Light"
+                    },
+                    "ev_shortname": {
+                        "en": "Light"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/791",
+                    "ev_longname": {
+                        "en": "Lightest"
+                    },
+                    "ev_shortname": {
+                        "en": "Lightest"
+                    },
+                    "ev_driverval": "2"
+                }
+            ]
+        }
+    }
+}

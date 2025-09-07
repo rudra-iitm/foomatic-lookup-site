@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-N1600",
+        "make": "Epson",
+        "model": "EPL-N1600",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/compare.htm",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,EJL,ESCPL2-00,ESCP9-84,PRP",
+                "description": "EPSON EPL-N1600",
+                "manufacturer": "EPSON",
+                "model": "EPL-N1600"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "<p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

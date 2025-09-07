@@ -1,0 +1,93 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/132",
+        "arg_shortname": {
+            "en": "Bidirectional"
+        },
+        "arg_longname": {
+            "en": "Bidirectional printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "102",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dbidir=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200",
+                    "arg_defval": "ev/849"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200",
+                    "printer": "printer/Lexmark-Z22",
+                    "arg_defval": "ev/850"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200",
+                    "printer": "printer/Lexmark-Z32",
+                    "arg_defval": "ev/850"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200-tweaked",
+                    "arg_defval": "ev/849"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200-tweaked",
+                    "printer": "printer/Lexmark-Z22",
+                    "arg_defval": "ev/850"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200-tweaked",
+                    "printer": "printer/Lexmark-Z32",
+                    "arg_defval": "ev/850"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/849",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "off"
+                    },
+                    "ev_driverval": "0",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Lexmark-Z22"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Lexmark-Z32"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/850",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "on"
+                    },
+                    "ev_driverval": "1"
+                }
+            ]
+        }
+    }
+}

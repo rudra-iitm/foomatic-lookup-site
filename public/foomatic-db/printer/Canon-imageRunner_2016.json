@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_2016",
+        "make": "Canon",
+        "model": "imageRunner 2016",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.canon-europe.com/For_Work/Products/Office_Print_Copy_Solutions/Office_Black_White/iR2018/index.asp",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "PCL 6 is optional\n\n      Additional PDL: UFRII LT (<a href=\"http://de.software.canon-europe.com/software/0023676.asp?model=\">UFRII/UFRII LT Printer Driver for Linux</a> according to a topic about iR2016 in forum <i>Printers from Canon</i>)<p>\n\nSetup (upon <i>guide-ufr2-1.3x.tar.gz</i> obtained from the link above):\n<pre>\ninstall cndrvcups-common-1.30-1.i386.rpm cndrvcups-ufr2-1.30-1.i386.rpm\nrestart cups\nlpadmin -p ir2018 -m CNCUPSIR2016ZK.ppd -v socket://canon_ip_address:9100 -E\n(Debian specific: rpms can be converted to debs by alien, however, the ppd file should be linked in /usr/share/ppd:\nln -s ../cups/model/CNCUPSIR2016ZK.ppd /usr/share/ppd/ )\n</pre>\n\nCNCUPSIR2016ZK means that the ppd for iR2016 works me also for iR2018!\n\nhttp://de.software.canon-europe.com/software/0023676.asp?model=\n\n\n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

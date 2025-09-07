@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Able_1406",
+        "make": "Xerox",
+        "model": "Able 1406",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Compatible to the HP LaserJet 4<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

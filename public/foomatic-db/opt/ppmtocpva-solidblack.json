@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/ppmtocpva-solidblack",
+        "arg_shortname": {
+            "en": "SolidBlack"
+        },
+        "arg_longname": {
+            "en": "Monochrome Mode"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "101",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-solidblack"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "MixedBlack"
+        }
+    }
+}

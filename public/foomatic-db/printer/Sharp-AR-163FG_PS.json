@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-163FG_PS",
+        "make": "Sharp",
+        "model": "AR-163FG PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sh163fgj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 16\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

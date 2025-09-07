@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_6MP",
+        "make": "HP",
+        "model": "LaserJet 6MP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/lj6mp.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,PCLXL,PCL,POSTSCRIPT",
+                "description": "Hewlett-Packard LaserJet 6MP Printer",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 6MP"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Only 800K of the first 1M SIMM is available for PS, the rest is a\n    ROM interpreter. A 2nd 16M SIMM is recommended. Standard EDO or\n    fast page SIMMs do not work. This printer ejects a blank page if\n    ^D is received. This is unlike the 4MP. Magicfilter-1.2 setup:\n    copy ljet4m-filter and replace the word \"postscript\" by\n    \"cat\".<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

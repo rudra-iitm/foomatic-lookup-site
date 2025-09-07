@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJ-15v",
+        "make": "Canon",
+        "model": "BJ-15v",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "bj10vh",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

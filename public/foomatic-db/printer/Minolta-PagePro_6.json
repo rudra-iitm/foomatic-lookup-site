@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_6",
+        "make": "Minolta",
+        "model": "PagePro 6",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.minoltaeurope.com/minolta/products/printing/products/types/pp6/pp6.htm",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL5",
+                "manufacturer": "MINOLTA",
+                "model": "PagePro 6"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "<b>Important</b>: The <a\n    href=\"show_printer.cgi?recnum=Minolta-PagePro_6L\">Minolta PagePro\n    6L</a> is a different printer. This rating does not apply to\n    the 6L<p>"
+        }
+    }
+}

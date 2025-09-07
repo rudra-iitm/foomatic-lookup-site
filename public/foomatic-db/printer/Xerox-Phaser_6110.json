@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6110",
+        "make": "Xerox",
+        "model": "Phaser 6110",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.office.xerox.com/printers/color-printers/phaser-6110/enus.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Xerox;CMD:SPLC;MDL:Phaser 6110;CLS:PRINTER;STATUS:BUSY;",
+                "commandset": "SPLC",
+                "manufacturer": "Xerox",
+                "model": "Phaser 6110"
+            }
+        },
+        "functionality": "B",
+        "driver": "splix",
+        "comments": {
+            "en": "The Xerox Phaser 6110/B (USB) and Xerox Phaser 6110/N (Net) are color\n\tlaser printers with a 2007 street price of $249 USD and $269 USD.\n\n\tThe Xerox Phaser 6110MFP is a color multifunction printer with a 2007\n\tstreet price of $579 USD.\n\n\tThese printers are supported by the SpliX and foo2qpdl open software\n        printer drivers.<p>\n\n      Consumables/Refills: Toner Cyan (1000 prints) - $45\n\t\tToner Magenta (1000 prints) - $45\n\t\tToner Yellow (1000 prints) - $45\n\t\tToner Black (2000 prints) - $54\n\t\tWaste Toner (5000 prints) - $10\n\t\tDrum Kit (20000 prints) - $159 Part numbers: 106R01271, \n\t    106R01272, \n\t    106R01273, \n\t    106R01274, \n\t    108R00722, \n\t    108R00744<p>"
+        }
+    }
+}

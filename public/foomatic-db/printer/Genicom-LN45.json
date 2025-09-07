@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Genicom-LN45",
+        "make": "Genicom",
+        "model": "LN45",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 45\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

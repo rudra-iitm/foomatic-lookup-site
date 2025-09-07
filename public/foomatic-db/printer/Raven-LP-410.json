@@ -1,0 +1,20 @@
+{
+    "printer": {
+        "@id": "printer/Raven-LP-410",
+        "make": "Raven",
+        "model": "LP-410",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Reputedly similar to a Panasonic KX-P4410?\n<br>The printer needs more than the base memory configuration to print usefully from Ghostscript."
+        }
+    }
+}

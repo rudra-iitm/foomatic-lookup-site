@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P6500",
+        "make": "Panasonic",
+        "model": "KX-P6500",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/office/printer/kxp6500.html",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "GDI",
+                "description": "(no such line for this device)",
+                "manufacturer": "Panasonic",
+                "model": "KX-P6500"
+            }
+        },
+        "functionality": "D",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Printing at the full resolution requires the Windows driver.\n<br>Ghostscript drives it at 300dpi.\n<br>Base memory is 512K; it is very slow.  Seems to take regular SIMMs, 4M should help.\n<br>This is a cheap printer; operating costs surpass the cost of the printer before 10k pages!\n<br>The maximum 2400x600 mode is probably just 600x600 with smoothing.<p>\n\n      Consumables/Refills: plain toner, fuser for $200 circa every 7500 pages!<p>"
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_2135",
+        "make": "Xerox",
+        "model": "Phaser 2135",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;CMD:PCL,POSTSCRIPT,PJL;MDL:Xerox Phaser 2135;CLS:PRINTER;DES:Xerox Phaser 2135 Network Color Printer",
+                "commandset": "PCL,POSTSCRIPT,PJL",
+                "description": "Xerox Phaser 2135 Network Color Printer",
+                "manufacturer": "Xerox",
+                "model": "Xerox Phaser 2135"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx2135.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 12\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-21\n      \n      <p>\n\n      Maximum paper width: 12.9 inches / 32.8 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 12 pages/min<p>"
+        }
+    }
+}

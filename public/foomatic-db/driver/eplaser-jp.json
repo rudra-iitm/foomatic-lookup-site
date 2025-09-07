@@ -1,0 +1,160 @@
+{
+    "driver": {
+        "@id": "driver/eplaser-jp",
+        "name": "eplaser-jp",
+        "url": "http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "NOPDF=1 gs -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    All Japanese model Epson laser printers understand ESC/Page or\n    ESC/Page-Color. Epson provided thise languages driver, and gives\n    some additional options to the supported printers.<p>\n\n    The driver serves for black-and-white laser printers (Ghostscript\n    output devices \"lpXXXX\") as well as for color laser printers\n    (\"lpXXXXc\"). It does not support the Epson EPL \"L\" series. There\n    you have to use the third-party driver \"<a\n    href=\"http://sourceforge.net/projects/epsonepl/\">epsonepl</a>\".<p>\n\n    Here some hints for older versions of the driver:<p>\n\n    Version 1.0.4 of this driver works only with Ghostscript 5.50, not\n    with Ghostscript 6.5x and newer.  For the new Ghostscript versions\n    use <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-6.51-Epson_eplaseren.patch\">this\n    patch</a> from Crutcher Dunnavant (Red Hat).<p>\n\n    Version 3.0.2 is prepared for both Ghostscript 5.x and 6.x. For\n    Ghostscript 7.x or newer a small fix is needed: Execute the\n    following command line in the main directory of the unpacked\n    driver source package:<p>\n\n    <tt>perl -p -i -e\n    \"s/GS_VERSION_MAJOR\\s*==\\s*6/GS_VERSION_MAJOR &gt;=\n    6/\" gdevescv.c gdevesmv.c</tt><p>\n\n    Then the driver also compiles with these versions of\n    Ghostscript.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-LP-1800"
+                },
+                {
+                    "id": "printer/Epson-LP-1900"
+                },
+                {
+                    "id": "printer/Epson-LP-2200"
+                },
+                {
+                    "id": "printer/Epson-LP-2400"
+                },
+                {
+                    "id": "printer/Epson-LP-2500"
+                },
+                {
+                    "id": "printer/Epson-LP-3000C"
+                },
+                {
+                    "id": "printer/Epson-LP-7500"
+                },
+                {
+                    "id": "printer/Epson-LP-7700"
+                },
+                {
+                    "id": "printer/Epson-LP-7900"
+                },
+                {
+                    "id": "printer/Epson-LP-8000C"
+                },
+                {
+                    "id": "printer/Epson-LP-8100"
+                },
+                {
+                    "id": "printer/Epson-LP-8200C"
+                },
+                {
+                    "id": "printer/Epson-LP-8300C"
+                },
+                {
+                    "id": "printer/Epson-LP-8300F"
+                },
+                {
+                    "id": "printer/Epson-LP-8400F"
+                },
+                {
+                    "id": "printer/Epson-LP-8500C"
+                },
+                {
+                    "id": "printer/Epson-LP-8600"
+                },
+                {
+                    "id": "printer/Epson-LP-8600F"
+                },
+                {
+                    "id": "printer/Epson-LP-8700"
+                },
+                {
+                    "id": "printer/Epson-LP-8800C"
+                },
+                {
+                    "id": "printer/Epson-LP-8900"
+                },
+                {
+                    "id": "printer/Epson-LP-9000B"
+                },
+                {
+                    "id": "printer/Epson-LP-9000C"
+                },
+                {
+                    "id": "printer/Epson-LP-9100"
+                },
+                {
+                    "id": "printer/Epson-LP-9200B"
+                },
+                {
+                    "id": "printer/Epson-LP-9200C"
+                },
+                {
+                    "id": "printer/Epson-LP-9300"
+                },
+                {
+                    "id": "printer/Epson-LP-9400"
+                },
+                {
+                    "id": "printer/Epson-LP-9500C"
+                },
+                {
+                    "id": "printer/Epson-LP-9600"
+                },
+                {
+                    "id": "printer/Epson-LP-9600S"
+                },
+                {
+                    "id": "printer/Epson-LP-9800C"
+                },
+                {
+                    "id": "printer/Epson-LP-M5000"
+                },
+                {
+                    "id": "printer/Epson-LP-M5300"
+                },
+                {
+                    "id": "printer/Epson-LP-M6000"
+                },
+                {
+                    "id": "printer/Epson-LP-S210"
+                },
+                {
+                    "id": "printer/Epson-LP-S300"
+                },
+                {
+                    "id": "printer/Epson-LP-S310"
+                },
+                {
+                    "id": "printer/Epson-LP-S3000"
+                },
+                {
+                    "id": "printer/Epson-LP-S3200"
+                },
+                {
+                    "id": "printer/Epson-LP-S3500"
+                },
+                {
+                    "id": "printer/Epson-LP-S4000"
+                },
+                {
+                    "id": "printer/Epson-LP-S4200"
+                },
+                {
+                    "id": "printer/Epson-LP-S4500"
+                },
+                {
+                    "id": "printer/Epson-LP-S6500"
+                },
+                {
+                    "id": "printer/Epson-LP-S7500"
+                },
+                {
+                    "id": "printer/Epson-LP-S8100"
+                }
+            ]
+        }
+    }
+}

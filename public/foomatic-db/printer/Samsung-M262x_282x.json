@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-M262x_282x",
+        "make": "Samsung",
+        "model": "M262x 282x",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:SPL,PCL6,FWV,PIC,EXT,DCU;MDL:M262x 282x Series;CLS:PRINTER;CID:SA_PCL6_BW;MODE:SPL3,R000105;",
+                "manufacturer": "Samsung",
+                "model": "M262x 282x Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono-Samsung",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "pxlmono"
+                },
+                {
+                    "id": "pxlmono-Samsung",
+                    "ppd": "PPD/Samsung/PXL/Samsung_M262x_282x_Series_PXL.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 22 pages/min<p>"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1250",
+        "make": "Samsung",
+        "model": "ML-1250",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsungelectronics.co.uk/cgi-bin/ecuk/main/samsunguk_global.jsp?target_pgm=/product/product_detail.jsp&prod_id=ML-1250%2fXEU",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Small desktop laser printer, 12 pages/min, USB only.<p>\n\n      Consumables/Refills: Toner and drum in one unit, 2500 pages, printer comes with\n\t1000 pages starter cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/QMS-ps-810",
+        "make": "QMS",
+        "model": "ps-810",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "1"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Very old (circa '89), reliable printer.\nLaserwriter clone.\nNative postscript level 1.\napsfilter handles ascii etc.\nprint from netscape works.\nprint from acrobat reader does not,\neven w/level 1 set.<p>\n\n      Consumables/Refills: Canon EP-S<p>"
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "driver": {
+        "@id": "driver/gdi",
+        "name": "gdi",
+        "url": "http://www.openprinting.org/download/printing/samsung-gdi/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=gdi%A%Z -sOutputFile=-%C -f - | perl -p -e '%E'"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    The name of this driver is very confusing, it is not a driver for\n    all GDI printers, it only works with the so-called\n    \"SmartGDI\" or \"PrinThru\" printers of\n    Samsung.\n\n    The original driver published under the GPL by Samsung some years\n    ago has a bug which prevents some files from being printed. Grant\n    Taylor has implemented a workaround.  On the driver's download\n    page (it is here on OpenPrinting, Samsung does not provide\n    this driver any more) you will find a patch and an already fixed\n    version.<p>\n\n    And <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-8.x/drivers/gdi/\">here</a>\n    you get the version for GPL/AFPL Ghostscript 8.x, also with\n    Grant's fixes. In ESP Ghostscript 8.x this driver is already\n    included. If you want to add it to your Ghostscript, put the\n    <tt>gdevgdi.c</tt> file into the\n    <tt>src/</tt> subdirectory of the Ghostscript source\n    package, append <tt>gdevgdi-gdi.mak</tt> to\n    <tt>src/contrib.mak</tt>, and add\n    \"<tt>$(DD)gdi.dev</tt>\" to one of the\n    \"<tt>DEVICE_DEVS...</tt>\" lines of\n    <tt>src/Makefile.in</tt>. Then compile as\n    ususal.<p>\n\n    Here is a <a\n    href=\"http://www.openprinting.org/download/printing/samsung-gdi/gpl-gs-8.54-samsunggdi.patch\">patch\n    to add the \"gdi\" driver to GPL Ghostscript 8.54</a>. Please\n    test it and report on our Samsung forum. Thanks to MJ Ray (mjr at\n    phonecoop dot coop) for this contribution.<p>\n\n    This Foomatic entry gives access to all options which the Windows\n    driver provides for Samsung's GDI printers. As this was not\n    forseen by the original Ghostscript driver from Samsung, a hack\n    was applied in this Foomatic entry. The driver does not need to be\n    patched for that.<p>\n\n    If you are using MagicFilter 1.2, you can use <a\n    href=\"http://www.openprinting.org/download/printing/samsung-gdi/gdi-filter.gz\">this\n    filter</a> with the driver (developed on Debian Potato,\n    contributed by Felix E. Klee, felix dot klee at inka dot de). To\n    install you have to uncompress it and to copy it into your\n    MagicFilter directory (<tt>/etc/magicfilter</tt> on\n    Debian). This file does not work with newer versions of\n    MagicFilter."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Generic-GDI_Printer"
+                },
+                {
+                    "id": "printer/Lexmark-E210"
+                },
+                {
+                    "id": "printer/Samsung-ML-1000"
+                },
+                {
+                    "id": "printer/Samsung-ML-1010"
+                },
+                {
+                    "id": "printer/Samsung-ML-1020"
+                },
+                {
+                    "id": "printer/Samsung-ML-1200"
+                },
+                {
+                    "id": "printer/Samsung-ML-1210"
+                },
+                {
+                    "id": "printer/Samsung-ML-1220"
+                },
+                {
+                    "id": "printer/Samsung-ML-1410"
+                },
+                {
+                    "id": "printer/Samsung-ML-1430"
+                },
+                {
+                    "id": "printer/Samsung-ML-1440"
+                },
+                {
+                    "id": "printer/Samsung-ML-1510"
+                },
+                {
+                    "id": "printer/Samsung-ML-1520"
+                },
+                {
+                    "id": "printer/Samsung-ML-1610",
+                    "comments": {
+                        "en": "Using Ubuntu it seems to work when choosing the ML-1510\n\t  printer in CUPS, but in OOo sometimes the left & top\n\t  margins aren't right.<p>\n\n\t  <em>Comment on the previous statement:</em>\n\t  There's no need to use the driver for the ML-1510, as\n\t  Samsung offers an own driver for the ML-1610."
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1710"
+                },
+                {
+                    "id": "printer/Samsung-ML-1740",
+                    "comments": {
+                        "en": "For the ghostscript GDI driver and ML-1710 PPD:<p>\n\n          * Portrait printing is slightly off-center<p>\n          * Landscape printing does not work correctly; only half the\n            page is printed, and it is offset ~50% up the page.<p>"
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1750"
+                },
+                {
+                    "id": "printer/Samsung-ML-200"
+                },
+                {
+                    "id": "printer/Samsung-ML-2010"
+                },
+                {
+                    "id": "printer/Samsung-ML-210"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150"
+                },
+                {
+                    "id": "printer/Samsung-ML-2250"
+                },
+                {
+                    "id": "printer/Samsung-ML-2550"
+                },
+                {
+                    "id": "printer/Samsung-ML-4500"
+                },
+                {
+                    "id": "printer/Samsung-ML-5080"
+                },
+                {
+                    "id": "printer/Samsung-ML-6040"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3110"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3124"
+                }
+            ]
+        }
+    }
+}

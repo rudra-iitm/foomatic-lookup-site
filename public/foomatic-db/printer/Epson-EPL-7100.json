@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-7100",
+        "make": "Epson",
+        "model": "EPL-7100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "John Marbro reports that his 7100 work quite fine with the laserjet driver.\n<p>\nHe's put together a PDQ driver declaration, or it ought to work fine when\nconfigured using any vendor's setup tools."
+        }
+    }
+}

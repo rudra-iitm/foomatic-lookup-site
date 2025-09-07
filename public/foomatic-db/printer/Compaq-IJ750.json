@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Compaq-IJ750",
+        "make": "Compaq",
+        "model": "IJ750",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://athome.compaq.com/showroom/app/ps.asp?PN=&CompPart=385508-001&BaseID=&PriceLevelID=18930&AppID=18930&url=http%3A%2F%2Fath",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "lxm3200-tweaked",
+        "comments": {
+            "en": "Rebadged Lexmark 3200.<br>\n\n      The Lexmark/Compaq cartridges differ by only a plastic tab. You\n      can probably break off the tab and use one for the\n      other.<br>\n\n      See the entry for the <a\n      href=\"show_printer.cgi?recnum=Lexmark-3200\">Lexmark\n      3200</a> for more info.<p>\n\n      Consumables/Refills: color and black or photo<p>"
+        }
+    }
+}

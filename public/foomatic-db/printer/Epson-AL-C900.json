@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AL-C900",
+        "make": "Epson",
+        "model": "AL-C900",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/alasc900/index.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "The specification says \"ESC/Page S (Host based)\". The\n    free laser printer drivers published by Epson for their other\n    AL-and EPL models do not cover this printer but the non-free\n    (but free of charge) <a\n    href=\"http://www.avasys.jp/english/linux_e/lpd_e.html\">Epson\n    Avasys Photo Image Print System Plus</a> supports this model.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

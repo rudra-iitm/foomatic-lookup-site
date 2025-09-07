@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-1670N",
+        "make": "Brother",
+        "model": "HL-1670N",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl1670n/hl1670n_ove.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Same as <a\n    href=\"show_printer.cgi?recnum=Brother-HL-1650\">1650</a>,\n    but with 16MB and Ethernet.\n\n    Best results are probably obtained when the printer is used in\n    PostScript mode with a PPD file from the printer's driver\n    CD.<p>\n\n    You can also get an <a\n    href=\"http://solutions.brother.com/Library/sol/printer/7050/rpmfiles/brhl16_2-1.0.0-0-noarch.rpm\">RPM\n    with the PPD file</a> from <a\n    href=\"http://solutions.brother.com/linux/\">Brother</a>.<p>"
+        }
+    }
+}

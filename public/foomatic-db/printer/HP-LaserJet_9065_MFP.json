@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_9065_MFP",
+        "make": "HP",
+        "model": "LaserJet 9065 MFP",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-238444-410636-12004-f55-339835.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PCL,POSTSCRIPT",
+                "manufacturer": "Hewlett-Packard"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Fast, high-quality printing and copying. Improve office productivity \n    with fast print, copy and scan speeds of up to 65 pages per minute (ppm) \n    and a first-copy-out speed of 3.1 seconds.<p>\n    High-capacity, versatile paper handling. With up to seven paper input \n    sources and an input capacity of up to 6,600 sheets, the MFP supports \n    high-volume printing and copying, minimizes intervention and offers \n    flexibility that will meet the needs of every department user.<p>\n    HP's built-in Electronic Copy Monitor is an easy way to track, report and ultimately \n    optimize your copying costs.<p>"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-X3220",
+        "make": "Samsung",
+        "model": "X3220",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,PDF,TIFF,JPEG,PRN,DXP,URF,FAX,FWV,SPDS,EXT;MDL:X3220 Series;",
+                "manufacturer": "Samsung",
+                "model": "X3220 Series",
+                "commandset": "POSTSCRIPT,PS3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_X3220_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>"
+        }
+    }
+}

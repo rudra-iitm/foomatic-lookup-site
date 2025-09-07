@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/IBM-4303_Network_Color_Printer",
+        "make": "IBM",
+        "model": "4303 Network Color Printer",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.printers.ibm.com/R5PSC.NSF/Web/ncpm",
+        "lang": {
+            "postscript": {
+                "@level": "1"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Used the RH6.0 printtool to configure this.\nPrinter was configured as a lpd network resource\nusing the postscript option at 600x600. \nThe RH postscript test page printed perfect."
+        }
+    }
+}

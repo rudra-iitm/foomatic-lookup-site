@@ -1,0 +1,197 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/eplaser-InputSlot",
+        "arg_shortname": {
+            "en": "InputSlot"
+        },
+        "arg_longname": {
+            "en": "Paper Source"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dCasset=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "eplaser",
+                    "arg_defval": "ev/eplaser-InputSlot-Auto"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "eplaser-jp",
+                    "arg_defval": "ev/eplaser-InputSlot-Auto"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/eplaser-InputSlot-Auto",
+                    "ev_longname": {
+                        "en": "Automatic"
+                    },
+                    "ev_shortname": {
+                        "en": "Auto"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray1",
+                    "ev_longname": {
+                        "en": "Tray 1"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray1"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray10",
+                    "ev_longname": {
+                        "en": "Tray 10"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray10"
+                    },
+                    "ev_driverval": "10"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray11",
+                    "ev_longname": {
+                        "en": "Tray 11"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray11"
+                    },
+                    "ev_driverval": "11"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray12",
+                    "ev_longname": {
+                        "en": "Tray 12"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray12"
+                    },
+                    "ev_driverval": "12"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray13",
+                    "ev_longname": {
+                        "en": "Tray 13"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray13"
+                    },
+                    "ev_driverval": "13"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray14",
+                    "ev_longname": {
+                        "en": "Tray 14"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray14"
+                    },
+                    "ev_driverval": "14"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray15",
+                    "ev_longname": {
+                        "en": "Tray 15"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray15"
+                    },
+                    "ev_driverval": "15"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray2",
+                    "ev_longname": {
+                        "en": "Tray 2"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray2"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray3",
+                    "ev_longname": {
+                        "en": "Tray 3"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray3"
+                    },
+                    "ev_driverval": "3"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray4",
+                    "ev_longname": {
+                        "en": "Tray 4"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray4"
+                    },
+                    "ev_driverval": "4"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray5",
+                    "ev_longname": {
+                        "en": "Tray 5"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray5"
+                    },
+                    "ev_driverval": "5"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray6",
+                    "ev_longname": {
+                        "en": "Tray 6"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray6"
+                    },
+                    "ev_driverval": "6"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray7",
+                    "ev_longname": {
+                        "en": "Tray 7"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray7"
+                    },
+                    "ev_driverval": "7"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray8",
+                    "ev_longname": {
+                        "en": "Tray 8"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray8"
+                    },
+                    "ev_driverval": "8"
+                },
+                {
+                    "@id": "ev/eplaser-InputSlot-Tray9",
+                    "ev_longname": {
+                        "en": "Tray 9"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray9"
+                    },
+                    "ev_driverval": "9"
+                }
+            ]
+        }
+    }
+}

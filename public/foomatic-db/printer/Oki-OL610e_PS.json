@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL610e_PS",
+        "make": "Oki",
+        "model": "OL610e/PS",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cs.okidata.com/cs.nsf/LookUp+Get/OL610e-PS?OpenDocument",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Native PS2 interpreter.\n<br>You may want more memory than the default.<p>\n\n      Consumables/Refills: Toner and Drum unit<p>"
+        }
+    }
+}

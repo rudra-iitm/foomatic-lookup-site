@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_850C",
+        "make": "HP",
+        "model": "DeskJet 850C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj850c.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL,MLC,PML",
+                "description": "Hewlett-Packard Deskjet 850C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 850C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    To get its maximum quality, use the HPLIP driver,\n    since HPIJS 1.2 there is explicit support for this printer. 600\n    dpi in colour is not supported by the hardware.<p>\n\n    David Suffield, developer of HPIJS at HP, said about\n    the HPIJS 1.1 driver:<p>\n\n    <i>HPLIP (set up as for the DeskJet 600 series)\n    works for the Deskjet 850 series, much better than Gimp-Print, but\n    color was not as good as with \"cdj850\". Some people may\n    prefer \"cdj850\" for color, others may prefer\n    HPLIP for the speed.</i><p>\n\n    The \"cdj850\" driver is included with Ghostscript as of\n    Ghostscript version 6.0.<p>\n\n    Printhead alignment is not supported.<p>"
+        }
+    }
+}

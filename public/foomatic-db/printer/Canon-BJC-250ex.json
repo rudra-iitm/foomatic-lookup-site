@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-250ex",
+        "make": "Canon",
+        "model": "BJC-250ex",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc250gs",
+        "comments": {
+            "en": "Seems to be more or less the same as the Canon BJC-250.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

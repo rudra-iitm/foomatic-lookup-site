@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_860",
+        "make": "NEC",
+        "model": "SuperScript 860",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss860/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "4.5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Only prints at 300dpi with PCL.\n<br><p>\n\n      Consumables/Refills: toner cartridge, 5000 pages<p>"
+        }
+    }
+}

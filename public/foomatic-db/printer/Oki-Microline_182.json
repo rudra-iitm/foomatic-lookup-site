@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Microline_182",
+        "make": "Oki",
+        "model": "Microline 182",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "144",
+                    "y": "144"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "oki182",
+        "comments": {
+            "en": "I have no idea what's missing."
+        }
+    }
+}

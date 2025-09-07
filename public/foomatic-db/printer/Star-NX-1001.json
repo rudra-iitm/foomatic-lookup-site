@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Star-NX-1001",
+        "make": "Star",
+        "model": "NX-1001",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "eps9high"
+    }
+}

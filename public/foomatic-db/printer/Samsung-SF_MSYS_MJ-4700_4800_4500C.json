@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-SF_MSYS_MJ-4700_4800_4500C",
+        "make": "Samsung",
+        "model": "SF/MSYS/MJ-4700/4800/4500C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.samsungtelecom.com",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "These are GDI driven printers devise to work under Windows (w2k drivers still under construction) and there are no plans to make this Multifunction machine work under Linux.<p>\n\n      Consumables/Refills: lexmark mono 12A1970 color 12A1980<p>"
+        }
+    }
+}

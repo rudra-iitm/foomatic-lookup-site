@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/st800",
+        "name": "st800",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "stcolor"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=st800%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "Driver for black-and-white inkjets using the ESC/P-2 protocol, as the Epson\nStylus 800."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_800"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color",
+                    "comments": {
+                        "en": "Prints only in black and white."
+                    }
+                }
+            ]
+        }
+    }
+}

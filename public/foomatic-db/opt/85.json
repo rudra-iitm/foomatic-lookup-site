@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/85",
+        "arg_shortname": {
+            "en": "DitherPPI"
+        },
+        "arg_longname": {
+            "en": "Dithering PPI"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dDITHERPPI=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "c2050",
+                "arg_defval": "150"
+            }
+        },
+        "arg_max": "300",
+        "arg_min": "25"
+    }
+}

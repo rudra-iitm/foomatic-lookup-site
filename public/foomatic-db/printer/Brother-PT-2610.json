@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Brother-PT-2610",
+        "make": "Brother",
+        "model": "PT-2610",
+        "pcmodel": "BR2610",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "url": "http://www.advizia.com/brother/modelDetail.asp?PkgID=382273&User=ptouch&Rnd=23",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;CMD:PT-CBP;MDL:2610;CLS:PRINTER;",
+                "commandset": "PT-CBP",
+                "description": "Brother PT-2610",
+                "manufacturer": "Brother",
+                "model": "PT-2610"
+            }
+        },
+        "functionality": "D",
+        "driver": "ptouch",
+        "comments": {
+            "en": "Prints 10mm per second.<p>\n\n      Consumables/Refills: Black on White Thermal Paper\n\tFabric Tape Blue on White\n\tFlexi Tape\n\tIron on Black Tape\n\tSecurity Tape Black on White\n\tStrong Adhesive Tape\n\tAvery Labels\n\tTZ tape widths w: 1=6mm, 2=9mm, 3=12mm, 4=18mm, 5=24mm\n\tTZ foreground colours f: 1=black, 2=red, 3=blue, 4=gold, 5=white,\n\tTZ background colours b: 1=clear, 2=white, 3=black, 4=red, 5=blue, 6=yellow, 7=green, 8=gold Part numbers: ALK251, \t\n      TZFAw, \n      TZFXbwf, \n      TZIYwf, \n      TZSEw, \n      TZSbwf, \n      AVxxxx<p>"
+        }
+    }
+}

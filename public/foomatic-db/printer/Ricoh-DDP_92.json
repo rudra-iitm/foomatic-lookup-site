@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-DDP_92",
+        "make": "Ricoh",
+        "model": "DDP 92",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Ricoh",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Ricoh",
+                "ppd": "PPD/Ricoh/PS/Ricoh-DDP_92_PS.ppd"
+            }
+        },
+        "comments": {
+            "en": "Optional Postscript support. <p>\n\nVisit <a href=\"http://www.linux-foundation.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> Ricoh FAQ </a> for commonly asked questions. <p>\n\nThroughput 92."
+        }
+    }
+}

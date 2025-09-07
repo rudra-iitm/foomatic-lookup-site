@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_440",
+        "make": "Epson",
+        "model": "Stylus Color 440",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc440_/index.htmlhttp://www.epson.com/support/instans/440cprob.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC",
+                "description": "EPSON Stylus COLOR 440",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 440"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "21 jets per color.  stcolor drives a different number of jets; you can \nuse the uniprint driver stc.upp instead if you change upOutputPins to 21.\n<br>\nEd: This printer  works best with the new Ghostscript driver stp.<p>\n\n      Consumables/Refills: One CMY and one Black cartridge ~20$<p>"
+        }
+    }
+}

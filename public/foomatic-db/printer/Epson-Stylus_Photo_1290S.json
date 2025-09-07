@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_1290S",
+        "make": "Epson",
+        "model": "Stylus Photo 1290S",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "drivers": {
+            "driver": {
+                "id": "gutenprint"
+            }
+        },
+        "comments": {
+            "en": "Probably the same printer as the Stylus Photo 1290.<p>\n\n      48 nozzles per color; 6 color CMYKcm process.<p>\n\n      USB and Parallel.<p>\n\n      13 inch wide paper path.<p>\n\n      4 picoliter dots."
+        }
+    }
+}

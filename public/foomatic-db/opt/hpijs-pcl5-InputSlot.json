@@ -1,0 +1,107 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hpijs-pcl5-InputSlot",
+        "arg_shortname": {
+            "en": "InputSlot"
+        },
+        "arg_longname": {
+            "en": "Media Source"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": ",PS:MediaPosition=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5c",
+                    "arg_defval": "ev/hpijs-pcl5-InputSlot-Default"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs-pcl5e",
+                    "arg_defval": "ev/hpijs-pcl5-InputSlot-Default"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-Default",
+                    "ev_longname": {
+                        "en": "Printer Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": "7"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-Envelope",
+                    "ev_longname": {
+                        "en": "Envelope Feeder"
+                    },
+                    "ev_shortname": {
+                        "en": "Envelope"
+                    },
+                    "ev_driverval": "3"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-LargeCapacity",
+                    "ev_longname": {
+                        "en": "Large Capacity Tray"
+                    },
+                    "ev_shortname": {
+                        "en": "LargeCapacity"
+                    },
+                    "ev_driverval": "5"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-Lower",
+                    "ev_longname": {
+                        "en": "Lower Tray"
+                    },
+                    "ev_shortname": {
+                        "en": "Lower"
+                    },
+                    "ev_driverval": "4"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-Manual",
+                    "ev_longname": {
+                        "en": "Manual Feeder"
+                    },
+                    "ev_shortname": {
+                        "en": "Manual"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-MPTray",
+                    "ev_longname": {
+                        "en": "Multipurpose Tray"
+                    },
+                    "ev_shortname": {
+                        "en": "MPTray"
+                    },
+                    "ev_driverval": "8"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5-InputSlot-Upper",
+                    "ev_longname": {
+                        "en": "Upper Tray"
+                    },
+                    "ev_shortname": {
+                        "en": "Upper"
+                    },
+                    "ev_driverval": "1"
+                }
+            ]
+        }
+    }
+}

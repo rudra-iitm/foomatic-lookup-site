@@ -1,0 +1,50 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_PE120",
+        "make": "Xerox",
+        "model": "WorkCentre PE120",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;MDL:Xerox WC PE120;",
+                "manufacturer": "Xerox",
+                "model": "Xerox WC PE120"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrxpe120.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

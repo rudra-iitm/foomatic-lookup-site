@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-4693d",
+        "make": "Tektronix",
+        "model": "4693d",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "100",
+                    "y": "100"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "t4693dX"
+    }
+}

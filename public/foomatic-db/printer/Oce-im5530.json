@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Oce-im5530",
+        "make": "Oce",
+        "model": "im5530",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oceusa.com/main/product_detail.jsp?WebLogicSession=LwgHlPMVTq2phQyRknBFN1y0KfhMgyDXvwsNPbzJQ9WDcvWTnjpG!-1727566052&FOLDER%3C%3Efolder_id=2534374302163425&PRODUCT%3C%3Eprd_id=845524441901364&bmUID=1211162697624",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Oce",
+                "ppd": "PPD/Oce/Others/IM8530_1.PPD"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 55\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-20"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "driver": {
+        "@id": "driver/min12xxw",
+        "name": "min12xxw",
+        "url": "http://www.hinterbergen.de/mala/min12xxw/",
+        "thirdpartysupplied": null,
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "*min12xxw*"
+            }
+        },
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dPARANOIDSAFER -dBATCH -sDEVICE=pbmraw%A%Z -sOutputFile=- - | min12xxw%B",
+            "margins": {
+                "general": {
+                    "unit": "in",
+                    "relative": null,
+                    "top": "0.17",
+                    "left": "0.17",
+                    "right": "0.17",
+                    "bottom": "0.17"
+                }
+            }
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n       Min12xxw is a pbm filter by Manuel Tobias Schiller for various\n       Minolta PagePro W-series (win)printers.  The driver basically\n       works, but is new and reports are few; thus it should be\n       considered experimental, and the purchase of a printer that\n       relies upon this driver is not advisable.\n\n       <p>\n\n       Min12xxw should run on most *nix-like workstations without\n       major problems. The only problem that is to be expected on\n       non-Linux systems are missing library functions such as getline\n       or getopt_long. The query options may or may not work on other\n       systems, depending on the characteristics of the printer driver\n       and the interface used (USB, very old style parallel port or a\n       more recent one...).\n\n       <p>\n\n       Min12xxw was written without any documentation from the\n       manufacturer. The description of the printer language may be\n       inaccurate or even wrong because it was obtained by looking at\n       the output of the Windows driver only. The code dealing with\n       the compression of raster data is in its spirit heavily based\n       on an initial driver by Adam Bocim.\n\n       <p>\n\n       This driver features querying the printer status and page\n       counter, a suggestion made by Bruno Schoedlbauer, who also\n       pointed me to a nice <a\n       href=\"http://benoit.papillault.free.fr/usbsnoop\"\n       >USB sniffer</a> for Windows 98 and up by\n       Benoit Papillault.\n\n       <p>\n\n       Even though this program has been designed with care and much\n       thought, no one can guarantee that this program will not damage\n       your printer, computer or even your neighbour's car, because it\n       was built without knowing exactly how things work, it's only a\n       (hopefully) reasonable guess. (However, my printer does still\n       work, even after the testing phase when a lot of wrong stuff\n       was sent to it. And my neighbour hasn't complained either...)\n\n       <p>\n\n       Most of the available paper sizes have not actually been\n       verified to work as adverised - reports about successes or\n       problems are welcome.  Also the code for querying the printer\n       is not heavily tested. If you have comments to make or know\n       more about the format than I do, please share your thoughts and\n       your knowledge.\n\n       <p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Minolta-PagePro_1200W"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1250W"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1300W"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1350W"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1400W"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-PagePro_1300W"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-PagePro_1350W"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-PagePro_1400W"
+                }
+            ]
+        }
+    }
+}

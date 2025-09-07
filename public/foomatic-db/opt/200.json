@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/200",
+        "arg_shortname": {
+            "en": "LowToner"
+        },
+        "arg_longname": {
+            "en": "Behaviour when Toner Low"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET LOWTONER=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "printer": "printer/HP-LaserJet_4050",
+                "arg_defval": "ev/984"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/984",
+                    "ev_longname": {
+                        "en": "Continue Printing"
+                    },
+                    "ev_shortname": {
+                        "en": "Continue"
+                    },
+                    "ev_driverval": "CONTINUE"
+                },
+                {
+                    "@id": "ev/985",
+                    "ev_longname": {
+                        "en": "Stop Printing"
+                    },
+                    "ev_shortname": {
+                        "en": "Stop"
+                    },
+                    "ev_driverval": "STOP"
+                }
+            ]
+        }
+    }
+}

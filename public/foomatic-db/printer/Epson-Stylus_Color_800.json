@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_800",
+        "make": "Epson",
+        "model": "Stylus Color 800",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc800_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,PRPXL24,BDC",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 800"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Probably works best with the stp driver.<p>\n\n      Consumables/Refills: color and black cartridge<p>"
+        }
+    }
+}

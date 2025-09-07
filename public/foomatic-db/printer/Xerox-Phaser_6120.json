@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6120",
+        "make": "Xerox",
+        "model": "Phaser 6120",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:KONICA MINOLTA;MDL:Phaser 6120 PS;",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "Phaser 6120 PS"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx6120pu.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 21 pages/min<p>"
+        }
+    }
+}

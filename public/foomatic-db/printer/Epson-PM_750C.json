@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_750C",
+        "make": "Epson",
+        "model": "PM 750C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 700.<p>\n\n    6 color CMYKcm printing with 32 jets per color.<p>\n\n    Reported \"fully operational\" by the Gimp-Print project (the\n    \"gimp-print\" driver).<p><p>\n\n      Consumables/Refills: Two ink cartridges, black + 5 colors, US$20 each.<p>"
+        }
+    }
+}

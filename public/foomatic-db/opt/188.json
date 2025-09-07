@@ -1,0 +1,195 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/188",
+        "arg_shortname": {
+            "en": "MemBoost"
+        },
+        "arg_longname": {
+            "en": "Memory Booster Technology"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET PS:MBT=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-Color_LaserJet_4550",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-Color_LaserJet_4600",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_1200",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_1220",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_1300",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_2100M",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_2200",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_2300",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_3200m",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_4000",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_4050",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_4100",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_4M",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_4ML",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_5000",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_5M",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_5MP",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_6MP",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_8100",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_8150",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-LaserJet_9000",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-Mopier_240",
+                    "arg_defval": "ev/958"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/HP-Mopier_320",
+                    "arg_defval": "ev/958"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/958",
+                    "ev_longname": {
+                        "en": "Automatic"
+                    },
+                    "ev_shortname": {
+                        "en": "Auto"
+                    },
+                    "ev_driverval": "AUTO"
+                },
+                {
+                    "@id": "ev/959",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "On"
+                    },
+                    "ev_driverval": "ON"
+                },
+                {
+                    "@id": "ev/960",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "Off"
+                    },
+                    "ev_driverval": "OFF"
+                }
+            ]
+        }
+    }
+}

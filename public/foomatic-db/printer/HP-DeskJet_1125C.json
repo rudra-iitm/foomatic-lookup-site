@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_1125C",
+        "make": "HP",
+        "model": "DeskJet 1125C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "13x19 inch large format printer, similar to the DeskJet\n    1120C.<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    \"gimp-print\" works with the setting\n    \"<tt>-sModel=pcl-1120</tt>\".<p>\n\n\n    Probably works also with various color deskjet drivers including the\n    \"cdjXXX\" ones and\n    \"pcl3\"/\"hpdj\".<p><p>\n\n      Consumables/Refills: 1 black (K), 1 colour (CMY) cartridge<p>"
+        }
+    }
+}

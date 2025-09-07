@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/NEC-PinWriter_P6_plus",
+        "make": "NEC",
+        "model": "PinWriter P6 plus",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "necp6",
+        "comments": {
+            "en": "Color is an optional feature for this printer.<p>\nSome info contributed by Sebastian Leske (Sebastian dot Leske at bigfoot dot de):<p>\nThe information about the NEC P6+ in the database is basically correct. I\nown one and I can confirm that it works fine with Ghostscript's necp6\ndriver. \n<p>\nThere are three things I'd like to add, though:\n<p>\n1) \nThe necp6 driver does not seem to support colour printing (at least I\ncould not figure out how).\n<p>\nAs noted in the database, color is only available via an accessory that\nmust be bought separately. If you have it and want to print in color, you\ncan use one of the Epson drivers in Ghostscript (don't remember which, but\nI tried it, think it was 'epsonc'). The NEC P6+ can emulate Epson color\nprinters, so this works.\n<p>\nThe quality is not quite as good as with a native color driver under\nWin95, but for colored text / linedrawings it's ok. You would not want to\nprint photos with the NEC P6+ anyway, the results are very weak compared\nto modern injet printers.\n<p>\n2) \nThe printer cannot print on the top 20 mm or so of the page. Ghostscript\ndoes not seem to know about this, so everything you print will be shifted\ndownward on the page by about 20 mm. This should be kept in mind when\nlaying out a page for printing.\n<p>\nActually, normally the unprintable area at the top is even longer, but you\ncan configure the printer to minimize the unprintable area by not putting\ndown the paper guide wheel until after printing the first line. See\nhandbook for details.\n<p>\n3)\nUsing address labels via the tractor feed works fine under Linux, you just\nneed to send the printer precision line feeds between the text for each\nlabel to advance to the next label. The codes are in the handbook, or\nemail me for details. I made a perl script which outputs the appropriate\ncontrol codes.\n<p>\nNote: Don't print address labels in graphics mode (i.e. via ghostscript),\nsend the printer text, so it uses its internal fonts. Text printed in\ngraphics mode often comes out bad, because the linefeeds with tractor-fed\nlabels are somewhat irregular. In graphics mode, a linefeed may occur in\nthe middle of a line, then the bottom half and the top half of a line of\ntext may be separated or run into each other.\n<p>"
+        }
+    }
+}

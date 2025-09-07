@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_C11",
+        "make": "Xerox",
+        "model": "DocuPrint C11",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=C11&cat=%2fEquipment%2fPrinting%2fDesktop",
+        "lang": {
+            "pcl": {
+                "@level": "3c"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "manufacturer": "Xerox",
+                "model": "DocuPrint C11"
+            }
+        },
+        "functionality": "D",
+        "driver": "pcl3",
+        "comments": {
+            "en": "Printer takes RGB ink (!) which\ncauses problems as most of the\ndrivers are CMY drivers.\n<p>\nArtifacts occasionally occur in\ncolour printing using the cdjcolor\ndriver -- hpdj/pcl3 driver prints\nwithout artifacts, but in wrong\n(CMY) colour space.\n<p>\nManufacturer resolution is claimed\nat 1440x1440, but I can only get\n600x600 over via PCL3+.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

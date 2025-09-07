@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_1160",
+        "make": "Epson",
+        "model": "Stylus Color 1160",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "I have no information on this printer other than that the stp driver author \nreports that it should work perfectly."
+        }
+    }
+}

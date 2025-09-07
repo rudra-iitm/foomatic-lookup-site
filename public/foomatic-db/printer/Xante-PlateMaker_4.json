@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Xante-PlateMaker_4",
+        "make": "Xante",
+        "model": "PlateMaker 4",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 10\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

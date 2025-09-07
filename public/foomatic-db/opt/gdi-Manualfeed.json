@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/gdi-Manualfeed",
+        "arg_shortname": {
+            "en": "Manualfeed"
+        },
+        "arg_longname": {
+            "en": "Manual Feed of Paper"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "101",
+            "arg_spot": "E",
+            "arg_substitution": null,
+            "arg_proto": "s/PJL PAGE (\\S*) AUTO/PJL PAGE $1 %s/;"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "gdi",
+                "arg_defval": "ev/gdi-Manualfeed-Off"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/gdi-Manualfeed-Off",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "Off"
+                    },
+                    "ev_driverval": "AUTO"
+                },
+                {
+                    "@id": "ev/gdi-Manualfeed-On",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "On"
+                    },
+                    "ev_driverval": "MANUAL"
+                }
+            ]
+        }
+    }
+}

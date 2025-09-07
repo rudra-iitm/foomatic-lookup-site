@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-451S",
+        "make": "Sharp",
+        "model": "AR-451S",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 45\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-20"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_9000C",
+        "make": "Epson",
+        "model": "PM 9000C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Pro 9000.<p>\n\n      Needs testing, I (Till) did a short test (of the Epson Stylus\n      Pro 9000) in the Epson office in Paris, but didn't get\n      correct results.<p>"
+        }
+    }
+}

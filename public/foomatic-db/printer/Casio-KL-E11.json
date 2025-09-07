@@ -1,0 +1,16 @@
+{
+    "printer": {
+        "@id": "printer/Casio-KL-E11",
+        "make": "Casio",
+        "model": "KL-E11",
+        "url": "http://www.casio.com/index.cfm?fuseaction=products.attributes&catalog=Label%20Printers&section=&product=KL-E11",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "pegg",
+        "comments": {
+            "en": "Thermal label printer.  Prints a 512x64 bitmap on roll labels.<p>\n\n      Consumables/Refills: Special thermal labels<p>"
+        }
+    }
+}

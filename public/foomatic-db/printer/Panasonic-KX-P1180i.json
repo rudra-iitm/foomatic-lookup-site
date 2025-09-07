@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P1180i",
+        "make": "Panasonic",
+        "model": "KX-P1180i",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "comments": {
+            "en": "As a dot matrix printer it must be possible to print graphics with it."
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/HP-Mopier_240",
+        "make": "HP",
+        "model": "Mopier 240",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD.\n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n    \n    Same as the 8000 (24 ppm, etc.), except with ALL of the\n    accessories AND an additional unit on top that allows copying to\n    be done directly at the printer. Like the 8000 and 8100, this\n    mopier handles up to A3 and Ledger size media. Now if you could\n    only fax from it...  It appears to send scans via email, which\n    would work with Linux. [See also, what I've added in\n    relation to LaserJets 8000/8100. This is also true for the Mopier\n    240. Kurt Pfeifle]<p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

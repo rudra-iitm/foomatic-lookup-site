@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-CL_750",
+        "make": "Epson",
+        "model": "CL 750",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus C40UX.<p>\n\n    Cheap 4-ink home printer with a medium resolution (1440x720\n    dpi), but in contrary to the Stylus Color 480/580/CL 700 with a\n    power and a cancel button. USB only.<p>\n\n    Supported by Gimp-Print 4.1.99 or newer."
+        }
+    }
+}

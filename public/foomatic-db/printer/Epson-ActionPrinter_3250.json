@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-ActionPrinter_3250",
+        "make": "Epson",
+        "model": "ActionPrinter 3250",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/dotmatrix/ap3250/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ap3250"
+    }
+}

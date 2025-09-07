@@ -1,0 +1,44 @@
+{
+    "driver": {
+        "@id": "driver/bjc610XY.upp",
+        "name": "bjc610XY.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 720dpi"
+        },
+        "comments": {
+            "en": "UPP files of this driver: bjc610a0.upp, bjc610a1.upp,\n      bjc610a2.upp, bjc610a3.upp, bjc610a4.upp, bjc610a5.upp,\n      bjc610a6.upp, bjc610a7.upp, bjc610a8.upp, bjc610b1.upp,\n      bjc610b2.upp, bjc610b3.upp, bjc610b4.upp, bjc610b6.upp,\n      bjc610b7.upp, bjc610b8.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-BJC-2100"
+                },
+                {
+                    "id": "printer/Canon-BJC-250"
+                },
+                {
+                    "id": "printer/Canon-BJC-600"
+                },
+                {
+                    "id": "printer/Canon-BJC-610"
+                },
+                {
+                    "id": "printer/Canon-BJC-620"
+                },
+                {
+                    "id": "printer/Canon-BJC-6200"
+                },
+                {
+                    "id": "printer/Canon-MultiPASS_C3000"
+                }
+            ]
+        }
+    }
+}

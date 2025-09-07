@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_P100",
+        "make": "HP",
+        "model": "PhotoSmart P100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/hpphotosma43045.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HP;MDL:PHOTOSMART 100;CMD:MLC,PCL,PML,BIDI-ECP,ECP18,DW-PCL;CLS:PRINTER;DES:hp photosmart 100;",
+                "commandset": "MLC,PCL,PML,BIDI-ECP,ECP18,DW-",
+                "description": "hp photosmart 100",
+                "manufacturer": "HP",
+                "model": "PHOTOSMART 100"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This is a small (4 x 6 inch/10 x 15 cm/A6) printer especially for\n    printing photos taken with digital cameras. It has ports on the\n    side for inserting SmartMedia, CompactFlash, and Memory Stick\n    digital \"film\" and has an LCD panel that lets you select\n    pictures from the \"film\" to print, so one can use the\n    device as a digital photo lab without PC.<p>\n\n    Due to the small paper size and not using black ink its usability\n    for PC documents is very limited, but it works with various PCL\n    drivers which support 3-ink CMY and A6/Postcard/4x6-Photo paper\n    size. If the driver does not support such small paper formats the\n    upper left corner of the page is printed. The best quality you\n    will get with HPLIP which supports this printer\n    explicitly since version 1.0<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, the higher resolutions are used for\n    the internal dithering. So if you insert photo paper, the printer\n    will print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi, without\n    paper detection, intended for photo paper only.<p>\n\n    Border-less (full bleed) printing is supported with the\n    HPLIP driver.<p><p>\n\n      Consumables/Refills: Refill: 1 CMY color cartridge<p>"
+        }
+    }
+}

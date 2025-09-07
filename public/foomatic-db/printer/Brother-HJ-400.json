@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HJ-400",
+        "make": "Brother",
+        "model": "HJ-400",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "lq850",
+        "contrib_url": "http://www.angelfire.com/pq/osm/brother.html",
+        "comments": {
+            "en": "The lq850 driver doesn't come with RedHat by default.\n<br>The epson driver can work at 180x180, but looks bad at 180x360 and 360x360\n<br>The printer can also emulate an IBM PS/2 according the the manuals, but I've never got this to work, even under windows.\n<br>Draft mode has to be set using the switches on the front.\n<p>For TeX, use the nechi driver. Its the same as the LQ, but at 360x360.<p>\n\n      Consumables/Refills: Canon BC-02 cartridge (same as BJ-200)<p>"
+        }
+    }
+}

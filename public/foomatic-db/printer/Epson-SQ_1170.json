@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Epson-SQ_1170",
+        "make": "Epson",
+        "model": "SQ 1170",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "stcolor",
+        "comments": {
+            "en": "Is there even any such thing as an SQ 1170?"
+        }
+    }
+}

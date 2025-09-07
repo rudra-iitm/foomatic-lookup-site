@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Epson-CL_700",
+        "make": "Epson",
+        "model": "CL 700",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "contrib_url": "http://xwtools.automatix.de/",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 580.<p>\n\n    It prints with Gimp-Print 4.1.5 or later.<p>\n\n    This printer comes with a USB interface only!<p>\n\n    If you modify your Ghostscript Uniprint file stcXXX.upp as\n    described on <A\n    HREF=\"http://www.qbik.ch/usb/devices/\">http://www.qbik.ch/usb/devices/</A>\n    you get only empty sheets being spilled out.<p>\n\n    You have no switches to eject paper, put it offline, power off, or\n    change cartdriges. All this functionality has to be done by\n    software.  Jean-Jacques Sarton has written a graphical utility\n    named \"<a href=\"http://xwtools.automatix.de/files/mtink.tar.gz\"><tt>mtink</tt></a>\" which does all\n    maintenance tasks on Epson inkjets, as nozzle check, had cleaning\n    head alignment, and even changing cartridges on the Epson Stylus\n    Color 480/580/CL 700.<p><p>\n\n      Consumables/Refills: One black and one 3-color cartridge<p>"
+        }
+    }
+}

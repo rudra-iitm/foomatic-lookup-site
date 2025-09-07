@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-Phaser_780",
+        "make": "Tektronix",
+        "model": "Phaser 780",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "used RedHat's \"printtool\"; set to \"postscript,\" color test page printed perfectly (in fact, stunningly).<p>\n\n      Consumables/Refills: CMYK Toner<p>"
+        }
+    }
+}

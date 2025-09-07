@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-660",
+        "make": "Canon",
+        "model": "LBP-660",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.canon.co.uk/products/lbp660.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "lbp660",
+        "comments": {
+            "en": "This is one of the so-called GDI- or winprinters, a printer with\n      a proprietary data protocol, which is not publicly documented by\n      the manufacturer.<br>\n\n      Fortunately, Nicolas Boichat has reverse-engineered the protocol\n      using <a\n      href=\"http://www.pragana.net/gdiprinters.html\">the techniques\n      described by Rildo Pragana</a>, which lead to <a\n      href=\"show_driver.cgi?driver=lbp660&fromprinter=Canon-LBP-660\">this\n      driver</a>.<br>\n\n      Old comments:<br>\n\n      Offers PCL emulation, but this appears to be in software.<br>\n\n      Even if PCL is in firmware, it is limited to 300dpi.<br><p>\n\n      Consumables/Refills: Toner Cartridge<p>"
+        }
+    }
+}

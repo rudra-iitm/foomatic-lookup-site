@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_820",
+        "make": "Epson",
+        "model": "Stylus Photo 820",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/pho820/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo 820",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 820"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6-color CMYKcm printing.<p>\n\n    USB or Parallel.<p>\n\n    Printing works perfectly, but head alignment needs an external\n    head alignment page from the computer, therefore it does not work\n    with \"<tt>escputil</tt>\" yet. Print in\n    unidirectional mode to get the highest quality, then head\n    alignment is not necessary.<p>"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P1150",
+        "make": "Panasonic",
+        "model": "KX-P1150",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "216"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/office/printer/kxp1150.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eps9high",
+        "comments": {
+            "en": "9 pin printer; try various eps9* drivers.<p>\n\n      Consumables/Refills: ribbon<p>"
+        }
+    }
+}

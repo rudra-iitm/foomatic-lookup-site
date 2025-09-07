@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_2000C",
+        "make": "Epson",
+        "model": "PM 2000C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo EX.<p>\n\n    Supports A3 paper size.<p>\n\n    Works relatively well with the Stylus Color 600 upp files, such as\n    stc600p.upp<p>\n\n    The Gimp/Ghostscript print driver (stp) supports this printer\n    perfectly -- 1440x720, soft weave, 6 color dithering.<p><p>\n\n      Consumables/Refills: 1 black cartridge, 1 color cartridge<p>"
+        }
+    }
+}

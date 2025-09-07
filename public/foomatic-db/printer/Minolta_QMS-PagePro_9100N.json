@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Minolta_QMS-PagePro_9100N",
+        "make": "Minolta QMS",
+        "model": "PagePro 9100N",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 35\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "driver": {
+        "@id": "driver/foo2hbpl2",
+        "name": "foo2hbpl2",
+        "url": "http://foo2hbpl.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This is a driver developed for the Dell 1355 MFP (printer only),\n      Dell C1765 MFP (printer only), Epson AcuLaser M1400,\n      Fuji Xerox Docuprint CM205 (printer only),\n      Fuji Xerox Docuprint CM215 (printer only), Fuji Xerox DocuPrint P205,\n      Fuji Xerox DocuPrint M215 (printer only), Xerox WorkCentre 3045 and the\n      Xerox WorkCentre 6015 MFP (printer only).\n\n      <p>\n\n      PPD files (and the Foomatic XML files to generate them) come\n      with the driver, therefore we do not supply PPDs here on the\n      OpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Dell-1355"
+                },
+                {
+                    "id": "printer/Dell-C1765"
+                },
+                {
+                    "id": "printer/Epson-AcuLaser_M1400"
+                },
+                {
+                    "id": "printer/Epson-AcuLaser_CX17NF"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3010"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3040"
+                },
+                {
+                    "id": "printer/Xerox-WorkCentre_3045"
+                },
+                {
+                    "id": "printer/Xerox-WorkCentre_6015"
+                },
+                {
+                    "id": "printer/Fuji_Xerox-DocuPrint_CM205"
+                },
+                {
+                    "id": "printer/Fuji_Xerox-DocuPrint_CM215"
+                },
+                {
+                    "id": "printer/Fuji_Xerox-DocuPrint_M215"
+                },
+                {
+                    "id": "printer/Fuji_Xerox-DocuPrint_P205"
+                }
+            ]
+        }
+    }
+}

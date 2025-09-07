@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-C172FP_PS",
+        "make": "Sharp",
+        "model": "AR-C172FP PS",
+        "mechanism": {
+            "led": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sc172fpj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 17\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "driver": {
+        "@id": "driver/ljet2p",
+        "name": "ljet2p",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ljet2p%A%Z -sOutputFile=-%C -f -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    PCL 4 driver.<p>\n\n    A Ghostscript bug in the driver breaks paper input tray\n    selection. This <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pcl-patches/inputslot.patch\">patch</a>\n    for GPL Ghostscript 8.63 fixes the problem and allows to set the\n    input tray with the \"-dMediaPosition=X\" commmand line\n    option for Ghostscript. \"X\" is an integer number which\n    depends on the printer model and tray. For HP \"0\" is\n    usually the printer default, \"7\" automatic selection,\n    \"2\" manual feed, \"1\" the upper, and\n    \"4\" the lower tray. Note that for PCL 6/XL these numbers\n    are different. The patch is required for Ghostscript 8.63 and\n    older so that tray selection with the PPDs of this site works. The\n    bug is fixed in Ghostscript 8.64 or newer.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apple-LaserWriter_Select_360"
+                },
+                {
+                    "id": "printer/Brother-DCP-1200"
+                },
+                {
+                    "id": "printer/Brother-HL-1040",
+                    "comments": {
+                        "en": "Works for 300dpi."
+                    }
+                },
+                {
+                    "id": "printer/Brother-HL-630"
+                },
+                {
+                    "id": "printer/Brother-MFC-6550MC"
+                },
+                {
+                    "id": "printer/Brother-MFC-9500"
+                },
+                {
+                    "id": "printer/Brother-MFC-9600"
+                },
+                {
+                    "id": "printer/Generic-PCL_4_Printer"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2D"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2P_Plus"
+                },
+                {
+                    "id": "printer/Lexmark-Valuewriter_300"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_8L"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1260"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_860"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_870"
+                },
+                {
+                    "id": "printer/Oki-OL400e"
+                },
+                {
+                    "id": "printer/Oki-OL400ex"
+                },
+                {
+                    "id": "printer/Oki-OL600e"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P4410"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P6500"
+                },
+                {
+                    "id": "printer/Raven-LP-410",
+                    "comments": {
+                        "en": "Appears to work, although memory is tight."
+                    }
+                },
+                {
+                    "id": "printer/Star-LS-04"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P12"
+                }
+            ]
+        }
+    }
+}

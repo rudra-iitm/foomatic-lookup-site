@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LX-1050",
+        "make": "Epson",
+        "model": "LX-1050",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson"
+    }
+}

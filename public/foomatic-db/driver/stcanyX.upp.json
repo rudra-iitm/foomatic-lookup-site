@@ -1,0 +1,34 @@
+{
+    "driver": {
+        "@id": "driver/stcanyX.upp",
+        "name": "stcanyX.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "For all Epson Stylus Color printers, 360dpi and 720dpi color on\n      plain paper only.<p>\n\n      UPP files of this driver: stcany.upp, stcany_h.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-MJ_520C"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_300"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_777"
+                }
+            ]
+        }
+    }
+}

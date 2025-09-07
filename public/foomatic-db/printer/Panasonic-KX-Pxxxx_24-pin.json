@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-Pxxxx_24-pin",
+        "make": "Panasonic",
+        "model": "KX-Pxxxx 24-pin",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "comments": {
+            "en": "I have a KX-P2624 wide carriage 24 pin dot matrix printer that I just installed in Red Hat Linux 6.2.  I set my printer to emulate the Epson LQ 1050 and selected the following driver from the list:  Epson Dot Matrix 24 pin.\nThe setup worked for the three set up tests: ASCII, PostScript, and direct to port.  Haven't tried anything else yet.  This driver should work for most Panasonic 24 pin dot matrix printers.<p>\n\n      Consumables/Refills: cartridge ribbon<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/NEC-Pinwriter_P20",
+        "make": "NEC",
+        "model": "Pinwriter P20",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "necp6"
+    }
+}

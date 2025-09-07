@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_C55",
+        "make": "Xerox",
+        "model": "DocuPrint C55",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://xerox.networkprinters.com/products/C55/index.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also supports PCL5c.<br>\nPrinting with Generic PS fileter does not support\nfull printer functionality.\n<br>I bet that the bells and whistles can be controlled with PJL commands.<p>\n\n      Consumables/Refills: Developers, Toners, Drum, Cartridge, Oil, Fuser, Toner Collector<p>"
+        }
+    }
+}

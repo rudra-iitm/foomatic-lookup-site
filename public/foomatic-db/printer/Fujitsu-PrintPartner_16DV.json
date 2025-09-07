@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Fujitsu-PrintPartner_16DV",
+        "make": "Fujitsu",
+        "model": "PrintPartner 16DV",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.fujitsu.ca/printers/pp16dv-98.htm",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Postscript, Duplex, IrDA, Ethernet options available.<p>\n\n      Consumables/Refills: Toner Cartridge to 5k pages, drum at 40k<p>"
+        }
+    }
+}

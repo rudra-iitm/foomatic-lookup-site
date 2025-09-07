@@ -1,0 +1,34 @@
+{
+    "driver": {
+        "@id": "driver/deskjet",
+        "name": "deskjet",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=deskjet%A%Z -sOutputFile=-%C -f -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DeskJet"
+                },
+                {
+                    "id": "printer/HP-DeskJet_200"
+                },
+                {
+                    "id": "printer/HP-DeskJet_340C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_Plus"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_R45"
+                }
+            ]
+        }
+    }
+}

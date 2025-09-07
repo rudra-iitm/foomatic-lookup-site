@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-10V",
+        "make": "Brother",
+        "model": "HL-10V",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3",
+        "comments": {
+            "en": "HPII or HPIII drivers work. \nSupports HP-GL/2, IBM Proprinter \nXL Mode, Epson FX-85 &amp; Brother \nTwinriter DP modes, &amp; Diablo 630 \nand Brother WP modes.<p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: HP #92295A Refills @ $45<p>"
+        }
+    }
+}

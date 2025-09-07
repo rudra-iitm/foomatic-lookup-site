@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-320_Pro",
+        "make": "Canon",
+        "model": "LBP-320 Pro",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "lbp320",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

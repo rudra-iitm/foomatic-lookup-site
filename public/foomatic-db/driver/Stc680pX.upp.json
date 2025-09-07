@@ -1,0 +1,26 @@
+{
+    "driver": {
+        "@id": "driver/Stc680pX.upp",
+        "name": "Stc680pX.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: Stc680pl.upp, Stc680p.upp<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Epson-Stylus_Color_680",
+                "comments": {
+                    "en": "360/720 dpi, can be used with Parallel or USB interfaces."
+                }
+            }
+        }
+    }
+}

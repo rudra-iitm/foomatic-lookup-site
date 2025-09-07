@@ -1,0 +1,90 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hpijs-pcl5c-PrintoutMode",
+        "arg_shortname": {
+            "en": "PrintoutMode"
+        },
+        "arg_longname": {
+            "en": "Print Quality"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "10",
+            "arg_spot": "B",
+            "arg_composite": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "hpijs-pcl5c",
+                "arg_defval": "ev/hpijs-pcl5c-PrintoutMode-Normal-LJColor"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hpijs-pcl5c-PrintoutMode-Draft-LJColor",
+                    "ev_longname": {
+                        "en": "Draft"
+                    },
+                    "ev_shortname": {
+                        "en": "Draft"
+                    },
+                    "ev_driverval": "Quality=150DraftColorCMYK"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5c-PrintoutMode-Draft.Gray-LJColor",
+                    "ev_longname": {
+                        "en": "Draft Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "Draft.Gray"
+                    },
+                    "ev_driverval": "Quality=150DraftGrayscaleCMYK"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5c-PrintoutMode-High-LJColor",
+                    "ev_longname": {
+                        "en": "High Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "High"
+                    },
+                    "ev_driverval": "Quality=600BestColorCMYK"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5c-PrintoutMode-High.Gray-LJColor",
+                    "ev_longname": {
+                        "en": "High Quality Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "High.Gray"
+                    },
+                    "ev_driverval": "Quality=600GrayscaleCMYK"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5c-PrintoutMode-Normal-LJColor",
+                    "ev_longname": {
+                        "en": "Normal"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal"
+                    },
+                    "ev_driverval": "Quality=300ColorCMYK"
+                },
+                {
+                    "@id": "ev/hpijs-pcl5c-PrintoutMode-Normal.Gray-LJColor",
+                    "ev_longname": {
+                        "en": "Normal Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal.Gray"
+                    },
+                    "ev_driverval": "Quality=300GrayscaleCMYK"
+                }
+            ]
+        }
+    }
+}

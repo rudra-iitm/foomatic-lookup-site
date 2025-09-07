@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Fujitsu-PrintPartner_20W",
+        "make": "Fujitsu",
+        "model": "PrintPartner 20W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.fujitsu.ca/printers/pp20w-99.htm",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Ethernet, IrDA, Duplex, Postscript options.<p>\n\n      Consumables/Refills: toner 5k pg, drum 40k pages<p>"
+        }
+    }
+}

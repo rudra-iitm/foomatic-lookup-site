@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/48",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "50",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "lx5000",
+                "arg_defval": "ev/378"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/377",
+                    "ev_longname": {
+                        "en": "300x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "300x600dpi"
+                    },
+                    "ev_driverval": "300x600"
+                },
+                {
+                    "@id": "ev/378",
+                    "ev_longname": {
+                        "en": "600x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "600x600dpi"
+                    },
+                    "ev_driverval": "600x600"
+                },
+                {
+                    "@id": "ev/379",
+                    "ev_longname": {
+                        "en": "1200x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "1200x600dpi"
+                    },
+                    "ev_driverval": "1200x600"
+                }
+            ]
+        }
+    }
+}

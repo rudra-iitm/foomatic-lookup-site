@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P6150",
+        "make": "Panasonic",
+        "model": "KX-P6150",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "laserjet",
+        "comments": {
+            "en": "My first foray into Linux but I got\nthis printer to work just about!  I\nused the printer setup from control\npanel - ASCII prints fine, but there\nare currently no KXP drivers/filters\nso you have to use the HP Laserjet\none.  It doesn't work perfectly, the\nbottom of the page was cut off but\nI'm sure someone with a better\nunderstanding of these things could\nfix it easily enough.<p>\n\n      Consumables/Refills: Toner (approx 30USD)<p>"
+        }
+    }
+}

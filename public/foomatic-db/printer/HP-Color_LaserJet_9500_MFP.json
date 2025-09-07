@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_9500_MFP",
+        "make": "HP",
+        "model": "Color LaserJet 9500 MFP",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PCL,POSTSCRIPT",
+                "manufacturer": "Hewlett-Packard"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Multifunction printer-scanner-copier. Both printing and scanning\n    work.<p>\n\n    For basic printing functionality use the Postscript PPD. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    Stand-alone copying should just work, it does not need the\n    PC.<p>\n    \n    Postscript level 2, parallel and USB connection.<p>"
+        }
+    }
+}

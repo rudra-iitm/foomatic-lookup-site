@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P8420",
+        "make": "Panasonic",
+        "model": "KX-P8420",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com/PCSC/PCPC/printers/p8420i.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "80MB std; uses regular DIMMs."
+        }
+    }
+}

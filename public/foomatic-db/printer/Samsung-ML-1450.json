@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1450",
+        "make": "Samsung",
+        "model": "ML-1450",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PCL5E,PCL6",
+                "manufacturer": "Samsung",
+                "model": "ML-1450"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Currently Samsung supports this printer with proprietary drivers\n    which come with the printer on its driver CD or can be downloaded\n    on the web sites of Samsung. Unfortunately, these drivers do not\n    work necessarily with all Linux distributions. You will therefore\n    probably get it more easily working by using standard PCL drivers\n    as \"pxlmono\" or \"hpijs-pcl5e\".<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

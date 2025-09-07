@@ -1,0 +1,56 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/Postscript-RGBProfile",
+        "arg_shortname": {
+            "en": "RGBProfile"
+        },
+        "arg_longname": {
+            "en": "RGB Profile"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "150",
+            "arg_postscript": null
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "false",
+                    "driver": "Postscript",
+                    "arg_defval": "ev/Postscript-DefaultRGB"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/Fuji_Xerox-DocuPrint_CM305_df",
+                    "arg_defval": "ev/Postscript-sRGB"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/Postscript-DefaultRGB",
+                    "ev_longname": {
+                        "en": "Default"
+                    },
+                    "ev_shortname": {
+                        "en": "default"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/Postscript-sRGB",
+                    "ev_longname": {
+                        "en": "sRGB"
+                    },
+                    "ev_shortname": {
+                        "en": "srgb"
+                    },
+                    "ev_driverval": "<< /UseCIEColor true >> setpagedevice\n/DefaultRGB [\n  % sRGB\n  /CIEBasedABC <<\n    /DecodeLMN [\n      { dup 0.03928 le {12.92321 div} {0.055 add 1.055 div 2.4 exp} ifelse } bind dup dup ]\n    /MatrixLMN [ 0.412457 0.212673 0.019334\n                 0.357576 0.715152 0.119192\n                 0.180437 0.072175 0.950301 ]\n    /WhitePoint [ 0.9505 1.0 1.0890 ]\n  >>\n] /ColorSpace defineresource pop"
+                }
+            ]
+        }
+    }
+}

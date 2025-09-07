@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/NEC-MultiWriter",
+        "make": "NEC",
+        "model": "MultiWriter",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "400",
+                    "y": "400"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "npdl",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus",
+        "make": "Epson",
+        "model": "Stylus",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "mj700v2c",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

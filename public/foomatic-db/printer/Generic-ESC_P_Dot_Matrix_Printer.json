@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Generic-ESC_P_Dot_Matrix_Printer",
+        "make": "Generic",
+        "model": "ESC/P Dot Matrix Printer",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "This entry allows you to use any printer which understands Epson's\n    ESP/P protocol with Foomatic, at least with the basic options. See\n    your printer's manual to know whether your printer supports\n    ESC/P. It can be necessary to set a DIP switch for that. This\n    entry is not for modern Epson inkjets which understand ESC/P\n    2.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic\n    database</a>.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your\n    printer.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

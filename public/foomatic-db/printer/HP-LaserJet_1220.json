@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1220",
+        "make": "HP",
+        "model": "LaserJet 1220",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/pdf/lj1200.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;CMD:PJL,MLC,PCL,PCLXL,POSTSCRIPT;MDL:HP LaserJet 1220;CLS:PRINTER;DES:Hewlett-Packard LaserJet 1220;",
+                "commandset": "PJL,MLC,PCL,PCLXL,POSTSCRIPT",
+                "description": "Hewlett-Packard LaserJet 1220",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 1220"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Multi-function device which prints, scans, and copies, based on\n    the HP LaserJet 1200. Prints perfectly and <a\n    href=\"http://hpoj.sourceforge.net/suplist.shtml\">scanning\n    support</a> works, too.<p>\n\n    Postscript level 2 out of the box, parallel and USB connection,\n    1220n with ethernet connection.<p>\n\n    See a longer user review about the printing capabilities of the\n    device in the entry of the HP LaserJet 1200.<p>\n\n    For basic printing functionality use the Postscript PPD or any PCL\n    driver. For advanced functionality such as printer status,\n    maintenance features, scanning and photo card unload use the <a\n    href=\" http://hplipopensource.com/\">HPLIP\n    driver</a> (which includes HPIJS). <p>"
+        }
+    }
+}

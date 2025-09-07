@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_3300_MFP",
+        "make": "HP",
+        "model": "LaserJet 3300 MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;CMD:PJL,MLC,PCL,POSTSCRIPT,PCLXL;MDL:HP LaserJet 3300/3310/3320;CLS:PRINTER;DES:Hewlett-Packard LaserJet 3300/3310/3320;",
+                "commandset": "PJL,MLC,PCL,POSTSCRIPT,PCLXL",
+                "description": "Hewlett-Packard LaserJet 3300/3310/3320",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 3300/3310/3320"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Multifunction printer-scanner-copier. Both printing and scanning\n    work.<p>\n\n    For basic printing functionality use the Postscript PPD. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    Stand-alone copying should just work, it does not need the\n    PC.<p>\n    \n    Postscript level 2, parallel and USB connection.<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_P8",
+        "make": "Xerox",
+        "model": "DocuPrint P8",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "This is an entirely different printer from the P8 e .\n<br>This printer is a \"winprinter\"; the P8 e  is a supported PCL printer."
+        }
+    }
+}

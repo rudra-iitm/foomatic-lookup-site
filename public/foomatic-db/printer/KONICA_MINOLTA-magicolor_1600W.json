@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_1600W",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 1600W",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://kmbs.konicaminolta.us/content/products/models/magicolor1600W.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:KONICA MINOLTA;CMD:ZJS,PJL,LAVAFLOW;MDL:mc1600W;CLS:PRINTER;DES:KONICA MINOLTA mc1600W;",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "mc1600W",
+                "commandset": "ZJS,PJL,LAVAFLOW"
+            },
+            "snmp": {
+                "description": "KONICA MINOLTA magicolor 1600W"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2lava",
+        "comments": {
+            "en": "The magicolor 1600W is a USB color laser printer with a\n      2009 street price of $150 USD.  This printer is supported\n      by the foo2lava open software printer driver.<p>\n\n      Consumables: Separate toner cartridges black (4500 prints, ~$79),\n      yellow/magenta/cyan (4500 prints, ~$119 each), drum Cartridge (45000\n      prints, ~$149)"
+        }
+    }
+}

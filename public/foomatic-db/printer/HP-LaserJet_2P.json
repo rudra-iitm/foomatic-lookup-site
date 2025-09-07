@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_2P",
+        "make": "HP",
+        "model": "LaserJet 2P",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/ljiip.html",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Definitely requires more then the default amount of memory (512KB)\n    to do 300 dpi Ghostscript printing; should work flawlessly with\n    1.5MB or over.<p>\n\n    Works fine at 150dpi with the default memory size.<p>\n\n      Consumables/Refills: 92275A<p>"
+        }
+    }
+}

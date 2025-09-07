@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-310",
+        "make": "Canon",
+        "model": "LBP-310",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "lbp310",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

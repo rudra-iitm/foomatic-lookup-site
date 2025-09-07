@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP6780_3580",
+        "make": "Canon",
+        "model": "LBP6780/3580",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Canon;MDL:LBP6780/3580;",
+                "manufacturer": "Canon",
+                "model": "LBP6780/3580"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Canon",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Canon",
+                    "ppd": "PPD/Canon/cnl678x1g.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 40 pages/min<p>"
+        }
+    }
+}

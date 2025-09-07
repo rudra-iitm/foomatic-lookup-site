@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-7000",
+        "make": "Canon",
+        "model": "BJC-7000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "gutenprint"
+    }
+}

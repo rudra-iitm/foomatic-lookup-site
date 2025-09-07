@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1150",
+        "make": "HP",
+        "model": "LaserJet 1150",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/support/lj1150",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,BIDI-ECP,PCL,DW-PCL",
+                "description": "Hewlett-Packard LaserJet 1150",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp LaserJet 1150"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    PCL-5e laser printer (compatible to LaserJet 4, 1100, ...), so it\n    works with drivers like HPIJS or \"ljet4\". 1200-dpi\n    printing is not supported with these drivers. The printer does not\n    understand PCL 6/XL, so it is not possible to print in 1200 dpi\n    with the \"pxlmono\" or \"lj5gray\"\n    drivers.<p>\n\n    8 MB of RAM, parallel and USB connection, built-in 250-sheets\n    tray.<p><p>\n\n      Consumables/Refills: Cartridge containing toner and drum in one unit<p>"
+        }
+    }
+}

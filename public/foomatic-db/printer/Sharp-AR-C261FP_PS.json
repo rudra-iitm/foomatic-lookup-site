@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-C261FP_PS",
+        "make": "Sharp",
+        "model": "AR-C261FP PS",
+        "mechanism": {
+            "led": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sc261fpj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 26\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

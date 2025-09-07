@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_10e",
+        "make": "Oki",
+        "model": "Okipage 10e",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP10EHome.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,PCLXL,PCL,EPSONFX,IBMPPR",
+                "description": "OKIPAGE 10e",
+                "manufacturer": "OKI DATA CORP",
+                "model": "OKIPAGE 10e"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Setup on server using APSfilter v5?\nas a 600x600 LaserJet 4. Shared to\nWin98 clients using Oki drivers \nlocally. Works like a charm but is\nsensitive to differnt papers.\n<p>\nSome reports indicate that the <a href=\"show_printer.cgi?recnum=Oki-Okipage_10ex\">Okipage 10ex</a> is a more robust alternative for low volume applications.<p>\n\n      Consumables/Refills: Toner only cartridge, seperate toner drum<p>"
+        }
+    }
+}

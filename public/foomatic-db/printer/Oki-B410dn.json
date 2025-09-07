@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B410dn",
+        "make": "Oki",
+        "model": "B410dn",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/b410dnspec.html",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "comments": {
+            "en": "Attached documentation about Un*x install shows a telnet\n    example. DO NOT TRY it! The printer has a decent web interface,\n    which is available on printer's standard (80) http port. You\n    can check the IP address (got from your DHCP server) by pressing\n    the on-line button for 4-6 seconds. Default admin password is the\n    last 6 characters (chars uppercased) from printer's MAC\n    Address.  (source is <a\n    href=\"http://artofhacking.com/etc/passwd-oki.htm\">http://artofhacking.com/etc/passwd-oki.htm</a>)"
+        }
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/176",
+        "arg_shortname": {
+            "en": "MediaType"
+        },
+        "arg_longname": {
+            "en": "Media Type"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "300",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-media %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "ev/940"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/940",
+                    "ev_longname": {
+                        "en": "Plain Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Paper"
+                    },
+                    "ev_driverval": "paper"
+                },
+                {
+                    "@id": "ev/941",
+                    "ev_longname": {
+                        "en": "Iron-On Transfers"
+                    },
+                    "ev_shortname": {
+                        "en": "IronOn"
+                    },
+                    "ev_driverval": "iron-on"
+                },
+                {
+                    "@id": "ev/942",
+                    "ev_longname": {
+                        "en": "Thick Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Thick"
+                    },
+                    "ev_driverval": "thick"
+                },
+                {
+                    "@id": "ev/943",
+                    "ev_longname": {
+                        "en": "Postcard"
+                    },
+                    "ev_shortname": {
+                        "en": "Postcard"
+                    },
+                    "ev_driverval": "postcard"
+                },
+                {
+                    "@id": "ev/944",
+                    "ev_longname": {
+                        "en": "High Grade Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "HighGrade"
+                    },
+                    "ev_driverval": "highgrade"
+                },
+                {
+                    "@id": "ev/945",
+                    "ev_longname": {
+                        "en": "Hot OHP Media"
+                    },
+                    "ev_shortname": {
+                        "en": "OHP"
+                    },
+                    "ev_driverval": "ohp"
+                },
+                {
+                    "@id": "ev/946",
+                    "ev_longname": {
+                        "en": "Back Print Media"
+                    },
+                    "ev_shortname": {
+                        "en": "BackPrint"
+                    },
+                    "ev_driverval": "backprint"
+                }
+            ]
+        }
+    }
+}

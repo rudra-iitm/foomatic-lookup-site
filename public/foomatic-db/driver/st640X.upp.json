@@ -1,0 +1,29 @@
+{
+    "driver": {
+        "@id": "driver/st640X.upp",
+        "name": "st640X.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 720dpi"
+        },
+        "comments": {
+            "en": "With Gimp-Print you get probably a higher quality on the Epson\n      Stylus Color 640/660, but this driver is already part of\n      Ghostscript 6.50 or newer.<p>\n\n      UPP files of this driver: st640ihg.upp, st640ih.upp,\n      st640pg.upp, st640plg.upp, st640pl.upp, st640p.upp,\n      stc640p.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_Color_640"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_660"
+                }
+            ]
+        }
+    }
+}

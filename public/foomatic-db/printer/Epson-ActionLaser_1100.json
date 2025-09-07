@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Epson-ActionLaser_1100",
+        "make": "Epson",
+        "model": "ActionLaser 1100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4?"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3"
+    }
+}

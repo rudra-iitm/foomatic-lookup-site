@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-7050",
+        "make": "Samsung",
+        "model": "ML-7050",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.samsungtelecom.com",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "This is a Network version of the ML-7000 printer by samsung, and will work with HP5 drivers.<p>\n\n      Consumables/Refills: ML+7000D8/XAR @ tigerdirec.com<p>"
+        }
+    }
+}

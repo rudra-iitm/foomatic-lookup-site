@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Avery-Personal_Label_Printer",
+        "make": "Avery",
+        "model": "Personal Label Printer",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "128",
+                    "y": "128"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "pbm2lwxl",
+        "comments": {
+            "en": "OEM LabelWriter<br>\n1.5 inch wide label printer;\ndriver by Mark Whitis\n<br>Tested OK by Driver Author; \nsee driver's web page for quirks.<p>\n\n      Consumables/Refills: thermal; special labels<p>"
+        }
+    }
+}

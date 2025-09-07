@@ -1,0 +1,52 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-e-Studio_850",
+        "make": "Toshiba",
+        "model": "e-Studio 850",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.eid.toshiba.com/support/drivers/index.shtml",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "3.0"
+            },
+            "hpgl2": null,
+            "tiff": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "TOSHIBA e-STUDIO850"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Toshiba",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Toshiba",
+                    "ppd": "PPD/Toshiba/TOSHIBA_EST850_CUPS.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All printer settings can be changed via a web browser, and it seems to work fine with Firefox.<p>\n\nIPP is problematic (the printer runs a version of CUPS which times out connections after one second) so large print jobs won't go through (latest firmware as of 2006-08-03), however LPD works fine.<p>\n\n      Consumables/Refills: Toner<p>"
+        }
+    }
+}

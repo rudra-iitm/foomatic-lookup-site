@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Apple-LaserWriter_IIg",
+        "make": "Apple",
+        "model": "LaserWriter IIg",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.info.apple.com/info.apple.com/applespec/applespec.taf?cat=printer&RID=20",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "In the Printer set switch (0-9) to 5\nIn the linux box use the generic postscript driver, use /dev/ttySx<p>\n\n      Consumables/Refills: EP-S Toner Cartridge, same as HP Laserjet series<p>"
+        }
+    }
+}

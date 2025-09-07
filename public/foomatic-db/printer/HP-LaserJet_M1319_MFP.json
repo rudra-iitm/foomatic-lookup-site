@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_M1319_MFP",
+        "make": "HP",
+        "model": "LaserJet M1319 MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-18972-3328064-12004-3328082-3547126.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet M1319;CMD:ACL;CLS:PRINTER;DES:HP LaserJet M1319;",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet M1319",
+                "commandset": "ACL"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2zjs-z1",
+        "comments": {
+            "en": "This printer is supported by the foo2zjs free software printer driver.\n    <p>\n\n    The printer is faster than the LaserJet 1020 and has a USB\n    or an optional network connection. It has 16 MB of RAM.<p>\n\n    Consumables: Print cartridge (2000 prints) ~$78 (part no. Q2612)"
+        }
+    }
+}

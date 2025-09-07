@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E250d",
+        "make": "Lexmark",
+        "model": "E250d",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "comments": {
+            "en": "Throughput = 30\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

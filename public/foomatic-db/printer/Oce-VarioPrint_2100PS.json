@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Oce-VarioPrint_2100PS",
+        "make": "Oce",
+        "model": "VarioPrint 2100",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/Central+reproduction/vp2100/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Oce",
+                "ppd": "PPD/Oce/Oce-VarioPrint_2100PS/1/OCVP2100.ppd"
+            }
+        },
+        "comments": {
+            "en": "<b>Flexible mid production system</b><br/>\nThe Oce VarioPrint 2100 is a scalable production solution that can meet your current needs and grow with you into the future.\n<UL>\n<LI>Tab printing </LI>\n<LI>Interposing of post-processed colour prints </LI>\n<LI>91 prints per minute </LI>\n<LI>Inline finishing </LI>\n<LI>Speed upgrade to 105 prints per minute (optional) </LI>\n<LI>Custom and oversized printing (optional) </LI>\n<LI>Streaming PS/PCL (optional) </LI>\n</UL><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

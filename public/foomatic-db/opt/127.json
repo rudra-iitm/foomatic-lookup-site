@@ -1,0 +1,561 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/127",
+        "arg_shortname": {
+            "en": "TonerDensity"
+        },
+        "arg_longname": {
+            "en": "Toner Density"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET DENSITY=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-Color_LaserJet_4550",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-Color_LaserJet_4600",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1010",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1012",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1015",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1100",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1100A",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1150",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1200",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1220",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_1300",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_2100",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_2100M",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_2200",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_2300",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_3200",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_3200m",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_3200se",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4000",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4050",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4100",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4L",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4M",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4ML",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4P",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_4V",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5000",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5L",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5M",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5MP",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5P",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5Si",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6L",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6MP",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6P",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_8000",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_8100",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_8150",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_9000",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-Mopier_240",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-Mopier_320",
+                    "arg_defval": "ev/815"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-Color_LaserJet_4550",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-Color_LaserJet_4600",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1010",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1012",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1015",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1100",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1100A",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1150",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1200",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1220",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_1300",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_2100",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_2100M",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_2200",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_2300",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_3200",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_3200m",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_3200se",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4000",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4050",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4100",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4L",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4M",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4ML",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4P",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_4V",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5000",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5L",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5M",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5MP",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5P",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_5Si",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_6",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_6L",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_6MP",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_6P",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_8000",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_8100",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_8150",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-LaserJet_9000",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-Mopier_240",
+                    "arg_defval": "ev/817"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpijs",
+                    "printer": "printer/HP-Mopier_320",
+                    "arg_defval": "ev/817"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/813",
+                    "ev_longname": {
+                        "en": "1"
+                    },
+                    "ev_shortname": {
+                        "en": "1"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/814",
+                    "ev_longname": {
+                        "en": "2"
+                    },
+                    "ev_shortname": {
+                        "en": "2"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/815",
+                    "ev_longname": {
+                        "en": "3"
+                    },
+                    "ev_shortname": {
+                        "en": "3"
+                    },
+                    "ev_driverval": "3"
+                },
+                {
+                    "@id": "ev/816",
+                    "ev_longname": {
+                        "en": "4"
+                    },
+                    "ev_shortname": {
+                        "en": "4"
+                    },
+                    "ev_driverval": "4"
+                },
+                {
+                    "@id": "ev/817",
+                    "ev_longname": {
+                        "en": "5"
+                    },
+                    "ev_shortname": {
+                        "en": "5"
+                    },
+                    "ev_driverval": "5"
+                }
+            ]
+        }
+    }
+}

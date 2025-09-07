@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_660i",
+        "make": "NEC",
+        "model": "SuperScript 660i",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss660i/index.htm",
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "I set up the NEC SuperScript 660i using the RedHat print tool with HP Laserjet 4/5/6 selected.  Works perfectly."
+        }
+    }
+}

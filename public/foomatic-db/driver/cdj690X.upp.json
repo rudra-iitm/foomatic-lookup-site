@@ -1,0 +1,23 @@
+{
+    "driver": {
+        "@id": "driver/cdj690X.upp",
+        "name": "cdj690X.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "hplip"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: cdj690.upp, cdj690ec.upp<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/HP-DeskJet_690C"
+            }
+        }
+    }
+}

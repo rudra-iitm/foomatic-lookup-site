@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Oce-VarioPrint_2045PS",
+        "make": "Oce",
+        "model": "VarioPrint 2045",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/General+office/VP2045-55-65/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Oce",
+                "ppd": "PPD/Oce/Oce-VarioPrint_2045PS/1/OCVP2045.ppd"
+            }
+        },
+        "comments": {
+            "en": "<b>The multifunctional system for office use </b><br/>\nGet connected without compromise.\n<UL><LI>High-quality, versatile digital copier</LI>\n<LI>46 A4 pages per minute</LI>\n<LI>Optional multifunctional network printer/scanner/ copier </LI>\n<LI>Optional digital mailbox for controlled/secured printing </LI><LI>Remote device administration/configuration</LI></UL><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

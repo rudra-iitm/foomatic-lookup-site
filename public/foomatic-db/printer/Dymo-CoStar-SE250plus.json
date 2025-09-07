@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Dymo-CoStar-SE250plus",
+        "make": "Dymo-CoStar",
+        "model": "SE250+",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "200",
+                    "y": "200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "pbm2lwxl",
+        "comments": {
+            "en": "2.25 inch wide label printer; driver by Mark Whitis<br>Should work; untested<p>\n\n      Consumables/Refills: thermal; special labels<p>"
+        }
+    }
+}

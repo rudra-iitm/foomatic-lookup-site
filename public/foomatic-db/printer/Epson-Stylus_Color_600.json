@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_600",
+        "make": "Epson",
+        "model": "Stylus Color 600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc600_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 600"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Should work perfectly with stp.\n<P>\nJohn P reports that the serial port is fixed at 230400 baud.  He was unable\nto get this printer speaking to his Debian PPC Mac using a reasonable late-model\n2.2.x kernel.  It's unclear if it'll work in other serial applications.  Hmm.\nSee his <a \nhref=\"http://www.openprinting.org/pipermail/epson-list/2000q4/000181.html\"\n>post in the Epson forum</a>.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

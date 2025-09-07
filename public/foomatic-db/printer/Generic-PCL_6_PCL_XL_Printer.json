@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Generic-PCL_6_PCL_XL_Printer",
+        "make": "Generic",
+        "model": "PCL 6/PCL XL Printer",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlcolor",
+        "comments": {
+            "en": "This entry allows you to use any printer which understands PCL 6\n    or PCL XL with Foomatic, at least with the basic options. See your\n    printer's manual to know whether your printer supports PCL 6 or PCL\n    XL.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic\n    database</a>.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your\n    printer.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

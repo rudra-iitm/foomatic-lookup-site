@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_825C",
+        "make": "HP",
+        "model": "DeskJet 825C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/data_sheet/c6506a.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 825C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 825C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Similar to the DeskJet <a\n    href=\"show_printer.cgi?recnum=HP-DeskJet_840C\">840C</a>/<a\n    href=\"show_printer.cgi?recnum=HP-DeskJet_842C\">842C</a>,\n    but without parallel port, USB only.</a>\n\n    Ed: HP provides the <a\n    href=\"show_driver.cgi?driver=hpijs\">HPLIP\n    driver</a>, which drives this printer excellently.  See that\n    driver entry for more information.<p><p>\n\n      Consumables/Refills: HP #15 black, HP #17 color, ~$25 each<p>"
+        }
+    }
+}

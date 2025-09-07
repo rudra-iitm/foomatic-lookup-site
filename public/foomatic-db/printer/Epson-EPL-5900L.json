@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5900L",
+        "make": "Epson",
+        "model": "EPL-5900L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/sohoprod/printers/lasers/epl5900l/",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "epsonepl",
+        "comments": {
+            "en": "Known not to use a standard protocol as PostScript or PCL; not to\n    be confused with the <a\n    href=\"show_printer.cgi?recnum=Epson-EPL-5900\">EPL-5900</a>.\n    <p>\n\n    Dr H. T. Leung and Roberto Ragusa have developed a <a\n    href=\"http://epsonepl.sourceforge.net/\">driver</a>;\n    based on reverse-engineering of the printer's protocol.<p>\n\n    Printing works through both the parallel and USB port.<p><p>\n\n      Consumables/Refills: Separate photoconductor drum and toner cartridge<p>"
+        }
+    }
+}

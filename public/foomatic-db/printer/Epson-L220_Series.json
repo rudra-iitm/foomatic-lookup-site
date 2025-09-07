@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-L220_Series",
+        "make": "Epson",
+        "model": "L220 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:L220 Series;CLS:PRINTER;DES:EPSON L220 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON L220 Series",
+                "manufacturer": "EPSON",
+                "model": "L220 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201401w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201401w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

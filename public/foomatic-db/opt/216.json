@@ -1,0 +1,154 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/216",
+        "arg_shortname": {
+            "en": "CMYLevels"
+        },
+        "arg_longname": {
+            "en": "CMY Levels"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "180",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_200",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_500",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_510",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_520",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_PLUS",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_Portable",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_300",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_330",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_350",
+                    "arg_defval": "ev/1072"
+                },
+                {
+                    "@sense": "false",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_LX",
+                    "arg_defval": "ev/1072"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1053",
+                    "ev_longname": {
+                        "en": "No CMY"
+                    },
+                    "ev_shortname": {
+                        "en": "NoCMY"
+                    },
+                    "ev_driverval": "-dCMYLevels=0"
+                },
+                {
+                    "@id": "ev/1054",
+                    "ev_longname": {
+                        "en": "2 Levels"
+                    },
+                    "ev_shortname": {
+                        "en": "2"
+                    },
+                    "ev_driverval": "-dCMYLevels=2"
+                },
+                {
+                    "@id": "ev/1055",
+                    "ev_longname": {
+                        "en": "3 Levels"
+                    },
+                    "ev_shortname": {
+                        "en": "3"
+                    },
+                    "ev_driverval": "-dCMYLevels=3"
+                },
+                {
+                    "@id": "ev/1056",
+                    "ev_longname": {
+                        "en": "4 Levels"
+                    },
+                    "ev_shortname": {
+                        "en": "4"
+                    },
+                    "ev_driverval": "-dCMYLevels=4"
+                },
+                {
+                    "@id": "ev/1072",
+                    "ev_longname": {
+                        "en": "Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                }
+            ]
+        }
+    }
+}

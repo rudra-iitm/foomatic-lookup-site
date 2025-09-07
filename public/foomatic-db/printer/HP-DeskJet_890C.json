@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_890C",
+        "make": "HP",
+        "model": "DeskJet 890C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj890c.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL,MLC,PML",
+                "description": "Hewlett-Packard Deskjet 890C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 890C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    According to David Suffield, HPIJS developer at HP, one gets the\n    best results with the HPLIP driver. Even that the\n    normal color mode does only 300 dpi, it gives a better quality\n    than the 600-dpi \"Presentation\" mode of the\n    \"cdj890\" driver.<p>\n\n    Good quality is also produced by Gimp-Print and the printer will\n    probably work reasonably well with other \"cdjXXX\"\n    drivers and the \"pcl3\" driver.<p>\n\n    Minor color variations from Windows driver.<p>\n\n    The \"cdj890\" driver is included with Ghostscript as of\n    Ghostscript version 6.0.<p>\n\n    Printhead alignment is not supported.<p><p>\n\n      Consumables/Refills: Black=51645, Color=C1823A<p>"
+        }
+    }
+}

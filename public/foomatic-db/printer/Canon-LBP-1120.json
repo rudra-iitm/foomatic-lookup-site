@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-1120",
+        "make": "Canon",
+        "model": "LBP-1120",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "capt",
+        "comments": {
+            "en": "This is one of the so-called GDI- or winprinters, a printer with\n      a proprietary data protocol, which is not publicly documented by\n      the manufacturer.<br>\n\n      Fortunately, Nicolas Boichat has reverse-engineered the protocol\n      using <a\n      href=\"http://www.pragana.net/gdiprinters.html\">the techniques\n      described by Rildo Pragana</a>, which lead to <a\n      href=\"show_driver.cgi?driver=capt&fromprinter=Canon-LBP-1120\">this\n      driver</a>.<br><p>\n\n      Consumables/Refills: Toner Cartridge<p>"
+        }
+    }
+}

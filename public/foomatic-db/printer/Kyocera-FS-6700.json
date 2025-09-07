@@ -1,0 +1,60 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-6700",
+        "make": "Kyocera",
+        "model": "FS-6700",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;Model:Kyocera FS-6700;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "description": "Kyocera FS-6700",
+                "manufacturer": "Kyocera",
+                "model": "Kyocera FS-6700"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_FS-6700_en.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript,\n      <a href=\"ppd-doc.html\">Instructions</a> <br>\n      In case of less than 4MB memory 600dpi may not work for all printouts\n      (for example use ljet4 for PCL5e with 300dpi instead) <br>\n      In case of duplex option use ljet4d for PCL5e and duplex <br>\n      Using pxlmono (PCL6) may be the fastest way to get good printouts.\n    \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

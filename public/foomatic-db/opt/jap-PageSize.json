@@ -1,0 +1,481 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/jap-PageSize",
+        "arg_shortname": {
+            "en": "PageSize"
+        },
+        "arg_longname": {
+            "en": "Page Size"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "bj10",
+                    "printer": "printer/Canon-BJ-35v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj10v",
+                    "printer": "printer/Canon-BJ-10v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj10v",
+                    "printer": "printer/Canon-BJ-15v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj10vh",
+                    "printer": "printer/Canon-BJ-10v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj10vh",
+                    "printer": "printer/Canon-BJ-15v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bj10vh",
+                    "printer": "printer/Canon-BJ-35v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc800j",
+                    "printer": "printer/Canon-BJC-680J",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc880j",
+                    "printer": "printer/Canon-BJC-880J",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "dj505j",
+                    "printer": "printer/HP-DeskJet_505J_Plus",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "escpage",
+                    "printer": "printer/Epson-LP-xx00",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "fmlbp",
+                    "printer": "printer/Fujitsu-FMLBP2xx_Page_Printer",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "fmpr",
+                    "printer": "printer/Fujitsu-FMPR",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "jj100",
+                    "printer": "printer/Star-JJ-100",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lbp310",
+                    "printer": "printer/Canon-LBP-310",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lbp320",
+                    "printer": "printer/Canon-LBP-320_Pro",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lbp320",
+                    "printer": "printer/Canon-LBP-350",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lips2p",
+                    "printer": "printer/Canon-LIPS-IIplus",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lips4",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lips4v",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lj4dithp",
+                    "printer": "printer/HP-LaserJet_4V_4LJ_Pro",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lp2000",
+                    "printer": "printer/Epson-LP-2000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lp2000",
+                    "printer": "printer/Epson-LP-3000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lp2000",
+                    "printer": "printer/Epson-LP-7000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lp2000",
+                    "printer": "printer/Epson-LP-7000G",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md1xMono",
+                    "printer": "printer/Alps-MD-1300",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md1xMono",
+                    "printer": "printer/Alps-MD-1500",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md50Eco",
+                    "printer": "printer/Alps-MD-5000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md50Eco",
+                    "printer": "printer/Oki-DP_5000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md50Mono",
+                    "printer": "printer/Alps-MD-5000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md50Mono",
+                    "printer": "printer/Oki-DP_5000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj500c",
+                    "printer": "printer/Epson-Stylus_Color_1500",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj500c",
+                    "printer": "printer/Epson-Stylus_Color_200",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj500c",
+                    "printer": "printer/Epson-Stylus_Color_IIs",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj6000c",
+                    "printer": "printer/Epson-Stylus_Color_1520",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj6000c",
+                    "printer": "printer/Epson-Stylus_Color_400",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj6000c",
+                    "printer": "printer/Epson-Stylus_Color_800",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj700v2c",
+                    "printer": "printer/Epson-MachJet",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj700v2c",
+                    "printer": "printer/Epson-Stylus",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "mj8000c",
+                    "printer": "printer/Epson-Stylus_Color_3000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ml600",
+                    "printer": "printer/Oki-Microline_600CL",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ml600",
+                    "printer": "printer/Oki-Microline_620CL",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "npdl",
+                    "printer": "printer/NEC-MultiWriter",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "npdl",
+                    "printer": "printer/NEC-PC-PR1000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "npdl",
+                    "printer": "printer/NEC-PC-PR2000",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "picty180",
+                    "printer": "printer/NEC-PICTY180",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pr150",
+                    "printer": "printer/NEC-PC-PR150",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pr201",
+                    "printer": "printer/NEC-PC-PR201",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "rpdl",
+                    "printer": "printer/Ricoh-RPDL_III_Laser_Printer",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "rpdl",
+                    "printer": "printer/Ricoh-RPDL_II_Laser_Printer",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "rpdl",
+                    "printer": "printer/Ricoh-RPDL_IV_Laser_Printer",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "rpdl",
+                    "printer": "printer/Ricoh-RPDL_I_Laser_Printer",
+                    "arg_defval": "ev/jap-PageSize-Letter"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/jap-PageSize-A3",
+                    "ev_longname": {
+                        "en": "A3"
+                    },
+                    "ev_shortname": {
+                        "en": "A3"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=842 -dDEVICEHEIGHTPOINTS=1190"
+                },
+                {
+                    "@id": "ev/jap-PageSize-A4",
+                    "ev_longname": {
+                        "en": "A4"
+                    },
+                    "ev_shortname": {
+                        "en": "A4"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=595 -dDEVICEHEIGHTPOINTS=842"
+                },
+                {
+                    "@id": "ev/jap-PageSize-A5",
+                    "ev_longname": {
+                        "en": "A5"
+                    },
+                    "ev_shortname": {
+                        "en": "A5"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=421 -dDEVICEHEIGHTPOINTS=595"
+                },
+                {
+                    "@id": "ev/jap-PageSize-B4JIS",
+                    "ev_longname": {
+                        "en": "B4 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "B4JIS"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=729 -dDEVICEHEIGHTPOINTS=1032"
+                },
+                {
+                    "@id": "ev/jap-PageSize-B5JIS",
+                    "ev_longname": {
+                        "en": "B5 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "B5JIS"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=516 -dDEVICEHEIGHTPOINTS=729"
+                },
+                {
+                    "@id": "ev/jap-PageSize-B6JIS",
+                    "ev_longname": {
+                        "en": "B6 (JIS)"
+                    },
+                    "ev_shortname": {
+                        "en": "B6JIS"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=363 -dDEVICEHEIGHTPOINTS=516"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Custom",
+                    "ev_longname": {
+                        "en": "Custom Size"
+                    },
+                    "ev_shortname": {
+                        "en": "Custom"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=0 -dDEVICEHEIGHTPOINTS=0"
+                },
+                {
+                    "@id": "ev/jap-PageSize-EnvYou4",
+                    "ev_longname": {
+                        "en": "Envelope You 4"
+                    },
+                    "ev_shortname": {
+                        "en": "EnvYou4"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=298 -dDEVICEHEIGHTPOINTS=666"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Executive",
+                    "ev_longname": {
+                        "en": "Executive"
+                    },
+                    "ev_shortname": {
+                        "en": "Executive"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=522 -dDEVICEHEIGHTPOINTS=756"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Hagaki",
+                    "ev_longname": {
+                        "en": "Hagaki"
+                    },
+                    "ev_shortname": {
+                        "en": "Hagaki"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=283 -dDEVICEHEIGHTPOINTS=420"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Ledger",
+                    "ev_longname": {
+                        "en": "Ledger"
+                    },
+                    "ev_shortname": {
+                        "en": "Ledger"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=792 -dDEVICEHEIGHTPOINTS=1224"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Legal",
+                    "ev_longname": {
+                        "en": "Legal"
+                    },
+                    "ev_shortname": {
+                        "en": "Legal"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=612 -dDEVICEHEIGHTPOINTS=1008"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Letter",
+                    "ev_longname": {
+                        "en": "Letter"
+                    },
+                    "ev_shortname": {
+                        "en": "Letter"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=612 -dDEVICEHEIGHTPOINTS=792"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Oufuku",
+                    "ev_longname": {
+                        "en": "Oufuku"
+                    },
+                    "ev_shortname": {
+                        "en": "Oufuku"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=420 -dDEVICEHEIGHTPOINTS=567"
+                },
+                {
+                    "@id": "ev/jap-PageSize-Postcard",
+                    "ev_longname": {
+                        "en": "Postcard"
+                    },
+                    "ev_shortname": {
+                        "en": "Postcard"
+                    },
+                    "ev_driverval": "-dDEVICEWIDTHPOINTS=284 -dDEVICEHEIGHTPOINTS=419"
+                }
+            ]
+        }
+    }
+}

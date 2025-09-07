@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-2000",
+        "make": "Canon",
+        "model": "BJC-2000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Output from the BJC-600 driver is reported to be fairly good.\n    <p>\n\n    One Red Hat 5.1 user reports that he had to comment out\n    \"COLOR=-dBitsPerPixel=1\" in the\n    <tt>/var/spool/lpd/lp/postscript.cfg</tt> for the\n    printtool queue to produce decent output.<p>\n\n    Commenting out \"COLOR=-dBitsPerPixel=8\" from\n    <tt>/var/spool/lpd/lp/postscript.cfg</tt> seems to\n    improve b/w printing for RedHat 6.0.<br>\n\n    This printer is apparently slower than the venerable BJC-4x00\n    series devices?<p>\n\n      Consumables/Refills: BC20 $36.99 BC-21e $52.99 BCI-21Bk $8.99 BCI-21Clr $21.99<p>"
+        }
+    }
+}

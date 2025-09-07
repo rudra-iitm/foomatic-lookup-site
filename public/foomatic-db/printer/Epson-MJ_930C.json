@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-MJ_930C",
+        "make": "Epson",
+        "model": "MJ 930C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 800.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

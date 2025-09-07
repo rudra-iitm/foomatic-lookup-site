@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_700",
+        "make": "Ricoh",
+        "model": "Aficio 700",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "pcl": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Reported to work well when setup with Red Hat's printtool and this driver by\nAlex Roger."
+        }
+    }
+}

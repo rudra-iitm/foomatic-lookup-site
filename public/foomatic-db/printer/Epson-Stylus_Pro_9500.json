@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Pro_9500",
+        "make": "Epson",
+        "model": "Stylus Pro 9500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://prographics.epson.com/products/stypro9000/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Needs testing, I (Till) did a short test in the Epson office in Paris,\n    but didn't get correct results.<p>"
+        }
+    }
+}

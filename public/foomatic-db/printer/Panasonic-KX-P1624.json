@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P1624",
+        "make": "Panasonic",
+        "model": "KX-P1624",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "epson",
+        "comments": {
+            "en": "I guess this is a dot matrix, but I have no idea about drivers etc.  Perhaps the\nusual Epson dot matrix drivers?\n<p>\nUntil we figure out how to run it, I've marked it partially.  It probably works\nsomewhat better than that; do tell...<p>\n\n      Consumables/Refills: ribbon, 24 pin print head<p>"
+        }
+    }
+}

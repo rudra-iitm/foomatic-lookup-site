@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Fuji_Xerox-DocuPrint_CM215",
+        "make": "Fuji Xerox",
+        "model": "DocuPrint CM215",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.fujixeroxprinters.com.hk/en/products/multifunctionprinters/docuprintcm215b.aspx",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:FUJI XEROX;CMD:HBPL;MDL:DocuPrint CM215;CLS:PRINTER;"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Fuji Xero DocuPrint CM215b (USB) or CM215fw (Net) is a color\n\tmultifunction printer.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

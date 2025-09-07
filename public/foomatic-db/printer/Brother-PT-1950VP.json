@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Brother-PT-1950VP",
+        "make": "Brother",
+        "model": "PT-1950VP",
+        "pcmodel": "BR195V",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "url": "http://www.brother.co.uk/cms.cfm/s_page/55570/s_level/17290/s_product/PT1950VP",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;CMD:PT-CBP;MDL:1950VP;CLS:PRINTER;",
+                "commandset": "PT-CBP",
+                "description": "Brother PT-1950VP",
+                "manufacturer": "Brother",
+                "model": "PT-1950VP"
+            }
+        },
+        "functionality": "D",
+        "driver": "ptouch",
+        "comments": {
+            "en": "Prints 10mm per second.<p>\n\n      Consumables/Refills: Black on White Thermal Paper\n\tFabric Tape Blue on White\n\tFlexi Tape\n\tIron on Black Tape\n\tSecurity Tape Black on White\n\tStrong Adhesive Tape\n\tTZ tape widths w: 1=6mm, 2=9mm, 3=12mm, 4=18mm\n\tTZ foreground colours f: 1=black, 2=red, 3=blue, 4=gold, 5=white,\n\tTZ background colours b: 1=clear, 2=white, 3=black, 4=red, 5=blue, 6=yellow, 7=green, 8=gold Part numbers: ALK251, \t\n      TZFAw, \n      TZFXbwf, \n      TZIYwf, \n      TZSEw, \n      TZSbwf<p>"
+        }
+    }
+}

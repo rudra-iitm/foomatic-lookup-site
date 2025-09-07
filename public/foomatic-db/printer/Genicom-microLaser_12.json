@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Genicom-microLaser_12",
+        "make": "Genicom",
+        "model": "microLaser 12",
+        "url": "ftp://ftp.tallygenicom.com/pub/genicom/docs/mL12/dsmL12.pdf",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 12\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_740",
+        "make": "Epson",
+        "model": "Stylus Color 740",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc740_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus COLOR 740",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 740"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Ed: The gimp-print \"stp\" driver also supports this printer with the best color results.  Plain 740's are a bit hard to find, but the 740i models designed to match the iMac are in fact no different and come in several colors...\n<p>\nDEPontius at usa.net is working on upp files for 700 series; his work is somewhat moot given the stp driver.\n<br>4 color CMYK printing with 48 jets per color.<p>\n\n      Consumables/Refills: Black Ink Cartridge, color cartridge, S020189<br>Color (CMY) Ink<p>"
+        }
+    }
+}

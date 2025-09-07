@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C5550_MFP",
+        "make": "Oki",
+        "model": "C5550 MFP",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com.sg/binaryData/22932/ODSP_C5550MFPr1.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": null
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 32\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26"
+        }
+    }
+}

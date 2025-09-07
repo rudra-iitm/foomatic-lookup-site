@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/97",
+        "arg_shortname": {
+            "en": "Weaving"
+        },
+        "arg_longname": {
+            "en": "Weaving"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "@necp%s.upp"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "necp2xX.upp",
+                "arg_defval": "ev/722"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/722",
+                    "ev_longname": {
+                        "en": "2-passes x-weaving"
+                    },
+                    "ev_shortname": {
+                        "en": "Weave2"
+                    },
+                    "ev_driverval": "2x"
+                },
+                {
+                    "@id": "ev/723",
+                    "ev_longname": {
+                        "en": "3-passes x-weaving"
+                    },
+                    "ev_shortname": {
+                        "en": "Weave3"
+                    },
+                    "ev_driverval": "2x6"
+                }
+            ]
+        }
+    }
+}

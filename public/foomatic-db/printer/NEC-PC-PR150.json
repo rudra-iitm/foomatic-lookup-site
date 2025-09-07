@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/NEC-PC-PR150",
+        "make": "NEC",
+        "model": "PC-PR150",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "320",
+                    "y": "320"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "pr150",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

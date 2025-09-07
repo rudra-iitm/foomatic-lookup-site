@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Oki-ML_321",
+        "make": "Oki",
+        "model": "ML 321",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "okiibm",
+        "comments": {
+            "en": "Works without problems in the IBM emulation mode.<p>\n    As the ML 320 but a large format (A3/11x17) printer.<p>\n\n      Consumables/Refills: ribbon<p>"
+        }
+    }
+}

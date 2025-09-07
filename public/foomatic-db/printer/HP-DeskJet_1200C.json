@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_1200C",
+        "make": "HP",
+        "model": "DeskJet 1200C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj1200c.html",
+        "lang": {
+            "pcl": {
+                "@level": "5c"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "aka CopyJet<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Postscript option (but no longer sold by HP).<p>\n\n    Also speaks HP-GL/2.<p>\n\n    Probably also works with color ljet driver.<p>\n\n    Reputed to be poor for photos, although this is bound to be better\n    with the \"gimp-print\"/\"stp\" driver.<p>\n\n      Consumables/Refills: four cartridges: Y,M,C, and B<p>"
+        }
+    }
+}

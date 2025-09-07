@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_100",
+        "make": "HP",
+        "model": "DesignJet 100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "5",
+                    "left": "5",
+                    "right": "5",
+                    "bottom": "12"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "cdnj500",
+        "comments": {
+            "en": "Large-format printer.<p>\n\n    According to user reports compatible to the DesignJet 100,\n    DesignJet 500, DesignJet 800, DesignJet 5000 and DesignJet 5500,\n    because they all use the same Windows driver. But be careful, the\n    DesignJet 120 uses a different Windows driver.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

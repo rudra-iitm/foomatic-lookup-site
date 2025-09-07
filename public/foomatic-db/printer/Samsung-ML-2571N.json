@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-2571N",
+        "make": "Samsung",
+        "model": "ML-2571N",
+        "url": "http://samsung.com/Products/PrinterandMultifunction/BlackWhiteLaserforHomeHomeOffice/ML_2571NXAA.asp",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Bug in Samsung-supplied PPD-file: OpenOffice.org 2.0 seems to have a problem with the ML-2570ps-ppd driver - it only prints in the top right-hand quarter of the page. OOo works fine with the generic PCL6 driver (pxlmono) and Postscript driver. No other applications known to have any problems with the ML-2570ps.ppd driver. This can be fixed by editing the ML-2570ps.ppd-file, which has a bug. Simply delete or edit the first line after \"*DefaultPaperDimension: A4\". It is saying something like *PaperDimension A4/A4: \"842 1191\", which is defining the paper size of A3. The correct entries for A4 are some lines below. So either delete this line or replace it by *PaperDimension A3/A3: \"842 1191\"\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-07"
+        }
+    }
+}

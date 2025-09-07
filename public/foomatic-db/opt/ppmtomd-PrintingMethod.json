@@ -1,0 +1,85 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-PrintingMethod",
+        "arg_shortname": {
+            "en": "PrintingMethod"
+        },
+        "arg_longname": {
+            "en": "Printing Method"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "500",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-printmode %s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-5000",
+                    "arg_defval": "ev/ppmtomd-PrintingMethod-Default"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-5500",
+                    "arg_defval": "ev/ppmtomd-PrintingMethod-Default"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Oki-DP_5000",
+                    "arg_defval": "ev/ppmtomd-PrintingMethod-Default"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-PrintingMethod-Default",
+                    "ev_longname": {
+                        "en": "According to media type"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": "Default"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintingMethod-DyeSub",
+                    "ev_longname": {
+                        "en": "Dye Sublimation"
+                    },
+                    "ev_shortname": {
+                        "en": "DyeSub"
+                    },
+                    "ev_driverval": "DyeSub"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintingMethod-Standard",
+                    "ev_longname": {
+                        "en": "Standard"
+                    },
+                    "ev_shortname": {
+                        "en": "Standard"
+                    },
+                    "ev_driverval": "Standard"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintingMethod-VPhoto",
+                    "ev_longname": {
+                        "en": "VPhoto"
+                    },
+                    "ev_shortname": {
+                        "en": "VPhoto"
+                    },
+                    "ev_driverval": "VPhoto"
+                }
+            ]
+        }
+    }
+}

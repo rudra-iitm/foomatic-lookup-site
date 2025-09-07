@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-SCX-8030_8040",
+        "make": "Samsung",
+        "model": "SCX-8030 8040",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,PDF,TIFF,FAX,FWV;MDL:SCX-8030 8040 Series;CLS:PRINTER;MODE:FAX,SCN;",
+                "manufacturer": "Samsung",
+                "model": "SCX-8030 8040 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_SCX-8030_8040_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.0 inches / 30.5 cm\n      (Wide format printer)<p>"
+        }
+    }
+}

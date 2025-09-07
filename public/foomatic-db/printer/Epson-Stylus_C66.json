@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C66",
+        "make": "Epson",
+        "model": "Stylus C66",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C66",
+                "manufacturer": "EPSON",
+                "model": "Stylus C66"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint"
+    }
+}

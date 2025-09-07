@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Fujitsu-FMLBP2xx_Page_Printer",
+        "make": "Fujitsu",
+        "model": "FMLBP2xx Page Printer",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "400",
+                    "y": "400"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "fmlbp",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

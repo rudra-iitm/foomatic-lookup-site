@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C301dn",
+        "make": "Oki",
+        "model": "C301dn",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.oki.co.uk/printers/colour-printers/workgroup-printers/detail.aspx?prodid=tcm:122-131699-16",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": null,
+        "functionality": "B",
+        "driver": "foo2hiperc",
+        "comments": {
+            "en": "The Oki C301dn is a networked color laser printer with a\n      2012 street price of $400 USD.  This printer is supported\n      by the foo2hiperc open software printer driver.<p>\n\n      Consumables: Separate toner cartridges black (2200 prints,\n      ~$32), yellow/magenta/cyan (1500 prints, ~$65 each), transfer\n      belt (60000 prints, ~$78), fuser unit (60000 prints, ~$78),\n      image drum (30000/20000 prints, ~$160)"
+        }
+    }
+}

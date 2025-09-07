@@ -1,0 +1,70 @@
+{
+    "driver": {
+        "@id": "driver/cdj880",
+        "name": "cdj880",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "hplip"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=cdj880%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "One version is good for black text, and the new version 1.4 is\n    good for photos (not suitable for text).<p>\n\n    The \"Normal\" printing quality only works on the HP DeskJet 840C,\n    842C, 880C, and 882C when one uses at least GNU Ghostscript\n    6.51.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DeskJet_810C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_812C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_815C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_832C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_840C",
+                    "comments": {
+                        "en": "Recommended for photo printing by c't - Magazin fuer\n    Computertechnik 21/2000."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_841C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_842C",
+                    "comments": {
+                        "en": "The color is off, and there are not enough adjustments possible\n    with this driver to fix it. This driver is apparently awful for\n    text."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_845C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_880C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_882C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_895C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_932C",
+                    "comments": {
+                        "en": "880C/882C/895C"
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_955C"
+                }
+            ]
+        }
+    }
+}

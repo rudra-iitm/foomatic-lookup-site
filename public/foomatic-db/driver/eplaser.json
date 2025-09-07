@@ -1,0 +1,106 @@
+{
+    "driver": {
+        "@id": "driver/eplaser",
+        "name": "eplaser",
+        "url": "http://avasys.jp/english/linux_e/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "NOPDF=1 gs -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    All the Epson laser printers understand PCL 5e, PCL 6, and/or\n    PostScript and so they should work with standard drivers, but this\n    driver provided by Epson uses the printer's own language Esc/Page\n    and gives some additional options to the supported\n    printers.<p>\n\n    The driver serves for black-and-white laser printers (Ghostscript\n    output devices \"eplXXXX\") as well as for color laser printers\n    (\"alcXXXX\"). It does not support the Epson EPL \"L\" series. There\n    you have to use the third-party driver \"<a\n    href=\"http://sourceforge.net/projects/epsonepl/\">epsonepl</a>\".<p>\n\n    Here some hints for older versions of the driver:<p>\n\n    Version 1.0.4 of this driver works only with Ghostscript 5.50, not\n    with Ghostscript 6.5x and newer.  For the new Ghostscript versions\n    use <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-6.51-Epson_eplaseren.patch\">this\n    patch</a> from Crutcher Dunnavant (Red Hat).<p>\n\n    Version 3.0.2 is prepared for both Ghostscript 5.x and 6.x. For\n    Ghostscript 7.x or newer a small fix is needed: Execute the\n    following command line in the main directory of the unpacked\n    driver source package:<p>\n\n    <tt>perl -p -i -e\n    \"s/GS_VERSION_MAJOR\\s*==\\s*6/GS_VERSION_MAJOR &gt;=\n    6/\" gdevescv.c gdevesmv.c</tt><p>\n\n    Then the driver also compiles with these versions of\n    Ghostscript.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-AL-C1900"
+                },
+                {
+                    "id": "printer/Epson-AL-C1900_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C2000"
+                },
+                {
+                    "id": "printer/Epson-AL-C2000_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C4000"
+                },
+                {
+                    "id": "printer/Epson-AL-C4000_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C4100"
+                },
+                {
+                    "id": "printer/Epson-AL-C8500"
+                },
+                {
+                    "id": "printer/Epson-AL-C8500PS"
+                },
+                {
+                    "id": "printer/Epson-AL-C8600"
+                },
+                {
+                    "id": "printer/Epson-AL-C8600_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C9100"
+                },
+                {
+                    "id": "printer/Epson-AL-M2300"
+                },
+                {
+                    "id": "printer/Epson-AL-M2310"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050plus"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050PSplus"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2120"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2500"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2500_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2750"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2750PS"
+                }
+            ]
+        }
+    }
+}

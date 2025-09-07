@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-6060N",
+        "make": "Samsung",
+        "model": "ML-6060N",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "PostScript requires PS SIMM\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-07"
+        }
+    }
+}

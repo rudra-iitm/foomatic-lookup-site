@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2140",
+        "make": "Brother",
+        "model": "HL-2140",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.brother.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "PJL,HBP",
+                "manufacturer": "Brother",
+                "model": "HL-2140 series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p>\n\n    Some comments of a user's experience:<p>\n\n    <i><b>Date : 09-03-2008 </b> I am using Kubuntu 8.04.1\n    LTS. The printer was Auto-Detected. I have not had to manually\n    install any drivers. The driver automatically being used is\n    \"Brother HL-2060 Foomatic/HL1250\". Prints clean at 300dpi. Prints\n    very good at 600dpi. I tried to print at 1200x600dpi. It gave me\n    blank pages. Excellent TEXT printer. Okay Graphical Printer. I\n    believe that if we can figure out a way to print at higher\n    resolution, graphical printing quality may improve!<p>\n\n    <b>Date : September 28th, 2008</b> Works with Ubuntu\n    8.04 with full support (even 1200x600 dpi). For having this\n    working properly, first install the LPR driver found here <a\n    href=\"http://solutions.brother.com/linux/sol/printer/linux/lpr_drivers.html.\">http://solutions.brother.com/linux/sol/printer/linux/lpr_drivers.html.</a>\n    Then create a directory for the PPD file with<p>\n\n    <tt>sudo mkdir /usr/share/cups/model</tt><p>\n\n    Then install the CUPS driver wrapper found here <a\n    href=\"http://solutions.brother.com/linux/sol/printer/linux/cups_drivers.html\">http://solutions.brother.com/linux/sol/printer/linux/cups_drivers.html</a>\n    with dpkg.<p>\n\n    After that, CUPS enables to set power savings and correct 1200 dpi\n    resolution. Enjoy!<p>\n\n    <b>Date: November 9, 2008</b> I use CentOS 5.2, and I\n    was not able to find a straight linux printer driver on the noted\n    web page.  However, on the CUPS driver page, there were links to\n    the CUPS driver and the CUPS wrapper driver pages, both of which\n    downloaded in .rpm format and installed perfectly and worked right\n    away.<p>\n\n    <b>Date: January 04, 2009</b> I use Mandriva 2008\n    Spring and Mandriva 2009. Using the above links I found the RPM\n    drivers AND wrappeers and they both installed fine. I then plugged\n    in the printer via USB and it was auto-detected and works\n    amazingly well.<p>\n\n    Again, Mandriva just seems to \"work\" in most cases, no \"mkdir\n    blah\", or \"chmod this file\", or even \"sudo run this or that\n    command\"... just install both rpm's and\n    autdo-detect... DONE!<p>\n\n    <b>08 Feb 2009</b> Kubuntu 8.10 - The printer was\n    recognized automatically as \"HL2140-0series\" and printing would\n    cause data to be sent to printer (its blue light blinked) but\n    nothing printed. Downloaded lpr and cups .deb packages from\n    Brother (use \"search\" on their Web site, Linux drivers are not\n    linked from the printer downloads page.) Follow Brother's\n    instructions carefully before installing the DEB package; you have\n    to manually create one directory (\"sudo mkdir\n    /usr/share/cups/model\"). When it is working the printer shows up\n    as \"HL2140\" instead of \"HL2140-series\".<p>\n\n    <b>26 Feb 2009</b> I want to re-enforce the previous note someone else made. <br />\n\n    1) Plug in the printer to the computer. Ignore all the prompts, hit cancel, etc.<br />\n\n    2) Download the LPR and CUPS deb files from this link (or search\n    for them on the site): <a\n    href=\"http://solutions.brother.com/linux/en_us/download_prn.html#HL-2140\">http://solutions.brother.com/linux/en_us/download_prn.html#HL-2140</a><br\n    />\n\n    3) <tt>sudo mkdir /usr/share/cups/model</tt><br />\n\n    4) <tt>sudo dpkg -i --force-all --force-architecture [the two debs you\n    downloaded]</tt><br />\n    <b>THE FORCE SWITCHES ARE VITAL FOR 64 BIT\n    MACHINES!</b><br />\n\n\n    5)Profit. The printer should work and show up as \"HL2140\".<p></i><p>\n\n      Consumables/Refills: TN330 or TN360 toner, DR360 drum<p>"
+        }
+    }
+}

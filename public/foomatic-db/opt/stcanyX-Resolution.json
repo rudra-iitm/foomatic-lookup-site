@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/stcanyX-Resolution",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "@stcany%s.upp"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "stcanyX.upp",
+                "arg_defval": "ev/stcanyX-Resolution-360dpi"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/stcanyX-Resolution-360dpi",
+                    "ev_longname": {
+                        "en": "360x360dpi, plain paper"
+                    },
+                    "ev_shortname": {
+                        "en": "360dpi"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/stcanyX-Resolution-720dpi",
+                    "ev_longname": {
+                        "en": "720x720dpi, plain paper"
+                    },
+                    "ev_shortname": {
+                        "en": "720dpi"
+                    },
+                    "ev_driverval": "_h"
+                }
+            ]
+        }
+    }
+}

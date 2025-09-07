@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_505J_Plus",
+        "make": "HP",
+        "model": "DeskJet 505J Plus",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "dj505j",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Imported from old Red Hat japanese printer database"
+        }
+    }
+}

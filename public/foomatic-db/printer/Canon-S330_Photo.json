@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S330_Photo",
+        "make": "Canon",
+        "model": "S330 Photo",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "functionality": "B",
+        "driver": "bj8XXYYZ.upp",
+        "drivers": {
+            "driver": {
+                "id": "bj8XXYYZ.upp"
+            }
+        }
+    }
+}

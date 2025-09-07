@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-QL-85G",
+        "make": "Samsung",
+        "model": "QL-85G",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "ml85p",
+        "comments": {
+            "en": "Reported by Pal Redly to work with Rildo's ml85p driver.  Unfortunately, it appears to hang every dozen pages or so."
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_7400",
+        "make": "Xerox",
+        "model": "Phaser 7400",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 40\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

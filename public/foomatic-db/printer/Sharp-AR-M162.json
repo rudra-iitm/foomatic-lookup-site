@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-M162",
+        "make": "Sharp",
+        "model": "AR-M162",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 16\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

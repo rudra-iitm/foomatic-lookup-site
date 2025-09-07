@@ -1,0 +1,46 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/145",
+        "arg_shortname": {
+            "en": "Manual"
+        },
+        "arg_longname": {
+            "en": "Manual Feed of Paper"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "160",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dManualFeed"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "eplaser",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "eplaser-jp",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md2k",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md5k",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_shortname_false": {
+            "en": "Automatic"
+        }
+    }
+}

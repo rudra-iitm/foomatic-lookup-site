@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Apollo-P-2250",
+        "make": "Apollo",
+        "model": "P-2250",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.myapollo.com/products/P2200.htm",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl3",
+        "comments": {
+            "en": "Apollo is a brand of HP, the printers use HP cartridges and papers, the\n    main difference is the special design of the printers.<p>\n\n    Comes only with a standard three-colour cartridge and prints black as\n    a mix of the three colours, you get either a black or a photo (black,\n    light cyan, light magenta) cartridge as an option.<p>\n\n    To get its maximum quality, use the HPIJS (\"hpijs-pcl3\")\n    driver. 600 dpi in colour is not supported by the\n    hardware.<p>\n\n    Same as the Apollo P-2200, but with additional Windows software\n    toys.<p>\n\n    Older comments:</p>\n\n    It is compatible to the <a\n    href=\"http://www.openprinting.org/pipermail/apollo-list/2001q1/000001.html\">HP\n    DeskJet 612C</a>.</p>\n\n    C't magazine reports:</p>\n\n    Stp was tested, but printed way too dark with a very colorful dot\n    pattern and uneven areas. Stp also has uneven line thicknesses in fonts,\n    but Uniprint is even worse here.</p>\n \n    They had the best results with the \"cdj550\" driver for\n    both text and photos.</p>"
+        }
+    }
+}

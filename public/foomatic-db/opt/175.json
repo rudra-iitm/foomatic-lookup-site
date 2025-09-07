@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/175",
+        "arg_shortname": {
+            "en": "ThisSpotColourPage"
+        },
+        "arg_longname": {
+            "en": "This Job is spot color page"
+        },
+        "arg_execution": {
+            "arg_group": "CombinedJobs",
+            "arg_order": "230",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-spotmode"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "ThisNotSpotColourPage"
+        }
+    }
+}

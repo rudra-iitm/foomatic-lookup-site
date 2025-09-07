@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-820",
+        "make": "Brother",
+        "model": "HL-820",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/eu-printer/info/hl1000/br_820.html",
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "hl7x0",
+        "comments": {
+            "en": "Documented by Brother as a Windows printer.<p>\n\n    2 MB Memory, not expandable.<p>\n\n    Works with Ghostscript hl7x0 driver at 600 DPI.\n    <p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: cartridge, drum<p>"
+        }
+    }
+}

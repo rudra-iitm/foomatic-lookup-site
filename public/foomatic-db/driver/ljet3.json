@@ -1,0 +1,97 @@
+{
+    "driver": {
+        "@id": "driver/ljet3",
+        "name": "ljet3",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ljet3%A%Z -sOutputFile=-%C -f -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Ghostscript's PCL 5 driver.<p>\n\n    Use the <a\n    href=\"show_driver.cgi?driver=ljet3d\">\"ljet3d\"</a>\n    Ghostscript driver for Duplex (double-sided printing)\n    support.<p>\n\n    A Ghostscript bug in the driver breaks paper input tray\n    selection. This <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pcl-patches/inputslot.patch\">patch</a>\n    for GPL Ghostscript 8.63 fixes the problem and allows to set the\n    input tray with the \"-dMediaPosition=X\" commmand line\n    option for Ghostscript. \"X\" is an integer number which\n    depends on the printer model and tray. For HP \"0\" is\n    usually the printer default, \"7\" automatic selection,\n    \"2\" manual feed, \"1\" the upper, and\n    \"4\" the lower tray. Note that for PCL 6/XL these numbers\n    are different. The patch is required for Ghostscript 8.63 and\n    older so that tray selection with the PPDs of this site works. The\n    bug is fixed in Ghostscript 8.64 or newer.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-HL-10V"
+                },
+                {
+                    "id": "printer/Brother-MFC-8300"
+                },
+                {
+                    "id": "printer/Canon-LBP-430",
+                    "comments": {
+                        "en": "works for up to 300dpi."
+                    }
+                },
+                {
+                    "id": "printer/Canon-LBP-4sx"
+                },
+                {
+                    "id": "printer/DEC-1800"
+                },
+                {
+                    "id": "printer/Epson-ActionLaser_1100"
+                },
+                {
+                    "id": "printer/Epson-EPL-5200",
+                    "comments": {
+                        "en": "You can't (not even with XPP) choose where to get your paper (upper or lower tray)."
+                    }
+                },
+                {
+                    "id": "printer/Epson-EPL-5200plus"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_8000"
+                },
+                {
+                    "id": "printer/Generic-PCL_5_Printer"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3P_w_PS",
+                    "comments": {
+                        "en": "Prints faster with ljet3. Recent applications print successfully with this driver."
+                    }
+                },
+                {
+                    "id": "printer/IBM-4029_030_LaserPrinter_10"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1500"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1550"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1550plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3400"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3400plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3500"
+                },
+                {
+                    "id": "printer/Kyocera-FS-400"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5500"
+                },
+                {
+                    "id": "printer/Kyocera-FS-850"
+                },
+                {
+                    "id": "printer/Tally-MT908"
+                }
+            ]
+        }
+    }
+}

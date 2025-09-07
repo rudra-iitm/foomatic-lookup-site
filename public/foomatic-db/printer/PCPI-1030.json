@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/PCPI-1030",
+        "make": "PCPI",
+        "model": "1030",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Works fine, although a little slow.\n<br>A Postscript option is available.<p>\n\n      Consumables/Refills: toner cart; hard to find?<p>"
+        }
+    }
+}

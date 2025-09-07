@@ -1,0 +1,56 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/Postscript-Color",
+        "arg_shortname": {
+            "en": "ColorMode"
+        },
+        "arg_longname": {
+            "en": "Output Color"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "150",
+            "arg_postscript": null
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "false",
+                    "driver": "Postscript",
+                    "arg_defval": "ev/Postscript-Color"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "Postscript",
+                    "printer": "printer/Fuji_Xerox-DocuPrint_CM305_df",
+                    "arg_defval": "ev/Postscript-Color"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/Postscript-Color",
+                    "ev_longname": {
+                        "en": "Color"
+                    },
+                    "ev_shortname": {
+                        "en": "Color"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/Postscript-Mono",
+                    "ev_longname": {
+                        "en": "Black and White"
+                    },
+                    "ev_shortname": {
+                        "en": "Mono"
+                    },
+                    "ev_driverval": "<</ProcessColorModel /DeviceGray>>setpagedevice"
+                }
+            ]
+        }
+    }
+}

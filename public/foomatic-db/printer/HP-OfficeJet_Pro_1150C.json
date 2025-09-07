@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_Pro_1150C",
+        "make": "HP",
+        "model": "OfficeJet Pro 1150C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "url": "http://www.officejet-support.com/oj1150c/",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HEWLETT-PACKARD;MDL:OFFICEJET PRO 1150C;CMD:PCL,MLC,PML,PJL;CLS:PRINTER;DES:Hewlett-Packard OfficeJet Pro 1150C;",
+                "commandset": "PCL,MLC,PML,PJL",
+                "description": "Hewlett-Packard OfficeJet Pro 1150C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "OFFICEJET PRO 1150C"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multi-function device: printer/scanner.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    To get its maximum quality, use the HPLIP driver,\n    since HPIJS 1.2 there is explicit support for this printer. 600\n    dpi in colour is not supported by the hardware.<p>\n\n    David Suffield, developer of HPIJS at HP, said about\n    the HPIJS 1.1 driver:<p>\n\n    <i>HPLIP (set up as for the DeskJet 600 series)\n    works for the Deskjet 850 series, much better than Gimp-Print, but\n    color was not as good as with \"cdj850\". Some people may\n    prefer \"cdj850\" for color, others may prefer\n    HPLIP for the speed.</i><p>\n\n    Works also with the cdj850 driver (recommended by the\n    \"hpoj\" team before there was HPIJS support) and also\n    with the cdj550 (and probably other) color deskjet\n    drivers.<p>\n\n    The \"cdj850\" driver is included with Ghostscript as of\n    Ghostscript version 6.0.<p>\n\n    Printhead alignment supported by the front panel menues.<p>"
+        }
+    }
+}

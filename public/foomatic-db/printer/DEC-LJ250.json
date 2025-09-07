@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LJ250",
+        "make": "DEC",
+        "model": "LJ250",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "declj250"
+    }
+}

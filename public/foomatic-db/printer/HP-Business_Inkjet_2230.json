@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/HP-Business_Inkjet_2230",
+        "make": "HP",
+        "model": "Business Inkjet 2230",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/go/businessinkjet",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PML,PJL",
+                "description": "Hewlett-Packard Business Inkjet 2230",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP BUSINESS INKJET 2230"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "Best output quality reachable with the HPLIP\n    driver.<p>\n\n    For basic printing functionality use the <a href=\"http://hplipopensource.com/\">HPIJS driver </a>. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplip.sf.net/\">HPLIP driver</a> (which includes HPIJS). <p>\n    \n    When used with HP's HPLIP driver, this printer\n    does the dithering and color adjustment internally. As input it\n    takes simple RGB data as used for screen display.<p>\n\n    Note that in contrary to most other current HP inkjet printers\n    there is no paper type sensor in the printer. You have to choose\n    one of the photo modes manually when using photo paper. There are\n    photo modes with 300 and 600 dpi.<p><p>\n\n      Consumables/Refills: 4 cartridges: one each for CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

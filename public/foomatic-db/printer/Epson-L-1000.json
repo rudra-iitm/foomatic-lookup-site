@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Epson-L-1000",
+        "make": "Epson",
+        "model": "L-1000",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "180"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "Used Redhat 6.1 Printtool.  Told it I had an Epson 24-pin.\nWorks like a charm with \"Type A\" resolutions.<p>\n\n      Consumables/Refills: fabric ribbon; can be reinked with third party tool<p>"
+        }
+    }
+}

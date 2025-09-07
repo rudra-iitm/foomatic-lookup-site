@@ -1,0 +1,132 @@
+{
+    "printer": {
+        "@id": "printer/Fuji_Xerox-DocuPrint_CM305_df",
+        "make": "Fuji Xerox",
+        "model": "DocuPrint CM305 df",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "top": "11",
+                    "bottom": "11",
+                    "left": "11",
+                    "right": "11"
+                },
+                "exception": [
+                    {
+                        "@PageSize": "A4",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "583.65",
+                        "top": "830.27"
+                    },
+                    {
+                        "@PageSize": "A5",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "407.91",
+                        "top": "583.65"
+                    },
+                    {
+                        "@PageSize": "B5",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "504.28",
+                        "top": "716.88"
+                    },
+                    {
+                        "@PageSize": "Letter",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "600.38",
+                        "top": "780.38"
+                    },
+                    {
+                        "@PageSize": "Legal",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "600.38",
+                        "top": "996.38"
+                    },
+                    {
+                        "@PageSize": "Executive",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "510.38",
+                        "top": "744.38"
+                    },
+                    {
+                        "@PageSize": "EnvMonarch",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "267.38",
+                        "top": "528.38"
+                    },
+                    {
+                        "@PageSize": "EnvDL",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "17.01",
+                        "right": "300.19",
+                        "top": "606.61"
+                    },
+                    {
+                        "@PageSize": "EnvC5",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "447.59",
+                        "top": "637.51"
+                    },
+                    {
+                        "@PageSize": "Env10",
+                        "absolute": null,
+                        "left": "11.62",
+                        "bottom": "11.62",
+                        "right": "285.38",
+                        "top": "672.38"
+                    }
+                ]
+            }
+        },
+        "url": "http://www.fujixeroxprinters.com.au/en/products/multifunctionprinters/docuprintcm305df.aspx",
+        "lang": {
+            "pjl": null,
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:FUJI XEROX;CMD:PJL,PCLXL,PCL,PDF,HBPL,POSTSCRIPT;MDL:DocuPrint CM305 df;DES:FUJI XEROX DocuPrint CM305 df;CLS:PRINTER;",
+                "commandset": "PJL,PCLXL,PCL,PDF,HBPL,POSTSCRIPT",
+                "description": "FUJI XEROX DocuPrint CM305 df",
+                "manaufacturer": "FUJI XEROX",
+                "model": "DocuPrint CM305 df"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "For access to all printer features including color management options use of the manufacturer supplied PPD file is recommended."
+        }
+    }
+}

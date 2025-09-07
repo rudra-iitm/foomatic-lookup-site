@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-MX-NB11",
+        "make": "Sharp",
+        "model": "MX-NB11",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Sharp;MDL:Sharp MX-NB11;",
+                "manufacturer": "Sharp",
+                "model": "Sharp MX-NB11"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Sharp",
+                    "ppd": "PPD/Sharp/shmxb201.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

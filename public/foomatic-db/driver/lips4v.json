@@ -1,0 +1,25 @@
+{
+    "driver": {
+        "@id": "driver/lips4v",
+        "name": "lips4v",
+        "url": "http://www.openprinting.org/download/japanese_printers/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=lips4v%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Driver for Canon's LIPS 4 printer language, vector version. There\n    is also a raster version (\"lips4\"). This driver is\n    included in <a\n    href=\"http://www.cups.org/ghostscript.php\">ESP\n    Ghostscript</a>.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-LBP-470"
+                },
+                {
+                    "id": "printer/Canon-LIPS-IVv"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "printer": {
+        "@id": "printer/Apple-StyleWriter_1200",
+        "make": "Apple",
+        "model": "StyleWriter 1200",
+        "mechanism": {
+            "inkjet": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "lpstyl"
+    }
+}

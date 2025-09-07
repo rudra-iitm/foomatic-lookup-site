@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Apple-LaserWriter_4_600",
+        "make": "Apple",
+        "model": "LaserWriter 4/600",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Bart De Gruyter (bdg at link42 dot net) posted on the Apple forum:\n       <p>\n       <pre>\n\nHi there,\n\nJust to let you know that the OpenPrinting database can be\nupdated. I am using the apple laserwriter 4/600 ps and it works\nperfectly!\n\nHow?\nThe laserwriter 4/600 ps has a localtalk connector and I print to\nit from a suse 7.2 installation on a plain pc. Between the pc and\nthe printer there is an AsanteTalk box which bridges plain ethernet\nand etherTalk (over localtalk).\n\npc eth0 ------ AsanteTalk ------ laserwriter 4/600 PS\n\nOn the linux pc I've made an entry under /var/spool called \nlaserwriter4600ps under /var/spool/laserwriter4600ps:\n\n- I've created a file called .paprc containing: (without the ---)\n\n---\nBDG's LaserWriter 4/600 PS:LaserWriter\n---\n\nmy /etc/printcap file contains:\n###\nlp|Link42 LaserWriter|BDG's LaserWriter 4/600 PS:\\\n        :sd=/usr/spool/laserwriter4600ps:\\\n        :lp=/dev/null:\\\n        :pl#63:pw#85:\\\n        :mx#0:\\\n        :sh:sf:\\\n        :lf=/var/log/lpd-errs:\\\n        :if=/etc/atalk/filters/ifpaprev:\\\n        :of=/etc/atalk/filters/ofpap:\\\n        :tf=/etc/atalk/filters/tfpaprev:\n###\n\nYou need the following rpm's (or newer versions) to get it\nworking, it might also work with earlier versions, file\nlocations may be different between versions...\n\nnetatalk-1.4.99-40\n\nBart De Gruyter\nwww.link42.net\n\n       </pre><p>\n\n      Consumables/Refills: toner cartridge, standard for engine<p>"
+        }
+    }
+}

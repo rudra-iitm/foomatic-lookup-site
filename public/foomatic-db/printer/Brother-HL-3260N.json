@@ -1,0 +1,87 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-3260N",
+        "make": "Brother",
+        "model": "HL-3260N",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.2",
+                    "left": "6.01",
+                    "right": "6.01",
+                    "bottom": "4.2"
+                },
+                "exception": [
+                    {
+                        "@PageSize": "Executive",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Legal",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Letter",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    }
+                ]
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother HL-3260N series;",
+                "manufacturer": "Brother",
+                "model": "Brother HL-3260N series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BRHL32_3_GPL.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "A3/Ledger, 32 pages A4/Letter per minute, PCL 6, and PostScript\n    Level 3, 32 MB (288 MB max.), one tray for 500 sheets (more trays\n    can be added), 100-sheet multi-purpose tray, parallel,\n    ethernet.<p>\n\n    Best results are probably obtained when the printer is used in\n    PostScript mode with a PPD file from the printer's driver\n    CD.<p>\n\n    You can also get an <a\n    href=\"http://solutions.brother.com/Library/sol/printer/7050/rpmfiles/brhl32_3-1.0.0-0-noarch.rpm\">RPM\n    with the PPD file</a> from <a\n    href=\"http://solutions.brother.com/linux/\">Brother</a>.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

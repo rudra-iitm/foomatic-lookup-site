@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5000",
+        "make": "HP",
+        "model": "LaserJet 5000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,MLC,PCL,PCLXL,POSTSCRIPT",
+                "description": "Hewlett-Packard LaserJet 5000 Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 5000 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD.\n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n    \n    PostScript L2,\nPCL5, PCL6\n<br>4/8/12MB std, depending on flavour.\nWide Format printer - if the paper size exists, it can print on it up to Ledger and A3\n<br> \nOptional accessories are duplexer, 250 sheet tray, 500 sheet tray, hard drive, extra memory\n<br>\nWorks well with the generic Postscript Driver<p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

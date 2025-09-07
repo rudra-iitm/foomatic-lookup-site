@@ -1,0 +1,165 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/pcl3-ConfigureEveryPage",
+        "arg_shortname": {
+            "en": "ConfigureEveryPage"
+        },
+        "arg_longname": {
+            "en": "Configure Every Page"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "121",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-No"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Sharp-AJ-1800",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-Yes"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Sharp-AJ-1805",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-Yes"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Sharp-AJ-2000",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-Yes"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Sharp-AJ-2005",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-Yes"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Xerox-DocuPrint_M750",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-Yes"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Xerox-DocuPrint_M760",
+                    "arg_defval": "ev/pcl3-ConfigureEveryPage-Yes"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pcl3-ConfigureEveryPage-No",
+                    "ev_longname": {
+                        "en": "No"
+                    },
+                    "ev_shortname": {
+                        "en": "No"
+                    },
+                    "ev_driverval": null,
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-1800"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-1805"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-2000"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-2005"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/Xerox-DocuPrint_M750"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/Xerox-DocuPrint_M760"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pcl3-ConfigureEveryPage-Yes",
+                    "ev_longname": {
+                        "en": "Yes"
+                    },
+                    "ev_shortname": {
+                        "en": "Yes"
+                    },
+                    "ev_driverval": "-dConfigureEveryPage",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-1800"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-1805"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-2000"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Sharp-AJ-2005"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Xerox-DocuPrint_M750"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Xerox-DocuPrint_M760"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

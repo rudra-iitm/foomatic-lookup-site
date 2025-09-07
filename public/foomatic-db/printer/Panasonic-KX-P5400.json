@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P5400",
+        "make": "Panasonic",
+        "model": "KX-P5400",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript"
+    }
+}

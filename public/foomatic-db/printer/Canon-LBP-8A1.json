@@ -1,0 +1,15 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-8A1",
+        "make": "Canon",
+        "model": "LBP-8A1",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "cjet"
+    }
+}

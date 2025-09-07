@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/157",
+        "arg_shortname": {
+            "en": "YOffset"
+        },
+        "arg_longname": {
+            "en": "Shift Output Vertically"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "260",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "-y %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pnm2ppa",
+                "arg_defval": "50"
+            }
+        },
+        "arg_max": "600",
+        "arg_min": "0"
+    }
+}

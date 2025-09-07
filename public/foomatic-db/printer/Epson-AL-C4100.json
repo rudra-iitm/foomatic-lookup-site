@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AL-C4100",
+        "make": "Epson",
+        "model": "AL-C4100",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e (gray"
+            },
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eplaser",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "eplaser"
+                },
+                {
+                    "id": "Postscript-Epson",
+                    "ppd": "PPD/Epson/epalc410.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Epson provides free (LGPL) drivers for this printer. With this\n      the printer works to its full extent.<p>\n\n      This printer has one imaging drum and one laser for each colour\n      and therefore has the same speed in colour as in bw (16\n      pages/min max.).<p><p>"
+        }
+    }
+}

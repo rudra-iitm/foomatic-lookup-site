@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-2000",
+        "make": "Epson",
+        "model": "LP-2000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "240"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "lp2000",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

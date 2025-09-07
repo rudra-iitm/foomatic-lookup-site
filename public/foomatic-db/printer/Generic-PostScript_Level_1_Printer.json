@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Generic-PostScript_Level_1_Printer",
+        "make": "Generic",
+        "model": "PostScript Level 1 Printer",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "1"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript1",
+        "comments": {
+            "en": "This entry allows you to use any PostScript level 1 printer with\n    Foomatic, at least with the basic options.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic\n    database</a>. See the \"<a\n    href=\"show_driver.cgi?driver=Postscript1\">Postscript1</a>\"\n    driver entry for more information.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your\n    printer.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

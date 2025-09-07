@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S300",
+        "make": "Canon",
+        "model": "S300",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://consumer.usa.canon.com/printers/s300/index.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer is similar to the Canon BJC 8200 and S800. Installed as\n      an S800 it prints with 600 dpi.<p>\n\n      Consumables/Refills: Black cartridge BCI-24Bk (130 pages at 5% coverage) and CMY cartridge BCI-24C (170 pages at 5% coverage each colour)<p>"
+        }
+    }
+}

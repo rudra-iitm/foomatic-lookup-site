@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/167",
+        "arg_shortname": {
+            "en": "HalfTone"
+        },
+        "arg_longname": {
+            "en": "HalfTone"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "150",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-halftone"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "1"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "NoHalfTone"
+        }
+    }
+}

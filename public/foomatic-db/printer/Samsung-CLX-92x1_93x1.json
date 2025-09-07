@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLX-92x1_93x1",
+        "make": "Samsung",
+        "model": "CLX-92x1 93x1",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,FAX,FWV,EXT;MDL:CLX-92x1 93x1 Series;CLS:PRINTER;",
+                "manufacturer": "Samsung",
+                "model": "CLX-92x1 93x1 Series"
+            },
+            "snmp": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,PDF,TIFF,JPEG,FAX,FWV,EXT;MDL:CLX-92x1 93x1 Series;CLS:PRINTER;MODE:FAX2,SCN;",
+                "manufacturer": "Samsung",
+                "model": "CLX-92x1 93x1 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_CLX-92x1_93x1_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>"
+        }
+    }
+}

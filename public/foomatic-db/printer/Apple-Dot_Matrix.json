@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Apple-Dot_Matrix",
+        "make": "Apple",
+        "model": "Dot Matrix",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "120",
+                    "y": "72"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "appledmp"
+    }
+}

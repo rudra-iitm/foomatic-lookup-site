@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_3225",
+        "make": "Canon",
+        "model": "imageRunner 3225",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "LIPSLX,PS,PostScript,PCL,PJL,CPCA,1284.4-2000",
+                "manufacturer": "Canon",
+                "model": "iR3225 (UFR II)"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

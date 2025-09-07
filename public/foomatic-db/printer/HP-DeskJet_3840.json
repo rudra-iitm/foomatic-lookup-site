@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_3840",
+        "make": "HP",
+        "model": "DeskJet 3840",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p><p>\n\n      Consumables/Refills: Separate black+color cartridge, used simultaniously<p>"
+        }
+    }
+}

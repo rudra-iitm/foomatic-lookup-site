@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_8200",
+        "make": "HP",
+        "model": "PhotoSmart 8200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "www.hp.com",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "MLC,PCL,PML,DW-PCL,DYN,DESKJET",
+                "description": "hp photosmart 8200",
+                "manufacturer": "hp",
+                "model": "photosmart 8200"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "It has ports on the side for inserting SmartMedia, CompactFlash,\n    IBM Microdrive, SD, or Sony Memory Stick digital \"film\" and\n    has a color LCD panel which displays your photos (as a digital\n    camera does) so that you can select pictures to print easily. This\n    way one can use the device as a digital photo lab without\n    PC.<p>\n\n    It has a USB port on its front side to directly connect a digital\n    camera (HP only).<p>\n\n    Best output quality reachable with the HPLIP driver\n    (printer compatible to HP DeskJet 990C), especially the 4800-dpi\n    high resolution mode gives excellent photo quality.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and ink cartridge type and does\n    appropriate dithering and colour adjustment internally, controlled\n    by the hardware. So even when Ghostscript with the\n    HPLIP driver only renders the image with 300 or 600\n    dpi, the higher resolutions are used for the internal\n    dithering. So if you insert photo paper, the printer will print in\n    photo quality, no paper type choice in the driver's options\n    is needed. There is also a special high resolution mode where the\n    image is rendered in 1200 dpi and interpolated to 4800x1200 dpi by\n    the hardware, without paper detection, intended for photo paper\n    only.<p>\n\n    This printer supports an optional duplex unit.<p>\n\n    The key focus of the printer is to address the competitive market with regards to individual ink supplies.<p><p>\n\n      Consumables/Refills: Refill: 1 black, 1 cyan, 1 magenta, 1 yellow, 1 light cyan, 1 light magenta<p>"
+        }
+    }
+}

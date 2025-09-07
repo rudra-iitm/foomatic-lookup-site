@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Super_6e",
+        "make": "Oki",
+        "model": "Super 6e",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ENHANCED PCL5,PJL,EPSONFX,IBMP",
+                "description": "OKIDATA OKIPAGE 6e (HP4P)",
+                "model": "OKIDATA OKIPAGE 6e"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet4",
+        "comments": {
+            "en": "prints 300x300 using ljet4.<p>\n\n      Consumables/Refills: toner US$25, 2k pages; drum ~US$125, 12K pages<p>"
+        }
+    }
+}

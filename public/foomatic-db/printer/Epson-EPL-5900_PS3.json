@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5900_PS3",
+        "make": "Epson",
+        "model": "EPL-5900 PS3",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/epl5900/",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Epson;MDL:EPL-5900 PS3;",
+                "manufacturer": "Epson",
+                "model": "EPL-5900 PS3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Epson",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "eplaser"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Epson",
+                    "ppd": "PPD/Epson/epl5900.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "PostScript version of the Epson EPL-5900<p>\n\n      Epson provides a free (LGPL) driver for this printer. With this\n      the printer should work to its full extent.<p>\n\n      Unfortunately, Epson's \"eplaser\" driver (or\n      perhaps the printer's firmware) is somewhat buggy. It\n      prints most documents, but images converted to PostScript with\n      \"convert\" or by the built-in filters of CUPS leads\n      often to incorrect printouts (stretched by a factor of 3 or 4 in\n      horizontal direction). So it is recommended to use this printer\n      in PostScript mode, uncompressed PPD files are on the CD\n      delivered with the PostScript module, use the PPD files for\n      Windows NT 4.0, they should work with all spoolers/applications\n      under free OS.<p>\n\n      Further tests with the \"pxlmono\" driver did not show\n      this problem. The printer works perfectly in 1200 dpi with this\n      driver, only full-page photos take very long to be\n      rendered.<p><p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

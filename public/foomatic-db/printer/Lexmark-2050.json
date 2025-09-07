@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-2050",
+        "make": "Lexmark",
+        "model": "2050",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/2050.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "LEXWPS",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark Color Jetprinter 2050"
+            }
+        },
+        "functionality": "D",
+        "driver": "c2050"
+    }
+}

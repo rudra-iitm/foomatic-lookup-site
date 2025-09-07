@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_370",
+        "make": "HP",
+        "model": "PhotoSmart 370",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "www.hp.com",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This is a small (4 x 6 inch/10 x 15 cm/A6) printer especially for\n    printing photos taken with digital cameras. It has ports on the\n    side for inserting SmartMedia, CompactFlash, Memory Stick, and\n    Secure Digital & MultiMedia digital \"film\" and has an\n    LCD panel that lets you select pictures from the \"film\"\n    to print, so one can use the device as a digital photo lab without\n    PC. In contrary to the P100 and P130 this device has a built-in\n    color LCD screen (as a digital camera) so you can choose the photos\n    easily without index print and without using the camera's screen\n    (DPOF facility).<p>\n\n    Due to the small paper size and not using black ink its usability\n    for PC documents is very limited, but it works with various PCL\n    drivers which support 3-ink CMY and A6/Postcard/4x6-Photo paper\n    size. If the driver does not support such small paper formats the\n    upper left corner of the page is printed. The best quality you\n    will get with HPLIP which supports this printer\n    explicitly since version 1.2<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, higher resolutions are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi and\n    interpolated to 4800x1200 dpi by the hardware, without paper\n    detection, intended for photo paper only.<p>\n\n    Border-less (full bleed) printing is supported with the\n    HPLIP driver.<p>\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> \n    (which includes HPIJS). <p><p>\n\n      Consumables/Refills: Refill: 1 CMY color cartridge<p>"
+        }
+    }
+}

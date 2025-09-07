@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-6000",
+        "make": "Ricoh",
+        "model": "6000",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "r4081"
+    }
+}

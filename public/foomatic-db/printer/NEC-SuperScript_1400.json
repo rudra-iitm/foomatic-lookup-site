@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_1400",
+        "make": "NEC",
+        "model": "SuperScript 1400",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": null
+        }
+    }
+}

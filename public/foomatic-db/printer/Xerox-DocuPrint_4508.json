@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_4508",
+        "make": "Xerox",
+        "model": "DocuPrint 4508",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Had trouble printing various\nsample files from gs distribution\nbut adding 4 Mb RAM solved it."
+        }
+    }
+}

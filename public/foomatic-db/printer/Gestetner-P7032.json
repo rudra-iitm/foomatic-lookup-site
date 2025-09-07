@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Gestetner-P7032",
+        "make": "Gestetner",
+        "model": "P7032",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.gestetner.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Gestetner",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Gestetner",
+                "ppd": "PPD/Gestetner/PS/Gestetner-P7032_PS.ppd"
+            }
+        },
+        "comments": {
+            "en": "Optional Postscript support. <p>\n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for commonly asked questions. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 32."
+        }
+    }
+}

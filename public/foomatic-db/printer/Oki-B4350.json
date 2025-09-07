@@ -1,0 +1,55 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4350",
+        "make": "Oki",
+        "model": "B4350",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/B4250-B4350Home.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/ok4350u1.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 22\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-06-23"
+        }
+    }
+}

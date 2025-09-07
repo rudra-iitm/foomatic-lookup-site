@@ -1,0 +1,109 @@
+{
+    "driver": {
+        "@id": "driver/stcolor",
+        "name": "stcolor",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=stcolor%A%Z -sOutputFile=- %B -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-MJ_520C",
+                    "comments": {
+                        "en": "Works with the \"-dMicroweave\" option."
+                    }
+                },
+                {
+                    "id": "printer/Epson-SQ_1170"
+                },
+                {
+                    "id": "printer/Epson-Stylus_800",
+                    "comments": {
+                        "en": "Probably this printer works also\nwith this driver, this would give\nbetter dithering. Try it."
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_1520",
+                    "comments": {
+                        "en": "Works at 360x360."
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_200"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_300",
+                    "comments": {
+                        "en": "Works with the \"-dMicroweave\" option."
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_3000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_400",
+                    "comments": {
+                        "en": "Works best with -dSoftweave parameter"
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_440"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_600"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_640"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_670"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_740",
+                    "comments": {
+                        "en": "Probably best for quick b/w prints?"
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_800",
+                    "comments": {
+                        "en": "Probably best for quick b/w prints?"
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_I"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_IIs"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_PRO"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_750",
+                    "comments": {
+                        "en": "Probably good for black and white."
+                    }
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_XL"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Scan_2500"
+                }
+            ]
+        }
+    }
+}

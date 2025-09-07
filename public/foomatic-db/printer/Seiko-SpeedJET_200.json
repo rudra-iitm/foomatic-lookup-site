@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Seiko-SpeedJET_200",
+        "make": "Seiko",
+        "model": "SpeedJET 200",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Another Olivetti JP350 clone.<p>\n\n      Consumables/Refills: Cartridge GBP5, GBP25 with printhead<p>"
+        }
+    }
+}

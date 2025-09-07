@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/HP-CP3525n",
+        "make": "HP",
+        "model": "CP3525n",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/be/fr/sm/WF25a/18972-18972-3328060-236268-236268-3690646.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pdf": {
+                "@level": "1.4"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "HP Color LaserJet CP3525"
+            }
+        },
+        "functionality": "A"
+    }
+}

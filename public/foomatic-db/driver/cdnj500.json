@@ -1,0 +1,68 @@
+{
+    "driver": {
+        "@id": "driver/cdnj500",
+        "name": "cdnj500",
+        "url": "http://www.openprinting.org/download/printing/ghostscript-cdnj500-patches/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=cdnj500%A%Z -sOutputFile=- -",
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "relative": null,
+                    "top": "0",
+                    "left": "0",
+                    "right": "0",
+                    "bottom": "0"
+                }
+            }
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    This driver is derived from HP's <a\n    href=\"show_driver.cgi?driver=chp2200\">chp2200</a>\n    driver. Timur Maximov has posted a patch for introducing this\n    driver into GPL Ghostscript 8.63 on the <a\n    href=\"http://forums.linux-foundation.org/read.php?20,7942,7942#msg-7942\">forums</a>. Patches\n    for both GPL Ghostscript 8.63 and 8.64 are available on the\n    download URL. GPL Ghostscript 8.65 will already contain the\n    driver.<p>\n\n    The new driver will simply use the different page start and end\n    sequences needed by the DesignJet 500 and 800 but otherwise be the\n    same as \"chp2200\".<p>\n\n    The driver can be added to the Ghostscript source of the versions\n    8.63 and 8.64 by applying the appropriate patches. Note that for\n    Ghostscript 8.64 you need to re-run \"./autogen.sh\" after applying\n    the patch. Or get the Ghostscript under development from the\n    Subversion repositories, there the driver is already\n    included.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DesignJet_100"
+                },
+                {
+                    "id": "printer/HP-DesignJet_100plus"
+                },
+                {
+                    "id": "printer/HP-DesignJet_110"
+                },
+                {
+                    "id": "printer/HP-DesignJet_120"
+                },
+                {
+                    "id": "printer/HP-DesignJet_130"
+                },
+                {
+                    "id": "printer/HP-DesignJet_30"
+                },
+                {
+                    "id": "printer/HP-DesignJet_500"
+                },
+                {
+                    "id": "printer/HP-DesignJet_5000"
+                },
+                {
+                    "id": "printer/HP-DesignJet_500ps"
+                },
+                {
+                    "id": "printer/HP-DesignJet_5500"
+                },
+                {
+                    "id": "printer/HP-DesignJet_70"
+                },
+                {
+                    "id": "printer/HP-DesignJet_800"
+                },
+                {
+                    "id": "printer/HP-DesignJet_90"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-5050",
+        "make": "Brother",
+        "model": "HL-5050",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.2",
+                    "left": "6.01",
+                    "right": "6.01",
+                    "bottom": "4.2"
+                },
+                "exception": [
+                    {
+                        "@PageSize": "Executive",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Legal",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Letter",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    }
+                ]
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl5050/hl5050_ove.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother HL-5050 series;",
+                "manufacturer": "Brother",
+                "model": "Brother HL-5050 series"
+            },
+            "usb": {
+                "commandset": "PJL,PCL,PCLXL,POSTSCRIPT",
+                "manufacturer": "Brother",
+                "model": "HL-5050 series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BR5050_2_GPL.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "16 pages per minute, PCL 5e, PCL 6, and PostScript Level 3, 16 MB\n    (144 MB max.), one tray for 250 sheets (max A4/Legal, a second\n    tray can be added), 50-sheet multi-purpose tray, parallel, USB\n    2.0.<p>\n\n    There is a Brother HL-5050LT with a second 250-sheet tray\n    included.<p>\n\n    Best results are probably obtained when the printer is used in\n    PostScript mode with a PPD file from the printer's driver\n    CD.<p>\n\n    For the PCL mode see the page of the <a\n    href=\"show_printer.cgi?recnum=Brother-HL-5040\">Brother\n    HL-5040</a>.<p>\n\n    Brother provides a <a\n    href=\"http://solutions.brother.com/linux/\">driver</a>,\n    too, but binary-only and only for LPD/LPRng. According to the\n    printout quality it is based on the \"ljet4\" Ghostscript\n    driver. \"pxlmono\", \"gimp-print\" (600 dpi), and \"hpijs-pcl5e\" (600 dpi)\n    give a better grayscale quality and all special features of the\n    printer are accessible by PJL commands.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

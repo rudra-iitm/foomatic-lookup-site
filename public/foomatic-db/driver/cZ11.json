@@ -1,0 +1,26 @@
+{
+    "driver": {
+        "@id": "driver/cZ11",
+        "name": "cZ11",
+        "url": "http://www.kornblum.i-p.com/Z11/LexmarkZ11.html",
+        "obsolete": {
+            "@replace": "cZ11somsom"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -dPARANOIDSAFER -sDEVICE=bitcmyk -r600x600%A%Z -sOutputFile=- -dBATCH -q -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE - | cZ11"
+        },
+        "comments": {
+            "en": "Provides 600dpi color printing on a Lexmark Z11, using Ghostscript\n    internal dithering.  Doesn't support black-only printing, use the\n    \"cZ11somsom\" driver instead.<p>\n\n    Warning: This driver is known not to work with the Z31 and Z51.\n    In fact, it is known to hose those printers' flash in some\n    circumstances, making your nearly useless Lexmark inkjet 100%\n    useless!"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Lexmark-Z11",
+                "comments": {
+                    "en": "Color only at 600dpi."
+                }
+            }
+        }
+    }
+}

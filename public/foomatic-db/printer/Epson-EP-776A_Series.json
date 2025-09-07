@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EP-776A_Series",
+        "make": "Epson",
+        "model": "EP-776A Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:EP-776A Series;CLS:PRINTER;DES:EPSON EP-776A Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON EP-776A Series",
+                "manufacturer": "EPSON",
+                "model": "EP-776A Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201307j",
+        "drivers": {
+            "driver": {
+                "id": "epson-201307j"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

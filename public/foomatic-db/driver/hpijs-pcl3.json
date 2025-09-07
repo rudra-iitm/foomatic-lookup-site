@@ -1,0 +1,86 @@
+{
+    "driver": {
+        "@id": "driver/hpijs-pcl3",
+        "name": "hpijs-pcl3",
+        "url": "http://hplipopensource.com/",
+        "supplier": "Hewlett-Packard",
+        "manufacturersupplied": "HP|Apollo",
+        "license": "BSD",
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "https://launchpad.net/hplip",
+                "@level": "voluntary",
+                "#text": "HPLIP support and bug tracking system"
+            }
+        },
+        "shortdescription": {
+            "en": "HP's HPIJS driver - PPDs for HP's Apollo- and Sony-branded inkjet printers"
+        },
+        "functionality": {
+            "maxresx": "600",
+            "maxresy": "300",
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100",
+            "speed": "70"
+        },
+        "execution": {
+            "ijs": null,
+            "nopjl": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ijs -sIjsServer=hpijs%A%B%C -dIjsUseOutputFD%Z -sOutputFile=- -",
+            "margins": {
+                "general": {
+                    "unit": "in",
+                    "relative": null,
+                    "top": "0.125",
+                    "left": "0.25",
+                    "right": "0.25",
+                    "bottom": "0.67"
+                },
+                "exception": {
+                    "@PageSize": "A4",
+                    "relative": null,
+                    "left": "0.135",
+                    "right": "0.135"
+                }
+            },
+            "ppdentry": "*DefaultResolution: 600dpi"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n   HPIJS is HP's universal printer driver for most of their\n   non-PostScript printers. It comes as a part of HPLIP, HP Linux\n   Imaging and Printing. HPLIP is a complete driver suite which also\n   includes scanning, copying, and fax drivers for multi-function\n   devices and also the printer maintenance and management utility\n   hp-toolbox.<P>\n\n   The HPIJS driver is only one of the two flavors of HP's printer\n   driver. HP has recently added the CUPS Raster driver hpcups and\n   uses this driver by default currently. HPIJS is still included in\n   HPLIP, but more for backward compatibility.<P>\n\n   HP provides PPD files for all their supported printers and both\n   driver flavors, but unfortunately, they dropped support for their\n   printers which they marketed under the Apollo and Sony brand\n   names. This entry produces appropriate PPDs to get HPIJS support\n   back for these printers, so that they work with full printing\n   functionality. Especially the quality of colour printing is much\n   higher than the quality of other drivers which support the Apollo-\n   and Sony-branded printers.<P>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apollo-P-2100"
+                },
+                {
+                    "id": "printer/Apollo-P-2150"
+                },
+                {
+                    "id": "printer/Apollo-P-2200"
+                },
+                {
+                    "id": "printer/Apollo-P-2250"
+                },
+                {
+                    "id": "printer/Apollo-P-2500"
+                },
+                {
+                    "id": "printer/Apollo-P-2550"
+                },
+                {
+                    "id": "printer/Apollo-P-2600"
+                },
+                {
+                    "id": "printer/Apollo-P-2650"
+                },
+                {
+                    "id": "printer/Sony-IJP-V100"
+                }
+            ]
+        }
+    }
+}

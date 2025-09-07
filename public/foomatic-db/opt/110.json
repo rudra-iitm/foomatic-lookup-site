@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/110",
+        "arg_shortname": {
+            "en": "Yshift"
+        },
+        "arg_longname": {
+            "en": "Shift Output Vertically (in 1/300 inch)"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "130",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-y %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "cjet",
+                "arg_defval": "1"
+            }
+        },
+        "arg_max": "300",
+        "arg_min": "-300"
+    }
+}

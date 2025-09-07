@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Oki-DP_5000",
+        "make": "Oki",
+        "model": "DP 5000",
+        "mechanism": {
+            "transfer": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "ppmtomd",
+        "comments": {
+            "en": "J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files (\"ppmtomd\"). He started\n    hacking ghostscript, but abandoned it.<p>\n\n    In reality this is the Alps MD-5000. In Europe it is sold by\n    Okidata. I found this information in the README of Julian\n    Bradfield's <a\n    href=\"show_driver.cgi?driver=ppmtocpva\">ppmtocpva</a>\n    driver. Perhaps the printer works also with this driver, but it\n    works with Julian Bradfield's new <a\n    href=\"show_driver.cgi?driver=ppmtomd\">ppmtomd</a>\n    driver.<p>\n\n      Consumables/Refills: several types of ribbon cartridges, black, cyan, magenta, yellow<p>"
+        }
+    }
+}

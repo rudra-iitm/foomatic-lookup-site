@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_420C",
+        "make": "HP",
+        "model": "DeskJet 420C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Color resolution is 300x300dpi (color was not tested).<p>\n\n    Manual change between color and B/W cartdriges.<p>\n\n    See also the HP DeskJet 400 entry for various driver\n    options.<p>\n\n    This printer seems to have a 600x300-dpi-REt grayscale mode which\n    is probably not accessable with free software.<p><p>\n\n      Consumables/Refills: Ink cartridges B/W:HP51626A/HP51626G Color:HP51625A<p>"
+        }
+    }
+}

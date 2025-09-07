@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LN07",
+        "make": "DEC",
+        "model": "LN07",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": null
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Works good as a Postscript printer,\nand can speak PCL 4 as well.  Slow\nas a dog though<p>\n\n      Consumables/Refills: toner (approx. $35)<p>"
+        }
+    }
+}

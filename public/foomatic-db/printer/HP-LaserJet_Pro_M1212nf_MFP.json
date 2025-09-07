@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_Pro_M1212nf_MFP",
+        "make": "HP",
+        "model": "LaserJet Professional M1212nf MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            },
+            "consumables": {
+                "comments": {
+                    "en": "Cartridge containing toner and imaging drum"
+                }
+            }
+        },
+        "url": "http://www.shopping.hp.com/en_US/home-office/-/products/Printers/HP-LaserJet/CE841A",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet Professional M1212nf;CMD:ACL;CLS:PRINTER;DES:HP LaserJet Professional M1212nf;FWVER:20060721;",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet Professional M1212nf MFP",
+                "commandset": "XQX"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2xqx",
+        "comments": {
+            "en": "This printer is supported by the foo2xqx free software printer driver.\n    <p>"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Dell-M5200",
+        "make": "Dell",
+        "model": "M5200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "www.dell.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "1200 image quality, 600 x 600 dpi; 300MHz processor; 64MB of memory expandable to 272MB"
+        }
+    }
+}

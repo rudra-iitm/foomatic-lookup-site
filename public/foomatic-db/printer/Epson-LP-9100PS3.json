@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-9100PS3",
+        "make": "Epson",
+        "model": "LP-9100PS3",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "proprietary": null,
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Epson;MDL:LP-9100PS3;",
+                "manufacturer": "Epson",
+                "model": "LP-9100PS3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Epson",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Epson",
+                "ppd": "PPD/Epson/eplp9100.ppd"
+            }
+        },
+        "comments": {
+            "en": "Epson provides a free (LGPL) driver for this printer. With this\n      the printer should work to its full extent.<p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>\n    \n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 30 pages/min<p>"
+        }
+    }
+}

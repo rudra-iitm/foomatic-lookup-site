@@ -1,0 +1,25 @@
+{
+    "driver": {
+        "@id": "driver/pentaxpj",
+        "name": "pentaxpj",
+        "url": "https://www.openprinting.org/download/printing/pentaxpj/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "pentaxpj%B"
+        },
+        "comments": {
+            "en": "Driver for the Pentax PocketJet series written by Rildo Pragana\n    (author of the \"ml85p\" driver for Samsung laser\n    winprinters) in cooperation with Pentax.<p>\n \n    Rildo's announcement for this driver:<p>\n\n    <i>Pentax Technologies manufacture a nice family of printers,\n    PocketJet II and PocketJet 200. They signed a contract with me for\n    developing a Linux driver for their printers, to be released under\n    GPL. So they are good guys, don't you think so? I do. I'm still\n    working on it, but here is the first public release of the driver,\n    with graphical install and configuration tools. If you have a\n    laptop or notebook computer, those printers are a must to\n    have. They operate on thermal paper, so no ink cartdriges to\n    change. And its size and weight are very convenient. I know\n    because I use mine :^)</i><p>\n\n    The driver is a wrapper around Ghostscript, so you only call the\n    driver executable with some simple options to print from the\n    command line. This makes it also very convenient to use the driver\n    without spooler, which is important on PDAs with limited memory\n    space."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Pentax-PocketJet_200"
+                },
+                {
+                    "id": "printer/Pentax-PocketJet_II"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Compaq-IJ1200",
+        "make": "Compaq",
+        "model": "IJ1200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This printer is reported to work with the drivers for the Lexmark\n    Z42, so it is probably a rebadged Lexmark Z42.<p>\n\n    The Compaq cartridges have a little plastic tab to make them\n    incompatible with Lexmark cartridges.  Otherwise they are the\n    same.  I think you can break off the tab and use the other brand?<p>\n\n      Consumables/Refills: color and black or photo cart.<p>"
+        }
+    }
+}

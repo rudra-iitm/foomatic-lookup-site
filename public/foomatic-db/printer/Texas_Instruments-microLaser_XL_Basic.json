@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Texas_Instruments-microLaser_XL_Basic",
+        "make": "Texas Instruments",
+        "model": "microLaser XL Basic",
+        "url": "ftp://ftp.tallygenicom.com/pub/genicom/docs/ti/dsTI-mLXL.pdf",
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Requires at least 1 MB memory for PostScript\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

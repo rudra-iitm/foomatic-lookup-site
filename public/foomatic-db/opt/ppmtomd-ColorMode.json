@@ -1,0 +1,100 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-ColorMode",
+        "arg_shortname": {
+            "en": "ColorMode"
+        },
+        "arg_longname": {
+            "en": "Color Mode"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "130",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-datamode %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "ev/ppmtomd-ColorMode-Colour"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-ColorMode-Black",
+                    "ev_longname": {
+                        "en": "Monochrome printing, standard black cartridge"
+                    },
+                    "ev_shortname": {
+                        "en": "Black"
+                    },
+                    "ev_driverval": "Black"
+                },
+                {
+                    "@id": "ev/ppmtomd-ColorMode-Cassette",
+                    "ev_longname": {
+                        "en": "Do not care about cartridges, colors one page at"
+                    },
+                    "ev_shortname": {
+                        "en": "Cassette"
+                    },
+                    "ev_driverval": "Cassette"
+                },
+                {
+                    "@id": "ev/ppmtomd-ColorMode-Colour",
+                    "ev_longname": {
+                        "en": "Colors one page at a time"
+                    },
+                    "ev_shortname": {
+                        "en": "Colour"
+                    },
+                    "ev_driverval": "Colour"
+                },
+                {
+                    "@id": "ev/ppmtomd-ColorMode-EconoBlack",
+                    "ev_longname": {
+                        "en": "Monochrome printing, re-usable economy black cartr"
+                    },
+                    "ev_shortname": {
+                        "en": "EconoBlack"
+                    },
+                    "ev_driverval": "EconoBlack"
+                },
+                {
+                    "@id": "ev/ppmtomd-ColorMode-NColour",
+                    "ev_longname": {
+                        "en": "More than 4 colors, colors one page at a time"
+                    },
+                    "ev_shortname": {
+                        "en": "NColour"
+                    },
+                    "ev_driverval": "NColour"
+                },
+                {
+                    "@id": "ev/ppmtomd-ColorMode-RasterCassette",
+                    "ev_longname": {
+                        "en": "Do not care about cartridges, each line in all col"
+                    },
+                    "ev_shortname": {
+                        "en": "RasterCassette"
+                    },
+                    "ev_driverval": "RasterCassette"
+                },
+                {
+                    "@id": "ev/ppmtomd-ColorMode-RasterColour",
+                    "ev_longname": {
+                        "en": "Each line in all colors"
+                    },
+                    "ev_shortname": {
+                        "en": "RasterColour"
+                    },
+                    "ev_driverval": "RasterColour"
+                }
+            ]
+        }
+    }
+}

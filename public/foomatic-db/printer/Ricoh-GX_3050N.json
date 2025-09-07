@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-GX_3050N",
+        "make": "Ricoh",
+        "model": "GX 3050N",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:GelSprinter;MDL:GX 3050N;"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlcolor-Ricoh",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor-Ricoh",
+                "ppd": "PPD/Ricoh/PXL/Ricoh-GX_3050N_PXL.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for commonly asked questions. <p>\n\nThroughput 29."
+        }
+    }
+}

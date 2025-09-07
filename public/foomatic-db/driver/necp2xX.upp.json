@@ -1,0 +1,21 @@
+{
+    "driver": {
+        "@id": "driver/necp2xX.upp",
+        "name": "necp2xX.upp",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 360dpi"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      UPP files of this driver: necp2x6.upp, necp2x.upp<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/NEC-P2X"
+            }
+        }
+    }
+}

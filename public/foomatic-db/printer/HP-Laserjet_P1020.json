@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/HP-Laserjet_P1020",
+        "make": "HP",
+        "model": "Laserjet P1020",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "F"
+    }
+}

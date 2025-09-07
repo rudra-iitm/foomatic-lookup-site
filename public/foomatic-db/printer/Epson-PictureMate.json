@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PictureMate",
+        "make": "Epson",
+        "model": "PictureMate",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6-color (CMYKRB), 2 pl dedicated portable photo printer with\n      inkset based on R800 inks and card reader for stand-alone photo\n      printing. Takes special ink cartridge and 4x6 inch (10x15 cm)\n      glossy photo paper."
+        }
+    }
+}

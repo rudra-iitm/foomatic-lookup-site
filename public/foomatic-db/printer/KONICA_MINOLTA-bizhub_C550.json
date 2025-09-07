@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-bizhub_C550",
+        "make": "KONICA MINOLTA",
+        "model": "bizhub C550",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "url": "http://kmbs.konicaminolta.us/",
+        "lang": {
+            "postscript": null
+        },
+        "functionality": "A",
+        "driver": "Postscript-KONICA_MINOLTA",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-KONICA_MINOLTA",
+                "ppd": "PPD/KONICA_MINOLTA/KOC550UX.ppd"
+            }
+        },
+        "comments": {
+            "en": null
+        }
+    }
+}

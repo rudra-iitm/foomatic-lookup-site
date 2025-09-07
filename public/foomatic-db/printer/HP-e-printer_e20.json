@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-e-printer_e20",
+        "make": "HP",
+        "model": "e-printer e20",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    This printer is not designed for usage with a PC, but for TV\n    set-top boxes which provide internet access. Therefore it has a\n    case of the shape of a VCR to easily integrate it in the home\n    entertainment environment.<p>\n\n    Nevertheless, this printer provides a standard USB and parallel port and\n    understands PCL 3, which makes it also working as a normal PC printer,\n    at least the developers of HP's \"hpjis\" driver claim \n    that. Windows drivers seem not to exist for this model (do we have the \n    first linprinter now?).<p>\n\n600 dpi in colour is not supported by the hardware.<p><p>\n\n      Consumables/Refills: mono cartridge; color cartridge; $21/26<p>"
+        }
+    }
+}

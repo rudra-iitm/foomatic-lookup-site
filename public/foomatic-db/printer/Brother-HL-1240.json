@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-1240",
+        "make": "Brother",
+        "model": "HL-1240",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/us-printer/info/hl1240/br_1240us.html",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL4,PJL",
+                "manufacturer": "Brother",
+                "model": "HL-1240 series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "comments": {
+            "en": "In contrary to some of the user's comments below, this printer works\n    well with the \"hl1250\" driver, a driver based on \"ljet4\" but preceeding\n    the job with Brother-specific PJL commands, especially the one to set\n    the resolution as shown below.<p>\n\n    Brother provides a <a\n    href=\"http://solutions.brother.com/linux/\">driver</a>,\n    too, but binary-only and only for LPD/LPRng. According to the\n    printout quality it is based on the \"ljet4\" Ghostscript\n    driver. \"pxlmono\", \"gimp-print\" (600 dpi), and \"hpijs-pcl5e\" (600 dpi)\n    give a better grayscale quality and all special features of the\n    printer are accessible by PJL commands.<p>\n\n    Old comments from users:<p>\n\n    Roger (rogern at linuxfreemail dot com) reports that the\n    \"hl1250\" driver works, but with incorrect\n    margins.<p>\n\n    Works great using the HP LaserJet 4/5/6 (\"ljet4\") driver and\n    Ghostscript.<br>\n\n    600dpi not supported via PCL alone, you must preface jobs with a\n    PJL statement:<p>\n\n    The easiest way to do this is by adding the following line to your\n    printcap file:<p>\n\n    <tt>\n    :ld=\\033%-12345X@PJL\\r\\n@PJL SET RESOLUTION=600\\r\\n:<p>\n    </tt>\n\n    Otherwise, just send the following string to the printer befor you send\n    the output of Ghostscript:<p>\n\n    <tt>\n    &lt;ESC&gt;%-12345X@PJL SET RESOLUTION=600<p>\n    </tt>\n\n    as well as selecting 600 dpi from the Ghostscript command line.<p>\n\n    This printer has 2MB memory, which cannot be extended; this may\n    not be enough for all jobs at 600dpi. Until someone says\n    otherwise, I want this printer to be marked imperfect because of\n    this memory issue.<p>\n\n    The above steps may not work if you have RedHat 6.0 or previous\n    versions. I was able to get the printer working with an HP\n    LaserJet driver and 300 dpi. 600dpi did not work well at\n    all.<p>\n\n    There's a <a\n    href=\"http://www.openprinting.org/pipermail/brother-list/2000q4/000040.html\"\n    >discussion</a> around the special driver for this\n    printer; apparently it's got a bug of some sort. I guess the\n    other drivers still work, but it's all a bit unclear right\n    now.<p><p>\n\n      Consumables/Refills: Toner ($50)<p>"
+        }
+    }
+}

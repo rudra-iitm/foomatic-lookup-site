@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P1124",
+        "make": "Panasonic",
+        "model": "KX-P1124",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson"
+    }
+}

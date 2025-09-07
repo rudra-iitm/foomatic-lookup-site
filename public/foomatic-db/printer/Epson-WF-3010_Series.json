@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-WF-3010_Series",
+        "make": "Epson",
+        "model": "WF-3010 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:WF-3010 Series;CLS:PRINTER;DES:EPSON WF-3010 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON WF-3010 Series",
+                "manufacturer": "EPSON",
+                "model": "WF-3010 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201212w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201212w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

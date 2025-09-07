@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-T430",
+        "make": "Lexmark",
+        "model": "T430",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/publications/pdfs/techref_0506.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL 6 Emulation, PostScript Le",
+                "description": "Lexmark T430",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark T430"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "This is a B/W laser printer.\n    It supports PostScript level 3.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

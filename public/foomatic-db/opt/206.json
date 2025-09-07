@@ -1,0 +1,175 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/206",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Avery-Personal_Label_Printer",
+                    "arg_defval": "ev/990"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Avery-Personal_Label_Printerplus",
+                    "arg_defval": "ev/991"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-ASCIIplus",
+                    "arg_defval": "ev/991"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-ASCII_250",
+                    "arg_defval": "ev/990"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-EL40",
+                    "arg_defval": "ev/990"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-EL60",
+                    "arg_defval": "ev/991"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-LabelWriter_II",
+                    "arg_defval": "ev/990"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-LabelWriter_XL",
+                    "arg_defval": "ev/990"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-LabelWriter_XLplus",
+                    "arg_defval": "ev/991"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-SE250",
+                    "arg_defval": "ev/991"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-SE250plus",
+                    "arg_defval": "ev/991"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-Turbo",
+                    "arg_defval": "ev/991"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/990",
+                    "ev_longname": {
+                        "en": "128 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "128dpi"
+                    },
+                    "ev_driverval": "128x128",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Avery-Personal_Label_Printerplus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-ASCIIplus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-EL60"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-LabelWriter_XLplus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-SE250"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-SE250plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-Turbo"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/991",
+                    "ev_longname": {
+                        "en": "200 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "200dpi"
+                    },
+                    "ev_driverval": "200x200",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Avery-Personal_Label_Printer"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-ASCII_250"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-EL40"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-LabelWriter_II"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Dymo_CoStar-LabelWriter_XL"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

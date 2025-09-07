@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Alps-MD-1000",
+        "make": "Alps",
+        "model": "MD-1000",
+        "mechanism": {
+            "transfer": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.alpsusa.com/Product/MDP/index.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "ppmtomd",
+        "comments": {
+            "en": "J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files (\"ppmtomd\"). He started\n    hacking ghostscript, but abandoned it.<p>\n\n    The \"md2k\" driver is documented only in\n    Japanese.<p>\n\n    \"md2k\" is reported to work, but suffers from some banding and\n    dithering problems. The driver supports all features but\n    metallic, white, or multicolour cartridges.<p>"
+        }
+    }
+}

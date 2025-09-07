@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C9400",
+        "make": "Oki",
+        "model": "C9400",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oki;MDL:C9400;",
+                "manufacturer": "Oki",
+                "model": "C9400"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Oki",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/ok9400u1.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29\n      \n      <p>\n\n      Maximum paper width: 12.9 inches / 32.8 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 21 pages/min<p>"
+        }
+    }
+}

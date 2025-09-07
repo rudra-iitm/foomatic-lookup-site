@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-IPSiO_SP_C711",
+        "make": "Ricoh",
+        "model": "IPSiO SP C711",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:RICOH;MDL:IPSiO SP C711;CMD:POSTSCRIPT;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PostscriptColor-Ricoh",
+        "drivers": {
+            "driver": {
+                "id": "PostscriptColor-Ricoh",
+                "ppd": "PPD/Ricoh/PS/Ricoh-IPSiO_SP_C711.ppd"
+            }
+        },
+        "comments": {
+            "en": "Optional Adobe Postscript 3. <p>\n\nUse Postscript driver for best result <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Does_my_printer_support_Postscript_.2F_PCL_XL_.2F_PCL5_.3F\"> if your printer supports Postscript. </a> <p>\n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 22."
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/Postscript1",
+        "name": "Postscript1",
+        "url": "http://partners.adobe.com/public/developer/ps/index_specs.html",
+        "thirdpartysupplied": null,
+        "execution": {
+            "postscript": null,
+            "prototype": "gs -q -dPARANOIDSAFER -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dBATCH -sDEVICE=pswrite -dLanguageLevel=1%A%Z -sOutputFile=- - | perl -p -e 's:^(%!.*)$:\\1\\n%C:'"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    This is a Ghostscript-based driver for PostScript level 1\n    printers. Applications usually produce PostScript level 2 or 3,\n    sometimes also PDF. None of these formats can be printed by the\n    old PostScript level 1 printers. Fortunately, Ghostscript can\n    convert all these data formats into PostScript level 1 and so\n    these printers can also print.<p>\n\n    Note that printing with manufacturer-supplied PPDs will not work\n    with PostScript level 1 printers.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apple-LaserWriter_IINTX"
+                },
+                {
+                    "id": "printer/Apple-LaserWriter_NT"
+                },
+                {
+                    "id": "printer/Generic-PostScript_Level_1_Printer"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5500"
+                }
+            ]
+        }
+    }
+}

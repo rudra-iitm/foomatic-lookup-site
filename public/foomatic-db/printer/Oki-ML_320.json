@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Oki-ML_320",
+        "make": "Oki",
+        "model": "ML 320",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "EPSON,IBM,MICROLINE",
+                "description": "OKIDATA ML320/1 TURBO",
+                "manufacturer": "OKI DATA CORP",
+                "model": "ML320/1TURBO"
+            }
+        },
+        "functionality": "A",
+        "driver": "okiibm",
+        "comments": {
+            "en": "Works without problems in the IBM emulation mode.<p>\n\n      Consumables/Refills: ribbon<p>"
+        }
+    }
+}

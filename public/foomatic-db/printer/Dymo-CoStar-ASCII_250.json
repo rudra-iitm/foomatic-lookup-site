@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Dymo-CoStar-ASCII_250",
+        "make": "Dymo-CoStar",
+        "model": "ASCII 250",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "128",
+                    "y": "128"
+                }
+            }
+        },
+        "url": "http://www.dymo-costar.com/labelwriter/lwascii.htm",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pbm2lwxl",
+        "comments": {
+            "en": "1.5 inch wide label printer; driver by Mark Whitis<br>Should work; untested<p>\n\n      Consumables/Refills: thermal; special labels<p>"
+        }
+    }
+}

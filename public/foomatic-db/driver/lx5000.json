@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/lx5000",
+        "name": "lx5000",
+        "url": "http://pbw.id.au/lexmark/lexmark.html",
+        "obsolete": {
+            "@replace": "pbm2l7k"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=lx5000 %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "This is a beta version of a driver for the Lexmark 5000. It\n    supports unidirectional colour printing at 1200x600, 600x600, and\n    300x600 dpi. One can switch between colour and b/w, adjust the\n    cartridges, and choose the page drying time.<p>\n\n    The driver is known to work with the Lexmark 5000 and the\n    Z51.<p>\n\n    The driver was part of the Ghostscript upstream source code for a\n    long time but recently it was removed from the source code repository\n    for version 9.05 as it does not work reliably\n    any more with current Ghostscript (version 9.04). It causes\n    Ghostscript to hang in an infinite loop on several files, requiring the\n    user to cancel the job. See the <a\n    href=\"http://bugs.ghostscript.com/show_bug.cgi?id=691820\">Ghostscript\n    bug report</a>.<p>\n\n    There was no time invested anymore to actually fix the problem as\n    the supported printers are very old, so there will be only very\n    few users and they would rather buy a new, more modern printer\n    instead of making their old Lexmarks work again.<p>\n\n    For everyone who still want to work with the printer and experiment with\n    this driver or even fix it, the original\n    home page of the driver is still available and the latest code of the\n    driver and a copy of the printer's protocol; information is available\n    <a\n    href=\"/download/printing/lx5000/\">here</a>.<p>\n\n    Use the \"<a href=\"/driver/pbm2l7k\">pbm2l7k</a>\" driver\n    if you want to quickly get these printers to work.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Lexmark-5000"
+                },
+                {
+                    "id": "printer/Lexmark-Z51"
+                },
+                {
+                    "id": "printer/Lexmark-Z82"
+                }
+            ]
+        }
+    }
+}

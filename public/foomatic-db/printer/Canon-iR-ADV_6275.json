@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Canon-iR-ADV_6275",
+        "make": "Canon",
+        "model": "iR-ADV 6275",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Canon;MDL:iR-ADV 6275;",
+                "manufacturer": "Canon",
+                "model": "iR-ADV 6275"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Canon",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Canon",
+                    "ppd": "PPD/Canon/cnadv6275x1g.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 75 pages/min<p>"
+        }
+    }
+}

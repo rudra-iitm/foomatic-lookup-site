@@ -1,0 +1,217 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/220",
+        "arg_shortname": {
+            "en": "RasterGraphicsQuality"
+        },
+        "arg_longname": {
+            "en": "Raster Graphics Quality"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "220",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Generic-PCL_3_Printer",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_1100C",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_200",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_310",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_320",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_340C",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_400",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_500",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_500C",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_510",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_520",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_540",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_540C",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_550C",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_560C",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_600",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_PLUS",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_Portable",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_300",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_330",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_350",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_635",
+                    "arg_defval": "ev/1062"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_LX",
+                    "arg_defval": "ev/1062"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1062",
+                    "ev_longname": {
+                        "en": "Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/1063",
+                    "ev_longname": {
+                        "en": "Draft"
+                    },
+                    "ev_shortname": {
+                        "en": "Draft"
+                    },
+                    "ev_driverval": "-dRasterGraphicsQuality=1"
+                },
+                {
+                    "@id": "ev/1064",
+                    "ev_longname": {
+                        "en": "High"
+                    },
+                    "ev_shortname": {
+                        "en": "High"
+                    },
+                    "ev_driverval": "-dRasterGraphicsQuality=2"
+                },
+                {
+                    "@id": "ev/rgqcp",
+                    "ev_longname": {
+                        "en": "Use printer control panel setting"
+                    },
+                    "ev_shortname": {
+                        "en": "ControlPanel"
+                    },
+                    "ev_driverval": "-dRasterGraphicsQuality=0"
+                }
+            ]
+        }
+    }
+}

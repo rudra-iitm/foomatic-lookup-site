@@ -1,0 +1,35 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/181",
+        "arg_shortname": {
+            "en": "XShift"
+        },
+        "arg_longname": {
+            "en": "Shift Output Horizontally (in dots)"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "450",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-xshift %s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "ppmtocpva",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_max": "600",
+        "arg_min": "-600"
+    }
+}

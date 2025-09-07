@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/64",
+        "arg_shortname": {
+            "en": "Blackness"
+        },
+        "arg_longname": {
+            "en": "Black ink density adjustment."
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "140",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "-B %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pnm2ppa",
+                "arg_defval": "2"
+            }
+        },
+        "arg_max": "4",
+        "arg_min": "0"
+    }
+}

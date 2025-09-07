@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_660",
+        "make": "NEC",
+        "model": "SuperScript 660",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/sscript/ss660/index.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Clearly described as a \"GDI\" printer on NEC's page."
+        }
+    }
+}

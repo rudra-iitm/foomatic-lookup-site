@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_3500CP",
+        "make": "HP",
+        "model": "DesignJet 3500CP",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-HP",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-HP",
+                "ppd": "PPD/HP/HP_DesignJet_3500CP_PS3.ppd"
+            }
+        },
+        "comments": {
+            "en": "Large-format printer.<p>\n\n    User comment:<p>\n\n    I got successful and fast Postscript printing using\n    lprng+ifhp<p><p>\n\n      Consumables/Refills: 4 Cartridges: Black, Cyan, Magenta, Yellow<p>"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/HP-Business_Inkjet_2250",
+        "make": "HP",
+        "model": "Business Inkjet 2250",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236261-24728-f17-65316-65318-65319.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PML,PJL,PCL5,POSTSCRIPT",
+                "description": "Hewlett-Packard Business Inkjet 2250",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP BUSINESS INKJET 2250"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "When used with HP's HPLIP driver, this printer\n    does the dithering and color adjustment internally. As input it\n    takes simple RGB data as used for screen display.<p>\n\n    For basic printing functionality use the Postscript PPD. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplipopensource.com/\">HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Note that in contrary to most other current HP inkjet printers\n    there is no paper type sensor in the printer. You have to choose\n    one of the photo modes manually when using photo paper. There are\n    photo modes with 300 and 600 dpi.<p><p>\n\n      Consumables/Refills: 4 cartridges: one for each color of CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

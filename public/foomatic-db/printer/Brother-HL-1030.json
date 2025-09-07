@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-1030",
+        "make": "Brother",
+        "model": "HL-1030",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/us-printer/info/hl1030ca/hl1030ca.html",
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "comments": {
+            "en": "hl-1030 works with ghostsript using the driver hl1240 (include in the hl1250).\nIt prints text postscript ok, but due to it 2 mb only memory, it has problems with complex ps.<p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: Toner TN-6300 or TN-6600, Drum DR-6000<p>"
+        }
+    }
+}

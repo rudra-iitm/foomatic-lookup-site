@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_955C",
+        "make": "HP",
+        "model": "DeskJet 955C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://support.hp.com/showpage/id/25726700",
+        "lang": {
+            "pcl": null
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "It seems that this printer is a Japan only model.  Similar to\n    950C, 957C...<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    The best output one gets with HP's HPIJS 1.3 or newer. If you\n    cannot update to HPIJS 1.3 for some reason, you can also use HPIJS\n    1.2.2 with the patches from Matthias Bunte and Richard\n    Spencer-Smith (\"hpijs-rss\"). The Gimp-Print driver also\n    works (Model setting: \"pcl-900\"), but only up to 600\n    dpi.<p>\n\n    Older comments:<p>\n\n    It works with \"cdj550\", \"cdj670\" and\n    \"cdj880\" drivers supported by printtool.<p>\n\n    No problem with Japanese language printing with Kondara\n    MNU/Linux.<p>\n\n    I think \"cdj880\" is better, but picture (color) quality\n    is not good...<p>\n\n    B/W quality is good for normal printing job.<p>\n\n    Yes, I don't recommend using this printer for color photo\n    printing.<p>"
+        }
+    }
+}

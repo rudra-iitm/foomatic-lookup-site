@@ -1,0 +1,197 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/129",
+        "arg_shortname": {
+            "en": "PrintColors"
+        },
+        "arg_longname": {
+            "en": "Colours to be used"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dPrintColors=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "bjc600",
+                    "arg_defval": "ev/838"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc800",
+                    "arg_defval": "ev/838"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/823",
+                    "ev_longname": {
+                        "en": "Black for any color"
+                    },
+                    "ev_shortname": {
+                        "en": "KKKK"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/824",
+                    "ev_longname": {
+                        "en": "Cyan only"
+                    },
+                    "ev_shortname": {
+                        "en": "C"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/825",
+                    "ev_longname": {
+                        "en": "Magenta only"
+                    },
+                    "ev_shortname": {
+                        "en": "M"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/826",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta"
+                    },
+                    "ev_shortname": {
+                        "en": "CM"
+                    },
+                    "ev_driverval": "3"
+                },
+                {
+                    "@id": "ev/827",
+                    "ev_longname": {
+                        "en": "Yellow only"
+                    },
+                    "ev_shortname": {
+                        "en": "Y"
+                    },
+                    "ev_driverval": "4"
+                },
+                {
+                    "@id": "ev/828",
+                    "ev_longname": {
+                        "en": "Cyan, Yellow"
+                    },
+                    "ev_shortname": {
+                        "en": "CY"
+                    },
+                    "ev_driverval": "5"
+                },
+                {
+                    "@id": "ev/829",
+                    "ev_longname": {
+                        "en": "Magenta, Yellow"
+                    },
+                    "ev_shortname": {
+                        "en": "MY"
+                    },
+                    "ev_driverval": "6"
+                },
+                {
+                    "@id": "ev/830",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta, Yellow"
+                    },
+                    "ev_shortname": {
+                        "en": "CMY"
+                    },
+                    "ev_driverval": "7"
+                },
+                {
+                    "@id": "ev/831",
+                    "ev_longname": {
+                        "en": "Black only"
+                    },
+                    "ev_shortname": {
+                        "en": "K"
+                    },
+                    "ev_driverval": "8"
+                },
+                {
+                    "@id": "ev/832",
+                    "ev_longname": {
+                        "en": "Cyan, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CK"
+                    },
+                    "ev_driverval": "9"
+                },
+                {
+                    "@id": "ev/833",
+                    "ev_longname": {
+                        "en": "Magenta, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "MK"
+                    },
+                    "ev_driverval": "10"
+                },
+                {
+                    "@id": "ev/834",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CMK"
+                    },
+                    "ev_driverval": "11"
+                },
+                {
+                    "@id": "ev/835",
+                    "ev_longname": {
+                        "en": "Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "YK"
+                    },
+                    "ev_driverval": "12"
+                },
+                {
+                    "@id": "ev/836",
+                    "ev_longname": {
+                        "en": "Cyan, Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CYK"
+                    },
+                    "ev_driverval": "13"
+                },
+                {
+                    "@id": "ev/837",
+                    "ev_longname": {
+                        "en": "Magenta, Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "MYK"
+                    },
+                    "ev_driverval": "14"
+                },
+                {
+                    "@id": "ev/838",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta, Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CMYK"
+                    },
+                    "ev_driverval": "15"
+                }
+            ]
+        }
+    }
+}

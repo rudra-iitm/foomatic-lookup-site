@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-5700",
+        "make": "Epson",
+        "model": "EPL-5700",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/laser/epl57i/index.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,EJL,ESCPL2-00,ESCP9-84,PRP",
+                "description": "EPSON EPL-5700",
+                "manufacturer": "EPSON",
+                "model": "EPL-5700"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Works OK but only in 300 dpi mode. 600 dpi is mostly OK but some\n    glitches appear in text.<p>\n\n    This printer is not to be confused with the European-market <a\n    href=\"show_printer.cgi?recnum=Epson-EPL-5700L\">EPL-5700L</a>,\n    which is a winprinter for which there is only partial support for\n    now.<p>\n\n      Consumables/Refills: toner (UKP60), electrostatic drum (UKP40)<p>"
+        }
+    }
+}

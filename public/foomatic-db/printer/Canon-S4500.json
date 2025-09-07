@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S4500",
+        "make": "Canon",
+        "model": "S4500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "A Canon guy told me that this printer is exactly the same as the BJC-6500 (which is a big\n6200), only the inks are more sun-proof. So use the \n\"<a href=\"show_driver.cgi?driver=stp\">stp</a>\" driver and choose the BJC-6200 as\nyour printer model.<p><p>\n\n      Consumables/Refills: 2 x printheads with 4/6 seperate ink tanks<p>"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_P1100",
+        "make": "HP",
+        "model": "PhotoSmart P1100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HEWLETT-PACKARD;MDL:PHOTOSMART P1100;CMD:MLC,PCL,PML;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard PhotoSmart P1100;",
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard PhotoSmart P1100",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "PHOTOSMART P1100"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This is basically the same printer as the DeskJet 970Cse, except\n    it has ports on the side for inserting SmartMedia and CompactFlash\n    digital \"film\" and has an LCD panel that lets you select\n    pictures from the \"film\" to print.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    An optional duplex unit is available, but this does not work with\n    Gimp-Print, use \"hpijs-rss\", HPLIP,\n    \"cdj970\" or \"pcl3\" instead.<p>\n\n      Consumables/Refills: 1 black, 1 color cartridge<p>"
+        }
+    }
+}

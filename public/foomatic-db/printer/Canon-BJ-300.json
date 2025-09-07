@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJ-300",
+        "make": "Canon",
+        "model": "BJ-300",
+        "mechanism": {
+            "inkjet": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "lq850",
+        "comments": {
+            "en": "Drives Canon at 360dpi in Epson emulation mode."
+        }
+    }
+}

@@ -1,0 +1,244 @@
+{
+    "driver": {
+        "@id": "driver/ljet4d",
+        "name": "ljet4d",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ljet4d%A%Z -sOutputFile=-%C -f -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    This driver is the same as \"ljet4\" but with duplex\n    printing support. It is probably not really needed because one can\n    control the duplex units of the HP LaserJet 4 series by PJL\n    commands.<p>\n\n    A Ghostscript bug in the driver breaks paper input tray\n    selection. This <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pcl-patches/inputslot.patch\">patch</a>\n    for GPL Ghostscript 8.63 fixes the problem and allows to set the\n    input tray with the \"-dMediaPosition=X\" commmand line\n    option for Ghostscript. \"X\" is an integer number which\n    depends on the printer model and tray. For HP \"0\" is\n    usually the printer default, \"7\" automatic selection,\n    \"2\" manual feed, \"1\" the upper, and\n    \"4\" the lower tray. Note that for PCL 6/XL these numbers\n    are different. The patch is required for Ghostscript 8.63 and\n    older so that tray selection with the PPDs of this site works. The\n    bug is fixed in Ghostscript 8.64 or newer.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-HL-1650"
+                },
+                {
+                    "id": "printer/Brother-HL-1660e"
+                },
+                {
+                    "id": "printer/Brother-HL-1670N"
+                },
+                {
+                    "id": "printer/Brother-HL-1850"
+                },
+                {
+                    "id": "printer/Brother-HL-1870N"
+                },
+                {
+                    "id": "printer/Brother-HL-2170W"
+                },
+                {
+                    "id": "printer/Generic-PCL_5c_Printer",
+                    "comments": {
+                        "en": "Grayscale only."
+                    }
+                },
+                {
+                    "id": "printer/Generic-PCL_5e_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_6_PCL_XL_Printer",
+                    "comments": {
+                        "en": "Only up to 600 dpi."
+                    }
+                },
+                {
+                    "id": "printer/HP-LaserJet_4M",
+                    "comments": {
+                        "en": "For PCL"
+                    }
+                },
+                {
+                    "id": "printer/HP-LaserJet_4Si"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3390"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3392"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1010"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1050"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1200"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1600plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1700plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1900"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3600plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3700plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5800C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5900C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600_KPDL-2"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6500"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6500plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-680"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-8000C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9100DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9500DN"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1810"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2030"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-3530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-6230"
+                },
+                {
+                    "id": "printer/Lexmark-E230"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_220"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150PS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2151N"
+                },
+                {
+                    "id": "printer/Samsung-ML-2151NPS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2152W"
+                },
+                {
+                    "id": "printer/Samsung-ML-2152WPS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2250",
+                    "comments": {
+                        "en": "The Foomatic/ljet4d driver works with this printer. One can use the PPD File for the ML-2552W. Only 600 dpi is supported and the lighter printing tones are not visible."
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2550"
+                },
+                {
+                    "id": "printer/Samsung-ML-2551N"
+                },
+                {
+                    "id": "printer/Samsung-ML-2552W"
+                },
+                {
+                    "id": "printer/Samsung-ML-7300"
+                },
+                {
+                    "id": "printer/Samsung-ML-7300N"
+                }
+            ]
+        }
+    }
+}

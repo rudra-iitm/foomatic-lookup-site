@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_D2400",
+        "make": "HP",
+        "model": "DeskJet D2400",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "LDL,DYN",
+                "description": "Deskjet D2400",
+                "manufacturer": "hp",
+                "model": "Deskjet D2400"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Does not understand PCL as most other DeskJets, it uses the\n    so-called \"Lightweight Imaging Device Interface\n    Language\" (LIDIL).<p><p>\n\n      Consumables/Refills: 1 colour (CMY) cartridge and 1 black (K) cartridge<p>"
+        }
+    }
+}

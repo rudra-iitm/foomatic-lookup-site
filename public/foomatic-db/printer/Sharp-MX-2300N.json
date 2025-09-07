@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-MX-2300N",
+        "make": "Sharp",
+        "model": "MX-2300N",
+        "mechanism": {
+            "color": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 23\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

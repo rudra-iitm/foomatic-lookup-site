@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-bizhub_600",
+        "make": "KONICA MINOLTA",
+        "model": "bizhub 600",
+        "mechanism": {
+            "laser": null
+        },
+        "url": "http://kmbs.konicaminolta.us/",
+        "lang": {
+            "postscript": null
+        },
+        "functionality": "A",
+        "driver": "Postscript-KONICA_MINOLTA",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-KONICA_MINOLTA",
+                "ppd": "PPD/KONICA_MINOLTA/KO750UX.ppd"
+            }
+        },
+        "comments": {
+            "en": null
+        }
+    }
+}

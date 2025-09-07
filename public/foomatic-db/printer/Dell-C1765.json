@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Dell-C1765",
+        "make": "Dell",
+        "model": "C1765",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://accessories.us.dell.com/sna/productdetail.aspx?c=us&cs=04&l=en&sku=225-4113",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Xerox WorkCentre 6015"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Dell C1765nf/nfw is color multifunction printer with a 2014 street\n\tprice of $170.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

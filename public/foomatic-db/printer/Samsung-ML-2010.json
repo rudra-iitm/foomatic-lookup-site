@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-2010",
+        "make": "Samsung",
+        "model": "ML-2010",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Samsung;CMD:GDI;MDL:ML-2010;CLS:PRINTER;STATUS:BUSY;"
+            }
+        },
+        "functionality": "A",
+        "driver": "splix",
+        "comments": {
+            "en": "One user reported that the driver downloaded from the Samsung web\n    site makes this printer working perfectly out of the box on Fedora\n    Core 5.<p>\n\n    Another user reported that once the (Samsung) driver is installed\n    with a lot of pain, it fails to communicate properly with CUPS. It\n    is just a frustrating experience. He returned the printer to the\n    store, after the Samsung technical support told on the phone that\n    they do not support Linux anyway.<p>\n\n    The user H.Samm reported that his printer worked out of the\n    box... so far his experience has been a very good one.<p><p>\n\n      Consumables/Refills: cartridge CA$ 90<p>"
+        }
+    }
+}

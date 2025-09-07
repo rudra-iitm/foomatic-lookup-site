@@ -1,0 +1,23 @@
+{
+    "driver": {
+        "@id": "driver/lips3",
+        "name": "lips3",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=lips3%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Canon-LIPS-III",
+                "comments": {
+                    "en": "This is the driver for Canon Lasershot printer models sold in Japan.  The current driver do not use compression mode.  It skips empty lines.  If you use with letter paper, it will complain but works fine.  Just set error timeout.  LBP-8 is the same driver with slightly different intialization.  According to my study, LBP-8 gives correct location, but only for A4.  LIPS-III workd both Letter and A4."
+                }
+            }
+        }
+    }
+}

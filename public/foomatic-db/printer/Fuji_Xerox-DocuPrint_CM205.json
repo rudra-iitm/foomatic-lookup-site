@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Fuji_Xerox-DocuPrint_CM205",
+        "make": "Fuji Xerox",
+        "model": "DocuPrint CM205",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "These printers are supported by the foo2hbpl2 open software printer\n    driver."
+        }
+    }
+}

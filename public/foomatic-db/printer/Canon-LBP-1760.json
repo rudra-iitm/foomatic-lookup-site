@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-1760",
+        "make": "Canon",
+        "model": "LBP-1760",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5/6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Works fine, although I have only tried it up to 600x600dpi on\n      A4.<br>\n\n      Comes with 4MB of RAM; more memory is probably needed for\n      1200dpi output.<br>\n\n      I have no confirmed report as yet of 1200dpi working, but given\n      enough memory it ought to.<p>\n\n      I have tested an LBP-1000 which does 1200dpi with the ljet4,\n      lj5gray, and the pxlmono drivers. With enough memory the\n      LBP-1760 probably does it, too.<p>\n\n      Consumables/Refills: Toner Cartridge. Price about 99 Irish\n      Pounds<p>"
+        }
+    }
+}

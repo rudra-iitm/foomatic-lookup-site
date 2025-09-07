@@ -1,0 +1,16 @@
+{
+    "printer": {
+        "@id": "printer/Casio-KP-C10",
+        "make": "Casio",
+        "model": "KP-C10",
+        "url": "http://www.casio.com/index.cfm?fuseaction=products.attributes&catalog=Label%20Printers&section=&product=KP-C10",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "pegg",
+        "comments": {
+            "en": "Thermal label printer.  Prints a 512x64 bitmap on roll labels.<p>\n\n      Consumables/Refills: Special thermal labels<p>"
+        }
+    }
+}

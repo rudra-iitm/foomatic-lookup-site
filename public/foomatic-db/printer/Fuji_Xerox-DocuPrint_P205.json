@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Fuji_Xerox-DocuPrint_P205",
+        "make": "Fuji Xerox",
+        "model": "DocuPrint P205",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.fujixeroxprinters.com.au/en/products/blackwhiteprinters/docuprintp205b.aspx",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Fuji Xerox DocuPrint P205"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Fuji Xerox DocuPrint P205b (USB)\n\tis a monochrome printer with a 2013 street price of $100.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

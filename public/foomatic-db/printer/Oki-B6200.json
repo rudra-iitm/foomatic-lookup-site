@@ -1,0 +1,41 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B6200",
+        "make": "Oki",
+        "model": "B6200",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/B6200Spec.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "escp": null,
+            "hpgl2": null,
+            "tiff": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 25\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26<p>\n\n      Consumables/Refills: A monolithic print cartridge is $160. Refill is possible.<p>"
+        }
+    }
+}

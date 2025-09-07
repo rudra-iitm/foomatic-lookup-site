@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/185",
+        "arg_shortname": {
+            "en": "JobOffset"
+        },
+        "arg_longname": {
+            "en": "Job Offset"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET JOBOFFSET=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "printer": "printer/HP-LaserJet_4Si",
+                "arg_defval": "ev/952"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/952",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "On"
+                    },
+                    "ev_driverval": "ON"
+                },
+                {
+                    "@id": "ev/953",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "Off"
+                    },
+                    "ev_driverval": "OFF"
+                }
+            ]
+        }
+    }
+}

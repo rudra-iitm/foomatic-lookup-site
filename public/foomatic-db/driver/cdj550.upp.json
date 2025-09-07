@@ -1,0 +1,46 @@
+{
+    "driver": {
+        "@id": "driver/cdj550.upp",
+        "name": "cdj550.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs @cdj550.upp -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: cdj550.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DeskJet_540C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_550C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_560C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_694C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_930C",
+                    "comments": {
+                        "en": "Recommended for photo printing by c't - Magazin\nfuer Computertechnik 21/2000"
+                    }
+                },
+                {
+                    "id": "printer/HP-PSC_500",
+                    "comments": {
+                        "en": "Works well, except color printing is a little dark. Better than many other drivers, though--and uses less ink! Default is 300x300, but 600x600 can be made to work by patching driver."
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MP-21C",
+        "make": "Brother",
+        "model": "MP-21C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "A PCMCIA-interface inkjet; not known to work."
+        }
+    }
+}

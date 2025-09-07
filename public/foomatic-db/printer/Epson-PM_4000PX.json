@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_4000PX",
+        "make": "Epson",
+        "model": "PM 4000PX",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 2100/2200.<p>\n\n    7-ink (CcMmYKk, has light black ink) 13x19/A3-large-format\n    high-end photo printer with roll feeder, automatic paper cutter,\n    full bleed (borderless) printing, prints also directly on\n    CDs.<p>\n    \n    96 nozzles per color.<p>\n\n    USB2, Parallel, and FireWire (IEEE 1394).<p>\n\n    Supported in Gimp-Print 4.2.2rc2, 4.3.4, or newer.<p><p>\n\n      Consumables/Refills: 7 separate ink tanks: Cyan, light cyan, magenta, light magenta,\n\tyellow, black (photo or matte black), light black<p>"
+        }
+    }
+}

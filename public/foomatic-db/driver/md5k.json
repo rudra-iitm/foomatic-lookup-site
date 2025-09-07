@@ -1,0 +1,25 @@
+{
+    "driver": {
+        "@id": "driver/md5k",
+        "name": "md5k",
+        "url": "http://plaza26.mbn.or.jp/~higamasa/gdevmd2k/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=md5k%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\nPart of the gdevmd2k-0.2a package by Shinya Umino.  \nThe web page and documentation are in Japanese.  <a \nhref=\"http://www.openprinting.org/clippings/MD5000-translation.txt\">Here</a> \nis an English translation of the driver's web page, and <a\nhref=\"/clippings/alpsmd.txt\">here</a> is the driver README."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Alps-MD-5000"
+                },
+                {
+                    "id": "printer/Oki-DP_5000"
+                }
+            ]
+        }
+    }
+}

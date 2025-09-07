@@ -1,0 +1,19 @@
+{
+    "driver": {
+        "@id": "driver/lbp800",
+        "name": "lbp800",
+        "url": "http://www.veneto.com/lbp800/lbp800.html",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "Driver for the Canon LBP-800 laser winprinter.<p>\n\n    In contrary to the \"lbp660\" driver parallel port access goes\n    through the kernel. So the driver does not need to run SUID\n    root. The access is done via the \"parport_pc\" kernel module and a\n    CUPS backend which comes with the driver. The driver does not work\n    with USB- or network-connected printers.<p>\n\n    The Foomatic PPD file for this driver is not available on\n    OpenPrinting because it is already contained in the driver\n    package.<p>"
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Canon-LBP-800"
+            }
+        }
+    }
+}

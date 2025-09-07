@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5200L",
+        "make": "HP",
+        "model": "LaserJet 5200L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    PostScript L3, PCL5, PCL6, HP-GL/2<p>\n\n    48 MB std, depending on flavour.<p>\n\n    Optional accessories are duplexer, 500 sheet tray, hard drive,\n    extra memory, ethernet adapter<p><p>\n\n      Consumables/Refills: Toner and drum in one cartridge (10000 pages)<p>"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Brother-QL-550",
+        "make": "Brother",
+        "model": "QL-550",
+        "pcmodel": "BRQ550",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.brother.co.uk/cms.cfm/s_page/55570/s_level/17510/s_product/QL550",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;CMD:PT-CBP;MDL:QL-550;CLS:PRINTER;",
+                "commandset": "PT-CBP",
+                "description": "Brother QL-550",
+                "manufacturer": "Brother",
+                "model": "QL-550"
+            }
+        },
+        "functionality": "B",
+        "driver": "ptouch",
+        "comments": {
+            "en": "Prints 3 inches per second.<p>\n\n      Consumables/Refills: Special \"DK\" adhesive labels or adhesive tape thermal paper.\n        No ink or ribbons needed.\n\tDie Cut Standard Address Labels 29mm x 90mm, 400 Labels \t - $7.99\n\tDie Cut Shipping Labels 62mm x 100mm, 300 Labels \t - $13.99\n\tDie Cut File Folder Labels 17mm x 87mm, 300 labels \t - $6.99\n\tMultipurpose Die Cut Labels 17mm x 54mm, 400 Labels \t - $7.99\n\tCD/DVD Film Labels 58mm x 58mm, 100 Labels \t - $14.99\n\tLarge Die Cut Address Labels 38mm x 90mm, 400 Labels/Roll \t - $10.99\n\tSmall Address Label 29mm x 62mm, 800 Labels \t - $13.99\n\tClear Continuous Film Roll 62mm x 15.24m, Clear \t - $44.99\n\tWhite Continuous Film Roll 62mm x 30.48m, White \t - $13.99\n\tWhite Continuous Film Roll 29mm x 30.48m, White \t - $8.99\n\tWhite Continuous Film Roll 29mm x 15.24m, White \t - $15.99\n\tWhite Continuous Film Roll 62mm x 15.24m, White \t - $30.99\n\tWhite Continuous Film Roll 12mm x 30.48m, White \t - $7.99\n\tYellow Continuous Film Roll 62mm x 15.24m, Yellow \t - $44.99\n        Cutter Unit, 2 pcs\n        Cleaning Sheets, 10 sheets Part numbers: DK-11201, \t\n      DK-11202, \t\n      DK-11203, \t\n      DK-11204, \t\n      DK-11207, \t\n      DK-11208, \t\n      DK-11209, \t\n      DK-22113, \t\n      DK-22205, \t\n      DK-22210, \t\n      DK-22211, \t\n      DK-22212, \t\n      DK-22214, \t\n      DK-22606, \n      DKBU99, \n      DKCL99<p>"
+        }
+    }
+}

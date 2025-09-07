@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/Brother-DCP-7065DN",
+        "make": "Brother",
+        "model": "DCP-7065DN",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "relative": null,
+                    "top": "8",
+                    "left": "8",
+                    "right": "8",
+                    "bottom": "16"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;CMD:PJL,HBP;MDL:DCP-7065DN;CLS:PRINTER;CID:Brother Laser Type1;",
+                "manufacturer": "Brother",
+                "model": "DCP-7065DN"
+            }
+        },
+        "functionality": "B",
+        "driver": "brlaser",
+        "drivers": {
+            "driver": {
+                "id": "brlaser"
+            }
+        },
+        "comments": {
+            "en": "This printer uses a proprietary format for the job data and\n      therefore the only free software driver for it is the\n      \"brlaser\" driver."
+        }
+    }
+}

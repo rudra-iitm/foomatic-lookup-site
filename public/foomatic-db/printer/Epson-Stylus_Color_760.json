@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_760",
+        "make": "Epson",
+        "model": "Stylus Color 760",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc760_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus COLOR 760",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 760"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Note that you *MUST* turn off the so-called \"D4\" mode of the parallel interface of this printer in order to get it to work.\nTo turn off the D4 mode, follow these instructions (from <a href=\"http://files.support.epson.com/pdf/sc760_/sc760_f1.txt\">http://files.support.epson.com/pdf/sc760_/sc760_f1.txt</a>):\n<p> \n  Turn on the printer while holding down the Cleaning button (under the inkdrop icons)\n  The paper-out light (under the \"paper\" icons) will start blinking.\n  Release the Cleaning button and *IMMEDIATELY* press and hold the Load/Eject button (under the \"paper\" icon) and hold it for about 20 seconds.\n  The Paper Out, Color Ink Out, and Black Ink Out LEDs will light.\n  Release the Load/Eject button.\n  Press the Cleaning Button until the Black Ink Out LED lights. This means D4 mode is off.\n  Press the Load/Eject button and you're done.\n <p>\nI used the <a href=\"http://lcewww.et.tudelft.nl/~haver/linux/epson.html\">epson740 upp ghostscript driver</a>, and wrote a <a href=\"http://csl.cse.ucsc.edu/~ben/magicfilter/stylus760-filter\">quick magicfilter config (stylus760-filter), available here</a> to use that driver. Then I plopped it into /etc/magicfilter, ran /usr/sbin/magicfilterconfig, and chose the stylus760 filter.\n<p>Everything works except I couldn't figure out how to convince magicfilter to add an EOF character after every print-job, so the pages are not ejected by themselves. Sorry :) Hopefully someone else can figure this out.\n\nI've added another magicfilter, that I have written, it fixes the eject bug at the cost of removing recode support, <a href=\"http://c-cc.co.uk/hosted/epson_760/stylus760-filter\">download it</a>\n<p>------------\n<p>Actually it works great for me even with D4 mode in auto mode (the default).\n<p>\nEd: Probably works best with the stp driver.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

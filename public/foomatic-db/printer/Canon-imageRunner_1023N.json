@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_1023N",
+        "make": "Canon",
+        "model": "imageRunner 1023N",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "PCL 6 is optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

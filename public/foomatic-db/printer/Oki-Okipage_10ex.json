@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_10ex",
+        "make": "Oki",
+        "model": "Okipage 10ex",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP10EXHome.html",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,PCLXL,PCL,EPSONFX,IBMPPR",
+                "description": "OKIPAGE 10ex",
+                "manufacturer": "OKI DATA CORP",
+                "model": "OKIPAGE 10ex"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Reported by a SCO (!) VAR I bumped into to be a more robust\n    alternative to the <a\n    href=\"show_printer.cgi?recnum=Oki-Okipage_10e\">Okipage\n    10e</a> for low volume applications.  It features a display\n    and better PCL support vs that printer."
+        }
+    }
+}

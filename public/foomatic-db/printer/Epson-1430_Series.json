@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-1430_Series",
+        "make": "Epson",
+        "model": "1430 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;Epson Stylus Photo 1430;CLS:PRINTER;DES:EPSON Epson Stylus Photo 1430",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus Photo 1430",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus Photo 1430"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201114w",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-201114w"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

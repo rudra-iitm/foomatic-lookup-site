@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-X703",
+        "make": "Samsung",
+        "model": "X703",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,POSTSCRIPT,FAX,FWV,EXT;MDL:X703 Series;",
+                "manufacturer": "Samsung",
+                "model": "X703 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_X703_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.6 inches / 32.0 cm\n      (Wide format printer)<p>"
+        }
+    }
+}

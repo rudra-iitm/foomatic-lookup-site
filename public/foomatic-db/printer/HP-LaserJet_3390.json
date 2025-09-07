@@ -1,0 +1,52 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_3390",
+        "make": "HP",
+        "model": "LaserJet 3390",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,MLC,PCL,POSTSCRIPT,PCLXL",
+                "description": "Hewlett-Packard LaserJet 3390",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 3390"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hplip"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Standard monochrome A4 laser multi-function device.<p>\n\n    For basic printing functionality use the Postscript PPD or any PCL\n    driver.  For advanced functionality such as printer status,\n    maintenance features, scanning and photo card unload use the <a\n    href=\" http://hplipopensource.com/\">HPLIP\n    driver</a> (which includes HPIJS/hpcups).<p>\n\n    Note that the printer does not come with enough memory for\n    printing images in 1200x1200 dpi. If your printer is very slow or\n    runs out of memory, reduce the resolution to 600x600 dpi and also\n    try PCL drivers instead of PostScript.<p>"
+        }
+    }
+}

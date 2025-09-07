@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C65",
+        "make": "Epson",
+        "model": "Stylus C65",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C65",
+                "manufacturer": "EPSON",
+                "model": "Stylus C65"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint"
+    }
+}

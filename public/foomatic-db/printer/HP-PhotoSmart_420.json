@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_420",
+        "make": "HP",
+        "model": "PhotoSmart 420",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "www.hp.com",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This is the elegant integration of a digital camera and 4x6 photo \n    printer. Designed for the easiest capture to print experience.\n    It makes digital photography easier than dropping off film.\n    The printer is a small (4 x 6 inch/10 x 15 cm/A6) printer \n    where the camera display becomes the printer display when the camera\n    is docked on top of the printer. Video out to TV. IR remote control for\n    viewing images on TV. Optional battery pack. Optional bluetooth dongle.\n    New 4x8\" greeting card size.<p>\n\n    Due to the small paper size and not using black ink its usability\n    for PC documents is very limited, but it works with various PCL\n    drivers which support 3-ink CMY and A6/Postcard/4x6-Photo paper\n    size. Plus now a new 4x8\" photo greeting card size.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, higher resolutions are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi and\n    interpolated to 4800x1200 dpi by the hardware, without paper\n    detection, intended for photo paper only.<p>\n\n    Border-less (full bleed) printing is supported with the\n    HPLIP driver.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p><p>\n\n      Consumables/Refills: Refill: 1 CMY color cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hl7x0-Duplex",
+        "arg_shortname": {
+            "en": "Duplex"
+        },
+        "arg_longname": {
+            "en": "Double-Sided Printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "130",
+            "arg_spot": "I",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "hl7x0",
+                "arg_defval": "ev/hl7x0-Duplex-None"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hl7x0-Duplex-LongEdge",
+                    "ev_longname": {
+                        "en": "Long Edge (Standard)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexNoTumble"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/hl7x0-Duplex-None",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/hl7x0-Duplex-ShortEdge",
+                    "ev_longname": {
+                        "en": "Short Edge (Flip)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexTumble"
+                    },
+                    "ev_driverval": "1"
+                }
+            ]
+        }
+    }
+}

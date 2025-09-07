@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_SP_1100S",
+        "make": "Ricoh",
+        "model": "Aficio SP 1100S",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:MFPrinter;MDL: Laser Pro LL2 1;CMD:AUTOMATIC,PJL,GDI_RL;DES:MFPrinter Laser Pro LL2 1;CLS:PRINTER;VER:v2.07g ;NS:L510245LA020328;",
+                "manufacturer": "MFPrinter",
+                "model": "Laser Pro LL2 1",
+                "description": "MFPrinter Laser Pro LL2 1",
+                "commandset": "AUTOMATIC,PJL,GDI_RL"
+            }
+        },
+        "functionality": "B",
+        "driver": "rastertosag-gdi",
+        "drivers": {
+            "driver": {
+                "id": "rastertosag-gdi"
+            }
+        },
+        "comments": {
+            "en": "This is one of the few Ricoh laser printers which neither\n      understands PostScript nor PCL. It uses the proprietary <a\n      href=\"http://www.undocprint.org/formats/page_description_languages/sagem-gdi\">SAG-GDI</a>\n      raster format from Sagem Communication.<p>\n\n      The \"rastertosag-gdi\" driver for this format is a simple CUPS filter\n      written in Python, which you can download from this site.<p>"
+        }
+    }
+}

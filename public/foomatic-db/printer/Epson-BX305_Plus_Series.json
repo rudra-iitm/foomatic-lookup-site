@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-BX305_Plus_Series",
+        "make": "Epson",
+        "model": "BX305 Plus Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Epson Stylus Office BX305 Plus;CLS:PRINTER;DES:EPSON Epson Stylus Office BX305 Plus",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus Office BX305 Plus",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus Office BX305 Plus"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201109w",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-201109w"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

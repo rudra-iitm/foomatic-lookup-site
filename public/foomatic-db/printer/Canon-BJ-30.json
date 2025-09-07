@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJ-30",
+        "make": "Canon",
+        "model": "BJ-30",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://209.85.7.18/techsupport_content.php3?p=bj30",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "BJ-30 is BJC-70 minus the color capability. Following the advice for the\n      latter should get you there.<p>\n\n      Consumables/Refills: Ink cartridge (Canon BC-10)<p>"
+        }
+    }
+}

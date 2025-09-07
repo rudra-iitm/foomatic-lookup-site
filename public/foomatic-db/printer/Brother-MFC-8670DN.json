@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC-8670DN",
+        "make": "Brother",
+        "model": "MFC-8670DN",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother MFC-8670DN series;",
+                "manufacturer": "Brother",
+                "model": "Brother MFC-8670DN series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BR8670_2_GPL.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.7 inches / 22.0 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 28 pages/min<p>"
+        }
+    }
+}

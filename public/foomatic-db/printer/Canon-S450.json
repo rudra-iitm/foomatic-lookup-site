@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S450",
+        "make": "Canon",
+        "model": "S450",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/bjc/s450/content.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Note : If you have problems when the printer is connected via the USB, try\nto connect it via the parallel port.<p>\n\nA Canon guy told me that this printer is exactly the same as the BJC-6200, only\nthe inks are more sun-proof. So use the \n\"<a href=\"show_driver.cgi?driver=stp\">stp</a>\" driver and choose the BJC-6200 as\nyour printer model.<p>\n\nPosting on our Canon forum:<p>\n\n \nSubject: Re: S450 Support [ use Bjc-6000 ]<br>\nDate: 17 Dec 2000 01:29:02 GMT<br>\nFrom: AFC@Canon.com (Answer for C)<br>\n\nC wrote:<p>\n\n&gt; Is the Canon S450 printer, supported under Linux.<p>\n\nThe Canon S450 is the old BJC-6000 in a new designed \ncase with USB access build in.  So, use the \nBJC6000a1.upp or BJC6000b1.upp.<p>\n<p>\n  Answer for C.<p>\n<p><p>\n\n      Consumables/Refills: 2 head, individual color tanks<p>"
+        }
+    }
+}

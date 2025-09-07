@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL610e_S",
+        "make": "Oki",
+        "model": "OL610e/S",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Only does 300dpi via PCL."
+        }
+    }
+}

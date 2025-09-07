@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_XE80",
+        "make": "Xerox",
+        "model": "WorkCentre XE80",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1800",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=XE80&cat=%2fEquipment%2fPrinting%2fDesktop&trk=/Printing/Desktop/XE80/overv",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Multifunction device: printer/copier.  Not a scanner?\n<br>Host-based printer; no specs available, so no free driver.<p>\n\n      Consumables/Refills: separate drum and cartridge<p>"
+        }
+    }
+}

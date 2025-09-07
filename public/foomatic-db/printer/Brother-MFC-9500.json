@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC-9500",
+        "make": "Brother",
+        "model": "MFC-9500",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/eu-fax/INFO/9500/9500.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Reported by Thoralf Klein to work at 300 and 600 dpi with the ljet2p driver.  He says it's  very  slow.\nGhostscript-generated PCL often causes memory overruns at 600dpi.\n<br>\nMiltifunction device: fax, copier, scanner, etc.  Most of the multifunction features don't work.<p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p>"
+        }
+    }
+}

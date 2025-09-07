@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/NRG-P7431cn",
+        "make": "NRG",
+        "model": "P7431cn",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.nrgcss.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:NRG;MDL:P7431cn;CMD:POSTSCRIPT;"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-NRG",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-NRG",
+                "ppd": "PPD/NRG/PS/NRG-P7431cn_PS.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 31."
+        }
+    }
+}

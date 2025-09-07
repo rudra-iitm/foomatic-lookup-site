@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_C8",
+        "make": "Xerox",
+        "model": "DocuPrint C8",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=C8&cat=%2fEquipment%2fPrinting%2fDesktop&att=PRICE&tab=Printing",
+        "lang": {
+            "pcl": {
+                "@level": "3c"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "none",
+                "manufacturer": "Xerox",
+                "model": "DocuPrint C8"
+            }
+        },
+        "functionality": "D",
+        "driver": "cdj550",
+        "comments": {
+            "en": "<p>From other notes for printers usinf PCL3c\nIt looks as if you should be able to\ndo 1200x600.  I haven't seen this happen yet\nbut will update this page when possible.\nPrinter control functions are also missing.\n(ie. ink level, align, clean).  This printer\n reacts badly to port polling so define the port\n address and irq before using or the printer\n will never shut off.\n\n<p>Note from someone else: The Red Hat test page\ncame out shifted about 3 inches to the right\n(and cropped on the right, of course).  The fix\nis to set the margins to 0 (default is 18, which\nis supposed to be in points; guess there's a units\nproblem).\n\n<p>Note to UK users: You can buy this printer really cheap (40 quid) at www.freecolourprinters.co.uk.\nI've no connection with them except as a satisfied purchaser.\nHere's the correct magic to put in your /etc/modules.conf:\n<br>alias parport_lowlevel parport_pc\n<br>options parport_pc io=0x378 irq=7\n<br>(obviously change the io and irq to suit your setup)<p>\n\n      Consumables/Refills: ~10 4 cartridges for CMYK<p>"
+        }
+    }
+}

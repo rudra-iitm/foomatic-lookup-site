@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL400",
+        "make": "Oki",
+        "model": "OL400",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4.5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Compatible to the HP LaserJet II"
+        }
+    }
+}

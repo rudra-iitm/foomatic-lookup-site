@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Citizen-ProJet_II",
+        "make": "Citizen",
+        "model": "ProJet II",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Clone of Olivetti JP350, hence similarly functional.<p>\n\n      Consumables/Refills: Cartridge GBP5, Printhead + Cartridge GBP25.<p>"
+        }
+    }
+}

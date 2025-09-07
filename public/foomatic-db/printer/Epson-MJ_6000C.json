@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-MJ_6000C",
+        "make": "Epson",
+        "model": "MJ 6000C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 1520.<p>\n\n    The best quality will come from the \"gimp-print\"\n    driver.<p>\n\n    This is a 4 color CMYK device, with a wide carriage.<p>"
+        }
+    }
+}

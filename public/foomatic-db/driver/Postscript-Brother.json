@@ -1,0 +1,33 @@
+{
+    "driver": {
+        "@id": "driver/Postscript-Brother",
+        "name": "Postscript-Brother",
+        "url": "http://solutions.brother.com/linux/en_us/",
+        "supplier": "Brother",
+        "manufacturersupplied": "Brother",
+        "license": "GPL 2+",
+        "shortdescription": {
+            "en": "Manufacturer-supplied PPD files for Brother's PostScript printers"
+        },
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "openprinting-ppds-postscript-brother"
+            }
+        },
+        "functionality": {
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100"
+        },
+        "execution": {
+            "postscript": null
+        },
+        "comments": {
+            "en": "<B>All PPD files of this driver entry are available in the <A href=\"https://github.com/OpenPrinting/ps-printer-app\">PostScript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ps-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      Under this entry Brother's PPD files for their PostScript printers\n      are hosted. PostScript printers are supported natively in Linux\n      and Unix environments, so you only need the PPD file for your\n      printer, no driver executables, to get access to all printing\n      functionality. The PPD contains all information about properties\n      and user-settable options which are specific to the printer and\n      makes printing dialogs show these options and allow the user to\n      control all the printer's functionality.<p>\n\n      The PPDs only support the printing functionality of the\n      printers. To use additional functionality, like scanning and\n      faxing you will need additional drivers from <a\n      href=\"http://solutions.brother.com/linux/en_us/\">Brother's\n      Linux driver web site</a>. There you find also new and\n      updated PPDs for PostScript printers and printer drivers for\n      non-PostScript printers.<p>\n\n      Note that these printers work, like all other PostScript\n      printers, with <a\n      href=\"show_driver.cgi?driver=Postscript\">generic PostScript\n      PPD files</a>, but then you will not get access to all the\n      printer specific functionality.<p>"
+        }
+    }
+}

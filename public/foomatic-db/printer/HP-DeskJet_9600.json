@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_9600",
+        "make": "HP",
+        "model": "DeskJet 9600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/en/WF05a/18972-236251-236261-14438-236261-306780.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "An 16MB wide-format inkjet.<p>\n\n    Adobe Postscript 3 option available, but it appears to be a\n    software-only thing.<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    A wide assortment of deskjet-ish drivers should work.<p><p>\n\n      Consumables/Refills: One Color(CMY) + one Black(K) or Photo (cmK)<p>"
+        }
+    }
+}

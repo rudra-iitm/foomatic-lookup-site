@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_1680MF",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 1680MF",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://kmbs.konicaminolta.us/content/products/models/magicolor1680MF.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:KONICA MINOLTA;CMD:ZJS,PJL,LAVAFLOW;MDL:mc1680MF;CLS:PRINTER;DES:KONICA MINOLTA mc1680MF;",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "mc1680MF",
+                "commandset": "ZJS,PJL,LAVAFLOW"
+            },
+            "snmp": {
+                "description": "KONICA MINOLTA magicolor 1680MF"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2lava",
+        "comments": {
+            "en": "The magicolor 1680MF is a USB color laser AIO with a\n      2009 street price of $294 USD.  This printer is supported\n      by the foo2lava open software printer driver.<p>\n\n      Consumables: Separate toner cartridges black (4500 prints, ~$79),\n      yellow/magenta/cyan (4500 prints, ~$119 each), drum Cartridge (45000\n      prints, ~$149)"
+        }
+    }
+}

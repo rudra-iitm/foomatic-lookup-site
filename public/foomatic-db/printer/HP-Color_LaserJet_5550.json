@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_5550",
+        "make": "HP",
+        "model": "Color LaserJet 5550",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "PJL,MLC,BIDI-ECP,PCLXL,PCL,PDF,PJL,MIME,POSTSCRIPT",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp color LaserJet 5550"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Fast wide-format colour laser printer which does 21 letter-sized\n    pages/min in both color and grayscale. As the HP Color LaserJet 4600\n    it processes all four colours simultaneously.<p>\n\n    For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Various flavors are available, with networking, extra trays,\n    etc.<p>\n\n    Duplex in the \"D\" models, there is no optional duplex\n    for the other models.<p><p>\n\n      Consumables/Refills: 1 print cartridge (with toner and drum) per color \n        (Cyan, Magenta, Yellow, blacK)<p>"
+        }
+    }
+}

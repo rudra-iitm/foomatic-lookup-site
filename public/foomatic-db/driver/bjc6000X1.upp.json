@@ -1,0 +1,37 @@
+{
+    "driver": {
+        "@id": "driver/bjc6000X1.upp",
+        "name": "bjc6000X1.upp",
+        "url": "http://www.ph.tum.de/~thaller/bjc6000/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "The printing system/execution information for this driver serves\n      also for the bjc6000b1.upp driver.<p>\n\n      UPP files of this driver: bjc6000a1.upp, bjc6000b1.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-BJC-3000"
+                },
+                {
+                    "id": "printer/Canon-BJC-6000"
+                },
+                {
+                    "id": "printer/Canon-BJC-6200"
+                },
+                {
+                    "id": "printer/Canon-S400"
+                },
+                {
+                    "id": "printer/Canon-S450"
+                }
+            ]
+        }
+    }
+}

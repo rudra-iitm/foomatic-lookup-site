@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-4801",
+        "make": "Ricoh",
+        "model": "4801",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "r4081"
+    }
+}

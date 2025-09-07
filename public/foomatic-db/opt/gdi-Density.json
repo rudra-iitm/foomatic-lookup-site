@@ -1,0 +1,80 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/gdi-Density",
+        "arg_shortname": {
+            "en": "Density"
+        },
+        "arg_longname": {
+            "en": "Toner Density"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "130",
+            "arg_spot": "E",
+            "arg_substitution": null,
+            "arg_proto": "s/PJL SET DENSITY = 1/PJL SET DENSITY = %s/;"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "gdi",
+                "arg_defval": "ev/gdi-Density-3"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/gdi-Density-1",
+                    "ev_longname": {
+                        "en": "1"
+                    },
+                    "ev_shortname": {
+                        "en": "1"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/gdi-Density-2",
+                    "ev_longname": {
+                        "en": "2"
+                    },
+                    "ev_shortname": {
+                        "en": "2"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/gdi-Density-3",
+                    "ev_longname": {
+                        "en": "3"
+                    },
+                    "ev_shortname": {
+                        "en": "3"
+                    },
+                    "ev_driverval": "3"
+                },
+                {
+                    "@id": "ev/gdi-Density-4",
+                    "ev_longname": {
+                        "en": "4"
+                    },
+                    "ev_shortname": {
+                        "en": "4"
+                    },
+                    "ev_driverval": "4"
+                },
+                {
+                    "@id": "ev/gdi-Density-5",
+                    "ev_longname": {
+                        "en": "5"
+                    },
+                    "ev_shortname": {
+                        "en": "5"
+                    },
+                    "ev_driverval": "5"
+                }
+            ]
+        }
+    }
+}

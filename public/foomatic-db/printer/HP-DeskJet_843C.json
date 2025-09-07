@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_843C",
+        "make": "HP",
+        "model": "DeskJet 843C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/printers/support_doc/bpd08592.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "manufacturer": "Hewlett-Packard",
+                "model": "DeskJet 843C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n\n    Same printer as 840C.<p>\n\n    Older comments:<p>\n\n    Works out of the box with various PCL3 drivers.<p>\n\n    Under Linux this printer does up to 600x600dpi in colour with\n    CRET. To obtain this use the Gimp-Print driver (4.1.99) in 600x600\n    dpi, or the cdj880 or cdj970 drivers with RET turned on and\n    presentation quality.<p><p>\n\n      Consumables/Refills: One cartridge for black, another for CMY<p>"
+        }
+    }
+}

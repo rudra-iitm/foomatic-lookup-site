@@ -1,0 +1,52 @@
+{
+    "driver": {
+        "@id": "driver/cdj850",
+        "name": "cdj850",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "hplip"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=cdj850%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "A printer driver for the HP670, HP690, HP850, HP855 HP870, HP890,\n    HP1100 and HP1600 color printers.  To be used with the ghostscript\n    printing system.  These drivers are in the official Ghostscript\n    distribution since GNU Ghostscript 6.51.  Please report all\n    problems to uliw@erdw.ethz.ch"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DeskJet_1100C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1120C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1220C",
+                    "comments": {
+                        "en": "Suggested by SuSE support."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_850C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_855C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_870C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_880C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_882C"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_Pro_1150C"
+                }
+            ]
+        }
+    }
+}

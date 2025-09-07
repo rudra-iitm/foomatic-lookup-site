@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-2030",
+        "make": "Lexmark",
+        "model": "2030",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/2030.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "pbm2l2030",
+        "comments": {
+            "en": "Known to work at 300dpi BW with Tom Paetzold's pbm driver.<p>\n\nDownload the driver on <a href=\"http://home.fhtw-berlin.de/~s0226426/projects/pbm2l2030_news.html\">http://home.fhtw-berlin.de/~s0226426/projects/pbm2l2030_news.html</a>.<p>\n\n      Consumables/Refills: two cartridges: color/bw<p>"
+        }
+    }
+}

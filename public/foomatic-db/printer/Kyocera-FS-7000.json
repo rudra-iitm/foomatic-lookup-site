@@ -1,0 +1,69 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-7000",
+        "make": "Kyocera",
+        "model": "FS-7000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;Model:Kyocera FS-7000;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "description": "Kyocera FS-7000",
+                "manufacturer": "Kyocera",
+                "model": "Kyocera FS-7000"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_FS-7000_en.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript,\n      <a href=\"ppd-doc.html\">Instructions</a> <br>\n      In case of less than 4MB memory 600dpi may not work for all printouts (use 300dpi instead) <br>\n      PCL5e as well (use ljet4 or ljet4d for PCL5e) <br>\n      In case of duplex option use ljet4d for PCL5e and duplex <br>\n    \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 28 pages/min<p>"
+        }
+    }
+}

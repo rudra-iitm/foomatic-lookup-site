@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-4U",
+        "make": "Canon",
+        "model": "LBP-4U",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "cjet",
+        "comments": {
+            "en": "Text and graphics work well with Ghostscript's lbp8 driver (but the page is shifted). It is more convenient to use the ljetIII driver then convert the PCL output to CaPSL with cjet 0.89.<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

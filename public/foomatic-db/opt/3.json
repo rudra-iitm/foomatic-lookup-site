@@ -1,0 +1,222 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/3",
+        "arg_shortname": {
+            "en": "Model"
+        },
+        "arg_longname": {
+            "en": "Model"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sModel=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "arg_defval": "ev/125"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_500",
+                    "arg_defval": "ev/116"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_500C",
+                    "arg_defval": "ev/117"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_510",
+                    "arg_defval": "ev/118"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_520",
+                    "arg_defval": "ev/119"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_540",
+                    "arg_defval": "ev/120"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_540C",
+                    "arg_defval": "ev/121"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_550C",
+                    "arg_defval": "ev/121"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_560C",
+                    "arg_defval": "ev/122"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_850C",
+                    "arg_defval": "ev/123"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-DeskJet_855C",
+                    "arg_defval": "ev/124"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-OfficeJet",
+                    "arg_defval": "ev/119"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-OfficeJet_300",
+                    "arg_defval": "ev/119"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-OfficeJet_330",
+                    "arg_defval": "ev/119"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-OfficeJet_350",
+                    "arg_defval": "ev/119"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "hpdj",
+                    "printer": "printer/HP-OfficeJet_LX",
+                    "arg_defval": "ev/119"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/116",
+                    "ev_longname": {
+                        "en": "DeskJet 500"
+                    },
+                    "ev_shortname": {
+                        "en": "500"
+                    },
+                    "ev_driverval": "500"
+                },
+                {
+                    "@id": "ev/117",
+                    "ev_longname": {
+                        "en": "DeskJet 500C"
+                    },
+                    "ev_shortname": {
+                        "en": "500C"
+                    },
+                    "ev_driverval": "500C"
+                },
+                {
+                    "@id": "ev/118",
+                    "ev_longname": {
+                        "en": "DeskJet 510"
+                    },
+                    "ev_shortname": {
+                        "en": "510"
+                    },
+                    "ev_driverval": "510"
+                },
+                {
+                    "@id": "ev/119",
+                    "ev_longname": {
+                        "en": "DeskJet 520"
+                    },
+                    "ev_shortname": {
+                        "en": "520"
+                    },
+                    "ev_driverval": "520"
+                },
+                {
+                    "@id": "ev/120",
+                    "ev_longname": {
+                        "en": "DeskJet 540"
+                    },
+                    "ev_shortname": {
+                        "en": "540"
+                    },
+                    "ev_driverval": "540"
+                },
+                {
+                    "@id": "ev/121",
+                    "ev_longname": {
+                        "en": "DeskJet 550C"
+                    },
+                    "ev_shortname": {
+                        "en": "550C"
+                    },
+                    "ev_driverval": "550C"
+                },
+                {
+                    "@id": "ev/122",
+                    "ev_longname": {
+                        "en": "DeskJet 560C"
+                    },
+                    "ev_shortname": {
+                        "en": "560C"
+                    },
+                    "ev_driverval": "560C"
+                },
+                {
+                    "@id": "ev/123",
+                    "ev_longname": {
+                        "en": "DeskJet 850C"
+                    },
+                    "ev_shortname": {
+                        "en": "850C"
+                    },
+                    "ev_driverval": "850C"
+                },
+                {
+                    "@id": "ev/124",
+                    "ev_longname": {
+                        "en": "DeskJet 855C"
+                    },
+                    "ev_shortname": {
+                        "en": "855C"
+                    },
+                    "ev_driverval": "855C"
+                },
+                {
+                    "@id": "ev/125",
+                    "ev_longname": {
+                        "en": "Generic DeskJet"
+                    },
+                    "ev_shortname": {
+                        "en": "unspec"
+                    },
+                    "ev_driverval": "unspec"
+                }
+            ]
+        }
+    }
+}

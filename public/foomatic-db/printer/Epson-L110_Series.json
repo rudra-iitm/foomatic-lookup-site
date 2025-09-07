@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-L110_Series",
+        "make": "Epson",
+        "model": "L110 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:L110 Series;CLS:PRINTER;DES:EPSON L110 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON L110 Series",
+                "manufacturer": "EPSON",
+                "model": "L110 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201207w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201207w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

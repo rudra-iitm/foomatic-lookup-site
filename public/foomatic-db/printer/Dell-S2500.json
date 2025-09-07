@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Dell-S2500",
+        "make": "Dell",
+        "model": "S2500",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "www.dell.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "22ppm; 1200 image quality, 600 x 600 dpi; 200MHz processor; 32MB of memory expandable to 272MB"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Se_3455",
+        "make": "Lexmark",
+        "model": "Optra Se 3455",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.Lexmark.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript"
+    }
+}

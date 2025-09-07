@@ -1,0 +1,60 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_C2424",
+        "make": "Xerox",
+        "model": "WorkCentre C2424",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "url": "http://www.office.xerox.com/multifunction-printer/color-multifunction/workcentre-c2424/enus.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;CMD:Adobe PostScript 3, PCL;MDL:WorkCentre C2424;CLS:Printer;DES:Xerox WorkCentre C2424, Color Printer, PostScript 3, Letter/A4 Size",
+                "commandset": "Adobe PostScript 3, PCL",
+                "description": "Xerox WorkCentre C2424, Color Printer, PostScript 3, Letter/A4 Size",
+                "manufacturer": "Xerox",
+                "model": "WorkCentre C2424"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrxc2424.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "High-end Solid ink multi function printer. Comes with a built in IPP server and Web configuration. Scanning works PERFECTLY with Linux since you scan at printer side and download via its web server to your workstation.<p>\n\nThe printer is a very efficient thing, and since it supports PostScript Level 3, there is no problem using it with CUPS, I have deployed it for a Linux/MacOS X workgroup of 15 computers and we all print to it without any problems.<p>\n\nHighly recommended for volume Colour printing and Multifunction.<p>The printer has both a USB connection and built in Ethernet, which supports LPR, IPP, JetDirect and AppSocket. We use IPP over Ethernet exclusively, using local host CUPS daemons which spool via at the uri: ipp://ip-of-printer/ipp<p>\n      \n      Throughput = 24\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 24 pages/min<p><p>\n\n      Consumables/Refills: Solid Ink Charges, CMYK independent<p>"
+        }
+    }
+}

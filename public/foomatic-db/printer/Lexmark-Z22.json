@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Z22",
+        "make": "Lexmark",
+        "model": "Z22",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "LNPAP",
+                "description": "Lexmark Z22-Z32",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark Z22-Z32"
+            }
+        },
+        "functionality": "D",
+        "driver": "lxm3200-tweaked",
+        "comments": {
+            "en": "This is exactly the same printer as the Z32, but it is delivered\n    with only the colour cartridge, so that the user does expensive\n    CMY printing when he does not buy a black cartridge. The manual\n    and the Windows drivers CD is the same for both printers.<p>\n\n    Prints with the lxm3200 driver in all resolutions, but only in\n    bidirectional mode, colours off (I think it is a Ghostscript\n    problem), 300 dpi too light, 600 too dark, 1200 flooded with\n    ink.<p>\n\n    The Z22 works excellently with the proprietary driver which <a\n    href=\"http://www.lexmark.com\">Lexmark</a> has\n    published for the <a\n    href=\"show_printer.cgi?recnum=Lexmark-Z32\">Z32</a>. See\n    also this posting on our Lexmark forum:<p>\n\n    <pre>\n    Subject: Lexmark Z22 &amp; linux\n    Date: 18 Dec 2000 06:32:04 GMT\n    From: coderman@mindspring.com (coder)\n    \n    I have been able to successfully print on the Z22 using the drivers\n    provided by lexmark for the Z32.  You can find them on their website (i\n    think www.lexmrk.com)\n    </pre>\n\n    The drivers issued by Lexmark do not contain any CUPS or PDQ\n    configuration file, so use them either with LPD or with my <a\n    href=\"download/printing/lexmark-foomatic-kit.tar.gz\">Lexmark\n    Foomatic Kit</a>. Download it, uncompress it, and follow the\n    instructions of its README file. Due to having access to all\n    options of the driver it leads even to a better printout quality\n    than the Lexmark driver with its original configuration\n    software.<p><p>\n\n      Consumables/Refills: color + black or color + photo ink cartridge<p>"
+        }
+    }
+}

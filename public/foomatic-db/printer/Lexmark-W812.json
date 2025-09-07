@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-W812",
+        "make": "Lexmark",
+        "model": "W812",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 26\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C5100",
+        "make": "Oki",
+        "model": "C5100",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://my.okidata.com/pp-C5100n.nsf",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2hiperc",
+        "comments": {
+            "en": "The Oki C5100 is a networked color laser printer with a\n\t2006 street price of $399 USD.  This printer is supported\n\tby the foo2hiperc open software printer driver.<p>\n\n      Consumables/Refills: Toner Black (1500 prints) - $32\n\t\tToner Yellow (1500 prints) - $65\n\t\tToner Magenta (1500 prints) - $65\n\t\tToner Cyan (1500 prints) - $65\n\t\tDrum Black (15000 prints) - $100\n\t\tDrum Yellow (1500 prints) - $120\n\t\tDrum Magenta (1500 prints) - $120\n\t\tDrum Cyan (1500 prints) - $120 Part numbers: 43034804<p>"
+        }
+    }
+}

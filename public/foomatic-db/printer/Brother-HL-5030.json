@@ -1,0 +1,61 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-5030",
+        "make": "Brother",
+        "model": "HL-5030",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.2",
+                    "left": "6.01",
+                    "right": "6.01",
+                    "bottom": "4.2"
+                },
+                "exception": [
+                    {
+                        "@PageSize": "Executive",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Legal",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    },
+                    {
+                        "@PageSize": "Letter",
+                        "relative": null,
+                        "left": "6.35",
+                        "right": "6.35"
+                    }
+                ]
+            }
+        },
+        "url": "http://solutions.brother.com/linux/",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hl1250",
+        "comments": {
+            "en": "PCL 5e and PCL 6, simolar to <a\n    href=\"show_printer.cgi?recnum=Brother-HL-5040\">Brother\n    HL-5040</a>.<p>\n\n    For driver recommendations see the page of the <a\n    href=\"show_printer.cgi?recnum=Brother-HL-5040\">Brother\n    HL-5040</a>.<p>\n\n    Brother provides a <a\n    href=\"http://solutions.brother.com/linux/\">driver</a>,\n    too, but binary-only and only for LPD/LPRng. According to the\n    printout quality it is based on the \"ljet4\" Ghostscript\n    driver. \"pxlmono\", \"gimp-print\" (600 dpi), and \"hpijs-pcl5e\" (600 dpi)\n    give a better grayscale quality and all special features of the\n    printer are accessible by PJL commands.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

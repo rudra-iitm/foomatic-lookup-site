@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C6000",
+        "make": "Oki",
+        "model": "C6000",
+        "mechanism": {
+            "led": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

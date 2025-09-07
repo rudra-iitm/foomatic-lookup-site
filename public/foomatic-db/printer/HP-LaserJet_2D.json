@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_2D",
+        "make": "HP",
+        "model": "LaserJet 2D",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    This printer has a duplex unit which is not supported by the Ghostscript\n    drivers for the LaserJet 2 models."
+        }
+    }
+}

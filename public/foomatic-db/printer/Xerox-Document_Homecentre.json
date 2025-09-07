@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Document_Homecentre",
+        "make": "Xerox",
+        "model": "Document Homecentre",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "none",
+                "manufacturer": "Xerox",
+                "model": "Document HomeCentre"
+            }
+        },
+        "functionality": "D",
+        "driver": "cdj550",
+        "comments": {
+            "en": "Multifunction Printer/Scanner\n<br>Have not explored scanner functionality under Linux; almost certain no to work.\n<br>Works quite well as a 300x300 dpi color printer. \n<br>Printer Doc's claim 600x600 on special paper, but 300x300 on normalpaper looks good.<p>\n\n      Consumables/Refills: Indv. Ink Refills per color<p>"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-SCX-4x24",
+        "make": "Samsung",
+        "model": "SCX-4x24",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6,FAX;MDL:SCX-4x24 Series;CLS:PRINTER;MODE:FAX;",
+                "manufacturer": "Samsung",
+                "model": "SCX-4x24 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono-Samsung",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "pxlmono"
+                },
+                {
+                    "id": "pxlmono-Samsung",
+                    "ppd": "PPD/Samsung/PXL/Samsung_SCX-4x24_Series_PXL.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 22 pages/min<p>"
+        }
+    }
+}

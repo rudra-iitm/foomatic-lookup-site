@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_800PS",
+        "make": "HP",
+        "model": "DesignJet 800PS",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HP;MDL:HP DesignJet 800PS (C7780C);",
+                "manufacturer": "HP",
+                "model": "HP DesignJet 800PS (C7780C)"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-HP",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-HP",
+                    "ppd": "PPD/HP/HP_Designjet_800_PS3.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 42.0 inches / 106.7 cm\n      (Large format printer)<p>"
+        }
+    }
+}

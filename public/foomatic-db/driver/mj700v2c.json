@@ -1,0 +1,25 @@
+{
+    "driver": {
+        "@id": "driver/mj700v2c",
+        "name": "mj700v2c",
+        "url": "http://www.openprinting.org/download/japanese_printers/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=mj700v2c%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      Special japanese printer driver.<p>\n\n      <b>This driver is a candidate for being marked obsolete with\n      \"stcolor\" as recommended replacement.</b><p>\n\n      This driver was not maintained any more for longer time and is\n      <a\n      href=\"http://bugs.ghostscript.com/show_bug.cgi?id=689595\">broken\n      in current Ghostscript</a>. Please use \"stcolor\" for these\n      printers. They are not (yet) listed as supported by \"stcolor\"\n      but this driver is probably the one which will most probably\n      work. Please try similar models, especially the Epson Stylus\n      800. If you have found a suitable driver and printer model,\n      preferably one which we did not mark as obsolete, please tell us\n      by reporting a bug on our <a\n      href=\"http://bugs.linux-foundation.org/\">bug tracking\n      system</a>. Choose \"OpenPrinting\" as product and\n      \"foomatic-db\" as component.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-MachJet"
+                },
+                {
+                    "id": "printer/Epson-Stylus"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL810ex",
+        "make": "Oki",
+        "model": "OL810ex",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e"
+    }
+}

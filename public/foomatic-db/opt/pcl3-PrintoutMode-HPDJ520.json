@@ -1,0 +1,92 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/pcl3-PrintoutMode-HPDJ520",
+        "arg_shortname": {
+            "en": "PrintoutMode"
+        },
+        "arg_longname": {
+            "en": "Print Quality"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "10",
+            "arg_section": "AnySetup",
+            "arg_spot": "A",
+            "arg_composite": null,
+            "arg_proto": null
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pcl3",
+                "printer": "printer/HP-DeskJet_520",
+                "arg_defval": "ev/pcl3-PrintoutMode-PlainNormal"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pcl3-PrintoutMode-PlainDraft",
+                    "ev_longname": {
+                        "en": "Plain Paper, Draft Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "PlainDraft"
+                    },
+                    "ev_driverval": "MediaType=Plain DryTime=Printer Quality=Draft RasterGraphicsQuality=Draft Passes=1 IntensityRendering=Halftones"
+                },
+                {
+                    "@id": "ev/pcl3-PrintoutMode-PlainHigh",
+                    "ev_longname": {
+                        "en": "Plain Paper, High Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "PlainHigh"
+                    },
+                    "ev_driverval": "MediaType=Plain DryTime=Printer Quality=Presentation RasterGraphicsQuality=High Passes=2 IntensityRendering=FloydSteinberg"
+                },
+                {
+                    "@id": "ev/pcl3-PrintoutMode-PlainNormal",
+                    "ev_longname": {
+                        "en": "Plain Paper, Normal Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "PlainNormal"
+                    },
+                    "ev_driverval": "MediaType=Plain DryTime=Printer Quality=Normal RasterGraphicsQuality=High Passes=1 IntensityRendering=Halftones"
+                },
+                {
+                    "@id": "ev/pcl3-PrintoutMode-SpecialDraft",
+                    "ev_longname": {
+                        "en": "Special Paper, Draft Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "SpecialDraft"
+                    },
+                    "ev_driverval": "MediaType=Transparency DryTime=Printer Quality=Draft RasterGraphicsQuality=Draft Passes=2 IntensityRendering=Halftones"
+                },
+                {
+                    "@id": "ev/pcl3-PrintoutMode-SpecialHigh",
+                    "ev_longname": {
+                        "en": "Special Paper, High Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "SpecialHigh"
+                    },
+                    "ev_driverval": "MediaType=Transparency DryTime=Printer Quality=Presentation RasterGraphicsQuality=High Passes=4 IntensityRendering=FloydSteinberg"
+                },
+                {
+                    "@id": "ev/pcl3-PrintoutMode-SpecialNormal",
+                    "ev_longname": {
+                        "en": "Special Paper, Normal Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "SpecialNormal"
+                    },
+                    "ev_driverval": "MediaType=Transparency DryTime=Printer Quality=Normal RasterGraphicsQuality=High Passes=2 IntensityRendering=Halftones"
+                }
+            ]
+        }
+    }
+}

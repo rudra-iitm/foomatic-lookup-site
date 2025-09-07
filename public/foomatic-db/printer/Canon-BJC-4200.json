@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-4200",
+        "make": "Canon",
+        "model": "BJC-4200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc600"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_8",
+        "make": "Minolta",
+        "model": "PagePro 8",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.minoltaeurope.com/minolta/products/printing/products/types/pp8/pp8.htm",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL6,PJL",
+                "manufacturer": "MINOLTA",
+                "model": "PagePro 8"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e"
+    }
+}

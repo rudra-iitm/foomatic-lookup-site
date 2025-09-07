@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_1050C",
+        "make": "HP",
+        "model": "DesignJet 1050C",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HP;MDL:HP DesignJet 1050C;",
+                "manufacturer": "HP",
+                "model": "HP DesignJet 1050C"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-HP",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-HP",
+                    "ppd": "PPD/HP/HP_DesignJet_1050C_PS3.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 36.0 inches / 91.4 cm\n      (Large format printer)<p>"
+        }
+    }
+}

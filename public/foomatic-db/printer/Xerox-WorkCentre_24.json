@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_24",
+        "make": "Xerox",
+        "model": "WorkCentre 24",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MANUFACTURER:XEROX;COMMAND SET:;MODEL:WorkCentre 24;CLASS:PRINTER;COMPATIBLE ID:;DESCRIPTION:XEROX WorkCentre 24;",
+                "description": "XEROX WorkCentre 24",
+                "manufacturer": "XEROX",
+                "model": "WorkCentre 24"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrxwcm24.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.0 inches / 30.5 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 13 pages/min<p>"
+        }
+    }
+}

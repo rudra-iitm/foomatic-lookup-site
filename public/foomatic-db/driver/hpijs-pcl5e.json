@@ -1,0 +1,746 @@
+{
+    "driver": {
+        "@id": "driver/hpijs-pcl5e",
+        "name": "hpijs-pcl5e",
+        "url": "http://hplipopensource.com/",
+        "supplier": "Hewlett-Packard",
+        "thirdpartysupplied": null,
+        "license": "BSD",
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "https://launchpad.net/hplip",
+                "@level": "voluntary",
+                "#text": "HPLIP support and bug tracking system"
+            }
+        },
+        "shortdescription": {
+            "en": "HP's HPIJS driver - PPDs for compatible PCL-5e-based non-HP laser printers"
+        },
+        "functionality": {
+            "maxresx": "600",
+            "maxresy": "600",
+            "monochrome": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100",
+            "speed": "70"
+        },
+        "execution": {
+            "ijs": null,
+            "nopjl": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=ijs -sIjsServer=hpijs -sDeviceManufacturer=\"HEWLETT-PACKARD\" -sDeviceModel=\"HP LaserJet\"%A%B%C -dIjsUseOutputFD%Z -sOutputFile=- -",
+            "margins": {
+                "general": {
+                    "unit": "in",
+                    "relative": null,
+                    "top": "0.2",
+                    "left": "0.25",
+                    "right": "0.25",
+                    "bottom": "0.2"
+                }
+            },
+            "ppdentry": "*DefaultResolution: 600dpi"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n   HPIJS is HP's universal printer driver for most of their\n   non-PostScript printers. It comes as a part of HPLIP, HP Linux\n   Imaging and Printing. HPLIP is a complete driver suite which also\n   includes scanning, copying, and fax drivers for multi-function\n   devices and also the printer maintenance and management utility\n   hp-toolbox.<P>\n\n   The HPIJS driver is only one of the two flavors of HP's printer\n   driver. HP has recently added the CUPS Raster driver hpcups and\n   uses this driver by default currently. HPIJS is still included in\n   HPLIP, but more for backward compatibility.<P>\n\n   HP provides PPD files for all their supported printers and both\n   driver flavors.<P>\n\n   Many non-HP printers are compatible to HP printers as they use the\n   same page description language, PCL 5e. This language was\n   introduced with the HP LaserJet 4 and it is probably the most used\n   standard page description language after PostScript. Even most of\n   the PostScript printers understand PCL 5e which can be used as\n   alternative language if the printer has not enough memory to render\n   PostScript. This driver entry generates PPD files to use HPIJS with\n   PCL 5e laser printers which are not from HP, and so allows the use\n   of this high-quality printer driver with a wide range of\n   printers.<P>\n\n   Double-sided printing and tray selection is supported, but tray numbers\n   may be different.<P>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Brother-HL-1050"
+                },
+                {
+                    "id": "printer/Brother-HL-1060"
+                },
+                {
+                    "id": "printer/Brother-HL-1070"
+                },
+                {
+                    "id": "printer/Brother-HL-10h"
+                },
+                {
+                    "id": "printer/Brother-HL-1250"
+                },
+                {
+                    "id": "printer/Brother-HL-1260"
+                },
+                {
+                    "id": "printer/Brother-HL-1270N"
+                },
+                {
+                    "id": "printer/Brother-HL-1430"
+                },
+                {
+                    "id": "printer/Brother-HL-1440"
+                },
+                {
+                    "id": "printer/Brother-HL-1450"
+                },
+                {
+                    "id": "printer/Brother-HL-1470N"
+                },
+                {
+                    "id": "printer/Brother-HL-1650"
+                },
+                {
+                    "id": "printer/Brother-HL-1660e"
+                },
+                {
+                    "id": "printer/Brother-HL-1670N"
+                },
+                {
+                    "id": "printer/Brother-HL-1850"
+                },
+                {
+                    "id": "printer/Brother-HL-1870N"
+                },
+                {
+                    "id": "printer/Brother-HL-2060"
+                },
+                {
+                    "id": "printer/Brother-HL-2070N"
+                },
+                {
+                    "id": "printer/Brother-HL-2140"
+                },
+                {
+                    "id": "printer/Brother-HL-2170W"
+                },
+                {
+                    "id": "printer/Brother-HL-5030"
+                },
+                {
+                    "id": "printer/Brother-HL-5040"
+                },
+                {
+                    "id": "printer/Brother-HL-5050"
+                },
+                {
+                    "id": "printer/Brother-HL-5070N"
+                },
+                {
+                    "id": "printer/Brother-HL-5140"
+                },
+                {
+                    "id": "printer/Brother-HL-5150D"
+                },
+                {
+                    "id": "printer/Brother-HL-5170DN"
+                },
+                {
+                    "id": "printer/Brother-HL-660"
+                },
+                {
+                    "id": "printer/Brother-HL-760"
+                },
+                {
+                    "id": "printer/Brother-HL-960"
+                },
+                {
+                    "id": "printer/Canon-GP_335"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_330s"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_8500"
+                },
+                {
+                    "id": "printer/Canon-LBP-1000"
+                },
+                {
+                    "id": "printer/Canon-LBP-1260"
+                },
+                {
+                    "id": "printer/Canon-LBP-1760"
+                },
+                {
+                    "id": "printer/Canon-LBP-430",
+                    "functionality": {
+                        "maxresx": "300",
+                        "maxresy": "300",
+                        "text": "60",
+                        "lineart": "60",
+                        "graphics": "30",
+                        "photo": "30"
+                    },
+                    "ppdentry": "*DefaultResolution: 300dpi"
+                },
+                {
+                    "id": "printer/DEC-LN17"
+                },
+                {
+                    "id": "printer/Epson-AL-C1900"
+                },
+                {
+                    "id": "printer/Epson-AL-C1900_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C2000"
+                },
+                {
+                    "id": "printer/Epson-AL-C2000_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C4000"
+                },
+                {
+                    "id": "printer/Epson-AL-C4000_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C4100"
+                },
+                {
+                    "id": "printer/Epson-AL-C8500"
+                },
+                {
+                    "id": "printer/Epson-AL-C8500PS"
+                },
+                {
+                    "id": "printer/Epson-AL-C8600"
+                },
+                {
+                    "id": "printer/Epson-AL-C8600_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-5700"
+                },
+                {
+                    "id": "printer/Epson-EPL-5700PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-N1600"
+                },
+                {
+                    "id": "printer/Epson-EPL-N1600PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050plus"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2050PSplus"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2120"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2500"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2500_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2750"
+                },
+                {
+                    "id": "printer/Epson-EPL-N2750PS"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_10V"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_16DV"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_20W"
+                },
+                {
+                    "id": "printer/Generic-PCL_5e_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_6_PCL_XL_Printer"
+                },
+                {
+                    "id": "printer/IBM-Infoprint_12"
+                },
+                {
+                    "id": "printer/IBM-Page_Printer_3112"
+                },
+                {
+                    "id": "printer/Infotec-4651_MF"
+                },
+                {
+                    "id": "printer/Kyocera-CS-1815"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1010"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1018MFP"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1020D"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1030D"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1050"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1200"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1600plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1700plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1714M"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1900"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1920"
+                },
+                {
+                    "id": "printer/Kyocera-FS-2000D"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3600plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3700plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3718M"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3820N"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3830N"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3900DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-4000DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600_KPDL-2"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6020"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6026"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6300"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6500",
+                    "functionality": {
+                        "maxresx": "300",
+                        "maxresy": "300",
+                        "text": "60",
+                        "lineart": "60",
+                        "graphics": "30",
+                        "photo": "30"
+                    },
+                    "ppdentry": "*DefaultResolution: 300dpi"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6500plus",
+                    "functionality": {
+                        "maxresx": "300",
+                        "maxresy": "300",
+                        "text": "60",
+                        "lineart": "60",
+                        "graphics": "30",
+                        "photo": "30"
+                    },
+                    "ppdentry": "*DefaultResolution: 300dpi"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6700"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-680"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6900"
+                },
+                {
+                    "id": "printer/Kyocera-FS-6950DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-7028M"
+                },
+                {
+                    "id": "printer/Kyocera-FS-800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9100DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9130DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-920"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9500DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9530DN"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1510"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1810"
+                },
+                {
+                    "id": "printer/Kyocera-KM-1815"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2030"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-3050"
+                },
+                {
+                    "id": "printer/Kyocera-KM-3530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4050"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4230_5230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-4530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5050"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-5530"
+                },
+                {
+                    "id": "printer/Kyocera-KM-6030"
+                },
+                {
+                    "id": "printer/Kyocera-KM-6230"
+                },
+                {
+                    "id": "printer/Kyocera-KM-8030"
+                },
+                {
+                    "id": "printer/Lexmark-E120"
+                },
+                {
+                    "id": "printer/Lexmark-E230"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_E"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_E321"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_Eplus"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1100"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6e"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6ex"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_8"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1400"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1800"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_660i"
+                },
+                {
+                    "id": "printer/Oki-B4350"
+                },
+                {
+                    "id": "printer/Oki-B4400"
+                },
+                {
+                    "id": "printer/Oki-B4600"
+                },
+                {
+                    "id": "printer/Oki-Okipage_10e"
+                },
+                {
+                    "id": "printer/Oki-Okipage_10ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_14ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6e"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_8p"
+                },
+                {
+                    "id": "printer/Oki-OL410e",
+                    "functionality": {
+                        "maxresx": "300",
+                        "maxresy": "300",
+                        "text": "60",
+                        "lineart": "60",
+                        "graphics": "30",
+                        "photo": "30"
+                    },
+                    "ppdentry": "*DefaultResolution: 300dpi"
+                },
+                {
+                    "id": "printer/Oki-OL810ex"
+                },
+                {
+                    "id": "printer/Oki-Super_6e",
+                    "functionality": {
+                        "maxresx": "300",
+                        "maxresy": "300",
+                        "text": "60",
+                        "lineart": "60",
+                        "graphics": "30",
+                        "photo": "30"
+                    },
+                    "ppdentry": "*DefaultResolution: 300dpi"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_220"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_401",
+                    "functionality": {
+                        "maxresx": "300",
+                        "maxresy": "300",
+                        "text": "60",
+                        "lineart": "60",
+                        "graphics": "30",
+                        "photo": "30"
+                    },
+                    "ppdentry": "*DefaultResolution: 300dpi"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_700"
+                },
+                {
+                    "id": "printer/Samsung-ML-1250"
+                },
+                {
+                    "id": "printer/Samsung-ML-1450"
+                },
+                {
+                    "id": "printer/Samsung-ML-1450PS"
+                },
+                {
+                    "id": "printer/Samsung-ML-1650"
+                },
+                {
+                    "id": "printer/Samsung-ML-1651N"
+                },
+                {
+                    "id": "printer/Samsung-ML-1750"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150"
+                },
+                {
+                    "id": "printer/Samsung-ML-2150PS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2151N"
+                },
+                {
+                    "id": "printer/Samsung-ML-2151NPS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2152W"
+                },
+                {
+                    "id": "printer/Samsung-ML-2152WPS"
+                },
+                {
+                    "id": "printer/Samsung-ML-2550"
+                },
+                {
+                    "id": "printer/Samsung-ML-2551N"
+                },
+                {
+                    "id": "printer/Samsung-ML-2552W"
+                },
+                {
+                    "id": "printer/Samsung-ML-2570"
+                },
+                {
+                    "id": "printer/Samsung-ML-4600"
+                },
+                {
+                    "id": "printer/Samsung-ML-5000a"
+                },
+                {
+                    "id": "printer/Samsung-ML-6000"
+                },
+                {
+                    "id": "printer/Samsung-ML-6060"
+                },
+                {
+                    "id": "printer/Samsung-ML-6100"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000N"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000P"
+                },
+                {
+                    "id": "printer/Samsung-ML-7050"
+                },
+                {
+                    "id": "printer/Samsung-ML-7300"
+                },
+                {
+                    "id": "printer/Samsung-ML-7300N"
+                },
+                {
+                    "id": "printer/Samsung-ML-85"
+                },
+                {
+                    "id": "printer/Samsung-QL-5100A"
+                },
+                {
+                    "id": "printer/Samsung-QL-6050"
+                },
+                {
+                    "id": "printer/Sharp-AR-161"
+                },
+                {
+                    "id": "printer/Xerox-Able_1406"
+                },
+                {
+                    "id": "printer/Xerox-Document_Centre_400"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_4508"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_N4512"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_N4512PS"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P1202"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P8e"
+                }
+            ]
+        }
+    }
+}

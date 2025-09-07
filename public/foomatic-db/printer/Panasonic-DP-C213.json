@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-DP-C213",
+        "make": "Panasonic",
+        "model": "DP-C213",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "PostScript 3 is optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

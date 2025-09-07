@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_7328",
+        "make": "Xerox",
+        "model": "WorkCentre 7328",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 26\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

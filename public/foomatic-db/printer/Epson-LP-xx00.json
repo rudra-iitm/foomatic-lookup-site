@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-xx00",
+        "make": "Epson",
+        "model": "LP-xx00",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "escpage",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

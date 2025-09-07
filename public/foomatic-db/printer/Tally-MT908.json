@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Tally-MT908",
+        "make": "Tally",
+        "model": "MT908",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3",
+        "comments": {
+            "en": "Works in lj3 emulation mode; the printer also has proprinter and epson modes."
+        }
+    }
+}

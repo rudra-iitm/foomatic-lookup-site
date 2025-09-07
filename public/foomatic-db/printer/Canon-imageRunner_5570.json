@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_5570",
+        "make": "Canon",
+        "model": "imageRunner 5570",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e, 6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Multi-PDL Printer Kit G-1 required for PostScript and PCL 5e, 6\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

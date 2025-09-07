@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1022nw",
+        "make": "HP",
+        "model": "LaserJet 1022nw",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet 1022nw;CMD:ACL;CLS:PRINTER;DES:HP LaserJet 1022nw;",
+                "commandset": "ACL",
+                "description": "HP LaserJet 1022nw",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 1022nw"
+            }
+        },
+        "functionality": "A",
+        "driver": "foo2zjs-z1",
+        "comments": {
+            "en": "Low-end mono laser. 1200 ProRes, 18ppm, available as USB-only,\n    with integrated network interface (\"n\" version) or with WLAN\n    interface (\"nw\"). PCL 5e and ZjStream.<p>\n    \n    For basic printing functionality use the \"<a\n    href=\"show_driver.cgi?driver=foo2zjs\">foo2zjs</a>\"\n    driver. For advanced functionality such as printer status and\n    maintenance features, use the <a\n    href=\"http://hplipopensource.com/\">HPLIP</a>\n    framework as CUPS backend and \"foo2zjs\" as printer\n    driver.<p>\n\n    Note that \"foo2zjs\" makes the printer printing much\n    faster and more reliable than HPIJS, and it has a 1200x600-dpi\n    mode wereas HPIJS (and other drivers for PCL 5e) have a maximum\n    resolution of 600x600 dpi.<p><p>\n\n      Consumables/Refills: Cartridge containing toner and imaging drum<p>"
+        }
+    }
+}

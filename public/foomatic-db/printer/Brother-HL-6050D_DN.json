@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-6050D_DN",
+        "make": "Brother",
+        "model": "HL-6050D/DN",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother HL-6050D_DN series;",
+                "manufacturer": "Brother",
+                "model": "Brother HL-6050D_DN series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BR6050D2_GPL.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.7 inches / 22.0 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 24 pages/min<p>"
+        }
+    }
+}

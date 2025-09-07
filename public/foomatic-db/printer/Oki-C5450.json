@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C5450",
+        "make": "Oki",
+        "model": "C5450",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oki;MDL:C5450;",
+                "manufacturer": "Oki",
+                "model": "C5450"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oki",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/ok5450u1.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 16 pages/min<p>"
+        }
+    }
+}

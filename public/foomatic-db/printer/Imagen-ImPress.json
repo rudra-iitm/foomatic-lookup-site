@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Imagen-ImPress",
+        "make": "Imagen",
+        "model": "ImPress",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "imagen",
+        "comments": {
+            "en": "Special Ghostscript driver; should work fine."
+        }
+    }
+}

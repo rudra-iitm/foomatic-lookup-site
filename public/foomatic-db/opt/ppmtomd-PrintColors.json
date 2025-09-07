@@ -1,0 +1,190 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-PrintColors",
+        "arg_shortname": {
+            "en": "PrintColors"
+        },
+        "arg_longname": {
+            "en": "Colors to be printed"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "120",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-colours %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "ev/ppmtomd-PrintColors-CMYK"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-PrintColors-C",
+                    "ev_longname": {
+                        "en": "Cyan only"
+                    },
+                    "ev_shortname": {
+                        "en": "C"
+                    },
+                    "ev_driverval": "c"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CK",
+                    "ev_longname": {
+                        "en": "Cyan, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CK"
+                    },
+                    "ev_driverval": "c,k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CM",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta"
+                    },
+                    "ev_shortname": {
+                        "en": "CM"
+                    },
+                    "ev_driverval": "c,m"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CMK",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CMK"
+                    },
+                    "ev_driverval": "c,m,k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CMY",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta, Yellow"
+                    },
+                    "ev_shortname": {
+                        "en": "CMY"
+                    },
+                    "ev_driverval": "c,m,y"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CMYK",
+                    "ev_longname": {
+                        "en": "Cyan, Magenta, Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CMYK"
+                    },
+                    "ev_driverval": "c,m,y,k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CY",
+                    "ev_longname": {
+                        "en": "Cyan, Yellow"
+                    },
+                    "ev_shortname": {
+                        "en": "CY"
+                    },
+                    "ev_driverval": "c,y"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-CYK",
+                    "ev_longname": {
+                        "en": "Cyan, Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "CYK"
+                    },
+                    "ev_driverval": "c,y,k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-K",
+                    "ev_longname": {
+                        "en": "Black only"
+                    },
+                    "ev_shortname": {
+                        "en": "K"
+                    },
+                    "ev_driverval": "k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-M",
+                    "ev_longname": {
+                        "en": "Magenta only"
+                    },
+                    "ev_shortname": {
+                        "en": "M"
+                    },
+                    "ev_driverval": "m"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-MK",
+                    "ev_longname": {
+                        "en": "Magenta, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "MK"
+                    },
+                    "ev_driverval": "m,k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-MY",
+                    "ev_longname": {
+                        "en": "Magenta, Yellow"
+                    },
+                    "ev_shortname": {
+                        "en": "MY"
+                    },
+                    "ev_driverval": "m,y"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-MYK",
+                    "ev_longname": {
+                        "en": "Magenta, Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "MYK"
+                    },
+                    "ev_driverval": "m,y,k"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-None",
+                    "ev_longname": {
+                        "en": "None"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "none"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-Y",
+                    "ev_longname": {
+                        "en": "Yellow only"
+                    },
+                    "ev_shortname": {
+                        "en": "Y"
+                    },
+                    "ev_driverval": "y"
+                },
+                {
+                    "@id": "ev/ppmtomd-PrintColors-YK",
+                    "ev_longname": {
+                        "en": "Yellow, Black"
+                    },
+                    "ev_shortname": {
+                        "en": "YK"
+                    },
+                    "ev_driverval": "y,k"
+                }
+            ]
+        }
+    }
+}

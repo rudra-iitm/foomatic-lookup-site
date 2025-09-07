@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_8L",
+        "make": "Minolta",
+        "model": "PagePro 8L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.minolta.de/beo/office/produkte/drucker/ppro8l/ppro8l_subframe.htm",
+        "lang": {
+            "pcl": {
+                "@level": "4.5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PrintGear;PCL;PLJ",
+                "manufacturer": "Minolta",
+                "model": "PagePro 8L"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "PCL 4.5 printing works with 600 dpi only when activated via the\n    \"<tt>ENTER LANGUAGE=PCL600</tt>\" PJL command\n    (Thanks to Daniel Schlachta, daniel at schlachta dot net, for\n    figuring that out). As driver \"ljet2p\" has to be used\n    for this.<p>\n\n      Consumables/Refills: cartridge and/or toner<p>"
+        }
+    }
+}

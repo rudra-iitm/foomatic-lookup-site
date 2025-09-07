@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-MC_9000",
+        "make": "Epson",
+        "model": "MC 9000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Pro 9500.<p>\n\n    Needs testing, I (Till) did a short test of the Epson Stylus Pro\n    9500 in the Epson office in Paris, but didn't get correct\n    results.<p>"
+        }
+    }
+}

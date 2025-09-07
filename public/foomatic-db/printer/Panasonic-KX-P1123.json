@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P1123",
+        "make": "Panasonic",
+        "model": "KX-P1123",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "120",
+                    "y": "180"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson"
+    }
+}

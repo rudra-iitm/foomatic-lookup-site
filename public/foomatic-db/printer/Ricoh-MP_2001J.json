@@ -1,0 +1,52 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-MP_2001J",
+        "make": "Ricoh",
+        "model": "MP 2001J",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:RICOH;MDL:MP 2001J;CMD:POSTSCRIPT,PCXL,PDF;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-Ricoh",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Ricoh",
+                    "ppd": "PPD/Ricoh/PS/Ricoh-MP_2001J_PS.ppd"
+                },
+                {
+                    "id": "pxlmono-Ricoh",
+                    "ppd": "PPD/Ricoh/PXL/Ricoh-MP_2001J_PXL.ppd"
+                },
+                {
+                    "id": "PDF-Ricoh",
+                    "ppd": "PPD/Ricoh/PDF/Ricoh-MP_2001J_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Optional Adobe Postscript 3. <p>\n\nUse Postscript driver for best result <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Does_my_printer_support_Postscript_.2F_PCL_XL_.2F_PCL5_.3F\"> if your printer supports Postscript. </a> <p>\n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh, Lanier, Savin, NRG, Infotec, and Gestetner printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 20."
+        }
+    }
+}

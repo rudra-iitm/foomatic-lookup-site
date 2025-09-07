@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-7100",
+        "make": "Canon",
+        "model": "BJC-7100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "very slow\n<br>CMYKcmy 7-color printer; current drivers are CMYK/4-color only.<p>\n\n      Consumables/Refills: 2 cartridges: black and CMY(+cmy)<p>"
+        }
+    }
+}

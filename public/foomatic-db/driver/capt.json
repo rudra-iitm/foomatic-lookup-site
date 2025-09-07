@@ -1,0 +1,24 @@
+{
+    "driver": {
+        "@id": "driver/capt",
+        "name": "capt",
+        "url": "http://www.boichat.ch/nicolas/capt/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "Driver for the Canon LBP-810 and LBP-1120 laser\n    winprinters. Should also work with other printers using the CAPT\n    protocol, please report if you have a printer working with this\n    driver which is not listed here.<p>\n\n    Note that the driver talks directly to the USB port. So the\n    printer must be connected via USB. The output destination\n    specified in the printer spooler will not be used. If you use\n    CUPS, set the destination to /dev/null, so that the CUPS backends\n    do not block the USB device.<p>\n\n    The Foomatic PPD files for this driver are not available on\n    OpenPrinting because they are already contained in the driver\n    package.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-LBP-1120"
+                },
+                {
+                    "id": "printer/Canon-LBP-810"
+                }
+            ]
+        }
+    }
+}

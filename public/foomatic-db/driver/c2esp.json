@@ -1,0 +1,76 @@
+{
+    "driver": {
+        "@id": "driver/c2esp",
+        "name": "c2esp",
+        "url": "http://cupsdriverkodak.sourceforge.net/",
+        "supplier": "cupsdriverkodak project",
+        "thirdpartysupplied": null,
+        "license": "GPL 2+",
+        "licensetext": {
+            "en": "Principally, this driver is free software under the GPL, but take\n   note on the following restriction:\n\n   It is possible that certain products which can be built using the\n   jbig software module might form inventions protected by patent\n   rights in some countries (e.g., by patents about arithmetic coding\n   algorithms owned by IBM and AT&T in the USA). Provision of this\n   software by the author does NOT include any licences for any\n   patents. In those countries where a patent licence is required for\n   certain applications of this software module, you will have to\n   obtain such a licence yourself."
+        },
+        "patents": null,
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "http://sourceforge.net/projects/cupsdriverkodak/support",
+                "@level": "voluntary",
+                "#text": "cupsdriverkodak forums on SourceForge"
+            }
+        },
+        "shortdescription": {
+            "en": "Free software printer driver for the Kodak ESP inkjet printer series"
+        },
+        "functionality": {
+            "maxresx": "600",
+            "maxresy": "1200",
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "70",
+            "photo": "70"
+        },
+        "execution": {
+            "cups": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n    <iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    This is a cups filter and PPD files for the Kodak ESP 5xxx all-in-one \n    printers on Linux. Likely to work on other ESP printers like the ESP \n    3250, ESP 7, and ESP 9 as well.<p>\n\n    This driver supports only printing, not scanning or faxing.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Kodak-EasyShare_5100"
+                },
+                {
+                    "id": "printer/Kodak-EasyShare_5300"
+                },
+                {
+                    "id": "printer/Kodak-EasyShare_5500"
+                },
+                {
+                    "id": "printer/Kodak-ESP_3250"
+                },
+                {
+                    "id": "printer/Kodak-ESP_5250"
+                },
+                {
+                    "id": "printer/Kodak-ESP_5500"
+                },
+                {
+                    "id": "printer/Kodak-ESP_6150"
+                },
+                {
+                    "id": "printer/Kodak-ESP_7250"
+                },
+                {
+                    "id": "printer/Kodak-ESP_3"
+                },
+                {
+                    "id": "printer/Kodak-ESP_7"
+                },
+                {
+                    "id": "printer/Kodak-ESP_9"
+                }
+            ]
+        }
+    }
+}

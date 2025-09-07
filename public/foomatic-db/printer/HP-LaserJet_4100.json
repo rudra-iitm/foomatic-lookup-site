@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4100",
+        "make": "HP",
+        "model": "LaserJet 4100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/pdf/4100series.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,POSTSCRIPT,PCLXL,PJL,PCL",
+                "description": "Hewlett-Packard LaserJet 4100 Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 4100 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Successor of the HP LaserJet 4050, expandable with paper trays,\n    duplex unit, network module, memory. \"n\" models with \n    ethernet, \"t\" models with extra paper tray, \"d\"\n    models with duplex unit.<br>\n    Postscript level 3 out of the box.\n   \n    For basic printing functionality use the Postscript PPD. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>"
+        }
+    }
+}

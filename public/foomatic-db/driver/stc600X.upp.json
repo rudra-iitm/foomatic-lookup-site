@@ -1,0 +1,34 @@
+{
+    "driver": {
+        "@id": "driver/stc600X.upp",
+        "name": "stc600X.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc600ih.upp, stc600pl.upp,\n      stc600p.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_Color_600"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_640"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_660"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_670"
+                }
+            ]
+        }
+    }
+}

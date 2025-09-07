@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_Pro_K5300",
+        "make": "HP",
+        "model": "OfficeJet Pro K5300",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF06b/18972-236251-236261-24728-f51-411179-428774-411185.html",
+        "lang": {
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PML,PCL",
+                "description": "Hewlett-Packard OfficeJet_Pro_K5300",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP OfficeJet Pro K5300"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p><p>\n\n      Consumables/Refills: 4 cartridges: one for each color of CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

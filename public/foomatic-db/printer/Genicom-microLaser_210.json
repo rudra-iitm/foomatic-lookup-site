@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Genicom-microLaser_210",
+        "make": "Genicom",
+        "model": "microLaser 210",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "Postscript-Genicom",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Genicom",
+                    "ppd": "PPD/Genicom/GNML2101.PPD"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 21\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

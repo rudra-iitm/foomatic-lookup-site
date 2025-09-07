@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-311FP_PS",
+        "make": "Sharp",
+        "model": "AR-311FP PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sh311fpj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 31\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

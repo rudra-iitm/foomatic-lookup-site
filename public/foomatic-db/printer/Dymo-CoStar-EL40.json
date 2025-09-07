@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Dymo-CoStar-EL40",
+        "make": "Dymo-CoStar",
+        "model": "EL40",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "128",
+                    "y": "128"
+                }
+            }
+        },
+        "url": "http://www.dymo-costar.com/labelwriter/lwel.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "pbm2lwxl",
+        "comments": {
+            "en": "1.5 inch wide label printer; \ndriver by Mark Whitis<br>\nTested OK by driver author on \nManufacturer supplied printer.\nJust remember that most software\nexpecting an 8-1/2x11 page (not\na mailing label) will print in\nthe UL corner of \nthe page without proper \nconfiguration - adjust margins\nso it prints in the LL corner\nor adjust page size.  Note that\npbm2lwxl is not a ghostscript \ninternal driver; it is a filter\nprogram which will take PBM output\nfrom ghostscript and translate it\ninto the printer's native language.<p>\n\n      Consumables/Refills: thermal; special labels<p>"
+        }
+    }
+}

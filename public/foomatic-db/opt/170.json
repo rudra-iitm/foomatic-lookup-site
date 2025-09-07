@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/170",
+        "arg_shortname": {
+            "en": "NoCurlCorrectionOnCurrent"
+        },
+        "arg_longname": {
+            "en": "Curl Correction"
+        },
+        "arg_execution": {
+            "arg_group": "Finishing",
+            "arg_order": "180",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-nocurl"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "CurlCorrectionOnCurrent"
+        }
+    }
+}

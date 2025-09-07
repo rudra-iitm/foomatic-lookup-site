@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_8550",
+        "make": "HP",
+        "model": "Color LaserJet 8550",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236268-15077-236268-25506-15086-15087.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Drum Kit (30.000 pages),<p>\n\n    transfer unit (60.000 pages),<p>\n\n    4 toner cartridges (1 black, 4 color).<p>\n\n    entry in /etc/printcap<p>\n\n    <pre>\nremote|remote printer on [ip-address]:\\\n\t:sd=[spool-directory]:\\\n\t:rm=[ip-address]:\\\n\t:rp=lp:\\\n\t:bk:sh:mx#0:\n    </pre>\n\n    [ip-address] is the ip-address of the network interface configured\n    for the printer.<p>"
+        }
+    }
+}

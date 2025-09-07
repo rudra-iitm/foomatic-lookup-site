@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_1690MF",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 1690MF",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://kmbs.konicaminolta.us/content/products/models/magicolor1690MF.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:KONICA MINOLTA;CMD:ZJS,PJL,LAVAFLOW;MDL:mc1690MF;CLS:PRINTER;DES:KONICA MINOLTA mc1690MF;",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "mc1690MF",
+                "commandset": "ZJS,PJL,LAVAFLOW"
+            },
+            "snmp": {
+                "description": "KONICA MINOLTA magicolor 1690MF"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2lava",
+        "comments": {
+            "en": "The magicolor 1690MF is a network color laser AIO with a\n      2009 street price of $300 USD.  This printer is supported\n      by the foo2lava open software printer driver.<p>\n\n      Consumables: Separate toner cartridges black (4500 prints, ~$79),\n      yellow/magenta/cyan (4500 prints, ~$119 each), drum Cartridge (45000\n      prints, ~$149)"
+        }
+    }
+}

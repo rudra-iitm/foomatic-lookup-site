@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-QL-6050",
+        "make": "Samsung",
+        "model": "QL-6050",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsung.com.ar/products/printer/ql6050.html",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL6",
+                "manufacturer": "Samsung",
+                "model": "6050"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e"
+    }
+}

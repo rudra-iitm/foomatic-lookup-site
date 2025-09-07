@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Brother-PT-550A",
+        "make": "Brother",
+        "model": "PT-550A",
+        "pcmodel": "BR550A",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;CMD:PT-CBP;MDL:550A;CLS:PRINTER;",
+                "commandset": "PT-CBP",
+                "description": "Brother PT-550A",
+                "manufacturer": "Brother",
+                "model": "PT-550A"
+            }
+        },
+        "functionality": "D",
+        "driver": "ptouch",
+        "comments": {
+            "en": "Prints 10mm per second.<p>\n\n      Consumables/Refills: Black on White Thermal Paper\n\tFabric Tape Blue on White\n\tFlexi Tape\n\tIron on Black Tape\n\tSecurity Tape Black on White\n\tStrong Adhesive Tape\n\tTZ tape widths w: 1=6mm, 2=9mm, 3=12mm, 4=18mm, 5=24mm, 6=36mm\n\tTZ foreground colours f: 1=black, 2=red, 3=blue, 4=gold, 5=white,\n\tTZ background colours b: 1=clear, 2=white, 3=black, 4=red, 5=blue, 6=yellow, 7=green, 8=gold Part numbers: ALK251, \t\n      TZFAw, \n      TZFXbwf, \n      TZIYwf, \n      TZSEw, \n      TZSbwf<p>"
+        }
+    }
+}

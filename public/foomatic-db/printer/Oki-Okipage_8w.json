@@ -1,0 +1,15 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_8w",
+        "make": "Oki",
+        "model": "Okipage 8w",
+        "mechanism": {
+            "led": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "oki4w"
+    }
+}

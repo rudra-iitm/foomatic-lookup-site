@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/stc500pX.upp",
+        "name": "stc500pX.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc500ph.upp, stc500p.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_Color_400"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_500",
+                    "comments": {
+                        "en": "360dpi"
+                    }
+                }
+            ]
+        }
+    }
+}

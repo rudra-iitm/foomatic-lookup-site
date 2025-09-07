@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Oce-im8530",
+        "make": "Oce",
+        "model": "im8530",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 85\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

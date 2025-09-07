@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-800",
+        "make": "Canon",
+        "model": "BJC-800",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc800",
+        "comments": {
+            "en": "This printer works well."
+        }
+    }
+}

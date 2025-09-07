@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_P8e",
+        "make": "Xerox",
+        "model": "DocuPrint P8e",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://xerox.networkprinters.com/products/p8e/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL5E2",
+                "manufacturer": "Xerox",
+                "model": "DocuPrint P8e"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "This printer is not to be confused with the P8 (no  e ).\n<br>Danger Will Robinson: Despite this being a PCL printer, \nthere is a slight annoyance. When the printer goes into \npower saver mode, any Windows-based access over a network \nrequires that the printer be \"woken up\" before any serious \nprinting can be done. This is, I think, because the LaserJet \n4 doesn't have a \"sleep\" mode. Anyway, give it a kick with a \ntext-based editor (like PFE from Windows) and  then  it \nworks fine. Accessing the controls for the printer to turn \nPower Save mode off permanently can only be done from Windows,\nAFAIK so I'm still looking for a way around this.\nAlso, toner cartridges are  very  expensive (3 carts == 1 P8e)!<p>\n\n      Consumables/Refills: toner cartridge<p>"
+        }
+    }
+}

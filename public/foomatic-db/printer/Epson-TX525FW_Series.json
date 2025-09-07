@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-TX525FW_Series",
+        "make": "Epson",
+        "model": "TX525FW Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Epson Stylus Office TX525FW;CLS:PRINTER;DES:EPSON Epson Stylus Office TX525FW",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus Office TX525FW",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus Office TX525FW"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-workforce-525",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-workforce-525"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

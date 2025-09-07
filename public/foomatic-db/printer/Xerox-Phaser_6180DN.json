@@ -1,0 +1,69 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6180DN",
+        "make": "Xerox",
+        "model": "Phaser 6180DN",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;CMD:Adobe PostScript 3, PCL;MDL:Phaser 6180DN;DES:Xerox Phaser 6180 Color Laser Printer, PostScript 3, Letter/A4 Size;CLS:PRINTER;",
+                "commandset": "Adobe PostScript 3, PCL",
+                "description": "Xerox Phaser 6180 Color Laser Printer, PostScript 3, Letter/A4 Size",
+                "manufacturer": "Xerox",
+                "model": "Phaser 6180DN"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx6180dn.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 26\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 26 pages/min<p>"
+        }
+    }
+}

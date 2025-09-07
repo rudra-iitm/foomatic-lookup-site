@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-X73",
+        "make": "Lexmark",
+        "model": "X73",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "LNPAP",
+                "description": "Lexmark X73",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark X73"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This is a multifunction device with integrated scanner/copier.<p>\n\n    Scanning with SANE works mostly (ie sane's \"good\") with the gt68xx\n    driver.<p>\n\n    The printing engine is compatible with the Z42, so you can use\n    drivers/PPD files for this model.<p><p>\n\n      Consumables/Refills: color + black cartridge<p>"
+        }
+    }
+}

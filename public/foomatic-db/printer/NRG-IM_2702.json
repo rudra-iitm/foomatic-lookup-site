@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/NRG-IM_2702",
+        "make": "NRG",
+        "model": "IM 2702",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.nrg.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:NRG;MDL:IM 2702;CMD:POSTSCRIPT;"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-NRG",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-NRG",
+                "ppd": "PPD/NRG/PS/NRG-IM_2702_PS.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq\"> FAQ section </a> questions regarding PPDs for Ricoh, Lanier, Savin, NRG, Infotec, and Gestetner printers.<p>\n\nDownloading the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.linuxfoundation.org/collaborate/workgroups/openprinting/database/ricohfaq#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 27."
+        }
+    }
+}

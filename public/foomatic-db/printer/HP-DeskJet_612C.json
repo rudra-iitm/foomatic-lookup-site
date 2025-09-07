@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_612C",
+        "make": "HP",
+        "model": "DeskJet 612C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 610C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 610C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n600 dpi in colour is not supported by the hardware.<p>\n\n    Older user comments:<P>\n\n    Far as I can tell everything's working fine <P>\n\n    <a href=\"mailto:\n    toby.cabot@pobox.com\">toby.cabot@pobox.com</a>: Text\n    quality is excellent at 600x600. The comments in the ghostscript\n    docs about gamma correction apply here. Photo images seem kinda\n    muddy, especially at 600x600. If you figure out a way to fix this\n    cleanly using RH driver scripts please let me know.<p>\n\n    The docs mention a special photo cartridge but I havn't\n    tried that yet<p>\n\n    Don't forget - this printer (and pretty much any other this\n    cheap) can't do better than 600x300 in color.<p>\n\n      Consumables/Refills: HP C6614A (black) and HP 51649G (color), instead of the black\n\tcartridge a photo cartridge can be used.<p>"
+        }
+    }
+}

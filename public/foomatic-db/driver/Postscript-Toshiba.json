@@ -1,0 +1,33 @@
+{
+    "driver": {
+        "@id": "driver/Postscript-Toshiba",
+        "name": "Postscript-Toshiba",
+        "url": "http://www.toshiba.com/",
+        "supplier": "Toshiba",
+        "manufacturersupplied": "Toshiba",
+        "license": "GPL 2+",
+        "shortdescription": {
+            "en": "Manufacturer-supplied PPD files for Toshiba's PostScript printers"
+        },
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "openprinting-ppds-postscript-toshiba"
+            }
+        },
+        "functionality": {
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100"
+        },
+        "execution": {
+            "postscript": null
+        },
+        "comments": {
+            "en": "<B>All PPD files of this driver entry are available in the <A href=\"https://github.com/OpenPrinting/ps-printer-app\">PostScript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ps-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      Under this entry Toshiba's PPD files for their PostScript\n      printers are hosted. PostScript printers are supported natively\n      in Linux and Unix environments, so you only need the PPD file\n      for your printer, no driver executables, to get access to all\n      printing functionality. The PPD contains all information about\n      properties and user-settable options which are specific to the\n      printer and makes printing dialogs show these options and allow\n      the user to control all the printer's functionality.<p>\n\n      Note that PPDs only support the printing functionality of the\n      printers, not things like scanning or faxing.<p>\n\n      These printers also work, like all other PostScript printers,\n      with <a href=\"show_driver.cgi?driver=Postscript\">generic\n      PostScript PPD files</a>, but then you will not get access\n      to all the printer specific functionality.<p>"
+        }
+    }
+}

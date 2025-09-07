@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Brother-DCP-7020",
+        "make": "Brother",
+        "model": "DCP-7020",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hl1250"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                }
+            ]
+        },
+        "comments": {
+            "en": null
+        }
+    }
+}

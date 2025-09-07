@@ -1,0 +1,100 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/77",
+        "arg_shortname": {
+            "en": "Duplex"
+        },
+        "arg_longname": {
+            "en": "Double-Sided Printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "200",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dDuplex=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "cdj970",
+                "arg_defval": "ev/628"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/628",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "None"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/629",
+                    "ev_longname": {
+                        "en": "On (Flip on Long Edge)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexNoTumble"
+                    },
+                    "ev_driverval": "2",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_840C"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_841C"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_842C"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_845C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/630",
+                    "ev_longname": {
+                        "en": "On (Flip on Short Edge)"
+                    },
+                    "ev_shortname": {
+                        "en": "DuplexTumble"
+                    },
+                    "ev_driverval": "1",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_840C"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_841C"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_842C"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-DeskJet_845C"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

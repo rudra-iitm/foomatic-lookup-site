@@ -1,0 +1,20 @@
+{
+    "driver": {
+        "@id": "driver/c2070",
+        "name": "c2070",
+        "url": "http://www.kornblum.i-p.com/2070/Lexmark2070.html",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dDITHERPPI=150 -sDEVICE=bitcmyk -r300 %A%Z -sOutputFile=- - | c2070"
+        },
+        "comments": {
+            "en": "Simple driver for the Lexmark 2070, does only 300 dpi in colour."
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Lexmark-2070"
+            }
+        }
+    }
+}

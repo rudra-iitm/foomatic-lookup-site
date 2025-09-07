@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-Phaser_850DP",
+        "make": "Tektronix",
+        "model": "Phaser 850DP",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MANUFACTURER:Tektronix;COMMAND SET:Adobe PostScript 3;MODEL:Phaser 850DP;CLASS:Printer;  DESCRIPTION: Phaser 850 Color Page Printer, PostScript Level 3, Letter/A4 Size",
+                "commandset": "Adobe PostScript 3",
+                "description": "Phaser 850 Color Page Printer, PostScript Level 3, Letter/A4 Size",
+                "manufacturer": "Tektronix",
+                "model": "Phaser 850DP"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx850dp.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 6\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-21\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 6 pages/min<p>"
+        }
+    }
+}

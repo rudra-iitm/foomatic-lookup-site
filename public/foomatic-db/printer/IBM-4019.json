@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/IBM-4019",
+        "make": "IBM",
+        "model": "4019",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "In this <a href=\"http://www.openprinting.org/pipermail/ibm-list/2001-May/000006.html\">posting</a> this printer is considered an absolute \"Paperweight\", but this user is very content:\n<p>\nWorks great on RedHat 5.2.  Used \nprinttool to set it as an HP LaserJet.\n500k RAM is too little for a PostScript\nimage (using Ghostscript).  Using \na 4Mbyte memory board ($95 board not\nplug in card) Postscript prints great, \nbut slow.  A Postscript option is \navailable for this printer, but the\noption was not used in this evaluation.<p>\n\n      Consumables/Refills: $150 new, $90 refill<p>"
+        }
+    }
+}

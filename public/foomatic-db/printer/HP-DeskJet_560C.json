@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_560C",
+        "make": "HP",
+        "model": "DeskJet 560C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    CMY+K printer, see also <a\n    href=\"http://www.openprinting.org/show_printer.cgi?recnum=HP-DeskJet_550C\">HP\n    DeskJet 550C</a>.<p>\n\n    This printer has a 600x300-dpi-REt mode which is probably not\n    accessable with free software.<p>"
+        }
+    }
+}

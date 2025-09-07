@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-C260FP",
+        "make": "Sharp",
+        "model": "AR-C260FP",
+        "mechanism": {
+            "led": null,
+            "color": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 26\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

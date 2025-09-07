@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/stc2X.upp",
+        "name": "stc2X.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc2_h.upp, stc2s_h.upp, stc2.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Stylus_Color_860"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_II"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_IIs"
+                }
+            ]
+        }
+    }
+}

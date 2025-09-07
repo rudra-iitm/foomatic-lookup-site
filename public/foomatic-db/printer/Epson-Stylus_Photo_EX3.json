@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_EX3",
+        "make": "Epson",
+        "model": "Stylus Photo EX3",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Wide-format version of the Epson Stylus Photo 720<p>\n\n    6 color CMYKcm printer.<p>"
+        }
+    }
+}

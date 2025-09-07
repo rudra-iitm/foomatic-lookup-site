@@ -1,0 +1,43 @@
+{
+    "driver": {
+        "@id": "driver/Postscript-NRG",
+        "name": "Postscript-NRG",
+        "url": "http://www.nrg-group.com/",
+        "supplier": "Ricoh",
+        "manufacturersupplied": "NRG",
+        "license": "MIT",
+        "licensetext": {
+            "en": "MIT Open Source License\n\n      See http://www.opensource.org/\n\n      Permission is hereby granted, free of charge, to any person obtaining\n      a copy of this software and associated documentation files (the\n      \"Software\"), to deal in the Software without restriction, including\n      without limitation the rights to use, copy, modify, merge, publish,\n      distribute, sublicense, and/or sell copies of the Software, and to\n      permit persons to whom the Software is furnished to do so, subject to\n      the following conditions:\n\n      The above copyright notice and this permission notice shall be\n      included in all copies or substantial portions of the Software.\n\n      THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n      MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n      NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\n      LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\n      OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\n      WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+        },
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "http://forums.linux-foundation.org/list.php?30",
+                "@level": "voluntary",
+                "#text": "Ricoh and OEM forum at OpenPrinting"
+            }
+        },
+        "shortdescription": {
+            "en": "PPD files for NRG's PostScript printers, supplied by Ricoh"
+        },
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "openprinting-ppds-postscript-nrg"
+            }
+        },
+        "functionality": {
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100"
+        },
+        "execution": {
+            "postscript": null
+        },
+        "comments": {
+            "en": "<B>All PPD files of this driver entry are available in the <A href=\"https://github.com/OpenPrinting/ps-printer-app\">PostScript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ps-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This PPD file based on Postscript is made for Linux/UNIX environment.\n      PostScript printers are natively supported in Linux and UNIX environments (including Chrome OS),\n      so you only need this PPD file for your printer, no driver executables,\n      to get access to all printing functionality.\n      Especially this PPD file supports some advanced printer features like Locked Print, Document Server,\n      User Code\u2026 Note that although the printers are PostScript printers this PPD file needs foomatic-rip.\n      Please see the <a\n      href=\"http://www.linuxfoundation.org/en/OpenPrinting/Database/RicohFAQ\">Ricoh\n      FAQs</a> for more details.<p>\n\n      Note that these printers work, like all other PostScript\n      printers, with <a\n      href=\"show_driver.cgi?driver=Postscript\">generic PostScript\n      PPD files</a>, but then you will not get access to all the\n      printer-specific functionality.<p>"
+        }
+    }
+}

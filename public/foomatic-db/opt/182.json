@@ -1,0 +1,35 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/182",
+        "arg_shortname": {
+            "en": "YShift"
+        },
+        "arg_longname": {
+            "en": "Shift Output Vertically (in dots)"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "460",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-yshift %s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "ppmtocpva",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_max": "600",
+        "arg_min": "-600"
+    }
+}

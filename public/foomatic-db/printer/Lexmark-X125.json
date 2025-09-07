@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-X125",
+        "make": "Lexmark",
+        "model": "X125",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/Canada/printers/inkjet/X125/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "description": "Lexmark X125",
+                "manufacturer": "Lexmark",
+                "model": "X125"
+            }
+        },
+        "functionality": "D",
+        "driver": "drv_x125",
+        "comments": {
+            "en": "THE DRIVER FOR THIS PRINTER REQUIRES SPECIAL SETUP.  Please see\n    the driver notes.<p>\n    \n    With the simple driver \"drv_x125\" provided by Mark Roth\n    one can print black and white or color up to 1200x600 dpi.  Future\n    versions of the driver will support higher resolutions.  There are\n    no other known drivers that support this printer and Lexmark does\n    not provide a Linux driver for it.<p>\n\n    It is unknown whether fax and scanner drivers for the Lexmark X125\n    are available.<p><p>\n\n      Consumables/Refills: 2 cartridges (color and black or high yield color and high \n            yield black)<p>"
+        }
+    }
+}

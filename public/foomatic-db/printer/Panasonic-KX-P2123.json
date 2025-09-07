@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-KX-P2123",
+        "make": "Panasonic",
+        "model": "KX-P2123",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.panasonic.com",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "epson"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LA70",
+        "make": "DEC",
+        "model": "LA70",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "144",
+                    "y": "144"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "la70"
+    }
+}

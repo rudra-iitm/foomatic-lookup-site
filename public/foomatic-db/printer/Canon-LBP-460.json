@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-460",
+        "make": "Canon",
+        "model": "LBP-460",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/techsupport/faq/lbp460.html",
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "lbp660",
+        "comments": {
+            "en": "This is one of the so-called GDI- or winprinters, a printer with\n      a proprietary data protocol, which is not publicly documented by\n      the manufacturer.<br>\n\n      Fortunately, Nicolas Boichat has reverse-engineered the protocol\n      of the similar <a\n      href=\"show_printer.cgi?recnum=Canon-LBP-660\">LBP-660</a>\n      using <a\n      href=\"http://www.pragana.net/gdiprinters.html\">the techniques\n      described by Rildo Pragana</a>, which lead to <a\n      href=\"show_driver.cgi?driver=lbp660&fromprinter=Canon-LBP-460\">this\n      driver</a>. Then Rildo Pragana has added support for the\n      LBP-460 to the driver, using an LBP-460 which Till Kamppeter\n      brought him from Mandriva (Mandrakesoft in that time).<br>\n\n      Old comments:<br>\n\n      PCL4/LJIIp emulation via Windows driver. When LBP460 is\n      connected to W9x box, Linux can use it as SMB network-available\n      HPLJ III. Both text and Ghostscript work.<br><p>\n\n      Consumables/Refills: toner cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/IBM-4029_10P",
+        "make": "IBM",
+        "model": "4029 10P",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "My only setup is as a postscript \nprinter.  However the printer also\nhas HP Laser PCL support. My setup \nis just out-of-the-box Redhat 5.2\npostscript support.<p>\n\n      Consumables/Refills: Hi yield toner cartridge $150 USD<p>"
+        }
+    }
+}

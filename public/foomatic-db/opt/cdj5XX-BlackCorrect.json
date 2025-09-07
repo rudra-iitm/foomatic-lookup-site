@@ -1,0 +1,40 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/cdj5XX-BlackCorrect",
+        "arg_shortname": {
+            "en": "BlackCorrect"
+        },
+        "arg_longname": {
+            "en": "Black correction (Cyan reduction)"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "140",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dBlackCorrect=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "cdj500",
+                    "arg_defval": "4"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj550",
+                    "arg_defval": "4"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "dj505j",
+                    "arg_defval": "4"
+                }
+            ]
+        },
+        "arg_max": "9",
+        "arg_min": "0"
+    }
+}

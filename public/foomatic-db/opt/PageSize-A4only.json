@@ -1,0 +1,38 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/PageSize-A4only",
+        "arg_shortname": {
+            "en": "PageSize"
+        },
+        "arg_longname": {
+            "en": "Page Size"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "false",
+                "driver": "drv_z42",
+                "arg_defval": "ev/PageSize-A4only-A4"
+            }
+        },
+        "enum_vals": {
+            "enum_val": {
+                "@id": "ev/PageSize-A4only-A4",
+                "ev_longname": {
+                    "en": "A4"
+                },
+                "ev_shortname": {
+                    "en": "A4"
+                },
+                "ev_driverval": "-dDEVICEWIDTHPOINTS=595 -dDEVICEHEIGHTPOINTS=842"
+            }
+        }
+    }
+}

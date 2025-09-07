@@ -1,0 +1,60 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-9100DN",
+        "make": "Kyocera",
+        "model": "FS-9100DN",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/products/index.cfm",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera Mita;Model:Kyocera Mita FS-9100DN;COMMAND SET: POSTSCRIPT,PJL,PCL",
+                "commandset": "POSTSCRIPT,PJL,PCL",
+                "description": "Kyocera FS-9100DN",
+                "manufacturer": "Kyocera Mita",
+                "model": "Kyocera Mita FS-9100DN"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Kyocera",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Kyocera",
+                    "ppd": "PPD/Kyocera/en/Kyocera_Mita_FS-9100DN_en.ppd"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Very low per-page expenses due to the permanent photo-conductor drum.\n      Only consumables are toner and paper. <br>\n      Comes with network interface and duplex unit.<br>\n      Use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript,\n      <a href=\"ppd-doc.html\">Instructions</a> <br>\n      Use ljet4 for PCL5e but PCL5e is limited to 600dpi <br>\n      Use ljet4d for PCL5e and duplex <br>\n      Using pxlmono (PCL6) may be the fastest way to get good printouts.\n    \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 36 pages/min<p><p>\n\n      Consumables/Refills: Toner only, drum is permanent.<p>"
+        }
+    }
+}

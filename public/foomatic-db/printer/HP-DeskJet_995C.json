@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_995C",
+        "make": "HP",
+        "model": "DeskJet 995C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "relative": null,
+                    "top": "9",
+                    "left": "18",
+                    "right": "18",
+                    "bottom": "36"
+                },
+                "exception": {
+                    "@PageSize": "A4",
+                    "relative": null,
+                    "left": "10",
+                    "right": "10"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/data_sheet/c8925a.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "Duplex unit included, connection via USB, IR, or Bluetooth<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    The best printout quality you will get with the HPLIP\n    driver, provided by <a\n    href=\"http://hplipopensource.com/\">HP</a>,\n    especially the 1200-dpi high resolution mode gives excellent photo\n    quality. Also the Gimp-Print driver is reported to work (Model\n    setting: \"pcl-900\").<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, the 2400x1200 dpi are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi, without\n    paper detection, intended for photo paper only.<p>\n\n    The duplex unit does not work with Gimp-Print, use\n    HPLIP, \"cdj970\" or \"pcl3\" instead.<p>\n\n      Consumables/Refills: Color(CMY), Black<p>"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Alps-MD-2000",
+        "make": "Alps",
+        "model": "MD-2000",
+        "mechanism": {
+            "transfer": null,
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "ppmtomd",
+        "comments": {
+            "en": "J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files (\"ppmtomd\"). He started\n    hacking ghostscript, but abandoned it."
+        }
+    }
+}

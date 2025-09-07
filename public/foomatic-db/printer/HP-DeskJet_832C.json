@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_832C",
+        "make": "HP",
+        "model": "DeskJet 832C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n\n    Older user comments:<p>\n\n    Colors are a little off with the dj550 driver, but prints OK\n    otherwise. Probably does not use the full resolution. Maybe other\n    HP drivers will work better?<p>\n\n    According to an <a\n    href=\"http://www.deja.com/getdoc.xp?AN=561259557\">article\n    on deja.com</a>, the DeskJet 832C is technologically the\n    same as the DeskJet 882C, only slower and with a reduced duty\n    cycle.  Whether that's true or not, it seems to print fine\n    with the cdj880 driver in 300 or 600 dpi.  However, the cdj880\n    driver's author's remarks (regarding quality on the\n    DeskJet 882C printer) do apply to the DeskJet 832C printer as\n    well.<p>\n\n    Anyone qualified to say if this printer qualifies for\n    \"Perfect\" functionality with the cdj880 driver?<p>\n\n      Consumables/Refills: cartridges, about $30, I think<p>"
+        }
+    }
+}

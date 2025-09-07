@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Generic-GDI_Printer",
+        "make": "Generic",
+        "model": "GDI Printer",
+        "mechanism": {
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "There are many so-called \"GDI\" printers, especially\n    designed for Microsoft Windows. To save expenses for printer\n    electronics the manufacturers move over all the rendering to the\n    Windows driver running on the PC. The printer gets a simple bitmap\n    of the page. It does not know anything about how text characters\n    look like or how dithering or color adjustment works. Therefore\n    these printers are also called \"host-based\"\n    printers.<p>\n\n    \"GDI\" means \"Graphical Device Interface\" and\n    is a software API created by Microsoft through which applications\n    communicate with the drivers of graphical output devices, as\n    printers or graphics cards. \"GDI\" is not a hardware\n    protocol, the hardware protocols of GDI printers can be completely\n    different, even between models of the same manufacturer. For\n    Windows users this is no problem, as every printer comes with a\n    driver CD containing a driver exactly for the particular\n    printer.<p>\n\n    For users of operating systems not supported by the printer's\n    manufacturer, as GNU/Linux, Unix, Mac OS X, ..., these printers\n    are a big problem. The manufacturers usually keep the protocols as\n    their trade secrets and so it is not easy to write drivers to use\n    these printers under additional operating systems. See especially\n    Rildo Pragana's <a\n    href=\"http://www.pragana.net/gdiprinters.html\">article\n    about the development of a driver for the Samsung\n    ML-85G</a>. You should also read this article when you want\n    to write a driver (we need especially drivers for the Canon LBP\n    winprinters and the Epson EPL-....L series).<p>\n\n    If you have a GDI laser printer and this database does not point\n    you to any drivers for it, try especially the \"foo2zjs\"\n    driver for Zenographics' ZJ-stream format which probably also\n    works with some Minolta, QMS, and other printers or also\n    Samsung's \"gdi\" driver which is known to work on\n    several Samsung and one Lexmark laser printer. Brothers GDI models\n    most probably work with the \"hl7x0\" driver which is\n    already part of Ghostscript for a longer time.<p>\n\n    Compaq inkjets are usually relabled Lexmarks, so try the drivers\n    for Lexmark models with the same maximum resolution, also the\n    drivers issued by Lexmark could work. There are also Xerox\n    printers which are relabled Lexmark inkjets, but other Xerox\n    models are identical to Sharp's inkjets and understand PCL 3\n    (so they work with the \"pcl3\" driver and are not GDI\n    printers).<p>\n\n    All what is written here is not proven knowledge and so do not buy\n    a GDI printer because we have written here that it\n    \"probably\" or \"perhaps\" works. This entry you\n    should more understand as a guide for people already having a\n    winprinter and searching for a driver.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

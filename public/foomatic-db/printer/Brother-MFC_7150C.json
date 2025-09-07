@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC_7150C",
+        "make": "Brother",
+        "model": "MFC 7150C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.brother.com/us-fax/INFO/7150/7150.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "epsonc",
+        "comments": {
+            "en": "Prints in black and white at \nI don't know what resolution.\n<br>\nScanning presumed unsupported?<p>\n\n      Consumables/Refills: 4 cartridges: 1 black, 3 color<p>"
+        }
+    }
+}

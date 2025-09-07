@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_D155",
+        "make": "HP",
+        "model": "OfficeJet D155",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/nonjsnav/hpofficeje64981.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:officejet d series;CMD:MLC,PCL,PML,DW-PCL,BIDI-ECP;CLASS:PRINTER;",
+                "commandset": "MLC,PCL,PML,DW-PCL,BIDI-ECP",
+                "manufacturer": "Hewlett-Packard",
+                "model": "officejet d series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "As the HP OfficeJet D135, but with extra 250-sheets tray (400\n    sheets total, tray selection supported by HPLIP\n    driver), a duplex unit (works with HPLIP,\n    \"cdj970\", and \"pcl3\" drivers), photo card\n    reader.\n\n    Multifunction device: printer/scanner/copier. The integrated\n    flatbed scanner has an automatic document feeder and is\n    legal-sized.<p>\n\n    Prints perfectly with HP's HPLIP driver and\n    reasonably well (up to 600 dpi) with various \"cdj*\",\n    \"gimp-print\"/\"stp\", or\n    \"pcl3\"/\"hpdj\" drivers.<p>\n\n    Best output quality reachable with the HPLIP\n    driver, especially the 1200-dpi high resolution mode gives\n    excellent photo quality.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, the 2400x1200 dpi are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi, without\n    paper detection, intended for photo paper only.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    Copying works fine from the front panel.<p>\n   \n    USB and ethernet connection, optional adapter available for\n    parallel connection.<p><p>\n\n      Consumables/Refills: HP 14 black $22, HP 14 tri-color $27<p>"
+        }
+    }
+}

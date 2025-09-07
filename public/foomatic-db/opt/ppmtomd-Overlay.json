@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/ppmtomd-Overlay",
+        "arg_shortname": {
+            "en": "Overlay"
+        },
+        "arg_longname": {
+            "en": "Print next job over the current one"
+        },
+        "arg_execution": {
+            "arg_group": "CombinedJobs",
+            "arg_order": "230",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-overlay"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "DoNotOverlay"
+        }
+    }
+}

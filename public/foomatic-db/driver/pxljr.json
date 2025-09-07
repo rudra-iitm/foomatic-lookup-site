@@ -1,0 +1,27 @@
+{
+    "driver": {
+        "@id": "driver/pxljr",
+        "name": "pxljr",
+        "url": "http://hp-pxl-jetready.sourceforge.net/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ijs": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n    <iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    In contrary to HP's HPIJS this driver contributed by Hin-Tak\n    Leung (also author of the drivers for Epson's EPL \"L\" laser\n    printers) supports without any proprietary plug-ins all printout\n    qualities which the Windows driver provides for the HP Color\n    LaserJet 35xx/36xx. The development of this driver is not\n    supported by HP, it is an independent project.<p>\n\n    Cited from the driver's home page:<p>\n\n    [...]<p>\n    \n    <i>PXLJR is an IJS-based driver for the HP JetReady 4.x\n    protocol printer family (Color Laserjet 3500 and 3550) under linux\n    and other unix-like systems. This effort is not endorsed by nor\n    affiliated with HP.<p>\n\n    It is licensed under the terms of GNU General Public\n    License.</i><p>\n\n    [...]<p>\n\n    <i>HPIJS/HPLIP also supports these two printers. Why are you\n    \"reinventing the wheel\"?<p>\n\n    HPIJS provides 2 printing modes:\n    one color and one gray, corresponding to the\n    max-compression/worst-quality setting of the HP driver under\n    Windows. There are two more settings for better quality in the\n    Windows driver. PXLJR provides these two additional settings, so\n    there are a total of 6 printing modes. Also, the max-compression\n    gray mode of PXLJR is 1.5 to 3 times faster.<p>\n\n    One the other hand, PXLJR doesn't provide a full set of facilities\n    like printer status report, etc. For other bells and whistles,\n    please use HPLIP's toolbox instead. There is no conflict\n    installing both HPIJS and PXLJR simultaneously.</i><p>\n\n    [...]<p>\n\n    Note that this driver has two bugs:<p>\n\n    The first bug is that double-sided printing (duplex) does not\n    work. For this a <a\n    href=\"http://www.openprinting.org/download/printing/pxljr-patches/duplex.patch\">patch</a>\n    from Till Kamppeter is a available.<p>\n\n    The second bug is a problem of color output. In the draft and\n    normal quality modes some color tones are not printed and come out\n    white instead. The problem does not occur in the high quality\n    mode. The bug was reported to the <a\n    href=\"https://bugs.launchpad.net/ubuntu/+source/pxljr/+bug/228635\">Ubuntu\n    bug tracking system</a> and a <a\n    href=\"http://www.openprinting.org/download/printing/pxljr-patches/some-colors-print-blank.patch\">patch</a>\n    from the upstream author to fix it is available.<p>\n\t\t\t\t\t \n    Both bugs are reported to the driver's author.<p>\n\n    As the PPD file is available on the driver's web site, we\n    will not provide PPD files here at OpenPrinting. Note that\n    there is currently only one PPD file, which serves for all\n    supported printer models. The printers only differ in print speed\n    and presence of an ethernet interface.<p>\n\n    For extra functions like toner level and status checks use the\n    CUPS backend of HPLIP (\"<tt>hp:/...</tt>\" URI) and the\n    \"<tt>hp-toolbox</tt>\". There is no problem to use\n    HPLIP together with this driver.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-Color_LaserJet_3500"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_3550"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_3600"
+                }
+            ]
+        }
+    }
+}

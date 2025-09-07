@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_3150",
+        "make": "Xerox",
+        "model": "Phaser 3150",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Throughput = 22\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

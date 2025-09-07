@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-4plus",
+        "make": "Canon",
+        "model": "LBP-4+",
+        "mechanism": {
+            "laser": null
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "lbp8",
+        "comments": {
+            "en": "Reported on Usenet by Mark Bennett-Leaver to work fine with the lbp8 driver.\n<br>Note that pages with lots of graphics will require additional printer memory."
+        }
+    }
+}

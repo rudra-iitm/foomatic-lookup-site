@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_385",
+        "make": "Xerox",
+        "model": "WorkCentre 385",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "I actually have no information on this printer.  If anyone knows anything, speak now!<p>\n\n      Consumables/Refills: cartidge<p>"
+        }
+    }
+}

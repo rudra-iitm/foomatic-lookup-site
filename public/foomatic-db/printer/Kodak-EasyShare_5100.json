@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Kodak-EasyShare_5100",
+        "make": "Kodak",
+        "model": "EasyShare 5100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "functionality": "D",
+        "driver": "c2esp",
+        "drivers": {
+            "driver": {
+                "id": "c2esp"
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Office_BX310FN",
+        "make": "Epson",
+        "model": "Stylus Office BX310FN",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Epson Stylus Office BX310FN;CLS:PRINTER;DES:EPSON Epson Stylus Office BX310FN",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus Office BX310FN",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus Office BX310FN"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-stylus-office-tx510fn-series",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-escpr"
+                },
+                {
+                    "id": "epson-stylus-office-tx510fn-series"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

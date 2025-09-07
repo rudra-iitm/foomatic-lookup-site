@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_M20",
+        "make": "Xerox",
+        "model": "WorkCentre M20",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;MDL:Xerox WC M20;",
+                "manufacturer": "Xerox",
+                "model": "Xerox WC M20"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrxwcm20.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

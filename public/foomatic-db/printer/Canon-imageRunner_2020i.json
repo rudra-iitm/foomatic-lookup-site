@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_2020i",
+        "make": "Canon",
+        "model": "imageRunner 2020i",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.canon-europe.com/for_work/products/office_print_copy_solutions/digital_ir_series/ir2020i/index.asp",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Canon iR2270"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03\n      Additional PDL: UFRII LT<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

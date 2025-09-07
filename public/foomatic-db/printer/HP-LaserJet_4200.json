@@ -1,0 +1,50 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4200",
+        "make": "HP",
+        "model": "LaserJet 4200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h20022.www2.hp.com/busprod/overview/0,12512,series=84028%5Etype=18972%5Ecategory=64170,00.html?lsidebarLayId=106&rsidebarLayId=63",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,MLC,POSTSCRIPT,PJL,PCLXL,P",
+                "description": "Hewlett-Packard LaserJet 4200",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp LaserJet 4200"
+            },
+            "snmp": {
+                "description": "hp LaserJet 4200"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "PostScript Level 3, PCL5, PCL6, HP-GL/2<p>\n\n    Up to 35 pages/min.\n\n    48/64 MB std, depending on flavour (416 MB max.).<p>\n\n    For basic printing functionality use the Postscript PPD.\n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    Optional accessories are duplexer, additional trays up to 1500\n    sheet, hard drive, extra memory, ethernet adapter,\n    stapler/stacker.<p><p>\n\n      Consumables/Refills: Toner and drum in one cartridge (12000 pages)<p>"
+        }
+    }
+}

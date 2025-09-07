@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Texas_Instruments-microLaser_Pro_8",
+        "make": "Texas Instruments",
+        "model": "microLaser Pro 8",
+        "url": "ftp://ftp.tallygenicom.com/pub/genicom/docs/ti/dsTI-mLPro8.pdf",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 8\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

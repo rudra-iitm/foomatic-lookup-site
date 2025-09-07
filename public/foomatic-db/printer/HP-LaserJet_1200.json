@@ -1,0 +1,52 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1200",
+        "make": "HP",
+        "model": "LaserJet 1200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/pdf/lj1200.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,MLC,PCL,PCLXL,POSTSCRIPT",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 1200"
+            },
+            "usb": {
+                "description": "Hewlett-Packard LaserJet 1200"
+            },
+            "snmp": {
+                "description": "HP LaserJet 1200"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Postscript level 2 out of the box, parallel and USB connection,\n    1200n with ethernet connection, scan extension available.<p>\n\n    For basic printing functionality use the Postscript PPD. For\n    advanced functionality such as printer status and maintenance\n    features, use the <a\n    href=\"http://hplipopensource.com/\"> HPLIP\n    driver</a> (which includes HPIJS). <p>\n\n    This printer is a good choice for a cheap laser printer,\n    especially when you print a lot of text documents, as letters,\n    documentation, manuals, ... for these documents it is really fast,\n    as advertized by HP. But when using it on complicated graphics\n    (web pages rendered by Konqueror, photo \"convert\"ed to\n    PostScript with ImageMagick) in PostScript mode, it is very slow\n    and can easily run out of memory. If you use it in PCL mode, it is\n    fast in both text and graphics printing. Therefore we recommend to\n    use this printer with a Ghostscript driver like\n    \"pxlmono\" or HPLIP.<p>\n\n    Here is a somewhat longer\n    review from Robert (racsw at frontiernet dot net):<p>\n\n    <i>My testing was done on a PIII / 600Mhz machine with 256K\n    of RAM installed running Mandrake Linux 8.1.  While I intended to\n    use this printer as a USB connected device, I was never successful\n    at getting it to work properly, and so switched over to a parallel\n    port connection.  In fairness, I don't believe this is the\n    fault of the printer itself. I see no\n    reason why it shouldn't work on USB (</i>ed: Mandrake\n    8.2 configures this printer.\n    automatically<i>).<p>\n\n    IMO, the 1200/1200se is an excellent high-volume document printer,\n    and those folks like myself that need to print the normal volumes\n    of documents, How-To's, Installation procedures, etc, that a\n    typical Linux user requires will find this printer an excellent\n    choice.<p>\n\n    The printer itself comes with 8Mb of memory onboard, with a 100\n    pin DIMM slot capable of another 64Mb, for a total of 72Mb. In the\n    testing I performed with and without this additional memory\n    installed, I could find no difference in speed either way.  But\n    for those who feel they want this memory anyhow, I would advise\n    you purchase the Kingston module from <a\n    href=\"http://www.pcconnection.com/\">http://www.pcconnection.com/</a>\n    for $39.00. HP wants a whopping $470.00 (more expensive than the\n    printer itself, 12x the price of the Kingston memory) for the same\n    module.<p>\n\n    For those wanting to print graphics on this machine, I would\n    suggest an Inkjet printer instead like a DeskJet or the popular\n    and proven Epson Stylus C80. If attempting to print a WYSIWYG\n    rendition of a web page, I would make two suggestions.  First,\n    don't use Konqueror.  Konqueror has two disadvantages.  For one,\n    there is no selection for GreyScale, which, when used, cuts the\n    printing time down from 10 - 15 seconds to about 2 - 3.  Secondly,\n    Konqueror also does some strange things with the image, which,\n    when printed, will render your copy hard to read with respect to\n    font sizes and such.<p>\n \n    Here's what OpenPrinting founder Grant Taylor\n    says:<p>\n\n    \"Konq appears to print using a Qt canvas widget feature whereby the\n    canvas widget unifies the fonts - you'll see it flicker into\n    small font for a moment - and generates equivalent ps code.\n    Oddly, it unifies the fonts to some weird 6-point font that's\n    mostly useless on paper; this is what you saw.  One can only hope\n    they'll fix this in KDE3.\"<p>\n\n    I tested most of the browsers on this printer, and by far and away\n    the most readable, highest quality WYSIWYG printing was from\n    Netscape.<p>\n\n    But that's not what this printer is designed for. For\n    documentation and online manuals, it's hard to\n    beat. It's very fast, quiet and smooth.  Contrary to another\n    user's report, I found the paper tray well constructed and\n    easy to insert. It's strength was evidenced by finding my\n    10lb (near 5 kg) house cat sitting on it one afternoon.<p>\n\n    As far as the rendering speed is concerned, I think it's\n    fine.  HP advertises a 10 second print time for this machine, and\n    as long as you're not using Konqueror, I was able to meet this\n    time consistently.  If the user selects \"GreyScale\"\n    instead of color for their particular application, the time takes\n    a drastic nosedive to 2-3 seconds, with the same image on the\n    page as you would have seen if you had selected \"Color\"\n    instead.  This 10 second time was also verified by another 1200\n    user running SUSE 7.3.<p>\n\n    If this printer takes longer to print, it's apparently not\n    the internal rendering logic at fault, but the browser or\n    application used instead.<p>\n\n    </i>[...]<i> I think recommending this printer to\n    others is a safe bet. It is working perfectly, and as long as I\n    use it for what it's intended, it does it's job quickly\n    and quietly. </i>[...]<i> People who want to print\n    graphics would probably not select a LaserJet of any variety,\n    unless it's for proofing.  And then, it becomes a function of\n    the application that creates and sends the job to the printer that\n    determines what comes out on the page.  This I have proven after\n    all these tests.<p>\n\n    I would also say that I used the CUPS printing system for the\n    majority of my testing, and it seems to work fine.  There was no\n    bad test results that I achieved that I could attribute to the\n    CUPS system itself.  Usually, with Netscape, Mozilla, Adobe\n    Acrobat, etc, I would specify \"qtcups\" as the print\n    command. Using \"lpr\" worked as well with no discernible\n    difference.<p>\n\n    I give \"two thumbs up\" for this printer for sure, and because of\n    the $399 price tag, I can now justify the speed and cost-per-page\n    advantage of owning a high-volume LaserJet for home\n    use.</i><p>"
+        }
+    }
+}

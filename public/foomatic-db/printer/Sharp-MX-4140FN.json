@@ -1,0 +1,45 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-MX-4140FN",
+        "make": "Sharp",
+        "model": "MX-4140FN",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Sharp;MDL:Sharp MX-4140FN;",
+                "manufacturer": "Sharp",
+                "model": "Sharp MX-4140FN"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Sharp",
+                    "ppd": "PPD/Sharp/Sharp-MX-4140FN-ps-jp.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.0 inches / 30.5 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 41 pages/min<p>"
+        }
+    }
+}

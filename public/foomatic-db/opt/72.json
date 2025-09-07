@@ -1,0 +1,55 @@
+{
+    "option": {
+        "@type": "float",
+        "@id": "opt/72",
+        "arg_shortname": {
+            "en": "GammaCyan"
+        },
+        "arg_longname": {
+            "en": "Gamma Cyan"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "150",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dGammaValC=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "cdj1600",
+                    "arg_defval": "0.0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj670",
+                    "arg_defval": "0.0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj850",
+                    "arg_defval": "0.0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj880",
+                    "arg_defval": "0.0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj890",
+                    "arg_defval": "0.0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "cdj970",
+                    "arg_defval": "0.0"
+                }
+            ]
+        },
+        "arg_max": "9",
+        "arg_min": "0"
+    }
+}

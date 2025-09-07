@@ -1,0 +1,55 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C6100",
+        "make": "Oki",
+        "model": "C6100",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oki;MDL:C6100;",
+                "manufacturer": "Oki",
+                "model": "C6100"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oki",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oki",
+                    "ppd": "PPD/Oki/OK6100_a.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 26\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 26 pages/min<p>"
+        }
+    }
+}

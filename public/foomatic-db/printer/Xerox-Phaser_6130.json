@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_6130",
+        "make": "Xerox",
+        "model": "Phaser 6130",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 16\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

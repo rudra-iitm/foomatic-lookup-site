@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_5500ps",
+        "make": "HP",
+        "model": "DesignJet 5500ps",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h20022.www2.hp.com/busprod/specifications/0,12513,series=82218^type=18972^category=64182,00.html?lsidebarLayId=79&rsidebarLayId=64",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-HP",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-HP",
+                "ppd": "PPD/HP/HP_Designjet_5500_PS3.ppd"
+            }
+        },
+        "comments": {
+            "en": "Large-format 6-ink printer, 42 inches or 60 inches wide.<p>\n\n    PostScript printer, so it should be no problem to use this model\n    under free operating systems.<p>\n\n    Drivers for HP's RTL language are under developement in both\n    the CUPS-1.2 and Gimp-Print projects.<p>\n\n    You can also send HP-GL/2 drawings and JPEG images directly to the\n    printer.<p><p>\n\n      Consumables/Refills: 6 cartridges (CMYcmK)<p>"
+        }
+    }
+}

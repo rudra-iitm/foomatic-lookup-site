@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_6ex",
+        "make": "Oki",
+        "model": "Okipage 6ex",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cs.okidata.com/cs.nsf/LookUp+Get/OKIPAGE6ex?OpenDocument",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ENHANCED PCL5,PJL,EPSONFX,IBMP",
+                "description": "OKIDATA OKIPAGE 6ex (HP4P)",
+                "manufacturer": "OKI DATA CORP",
+                "model": "OKIDATA OKIPAGE 6ex"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "600x600 dpi does not work out-of-the-box, if you have a lot of graphics and the memory not upgraded.\nUse 300x300 dpi instead.<p>\n\n      Consumables/Refills: toner and drum unit<p>"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_1012",
+        "make": "HP",
+        "model": "LaserJet 1012",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.shopping.hp.com/cgi-bin/hpdirect/shopping/scripts/product_detail/product_detail_view.jsp?BV_SessionID=@@@@2054406155.1109190045@@@@&BV_EngineID=ccdladddmehjidmcfngcfkmdflldfgf.0&landing=null&category=laserjets_bw&subcat1=entry_level&product_cod",
+        "autodetect": {
+            "parallel": {
+                "commandset": "FastRaster",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp LaserJet 1012"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like printer status and\n    toner level, use the <a\n    href=\"show_driver.cgi?driver=hplip\">HPLIP driver\n    package from HP</a>.<p>\n\n    Cheap, compact desktop laser printer, foldable tray for 150\n    sheets, A4/Letter/Legal, up to 14 pages/min. Somewhat faster than\n    the LaserJet 1010, \"Fastres 1200\" resolution enhancement.<p>\n\n    HP classifies this printer as \"host-based\" whereas they claim the\n    HP LaserJet 1015 to understand PCL 5e. But the HP LaserJet 1010\n    and 1012 seem to understand a stripped-down (raster-graphics only,\n    no text) variant of PCL 5e.<p>\n\n    Rick Richardson (rickr at mn dot rr dot com), author of the\n    \"foo2zjs\" driver (driver for the HP LaserJet 1000/1005),\n    has examined the output of the Windows driver for this printer and\n    found out that the language looks like PJL + PCL 6 (see report\n    on the HP forum on OpenPrinting).<p>\n\n    Adam (madaman at web dot de) reports on the HP forum on\n    OpenPrinting that the HP LaserJet 1010 works for him with all\n    raster drivers for the HP LaserJet 1100 (HPLIP,\n    \"ljet4\", \"lj4dith\", \"gimp-print\"). Adam tried also PCL-6 drivers\n    (\"lj5gray\", \"pxlmono\") but without success.<p>\n\n    Unfortunately, the new LaserJet 1010/1012 series seems not to\n    be absolutely compatible with older HP printers or it has a\n    firmware bug. Sometimes it happens that the printer stops working\n    and reports the error \"<tt>Unsupported Personality:\n    PCL</tt>\". It only continues working when one kills the job\n    and power-cycles the printer.<p>\n\n    The problem of the \"<tt>Unsupported Personality:\n    PCL</tt>\" was finally solved by Carl Michal (michal at\n    physics dot ubc dot ca). By analyzing the output of the Windows\n    driver he found out that after the BeginSession operator in the\n    beginning of a PCL 6 job a special sequence of 8 bytes has to be\n    added. He added it by a filter to the output of Ghostscript's\n    \"pxlmono\" driver and from then on the printer worked (Implemented\n    as the \"pxl1010\" driver on this site).<p><p>\n\n      Consumables/Refills: Toner and drum in one cartridge (18000 pages)<p>"
+        }
+    }
+}

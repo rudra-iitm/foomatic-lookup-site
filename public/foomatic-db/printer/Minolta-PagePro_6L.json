@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_6L",
+        "make": "Minolta",
+        "model": "PagePro 6L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.minoltaeurope.com/minolta/products/printing/products/types/pp6/pp6l.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Unlike its big brothers, the PagePro 6, 6e, and 6ex, the 6L is\n    strictly a Windows GDI printer.  It is unlikely that there will\n    ever be free software drivers for the PagePro 6L.<p>\n\n    Perhaps one can get it to work with the \"<a\n    href=\"show_driver.cgi?driver=pbmtozjs\">pbmtozjs</a>\"\n    driver, in its source code \"Minolta\" is mentioned. Please post on\n    the Minolta forum on this site if you make the printer working\n    this way.<p>"
+        }
+    }
+}

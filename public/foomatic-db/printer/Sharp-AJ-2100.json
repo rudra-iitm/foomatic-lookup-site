@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AJ-2100",
+        "make": "Sharp",
+        "model": "AJ-2100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.sharp.de/",
+        "lang": {
+            "pcl": {
+                "@level": "3?"
+            }
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Six-ink photo printer, protocol completely unknown. Seems not to be\n    available in the US.<p>\n\n      Consumables/Refills: 6 seperately exchangable tanks for each colour<p>"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/151",
+        "arg_shortname": {
+            "en": "Magenta"
+        },
+        "arg_longname": {
+            "en": "Magenta Level"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "220",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dMagenta=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "md2k",
+                    "arg_defval": "1024"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md5k",
+                    "arg_defval": "1024"
+                }
+            ]
+        },
+        "arg_max": "2048",
+        "arg_min": "0"
+    }
+}

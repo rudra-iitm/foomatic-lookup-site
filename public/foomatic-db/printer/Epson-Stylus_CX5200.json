@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_CX5200",
+        "make": "Epson",
+        "model": "Stylus CX5200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/cmc_upload/0/000/013/382/CX5200_InfoSheet.pdf",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier.<p>\n\n    The printing engine seems to be the C82, so when your Gimp-Print\n    version does not list this device explicitly as supported, pretend\n    that you have the C82.<p>\n\n    To be able to scan you need either kernel 2.4.21 or newer or you\n    need to do a small change in the \"<tt>scanner.o</tt>\"\n    module of older kernels. See <a\n    href=\"http://www.geocrawler.com/archives/3/2571/2002/10/0/9767006/\">this\n    posting on the linux-usb-devel mailing list</a> and the\n    thread \"<a\n    href=\"http://www.openprinting.org/pipermail/epson-list/2002q4/thread.html\">Epson\n    Stylus cx3200 MFP</a>\" on the <a\n    href=\"http://www.openprinting.org/cgi-bin/mailman/listinfo/epson-list\">Epson\n    Forum</a>.<p>\n\n    You have to remove the following from the\n    <tt>drivers/usb/scanner.c</tt> file in the kernel \n    source:<p>\n\n    <tt>\n    if (dev-&gt;config[0].bNumInterfaces != 1) {<br>\n    &nbsp;&nbsp;&nbsp;&nbsp;info(\"probe_scanner: Only one device interface is supported.\");<br>\n    &nbsp;&nbsp;&nbsp;&nbsp;return NULL;<br>\n    }<p>\n    </tt>\n\n    Then you have to recompile, install, and reload the\n    \"<tt>scanner.o</tt>\" kernel module (the commands have\n    to be executed as \"root\", we assume that the kernel source code is\n    in the <tt>/usr/src/linux</tt> directory):<p>\n\n    <tt>\n    cd /usr/src/linux<br> \n    make modules<br>\n    cp drivers/usb/scanner.o /lib/modules/&lt;Linux version&gt;/kernel/drivers/usb/<br>\n    rmmod scanner<br>\n    modprobe scanner vendor=0x04b8 product=0x0801<p>\n    </tt>\n\n    After having done so you can configure <a\n    href=\"http://www.sane-project.org/\">SANE</a> to use the\n    CX5200 with the \"<tt>epson</tt>\" scanner driver, it is\n    probably compatible to the Epson Perfection 1200U.<p>\n\n    Copying should just work with the front panel of the\n    device.<p>"
+        }
+    }
+}

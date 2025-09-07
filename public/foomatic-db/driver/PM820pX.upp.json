@@ -1,0 +1,26 @@
+{
+    "driver": {
+        "@id": "driver/PM820pX.upp",
+        "name": "PM820pX.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "Can be used with Parallel or USB interfaces."
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Epson-PM_820C",
+                "comments": {
+                    "en": "720x720 DPI, can be used with Parallel or USB interfaces."
+                }
+            }
+        }
+    }
+}

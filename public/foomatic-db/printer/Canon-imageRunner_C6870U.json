@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_C6870U",
+        "make": "Canon",
+        "model": "imageRunner C6870U",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "url": "http://www.servicedesk.calpoly.edu/computing_support/copier/docs/Canon%20IR%20C5870U%20and%206870U%20Brochure.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Postscript and PCL 5c require imagePASS-G1 or Printer Kit-L1\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LP-S4200",
+        "make": "Epson",
+        "model": "LP-S4200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.epson.jp/products/offirio/printer/lps4200/.",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "eplaser-jp",
+        "comments": {
+            "en": "Epson provides a free (LGPL) driver for this printer. With this\n    the printer should work to its full extent.<p><p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

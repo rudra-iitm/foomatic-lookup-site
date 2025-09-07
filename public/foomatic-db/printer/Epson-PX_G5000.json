@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX_G5000",
+        "make": "Epson",
+        "model": "PX G5000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese equivalent of R1800.<p>\n\n    A3/wide-format version of the Epson Stylus Photo R800.<p>\n\n    For this printer at least <a\n    href=\"http://gimp-print.sf.net/\">Gutenprint 5.x</a> is needed,\n    Gimp-Print 4.x does not support it.<p>\n\n    This printer has is an 8-ink (CMYK + red + blue + \"gloss\n    enhancer\", with two different black inks installed) print head\n    with 1.5 pl drop size. It should be an extremely fast printer with\n    a huge gamut (particularly since it uses UltraChrome inks, which\n    are pigment but which have a very large gamut even in CMYK\n    form).<p><p>\n\n      Consumables/Refills: 8 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Ep",
+        "make": "Lexmark",
+        "model": "Optra Ep",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://web.archive.org/web/19990423033145/http://www.lexmark.com/printers/opte.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL 5 Emulation,PostScript Lev",
+                "description": "Lexmark Optra Ep LaserPrinter",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark Optra Ep LaserPrinter"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "a true Postscript printer<br>\n2M ram expandable to 6M<p>\n\n      Consumables/Refills: toner cartridge<p>"
+        }
+    }
+}

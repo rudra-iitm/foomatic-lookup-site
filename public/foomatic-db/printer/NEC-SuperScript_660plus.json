@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_660plus",
+        "make": "NEC",
+        "model": "SuperScript 660plus",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss660plus/index.htm",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "PCL 5e emulation appears to be implemented in the Windows driver."
+        }
+    }
+}

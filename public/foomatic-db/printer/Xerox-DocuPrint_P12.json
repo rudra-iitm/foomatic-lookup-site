@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_P12",
+        "make": "Xerox",
+        "model": "DocuPrint P12",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=P12&cat=%2fEquipment%2fPrinting%2fDesktop",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PrintGear,PCL,PJL",
+                "description": "Xerox DocuPrint P12",
+                "manufacturer": "XEROX",
+                "model": "DocuPrint P12"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Another \"PrintGear\" printer; PCL support with Ghostscript driver only goes up to 300x300 dpi."
+        }
+    }
+}

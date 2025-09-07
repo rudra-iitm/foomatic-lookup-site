@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_4500",
+        "make": "HP",
+        "model": "Color LaserJet 4500",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236268-15077-236268-25505-15079-15080.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "manufacturer": "Hewlett-Packard",
+                "model": "LaserJet Color 4500"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD.\n    For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Various flavors are available, with networking, duplexer, etc.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

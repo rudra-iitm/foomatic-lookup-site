@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL830Plus",
+        "make": "Oki",
+        "model": "OL830Plus",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://cs.okidata.com/cs.nsf/LookUp+Get/OL830Plus?OpenDocument",
+        "lang": {
+            "postscript": {
+                "@level": "1"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also supports PCL 3/HP LaserJet II\nand Diablo 630<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

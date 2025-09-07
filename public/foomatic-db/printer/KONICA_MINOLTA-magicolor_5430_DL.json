@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_5430_DL",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 5430 DL",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:KONICA MINOLTA;CMD:ZJS,PJL,LAVAFLOW;MDL:mc5430DL;CLS:PRINTER;DES:KONICA MINOLTA mc5430DL;",
+                "commandset": "ZJS,PJL,LAVAFLOW",
+                "description": "KONICA MINOLTA mc5430DL",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "mc5430DL"
+            }
+        },
+        "functionality": "B",
+        "driver": "rastertokmXXXXdl",
+        "comments": {
+            "en": "The magicolor 5430 DL is a cheap network color laser printer,\n\tsupported by a free software CUPS driver supplied by Konica\n\tMinolta."
+        }
+    }
+}

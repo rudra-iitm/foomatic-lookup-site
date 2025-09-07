@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okijet_2500",
+        "make": "Oki",
+        "model": "Okijet 2500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OJ2500Home.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "cdj550",
+        "comments": {
+            "en": "Spoofs PCL for DOS apps under Windows, but other than that just won't work.\n\nUsing Redhat6.1 printtool, selecting the \nHP Deskjet 550C/560C/6xxC driver gave me a\npicture perfect \"Red Hat Printtool PostScript Test Page.\"\nIt prints color and black in one pass.  Dithering and\ncolor patches printed (some more accurately than\nothers).\n\nPrinter doesn't seem to accept text only in any way.\n\nI'm making an educated guess at \"Mostly\" - \nI haven't done much with it yet.<p>\n\n      Consumables/Refills: cart, 4 ink tanks<p>"
+        }
+    }
+}

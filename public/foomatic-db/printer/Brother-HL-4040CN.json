@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-4040CN",
+        "make": "Brother",
+        "model": "HL-4040CN",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "comments": {
+            "en": "Throughput = 21\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

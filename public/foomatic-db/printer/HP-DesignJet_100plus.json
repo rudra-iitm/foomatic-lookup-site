@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_100plus",
+        "make": "HP",
+        "model": "DesignJet 100plus",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "5",
+                    "left": "5",
+                    "right": "5",
+                    "bottom": "12"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "cdnj500",
+        "comments": {
+            "en": "Large-format printer, A1+ max.<p>\n\n    Thanks to Albert Gonzalez (albert at imego2000 dot dyndns dot org) for\n    contrbuting this information. Here is his original report:<p>\n\n    <i>\n\n    At first tried with \"pcl3\", but it didn't work ok, appearing white\n    bands between head passes. Then, I contacted the \"pcl3\" developer,\n    Martin Lottermoser, whether it could be a bug in the\n    driver.<p>\n\n    Of course it wasn't a bug in the driver but is a bug in the\n    firmware.<p>\n \n    Anyway, he suggested me to try the \"chp2200\" driver, which i use\n    succesfully.<p>\n\n    The printer works very well, at 300x300 dpi and 600x600 dpi, full\n    colors.<p>\n \n    If you purchase it new, (as I did) check the quality of the black\n    printhead. Mine was faulty, and HP has sent a replacement. To a\n    friend of mine the same happened.<p>\n\n    </i><p>\n\n      Consumables/Refills: CMYK cartridges and printheads<p>\n\n          Cartridges (CMYK): c4836a c4837a c4838a c4840a<p>\n\n          Print heads (CMYK): c4811a c4812a c4813a c4810a<p><p>"
+        }
+    }
+}

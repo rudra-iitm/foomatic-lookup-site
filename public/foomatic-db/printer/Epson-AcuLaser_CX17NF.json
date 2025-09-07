@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AcuLaser_CX17NF",
+        "make": "Epson",
+        "model": "AcuLaser CX17NF",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "pt",
+                    "top": "11.34",
+                    "bottom": "11.34",
+                    "left": "11.34",
+                    "right": "11.34"
+                }
+            }
+        },
+        "url": "https://www.epson.co.uk/gb/en/viewcon/corporatesite/products/mainunits/overview/10820",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Epson AcuLaser CX17NF"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Epson AcuLaser CX17NF is a color multifunction printer with\n\ta 2013 street price of $505.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/101",
+        "arg_shortname": {
+            "en": "BottomMargin"
+        },
+        "arg_longname": {
+            "en": "Bottom Margin"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "210",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "-b %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pnm2ppa",
+                "arg_defval": "150"
+            }
+        },
+        "arg_max": "600",
+        "arg_min": "0"
+    }
+}

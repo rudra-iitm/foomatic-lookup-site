@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/158",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ibmpro",
+                "arg_defval": "ev/ibmpro-Resolution-60x72dpi"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ibmpro-Resolution-60x72dpi",
+                    "ev_longname": {
+                        "en": "60x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "60x72dpi"
+                    },
+                    "ev_driverval": "60x72"
+                },
+                {
+                    "@id": "ev/ibmpro-Resolution-60x72dpi",
+                    "ev_longname": {
+                        "en": "120x72 dpi"
+                    },
+                    "ev_shortname": {
+                        "en": "120x72dpi"
+                    },
+                    "ev_driverval": "120x72"
+                }
+            ]
+        }
+    }
+}

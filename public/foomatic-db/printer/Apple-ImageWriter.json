@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Apple-ImageWriter",
+        "make": "Apple",
+        "model": "ImageWriter",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "160",
+                    "y": "144"
+                }
+            }
+        },
+        "url": "http://www.info.apple.com/info.apple.com/applespec/applespec.taf?cat=printer&RID=2",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "iwhi",
+        "comments": {
+            "en": "Two gs drivers, iwhi for high resolution and iwlo for low."
+        }
+    }
+}

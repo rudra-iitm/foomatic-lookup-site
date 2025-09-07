@@ -1,0 +1,20 @@
+{
+    "driver": {
+        "@id": "driver/bjc800j",
+        "name": "bjc800j",
+        "url": "http://www.openprinting.org/download/japanese_printers/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=bjc800j%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "Special japanese printer driver."
+        },
+        "printers": {
+            "printer": {
+                "id": "printer/Canon-BJC-680J"
+            }
+        }
+    }
+}

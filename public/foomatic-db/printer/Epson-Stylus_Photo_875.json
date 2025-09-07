@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_875",
+        "make": "Epson",
+        "model": "Stylus Photo 875",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/pho870/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "With a PCMCIA Type II slot to read\n    memory cards of digital cameras via an appropriate PCMCIA adapter,\n    so one can print photos without PC, photo download with free\n    software works with kernel 2.4.21 or later. The memory card can be simply mounted as a\n    USB-mass-storage device then.<p>\n\n    48 nozzles per color, 6-color CMYKcm printing.<p>\n\n    Probably USB only."
+        }
+    }
+}

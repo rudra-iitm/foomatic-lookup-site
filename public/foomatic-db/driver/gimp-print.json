@@ -1,0 +1,1686 @@
+{
+    "driver": {
+        "@id": "driver/gimp-print",
+        "name": "gimp-print",
+        "url": "http://gimp-print.sourceforge.net/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "cups": null
+        },
+        "comments": {
+            "en": "Gimp-Print supports a wide variety of Epson Stylus, HP DeskJet,\n    LaserJet, Canon BubbleJet, Lexmark inkjet printers, with the\n    primary goal being uncompromising quality.  Epson Stylus printers\n    in particular are supported in all resolutions and modes, and the\n    latest printers are capable of producing prints that rival\n    photographic prints in quality. This package also offers much\n    faster printing for high quality text and presentation graphics\n    when required.<p>\n\n    The actual printer drivers are in the Gimp-Print library. To give\n    access to them Gimp-Print has various interfaces:<p>\n\n    <ol>\n\n    <li><em>Plug-in for the GIMP</em>: This plug-in\n    provides a printing dialog for the GIMP to print images directly,\n    and graphical controls to adjust the rich set of options of the\n    Gimp-Print drivers. The possibility to integrate a PPD file and to\n    print PostScript allows to use the plug-in also with Ghostscript\n    drivers other than Gimp-Print or on PostScript printers.<p>\n\n    <li><em>Native CUPS driver</em>: This interface\n    makes it possible to set up print queues under CUPS so that one\n    can print from any application or from the command line. As it\n    integrates directlty into the CUPS filtering system it is easy to\n    set up in any CUPS 1.1.x version without need of any additional\n    software. With Foomatic it is even possible to use this native\n    CUPS driver with other spoolers than CUPS.<p>\n\n    <li><em>Ghostscript IJS plug-in</em>: This is a\n    way use Gimp-Print as a Ghostscript driver without necessity of\n    patching and recompiling Ghostscript. It uses the <a\n    href=\"http://www.openprinting.org/ijs/\">IJS</a>\n    plug-in interface as also <a\n    href=\"show_driver.cgi?driver=hpijs\">HPIJS</a>\n    from HP or <a\n    href=\"http://sourceforge.net/projects/epsonepl/\">the\n    drivers for the Epson EPL-....L series</a> do. IJS drivers\n    can be used with any IJS enabled Ghostscript as ESP Ghostscript\n    7.x or newer, GNU Ghostscript 6.53 or newer, APFL Ghostscript 7.04\n    or newer. With the Foomatic data coming with Gimp-Print and the\n    current <a\n    href=\"http://www.openprinting.org/foomatic.html\">Foomatic</a>\n    packages PPD files for use with all printing systems (CUPS, LPRng,\n    LPD, GNUlpr, PPR, PDQ, CPS, spooler-less printing) can be\n    generated. Print queues set up with these PPD files and\n    <tt>foomatic-rip</tt> give full access to all options\n    of the Gimp-Print driver.<p>\n\n    <li><em>Ghostscript built-in driver</em>: This\n    is a classical Ghostscript driver based on code compiled into the\n    Ghostscript executable. The Gimp-Print package also contains the\n    Foomatic data to generate PPDs for this driver. Note that the IJS\n    driver gives the same functionality and is much easier to\n    install. Therefore this interface of Gimp-Print is obsolete and\n    not part of Gimp-Print 4.3 (upcoming 5.0) any more.<p>\n\n    </ol>\n\n    The Gimp-Print package already ships with all needed PPD files for\n    CUPS and data files for Foomatic. Therefore we do not provide PPD\n    files for download here.<p>\n\n    If you got Gimp-Print with your operating system distribution, use\n    the printer setup program coming with your distribution. Otherwise\n    it is recommended to use the CUPS driver if you use CUPS as your\n    printing system or the IJS driver if you use another spooler. Do\n    not use the Ghostscript built-in driver \"stp\" as it is\n    obsolete.<p>\n\n    <b>IMPORTANT: Always use the Foomatic data and/or\n    PPD files of the Gimp-Print version which you are actually using!\n    Remove and re-create your print queues after every update of\n    Gimp-Print. If you are using the Gimp-Print package of your Linux\n    distribution, it is possible that the Foomatic data and/or the PPD\n    files can be in separate packages. Make sure you install them and\n    that they are of the version corresponding to your Gimp-Print\n    package.</b><p>\n\n    The information currently here corresponds to driver version\n    4.2.7. If you use another version, have a look in the\n    documentation coming with your Gimp-Print package. If you have\n    still a 4.0.x version of Gimp-Print, it is highly recommended to\n    upgrade to 4.2.x.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apollo-P-2100"
+                },
+                {
+                    "id": "printer/Apollo-P-2150"
+                },
+                {
+                    "id": "printer/Apollo-P-2200"
+                },
+                {
+                    "id": "printer/Apollo-P-2250"
+                },
+                {
+                    "id": "printer/Apollo-P-2500"
+                },
+                {
+                    "id": "printer/Apollo-P-2550"
+                },
+                {
+                    "id": "printer/Apollo-P-2600"
+                },
+                {
+                    "id": "printer/Apollo-P-2650"
+                },
+                {
+                    "id": "printer/Apple-Color_StyleWriter_4100"
+                },
+                {
+                    "id": "printer/Apple-Color_StyleWriter_4500"
+                },
+                {
+                    "id": "printer/Apple-Color_StyleWriter_6500"
+                },
+                {
+                    "id": "printer/Apple-LaserWriter_Select_360"
+                },
+                {
+                    "id": "printer/Brother-DCP-1200"
+                },
+                {
+                    "id": "printer/Brother-HL-1040"
+                },
+                {
+                    "id": "printer/Brother-HL-1050"
+                },
+                {
+                    "id": "printer/Brother-HL-1060"
+                },
+                {
+                    "id": "printer/Brother-HL-1070"
+                },
+                {
+                    "id": "printer/Brother-HL-10h"
+                },
+                {
+                    "id": "printer/Brother-HL-10V"
+                },
+                {
+                    "id": "printer/Brother-HL-1240"
+                },
+                {
+                    "id": "printer/Brother-HL-1250"
+                },
+                {
+                    "id": "printer/Brother-HL-1260"
+                },
+                {
+                    "id": "printer/Brother-HL-1270N"
+                },
+                {
+                    "id": "printer/Brother-HL-1660e"
+                },
+                {
+                    "id": "printer/Brother-HL-2060"
+                },
+                {
+                    "id": "printer/Brother-HL-4Ve"
+                },
+                {
+                    "id": "printer/Brother-HL-630"
+                },
+                {
+                    "id": "printer/Brother-HL-660"
+                },
+                {
+                    "id": "printer/Brother-HL-760"
+                },
+                {
+                    "id": "printer/Brother-HL-960"
+                },
+                {
+                    "id": "printer/Brother-MFC-6550MC"
+                },
+                {
+                    "id": "printer/Brother-MFC-8300"
+                },
+                {
+                    "id": "printer/Brother-MFC-9500"
+                },
+                {
+                    "id": "printer/Brother-MFC-9600"
+                },
+                {
+                    "id": "printer/Canon-BJ-30"
+                },
+                {
+                    "id": "printer/Canon-BJC-1000"
+                },
+                {
+                    "id": "printer/Canon-BJC-2000"
+                },
+                {
+                    "id": "printer/Canon-BJC-2010"
+                },
+                {
+                    "id": "printer/Canon-BJC-210"
+                },
+                {
+                    "id": "printer/Canon-BJC-2100"
+                },
+                {
+                    "id": "printer/Canon-BJC-2110"
+                },
+                {
+                    "id": "printer/Canon-BJC-240"
+                },
+                {
+                    "id": "printer/Canon-BJC-250"
+                },
+                {
+                    "id": "printer/Canon-BJC-3000"
+                },
+                {
+                    "id": "printer/Canon-BJC-4000"
+                },
+                {
+                    "id": "printer/Canon-BJC-4300"
+                },
+                {
+                    "id": "printer/Canon-BJC-4400"
+                },
+                {
+                    "id": "printer/Canon-BJC-50"
+                },
+                {
+                    "id": "printer/Canon-BJC-55"
+                },
+                {
+                    "id": "printer/Canon-BJC-6000"
+                },
+                {
+                    "id": "printer/Canon-BJC-6100"
+                },
+                {
+                    "id": "printer/Canon-BJC-6200"
+                },
+                {
+                    "id": "printer/Canon-BJC-6500"
+                },
+                {
+                    "id": "printer/Canon-BJC-7000"
+                },
+                {
+                    "id": "printer/Canon-BJC-7100"
+                },
+                {
+                    "id": "printer/Canon-BJC-80"
+                },
+                {
+                    "id": "printer/Canon-BJC-8200"
+                },
+                {
+                    "id": "printer/Canon-BJC-85"
+                },
+                {
+                    "id": "printer/Canon-GP_335"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_330s"
+                },
+                {
+                    "id": "printer/Canon-LBP-1000"
+                },
+                {
+                    "id": "printer/Canon-LBP-1260"
+                },
+                {
+                    "id": "printer/Canon-LBP-1760"
+                },
+                {
+                    "id": "printer/Canon-LBP-430"
+                },
+                {
+                    "id": "printer/Canon-LBP-4sx"
+                },
+                {
+                    "id": "printer/Canon-S100"
+                },
+                {
+                    "id": "printer/Canon-S200"
+                },
+                {
+                    "id": "printer/Canon-S300"
+                },
+                {
+                    "id": "printer/Canon-S400"
+                },
+                {
+                    "id": "printer/Canon-S450"
+                },
+                {
+                    "id": "printer/Canon-S4500"
+                },
+                {
+                    "id": "printer/Canon-S500"
+                },
+                {
+                    "id": "printer/Canon-S600"
+                },
+                {
+                    "id": "printer/Canon-S630"
+                },
+                {
+                    "id": "printer/Canon-S800"
+                },
+                {
+                    "id": "printer/Citizen-ProJet_II"
+                },
+                {
+                    "id": "printer/DEC-1800"
+                },
+                {
+                    "id": "printer/DEC-LN17"
+                },
+                {
+                    "id": "printer/Epson-ActionLaser_1100"
+                },
+                {
+                    "id": "printer/Epson-ActionLaser_II"
+                },
+                {
+                    "id": "printer/Epson-AL-C2000"
+                },
+                {
+                    "id": "printer/Epson-AL-C2000_PS3"
+                },
+                {
+                    "id": "printer/Epson-AL-C8500"
+                },
+                {
+                    "id": "printer/Epson-AL-C8500PS"
+                },
+                {
+                    "id": "printer/Epson-AL-C8600"
+                },
+                {
+                    "id": "printer/Epson-AL-C8600_PS3"
+                },
+                {
+                    "id": "printer/Epson-CL_700"
+                },
+                {
+                    "id": "printer/Epson-CL_750"
+                },
+                {
+                    "id": "printer/Epson-CL_760"
+                },
+                {
+                    "id": "printer/Epson-EM_900C"
+                },
+                {
+                    "id": "printer/Epson-EM_930C"
+                },
+                {
+                    "id": "printer/Epson-EPL-5200"
+                },
+                {
+                    "id": "printer/Epson-EPL-5200plus"
+                },
+                {
+                    "id": "printer/Epson-EPL-5700"
+                },
+                {
+                    "id": "printer/Epson-EPL-5700PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800"
+                },
+                {
+                    "id": "printer/Epson-EPL-5800PS"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900"
+                },
+                {
+                    "id": "printer/Epson-EPL-5900_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100"
+                },
+                {
+                    "id": "printer/Epson-EPL-6100_PS3"
+                },
+                {
+                    "id": "printer/Epson-EPL-7100"
+                },
+                {
+                    "id": "printer/Epson-MC_10000"
+                },
+                {
+                    "id": "printer/Epson-MC_2000"
+                },
+                {
+                    "id": "printer/Epson-MC_5000"
+                },
+                {
+                    "id": "printer/Epson-MC_7000"
+                },
+                {
+                    "id": "printer/Epson-MC_9000"
+                },
+                {
+                    "id": "printer/Epson-MJ_5100C"
+                },
+                {
+                    "id": "printer/Epson-MJ_6000C"
+                },
+                {
+                    "id": "printer/Epson-MJ_8000C"
+                },
+                {
+                    "id": "printer/Epson-MJ_930C"
+                },
+                {
+                    "id": "printer/Epson-PM_10000"
+                },
+                {
+                    "id": "printer/Epson-PM_2000C"
+                },
+                {
+                    "id": "printer/Epson-PM_2200C"
+                },
+                {
+                    "id": "printer/Epson-PM_3000C"
+                },
+                {
+                    "id": "printer/Epson-PM_3300C"
+                },
+                {
+                    "id": "printer/Epson-PM_3500C"
+                },
+                {
+                    "id": "printer/Epson-PM_3700C"
+                },
+                {
+                    "id": "printer/Epson-PM_4000PX"
+                },
+                {
+                    "id": "printer/Epson-PM_5000C"
+                },
+                {
+                    "id": "printer/Epson-PM_7000C"
+                },
+                {
+                    "id": "printer/Epson-PM_700C"
+                },
+                {
+                    "id": "printer/Epson-PM_730C"
+                },
+                {
+                    "id": "printer/Epson-PM_740C"
+                },
+                {
+                    "id": "printer/Epson-PM_750C"
+                },
+                {
+                    "id": "printer/Epson-PM_760C"
+                },
+                {
+                    "id": "printer/Epson-PM_770C"
+                },
+                {
+                    "id": "printer/Epson-PM_780C"
+                },
+                {
+                    "id": "printer/Epson-PM_790PT"
+                },
+                {
+                    "id": "printer/Epson-PM_800C"
+                },
+                {
+                    "id": "printer/Epson-PM_850PT"
+                },
+                {
+                    "id": "printer/Epson-PM_870C"
+                },
+                {
+                    "id": "printer/Epson-PM_880C"
+                },
+                {
+                    "id": "printer/Epson-PM_9000C"
+                },
+                {
+                    "id": "printer/Epson-PM_930C"
+                },
+                {
+                    "id": "printer/Epson-PM_950C"
+                },
+                {
+                    "id": "printer/Epson-PM_970C"
+                },
+                {
+                    "id": "printer/Epson-PX_7000"
+                },
+                {
+                    "id": "printer/Epson-PX_9000"
+                },
+                {
+                    "id": "printer/Epson-PX_V500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C20SX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C20UX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C40SX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C40UX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C41SX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C41UX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C42SX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C42UX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C43SX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C43UX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C44SX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C44UX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C46"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C50"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C60"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C61"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C62"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C63"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C64"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C70"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C80"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C82"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C83"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C84"
+                },
+                {
+                    "id": "printer/Epson-Stylus_C86"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_1160"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_1500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_1520"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_3000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_400"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_440"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_460"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_480"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_580"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_600"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_640"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_660"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_670"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_680"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_740"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_760"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_777"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_800"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_850"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_860"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_880"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_8_3"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_900"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_980"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_I"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_II"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_IIs"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_PRO"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX3100"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX3200"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX5100"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX5200"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX6300"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX6400"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX8300"
+                },
+                {
+                    "id": "printer/Epson-Stylus_CX8400"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_1200"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_1270"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_1280"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_1290"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_2000P"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_2100"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_2200"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_700"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_720"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_750"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_780"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_785"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_790"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_810"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_820"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_825"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_830"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_870"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_875"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_890"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_895"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_900"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_915"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_925"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_950"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_960"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_EX"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Photo_EX3"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_10000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_5000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_5500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_7000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_7500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_7600"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_9000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_9500"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_9600"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Pro_XL"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Scan_2000"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Scan_2500"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_10V"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_16DV"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_20W"
+                },
+                {
+                    "id": "printer/Fujitsu-PrintPartner_8000"
+                },
+                {
+                    "id": "printer/Generic-PCL_4_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_5c_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_5e_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_5_Printer"
+                },
+                {
+                    "id": "printer/Generic-PCL_6_PCL_XL_Printer"
+                },
+                {
+                    "id": "printer/HP-2000C"
+                },
+                {
+                    "id": "printer/HP-2500C"
+                },
+                {
+                    "id": "printer/HP-2500CM"
+                },
+                {
+                    "id": "printer/HP-Business_Inkjet_2200"
+                },
+                {
+                    "id": "printer/HP-Business_Inkjet_2230"
+                },
+                {
+                    "id": "printer/HP-Business_Inkjet_2250"
+                },
+                {
+                    "id": "printer/HP-Business_Inkjet_2250TN"
+                },
+                {
+                    "id": "printer/HP-Business_Inkjet_2280"
+                },
+                {
+                    "id": "printer/HP-Color_Inkjet_Printer_CP1160"
+                },
+                {
+                    "id": "printer/HP-Color_Inkjet_Printer_CP1700"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_4550"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5000"
+                },
+                {
+                    "id": "printer/HP-DesignJet_230"
+                },
+                {
+                    "id": "printer/HP-DesignJet_2500CP"
+                },
+                {
+                    "id": "printer/HP-DesignJet_250C"
+                },
+                {
+                    "id": "printer/HP-DesignJet_3500CP"
+                },
+                {
+                    "id": "printer/HP-DesignJet_430"
+                },
+                {
+                    "id": "printer/HP-DesignJet_450C"
+                },
+                {
+                    "id": "printer/HP-DesignJet_455CA"
+                },
+                {
+                    "id": "printer/HP-DesignJet_488CA"
+                },
+                {
+                    "id": "printer/HP-DesignJet_700"
+                },
+                {
+                    "id": "printer/HP-DesignJet_750"
+                },
+                {
+                    "id": "printer/HP-DesignJet_750C_Plus"
+                },
+                {
+                    "id": "printer/HP-DesignJet_ColorPro_CAD"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1100C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1120C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1125C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1200C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1220C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1600C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1600CM"
+                },
+                {
+                    "id": "printer/HP-DeskJet_340C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_3810"
+                },
+                {
+                    "id": "printer/HP-DeskJet_3816"
+                },
+                {
+                    "id": "printer/HP-DeskJet_3820"
+                },
+                {
+                    "id": "printer/HP-DeskJet_3822"
+                },
+                {
+                    "id": "printer/HP-DeskJet_400"
+                },
+                {
+                    "id": "printer/HP-DeskJet_400C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_420C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_450"
+                },
+                {
+                    "id": "printer/HP-DeskJet_500"
+                },
+                {
+                    "id": "printer/HP-DeskJet_500C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_505J_Plus"
+                },
+                {
+                    "id": "printer/HP-DeskJet_510"
+                },
+                {
+                    "id": "printer/HP-DeskJet_520"
+                },
+                {
+                    "id": "printer/HP-DeskJet_540"
+                },
+                {
+                    "id": "printer/HP-DeskJet_540C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_550C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_5550"
+                },
+                {
+                    "id": "printer/HP-DeskJet_5551"
+                },
+                {
+                    "id": "printer/HP-DeskJet_560C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_600"
+                },
+                {
+                    "id": "printer/HP-DeskJet_610C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_610CL"
+                },
+                {
+                    "id": "printer/HP-DeskJet_6122"
+                },
+                {
+                    "id": "printer/HP-DeskJet_6127"
+                },
+                {
+                    "id": "printer/HP-DeskJet_612C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_640C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_648C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_660C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_670C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_670TV"
+                },
+                {
+                    "id": "printer/HP-DeskJet_672C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_680C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_682C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_690C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_692C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_693C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_694C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_695C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_697C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_810C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_812C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_815C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_816C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_825C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_830C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_832C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_840C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_841C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_842C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_843C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_845C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_850C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_855C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_870C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_880C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_882C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_890C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_895C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_916C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_920C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_930C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_932C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_933C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_934C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_935C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_940C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_948C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_950C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_952C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_955C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_957C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_959C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_960C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_970C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_975C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_980C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_990C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_995C"
+                },
+                {
+                    "id": "printer/HP-e-printer_e20"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1100A"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1150"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1220"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1300"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2300"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2D"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_2P_Plus"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3200m"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3200se"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3D"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3P_w_PCL5"
+                },
+                {
+                    "id": "printer/HP-LaserJet_3P_w_PS"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4000"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4050"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4200"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4300"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4L"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4M"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4ML"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4Si"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4V"
+                },
+                {
+                    "id": "printer/HP-LaserJet_4_Plus"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5000"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5L"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_5Si"
+                },
+                {
+                    "id": "printer/HP-LaserJet_6"
+                },
+                {
+                    "id": "printer/HP-LaserJet_6L"
+                },
+                {
+                    "id": "printer/HP-LaserJet_6P"
+                },
+                {
+                    "id": "printer/HP-LaserJet_8000"
+                },
+                {
+                    "id": "printer/HP-LaserJet_8100"
+                },
+                {
+                    "id": "printer/HP-LaserJet_8150"
+                },
+                {
+                    "id": "printer/HP-LaserJet_9000"
+                },
+                {
+                    "id": "printer/HP-OfficeJet"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_300"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_330"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_350"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_500"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_520"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_570"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_580"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_590"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_600"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_610"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_6110"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_625"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_630"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_635"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_700"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_710"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_720"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_725"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_D125"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_D135"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_D145"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_D155"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_G55"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_G85"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_G95"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_K60"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_K80"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_LX"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_Pro_1150C"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_Pro_1170C"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_Pro_1175C"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_R40"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_R45"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_R60"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_R65"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_R80"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_T45"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_T65"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_V40"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_7150"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_7350"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_7550"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1000"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1100"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1115"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1215"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1218"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1315"
+                },
+                {
+                    "id": "printer/HP-PSC_2110"
+                },
+                {
+                    "id": "printer/HP-PSC_2150"
+                },
+                {
+                    "id": "printer/HP-PSC_2210"
+                },
+                {
+                    "id": "printer/HP-PSC_370"
+                },
+                {
+                    "id": "printer/HP-PSC_380"
+                },
+                {
+                    "id": "printer/HP-PSC_500"
+                },
+                {
+                    "id": "printer/HP-PSC_750"
+                },
+                {
+                    "id": "printer/HP-PSC_950"
+                },
+                {
+                    "id": "printer/IBM-4019"
+                },
+                {
+                    "id": "printer/IBM-4029_030_LaserPrinter_10"
+                },
+                {
+                    "id": "printer/IBM-Infoprint_12"
+                },
+                {
+                    "id": "printer/IBM-Page_Printer_3112"
+                },
+                {
+                    "id": "printer/Infotec-4651_MF"
+                },
+                {
+                    "id": "printer/Kyocera-F-1010"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1000plus"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1010"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-1900"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3500"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3750"
+                },
+                {
+                    "id": "printer/Kyocera-FS-3800"
+                },
+                {
+                    "id": "printer/Kyocera-FS-600"
+                },
+                {
+                    "id": "printer/Kyocera-FS-680"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9100DN"
+                },
+                {
+                    "id": "printer/Kyocera-FS-9500DN"
+                },
+                {
+                    "id": "printer/Lexmark-4076"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_E"
+                },
+                {
+                    "id": "printer/Lexmark-Optra_Eplus"
+                },
+                {
+                    "id": "printer/Lexmark-Valuewriter_300"
+                },
+                {
+                    "id": "printer/Lexmark-Z42"
+                },
+                {
+                    "id": "printer/Lexmark-Z43"
+                },
+                {
+                    "id": "printer/Lexmark-Z52"
+                },
+                {
+                    "id": "printer/Lexmark-Z53"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_1100"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6e"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_6ex"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_8"
+                },
+                {
+                    "id": "printer/Minolta-PagePro_8L"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1260"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_1800"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_660i"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_860"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_870"
+                },
+                {
+                    "id": "printer/Oki-Okipage_10e"
+                },
+                {
+                    "id": "printer/Oki-Okipage_10ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_14ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6e"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6ex"
+                },
+                {
+                    "id": "printer/Oki-Okipage_8p"
+                },
+                {
+                    "id": "printer/Oki-OL400"
+                },
+                {
+                    "id": "printer/Oki-OL400e"
+                },
+                {
+                    "id": "printer/Oki-OL400ex"
+                },
+                {
+                    "id": "printer/Oki-OL410e"
+                },
+                {
+                    "id": "printer/Oki-OL600e"
+                },
+                {
+                    "id": "printer/Oki-OL610e_S"
+                },
+                {
+                    "id": "printer/Oki-OL800"
+                },
+                {
+                    "id": "printer/Oki-OL810ex"
+                },
+                {
+                    "id": "printer/Oki-Super_6e"
+                },
+                {
+                    "id": "printer/Olivetti-JP350S"
+                },
+                {
+                    "id": "printer/Olivetti-PG_306"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P4410"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P4450"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P6150"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P6500"
+                },
+                {
+                    "id": "printer/PCPI-1030"
+                },
+                {
+                    "id": "printer/Raven-LP-410"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_220"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_401"
+                },
+                {
+                    "id": "printer/Ricoh-Aficio_700"
+                },
+                {
+                    "id": "printer/Samsung-ML-4600"
+                },
+                {
+                    "id": "printer/Samsung-ML-5000a"
+                },
+                {
+                    "id": "printer/Samsung-ML-6000"
+                },
+                {
+                    "id": "printer/Samsung-ML-6100"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000N"
+                },
+                {
+                    "id": "printer/Samsung-ML-7000P"
+                },
+                {
+                    "id": "printer/Samsung-ML-7050"
+                },
+                {
+                    "id": "printer/Samsung-ML-85"
+                },
+                {
+                    "id": "printer/Samsung-QL-5100A"
+                },
+                {
+                    "id": "printer/Samsung-QL-6050"
+                },
+                {
+                    "id": "printer/Seiko-SpeedJET_200"
+                },
+                {
+                    "id": "printer/Sharp-AR-161"
+                },
+                {
+                    "id": "printer/Sony-IJP-V100"
+                },
+                {
+                    "id": "printer/Star-LaserPrinter_8"
+                },
+                {
+                    "id": "printer/Star-LS-04"
+                },
+                {
+                    "id": "printer/Tally-MT908"
+                },
+                {
+                    "id": "printer/Xerox-Able_1406"
+                },
+                {
+                    "id": "printer/Xerox-Document_Centre_400"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_4508"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_N4512"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_N4512PS"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P12"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P1202"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_P8e"
+                }
+            ]
+        }
+    }
+}

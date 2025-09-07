@@ -1,0 +1,28 @@
+{
+    "driver": {
+        "@id": "driver/tek4696",
+        "name": "tek4696",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=tek4696%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Tektronix-4695"
+                },
+                {
+                    "id": "printer/Tektronix-4696"
+                },
+                {
+                    "id": "printer/Tektronix-4697"
+                }
+            ]
+        }
+    }
+}

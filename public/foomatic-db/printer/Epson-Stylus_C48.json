@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C48",
+        "make": "Epson",
+        "model": "Stylus C48",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C48",
+                "manufacturer": "EPSON",
+                "model": "Stylus C48"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Cheap 4-ink home printer with a medium resolution (2880x720 dpi).\n    \"UX\" model with USB port only, \"SX\" model with\n    only a parallel port.<p>"
+        }
+    }
+}

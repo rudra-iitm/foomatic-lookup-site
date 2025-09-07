@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/NEC-PC-PR201",
+        "make": "NEC",
+        "model": "PC-PR201",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "160",
+                    "y": "160"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "pr201",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

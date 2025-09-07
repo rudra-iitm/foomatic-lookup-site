@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_1800",
+        "make": "NEC",
+        "model": "SuperScript 1800",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5E,6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL6,PCL5E",
+                "manufacturer": "NEC",
+                "model": "SuperScript 1800"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Works perfectly w/ gs and ljet4, \nyou can also buy a PostScript 2\nmodule for about $100.  A bit noisy,\nbut quite fast and has a DUPLEX'er\nin it (prints both sides of the\npaper).\n<p>\nThe 1800N includes a network interface, although for a $300 premium it seems silly."
+        }
+    }
+}

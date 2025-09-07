@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_M1005_MFP",
+        "make": "HP",
+        "model": "LaserJet M1005 MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://h20015.www2.hp.com/en/document.jhtml?lc=en&docName=bpl12705",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet M1005;CMD:ACL;CLS:PRINTER;DES:HP LaserJet M1005;FWVER:20060721;",
+                "commandset": "ACL",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet M1005"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2xqx",
+        "comments": {
+            "en": "This printer is supported by the foo2xqx free software printer driver.\n    <p><p>\n\n      Consumables/Refills: Cartridge containing toner and imaging drum<p>"
+        }
+    }
+}

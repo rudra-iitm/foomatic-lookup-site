@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4000",
+        "make": "HP",
+        "model": "LaserJet 4000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,PCL,PCLXL,POSTSCRIPT",
+                "description": "Hewlett-Packard LaserJet 4000 Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 4000 Series"
+            },
+            "snmp": {
+                "description": "HP LaserJet 4000 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n    \n    I don't believe this:<p>\n\n    1200x1200 dpi only possible with Windows drivers, 600x600 can be\n    reached w/o particular software. The difference is visible, but\n    only slightly, so the Functionality got\n    \"Mostly\"<p>\n\n    Do the following:<p>\n\n    Set the resolution on the front panel to \"Prores 1200\",\n    not to \"Fastres 1200\".  When you use CUPS with HPs PPD\n    file, turn off \"Fastres 1200\" in theprinter\n    configuration options.<p>\n\n    Try the generic PostScript PPD file which comes with KUPS 1.0 or\n    newer.<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

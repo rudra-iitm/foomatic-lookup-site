@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Microline_192plus",
+        "make": "Oki",
+        "model": "Microline 192+",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "120",
+                    "y": "120"
+                }
+            }
+        },
+        "url": "http://www.okidata.com",
+        "lang": {
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "oki182",
+        "comments": {
+            "en": "Print quality looks best when setup for 60x60\nresolution. RedHat users need to setup this printer\nin the file /var/spool/lpd/lp/postscript.cfg\nOtherwise you're stuck with plain text only.\nThis printer like other older Okidata printers\ncomes in two flavors, IBM and Okidata emulation.\nI've only tried to use the IBM flavor.\nThose that have the Okidata emulation need to \nread the instructions to recompile Ghostscript\nto include the oki182 driver as it is not included \nby default in Red Hat.<p>\n\n      Consumables/Refills: ribbon cartrige US $12<p>"
+        }
+    }
+}

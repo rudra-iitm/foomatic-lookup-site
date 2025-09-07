@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Oce-sx2100",
+        "make": "Oce",
+        "model": "sx2100",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 21\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

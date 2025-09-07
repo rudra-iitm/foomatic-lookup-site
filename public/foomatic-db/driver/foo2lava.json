@@ -1,0 +1,51 @@
+{
+    "driver": {
+        "@id": "driver/foo2lava",
+        "name": "foo2lava",
+        "url": "http://foo2lava.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This is a driver developed for the Konica Minolta magicolor 2530 DL\n      and the magicolor 1600W (or Oki C110).\n\n      <p>\n\n      It also works with the Konica Minolta magicolor 1680MF, the \n      magicolor 1690MF, magicolor 2480 MF, the magicolor 2490 MF,\n      the magicolor 4690MF,  the Xerox Phaser 6115MFP (printer only).\n\n      <p>\n\n      PPD files (and the Foomatic XML files to generate them) come\n      with the driver, therefore we do not supply PPDs here on the\n      OpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Generic-GDI_Printer"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_1600W"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_1680MF"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_1690MF"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2480_MF"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2490_MF"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2530_DL"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_4690MF"
+                },
+                {
+                    "id": "printer/Oki-C110"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_6115MFP"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_6121MFP"
+                }
+            ]
+        }
+    }
+}

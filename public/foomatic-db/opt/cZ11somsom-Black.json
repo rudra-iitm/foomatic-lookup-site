@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/cZ11somsom-Black",
+        "arg_shortname": {
+            "en": "Black"
+        },
+        "arg_longname": {
+            "en": "Black Level"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "100",
+            "arg_spot": "G",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "cZ11somsom",
+                "arg_defval": "50"
+            }
+        },
+        "arg_max": "100",
+        "arg_min": "0"
+    }
+}

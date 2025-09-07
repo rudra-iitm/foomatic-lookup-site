@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C6150",
+        "make": "Oki",
+        "model": "C6150",
+        "mechanism": {
+            "led": null,
+            "color": null
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

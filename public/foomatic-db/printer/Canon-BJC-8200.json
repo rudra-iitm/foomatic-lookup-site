@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-8200",
+        "make": "Canon",
+        "model": "BJC-8200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "BJL,BJRaster3,BSCC,TXT01",
+                "description": "Canon",
+                "manufacturer": "Canon",
+                "model": "BJC-8200"
+            }
+        },
+        "functionality": "B",
+        "driver": "bj8XXYYZ.upp",
+        "comments": {
+            "en": "This printer might work, somewhat, with the various BJC drivers\n    out there. I doubt, however, that it prints perfectly. I am\n    almost certain that the scanner feature is unsupported. If anyone\n    actually has one, do tell...<p>\n\n    With the stp driver (set up for the BJC-7100 if your Gimp-Print\n    version gives incorrect printouts), it works, although the best\n    modes aren't yet supported. The printouts will come out too\n    dark, so raise the gamma somewhat.<p>\n\n    Canon reported that it probably will work with the driver for the\n    BJC-6200 or BJC-7100. Use it 6-ink photo printing, 4-ink printing is\n    not available for this model.<p>\n\n      Consumables/Refills: 6 independent ink tanks<p>"
+        }
+    }
+}

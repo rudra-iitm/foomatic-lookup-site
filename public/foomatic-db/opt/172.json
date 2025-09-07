@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/172",
+        "arg_shortname": {
+            "en": "SquareDithering"
+        },
+        "arg_longname": {
+            "en": "Square Dithering"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "200",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-squaredither"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "NoSquareDithering"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_3740",
+        "make": "HP",
+        "model": "DeskJet 3740",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "LDL,DYN",
+                "description": "3745",
+                "manufacturer": "HP",
+                "model": "Deskjet 3740"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    The Gimp-Print driver also\n    works (Model setting: \"pcl-900\"), but only up to 600\n    dpi.<p><p>\n\n      Consumables/Refills: Separate black+color cartridge, used simultaniously<p>"
+        }
+    }
+}

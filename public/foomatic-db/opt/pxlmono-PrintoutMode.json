@@ -1,0 +1,227 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/pxlmono-PrintoutMode",
+        "arg_shortname": {
+            "en": "PrintoutMode"
+        },
+        "arg_longname": {
+            "en": "Print Quality"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "10",
+            "arg_section": "AnySetup",
+            "arg_spot": "A",
+            "arg_composite": null,
+            "arg_proto": null
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pxlcolor",
+                    "arg_defval": "ev/pxlmono-PrintoutMode-Normal-ColorPrinter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxlcolor",
+                    "printer": "printer/Generic-PCL_6_PCL_XL_Printer",
+                    "arg_defval": "ev/pxlmono-PrintoutMode-Normal.Gray-ColorPrinter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxldpl",
+                    "arg_defval": "ev/pxlmono-PrintoutMode-Normal-ColorPrinter"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxlmono",
+                    "arg_defval": "ev/pxlmono-PrintoutMode-Normal-BWPrinter"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-Draft-BWPrinter",
+                    "ev_longname": {
+                        "en": "Draft"
+                    },
+                    "ev_shortname": {
+                        "en": "Draft"
+                    },
+                    "ev_driverval": "PrinterResolution=600x600dpi ColorModel=Grayscale Economode=On FastRes=Off QualityType=Draft",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pxlcolor"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-Draft-ColorPrinter",
+                    "ev_longname": {
+                        "en": "Draft"
+                    },
+                    "ev_shortname": {
+                        "en": "Draft"
+                    },
+                    "ev_driverval": "PrinterResolution=600x600dpi ColorModel=Color Economode=On FastRes=Off QualityType=Draft",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "driver": "pxlmono"
+                        }
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-Draft.Gray-ColorPrinter",
+                    "ev_longname": {
+                        "en": "Draft Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "Draft.Gray"
+                    },
+                    "ev_driverval": "PrinterResolution=600x600dpi ColorModel=Grayscale Economode=On FastRes=Off QualityType=Draft",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "driver": "pxlmono"
+                        }
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-High-BWPrinter",
+                    "ev_longname": {
+                        "en": "High Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "High"
+                    },
+                    "ev_driverval": "PrinterResolution=1200x1200dpi ColorModel=Grayscale Economode=Off FastRes=Off QualityType=High",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pxlcolor"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Lexmark-E230"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-High-ColorPrinter",
+                    "ev_longname": {
+                        "en": "High Quality"
+                    },
+                    "ev_shortname": {
+                        "en": "High"
+                    },
+                    "ev_driverval": "PrinterResolution=1200x1200dpi ColorModel=Color Economode=Off FastRes=Off QualityType=High",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxlmono"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-High.Gray-ColorPrinter",
+                    "ev_longname": {
+                        "en": "High Quality Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "High.Gray"
+                    },
+                    "ev_driverval": "PrinterResolution=1200x1200dpi ColorModel=Grayscale Economode=Off FastRes=Off QualityType=High",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxlmono"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-Normal-BWPrinter",
+                    "ev_longname": {
+                        "en": "Normal"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal"
+                    },
+                    "ev_driverval": "PrinterResolution=600x600dpi ColorModel=Grayscale Economode=Off FastRes=On QualityType=Normal",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pxlcolor"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-Normal-ColorPrinter",
+                    "ev_longname": {
+                        "en": "Normal"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal"
+                    },
+                    "ev_driverval": "PrinterResolution=600x600dpi ColorModel=Color Economode=Off FastRes=On QualityType=Normal",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "driver": "pxlmono"
+                        }
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrintoutMode-Normal.Gray-ColorPrinter",
+                    "ev_longname": {
+                        "en": "Normal Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal.Gray"
+                    },
+                    "ev_driverval": "PrinterResolution=600x600dpi ColorModel=Grayscale Economode=Off FastRes=On QualityType=Normal",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "driver": "pxlmono"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

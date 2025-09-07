@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/QMS-LPK-100",
+        "make": "QMS",
+        "model": "LPK-100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eps9mid",
+        "comments": {
+            "en": "Very old (c. 1985) laser printer. \nEmulates an Epson FX-80.<p>\n\n      Consumables/Refills: Laserjet I cartridge (~$50 at OfficeDepot around here)<p>"
+        }
+    }
+}

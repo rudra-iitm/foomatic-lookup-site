@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C9800_MFP",
+        "make": "Oki",
+        "model": "C9800 MFP",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.okidata.com.sg/binaryData/8934/C9800MFPspecsheet.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 40\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26"
+        }
+    }
+}

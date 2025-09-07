@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/DEC-DECwriter_520ic",
+        "make": "DEC",
+        "model": "DECwriter 520ic",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "cdj500",
+        "comments": {
+            "en": "Use cdj500 for color; dj500 for B/W.  Easiest way is to set up two queues, one\ncolor, the other B/W.  Colors are a little muddy, but\notherwise perfect.<p>\n\n      Consumables/Refills: Uses color cartridge and B/W cartridge/head combo<p>"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC9840CDW",
+        "make": "Brother",
+        "model": "MFC9840CDW",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother-usa.com/MFC/ModelDetail.aspx%sProductID=mfc9840cdw",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Brother;MDL:Brother MFC-9840CDW;",
+                "manufacturer": "Brother",
+                "model": "Brother MFC-9840CDW"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Brother",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Brother",
+                    "ppd": "PPD/Brother/BR9840_2_GPL.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        }
+    }
+}

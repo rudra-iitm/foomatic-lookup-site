@@ -1,0 +1,20 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-DP-8045",
+        "make": "Panasonic",
+        "model": "DP-8045",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Panasonic Printing System for Windows is standard, but PCL 6 and PostScript 3 are optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

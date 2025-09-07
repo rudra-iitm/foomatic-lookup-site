@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Oce-fx3000",
+        "make": "Oce",
+        "model": "fx3000",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 30\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

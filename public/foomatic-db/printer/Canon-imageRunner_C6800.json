@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_C6800",
+        "make": "Canon",
+        "model": "imageRunner C6800",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "url": "http://www.canon.co.uk/For_Work/Products/Office_Print_Copy_Solutions/Digital_IR_Series/iR6800C/index.asp",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Canon iR 6800C-C6800-D1 2.1"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "Postscript"
+                }
+            ]
+        },
+        "comments": {
+            "en": "PostScript and PCL5c require imagePASS D-1 or Multi-PDL Printer Kit C-1. Besides the foomatic driver, an alternative is downloading (and extracting under Windows) the PPD driver and using it with CUPS. Although the printer supports connections via the IPP port, this was reported as not working.\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

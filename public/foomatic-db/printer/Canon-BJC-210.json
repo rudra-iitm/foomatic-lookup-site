@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-210",
+        "make": "Canon",
+        "model": "BJC-210",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "BJ,LQ,BJL,BJRaster",
+                "description": "Canon BJC-210",
+                "manufacturer": "Canon",
+                "model": "BJC-210"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Use bj200 gs driver for bw.  \n<br>Colour printing is only at 360x360.\n<br>For TeX, it may be\nnecessary to set a 360x360 or 720x720 metafont mode for some fonts which don't transform correctly at\n720x360.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

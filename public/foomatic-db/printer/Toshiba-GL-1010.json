@@ -1,0 +1,49 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-GL-1010",
+        "make": "Toshiba",
+        "model": "GL-1010",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.eid.toshiba.com/support/drivers/index.shtml",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "3"
+            },
+            "hpgl2": null,
+            "tiff": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "TOSHIBA GL 1010"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Toshiba",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Toshiba",
+                    "ppd": "PPD/Toshiba/Toshiba_GL1010_CUPS.ppd"
+                }
+            ]
+        }
+    }
+}

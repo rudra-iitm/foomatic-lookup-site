@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_932C",
+        "make": "HP",
+        "model": "DeskJet 932C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    The best output one gets with HP's HPIJS 1.3 or newer. If you\n    cannot update to HPIJS 1.3 for some reason, you can also use HPIJS\n    1.2.2 with the patches from Matthias Bunte and Richard\n    Spencer-Smith (\"hpijs-rss\"). The Gimp-Print driver also\n    works (Model setting: \"pcl-900\"), but only up to 600\n    dpi.<p>\n\n    *****User Report*******<p>\n\n    I used the \"DeskJet 550C/560C/6xxC\" driver from\n    RedHat's Printtool. I also enabled the fix for stair\n    steping. According to the webpage, it does up to 2400x2400 under\n    windows, but that is because of the PhotoREt III color layering\n    technology, which from what I understand, just makes the ink\n    droplets smaller.  The GS driver limits it to 600x600, I\n    believe. I hope all the info I entered here is correct, please\n    someone correct me if I'm wrong.<p>\n\n    So, like most recent HP models, this printer qualifies for, at\n    best, \"Mostly\". Most of the best printing modes\n    aren't really supported properly, because HP doesn't\n    document their newer printers.<p>\n\n    *****Different User*******<p>\n\n    I find it works perfectly on black text using this driver,hwoever\n    color horrible. Color is better using the \"500/6xxC\"\n    series driver, but black text is just a wee bit off at the very\n    bottom of the page.  Using the 800 series drivers sends the color\n    to the left, and is unable to print thr 1\" margin at the\n    bottom.  Someone needs to add a decent driver... I want to print\n    photos!<p>\n\n    *****Different User*******<p>\n\n    I just got the new \"880C/882C/895C\" driver, and I think\n    it gives a slightly crisper image than the 550C, and so far it\n    works well.<p>\n\n    *****Different User*******<p>\n\n    \"stp\" is slow but better than other drivers for\n    photos. However the quality is still very poor as compared to a\n    PostScript printer. I would recommend **not** purchasing this\n    printer (or most other HP inkjets if you want to print photos) for\n    use with Linux. I tried emailing HP several times because of their\n    claims of supporting Linux, but never received a response. They\n    also claim printing support on sourceforge yet I found none from\n    HP.<p>\n\n    *****Different User*******<p>\n\n    \"hpdj\" driver works well and is included with debian;\n    However, the \"stp\" driver provides cleaner results. I\n    printed a photograph in windows and linux, unfortunately the\n    colors and resolution in windows were both highly\n    superior.. although the quality in linux was acceptable for\n    draft-quality work.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

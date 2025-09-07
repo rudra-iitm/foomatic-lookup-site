@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX_G920",
+        "make": "Epson",
+        "model": "PX G920",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Probably a japanese equivalent of R800.<p><p>\n\n      Consumables/Refills: 8 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

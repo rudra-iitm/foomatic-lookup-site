@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Canon-iR-ADV_8105",
+        "make": "Canon",
+        "model": "iR-ADV 8105",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Canon;MDL:iR-ADV 8105;",
+                "manufacturer": "Canon",
+                "model": "iR-ADV 8105"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Canon",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Canon",
+                    "ppd": "PPD/Canon/cnadv8105x1g.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 13.0 inches / 33.0 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 105 pages/min<p>"
+        }
+    }
+}

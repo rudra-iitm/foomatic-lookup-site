@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Z32",
+        "make": "Lexmark",
+        "model": "Z32",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/US/Products/printers/0,2792,MTEyfDE=,00.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "LNPAP",
+                "description": "Lexmark Z22-Z32",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark Z22-Z32"
+            }
+        },
+        "functionality": "D",
+        "driver": "lxm3200-tweaked",
+        "contrib_url": "http://drivers.lexmark.com/drivers.nsf/printer+driver/D24884EA9A4F28EA8525698A004C48AA?OpenDocument",
+        "comments": {
+            "en": "Prints with the lxm3200 driver in all resolutions, but only in\n    bidirectional mode, colours off (I think it is a Ghostscript\n    problem), 300 dpi too light, 600 too dark, 1200 flooded with\n    ink.<p>\n\n    This printer is really slow and somewhat flimsy. It is capable of\n    fairly good output, though.<p>\n\n    <a href=\"http://www.lexmark.com\">Lexmark</a>\n    provides a Linux/x86 binary-only driver for this printer.  <a\n    href=\"http://www.picante.com/~gtaylor/\">I</a>\n    have this printer and a beta of the driver; the combo works fairly\n    well. But don't buy the thing because of this; buy a printer\n    that works with proper free software.<p>\n\n    To obtain the driver simply follow the \"Drivers\" link on\n    the home page. Lexmark's driver does not work with Debian\n    Woody using alien, and it indeed isn't listed as\n    supported.<p>\n\n    <pre>\n    galaxie:~# lexmarkz32\n    lexmarkz32: Symbol `__ti7VDKForm' has different size in shared object, consider re-linking\n    lexmarkz32: error while loading shared libraries: lexmarkz32: undefined symbol: __7VDKFormP14VDKApplicationPci13GtkWindowType\n    </pre>\n    <p>\n\n    ...bummer. It works against Debian potato and Helix Gnome; that\n    library error probably stems from a mismatch between the expected\n    Gtk library (the gui is built using vdk, a c++ wrapper thing, I\n    guess) and whatever you've got. I would expect the z32 binary\n    to still work. Then you can print with all spoolers using the\n    Lexmark Foomatic Kit mentioned below.<p>\n\n    The drivers issued by Lexmark do not contain any CUPS or PDQ\n    configuration file, so use them either with LPD or with my <a\n    href=\"download/printing/lexmark-foomatic-kit.tar.gz\">Lexmark\n    Foomatic Kit</a>. Download it, uncompress it, and follow the\n    instructions of its README file. Due to having access to all\n    options of the driver it leads even to a better printout quality\n    than the Lexmark driver with its original configuration\n    software.<p><p>\n\n      Consumables/Refills: Color, Black (or Photo instead of Black) Separate. $28.91@inkfar<p>"
+        }
+    }
+}

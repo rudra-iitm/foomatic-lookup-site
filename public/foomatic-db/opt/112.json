@@ -1,0 +1,102 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/112",
+        "arg_shortname": {
+            "en": "PageSize"
+        },
+        "arg_longname": {
+            "en": "Page Size"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "E",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "lpstyl",
+                "arg_defval": "ev/745"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/745",
+                    "ev_longname": {
+                        "en": "Letter, Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "LetterGrayscale"
+                    },
+                    "ev_driverval": "-sDEVICE=pbmraw -sOutputFile=- - | lpstyl"
+                },
+                {
+                    "@id": "ev/746",
+                    "ev_longname": {
+                        "en": "Letter, Color"
+                    },
+                    "ev_shortname": {
+                        "en": "LetterColour"
+                    },
+                    "ev_driverval": "-sDEVICE=bitcmyk -g3060x3960 -sOutputFile=- - | lpstyl -t bitcmyk -w 3060 -h 3960",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Apple-StyleWriter_1200"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Apple-StyleWriter_I"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Apple-StyleWriter_II"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/747",
+                    "ev_longname": {
+                        "en": "A4, Grayscale"
+                    },
+                    "ev_shortname": {
+                        "en": "A4Grayscale"
+                    },
+                    "ev_driverval": "-sPAPERSIZE=a4 -sDEVICE=pbmraw -sOutputFile=- - | lpstyl -p a4"
+                },
+                {
+                    "@id": "ev/748",
+                    "ev_longname": {
+                        "en": "A4, Color"
+                    },
+                    "ev_shortname": {
+                        "en": "A4Colour"
+                    },
+                    "ev_driverval": "-sDEVICE=bitcmyk -g2975x4210 -sOutputFile=- - | lpstyl -t bitcmyk -w 2975 -h 4210 -p a4",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Apple-StyleWriter_1200"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Apple-StyleWriter_I"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Apple-StyleWriter_II"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

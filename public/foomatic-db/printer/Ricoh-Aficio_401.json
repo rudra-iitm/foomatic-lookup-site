@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_401",
+        "make": "Ricoh",
+        "model": "Aficio 401",
+        "mechanism": {
+            "transfer": null,
+            "resolution": {
+                "dpi": {
+                    "x": "400",
+                    "y": "400"
+                }
+            }
+        },
+        "url": "http://www.ricoh-europe.com/product/copier/core.htm?category=bw&product=a401",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet4",
+        "comments": {
+            "en": "I used the existing magicfilter filter for HP LaserJet 4, but\n      changed resolution from 600 to 300.\n\n      I have only made it print in 300dpi, and the marigins need\n      adjustment.  Printing mechanism is specified as \"Dry\n      Electrostatic Transfer System\""
+        }
+    }
+}

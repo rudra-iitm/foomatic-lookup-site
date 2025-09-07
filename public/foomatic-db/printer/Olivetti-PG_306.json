@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Olivetti-PG_306",
+        "make": "Olivetti",
+        "model": "PG 306",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "NEVER remove the little brass plate of the\ntoner drum unit - I've wrecked my printer by doing this !<p>\n\n      Consumables/Refills: toner cartridge (about 25 $ for 2 toners)<p>"
+        }
+    }
+}

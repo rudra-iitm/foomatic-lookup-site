@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C500",
+        "make": "Lexmark",
+        "model": "C500",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/lexmark/product/home/435/0,6970,204816596_653293763_728193459_en,00.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2slx",
+        "comments": {
+            "en": "The Lexmark C500 is a networked color laser printer with a\n\t2007 street price of $300 USD.  This printer is supported\n\tby the foo2slx open software printer driver.<p>\n\n      Consumables/Refills: Toner Black (5000 prints) - $90\n\t\tToner Yellow (3000 prints) - $90\n\t\tToner Magenta (3000 prints) - $90\n\t\tToner Cyan (3000 prints) - $90\n\t\tPhotodeveloper Cartridge (120000 prints) - $205 Part numbers: C500H2KG, \n\t    C500H2YG, \n\t    C500H2MG, \n\t    C500H2CG, \n\t    C500X26G<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-10h",
+        "make": "Brother",
+        "model": "HL-10h",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e"
+    }
+}

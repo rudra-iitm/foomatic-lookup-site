@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_Pro_L7300",
+        "make": "HP",
+        "model": "OfficeJet Pro L7300",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PML,PCL",
+                "description": "Hewlett-Packard OfficeJet_Pro_L7300",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP OfficeJet Pro L7300"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a href=\"\n    http://hpinkjet.sf.net/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hpinkjet.sf.net/\">HPLIP driver</a> (which includes \n    HPIJS). <p><p>\n\n      Consumables/Refills: 4 cartridges: one for each color of CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

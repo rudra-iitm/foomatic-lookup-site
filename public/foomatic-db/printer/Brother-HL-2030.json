@@ -1,0 +1,65 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2030",
+        "make": "Brother",
+        "model": "HL-2030",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://solutions.brother.com/linux/sol/printer/linux/lpr_drivers.html",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Brother;CMD:PJL,HBP;MDL:HL-2030 series;CLS:PRINTER;",
+                "commandset": "PJL,HBP",
+                "manufacturer": "Brother",
+                "model": "HL-2030 series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gimp-print"
+                },
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hl1250",
+                    "comments": {
+                        "en": "For Debian Etch users: take ljet4 filter from magicfilter\n\t  and change the gs invocation to \"[...] sDEVICE=hl1250\n\t  [...]\", then configure lprng/magicfilter as\n\t  usual."
+                    }
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "ljet4"
+                }
+            ]
+        },
+        "contrib_url": "http://solutions.brother.com/linux/sol/printer/linux/lpr_drivers.html",
+        "comments": {
+            "en": "USB connection, max. paper size A4, toner-saving functionality\n      0, 25%, 50%<p>\n\n      Tested with CUPS on OpenSUSE 10.0:<p> <p>\n\n      Download-RPMs from Brother did not work, but using the PPD for\n      the Brother HL-2060 foomatic/hl1250 did work (Media Source:\n      Automatic, Media Type: Plain Paper, Page Size: A4, Resolution:\n      300dpi/600dpi, Toner-Saving: 0/25%/50%)<p>\n\n      Using kprinter-gui from KDE \"2 pages on one sheet\" did not work\n      (maybe solveable), but normal functions work without problems\n      under OpenOffice, KPDF, XPDF, Firefox ...<p>\n\n      <b>Another user:</b> Downloading and installing the\n      RPMs from Brother worked for me (using SuSE 10 and KDE). With\n      the HL-2030 drivers, the text was first shifted too far up on\n      the page; this went away after deleting the printer in YaST2 and\n      adding it again. Works fine now, difference to first user entry:\n      Toner Saving only \"on\" or \"off\", but can\n      select from a list of different paper sizes and media\n      types. Printing two or four pages per sheet works fine from\n      kpdf.<p>\n\n      <b>Another user:</b> On Fedora Core 4, with\n      KDE. hl1250 driver worked for me, except when printing 2 pages\n      on one sheet (margins were wrong). hl2030 driver from brother\n      works perfectly for me.<p>\n\n      <p><b>Another user:</b> Also works fine\n      (multiple pages, toner save etc) on Kubuntu 6.06 with the Debian\n      Brother drivers. Easy <a\n      href=http://www.ubuntuforums.org/showthread.php?t=123539>installation\n      instructions here</a>. I first had to <a\n      href=\"http://ubuntu.wordpress.com/2005/10/13/enabling-cupsys-web-admin-interface/\">enable\n      the browser-based admin for cupsys</a>.<p>\n\n      <p>Note: 12 Dec 06: Brother now seems to have new .deb\n      drivers that also support 1200 dpi resolution.<p>\n\n      <p><b>Another user:</b> If you only get\n      low-resolution graphics when printing PDFs (using Acrobat)\n      try using the hpijs-pcl5e driver instead of the recommended\n      hl1250.<p>\n\n      <p><b>Another user:</b> With Ubuntu 7.10, the\n      printer worked out of the box. No installation, no anything.\n\n      <p><b>Another user:</b> Works pretty well with\n      Brother's HL-2030 driver. The only minor problem I have for\n      the moment is that the margins are larger than\n      announced.</p>\n\n      Consumables/Refills: Toner: Brother toner TN-2000 s/w (2.500\n      pages at 5%); drum unit: DR-2000</p>"
+        }
+    }
+}

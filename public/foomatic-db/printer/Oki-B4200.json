@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4200",
+        "make": "Oki",
+        "model": "B4200",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 19\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-26"
+        }
+    }
+}

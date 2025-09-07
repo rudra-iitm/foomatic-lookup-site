@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-B07",
+        "make": "Sharp",
+        "model": "AR-B07",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Sharp;MDL:Sharp AR-B07;",
+                "manufacturer": "Sharp",
+                "model": "Sharp AR-B07"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Sharp",
+                    "ppd": "PPD/Sharp/sh202fpj.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 20 pages/min<p>"
+        }
+    }
+}

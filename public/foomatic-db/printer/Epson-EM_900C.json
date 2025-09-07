@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EM_900C",
+        "make": "Epson",
+        "model": "EM 900C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Color 900.<p>\n\n    The gimp driver doesn't work for the 900N (ethernet) printer;\n    it prints part of the page and hangs.  (Ed: is this still true?)\n    <p>\n\n    It should(tm) work perfectly with the stp driver.<p><p>\n\n      Consumables/Refills: Black cartridge and 3-ink color cartridge<p>"
+        }
+    }
+}

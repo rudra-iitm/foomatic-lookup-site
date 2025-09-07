@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-TX820_Artisan830_Series",
+        "make": "Epson",
+        "model": "TX820 Artisan830 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:TX820 Artisan830;CLS:PRINTER;DES:EPSON TX820 Artisan830",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON TX820 Artisan830",
+                "manufacturer": "EPSON",
+                "model": "TX820 Artisan830"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-artisan-725-835-series",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-artisan-725-835-series"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

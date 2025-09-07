@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1650",
+        "make": "Samsung",
+        "model": "ML-1650",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/Printer/Laser/Printer_Laser_ML_1650.htm",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6;MDL:ML-1650;CLS:PRINTER;",
+                "commandset": "PCL5E,PCL6",
+                "manufacturer": "Samsung",
+                "model": "ML-1650"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "PCL 5e, PCL 6 and Epson FX-850 emulation, parallel and USB connection,\n    16ppm, 16 MB, 550 sheets Tray built-in.<p>\n\n      Consumables/Refills: Toner and drum in one print cartridge. 8000 pages. Part numbers: ML-1650D8/XAA<p>"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-Phaser_PX",
+        "make": "Tektronix",
+        "model": "Phaser PX",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "I"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Wax Depositon Postscript Printer\n12 megs of ram, 68k processor\nvery, very slow.<p>\n\n      Consumables/Refills: Wax Rolls, Special Paper<p>"
+        }
+    }
+}

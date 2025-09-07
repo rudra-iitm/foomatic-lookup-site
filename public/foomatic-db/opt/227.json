@@ -1,0 +1,80 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/227",
+        "arg_shortname": {
+            "en": "LeadingEdge"
+        },
+        "arg_longname": {
+            "en": "Leading Edge"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "165",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pcl3",
+                "arg_defval": "ev/1082"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1078",
+                    "ev_longname": {
+                        "en": "Short edge; top of canonical page"
+                    },
+                    "ev_shortname": {
+                        "en": "ShortTop"
+                    },
+                    "ev_driverval": "-dLeadingEdge=0"
+                },
+                {
+                    "@id": "ev/1079",
+                    "ev_longname": {
+                        "en": "Long edge; right side of canonical page"
+                    },
+                    "ev_shortname": {
+                        "en": "LongRight"
+                    },
+                    "ev_driverval": "-dLeadingEdge=1"
+                },
+                {
+                    "@id": "ev/1080",
+                    "ev_longname": {
+                        "en": "Short edge; bottom of canonical page"
+                    },
+                    "ev_shortname": {
+                        "en": "ShortBottom"
+                    },
+                    "ev_driverval": "-dLeadingEdge=2"
+                },
+                {
+                    "@id": "ev/1081",
+                    "ev_longname": {
+                        "en": "Long edge; left side of canonical page"
+                    },
+                    "ev_shortname": {
+                        "en": "LongLeft"
+                    },
+                    "ev_driverval": "-dLeadingEdge=3"
+                },
+                {
+                    "@id": "ev/1082",
+                    "ev_longname": {
+                        "en": "Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_P4014",
+        "make": "HP",
+        "model": "LaserJet P4014",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/en/WF06a/18972-18972-3328059-14638-236263-3558788.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 45\n      \n      Foomatic entry made by PPDtoXML T/G 0.21 on 2009-10-27"
+        }
+    }
+}

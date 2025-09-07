@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_E312",
+        "make": "Lexmark",
+        "model": "Optra E312",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/laser/Optra/E312.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL 6 Emulation, PostScript Le",
+                "description": "Lexmark Optra E312",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark Optra E312"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "10ppm laser with standard Postscript and PCL6.\n<br>4MB RAM; more would probably be good, it takes PS/2 EDO SIMMs (72 Pin).\n<br>NOTE: This is not the same printer as E312L! \n<br>\n(E312L does not support PostScript, and ships with a half-empty \n\"starter\" cartridge)\n<br>Some recent model of E312L are actually E312 with 1.5K cartridges. This is easy to tell by quickly pressing the reset button once and check the printout. The price difference of the cartridge justifies the price difference between E312 and E312L."
+        }
+    }
+}

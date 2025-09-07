@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Fujitsu-PrintPartner_8000",
+        "make": "Fujitsu",
+        "model": "PrintPartner 8000",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3",
+        "comments": {
+            "en": "Acts as a 8 Page Per Minute HP LaserJet III<p>\n\n      Consumables/Refills: Toner (~$50 US/2 carts)<p>"
+        }
+    }
+}

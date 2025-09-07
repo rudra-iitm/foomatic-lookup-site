@@ -1,0 +1,49 @@
+{
+    "driver": {
+        "@id": "driver/lpstyl",
+        "name": "lpstyl",
+        "url": "http://homepage.mac.com/monroe/styl/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -r360x360 %E%F"
+        },
+        "comments": {
+            "en": "This driver is a little bit special, the printer is connected by\n    the serial port and the driver asks the printer which model it\n    is. So the connection between driver and printer must be\n    bidirectional. With LPD this is no problem, it issues the command\n    line shown here under \"Execution Details\" plus a \"\n    &gt; DEVICE\" where DEVICE is the /dev file for the serial port\n    where the printer is connected to. CUPS passes the output of the\n    driver command line shown here through a backend filter which does\n    not support bidirectional access. Use the \"Device\" option to send\n    the output directly to the /dev file. Give read/write access to\n    the user \"lp\" to make this possible. If the desired device is not\n    under the choices, use the \"Link stylewriter in dev ...\"  option\n    and set a link of your device file to /dev/stylewriter.<p>\n\n    See also <a\n    href=\"https://www.linuxfoundation.org/en/CUPS_and_the_lpstyl_filter\">these\n    instructions</a>.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apple-Color_StyleWriter_1500",
+                    "comments": {
+                        "en": "Listed as working in lpstyl documentation"
+                    }
+                },
+                {
+                    "id": "printer/Apple-Color_StyleWriter_2200"
+                },
+                {
+                    "id": "printer/Apple-Color_StyleWriter_2400"
+                },
+                {
+                    "id": "printer/Apple-Color_StyleWriter_2500"
+                },
+                {
+                    "id": "printer/Apple-StyleWriter_1200",
+                    "comments": {
+                        "en": "AKA StyleWriter III\n<br>Listed as working in lpstyl docuemtation."
+                    }
+                },
+                {
+                    "id": "printer/Apple-StyleWriter_I"
+                },
+                {
+                    "id": "printer/Apple-StyleWriter_II",
+                    "comments": {
+                        "en": "Listed as supported in lpstyl documentation."
+                    }
+                }
+            ]
+        }
+    }
+}

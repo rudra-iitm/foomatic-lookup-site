@@ -1,0 +1,52 @@
+{
+    "driver": {
+        "@id": "driver/oki4drv",
+        "name": "oki4drv",
+        "url": "http://www.openprinting.org/download/printing/",
+        "obsolete": {
+            "@replace": "oki4w"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "(echo -n \"%F%A\"; cat) 1>/dev/oki4drv 2>/dev/null"
+        },
+        "comments": {
+            "en": "Version 2.0 of this driver was developed in mid-2000 by Marcin\n    Dalecki, with cooperation from Okidata, who sent him a printer and\n    some protocol help.  (Heck, they sent me (Grant) one, too!)  <p>\n\n    The driver comes with all sorts of performance warnings and is\n    structured such that, if used according to the directions, it is\n    slightly awkward to fit into normal print spoolers.  This weakness\n    aside, it does work. The only flaw was that version 2.0 ejected a\n    blank page after every job. This is fixed in version 2.1.<p>\n\n    I (Grant) have constructed a framework that lets you use this\n    driver under normal spoolers. The execution data and Foomatic\n    support here assumes that you are using this framework. To use it,\n    obtain oki4linux-2.1gst.tar.gz from the <a\n    href=\"download/printing/\">download area</a>.<p>\n\n    Note that when you use these foomatic config files the printer\n    must be always on the first parallel port. Any output device set\n    in the spooler will be ignored. So the best is to choose\n    <tt>/dev/null</tt> as the destination device to not\n    block the real device. In CUPS you do this with the URI\n    \"<tt>file:/dev/null</tt>\" and in LPD and\n    LPRng with the entry \"<tt>lp=/dev/null</tt>\"\n    in the <tt>/etc/printcap</tt> file.<p>\n\n    Fl&aacute;vio Coelho (fccoelho at uerj dot br) reports that the\n    Okipage 6w only works with the old 2.0 version of the driver."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Oki-Okipage_4w"
+                },
+                {
+                    "id": "printer/Oki-Okipage_4wplus"
+                },
+                {
+                    "id": "printer/Oki-Okipage_6w"
+                },
+                {
+                    "id": "printer/Oki-Okipage_8w",
+                    "comments": {
+                        "en": "This printer works mostly with with oki4drv by Martin Dalecki."
+                    }
+                },
+                {
+                    "id": "printer/Oki-Okipage_8w_Lite",
+                    "comments": {
+                        "en": "This printer works mostly with with oki4drv by Martin Dalecki."
+                    }
+                },
+                {
+                    "id": "printer/Oki-Okipage_8z",
+                    "comments": {
+                        "en": "Requires version 2 of oki4linux?"
+                    }
+                },
+                {
+                    "id": "printer/Oki-OL400w"
+                }
+            ]
+        }
+    }
+}

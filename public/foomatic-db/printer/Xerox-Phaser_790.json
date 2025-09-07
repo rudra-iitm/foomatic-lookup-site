@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_790",
+        "make": "Xerox",
+        "model": "Phaser 790",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;MDL:Phaser 790;",
+                "manufacturer": "Xerox",
+                "model": "Phaser 790"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx790.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 6\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-21\n      \n      <p>\n\n      Maximum paper width: 13.0 inches / 33.0 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 6 pages/min<p>"
+        }
+    }
+}

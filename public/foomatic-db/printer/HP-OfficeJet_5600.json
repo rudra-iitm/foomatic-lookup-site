@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_5600",
+        "make": "HP",
+        "model": "OfficeJet 5600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "LDL,MLC,PML,DYN",
+                "manufacturer": "HP",
+                "model": "Officejet 5600 series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multi-function device: Printer, scanner, copier, fax. Standard model\n    and \"xi\" model have different fax page memory sizes and zoom factor\n    ranges for copying.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n\n    The best output one gets with HP's HPIJS 1.3 or newer. If you\n    cannot update to HPIJS 1.3 for some reason, you can also use HPIJS\n    1.2.2 with the patches from Matthias Bunte and Richard\n    Spencer-Smith (\"hpijs-rss\"). The Gimp-Print driver also\n    works (Model setting: \"pcl-900\"), but only up to 600\n    dpi.<p><p>\n\n      Consumables/Refills: 2 cartridges (1 black, 1 color)<p>"
+        }
+    }
+}

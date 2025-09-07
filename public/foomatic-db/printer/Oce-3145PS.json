@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/Oce-3145PS",
+        "make": "Oce",
+        "model": "3145",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/General+office/3145E/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Oce",
+                    "ppd": "PPD/Oce/Oce-3145PS/1/OC3145_3.ppd"
+                },
+                {
+                    "id": "Postscript2-Oce",
+                    "ppd": "PPD/Oce/Others/OC3145_2.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "<b>Multifunctional print system for de-central environments </b><br/>\nVersatile copier/printer/scanner for all applications \n<UL>\n<LI>46 A4 prints per min </LI>\n<LI>Network connectivity for productive printing </LI>\n<LI>Optional network scan connectivity </LI> \n<LI>Digital mailbox for controlled printing </LI>\n<LI>Scan once, print many</LI>\n</UL><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

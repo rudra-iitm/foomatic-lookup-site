@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-325",
+        "make": "Samsung",
+        "model": "CLP-325",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/ph/consumer/monitor-peripherals-printer/printer-multifunction/color-laser-printer/CLP-325/XSA/index.idx?pagetype=prd_detail",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Samsung;CMD:SPLC;MDL:CLP-320 Series;CLS:PRINTER;",
+                "manufacturer": "Samsung",
+                "model": "CLP-320 Series",
+                "commandset": "SPLC"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2qpdl",
+        "comments": {
+            "en": "The Samsung CLP-320/325 (USB) and Samsung CLP-320N/325W (Net) are\n      color laser printers with a 2011 street price of $119 USD and $149 USD.\n      The case is white for the CLP-320, black for the CLP-325. Other than\n      that, there is no difference.<p>\n\n      This printer is supported by the foo2qpdl open software printer\n      driver.<p>\n\n      Consumables: Separate toner cartridges black (1500 prints,\n      ~$54), yellow/magenta/cyan (1000 prints, ~$45 each), waste toner\n      (5000 prints, ~$10), drum kit (24000 prints, ~$96)"
+        }
+    }
+}

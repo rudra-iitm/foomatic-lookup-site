@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Citizen-printiva600C",
+        "make": "Citizen",
+        "model": "printiva600C",
+        "mechanism": {
+            "transfer": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ppmtomd",
+        "comments": {
+            "en": "J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files. He started hacking ghostscript,\n    but abandoned it.<p>\n\n      Consumables/Refills: Ribbon cartridges, also in special spot colours<p>"
+        }
+    }
+}

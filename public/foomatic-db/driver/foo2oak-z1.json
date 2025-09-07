@@ -1,0 +1,24 @@
+{
+    "driver": {
+        "@id": "driver/foo2oak-z1",
+        "name": "foo2oak-z1",
+        "url": "http://foo2oak.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n\tThis is a driver developed for the Kyocera KM-1635/2035 copier.\n\t\n\t<p>\n\n\tIt is possible that this driver will also work for other Oak\n\tTechnologies OAKT-based printers, but the author cannot test this.\n\n\t<p>\n\n\tPPD files (and the Foomatic XML files to generate them) come\n\twith the driver, therefore we do not supply PPDs here on the\n\tOpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Kyocera-KM-1635"
+                },
+                {
+                    "id": "printer/Kyocera-KM-2035"
+                }
+            ]
+        }
+    }
+}

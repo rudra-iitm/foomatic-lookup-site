@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX-S5040",
+        "make": "Epson",
+        "model": "PX-S5040",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:PX-S5040;CLS:PRINTER;DES:EPSON PX-S5040",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "manufacturer": "EPSON",
+                "model": "PX-S5040"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-escpr",
+        "drivers": {
+            "driver": {
+                "id": "epson-escpr"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Epson provides a free (GPL) driver for this printer.<p>\n\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_Color_45",
+        "make": "Lexmark",
+        "model": "Optra Color 45",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/OptraColor/45.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also speaks PCL 5c.\n<br>CMYK or CMYKcm color printing.\n<br>Cartridge loading/alignment/etc requires <a href=\"http://pup.sourceforge.net/\">PUP</a>\n<br>Model 45n includes network interface.\n<br>Also sold by Xerox as the <a href=\"show_printer.cgi?recnum=Xerox-DocuPrint_C20\">Docuprint C20</a><p>\n\n      Consumables/Refills: 4 or 6 color ink cartridge or bw only cartridge<p>"
+        }
+    }
+}

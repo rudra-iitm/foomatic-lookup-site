@@ -1,0 +1,22 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-5960",
+        "make": "Canon",
+        "model": "LBP-5960",
+        "lang": {
+            "pcl": {
+                "@level": "5c"
+            }
+        },
+        "functionality": "B",
+        "driver": "cljet5",
+        "drivers": {
+            "driver": {
+                "id": "cljet5"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-1260",
+        "make": "Canon",
+        "model": "LBP-1260",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "Works fine with 7 MB installed<p>\n\n      Consumables/Refills: Toner Cartridge about 50 Irish Pounds<p>"
+        }
+    }
+}

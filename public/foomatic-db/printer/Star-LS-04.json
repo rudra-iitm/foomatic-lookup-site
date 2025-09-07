@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Star-LS-04",
+        "make": "Star",
+        "model": "LS-04",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null
+        },
+        "functionality": "A",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Aka Laserprinter 4\n<br>Should work fine with the ljet2p driver.\n<br><a href=\"http://www.starmicronics.com/star-download/pcprinter/Ls04um.pdf\">Manual</a>\n<br><a href=\"http://www.starmicronics.com/star-download/pcprinter/Ls04am.pdf\">Technical Reference</a>"
+        }
+    }
+}

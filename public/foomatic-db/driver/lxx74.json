@@ -1,0 +1,30 @@
+{
+    "driver": {
+        "@id": "driver/lxx74",
+        "name": "lxx74",
+        "url": "http://home.online.no/~enrio/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "cups": null
+        },
+        "comments": {
+            "en": "Enrique Pe'rez-Terro'n's experimental driver for the Lexmark X74\n    and X75 printers.\n\n    <p>\n\n    Appears to build as any of a ghostscript driver, a cups raster\n    driver, or a filter program."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Lexmark-X74",
+                    "comments": {
+                        "en": "Enrique, the driver author, seems to have one of these."
+                    }
+                },
+                {
+                    "id": "printer/Lexmark-X75",
+                    "comments": {
+                        "en": "Renauld Lepage reported success."
+                    }
+                }
+            ]
+        }
+    }
+}

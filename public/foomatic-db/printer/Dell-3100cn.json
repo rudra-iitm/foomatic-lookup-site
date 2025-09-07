@@ -1,0 +1,54 @@
+{
+    "printer": {
+        "@id": "printer/Dell-3100cn",
+        "make": "Dell",
+        "model": "3100cn",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Dell;CMD:PJL,RASTER,DOWNLOAD,PCLXL,PCL,POSTSCRIPT;MDL:Laser Printer 3100cn;DES:Dell Laser Printer 3100cn;CLS:PRINTER;",
+                "commandset": "PJL,RASTER,DOWNLOAD,PCLXL,PCL,",
+                "description": "Dell Laser Printer 3100cn",
+                "manufacturer": "Dell",
+                "model": "Laser Printer 3100cn"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Dell",
+                    "ppd": "PPD/Dell/dl3100cn.ppd"
+                },
+                {
+                    "id": "pxlcolor"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

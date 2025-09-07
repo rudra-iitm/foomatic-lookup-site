@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_8100",
+        "make": "HP",
+        "model": "LaserJet 8100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    PS L2, PCL5, PCL6, 1200dpi 32ppm \n<p>\nsame optional accessories as 8000, Internals are of a newer design.\n<p>\nSame size as LJ8000, too.  Other than sounding like a 737 winding up its turbines, this is one rock solid printer.  This printer also processes jobs quickly, throw your most complex jobs at this one.\n<p>\n[When printing PostScript and used with a combination of the original HP-provided PPD and CUPS you can utilize every single of the above / at 8000 model mentioned options. (supplemented by Kurt Pfeifle)]<p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Oce-VarioPrint_2110PS",
+        "make": "Oce",
+        "model": "VarioPrint 2110",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/Central+reproduction/vp2110/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Oce",
+                "ppd": "PPD/Oce/Oce-VarioPrint_2110PS/1/OCVP2110.ppd"
+            }
+        },
+        "comments": {
+            "en": "<b>Versatile mid production system</b><br/>\nThe Oce VarioPrint 2110 was specifically designed for your professional production environment with leading-edge technology that ensures high-speed productivity and exceptional document quality.\n<UL>\n<LI>105 prints per minute </LI>\n<LI>Tab printing </LI>\n<LI>Oversized printing </LI>\n<LI>Interposing of post-processed colour prints </LI>\n<LI>Inline finishing</LI>\n</UL><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

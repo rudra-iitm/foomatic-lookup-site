@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LQ-24",
+        "make": "Epson",
+        "model": "LQ-24",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "216"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epsonc"
+    }
+}

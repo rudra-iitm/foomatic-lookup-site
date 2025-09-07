@@ -1,0 +1,41 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/eplaser-RITOff",
+        "arg_shortname": {
+            "en": "RITOff"
+        },
+        "arg_longname": {
+            "en": "RIT Control"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "160",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dRITOff"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "false",
+                    "printer": "printer/Epson-LP-M6000",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "eplaser",
+                    "arg_defval": "0"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "eplaser-jp",
+                    "arg_defval": "0"
+                }
+            ]
+        },
+        "arg_shortname_false": {
+            "en": "RITOn"
+        }
+    }
+}

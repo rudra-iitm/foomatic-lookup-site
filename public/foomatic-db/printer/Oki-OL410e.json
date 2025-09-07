@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL410e",
+        "make": "Oki",
+        "model": "OL410e",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cs.okidata.com/cs.nsf/LookUp+Get/OL410e?OpenDocument",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet4",
+        "comments": {
+            "en": "This printer can either be used with a proprietary protocol\n    (Windows driver) or in PCL mode, but in PCL mode it does only 300\n    dpi.<p>\n\n      Consumables/Refills: toner cartridge; 2000 pages<p>"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/86",
+        "arg_shortname": {
+            "en": "Duplex"
+        },
+        "arg_longname": {
+            "en": "Double-Sided Printing"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET DUPLEX=ON"
+        },
+        "arg_shortname_false": {
+            "en": "Simplex"
+        }
+    }
+}

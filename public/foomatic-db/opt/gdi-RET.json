@@ -1,0 +1,56 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/gdi-RET",
+        "arg_shortname": {
+            "en": "RET"
+        },
+        "arg_longname": {
+            "en": "Resolution Enhancement"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "140",
+            "arg_spot": "E",
+            "arg_substitution": null,
+            "arg_proto": "s/(\\@PJL ENTER LANGUAGE)/\\@PJL SET RET = %s\\r\\n$1/;"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "gdi",
+                "arg_defval": "ev/gdi-RET-Off"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/gdi-RET-Off",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "Off"
+                    },
+                    "ev_driverval": "OFF"
+                },
+                {
+                    "@id": "ev/gdi-RET-On",
+                    "ev_longname": {
+                        "en": "On"
+                    },
+                    "ev_shortname": {
+                        "en": "On"
+                    },
+                    "ev_driverval": "ON",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "driver": "gdi"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

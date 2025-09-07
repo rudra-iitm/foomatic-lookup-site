@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Star-LC_90",
+        "make": "Star",
+        "model": "LC 90",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "url": "http://www.star.co.nz",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "epson",
+        "contrib_url": "mailto:absa@email.cz",
+        "comments": {
+            "en": "This printer print, with ghostscript.\nBut its designed for resolution \n240x144 dpi. So problem is, by using\nresolution 240x180 dpi, that text is\nsmaller and it is not used all place\n on the A4 format paper.<p>\n\n      Consumables/Refills: Y9 black<p>"
+        }
+    }
+}

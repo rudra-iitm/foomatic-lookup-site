@@ -1,0 +1,299 @@
+{
+    "driver": {
+        "@id": "driver/splix",
+        "name": "splix",
+        "url": "http://splix.ap2c.org/",
+        "supplier": "SpliX project",
+        "thirdpartysupplied": null,
+        "license": "GPL",
+        "licensetext": {
+            "en": "Principally, this driver is free software under the GPL, but take\n   note on the following restriction:\n\n   For some of the printers which this driver supports (Currently\n   Samsung CLP-200, CLP-300, CLP-600, CLX-216x, CLX-2170, CLX-3160,\n   Xerox Phaser 6110), it uses a JBIG software module for data\n   compression.\n\n   It is possible that certain products which can be built using the\n   JBIG software module might form inventions protected by patent\n   rights in some countries (e.g., by patents about arithmetic coding\n   algorithms owned by IBM and AT&T in the USA). Provision of this\n   software by the original author and OpenPrinting does NOT include\n   any licences for any patents. In those countries where a patent\n   licence is required for certain applications of this software\n   module, you will have to obtain such a licence yourself.\n\n   The driver can be built without the JBIG module, but then it will\n   not support the above-mentioned printer models any more.\n\n   Only versions 1.1.x and newer are affected. The older versions\n   1.0.x do not use the JBIG software for all supported\n   printers.\n\n   Additional note: The patent will expire on April 4, 2012. From then\n   on, there are no patents on the JBIG compression algorithm anu\n   more."
+        },
+        "patents": null,
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "http://sourceforge.net/forum/?group_id=175815",
+                "@level": "voluntary",
+                "#text": "SpliX forum at SourceForge"
+            }
+        },
+        "shortdescription": {
+            "en": "Driver for Samsung SPL2 (ML-1710, ...) and SPLc (CLP-500, ...) laser\n   printers"
+        },
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "*splix*"
+            }
+        },
+        "functionality": {
+            "maxresx": "1200",
+            "maxresy": "1200",
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "80"
+        },
+        "execution": {
+            "cups": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n    <iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    SpliX is a set of CUPS printer drivers for SPL (Samsung Printer\n    Language) printers. If you have such a printer, you need to\n    download and use SpliX. Moreover you will find documentation\n    about this proprietary language.<p>\n\n    Note that only SPL2 (monochrome) and SPLc (color) printers are\n    currently supported! However we are looking for people who have an\n    SPL 1 printer to implement this SPL version as soon as\n    possible.<p>\n\n    Not all SPL2 and SPLc printers are tested with this driver. Please\n    report your experience here.<p>\n\n    As the PPD files are contained in the driver package we will not\n    provide PPD files here on OpenPrinting.<p>\n\n    <b>Important:</b> For color printers SpliX needs color\n    profiles from the printer's manufacturer, otherwise it will refuse\n    to print. Please see the instructions in the INSTALL file of the\n    driver's source package. Alternatively, you can use the \"<a\n    href=\"/driver/foo2qpdl\">foo2qpdl</a>\" driver for the\n    color printers. That driver also prints without installed color\n    profiles.<p>\n\n    This driver is a pure printer driver. The scanning functionality\n    of multi-function devices is not supported.<p>\n\n    Note that the original author of the driver, Aurelien Croc, doe\n    not have time any more to do further development and maintenance\n    on the driver.  Currently user-supplied patches and fixes are\n    applied by Till Kamppeter to the Subversion repository of the\n    driver and there were no releases and web site updates in the last\n    two years. If you are packaging the driver for a Linux\n    distribution, it is highly recommended to use a Subversion\n    snapshot and not the 2.0.0 release.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Dell-1100"
+                },
+                {
+                    "id": "printer/Dell-1110"
+                },
+                {
+                    "id": "printer/Samsung-CLP-200"
+                },
+                {
+                    "id": "printer/Samsung-CLP-300"
+                },
+                {
+                    "id": "printer/Samsung-CLP-310",
+                    "comments": {
+                        "en": "Works with the SpliX PPD file for the CLP-300. Color output\n\t  better than with foo2qpdl. Use the SpliX package here from\n\t  OpenPrinting and not the one coming with your distribution,\n\t  as this printer uses potentially patented algorithms which\n\t  are not shipped in the distribution's packages."
+                    }
+                },
+                {
+                    "id": "printer/Samsung-CLP-315",
+                    "comments": {
+                        "en": "Works with the SpliX PPD file for the CLP-300. Color output\n\t  better than with foo2qpdl. Use the SpliX package here from\n\t  OpenPrinting and not the one coming with your distribution,\n\t  as this printer uses potentially patented algorithms which\n\t  are not shipped in the distribution's packages."
+                    }
+                },
+                {
+                    "id": "printer/Samsung-CLP-500"
+                },
+                {
+                    "id": "printer/Samsung-CLP-510"
+                },
+                {
+                    "id": "printer/Samsung-CLP-550"
+                },
+                {
+                    "id": "printer/Samsung-CLP-600"
+                },
+                {
+                    "id": "printer/Samsung-CLX-2160"
+                },
+                {
+                    "id": "printer/Samsung-CLX-2170"
+                },
+                {
+                    "id": "printer/Samsung-CLX-3160"
+                },
+                {
+                    "id": "printer/Samsung-ML-1510",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1520",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1610",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1630",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1640",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1710",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1740",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-1750",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2010",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2150",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2250",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2251",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2510",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2550",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2570",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-2571",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-3050",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-ML-3560",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-SCX-4200",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Samsung-SCX-4500",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3115",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3116",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3117",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3120",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3121",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3122",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3130",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3150",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3160",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3420",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_3425",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_5500",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                },
+                {
+                    "id": "printer/Xerox-Phaser_6100"
+                },
+                {
+                    "id": "printer/Xerox-Phaser_6110"
+                },
+                {
+                    "id": "printer/Xerox-WorkCentre_3119",
+                    "functionality": {
+                        "monochrome": null
+                    }
+                }
+            ]
+        }
+    }
+}

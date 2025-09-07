@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_340C",
+        "make": "HP",
+        "model": "DeskJet 340C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj340.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL,C32",
+                "description": "HP",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP DeskJet 340"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Note: The maximum resolution in color is 300x300.\n    <p>\n\n    Use the \"gimp-print\"/\"stp\" or\n    \"pcl3\"/\"hpdj\" driver.<p>\n\n    The best output quality you will get with the\n    \"gimp-print\" driver, it also handles the ink more\n    economically.<p>\n\n    If you have Gimp-Print 4.1.6 or older installed, you should\n    upgrade to a newer version, because the old versions\n    \"print\" blank lines instead of simply advancing the\n    paper fastly.<p><p>\n\n      Consumables/Refills: cartridge, about $25 USD<p>"
+        }
+    }
+}

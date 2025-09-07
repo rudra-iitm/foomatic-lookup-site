@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-K100_Series",
+        "make": "Epson",
+        "model": "K100 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:K100;CLS:PRINTER;DES:EPSON K100",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON K100",
+                "manufacturer": "EPSON",
+                "model": "K100"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-k100-k200-series",
+        "drivers": {
+            "driver": {
+                "id": "epson-k100-k200-series"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

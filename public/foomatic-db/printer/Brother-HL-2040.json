@@ -1,0 +1,50 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2040",
+        "make": "Brother",
+        "model": "HL-2040",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://welcome.solutions.brother.com/bsc/public_s/id/linux/en/index.html",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gimp-print"
+                },
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hl1250"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                }
+            ]
+        },
+        "comments": {
+            "en": "According to a user report this printer works well with the \"hl1250\"\n      Ghostscript driver. As this is a PCL-5e driver, it should also work with\n      other PCL-5e drivers."
+        }
+    }
+}

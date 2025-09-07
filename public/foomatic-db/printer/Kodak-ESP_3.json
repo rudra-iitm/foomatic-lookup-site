@@ -1,0 +1,18 @@
+{
+    "printer": {
+        "@id": "printer/Kodak-ESP_3",
+        "make": "Kodak",
+        "model": "ESP 3",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "functionality": "D",
+        "driver": "c2esp",
+        "drivers": {
+            "driver": {
+                "id": "c2esp"
+            }
+        }
+    }
+}

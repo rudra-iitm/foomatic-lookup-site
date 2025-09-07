@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-5000a",
+        "make": "Samsung",
+        "model": "ML-5000a",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsung.de",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "This printer is a true PCL printer(level 5e). with ljet4 drivers prints excellent"
+        }
+    }
+}

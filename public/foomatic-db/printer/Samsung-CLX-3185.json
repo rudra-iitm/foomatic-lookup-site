@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-325",
+        "make": "Samsung",
+        "model": "CLX-3185",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/us/computer/printers/CLX-3185/XAA",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2qpdl",
+        "comments": {
+            "en": "The Samsung CLX-3185 (USB) and CLX-3185FW (network) is color laser\n      multifunction printer with a 2010 street price of $225/$550 USD.<p>\n\n      This printer is supported by the foo2qpdl open software printer\n      driver.<p>\n\n      Only the printer function is supported by this driver.<p>\n\n      Consumables: Separate toner cartridges black (1500 prints,\n      ~$54), yellow/magenta/cyan (1000 prints, ~$45 each), waste toner\n      (5000 prints, ~$10), drum kit (24000 prints, ~$96)"
+        }
+    }
+}

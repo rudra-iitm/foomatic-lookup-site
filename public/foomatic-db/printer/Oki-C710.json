@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C710",
+        "make": "Oki",
+        "model": "C710",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AJ-2000",
+        "make": "Sharp",
+        "model": "AJ-2000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.sharpelectronics.com/",
+        "lang": {
+            "pcl": {
+                "@level": "3?"
+            }
+        },
+        "functionality": "B",
+        "driver": "pcl3",
+        "comments": {
+            "en": "Same printer as the Xerox DocuPrint M760, the printer does up to\n    1200 dpi, but the drivers shown here do only 600. The printer is\n    rather fast in 600 dpi, so it serves well for black text simple\n    graphics, web pages, ...<p>\n\n    One can even print photos, but not in such a high quality as you\n    get from HP or Epson inkjets. To do so, one has to use the\n    \"pcl3\" driver (version 3.3 or newer, printer needs to be\n    initialized for every page with the new\n    \"-dConfigureEveryPage\" option), the\n    \"sharp.upp\" prints all colours which contain black ink\n    totally in gray, so the result looks like a black-and-white image\n    with some parts shown in colour. The same you get with the default\n    settings of \"pcl3\", you must choose \"CMY+K\"\n    for the \"ColorMode\" setting (probably one cannot mix the\n    black ink and the colour inks of this printer and the printer\n    refuses mixing the inks internally). In addition, you should set\n    up 600 dpi, Floyd-Steinberg dithering, \"Presentation\"\n    quality, and a Gamma correction of around 3 (otherwise the image\n    gets way too dark). There is no option for a gamma correction in\n    \"pcl3\", but if you use CUPS as the spooler you can use the\n    \"gamma\" option of CUPS (\"<tt>lpoptions -P\n    &lt;printer&gt; -o\n    gamma=3000</tt>\"). Ghostscript and GIMP have also\n    possibilities for a Gamma correction. The colour quality gets much\n    better when using coated inkjet paper (media type setting\n    \"Bond Paper\") or photo paper (media type setting\n    \"Glossy Paper\"). Printing in \"CMY\" mode or\n    with more than 2 \"Black Levels\" or \"CMY\n    Levels\" does not work.<p>\n\n    The Sharp AJ-1800/1805/2000/2005 and the Xerox DocuPrint M750/M760\n    are very similar and can all be used with the same drivers. My\n    experience with the Sharp AJ-2000 described here is probably also\n    applicable to the other models.<p><p>\n\n      Consumables/Refills: Seperately exchangable tanks for each colour<p>"
+        }
+    }
+}

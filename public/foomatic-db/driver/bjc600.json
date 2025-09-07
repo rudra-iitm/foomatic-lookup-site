@@ -1,0 +1,115 @@
+{
+    "driver": {
+        "@id": "driver/bjc600",
+        "name": "bjc600",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=bjc600%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n     Ghostscript's built-in standard driver for Canon's inkjet\n     printers.<p>\n\n     NOTE: Due to a <a\n     href=\"http://bugs.ghostscript.com/show_bug.cgi?id=690032\">bug</a>\n     GPL Ghostscript 8.63 crashes when using this driver with PDF\n     input data. With PostScript the driver works just fine.<p>\n\n     The bug is fixed in Ghostscript 8.64 and later. For Ghostscript\n     8.63 (and older) there is a <a\n     href=\"http://www.openprinting.org/download/printing/ghostscript-bjc600-bjc800-patches/bjc600-bjc800-pdf.patch\">patch</a>\n     available.<p>\n\n     The PPDs from this site need Ghostscript 8.64 or newer or the\n     patch to work correctly with PDF input.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-BJC-1000"
+                },
+                {
+                    "id": "printer/Canon-BJC-2000"
+                },
+                {
+                    "id": "printer/Canon-BJC-2010"
+                },
+                {
+                    "id": "printer/Canon-BJC-210"
+                },
+                {
+                    "id": "printer/Canon-BJC-2100",
+                    "comments": {
+                        "en": "Using Ghostscript options -sPAPERSIZE=a4 and -r360x360"
+                    }
+                },
+                {
+                    "id": "printer/Canon-BJC-2110"
+                },
+                {
+                    "id": "printer/Canon-BJC-240"
+                },
+                {
+                    "id": "printer/Canon-BJC-250"
+                },
+                {
+                    "id": "printer/Canon-BJC-3000"
+                },
+                {
+                    "id": "printer/Canon-BJC-4000"
+                },
+                {
+                    "id": "printer/Canon-BJC-4100"
+                },
+                {
+                    "id": "printer/Canon-BJC-4200"
+                },
+                {
+                    "id": "printer/Canon-BJC-4300"
+                },
+                {
+                    "id": "printer/Canon-BJC-4310SP"
+                },
+                {
+                    "id": "printer/Canon-BJC-4400"
+                },
+                {
+                    "id": "printer/Canon-BJC-50"
+                },
+                {
+                    "id": "printer/Canon-BJC-55"
+                },
+                {
+                    "id": "printer/Canon-BJC-600"
+                },
+                {
+                    "id": "printer/Canon-BJC-610",
+                    "comments": {
+                        "en": "Traditional Ghostscript driver."
+                    }
+                },
+                {
+                    "id": "printer/Canon-BJC-620"
+                },
+                {
+                    "id": "printer/Canon-BJC-70"
+                },
+                {
+                    "id": "printer/Canon-BJC-80"
+                },
+                {
+                    "id": "printer/Canon-BJC-85"
+                },
+                {
+                    "id": "printer/Canon-MultiPASS_C2500"
+                },
+                {
+                    "id": "printer/Canon-MultiPASS_C3000"
+                },
+                {
+                    "id": "printer/Canon-MultiPASS_C3500"
+                },
+                {
+                    "id": "printer/Canon-MultiPASS_C5000"
+                },
+                {
+                    "id": "printer/Canon-MultiPASS_C5500"
+                },
+                {
+                    "id": "printer/Canon-S100"
+                },
+                {
+                    "id": "printer/Canon-S400"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/ppmtomd-KeepBlack",
+        "arg_shortname": {
+            "en": "KeepBlack"
+        },
+        "arg_longname": {
+            "en": "Keep pure black"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "190",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-keepblack"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "CorrectBlack"
+        }
+    }
+}

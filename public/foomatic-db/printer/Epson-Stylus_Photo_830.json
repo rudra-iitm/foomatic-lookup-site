@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_830",
+        "make": "Epson",
+        "model": "Stylus Photo 830",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo 830U",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 830U"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6-color CMYKcm printing.<p>\n\n    USB or Parallel.<p>\n\n    Successor of the Epson Stylus Photo 820.<p>"
+        }
+    }
+}

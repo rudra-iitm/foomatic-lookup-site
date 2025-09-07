@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Generic-PCL_4_Printer",
+        "make": "Generic",
+        "model": "PCL 4 Printer",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "This entry allows you to use any printer which understands PCL 4\n    with Foomatic, at least with the basic options. See your printer's\n    manual to know whether your printer supports PCL 4.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic\n    database</a>.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your\n    printer.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

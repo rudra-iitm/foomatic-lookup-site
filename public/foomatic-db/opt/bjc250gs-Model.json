@@ -1,0 +1,136 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/bjc250gs-Model",
+        "arg_shortname": {
+            "en": "Model"
+        },
+        "arg_longname": {
+            "en": "Model"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sPrinterType=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "bjc250gs",
+                    "printer": "printer/Canon-BJC-1000",
+                    "arg_defval": "ev/bjc250gs-Model-BJC-1000"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc250gs",
+                    "printer": "printer/Canon-BJC-250",
+                    "arg_defval": "ev/bjc250gs-Model-BJC-250"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc250gs",
+                    "printer": "printer/Canon-BJC-250ex",
+                    "arg_defval": "ev/bjc250gs-Model-BJC-250ex"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc250gs",
+                    "printer": "printer/Canon-BJC-255SP",
+                    "arg_defval": "ev/bjc250gs-Model-BJC-250"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc250gs",
+                    "printer": "printer/Canon-BJC-265SP",
+                    "arg_defval": "ev/bjc250gs-Model-BJC-250"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/bjc250gs-Model-BJC-1000",
+                    "ev_longname": {
+                        "en": "Canon BJC-1000"
+                    },
+                    "ev_shortname": {
+                        "en": "BJC-1000"
+                    },
+                    "ev_driverval": "BJC-1000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "bjc250gs"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "bjc250gs",
+                                "printer": "printer/Canon-BJC-1000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/bjc250gs-Model-BJC-250",
+                    "ev_longname": {
+                        "en": "Canon BJC-250"
+                    },
+                    "ev_shortname": {
+                        "en": "BJC-250"
+                    },
+                    "ev_driverval": "BJC-250",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "bjc250gs"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "bjc250gs",
+                                "printer": "printer/Canon-BJC-250"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "bjc250gs",
+                                "printer": "printer/Canon-BJC-255SP"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "bjc250gs",
+                                "printer": "printer/Canon-BJC-265SP"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/bjc250gs-Model-BJC-250ex",
+                    "ev_longname": {
+                        "en": "Canon BJC-250ex"
+                    },
+                    "ev_shortname": {
+                        "en": "BJC-250ex"
+                    },
+                    "ev_driverval": "BJC-250ex",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "bjc250gs"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "bjc250gs",
+                                "printer": "printer/Canon-BJC-250ex"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_RX500",
+        "make": "Epson",
+        "model": "Stylus Photo RX500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo RX500",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo RX500"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier.<p>\n\n    The printing engine of this device is most probably the same as of\n    the Epson Stylus Photo R300, for which basic support is available\n    in Gimp-Print 5.0.x.  Fine tuning, testing, and support for\n    printing on CDs still has to be done.<p>\n\n    This printer has slots for all common types of flash memory\n    cards. so one can print photos without PC direcly from the\n    camera's card. The front panel has a graphical user interface\n    which gives many options for printing from photo cards. Photo\n    download works with kernel 2.4.21 or later. The memory card can be\n    simply mounted as a USB-mass-storage device then. You can also\n    scan documents or photos onto a memory card, for example for usage\n    with a PDA.<p>\n\n    6-color CMYKcm printing, printing on inkjet-printable CDs and DVDs\n    possible (not yet supported by Gimp-Print).<p>\n\n    Scanning should work as described for the Epson Stylus CX3200 and\n    CX5200, best with kernel 2.4.21 or later. To make the \"epson\"\n    backend of <a\n    href=\"http://www.sane-project.org/\">SANE</a> recognizing\n    this device, you have to add a line like<p>\n\n    <tt>usb 0x4b8 0x805</tt><p>\n\n    to the <tt>/etc/sane.d/epson.conf</tt> file where the\n    two hexadecimal numbers are the vendor and product IDs of your\n    scanner. You find the actual IDs in\n    <tt>/proc/bus/usb/devices</tt>. Search for an entry\n    for an Epson device (the model name can be different to \"CX5400\"\n    as often the Epson devices report their japanese market name) and\n    in the line beginning with \"<tt>P</tt>\" directly above\n    the line with the manufacturer name you find the hexadecimal\n    vendor and product IDs.<p>\n\n    Copying should just work with the front panel of the\n    device.<p><p>\n\n      Consumables/Refills: 6 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

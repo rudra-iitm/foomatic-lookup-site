@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-MX-4501FN",
+        "make": "Sharp",
+        "model": "MX-4501FN",
+        "mechanism": {
+            "color": null
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "functionality": "B",
+        "driver": "pxlcolor",
+        "drivers": {
+            "driver": {
+                "id": "pxlcolor"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 45\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

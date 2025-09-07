@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/45",
+        "arg_shortname": {
+            "en": "ColorMode"
+        },
+        "arg_longname": {
+            "en": "Color Mode"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "lxm3200X",
+                "arg_defval": "ev/373"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/372",
+                    "ev_longname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_shortname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_driverval": "lxm3200m"
+                },
+                {
+                    "@id": "ev/373",
+                    "ev_longname": {
+                        "en": "Normal Quality Color (4-ink)"
+                    },
+                    "ev_shortname": {
+                        "en": "Colour"
+                    },
+                    "ev_driverval": "lxm3200c"
+                },
+                {
+                    "@id": "ev/374",
+                    "ev_longname": {
+                        "en": "Photo Quality Color (6-ink)"
+                    },
+                    "ev_shortname": {
+                        "en": "Photo"
+                    },
+                    "ev_driverval": "lxm3200p"
+                }
+            ]
+        }
+    }
+}

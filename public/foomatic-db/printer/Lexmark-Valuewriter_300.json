@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Valuewriter_300",
+        "make": "Lexmark",
+        "model": "Valuewriter 300",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Reported to work well as a laserjet II on Usenet.<p>\n\n      Consumables/Refills: cartridge<p>"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_5110xi",
+        "make": "HP",
+        "model": "OfficeJet 5110xi",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h20015.www2.hp.com/en/product.jhtml?lc=en&pagetype=hpofficeje89999",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multi-function device: Printer, scanner, copier, fax. Standard model\n    and \"xi\" model have different fax page memory sizes and zoom factor\n    ranges for copying.<p>\n\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    Copying should work, it does not need the PC.<p><p>\n\n      Consumables/Refills: 2 cartridges (1 black, 1 color)<p>"
+        }
+    }
+}

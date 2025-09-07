@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_430",
+        "make": "HP",
+        "model": "DesignJet 430",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Large-format printer, works best with Gimp-Print.<p><p>\n\n      Consumables/Refills: Black ink cartridge<p>"
+        }
+    }
+}

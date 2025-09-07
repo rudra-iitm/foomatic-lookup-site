@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Microline_600CL",
+        "make": "Oki",
+        "model": "Microline 600CL",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "ml600",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

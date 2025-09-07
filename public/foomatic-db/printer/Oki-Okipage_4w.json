@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_4w",
+        "make": "Oki",
+        "model": "Okipage 4w",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP4WHome.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HIPERWINDOWS,OPEL",
+                "description": "OKI OKIPAGE 4w",
+                "manufacturer": "OKI DATA CORP",
+                "model": "OKI OKIPAGE 4w"
+            }
+        },
+        "functionality": "B",
+        "driver": "oki4w",
+        "comments": {
+            "en": "600 dpi \"class\"; smoothing of some sort.\n    <br><p>\n\n      Consumables/Refills: toner  $30.00 Canadian<p>"
+        }
+    }
+}

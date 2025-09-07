@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Tektronix-4696",
+        "make": "Tektronix",
+        "model": "4696",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "tek4696"
+    }
+}

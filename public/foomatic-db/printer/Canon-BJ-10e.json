@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJ-10e",
+        "make": "Canon",
+        "model": "BJ-10e",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bj10e",
+        "comments": {
+            "en": "Note that some report it working properly in epson mode only."
+        }
+    }
+}

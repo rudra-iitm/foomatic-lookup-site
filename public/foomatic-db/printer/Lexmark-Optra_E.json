@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Optra_E",
+        "make": "Lexmark",
+        "model": "Optra E",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://web.archive.org/web/19990423033145/http://www.lexmark.com/printers/opte.html",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4"
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hl7x0-InputSlot",
+        "arg_shortname": {
+            "en": "InputSlot"
+        },
+        "arg_longname": {
+            "en": "Media Source"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "120",
+            "arg_spot": "J",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "hl7x0",
+                "arg_defval": "ev/hl7x0-InputSlot-Default"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hl7x0-InputSlot-Auto",
+                    "ev_longname": {
+                        "en": "Automatic"
+                    },
+                    "ev_shortname": {
+                        "en": "Auto"
+                    },
+                    "ev_driverval": "o"
+                },
+                {
+                    "@id": "ev/hl7x0-InputSlot-Default",
+                    "ev_longname": {
+                        "en": "Printer Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/hl7x0-InputSlot-Manual",
+                    "ev_longname": {
+                        "en": "Manual Feeder"
+                    },
+                    "ev_shortname": {
+                        "en": "Manual"
+                    },
+                    "ev_driverval": "M"
+                },
+                {
+                    "@id": "ev/hl7x0-InputSlot-MultiPurpose",
+                    "ev_longname": {
+                        "en": "Multipurpose Tray"
+                    },
+                    "ev_shortname": {
+                        "en": "MultiPurpose"
+                    },
+                    "ev_driverval": "O"
+                },
+                {
+                    "@id": "ev/hl7x0-InputSlot-Tray1",
+                    "ev_longname": {
+                        "en": "Tray 1"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray1"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/hl7x0-InputSlot-Tray2",
+                    "ev_longname": {
+                        "en": "Tray 2"
+                    },
+                    "ev_shortname": {
+                        "en": "Tray2"
+                    },
+                    "ev_driverval": "2"
+                }
+            ]
+        }
+    }
+}

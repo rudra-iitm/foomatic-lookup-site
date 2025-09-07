@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-6060",
+        "make": "Samsung",
+        "model": "ML-6060",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/us/support/download/supportDown.do?model_nm=ML-6060&mType=UM&vType=L",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e, 6"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Samsung;CMD:PCL5E,PCL6;MDL:ML-6060;CLS:PRINTER;",
+                "commandset": "PCL5E,PCL6",
+                "manufacturer": "Samsung",
+                "model": "ML-6060"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Postscript requires PS SIMM and 12MB of RAM (standard model comes with 4 MB)\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-07<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-PSC_750xi",
+        "make": "HP",
+        "model": "PSC 750xi",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/pdf/c8426a.pdf",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:PSC 750xi;CMD:MLC,PCL,PML;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard PSC 700 Series;",
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard PSC 700 Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "PSC 750xi"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "USB-only multi-function device for printing, scanning (flatbed), and\n    copying.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scamnning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p><p>\n\n      Consumables/Refills: 2 cartridges<p>"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AL-C1900",
+        "make": "Epson",
+        "model": "AL-C1900",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/alasc1900/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "5e (gray"
+            },
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "eplaser",
+        "comments": {
+            "en": "Epson provides a free (LGPL) driver for this printer. With this the\n      printer works to its full extent.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

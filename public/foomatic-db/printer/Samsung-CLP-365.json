@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-365",
+        "make": "Samsung",
+        "model": "CLP-365",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/us/computer/printers/CLP-365W/XAC",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "MFG:Samsung;CMD:SPLC;MDL:CLP-360 Series;CLS:PRINTER;",
+                "manufacturer": "Samsung",
+                "model": "CLP-360 Series",
+                "commandset": "SPLC"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2qpdl",
+        "comments": {
+            "en": "The Samsung CLP-360 (USB) and Samsung CLP-365W (Net) are\n      color laser printers with a 2012 street price of $230 USD.<p>\n\n      This printer is supported by the foo2qpdl open software printer\n      driver.<p>\n\n      Consumables: Separate toner cartridges black (1500 prints,\n      ~$54), yellow/magenta/cyan (1000 prints, ~$45 each), waste toner\n      (5000 prints, ~$10), drum kit (24000 prints, ~$96)"
+        }
+    }
+}

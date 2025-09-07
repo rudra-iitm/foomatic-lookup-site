@@ -1,0 +1,20 @@
+{
+    "printer": {
+        "@id": "printer/Panasonic-DP-8016P",
+        "make": "Panasonic",
+        "model": "DP-8016P",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "PostScript 3 is optional\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25"
+        }
+    }
+}

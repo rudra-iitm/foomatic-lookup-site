@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Fujitsu-1200",
+        "make": "Fujitsu",
+        "model": "1200",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "240",
+                    "y": "72"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epsonc"
+    }
+}

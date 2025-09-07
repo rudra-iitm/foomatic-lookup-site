@@ -1,0 +1,32 @@
+{
+    "driver": {
+        "@id": "driver/bj8XXYYZ.upp",
+        "name": "bj8XXYYZ.upp",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 1200dpi"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This is a set of UPP files for the Canon BJC-8200 which comes\n      with Ghostscript 6.50 or newer. It supports several modes up to\n      the highest resolution on photo papers. Gimp-Print also supports\n      this model, but it is not known which driver gives the better\n      results.  <p>\n\n      The documentation to this driver (see driver's web page) tells\n      that with this driver the maximum printout quality is reached,\n      even it supports only 4-ink printing, but the Windows driver\n      also uses only four inks in its highest quality modes.<p>\n\n      UPP files of this driver: bj8gc12f.upp, bj8hg12f.upp,\n      bj8oh06n.upp, bj8pa06n.upp, bj8pp12f.upp, bj8ts06n.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-BJC-8200"
+                },
+                {
+                    "id": "printer/Canon-S500"
+                },
+                {
+                    "id": "printer/Canon-S600"
+                },
+                {
+                    "id": "printer/Canon-S630"
+                }
+            ]
+        }
+    }
+}

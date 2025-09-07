@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S200",
+        "make": "Canon",
+        "model": "S200",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://consumer.usa.canon.com/printers/s200/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Nothing known about its compatibility to free software. The information on Canon's web pages does not show any similarity to a supported model. Perhaps it works with the commercial TurboPrint driver.<p>\n\n      Consumables/Refills: BCI-24 Black (130 pages w/ 5% coverage), BCI-24 Colour (120 pages w/ 5% coverage per colour)<p>"
+        }
+    }
+}

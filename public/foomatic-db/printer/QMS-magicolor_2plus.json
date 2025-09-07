@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/QMS-magicolor_2plus",
+        "make": "QMS",
+        "model": "magicolor 2+",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript"
+    }
+}

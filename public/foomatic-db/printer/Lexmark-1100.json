@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-1100",
+        "make": "Lexmark",
+        "model": "1100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/1100/",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "lm1100",
+        "comments": {
+            "en": "Tim Engler's driver (lm1100) now\nsupports 300 dpi in color and b&amp;w.\nThe printer also no longer needs\nWinDOS to switch cartridges. You\ncan download the necessary\nsoftware to do this from Tim\nEngler's lm1100 web page. It can\nprint plain ASCII through gs.<p>\n\n      Consumables/Refills: Cartridge and Printhead together. No separate Colors.<p>"
+        }
+    }
+}

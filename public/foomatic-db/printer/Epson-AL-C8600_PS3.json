@@ -1,0 +1,69 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AL-C8600_PS3",
+        "make": "Epson",
+        "model": "AL-C8600 PS3",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/product/printers/lasers/alasc8600/index.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Epson;MDL:AL-C8600 PS3;",
+                "manufacturer": "Epson",
+                "model": "AL-C8600 PS3"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Epson",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5c"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Epson",
+                    "ppd": "PPD/Epson/epalc860.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Large format (A3/11x17) colour laser printer<p>\n      PostScript version of the AL-C2000<p>\n      Epson provides a free (LGPL) driver for this printer. With this the\n      printer should work to its full extent.<p>\n      A scanning add-on for this printer is available, so that one can make\n      an multi-function device (printing, scanning, copying) out of it.<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

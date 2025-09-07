@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-MultiPASS_C5500",
+        "make": "Canon",
+        "model": "MultiPASS C5500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/multi/c5500/",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "bjc600",
+        "comments": {
+            "en": "This is a multifunction printer that differs from the C3500 only in the fact that the scanner is a color one (in the C3500 it is B&amp;W).\n<br>\nThe documentation that comes with the printer claims that this will not run with NT or Win 3.1. However, the canon site has links to drivers for NT.\nPrinting under non-Win9X systems is accomplished by setting the printer to DOS emulation mode. Under this mode, the printer is driver compatible (according\nto Canon) with several printers including the Epson LQ2550 and LQ2500 and the Canon BJC 4300 and 4400. The resolution in this case is claimed to be the \nmaximum supported by the driver.\n<br>\nI tried it out with the bj600 and it works. Resolution at which it prints is not known. I have not tried the scanner.<p>\n\n      Consumables/Refills: 4 printheads : color, photo color, black, and neon (flourescent<p>"
+        }
+    }
+}

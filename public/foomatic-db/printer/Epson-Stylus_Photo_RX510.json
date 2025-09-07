@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_RX510",
+        "make": "Epson",
+        "model": "Stylus Photo RX510",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus Photo RX510",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo RX510"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Multi-function device: Printer, Scanner, Copier.<p>\n\n    The printing engine of this device is most probably the same as of\n    the Epson Stylus Photo R200/R300, for which support is available\n    in Gutenprint 5.0.x.<p>\n\n    This printer has slots for all common types of flash memory\n    cards. so one can print photos without PC direcly from the\n    camera's card. The front panel has a graphical user interface\n    which gives many options for printing from photo cards. Photo\n    download works with kernel 2.4.21 or later. The memory card can be\n    simply mounted as a USB-mass-storage device then. You can also\n    scan documents or photos onto a memory card, for example for usage\n    with a PDA.<p>\n\n    6-color CMYKcm printing, printing on inkjet-printable CDs and\n    DVDs.<p>\n\n    Scanning should work with <a\n    href=\"http://www.sane-project.org/\">SANE</a> using\n    Epson's <a\n    href=\"http://www.avasys.jp/english/linux_e/dl_scan.html\">IScan</a>\n    or perhaps also with SANE's \"<tt>epson</tt>\"\n    backend.<p>\n\n    Copying should just work with the front panel of the\n    device.<p><p>\n\n      Consumables/Refills: 6 separately exchangeable ink cartridges<p>"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LIPS-III",
+        "make": "Canon",
+        "model": "LIPS-III",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "lips3",
+        "comments": {
+            "en": "I have old LIPS III printer (Laser Shot A404 GII) which came with all LIPS-III command instructions documented.  Good old days.  If someone is interesed about command info to improve GS, contact me.  debian@aokiconsulting.com"
+        }
+    }
+}

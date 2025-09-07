@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_1500",
+        "make": "HP",
+        "model": "Color LaserJet 1500",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "in",
+                    "relative": null,
+                    "top": "0.166666",
+                    "left": "0.166666",
+                    "right": "0.166666",
+                    "bottom": "0.166666"
+                }
+            }
+        },
+        "url": "http://www.hp-expo.com/uk/eng/products/laserjet/q2489a.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "CLS:PRINTER;MDL:hp color LaserJet 1500;MFG:Hewlett-Packard;CMD:OAKRAS;",
+                "commandset": "OAKRAS",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp color LaserJet 1500"
+            }
+        },
+        "functionality": "D",
+        "driver": "foo2oak",
+        "comments": {
+            "en": "The Color LaserJet 1500 is a USB laser printer with a 2003 street\n\tprice of $600-$800 USD.<p>\n\n\tThe Color LaserJet 1500L comes with a multi-purpose tray only,\n\tthe Color LaserJet 1500 comes with an additional 250-sheet tray.<p>\n\n      Consumables/Refills: Toner Black (5000 prints) - $70\n\t\tToner Cyan (4000 prints) - $90\n\t\tToner Magenta (4000 prints) - $90\n\t\tToner Yellow (4000 prints) - $90\n\t\tImaging Drum (20000 prints) - $160 Part numbers: C9700A, \n\t    C9701A, \n\t    C9703A, \n\t    C9702A, \n\t    C9704A<p>"
+        }
+    }
+}

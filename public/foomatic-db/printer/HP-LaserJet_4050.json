@@ -1,0 +1,55 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4050",
+        "make": "HP",
+        "model": "LaserJet 4050",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,MLC,PCL,PCLXL,POSTSCRIPT",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 4050 Series"
+            },
+            "parallel": {
+                "description": "Hewlett-Packard LaserJet 4050 Series"
+            },
+            "usb": {
+                "description": "Hewlett-Packard LaserJet 4050 Series INTERFACE=7/1/1"
+            },
+            "snmp": {
+                "description": "HP LaserJet 4050 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Great printer for heavy printing needs.  Fast, reliable, jam\n    proof.  Handles duplex/simplex great with linux (duplex is a\n    rather expensive option).<p>\n\n    Basically a great workhorse of a printer.<p>\n\n    For basic printing functionality use the Postscript PPD. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n    \n    Various flavours are available, as is the HP way.  The 4050N\n    includes Ethernet.<p>\n\n    This printer is a native PostScript printer, so the best is to use\n    it with the PPD file delivered with the printer. So the printer\n    gets exactly the possibilties which one has under Windows or\n    MacOS.<p><p>\n\n      Consumables/Refills: Toner and drum in one cartridge<p>"
+        }
+    }
+}

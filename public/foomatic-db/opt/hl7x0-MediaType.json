@@ -1,0 +1,130 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/hl7x0-MediaType",
+        "arg_shortname": {
+            "en": "MediaType"
+        },
+        "arg_longname": {
+            "en": "Media Type"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "110",
+            "arg_spot": "H",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "hl7x0",
+                "arg_defval": "ev/hl7x0-MediaType-Default"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/hl7x0-MediaType-Bond",
+                    "ev_longname": {
+                        "en": "Bond Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Bond"
+                    },
+                    "ev_driverval": "5"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Default",
+                    "ev_longname": {
+                        "en": "Printer Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Envelopes",
+                    "ev_longname": {
+                        "en": "Envelope"
+                    },
+                    "ev_shortname": {
+                        "en": "Envelopes"
+                    },
+                    "ev_driverval": "6"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Normal",
+                    "ev_longname": {
+                        "en": "Normal Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Normal"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Thick",
+                    "ev_longname": {
+                        "en": "Thick Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Thick"
+                    },
+                    "ev_driverval": "1"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-ThickEnvelopes",
+                    "ev_longname": {
+                        "en": "Thick Envelopes"
+                    },
+                    "ev_shortname": {
+                        "en": "ThickEnvelopes"
+                    },
+                    "ev_driverval": "7"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Thicker",
+                    "ev_longname": {
+                        "en": "Thicker Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Thicker"
+                    },
+                    "ev_driverval": "2"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Thin",
+                    "ev_longname": {
+                        "en": "Thin Paper"
+                    },
+                    "ev_shortname": {
+                        "en": "Thin"
+                    },
+                    "ev_driverval": "4"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-ThinEnvelopes",
+                    "ev_longname": {
+                        "en": "Thin Envelopes"
+                    },
+                    "ev_shortname": {
+                        "en": "ThinEnvelopes"
+                    },
+                    "ev_driverval": "8"
+                },
+                {
+                    "@id": "ev/hl7x0-MediaType-Transparencies",
+                    "ev_longname": {
+                        "en": "Transparent"
+                    },
+                    "ev_shortname": {
+                        "en": "Transparencies"
+                    },
+                    "ev_driverval": "3"
+                }
+            ]
+        }
+    }
+}

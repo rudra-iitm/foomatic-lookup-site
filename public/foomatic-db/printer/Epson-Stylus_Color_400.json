@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_400",
+        "make": "Epson",
+        "model": "Stylus Color 400",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc400_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Works with stcolor driver using the -dSoftweave parameter. Also\nworks with uniprint driver and stc500p.upp and stc500ph.upp parameter\nfiles, but printing at 720 dpi is VERY slow this way. Implements a\nsubset of ESC/P2 language. Third-party ink cartridges and refill kits\navailable.\n<p>\nAs of July 2000, the best results are from the stp driver.<p>\n\n      Consumables/Refills: ink cartridge; ca. $25 for color or black<p>"
+        }
+    }
+}

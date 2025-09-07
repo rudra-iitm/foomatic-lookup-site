@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C912",
+        "make": "Lexmark",
+        "model": "C912",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Lexmark",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_C912.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 29\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

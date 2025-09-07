@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E450dn",
+        "make": "Lexmark",
+        "model": "E450dn",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/lexmark/product/home/870/0,6970,204816596_653293751_877009766_en,00.html?tabId=1",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "Lexmark_International5183, Lexmark_InternationalD1CD, Lexmark_InternationalCDD2, Lexmark_International5C93",
+                "commandset": "PCL 6 Emulation, PostScript Le",
+                "description": "Lexmark E450dn",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark E450dn"
+            },
+            "snmp": {
+                "description": "Lexmark E450dn 620K4C1 LM.SZ.P040"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 35\n\n      Foomatic entry made by PPDtoXML T/G 0.14 on 2008-05-16<p>\n\n      Consumables/Refills: E450 High Yield cartrage ~11,000 pages $155<p>"
+        }
+    }
+}

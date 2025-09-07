@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/IBM-4312",
+        "make": "IBM",
+        "model": "4312",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "<p>\n\n      Consumables/Refills: $150 new, $90 refill<p>"
+        }
+    }
+}

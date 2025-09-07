@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Star-JJ-100",
+        "make": "Star",
+        "model": "JJ-100",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "jj100",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

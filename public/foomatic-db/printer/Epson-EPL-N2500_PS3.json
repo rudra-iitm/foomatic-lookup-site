@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EPL-N2500_PS3",
+        "make": "Epson",
+        "model": "EPL-N2500 PS3",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Epson",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Epson",
+                "ppd": "PPD/Epson/epln2500.ppd"
+            }
+        },
+        "comments": {
+            "en": "PostScript version of the EPL-N2500<p><p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

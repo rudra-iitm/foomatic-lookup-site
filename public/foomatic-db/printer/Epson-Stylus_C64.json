@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C64",
+        "make": "Epson",
+        "model": "Stylus C64",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Similar to the Epson Stylus C84, but slower and cheaper. C63, C64,\n    and PX V500 are the same, C64 is the name for the US market, PX\n    V500 for Japan, and C64 for the rest of the world. These printers\n    are also capable of full-bleed (borderless) printing.<p>\n\n    Parallel and USB ports.<p>\n\n    Needs Gimp-Print 4.3.21 or 4.2.6pre2 (or newer versions), this\n    printer does not work with the drivers for the C82 or\n    C84.<p>\n\n    This printer cannot be tested by sending plain text to it, as the\n    printer may or may not respond to the text.  The recommended way\n    to test the connection is by checking the ink level with the\n    <tt>escputil</tt> command as follows:<p>\n\n    <tt>escputil -i -u -r /dev/lp0</tt><p>\n\n    where /dev/lp0 should be replaced with the name of your printer\n    port.<p><p>\n\n      Consumables/Refills: Four separately changable cartridges for black and the\n\tcolours<p>"
+        }
+    }
+}

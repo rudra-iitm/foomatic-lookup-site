@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_777",
+        "make": "Epson",
+        "model": "Stylus Color 777",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus COLOR 777",
+                "manufacturer": "EPSON",
+                "model": "Stylus COLOR 777"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This is the same printer as the (European) <a \nhref=\"show_printer.cgi?recnum=Epson-Stylus_Color_680\">Stylus Color 680</a>.\n<p>\nUsing stcany.upp gives ok results, though of course only 360x360dpi.\nUsing any of the 740 uniprint drivers works as far as resolution,\nbut a lot of the colors are messed up.\n<p>\nJules Bean has reported on the stp developer list that it works reasonably well,\nsubject of course to the limitations of this rather inexpensive device.  The \nnewer versions of gimp-print/stp include explicit support for this, or just \npretend that you have a 680.\n<p>\nThe recent CVS gimp-print does include explicit 777 support, and it works quite well.  Resolution from 360dpi to 2880x720dpi are supported, and while the higher resolutions are quite slow, the printer produces very good output at 2880x720dpi.  The 777 is not listed as a supported printer on the gimp-print page, so the CVS version is probably needed for explicit 777 support.<p>\n\n      Consumables/Refills: Seperate Color & Black cartridges, ~$30 a piece<p>"
+        }
+    }
+}

@@ -1,0 +1,1475 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/207",
+        "arg_shortname": {
+            "en": "Model"
+        },
+        "arg_longname": {
+            "en": "Model"
+        },
+        "arg_execution": {
+            "arg_group": "InstallableOptions",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sSubdevice=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "arg_defval": "ev/1019"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Apollo-P-1200",
+                    "arg_defval": "ev/1019"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Apollo-P-1220_Barbie",
+                    "arg_defval": "ev/1019"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/Apollo-P-1250",
+                    "arg_defval": "ev/1019"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet",
+                    "arg_defval": "ev/994"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_1100C",
+                    "arg_defval": "ev/1019"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_1120C",
+                    "arg_defval": "ev/1018"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_200",
+                    "arg_defval": "ev/994"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_310",
+                    "arg_defval": "ev/997"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_320",
+                    "arg_defval": "ev/998"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_340C",
+                    "arg_defval": "ev/999"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_400",
+                    "arg_defval": "ev/1000"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_500",
+                    "arg_defval": "ev/1001"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_500C",
+                    "arg_defval": "ev/1002"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_510",
+                    "arg_defval": "ev/1003"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_520",
+                    "arg_defval": "ev/1004"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_540",
+                    "arg_defval": "ev/1005"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_540C",
+                    "arg_defval": "ev/1006"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_550C",
+                    "arg_defval": "ev/1006"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_560C",
+                    "arg_defval": "ev/1007"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_600",
+                    "arg_defval": "ev/1009"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_660C",
+                    "arg_defval": "ev/1010"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_670C",
+                    "arg_defval": "ev/1011"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_672C",
+                    "arg_defval": "ev/1011"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_680C",
+                    "arg_defval": "ev/1012"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_682C",
+                    "arg_defval": "ev/1012"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_690C",
+                    "arg_defval": "ev/1013"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_692C",
+                    "arg_defval": "ev/1013"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_850C",
+                    "arg_defval": "ev/1014"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_855C",
+                    "arg_defval": "ev/1015"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_870C",
+                    "arg_defval": "ev/1016"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_890C",
+                    "arg_defval": "ev/1017"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_940C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_950C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_952C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_960C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_970C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_980C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_990C",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_Plus",
+                    "arg_defval": "ev/995"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-DeskJet_Portable",
+                    "arg_defval": "ev/996"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet",
+                    "arg_defval": "ev/1004"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_300",
+                    "arg_defval": "ev/1004"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_330",
+                    "arg_defval": "ev/1004"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_350",
+                    "arg_defval": "ev/1004"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_635",
+                    "arg_defval": "ev/1008"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_G95",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-OfficeJet_LX",
+                    "arg_defval": "ev/1004"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1000",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1100",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1115",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1215",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1218",
+                    "arg_defval": "ev/1020"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pcl3",
+                    "printer": "printer/HP-PhotoSmart_P1315",
+                    "arg_defval": "ev/1020"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1000",
+                    "ev_longname": {
+                        "en": "DeskJet 400"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj400"
+                    },
+                    "ev_driverval": "hpdj400",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_400"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1001",
+                    "ev_longname": {
+                        "en": "DeskJet 500"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj500"
+                    },
+                    "ev_driverval": "hpdj500",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_500"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1002",
+                    "ev_longname": {
+                        "en": "DeskJet 500C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj500c"
+                    },
+                    "ev_driverval": "hpdj500c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_500C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1003",
+                    "ev_longname": {
+                        "en": "DeskJet 510"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj510"
+                    },
+                    "ev_driverval": "hpdj510",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_510"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1004",
+                    "ev_longname": {
+                        "en": "DeskJet 520"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj520"
+                    },
+                    "ev_driverval": "hpdj520",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_520"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_300"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_330"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_350"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_LX"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1005",
+                    "ev_longname": {
+                        "en": "DeskJet 540"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj540"
+                    },
+                    "ev_driverval": "hpdj540",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_540"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1006",
+                    "ev_longname": {
+                        "en": "DeskJet 550C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj550c"
+                    },
+                    "ev_driverval": "hpdj550c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_540C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_550C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1007",
+                    "ev_longname": {
+                        "en": "DeskJet 560C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj560c"
+                    },
+                    "ev_driverval": "hpdj560c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_560C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1008",
+                    "ev_longname": {
+                        "en": "Unspecified Old Model"
+                    },
+                    "ev_shortname": {
+                        "en": "unspecold"
+                    },
+                    "ev_driverval": "unspecold",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_635"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1009",
+                    "ev_longname": {
+                        "en": "DeskJet 600"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj600"
+                    },
+                    "ev_driverval": "hpdj600",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_600"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1010",
+                    "ev_longname": {
+                        "en": "DeskJet 660C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj660c"
+                    },
+                    "ev_driverval": "hpdj660c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_660C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1011",
+                    "ev_longname": {
+                        "en": "DeskJet 670C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj670c"
+                    },
+                    "ev_driverval": "hpdj670c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_670C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_672C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1012",
+                    "ev_longname": {
+                        "en": "DeskJet 680C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj680c"
+                    },
+                    "ev_driverval": "hpdj680c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_680C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_682C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1013",
+                    "ev_longname": {
+                        "en": "DeskJet 690C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj690c"
+                    },
+                    "ev_driverval": "hpdj690c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_690C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_692C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1014",
+                    "ev_longname": {
+                        "en": "DeskJet 850C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj850c"
+                    },
+                    "ev_driverval": "hpdj850c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_850C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1015",
+                    "ev_longname": {
+                        "en": "DeskJet 855C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj855c"
+                    },
+                    "ev_driverval": "hpdj855c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_855C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1016",
+                    "ev_longname": {
+                        "en": "DeskJet 870C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj870c"
+                    },
+                    "ev_driverval": "hpdj870c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_870C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1017",
+                    "ev_longname": {
+                        "en": "DeskJet 890C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj890c"
+                    },
+                    "ev_driverval": "hpdj890c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_890C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1018",
+                    "ev_longname": {
+                        "en": "DeskJet 1120C"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj1120c"
+                    },
+                    "ev_driverval": "hpdj1120c",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_1120C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1019",
+                    "ev_longname": {
+                        "en": "Unspecified Model"
+                    },
+                    "ev_shortname": {
+                        "en": "unspec"
+                    },
+                    "ev_driverval": "unspec",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_1120C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_200"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_310"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_320"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_340C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_400"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_500"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_500C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_510"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_520"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_540"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_540C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_550C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_560C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_600"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_660C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_670C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_672C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_680C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_682C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_690C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_692C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_850C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_855C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_870C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_890C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_940C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_950C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_952C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_960C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_970C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_980C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_990C"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_Plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_Portable"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_300"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_330"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_350"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_635"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_G95"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_LX"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1000"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1100"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1115"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1215"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1218"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1315"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1020",
+                    "ev_longname": {
+                        "en": "DeskJet 970C with Duplexer"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj970cDuplex"
+                    },
+                    "ev_driverval": "unspec -sDuplexCapability=oppositeLeadingEdge",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_940C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_950C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_952C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_960C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_970C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_980C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_990C"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-OfficeJet_G95"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1000"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1100"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1115"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1215"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1218"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-PhotoSmart_P1315"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/1077",
+                    "ev_longname": {
+                        "en": "Olivetti (Black sent after CMY)"
+                    },
+                    "ev_shortname": {
+                        "en": "olivetti"
+                    },
+                    "ev_driverval": "unspec -dSendBlackLast",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/994",
+                    "ev_longname": {
+                        "en": "DeskJet"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj"
+                    },
+                    "ev_driverval": "hpdj",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_200"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/995",
+                    "ev_longname": {
+                        "en": "DeskJet Plus"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdjplus"
+                    },
+                    "ev_driverval": "hpdjplus",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_Plus"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/996",
+                    "ev_longname": {
+                        "en": "DeskJet Portable"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdjportable"
+                    },
+                    "ev_driverval": "hpdjportable",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_Portable"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/997",
+                    "ev_longname": {
+                        "en": "DeskJet 310"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj310"
+                    },
+                    "ev_driverval": "hpdj310",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_310"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/998",
+                    "ev_longname": {
+                        "en": "DeskJet 320"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj320"
+                    },
+                    "ev_driverval": "hpdj320",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_320"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/999",
+                    "ev_longname": {
+                        "en": "DeskJet 340"
+                    },
+                    "ev_shortname": {
+                        "en": "hpdj340"
+                    },
+                    "ev_driverval": "hpdj340",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "pcl3"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/Generic-PCL_3_Printer"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "pcl3",
+                                "printer": "printer/HP-DeskJet_340C"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

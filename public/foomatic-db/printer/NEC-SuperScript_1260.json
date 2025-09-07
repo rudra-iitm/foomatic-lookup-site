@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_1260",
+        "make": "NEC",
+        "model": "SuperScript 1260",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss1260/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Only prints at 300dpi with PCL.\n<br>Model 1260N includes network interface."
+        }
+    }
+}

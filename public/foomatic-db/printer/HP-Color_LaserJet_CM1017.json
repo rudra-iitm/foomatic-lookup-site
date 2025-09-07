@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_CM1017",
+        "make": "HP",
+        "model": "Color LaserJet CM1017",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,PML,BIDI-ECP,MLC,PCL,POSTS",
+                "description": "Hewlett-Packard Color LaserJet CM1017 series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP Color LaserJet CM1017 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    125 sheets A4/Letter/Legal, additional paper trays (250/500 sheets)\n    and network adapters available. Manual duplex available only.<p><p>\n\n      Consumables/Refills: 1 toner cartridge for each color, imaging drum<p>"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-6040",
+        "make": "Samsung",
+        "model": "ML-6040",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsungelectronics.co.uk/cgi-bin/ecuk/main/samsunguk_global.jsp?target_pgm=/product/product_type.jsp&prod_path=/Consumer+Products/Computers+%26+Related+Products/Printer",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "gdi",
+        "comments": {
+            "en": "One of Samsung's line of host-based lasers.  They generally work\n    well and cost little.\n\n    Samsung sort of supports Linux use, with installable Linux/x86\n    cups drivers often in the box, a penguin often on the box, etc.<p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

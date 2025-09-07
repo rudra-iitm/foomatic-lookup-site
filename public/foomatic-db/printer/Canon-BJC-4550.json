@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-4550",
+        "make": "Canon",
+        "model": "BJC-4550",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc800",
+        "comments": {
+            "en": "In gs 5.03, colour only works for 24 and 32\nbit/pixel. \n<br>Monochrome reported not working, but try bj200 driver or -dBitsPerPixel=1.\n<br>The \"bjc600\" driver does not print the large formats (A3, 11x17)."
+        }
+    }
+}

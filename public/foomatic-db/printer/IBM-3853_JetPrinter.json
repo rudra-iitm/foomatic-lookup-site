@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/IBM-3853_JetPrinter",
+        "make": "IBM",
+        "model": "3853 JetPrinter",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "82",
+                    "y": "82"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "jetp3852"
+    }
+}

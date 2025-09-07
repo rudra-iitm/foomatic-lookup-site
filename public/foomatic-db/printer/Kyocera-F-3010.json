@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-F-3010",
+        "make": "Kyocera",
+        "model": "F-3010",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;MDL:F-3010;",
+                "description": "Kyocera F-3010",
+                "manufacturer": "Kyocera",
+                "model": "F-3010"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljetplus"
+    }
+}

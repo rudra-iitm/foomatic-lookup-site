@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/224",
+        "arg_shortname": {
+            "en": "IntensityRendering"
+        },
+        "arg_longname": {
+            "en": "Intensity Rendering"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "210",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sIntensityRendering=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pcl3",
+                "arg_defval": "ev/1069"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/1068",
+                    "ev_longname": {
+                        "en": "Printer-internal"
+                    },
+                    "ev_shortname": {
+                        "en": "Printer"
+                    },
+                    "ev_driverval": "printer"
+                },
+                {
+                    "@id": "ev/1069",
+                    "ev_longname": {
+                        "en": "Halftone"
+                    },
+                    "ev_shortname": {
+                        "en": "Halftones"
+                    },
+                    "ev_driverval": "halftones"
+                },
+                {
+                    "@id": "ev/1070",
+                    "ev_longname": {
+                        "en": "Floyd-Steinberg Dithering"
+                    },
+                    "ev_shortname": {
+                        "en": "FloydSteinberg"
+                    },
+                    "ev_driverval": "Floyd-Steinberg"
+                }
+            ]
+        }
+    }
+}

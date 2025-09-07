@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/HP-Photosmart_D5460",
+        "make": "HP",
+        "model": "Photosmart D5460",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "url": "http://h10025.www1.hp.com/ewfrf/wc/product?product=3396080&amp;lc=en&amp;cc=us&amp;dlc=en&amp;lang=en&amp;tmp_track_link=ot_we/prodlink/en_us/3396080/loc:0&amp;cc=us#",
+        "lang": {
+            "pcl": {
+                "@level": "3 GUI"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        }
+    }
+}

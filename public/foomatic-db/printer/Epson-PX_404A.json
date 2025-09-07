@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX_404A",
+        "make": "Epson",
+        "model": "PX-404A",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:PX-404A;CLS:PRINTER;DES:EPSON PX-404A",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON PX-404A",
+                "manufacturer": "EPSON",
+                "model": "PX-404A"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201108j",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-201108j"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

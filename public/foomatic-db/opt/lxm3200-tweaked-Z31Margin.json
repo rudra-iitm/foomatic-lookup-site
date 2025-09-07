@@ -1,0 +1,36 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/lxm3200-tweaked-Z31Margin",
+        "arg_shortname": {
+            "en": "Z31Margin"
+        },
+        "arg_longname": {
+            "en": "Margin adjustment (Z31)"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "60",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dz31m=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "false",
+                    "driver": "lxm3200-tweaked",
+                    "arg_defval": "100"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "lxm3200-tweaked",
+                    "printer": "printer/Lexmark-Z31",
+                    "arg_defval": "100"
+                }
+            ]
+        },
+        "arg_max": "1000",
+        "arg_min": "-1000"
+    }
+}

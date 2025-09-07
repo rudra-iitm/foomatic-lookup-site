@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_5MP",
+        "make": "HP",
+        "model": "LaserJet 5MP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL5,PJL,POSTSCRIP",
+                "description": "Hewlett-Packard LaserJet 5MP Printer",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 5MP"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p><p>\n\n      Consumables/Refills: Cartridge ($60-70)<p>"
+        }
+    }
+}

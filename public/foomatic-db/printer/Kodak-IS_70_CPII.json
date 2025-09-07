@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Kodak-IS_70_CPII",
+        "make": "Kodak",
+        "model": "IS 70 CPII",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "406",
+                    "y": "406"
+                }
+            }
+        },
+        "url": "http://www.danka.de/Produkte/SystemeSW_KodakIS70.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Is not sold for much longer, but will still be used in many\n    professional environments for a number of years because of its\n    still unique feature combination: 70 ppm; can do 3 different spot\n    colors concurrently (on top of default b+w printing); duplex\n    capabilities; a finishing device which can fold A3 and A4 paper;\n    thus outputting ready-made A4 and A5 booklets complete with a\n    saddle-stitched stapling; run by an Adobe PostScript Level 2 RIP\n    which lives in a SUN Sparc workstation.  I used the original PPD\n    (supposedly just written to support MacOS and MS Win printing)\n    with CUPS, which used its LPD backend to send the PostScript to\n    the printer. In this way all options of the printer can be\n    used.<p>\n\n    (tested by Kurt Pfeifle)<p><p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

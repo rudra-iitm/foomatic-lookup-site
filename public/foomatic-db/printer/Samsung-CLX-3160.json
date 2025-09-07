@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLX-3160",
+        "make": "Samsung",
+        "model": "CLX-3160",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/PrinterandMultifunction/ColorLaserPrinters/CLX_3160FNXAA.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2qpdl",
+        "comments": {
+            "en": "The Samsung CLX-3160 (USB) is color laser multifunction printer\n\twith a 2007 street price of $590 USD.\n\n\tThis printer is supported by the foo2qpdl open software printer driver.\n\n\tOnly the printer function is supported by this driver.<p>\n\n      Consumables/Refills: Toner Black (2000 prints) - $54\n\t\tToner Yellow (1000 prints) - $45\n\t\tToner Magenta (1000 prints) - $45\n\t\tToner Cyan (1000 prints) - $45\n\t\tWaste Toner (5000 prints) - $10\n\t\tDrum Kit (20000 prints) - $96 Part numbers: CLP-K300A, \n\t    CLP-Y300A, \n\t    CLP-M300A, \n\t    CLP-C300A, \n\t    CLP-W300A, \n\t    CLP-R300A<p>"
+        }
+    }
+}

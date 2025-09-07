@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-55",
+        "make": "Canon",
+        "model": "BJC-55",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "360"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/bjc/bjc55/",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "manufacturer": "Canon",
+                "model": "BJC-55"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "contrib_url": "http://www.physiol.usyd.edu.au/daved/linux/bjc-80.html",
+        "comments": {
+            "en": "Ultra-portable printer, smallest printer I have\never seen and it prints \"Perfectly\" with free\nsoftware. The scanning facility with an optional\nscanning cartridge is not supported by\nfree software drivers.<p>\n \nUSB and <a href=\"http://www.physiol.usyd.edu.au/daved/linux/bjc-80.html\">IRDA</a> ports (all working), no parallel port,\nintegrated rechargeable battery, due to its size it\ndoes not provide an automatic sheet feeder. Use\nthe somewhat bigger BJC-80/85 printers if you need\nautomatic sheet feeding. The printout quality and\nthe drivers are the same. Note that the cartridges\nare rather small, and so the expenses per page are\nprobably very high. So you should buy this printer\nonly if you really need to print when you are on\ntravel. In addition, the resolution is lower than\nthe resolution of most modern desktop inkjets.<p>\n\nThe Canons are the best solution for portable\nprinting with free software. They are small and\nlight, have a reasonable resolution and speed and\ntheir printing capabilities are fully supported.\nThe portables of HP are rather heavy and the\nBrother MP-21C (PCMCIA) is a \"Paperweight\".<p>\n\nTo get the best quality out of it for all kinds of\nprinting jobs (text, drawings, photos), use the\n\"gutenprint\"\n(former Gimp-Print) driver. Then you\nget photo printouts with a quality close to the \nquality of the Epson Stylus Color 440. The \"bjc600\"\nworks well for text and drawings, but has problems\nwith photos.<p>\n\nThe BJC-50 is the same printer but with parallel port\ninstead of USB.<p>\n\n      Consumables/Refills: 1 CMY and 1 small black or 1 large black cartridge<p>"
+        }
+    }
+}

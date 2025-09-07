@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_M1120_MFP",
+        "make": "HP",
+        "model": "LaserJet M1120 MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/ie/en/ho/WF06b/5043-5527-5531-5531-12489380-81083169-81084209.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:HP LaserJet M1120;CMD:ACL;CLS:PRINTER;DES:HP LaserJet M1120;FWVER:20060721;",
+                "commandset": "XQX",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet M1120"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2xqx",
+        "comments": {
+            "en": "This printer is supported by the foo2xqx free software printer driver.\n    <p><p>\n\n      Consumables/Refills: Cartridge containing toner and imaging drum<p>"
+        }
+    }
+}

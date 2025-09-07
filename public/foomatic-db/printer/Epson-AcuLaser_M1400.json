@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Epson-AcuLaser_M1400",
+        "make": "Epson",
+        "model": "AcuLaser M1400",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/gb/en/viewcon/corporatesite/products/mainunits/overview/9538",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "Epson AcuLaser M1400"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2hbpl2",
+        "comments": {
+            "en": "The Epson AcuLaser M1400 (USB)\n\tis a monochrome printer with a 2013 street price of $150.\n\n\tThese printers are supported by the foo2hbpl2 open software printer\n\tdriver."
+        }
+    }
+}

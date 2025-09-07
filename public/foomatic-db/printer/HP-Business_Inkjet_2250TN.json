@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-Business_Inkjet_2250TN",
+        "make": "HP",
+        "model": "Business Inkjet 2250TN",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/go/businessinkjet",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PML,PJL,PCL5,POSTSCRIPT",
+                "description": "Hewlett-Packard Business Inkjet 2250",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP BUSINESS INKJET 2250"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Same as the HP Business Inkjet 2250, plus a second paper tray and\n    a HP JetDirect internal print server<p>\n\n    For basic printing functionality use the Postscript PPD. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplipopensource.com/\">HPLIP driver</a> (which includes HPIJS). <p>\n    \n    When used with HP's HPLIP driver, this printer\n    does the dithering and color adjustment internally. As input it\n    takes simple RGB data as used for screen display.<p>\n\n    Note that in contrary to most other current HP inkjet printers\n    there is no paper type sensor in the printer. You have to choose\n    one of the photo modes manually when using photo paper. There are\n    photo modes with 300 and 600 dpi.<p><p>\n\n      Consumables/Refills: 4 cartridges: one for each colour of CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "driver": {
+        "@id": "driver/cdj670",
+        "name": "cdj670",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "hplip"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=cdj670%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "A printer driver for the HP670, HP690, HP850, HP855 HP870, HP890,\n    HP1100 and HP1600 color printers.  To be used with the ghostscript\n    printing system.  These drivers are in the official Ghostscript\n    distribution since GNU Ghostscript 6.51.  Please report all\n    problems to uliw@erdw.ethz.ch"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DeskJet_610C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_670C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_672C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_680C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_682C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_690C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_692C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_694C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_697C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_810C",
+                    "comments": {
+                        "en": "cdj670, which comes with Ghostscript 5.1/5.5 seems to work very\n    well with the printer. cdj550 also works, but the color is far\n    inferior to cdj670 so I haven't seen any reason to use it."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_840C",
+                    "comments": {
+                        "en": "Recommended for text printing by c't - Magazin fuer\n    Computertechnik 21/2000."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_842C",
+                    "comments": {
+                        "en": "The german magazine c't (21/2000) recommends this driver for text."
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_845C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_930C",
+                    "comments": {
+                        "en": "Recommended for text printing by c't - Magazin fuer\n    Computertechnik 21/2000"
+                    }
+                },
+                {
+                    "id": "printer/HP-OfficeJet_500"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_520"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_570"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_580"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_590"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_600"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_610"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_625"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_630"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_635"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_700"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_710"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_720"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_725"
+                },
+                {
+                    "id": "printer/HP-PSC_500"
+                }
+            ]
+        }
+    }
+}

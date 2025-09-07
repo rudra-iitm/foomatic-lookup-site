@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX-535F_Series",
+        "make": "Epson",
+        "model": "PX-535F Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:PX-535F Series;CLS:PRINTER;DES:EPSON PX-535F Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON PX-535F Series",
+                "manufacturer": "EPSON",
+                "model": "PX-535F Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201211j",
+        "drivers": {
+            "driver": {
+                "id": "epson-201211j"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

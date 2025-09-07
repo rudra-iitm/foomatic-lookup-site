@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-610ND",
+        "make": "Samsung",
+        "model": "CLP-610ND",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2qpdl",
+        "comments": {
+            "en": "This printer is a PCL-XL printer, but it is not recommended to\n      use it with a PCL-XL driver like \"pxlcolor\" due to a firmware\n      bug which causes major color distortions. See <a\n      href=\"https://bugs.launchpad.net/bugs/505423\">this bug\n      report</a>. Use drivers for Samsung's SPL-2 language, like\n      SpliX for example.<p>"
+        }
+    }
+}

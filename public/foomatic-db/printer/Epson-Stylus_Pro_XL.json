@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Pro_XL",
+        "make": "Epson",
+        "model": "Stylus Pro XL",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "720",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/proxl_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "(Referring to stcolor:)Not as good as native NT4 driver on images, but\nquite useable; don't forget to enable weaving; Uniprint works also.\n<br>\nstp quality should be quite good.<p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

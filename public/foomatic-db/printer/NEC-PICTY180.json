@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/NEC-PICTY180",
+        "make": "NEC",
+        "model": "PICTY180",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "picty180",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

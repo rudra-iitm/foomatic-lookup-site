@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet",
+        "make": "HP",
+        "model": "DeskJet",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": null
+        },
+        "functionality": "A",
+        "driver": "pcl3",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p><p>\n\n      Consumables/Refills: One black ink cartridge including printhead<p>"
+        }
+    }
+}

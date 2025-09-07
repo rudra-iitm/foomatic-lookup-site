@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_1100",
+        "make": "Minolta",
+        "model": "PagePro 1100",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.minolta-qms.com/products/monochrome/PP1100/index.html",
+        "lang": {
+            "pcl": {
+                "@level": "6/XL"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL6,PJL",
+                "manufacturer": "MINOLTA",
+                "model": "PagePro 1100"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "<b>Important</b>: The <a\n    href=\"show_printer.cgi?recnum=Minolta-PagePro_1100L\">Minolta\n    PagePro 1100L</a> is a different printer. This rating does\n    not apply to the 1100L"
+        }
+    }
+}

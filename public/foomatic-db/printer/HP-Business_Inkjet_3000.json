@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-Business_Inkjet_3000",
+        "make": "HP",
+        "model": "Business Inkjet 3000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236261-24728-f17-83387-83389-83390.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplipopensource.com/\">HPLIP driver</a> (which includes HPIJS). <p>\n\t    \n    Fast CMYK 4-ink printer.<p>\n\n    PostScript/PCL6 printer based on the Color LaserJet 4600.<p><p>\n\n      Consumables/Refills: 4 separate ink cartridges and 4 separate printheads, one for each color (CMYK)<p>"
+        }
+    }
+}

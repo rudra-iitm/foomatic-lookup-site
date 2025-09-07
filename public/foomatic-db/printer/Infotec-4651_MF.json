@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Infotec-4651_MF",
+        "make": "Infotec",
+        "model": "4651 MF",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.infotec.com/",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "I used the original PPD with CUPS (supposedly just written to\n    support MacOS and MS Win printing). All options can be used:\n    select 1 of 5 trays; choose A4, Letter, A3 etc.; duplex printing;\n    safe toner (draft printing); switch back to 400 dpi;inline\n    finishing with stapling and punching (if you've got the\n    Finisher 3000 installed).<p>\n\n    The standard equipment is with PDL support of PCL 5e and PCL 6;\n    you can have PostScript 3 as an option - this\n is what I had at\n    my disposal and what I only used.<p>\n\n    It is doing 65 A4 ppm and is good for 20.000 to 120.000 prints per\n    month. This machine is often to be found in semi-professional\n    environments, large offices etc. with the named printing\n    volume.<p>\n\n    It is an OEM product based on a nearly identical Ricoh device (the\n    Ricoh name of which I'll have to find out first).<p>\n\n    (tested by Kurt Pfeifle)<p><p>\n\n      Consumables/Refills: toner<p>"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-NX130_TX130_Series",
+        "make": "Epson",
+        "model": "NX130 TX130 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:NX130 TX130;CLS:PRINTER;DES:EPSON NX130 TX130",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON NX130 TX130",
+                "manufacturer": "EPSON",
+                "model": "NX130 TX130"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201101w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201101w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

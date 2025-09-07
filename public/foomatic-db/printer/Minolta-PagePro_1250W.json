@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-PagePro_1250W",
+        "make": "Minolta",
+        "model": "PagePro 1250W",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.minolta-qms.com/products/monochrome/pp1250W/index.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "NA",
+                "description": "MINOLTA-QMS PagePro 1250W",
+                "manufacturer": "MINOLTA-QMS",
+                "model": "PagePro 1250W"
+            }
+        },
+        "functionality": "B",
+        "driver": "min12xxw",
+        "comments": {
+            "en": "Low cost laser.  Not to be confused wiht the\n     1250<b>E</b>, a PCL/PostScript device."
+        }
+    }
+}

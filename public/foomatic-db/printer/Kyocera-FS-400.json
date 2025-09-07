@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-400",
+        "make": "Kyocera",
+        "model": "FS-400",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;MDL:FS-400;",
+                "description": "Kyocera FS-400",
+                "manufacturer": "Kyocera",
+                "model": "FS-400"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3",
+        "comments": {
+            "en": "PCL5 but no PCL5e <br>\n      PostScript option (use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript, <a href=\"ppd-doc.html\">Instructions</a>)"
+        }
+    }
+}

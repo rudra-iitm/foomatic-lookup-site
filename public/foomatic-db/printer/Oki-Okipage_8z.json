@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_8z",
+        "make": "Oki",
+        "model": "Okipage 8z",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP8ZHome.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "oki4w",
+        "comments": {
+            "en": "Okidata sent me (Grant) one of these, so I've played with it.\n    It does work, although it produces blank pages here and there\n    (blank page problem should be fixed with version 2.1 of\n    \"oki4drv\"), and it took 200 lines of scripting and a few hours to\n    make it fit into LPD in a sensible way.<p>\n\n    Now that I've got it working, it's an OK little printer,\n    but there are so many quirks it's not clear that it's\n    really a good choice.  <p>\n\n    The oki4linux package includes little datablobs to cat into the\n    printer to make it standby after 8 minutes, or right away.  I\n    don't think they're working.<p>\n\n    Please report whether it works with the \"oki4w\"\n    Ghostscript driver.<p>"
+        }
+    }
+}

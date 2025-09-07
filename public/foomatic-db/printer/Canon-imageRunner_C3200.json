@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Canon-imageRunner_C3200",
+        "make": "Canon",
+        "model": "imageRunner C3200",
+        "mechanism": {
+            "laser": null,
+            "color": null
+        },
+        "url": "http://www.canon.de/For_Work/Products/Office_Print_Copy_Solutions/Colour_Printing_Series/iRC3200/index.asp",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5c"
+            }
+        },
+        "functionality": "B",
+        "driver": "cljet5",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "cljet5"
+                },
+                {
+                    "id": "Postscript"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03"
+        }
+    }
+}

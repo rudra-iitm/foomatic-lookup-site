@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EM_930C",
+        "make": "Epson",
+        "model": "EM 930C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 980.<p>\n\n    Works perfectly with Gimp-Print.<p>"
+        }
+    }
+}

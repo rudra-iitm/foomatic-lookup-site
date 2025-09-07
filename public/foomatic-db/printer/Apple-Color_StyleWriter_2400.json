@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Apple-Color_StyleWriter_2400",
+        "make": "Apple",
+        "model": "Color StyleWriter 2400",
+        "mechanism": {
+            "inkjet": null,
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "lpstyl",
+        "comments": {
+            "en": "Listed as working in lpstyl documentation."
+        }
+    }
+}

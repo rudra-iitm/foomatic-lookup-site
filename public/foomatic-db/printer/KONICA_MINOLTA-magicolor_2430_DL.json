@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_2430_DL",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 2430 DL",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:KONICA MINOLTA;CMD:ZJS,PJL,LAVAFLOW;MDL:mc2430DL;CLS:PRINTER;DES:KONICA MINOLTA mc2430DL",
+                "commandset": "ZJS,PJL,LAVAFLOW",
+                "description": "KONICA MINOLTA mc2430DL",
+                "manufacturer": "KONICA MINOLTA"
+            }
+        },
+        "functionality": "B",
+        "driver": "rastertokmXXXXdl",
+        "comments": {
+            "en": "The magicolor 2430 DL is a network color laser printer with a\n\t2005 street price of $500 USD. This printer is supported by a\n\tfree CUPS driver supplied by Konica Minolta and also by the\n\t\"foo2zjs\" free software printer driver.\n\n\tNote that the older Minolta magicolor 2430 DL and the newer\n\tKonica Minolta magicolor 2430 DL are not 100% equal. So it is not\n\tsure whether the Minolta magicolor 2430 DL perhaps also works with\n\tthe driver from Konica Minolta.<p><p>\n\n      Consumables/Refills: <br>\n\t\tToner Black (4500 prints) - $79<br>\n\t\tToner Yellow (4500 prints) - $119<br>\n\t\tToner Magenta (4500 prints) - $119<br>\n\t\tToner Cyan (4500 prints) - $119<br>\n\t\tDrum Catridge (45000 prints) - $149<br> Part numbers: 1710587-004, \n\t    1710587-005, \n\t    1710587-006, \n\t    1710587-007, \n\t    1710591-001<p>"
+        }
+    }
+}

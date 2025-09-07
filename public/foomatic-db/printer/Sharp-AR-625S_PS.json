@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-625S_PS",
+        "make": "Sharp",
+        "model": "AR-625S PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sh625sj.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 62\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-20"
+        }
+    }
+}

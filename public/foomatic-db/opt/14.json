@@ -1,0 +1,67 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/14",
+        "arg_shortname": {
+            "en": "ProcessColorModel"
+        },
+        "arg_longname": {
+            "en": "Color Model"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dProcessColorModel=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "bjc600",
+                    "arg_defval": "ev/160"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "bjc800",
+                    "arg_defval": "ev/160"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/158",
+                    "ev_longname": {
+                        "en": "Monochrome"
+                    },
+                    "ev_shortname": {
+                        "en": "Greyscale"
+                    },
+                    "ev_driverval": "/DeviceGray"
+                },
+                {
+                    "@id": "ev/159",
+                    "ev_longname": {
+                        "en": "Three-color RGB"
+                    },
+                    "ev_shortname": {
+                        "en": "RGB"
+                    },
+                    "ev_driverval": "/DeviceRGB"
+                },
+                {
+                    "@id": "ev/160",
+                    "ev_longname": {
+                        "en": "Four-color CMYK"
+                    },
+                    "ev_shortname": {
+                        "en": "CMYK"
+                    },
+                    "ev_driverval": "/DeviceCMYK"
+                }
+            ]
+        }
+    }
+}

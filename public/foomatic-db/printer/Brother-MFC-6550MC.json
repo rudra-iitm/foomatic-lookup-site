@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Brother-MFC-6550MC",
+        "make": "Brother",
+        "model": "MFC-6550MC",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/us-fax/INFO/6650/6650.htm",
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "ljet2p",
+        "comments": {
+            "en": "Prints Perfectly, just no scanning support.\n<br>Use GS 5.50. Slow under StarOffice 5.1. Works fine under WordPerfect 8 for Linux.<p>\n\n    Brother publishes proprietary Linux drivers for CUPS and LPD for\n    most of their laser printers and multi-function devices, including\n    SANE drivers for the scanners. They can be downloaded free of\n    charge on their <a\n    href=\"http://solutions.brother.com/linux/en_us/\">Linux driver\n    page</a>.<p><p>\n\n      Consumables/Refills: Toner can be replaced w/o replacing the drum<p>"
+        }
+    }
+}

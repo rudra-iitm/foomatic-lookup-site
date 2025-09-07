@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Oki-OL800",
+        "make": "Oki",
+        "model": "OL800",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "laserjet",
+        "comments": {
+            "en": "Printer emulates HP Laserjet II,\nI used the laserjet GS driver \nand it works great.<p>\n\n      Consumables/Refills: seperate toner and image drum.  Toner ~$30, drum $150-$200<p>"
+        }
+    }
+}

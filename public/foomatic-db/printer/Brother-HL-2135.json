@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2135",
+        "make": "Brother",
+        "model": "HL-2135",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://support.brother.com/g/s/id/linux/en/",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "hl1250",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gimp-print"
+                },
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hl1250"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "ljet4"
+                }
+            ]
+        }
+    }
+}

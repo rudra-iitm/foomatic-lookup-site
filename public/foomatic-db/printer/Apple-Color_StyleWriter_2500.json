@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Apple-Color_StyleWriter_2500",
+        "make": "Apple",
+        "model": "Color StyleWriter 2500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "lpstyl",
+        "contrib_url": "http://www.dartmouth.edu/cgi-bin/cgiwrap/jonh/lppc/faq.pl?_highlightWords=stylewriter&file=49",
+        "comments": {
+            "en": "Color is a bit dark, but all else \nworks.  Paper out and jammed errors\nare handled better than MacOS!<p>\n\n      Consumables/Refills: color ($15) & b/w ($6) ink cartridges<p>"
+        }
+    }
+}

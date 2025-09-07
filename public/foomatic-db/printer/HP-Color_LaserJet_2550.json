@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_2550",
+        "make": "HP",
+        "model": "Color LaserJet 2550",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236268-15077-236268-81954-81956-81957.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL,PML,BIDI-ECP,MLC,PCL,POSTS",
+                "description": "Hewlett-Packard color LaserJet 2550 series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp color LaserJet 2550 series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "Cheap (999 US$) color laser printer.<p>\n\n    For basic printing functionality use the Postscript PPD. \n    For advanced functionality such as printer status and \n    maintenance features, use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> \n    (which includes HPIJS). <p>\n\n    125 sheets A4/Letter/Legal, additional paper trays (250/500 sheets)\n    and network adapters available. No duplex unit available.<p><p>\n\n      Consumables/Refills: 1 toner cartridge for each color, imaging drum<p>"
+        }
+    }
+}

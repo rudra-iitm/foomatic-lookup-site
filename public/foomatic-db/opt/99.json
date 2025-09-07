@@ -1,0 +1,74 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/99",
+        "arg_shortname": {
+            "en": "Weaving"
+        },
+        "arg_longname": {
+            "en": "Weaving"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "110",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-d%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "stcolor",
+                    "arg_defval": "ev/724"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "stcolor",
+                    "printer": "printer/Epson-MJ_520C",
+                    "arg_defval": "ev/725"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "stcolor",
+                    "printer": "printer/Epson-Stylus_Color_300",
+                    "arg_defval": "ev/725"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/724",
+                    "ev_longname": {
+                        "en": "Off"
+                    },
+                    "ev_shortname": {
+                        "en": "Off"
+                    },
+                    "ev_driverval": "noWeave"
+                },
+                {
+                    "@id": "ev/725",
+                    "ev_longname": {
+                        "en": "Microweave (Printer internal)"
+                    },
+                    "ev_shortname": {
+                        "en": "Microweave"
+                    },
+                    "ev_driverval": "Microweave"
+                },
+                {
+                    "@id": "ev/726",
+                    "ev_longname": {
+                        "en": "Softweave (Driver internal)"
+                    },
+                    "ev_shortname": {
+                        "en": "Softweave"
+                    },
+                    "ev_driverval": "Softweave"
+                }
+            ]
+        }
+    }
+}

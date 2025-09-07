@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_AP2000",
+        "make": "Ricoh",
+        "model": "Aficio AP2000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com/",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Accepts A3 paper - Network card (optional) comes with\n    listening port set to 10000 by default - change it to 515 - can be\n    configred via telnet or httpd - does not support FTP printing -\n    LPD printing possible using queue name \"PORT1\"\n    -<p>\n\n    Consumables/Refills: toner cartridge<p>"
+        }
+    }
+}

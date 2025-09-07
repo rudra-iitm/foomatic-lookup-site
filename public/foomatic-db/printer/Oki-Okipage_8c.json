@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_8c",
+        "make": "Oki",
+        "model": "Okipage 8c",
+        "mechanism": {
+            "led": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP8CHome.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Also speaks PCL 5c.\n<br>32MB standard; uses regular SIMMS.<p>\n\n      Consumables/Refills: single toner cartridge, drum<p>"
+        }
+    }
+}

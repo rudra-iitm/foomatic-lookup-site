@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-2000C",
+        "make": "HP",
+        "model": "2000C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL,MLC,PML",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "HP 2000C"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "For basic printing functionality use the <a\n    href=\"http://hplipopensource.com/\">HPIJS driver</a>. For advanced functionality such as printer status and maintenance features, use the <a href=\"http://hplip.sf.net/\">HPLIP driver</a> (which includes HPIJS). <p>\n\t    \n    With HP's HPLIP this printer can be used as a\n    printer of the old DeskJet 900 series (DeskJet 970C and alike),\n    but the photo mode is not supported. <p>\n\n    300x300 and 600x600 works, all print quality settings work,\n    compressions work.<p>\n\n    This is a very fast printer; probably 3x as fast as typical\n    inkjets of that time.<p>\n\n    Output is very good quality - 30 to 45 sec for a page with a 6x6in\n    photo and text.<p>\n\n    Variants include Cse, Cxi, CN (network).<p><p>\n\n      Consumables/Refills: 4 cartridges: one for each colour of CMYK. Also 4 replaceable printheads.<p>"
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_2100M",
+        "make": "HP",
+        "model": "LaserJet 2100M",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/ho/WF13b/18972-236251-236263-14638-236263-25469-14914-14915.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,PCL,PCLXL,POSTSCRIPT",
+                "description": "Hewlett-Packard LaserJet 2100 Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 2100 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    PostScript level 2 printer, 1200dpi...\n    that's all what is needed.<p>\n\n    Note: The recommended driver is set to \"pxlmono\" here\n    because the printer returns the same answer to auto-detection\n    requests as its little PostScript-less brother, LaserJet 2100\n    (without \"M\"). So Foomatic frontends which choose the\n    printer model by the auto-detection info will not fail when the\n    user has only the printer without PostScript.<p>"
+        }
+    }
+}

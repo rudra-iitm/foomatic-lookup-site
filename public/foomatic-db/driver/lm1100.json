@@ -1,0 +1,38 @@
+{
+    "driver": {
+        "@id": "driver/lm1100",
+        "name": "lm1100",
+        "url": "http://www.openprinting.org/download/printing/lm1100/",
+        "thirdpartysupplied": null,
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "*lm1100*"
+            }
+        },
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -sDEVICE=ppmraw -r300 %A -dBATCH -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dPARANOIDSAFER %Z -sOutputFile=- - | lm1100 %B -"
+        },
+        "comments": {
+            "en": "Tim Engler's Lexmark 1100 driver, released March 2000. Tim does\n    not continue the development any more, someone overtaking the\n    project is welcome. The original web site,\n    <tt>http://www.burntcouch.com/lexmark/</tt> is not\n    available anymore, but the driver can be downloaded here from\n    OpenPrinting<p>\n\n    <i>Important:</i> If you use gcc 3.1 or later for\n    compiling this driver you should apply a little correction by\n    running the command<p>\n\n    <tt>perl -p -i -e \n    's/friend Lexmark/friend class Lexmark/'\n    *.h</tt><p>\n\n    in the source directory of the driver before you compile the\n    driver with the \"<tt>make</tt>\"\n    command.<p>\n\n    To use gcc 3.4 or later, you need to apply <a\n    href=\"http://www.openprinting.org/download/printing/lm1100/lm1100.1.0.2a-fix-compile-gcc-3.4.patch.gz\">this\n    patch</a>.<p>\n\n    For gcc 4.1 or later, you need to run the command<p>\n\n    <tt>perl -p -i -e \n    's/\\b[^\\s:]+:://'\n    *.h</tt><p>\n\n    in the source directory of the driver before compiling. This\n    removes the now deprecated extra qualifications\n    \"&lt;class&gt;::&lt;member&gt;\" on class\n    members.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Lexmark-1000"
+                },
+                {
+                    "id": "printer/Lexmark-1020",
+                    "comments": {
+                        "en": "It might work with this 1000/1100 driver?  Someone try and let me know."
+                    }
+                },
+                {
+                    "id": "printer/Lexmark-1100"
+                }
+            ]
+        }
+    }
+}

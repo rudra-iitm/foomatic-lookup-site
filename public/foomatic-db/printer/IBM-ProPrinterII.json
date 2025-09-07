@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/IBM-ProPrinterII",
+        "make": "IBM",
+        "model": "ProPrinterII",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "120",
+                    "y": "120"
+                }
+            }
+        },
+        "lang": {
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ibmpro",
+        "comments": {
+            "en": "Easy to get working on serial - just dump straight ASCII.\n\nIf you have the parallel module installed, you need to use\nmagicfilter which has a ProPrinter / ProPrinterII specific\nfilter which fixes some minor oddities.\n\nFair warning; the serial interface drops characters frequently.\nDon't use it on the network if you can avoid it. ;)<p>\n\n      Consumables/Refills: Ribbon Cartridge, Optional Serial/Network/Parallel/Additional in<p>"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "printer": {
+        "@id": "printer/Toshiba-e-Studio_200L",
+        "make": "Toshiba",
+        "model": "e-Studio 200L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.eid.toshiba.com/support/drivers/index.shtml",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "3"
+            },
+            "hpgl2": null,
+            "tiff": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "snmp": {
+                "description": "TOSHIBA e-STUDIO200L"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Toshiba",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Toshiba",
+                    "ppd": "PPD/Toshiba/TOSHIBA_EST280_282_CUPS.ppd"
+                }
+            ]
+        }
+    }
+}

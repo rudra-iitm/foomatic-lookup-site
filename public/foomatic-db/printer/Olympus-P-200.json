@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Olympus-P-200",
+        "make": "Olympus",
+        "model": "P-200",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "320",
+                    "y": "320"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Dye-sublimation printer, 320dpi, 24bit color depth, max. paper\n    size 3.5x5in/8x13cm. Does not print on normal paper, so it is not\n    suitable for documents, it is only for photos.<p>\n\n    USB and Parallel connection, memory card reader, TV output. Camera\n    direct printing (Olympus only).<p><p>\n\n      Consumables/Refills: Packs with special paper and three-color ribbon<p>"
+        }
+    }
+}

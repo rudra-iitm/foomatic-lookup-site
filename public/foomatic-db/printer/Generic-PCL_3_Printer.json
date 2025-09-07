@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Generic-PCL_3_Printer",
+        "make": "Generic",
+        "model": "PCL 3 Printer",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            }
+        },
+        "functionality": "A",
+        "driver": "pcl3",
+        "comments": {
+            "en": "This entry allows you to use any printer which understands PCL 3\n    with Foomatic, at least with the basic options. See your printer's\n    manual to know whether your printer supports PCL 3.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic\n    database</a>.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your\n    printer.<p>\n\n    To set up your printer with the \"pcl3\" driver, it is\n    recommended to apply the \"<tt>pcl3opts</tt>\"\n    (comes with the \"pcl3\" driver) command to a file which\n    you generate by printing into a file under Windows. The command\n    shows you a list of options which brings you most closely to the\n    mode in which the Windows driver has printed into the\n    file.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

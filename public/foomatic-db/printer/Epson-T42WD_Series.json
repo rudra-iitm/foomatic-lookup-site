@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-T42WD_Series",
+        "make": "Epson",
+        "model": "WorkForce T42WD Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:WorkForce T42WD;CLS:PRINTER;DES:EPSON WorkForce T42WD",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON WorkForce T42WD",
+                "manufacturer": "EPSON",
+                "model": "WorkForce T42WD"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-workforce-635-60-nx625-series",
+        "drivers": {
+            "driver": {
+                "id": "epson-workforce-635-60-nx625-series"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

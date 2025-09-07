@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LQ-570plus",
+        "make": "Epson",
+        "model": "LQ-570+",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson",
+        "comments": {
+            "en": "The EPSON User's Guide couples the LQ-570+ with the LQ-1070+ on the \"configuration menu\". How the printer performs under UNIX I do not know because I am waiting for the UNIX CD to be delivered to me.<p>\n\n      Consumables/Refills: EPSON Model 7753 Ribbon, $8 approx<p>"
+        }
+    }
+}

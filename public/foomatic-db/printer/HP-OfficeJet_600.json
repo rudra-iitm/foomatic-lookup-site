@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_600",
+        "make": "HP",
+        "model": "OfficeJet 600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/nonjsnav/hpofficeje24362.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:OfficeJet Series 600;CMD:MLC,PCL,PML;CLASS:PRINTER;",
+                "commandset": "MLC,PCL,PML",
+                "manufacturer": "Hewlett-Packard",
+                "model": "OfficeJet Series 600"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "A multifunction device: scanner/printer/copier/fax.<p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    Stand-alone copying works only for black-and-white copies. Color\n    copying can only be done by software, under free operating systems\n    preferrably with \"<tt>xsane</tt>\". Note that\n    this is very slow due to the necessity of downloading the whole\n    image to the PC and converting it to PostScript and back to a\n    bitmap.<p>\n\n    Older user comments:<p>\n\n    Color output & B/W using GS driver without any special setup -\n    with good output.<p>\n\n    Suggestion: read about Gamma correction on:\n    /usr/share/doc/gs*/devices.txt<p><p>\n\n      Consumables/Refills: HP51649G, 51629A<p>"
+        }
+    }
+}

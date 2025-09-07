@@ -1,0 +1,55 @@
+{
+    "printer": {
+        "@id": "printer/NRG-MP_3010",
+        "make": "NRG",
+        "model": "MP 3010",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.nrgcss.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:NRG;MDL:MP 3010;CMD:POSTSCRIPT,PCLXL,PDF;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-NRG",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-NRG",
+                    "ppd": "PPD/NRG/PS/NRG-MP_3010_PS.ppd"
+                },
+                {
+                    "id": "pxlmono-NRG",
+                    "ppd": "PPD/NRG/PXL/NRG-MP_3010_PXL.ppd"
+                },
+                {
+                    "id": "PDF-NRG",
+                    "ppd": "PPD/NRG/PDF/NRG-MP_3010_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Optional Adobe Postscript 3. <p>\n\nUse Postscript driver for best result <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Does_my_printer_support_Postscript_.2F_PCL_XL_.2F_PCL5_.3F\"> if your printer supports Postscript. </a> <p>\n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 30."
+        }
+    }
+}

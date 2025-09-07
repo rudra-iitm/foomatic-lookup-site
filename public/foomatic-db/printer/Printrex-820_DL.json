@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Printrex-820_DL",
+        "make": "Printrex",
+        "model": "820 DL",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "200",
+                    "y": "200"
+                }
+            }
+        },
+        "url": "http://www.printrex.com/",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "comments": {
+            "en": "Data logging printer; prints on continuous roll thermal paper.<p>\n\n    Prints text just fine, and the command set is fully documented.<p>\n\n    It should be straightforward to write a Ghostscript driver for the\n    two bitmap modes (100 and 200dpi).<p>\n\n      Consumables/Refills: Just thermal paper<p>"
+        }
+    }
+}

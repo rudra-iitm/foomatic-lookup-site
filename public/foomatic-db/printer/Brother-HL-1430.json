@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-1430",
+        "make": "Brother",
+        "model": "HL-1430",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "4"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PJL",
+                "manufacturer": "Brother",
+                "model": "HL-1430 series"
+            }
+        },
+        "functionality": "A",
+        "driver": "hl1250",
+        "comments": {
+            "en": "Do not confuse this printer with the <a\n    href=\"show_printer.cgi?recnum=Brother-HL-1435\">Brother\n    HL-1435</a> which is a \"Paperweight\".<p>\n    \n    Probably very similar to the <a\n    href=\"show_printer.cgi?recnum=Brother-HL-1440\">Brother\n    HL-1440</a><p>\n\n    Brother provides a <a\n    href=\"http://solutions.brother.com/linux/\">driver</a>,\n    too, but binary-only and only for LPD/LPRng. According to the\n    printout quality it is based on the \"ljet4\" Ghostscript\n    driver. \"pxlmono\", \"gimp-print\" (600 dpi), and \"hpijs-pcl5e\" (600 dpi)\n    give a better grayscale quality and all special features of the\n    printer are accessible by PJL commands.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

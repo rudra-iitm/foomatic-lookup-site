@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-315",
+        "make": "Samsung",
+        "model": "CLP-315",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/PrinterandMultifunction/ColorLaserPrinters/CLP_300NXAA.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "splix",
+        "comments": {
+            "en": "The Samsung CLP-315 (USB) and Samsung CLP-315W (Net) are color laser\n      printers with a 2008 street price of $159 USD and $249 USD.\n\n      This printer is compatible with the CLP-300 and is supported by\n      the SpliX and foo2qpdl open software printer drivers. SpliX\n      gives a better color output.<p>\n\n      The CLP-315 is auto-detected as a CLP-310, but do not worry\n      about that automatic printer setups use the PPD files for\n      CLP-310, the two printers are compatible with each\n      other.<p>\n\n      Consumables/Refills: Toner Black (2000 prints) - $54, Toner\n      Yellow (1000 prints) - $45, Toner Magenta (1000 prints) - $45,\n      Toner Cyan (1000 prints) - $45, Waste Toner (5000 prints) - $10,\n      Drum Kit (20000 prints) - $96 Part numbers: CLP-K300A,\n      CLP-Y315A, CLP-M300A, CLP-C300A, CLP-W300A, CLP-R300A<p>"
+        }
+    }
+}

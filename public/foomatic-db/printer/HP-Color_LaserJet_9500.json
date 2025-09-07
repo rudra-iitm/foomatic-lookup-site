@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/HP-Color_LaserJet_9500",
+        "make": "HP",
+        "model": "Color LaserJet 9500",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-236251-236268-15077-f58-85318.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PCL,POSTSCRIPT",
+                "manufacturer": "Hewlett-Packard"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    24 pages per minute, wide format color LaserJet printer.\n    The HP Color LaserJet 9500 Series printers create superior \n    image quality, color and gloss consistency, even on wide-format \n    HP media and films. The optional document-finishing features \n    accommodate your department, office or promotional publishing \n    needs.<p>"
+        }
+    }
+}

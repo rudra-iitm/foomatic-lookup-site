@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C60",
+        "make": "Epson",
+        "model": "Stylus C60",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.epson.com/cgi-bin/Store/index.jsp",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "ESCPL2,BDC,D4",
+                "description": "EPSON Stylus C60",
+                "manufacturer": "EPSON",
+                "model": "Stylus C60"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "4-ink home printer with a high resolution (2880x720 dpi), parallel\n    and USB port.<p>\n\n    Fully Supported by Gimp-Print 4.1.99b3 or newer. The output\n    quality is excellent, nearly as good as the quality of the Epson\n    Stylus Photo (6-ink) printers."
+        }
+    }
+}

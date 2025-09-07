@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EP_902A",
+        "make": "Epson",
+        "model": "EP-902A",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:EP-902A;CLS:PRINTER;DES:EPSON EP-902A",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON EP-902A",
+                "manufacturer": "EPSON",
+                "model": "EP-902A"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-ep-902a-series",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-ep-902a-series"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

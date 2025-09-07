@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-M236_PS",
+        "make": "Sharp",
+        "model": "AR-M236 PS",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Sharp",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Sharp",
+                "ppd": "PPD/Sharp/sharm236.ppd"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 23\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

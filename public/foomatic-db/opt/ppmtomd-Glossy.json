@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/ppmtomd-Glossy",
+        "arg_shortname": {
+            "en": "Glossy"
+        },
+        "arg_longname": {
+            "en": "Glossy finishing"
+        },
+        "arg_execution": {
+            "arg_group": "Finishing",
+            "arg_order": "170",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-glossy"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "noGlossy"
+        }
+    }
+}

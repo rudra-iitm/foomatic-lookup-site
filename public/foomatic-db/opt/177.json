@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "float",
+        "@id": "opt/177",
+        "arg_shortname": {
+            "en": "RGLGamma"
+        },
+        "arg_longname": {
+            "en": "Gamma"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "400",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-initgamma %s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "1.4"
+            }
+        },
+        "arg_max": "4",
+        "arg_min": "0"
+    }
+}

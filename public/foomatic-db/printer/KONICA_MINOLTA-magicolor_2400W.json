@@ -1,0 +1,50 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_2400W",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 2400W",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://printer.konicaminolta.net/products/color/mc2400W/index.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "NA",
+                "description": "KONICA MINOLTA mc2400W",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "mc2400W"
+            },
+            "usb": {
+                "commandset": "NA",
+                "description": "KONICA MINOLTA mc2400W",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "mc2400W"
+            }
+        },
+        "functionality": "B",
+        "driver": "m2400w",
+        "comments": {
+            "en": "The Minolta magicolor 2400W is a GDI color laser printer with\n\ta 2005 street price of circa $300 USD. This printer is\n\tsupported by the m2300w open source printer driver.<p>\n\n      Consumables/Refills: Toner Black (4500 prints) - $79\n\t\tToner Yellow (4500 prints) - $119\n\t\tToner Magenta (4500 prints) - $119\n\t\tToner Cyan (4500 prints) - $119\n\t\tWaste Toner Box (25000 prints) - $19\n\t\tOPC Drum Catridge (45000 prints) - $149 Part numbers: 1710517-005, \n\t    1710517-006, \n\t    1710517-007, \n\t    1710517-008, \n\t    1710522-001, \n\t    1710520-001<p>"
+        }
+    }
+}

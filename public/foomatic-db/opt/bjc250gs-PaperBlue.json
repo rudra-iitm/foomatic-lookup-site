@@ -1,0 +1,28 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/bjc250gs-PaperBlue",
+        "arg_shortname": {
+            "en": "PaperBlue"
+        },
+        "arg_longname": {
+            "en": "Paper Color (Blue Component)"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "320",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dPaperBlue=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "bjc250gs",
+                "arg_defval": "255"
+            }
+        },
+        "arg_max": "255",
+        "arg_min": "0"
+    }
+}

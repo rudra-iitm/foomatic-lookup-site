@@ -1,0 +1,40 @@
+{
+    "driver": {
+        "@id": "driver/ppmtocpva",
+        "name": "ppmtocpva",
+        "url": "http://www.stevens-bradfield.com/ppmtomd/",
+        "obsolete": {
+            "@replace": "ppmtomd"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dBATCH -dPARANOIDSAFER -sDEVICE=ppmraw -sOutputFile=-%A%B%C"
+        },
+        "comments": {
+            "en": "This driver works probably also on the Alps MD-XXXX printers."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Alps-MD-1000"
+                },
+                {
+                    "id": "printer/Alps-MD-1300"
+                },
+                {
+                    "id": "printer/Alps-MD-1500"
+                },
+                {
+                    "id": "printer/Alps-MD-2000"
+                },
+                {
+                    "id": "printer/Alps-MD-4000"
+                },
+                {
+                    "id": "printer/Citizen-printiva600C"
+                }
+            ]
+        }
+    }
+}

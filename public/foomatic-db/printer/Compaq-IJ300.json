@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Compaq-IJ300",
+        "make": "Compaq",
+        "model": "IJ300",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://compaq.com",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "LOWENDLEXCPD",
+                "description": "(none)",
+                "manufacturer": "Compaq",
+                "model": "Compaq IJ300"
+            }
+        },
+        "functionality": "D",
+        "driver": "lz11-V2",
+        "comments": {
+            "en": "Prints only full, unidirectional sweeps with free software\n    <p>\n\n    This is a rebadged Lexmark X11, therefore it can be used with the\n    same drivers as the X11.<p>\n\n    The Compaq cartridges are the same as the Lexmark ones except for\n    a little plastic tab designed to make them mutually incompatible.\n    Probably you can break off the tab and have it work. (Not that\n    there's much point; both lines of cartridges cost a\n    bundle).<p><p>\n\n      Consumables/Refills: black (Standard Yield P/N 12A1970, High Yield P/N 12A1975) color<p>"
+        }
+    }
+}

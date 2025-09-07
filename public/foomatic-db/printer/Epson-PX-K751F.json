@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX-K751F_Series",
+        "make": "Epson",
+        "model": "PX-K751F Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX;MDL:PX-K751F Series;CLS:PRINTER;DES:EPSON PX-K751F Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX",
+                "description": "EPSON PX-K751F Series",
+                "manufacturer": "EPSON",
+                "model": "PX-K751F Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201213j",
+        "drivers": {
+            "driver": {
+                "id": "epson-201213j"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

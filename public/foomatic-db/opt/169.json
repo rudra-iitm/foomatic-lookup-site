@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/169",
+        "arg_shortname": {
+            "en": "NoColourCorrection"
+        },
+        "arg_longname": {
+            "en": "Color Correction"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "170",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-nocolcor"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "ColourCorrection"
+        }
+    }
+}

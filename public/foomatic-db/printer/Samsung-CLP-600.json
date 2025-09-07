@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-CLP-600",
+        "make": "Samsung",
+        "model": "CLP-600",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175",
+                    "bottom": "4.23164"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/PrinterandMultifunction/ColorLaserPrinters/CLP_600NXAA.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "foo2qpdl",
+        "comments": {
+            "en": "This is a cheap network color laser printer with a proprietary\n    language. Samsung provides a closed-source driver on their web\n    site, the \"Unified Linux Driver\", a driver package containing CUPS\n    drivers and PPDs for all Samsung printers. Version 2.00.90 and\n    newer supports also this printer. Output is raster-only, and due\n    to glitches in the software, monochrome sources are output as\n    color (visible flecks of cyan, magenta, and yellow). It is also\n    not easy to install this driver in arbitrary distributions. See\n    the user reports in the <a\n    href=\"show_printer.cgi?recnum=Samsung-CLP-510\">entry\n    for the CLP-510</a>.<p>\n\n    As the first free software printer driver Rick Richardson's\n    foo2qpdl supports this printer, but the driver still needs\n    testing. So please try out this printer with both foo2qpdl and\n    SpliX and report your results to the authors of the\n    drivers and here on the site.<p><p>\n\n      Consumables/Refills: Toner Black (4000 prints) - $80\n\t\tToner Yellow (4000 prints) - $110\n\t\tToner Magenta (4000 prints) - $110\n\t\tToner Cyan (4000 prints) - $110\n\t\tTransfer Belt (35000 prints) - $47 Part numbers: CLP-K600A, \n\t    CLP-Y600A, \n\t    CLP-M600A, \n\t    CLP-C600A, \n\t    CLP-T600A<p>"
+        }
+    }
+}

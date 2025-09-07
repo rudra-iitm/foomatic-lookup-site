@@ -1,0 +1,57 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B410",
+        "make": "Oki",
+        "model": "B410",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MANUFACTURER:OKI DATA CORP;COMMAND SET:PJL,PCL,IBMPPR,EPSONFX,PCLXL;MODEL:B410;CLASS:PRINTER;DESCRIPTION:OKI B410;",
+                "commandset": "PJL,PCL,IBMPPR,EPSONFX,PCLXL",
+                "description": "OKI B410",
+                "manufacturer": "OKI DATA CORP",
+                "model": "B410"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Monochrome laser printer which uses the standard PCL 5e and PCL\n      6/XL languages."
+        }
+    }
+}

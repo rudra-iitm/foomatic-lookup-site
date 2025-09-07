@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-430",
+        "make": "Canon",
+        "model": "LBP-430",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4",
+        "comments": {
+            "en": "The ljet3 and ljet4 (300x300) ghostscript drivers work fine with\n    this PCL5 printer. Upgrade memory needed for graphics (tiger.ps\n    only 2/3 prints out in 1MB).\n\n    Note: Japanese model may be different.<p>\n\n      Consumables/Refills: toner cartridge $99<p>"
+        }
+    }
+}

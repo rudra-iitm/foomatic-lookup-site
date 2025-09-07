@@ -1,0 +1,305 @@
+{
+    "driver": {
+        "@id": "driver/pcl3",
+        "name": "pcl3",
+        "url": "http://home.vrweb.de/martin.lottermoser/pcl3/index.html",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=pcl3%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Martin Lottermoser's general-purpose PCL 3+ Ghostscript driver,\n    successor of the \"<a\n    href=\"show_driver.cgi?driver=hpdj\">hpdj</a>\"\n    driver.<p>\n\n    It is known to work reasonably well with a wide assortment of PCL\n    3 inkjet printers. This driver has many options (enter the command\n    \"man gs-pcl3\" in a terminal window\n    to get more information), so you can do a lot of fine-tuning, but\n    do not expect perfect results with the default settings. Due to\n    being able to set so many different options separately you can\n    even make rather exotic non-HP printers printing. To find out\n    their options you print into a file under Windows and then apply\n    the \"pcl3opts\" command (comes with\n    the driver) on the file. It returns the Ghostscript command line\n    which most probably prints in the mode of the printer for which\n    your file was generated under Windows.<p>\n\n    <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-8.x/patches/ghostscript-8.15-pcl3-driver-api8.patch\">This\n    patch</a> adapts the driver to GPL/AFPL Ghostscript 8.x. In\n    ESP Ghostscript 8.x this driver is already included.<p>\n\n    Unfortunately, GNU Ghostscript 5.50 (and also <a\n    href=\"ftp://ftp2.easysw.com/pub/ghostscript/\">ESP\n    Ghostscript 5.50.1</a>) has a bug which often causes\n    segmentation faults when high amounts of memory are needed (high\n    resolutions, Floyd-Steinberg dithering). A workaround is to use\n    Ghostscript's \"-dMaxBitmap=value\" option with\n    \"value\" being the size of memory which Ghostscript\n    should be allowed to allocate for rendering one page. Try values\n    of 40000000 and higher. In the foomatic config files there is the\n    option \"Memory Limit\" to control this. Note that\n    Ghostscript can take up memory up to the given amount. So be sure\n    that you have enough swap space and note that your machine will\n    slow down considerably during the rendering process. This problem\n    does not appear with GNU or Alladin Ghostscript 6.x and\n    newer.<p>\n\n    For many printers, the <a\n    href=\"show_driver.cgi?driver=gutenprint\">gutenprint</a>\n    driver and the drivers from <a\n    href=\"http://hpijs.sourceforge.net/\">HP</a> may\n    produce better color output.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Apollo-P-1200"
+                },
+                {
+                    "id": "printer/Apollo-P-1220_Barbie"
+                },
+                {
+                    "id": "printer/Apollo-P-1250"
+                },
+                {
+                    "id": "printer/Generic-PCL_3_Printer"
+                },
+                {
+                    "id": "printer/HP-2000C"
+                },
+                {
+                    "id": "printer/HP-2500C"
+                },
+                {
+                    "id": "printer/HP-DesignJet_ColorPro_CAD"
+                },
+                {
+                    "id": "printer/HP-DeskJet"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1100C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1120C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_1220C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_200"
+                },
+                {
+                    "id": "printer/HP-DeskJet_310"
+                },
+                {
+                    "id": "printer/HP-DeskJet_320"
+                },
+                {
+                    "id": "printer/HP-DeskJet_340C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_350C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_400"
+                },
+                {
+                    "id": "printer/HP-DeskJet_500"
+                },
+                {
+                    "id": "printer/HP-DeskJet_500C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_510"
+                },
+                {
+                    "id": "printer/HP-DeskJet_520",
+                    "margins": {
+                        "general": {
+                            "unit": "pt",
+                            "relative": null,
+                            "top": "9",
+                            "left": "18",
+                            "right": "18",
+                            "bottom": "48"
+                        },
+                        "exception": {
+                            "@PageSize": "A4",
+                            "relative": null,
+                            "left": "10",
+                            "right": "10"
+                        }
+                    }
+                },
+                {
+                    "id": "printer/HP-DeskJet_540"
+                },
+                {
+                    "id": "printer/HP-DeskJet_540C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_550C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_560C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_600"
+                },
+                {
+                    "id": "printer/HP-DeskJet_610C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_610CL"
+                },
+                {
+                    "id": "printer/HP-DeskJet_612C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_660C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_670C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_680C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_682C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_690C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_694C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_697C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_832C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_840C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_842C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_845C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_850C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_855C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_870C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_880C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_882C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_890C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_895C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_932C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_940C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_950C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_952C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_960C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_970C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_980C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_990C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_Plus"
+                },
+                {
+                    "id": "printer/HP-DeskJet_Portable"
+                },
+                {
+                    "id": "printer/HP-OfficeJet"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_300"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_330"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_350"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_600"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_625"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_635"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_G55"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_G95"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_LX"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_Pro_1175C"
+                },
+                {
+                    "id": "printer/HP-OfficeJet_T45"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1000"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1100"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1115"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1215"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1218"
+                },
+                {
+                    "id": "printer/HP-PhotoSmart_P1315"
+                },
+                {
+                    "id": "printer/HP-PSC_500"
+                },
+                {
+                    "id": "printer/Lexmark-1020_Business"
+                },
+                {
+                    "id": "printer/Lexmark-3000"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_100C"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_150C"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_650C"
+                },
+                {
+                    "id": "printer/NEC-SuperScript_750C"
+                },
+                {
+                    "id": "printer/Samsung-SI-630A"
+                },
+                {
+                    "id": "printer/Sharp-AJ-1800"
+                },
+                {
+                    "id": "printer/Sharp-AJ-1805"
+                },
+                {
+                    "id": "printer/Sharp-AJ-2000"
+                },
+                {
+                    "id": "printer/Sharp-AJ-2005"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_C11"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_M750"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_M760"
+                }
+            ]
+        }
+    }
+}

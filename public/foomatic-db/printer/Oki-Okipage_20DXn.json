@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_20DXn",
+        "make": "Oki",
+        "model": "Okipage 20DXn",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP20Home.html",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "12MB RAM, duplex mechanism, network iface\n<br>Works on IEEE cable.\n<br>Network interface works, but only on a 10Mb hub?\n<br>Control duplex via PJL commands in PDQ driver description; see the HOWTO."
+        }
+    }
+}

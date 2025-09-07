@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-3000",
+        "make": "Lexmark",
+        "model": "3000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.lexmark.com/printers/inkjet/3000/",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "LEXWPS,PCL3",
+                "description": "Lexmark 3000 Color Jetprinter",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark 3000 Color Jetprinter"
+            }
+        },
+        "functionality": "B",
+        "driver": "pcl3",
+        "comments": {
+            "en": "600x300 DPI printing mode and\nphoto cartridge not supported.\nUse 300x300 DPI.\n\nA previous entry said this printer\ndoesn't work at all:\n\"will not print at all, sends all\nprint jobs to spool and I can not\nthen print from the spool\" - maybe\nsome older ghostscript versions\ndon't work, or maybe it was just\na misconfiguration.<p>\n\n      Consumables/Refills: dual cartridge<p>"
+        }
+    }
+}

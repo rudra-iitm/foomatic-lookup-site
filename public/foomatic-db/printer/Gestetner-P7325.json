@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Gestetner-P7325",
+        "make": "Gestetner",
+        "model": "P7325",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.gestetner.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Gestetner;MDL:P7325;CMD:POSTSCRIPT;"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Gestetner",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Gestetner",
+                "ppd": "PPD/Gestetner/PS/Gestetner-P7325_PS.ppd"
+            }
+        },
+        "comments": {
+            "en": "Visit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 25."
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_540",
+        "make": "HP",
+        "model": "DeskJet 540",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 540",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 540"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    One printer cartridge at a time, black or CMY. Mostly like Deskjet\n    500C.<p>\n\n      Consumables/Refills: BW or Color Cartidge with printhead<p>"
+        }
+    }
+}

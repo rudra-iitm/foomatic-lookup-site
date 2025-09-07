@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_230",
+        "make": "HP",
+        "model": "DesignJet 230",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "pjl": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Works best with Gimp-Print, here it also does its maximum resolution\n    of 600 dpi.<p>\n\n    Old user comments:<p>\n\n    Choose the driver for the HP DesignJet 650C<p>\n\n    Choose \"Normal color printing with color cartridge\"\n    option in the printtools 'setup' option for the\n    driver.<p>\n\n    The driver only has a 300x300dpi resolution, though the plotter\n    can do up to 600x600. Don't know if/how to make it work at a\n    higher resolution, or if it doesn't actually do 600dpi, in\n    spite of what the driver says.  <p>\n\n    Also, the maximum paper size listed in the printtool is A3,\n    although this plotter can do up to A1.<p>\n\n    This plotter understands the HPGL, HPGL/2 and PJL language.<p>\n\n      Consumables/Refills: black ink cartridge -- approx. US$30<p>"
+        }
+    }
+}

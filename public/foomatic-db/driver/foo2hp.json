@@ -1,0 +1,33 @@
+{
+    "driver": {
+        "@id": "driver/foo2hp",
+        "name": "foo2hp",
+        "url": "http://foo2hp.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n\tThis is a driver developed for the HP Color LaserJet 2600n printer.\n\t\n\t<p>\n\n\tThe driver supports 1-bit or 2-bit per pixel monochrome and\n\tcolor output, but none of these have been tuned for grayscale\n\tor color correction.\n\n\t<p>\n\n\tPPD files (and the Foomatic XML files to generate them) come\n\twith the driver, therefore we do not supply PPDs here on the\n\tOpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Generic-GDI_Printer"
+                },
+                {
+                    "id": "printer/Generic-ZjStream_Printer"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_1600"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_2600n"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_CP1215"
+                }
+            ]
+        }
+    }
+}

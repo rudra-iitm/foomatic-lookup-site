@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/DEC-LA75_Plus",
+        "make": "DEC",
+        "model": "LA75 Plus",
+        "mechanism": {
+            "dotmatrix": null,
+            "resolution": {
+                "dpi": {
+                    "x": "180",
+                    "y": "180"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "la75plus"
+    }
+}

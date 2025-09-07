@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Canon-S600",
+        "make": "Canon",
+        "model": "S600",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://consumer.usa.canon.com/printers/s600/index.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "BJL,BJRaster3,BSCC,TXT01",
+                "description": "Canon S600",
+                "manufacturer": "Canon",
+                "model": "S600"
+            }
+        },
+        "functionality": "D",
+        "driver": "bj8XXYYZ.upp",
+        "comments": {
+            "en": "This printer is similar to the Canon BJC-8200 (but only 4-ink)\n    and is reported to work with the same drivers (bj8*06n.upp in\n    Ghostscript 6.50 and newer) in the 600 dpi mode. If you want to use\n    Gimp-Print install this printer as the Canon BJC-8200 and choose 600\n    dpi resolution.<p>\n\n      Consumables/Refills: 4 independent ink tanks<p>"
+        }
+    }
+}

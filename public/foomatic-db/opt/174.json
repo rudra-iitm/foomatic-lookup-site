@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/174",
+        "arg_shortname": {
+            "en": "NextSpotColourPage"
+        },
+        "arg_longname": {
+            "en": "Next Job is spot color page"
+        },
+        "arg_execution": {
+            "arg_group": "CombinedJobs",
+            "arg_order": "220",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-spotfollows"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtocpva",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "NextNotSpotColourPage"
+        }
+    }
+}

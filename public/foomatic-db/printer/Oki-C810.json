@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Oki-C810",
+        "make": "Oki",
+        "model": "C810",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "1200"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4.23164",
+                    "bottom": "4.23164",
+                    "left": "3.175",
+                    "right": "3.175"
+                }
+            },
+            "consumables": {
+                "comments": {
+                    "en": "Toner Black (1500 prints) - $32\n\t\tToner Yellow (1500 prints) - $65\n\t\tToner Magenta (1500 prints) - $65\n\t\tToner Cyan (1500 prints) - $65\n\t\tDrum Black (15000 prints) - $100\n\t\tDrum Yellow (1500 prints) - $120\n\t\tDrum Magenta (1500 prints) - $120\n\t\tDrum Cyan (1500 prints) - $120"
+                },
+                "partno": "43034804"
+            }
+        },
+        "url": "http://www.oki.com.au/printers/colour-printers/a3-printers/detail.aspx?prodid=tcm:132-3855-16",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": null,
+        "functionality": "B",
+        "driver": "foo2hiperc-z1",
+        "comments": {
+            "en": "The Oki C810 is a networked color laser printer with a\n\t2013 street price of $870 USD.  This printer is supported\n\tby the foo2hiperc open software printer driver."
+        }
+    }
+}

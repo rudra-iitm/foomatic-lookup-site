@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-X642e",
+        "make": "Lexmark",
+        "model": "X642e",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "D",
+        "driver": "pxlmono",
+        "drivers": {
+            "driver": {
+                "id": "pxlmono"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.19 on 2008-08-07"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_8p",
+        "make": "Oki",
+        "model": "Okipage 8p",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,PCLXL,PCL,EPSONFX,IBMPPR",
+                "description": "OKIPAGE 8p",
+                "manufacturer": "OKI DATA CORP",
+                "model": "OKIPAGE 8p"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "comments": {
+            "en": "This printer is mostly HP 6L compatible.\nSo, no big problems. \n<br>This printer uses PJL for various per-job and permanent settings; use PDQ to gain control over these."
+        }
+    }
+}

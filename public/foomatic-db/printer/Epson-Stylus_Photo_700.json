@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Photo_700",
+        "make": "Epson",
+        "model": "Stylus Photo 700",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/pho700/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "ESCPL2,BDC",
+                "description": "EPSON Stylus Photo 700",
+                "manufacturer": "EPSON",
+                "model": "Stylus Photo 700"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "6 color CMYKcm printing with 32 \njets per color.\n<p>\nReported \"fully operational\" by gimp-print project (the stp driver).<p>\n\n      Consumables/Refills: Two ink cartridges, black + 5 colors, US$20 ea.<p>"
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-E120n",
+        "make": "Lexmark",
+        "model": "E120n",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "PCL 6 Emulation, PostScript Le",
+                "description": "Lexmark E120n",
+                "manufacturer": "Lexmark International",
+                "model": "Lexmark E120n"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Principally , this is a PostScript printer (in contrary to the\n      non-network E120), but the printer only works in PostScript mode\n      if the proprietary PPD file from the manufacturer is used, and not\n      with a generic PostScript PPD file, like from Foomatic. It seems that\n      the generic PPD file needs the additional line \"*Protocols: TBCP\",\n      but there is no confirmation for this yet, so please test. See\n      also <a href=\"https://bugs.launchpad.net/bugs/802285\">this\n      Ubuntu bug report</a>.<p>\n\n      Throughput = 20<p>\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-09-03<p>"
+        }
+    }
+}

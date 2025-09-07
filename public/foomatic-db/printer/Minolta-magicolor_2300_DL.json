@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/Minolta-magicolor_2300_DL",
+        "make": "Minolta",
+        "model": "magicolor 2300 DL",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "url": "http://www.minolta-qms.com/products/color/mc2300DL/index.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "parallel": {
+                "ieee1284": "CLASS:PRINTER;MODEL:magicolor 2300 DL;MANUFACTURER:MINOLTA-QMS;COMMAND SET:ZJS,PJL;",
+                "commandset": "ZJS,PJL",
+                "manufacturer": "MINOLTA-QMS",
+                "model": "magicolor 2300 DL"
+            },
+            "snmp": {
+                "description": "MINOLTA-QMS magicolor 2300 DL"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2zjs",
+        "comments": {
+            "en": "The magicolor 2300 DL is a network color laser printer with a\n\t2003 street price of $600-$800 USD.  This printer is supported\n\tby the foo2zjs free software printer driver.<p>\n\n\tNote that the older Minolta magicolor 2300 DL and the newer\n\tKonica Minolta magicolor 2300 DL are not 100% equal. So it is not\n\tsure whether the Minolta magicolor 2300 DL perhaps also works with\n\tthe driver from Konica Minolta.<p><p>\n\n      Consumables/Refills: <br>\n\t\tToner Black (4500 prints) - $79<br>\n\t\tToner Yellow (4500 prints) - $119<br>\n\t\tToner Magenta (4500 prints) - $119<br>\n\t\tToner Cyan (4500 prints) - $119<br>\n\t\tWaste Toner Box (25000 prints) - $19<br>\n\t\tOPC Drum Catridge (45000 prints) - $149<br> Part numbers: 1710517-005, \n\t    1710517-006, \n\t    1710517-007, \n\t    1710517-008, \n\t    1710522-001, \n\t    1710520-001<p>"
+        }
+    }
+}

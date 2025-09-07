@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_770C",
+        "make": "Epson",
+        "model": "PM 770C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 750.<p>\n\n    A 6 color CMYKcm printer.<p>\n\n    Old user comments (for the Stylus Photo 750):<p>\n\n    Annotation from <a href=\"mailto:olivier.delsol at usa dot\n    net\"> Olivier Delsol</a>(03.16.1999):<br>\n\n    The 750 works in 4 color mode with the upp files written by\n    DEPontius for the 740 and ghostscript 5.50, such as\n    stc740.upp<p>\n\n    See the Stylus 740 entry for a link.<p>\n\n    Annotation from <a\n    href=\"mailto:mmclure@mclure.org\">Manuel\n    McLure</a> (06/13/2000)<p>\n\n    This printer prints beautifully using the gimp-print driver from\n    <a\n    href=\"http://gimp-print.sourceforge.net\">http://gimp-print.sourceforge.net</a>.<p>\n\n    The \"Stylus Photo\" gimp-print driver can be inserted\n    into ghostscript as the \"stp\" driver, see instructions\n    on the above site.<p>\n\n      Consumables/Refills: Black cartridge + single 5-color cartridge<p>"
+        }
+    }
+}

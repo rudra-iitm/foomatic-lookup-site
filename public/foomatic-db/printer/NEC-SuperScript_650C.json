@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/NEC-SuperScript_650C",
+        "make": "NEC",
+        "model": "SuperScript 650C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://cssweb.nectech.com/SScript/ss650c/index.htm",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "pcl3",
+        "comments": {
+            "en": "Should(tm) work perfectly; change this entry if so!\n<br>CMYK four-color printing; separate black for text.<p>\n\n      Consumables/Refills: color and black cartridges<p>"
+        }
+    }
+}

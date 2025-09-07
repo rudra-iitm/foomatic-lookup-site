@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-BX525WD_Series",
+        "make": "Epson",
+        "model": "BX525WD Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Epson Stylus Office BX525WD;CLS:PRINTER;DES:EPSON Epson Stylus Office BX525WD",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON Epson Stylus Office BX525WD",
+                "manufacturer": "EPSON",
+                "model": "Epson Stylus Office BX525WD"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-workforce-635-60-nx625-series",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-workforce-635-60-nx625-series"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

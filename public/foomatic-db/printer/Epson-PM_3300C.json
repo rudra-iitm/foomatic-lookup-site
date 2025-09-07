@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_3300C",
+        "make": "Epson",
+        "model": "PM 3300C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 1270.<p>\n\n    48 nozzles per color; 6 color CMYKcm process.<p>\n\n    USB and Parallel.<p>\n\n    12.75 inch wide paper path.<p>\n\n    4 picoliter dots. One of the best Epsons for color and\n    quality.<p>"
+        }
+    }
+}

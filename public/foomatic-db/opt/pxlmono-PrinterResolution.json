@@ -1,0 +1,382 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/pxlmono-PrinterResolution",
+        "arg_shortname": {
+            "en": "PrinterResolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-r%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pxlcolor",
+                    "arg_defval": "ev/pxlmono-PrinterResolution-600x600dpi"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxldpl",
+                    "arg_defval": "ev/pxlmono-PrinterResolution-600x600dpi"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pxlmono",
+                    "arg_defval": "ev/pxlmono-PrinterResolution-600x600dpi"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/pxlmono-PrinterResolution-1200x1200dpi",
+                    "ev_longname": {
+                        "en": "1200x1200 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "1200x1200dpi"
+                    },
+                    "ev_driverval": "1200x1200",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C1900"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C1900_PS3"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C2000"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C2000_PS3"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C8500"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C8500PS"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C8600"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Epson-AL-C8600_PS3"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-Color_LaserJet_2500"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-Color_LaserJet_4500"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-Color_LaserJet_4550"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-Color_LaserJet_4600"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-Color_LaserJet_5500"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-LaserJet_5"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-LaserJet_5L"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-LaserJet_5P"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-LaserJet_6"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-LaserJet_6L"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/HP-LaserJet_6P"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-1000"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-1000plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-1010"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-1200"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-1700plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-3700plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-6700"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-7000plus"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Kyocera-FS-9000"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Lexmark-E230"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Oki-Okipage_10ex"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Oki-Okipage_14ex"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Ricoh-Aficio_220"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-1750"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-4600"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Sharp-AR-161"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Xerox-DocuPrint_N4512"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Xerox-DocuPrint_N4512PS"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Xerox-DocuPrint_P1202"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrinterResolution-1200x600dpi",
+                    "ev_longname": {
+                        "en": "1200x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "1200x600dpi"
+                    },
+                    "ev_driverval": "1200x600",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "make": "Brother"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Canon"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Dell"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Epson"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Fujitsu"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "HP"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "IBM"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Kyocera"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Lexmark-E230"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Oki-Okipage_10ex"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Oki-Okipage_14ex"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Ricoh"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-1450"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-1450PS"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-1650"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-1651N"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2150"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2150PS"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2151N"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2151NPS"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2152W"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2152WPS"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2550"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2551N"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-2552W"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-7000"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-7000N"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-7000P"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-7050"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-7300"
+                            },
+                            {
+                                "@sense": "false",
+                                "printer": "printer/Samsung-ML-7300N"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Sharp"
+                            },
+                            {
+                                "@sense": "false",
+                                "make": "Xerox"
+                            },
+                            {
+                                "@sense": "false",
+                                "driver": "pxldpl"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/pxlmono-PrinterResolution-300x300dpi",
+                    "ev_longname": {
+                        "en": "300x300 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "300x300dpi"
+                    },
+                    "ev_driverval": "300x300"
+                },
+                {
+                    "@id": "ev/pxlmono-PrinterResolution-600x600dpi",
+                    "ev_longname": {
+                        "en": "600x600 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "600x600dpi"
+                    },
+                    "ev_driverval": "600x600"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/104",
+        "arg_shortname": {
+            "en": "Encoding"
+        },
+        "arg_longname": {
+            "en": "ESC/P2 Encoding"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "160",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sOutputCode=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "stcolor",
+                "arg_defval": "ev/737"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/736",
+                    "ev_longname": {
+                        "en": "Uncompressed"
+                    },
+                    "ev_shortname": {
+                        "en": "Uncompressed"
+                    },
+                    "ev_driverval": "plain"
+                },
+                {
+                    "@id": "ev/737",
+                    "ev_longname": {
+                        "en": "Runlength Encoding"
+                    },
+                    "ev_shortname": {
+                        "en": "RunLength"
+                    },
+                    "ev_driverval": "runlength"
+                },
+                {
+                    "@id": "ev/738",
+                    "ev_longname": {
+                        "en": "Delta Row Compression"
+                    },
+                    "ev_shortname": {
+                        "en": "DeltaRow"
+                    },
+                    "ev_driverval": "deltarow"
+                }
+            ]
+        }
+    }
+}

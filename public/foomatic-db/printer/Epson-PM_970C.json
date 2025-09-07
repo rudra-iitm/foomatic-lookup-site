@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_970C",
+        "make": "Epson",
+        "model": "PM 970C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "2880"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Only available in Japan.<p>\n\n      7-ink (CcMmYyK) high-end photo printer with 1.8 pl minimum drop\n      size, 360 black nozzles, 180 nozzles per color, high-speed 4-ink\n      360-dpi mode. Maximum paper size is A4/Letter/Legal.<p>\n    \n      Preliminary support in Gimp-Print 4.3.12 and newer. Still\n      completely untuned, so do not expect high color\n      quality.<p><p>\n\n      Consumables/Refills: 7 separate ink tanks: Cyan, light cyan, magenta, light magenta,\n\tyellow, dark yellow, black<p>"
+        }
+    }
+}

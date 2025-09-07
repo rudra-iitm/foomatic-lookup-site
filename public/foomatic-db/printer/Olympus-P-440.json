@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Olympus-P-440",
+        "make": "Olympus",
+        "model": "P-440",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "314",
+                    "y": "314"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Dye-sublimation photo printer in A4 size (8x12in/21x30cm). 314\n    dpi, full 24-bit color depth (256 levels per CMY color component),\n    laminate overcoating, full-bleed (border-less). Produces\n    laboratory-like photos. Does not print on normal paper, so it is\n    not suitable for documents, it is only for photos. USB 1.1\n    connection.<p>\n\n    Direct printing from PictBridge-compatible cameras or from flash\n    cards (of any DPOF-capable camera) possible. Photos on the cards\n    can be shown and selected on an 1.8inch LCD monochrome display or\n    on a TV set.<p><p>\n\n      Consumables/Refills: Packs with special paper and three-color ribbon<p>"
+        }
+    }
+}

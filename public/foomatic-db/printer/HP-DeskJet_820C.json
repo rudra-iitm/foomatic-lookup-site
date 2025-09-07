@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_820C",
+        "make": "HP",
+        "model": "DeskJet 820C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "SCP,VLINK",
+                "description": "Hewlett-Packard DeskJet 820C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 820C"
+            }
+        },
+        "functionality": "A",
+        "driver": "pnm2ppa",
+        "contrib_url": "FTP://ftp.ig.utexas.edu/outgoing/scottk/820C/",
+        "comments": {
+            "en": "PPA printer, does not work with PCL drivers (as HPLIP,\n    \"gimp-print\", \"cdjXXX\", \"pcl3\", ...)\n    <p>\n\n    The \"Cse\" and \"Cxi\" are probably the same\n    hardware but shipped with different Windows toys.<p>\n\n      Consumables/Refills: color cartridge-51641A (about $25); B&W cartridge- 51645A (about<p>"
+        }
+    }
+}

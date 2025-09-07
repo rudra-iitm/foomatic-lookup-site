@@ -1,0 +1,28 @@
+{
+    "driver": {
+        "@id": "driver/pxl1010",
+        "name": "pxl1010",
+        "obsolete": {
+            "@replace": "hplip"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=pxlmono%A%Z -sOutputFile=- - | perl -0777 -e 'my $d; read(STDIN, $d, 10000); $d =~ s/(ENTER LANGUAGE[^\\n]*\\n[^\\n]*\\n[^A]*A)/$1\\xc2\\x11\\x20\\x70\\x68\\xf8\\x91\\x46/s; print $d; while (read(STDIN, $d, 10000)) {print $d}'",
+            "ppdentry": "*DefaultResolution: 600dpi"
+        },
+        "comments": {
+            "en": "\"pxl1010\" is not a new driver, but a special way of using the\n    \"pxlmono\" Ghostscript driver to make the HP LaserJet 1010 and 1012\n    work reliably.  The trick is to add a special sequence of 8 bytes\n    at the BeginSession operator of the PCL-XL data stream.<p>\n\n    Simply using \"pxlmono\" does not print anything and using a PCL-5e\n    driver (HPIJS, \"ljet4\", ...) leads in principle to the jobs being\n    printed, but sometimes the printer crashes with an \"Unsupported\n    personality: PCL\" message.<p>\n\n    Thanks to Carl Michal (michal at physics dot ubc dot ca) for\n    finding out that. He analyzed the output of the Windows driver,\n    where he found this \"magic\" 8-byte sequence.<p>\n\n    A Ghostscript bug in the driver breaks paper input tray\n    selection. This <a\n    href=\"http://www.openprinting.org/download/printing/ghostscript-pxl-patches/inputslot.patch\">patch</a>\n    for GPL Ghostscript 8.63 fixes the problem and allows to set the\n    input tray with the \"-dMediaPosition=X\" commmand line\n    option for Ghostscript. \"X\" is an integer number which\n    depends on the printer model and tray. For HP \"0\" is\n    usually the printer default, \"1\" automatic selection,\n    \"2\" manual feed, \"4\" the upper, and\n    \"5\" the lower tray. Note that for PCL 5/5e these numbers\n    are different. This patch is required for Ghostscript 8.63 and\n    older so that tray selection with the PPDs of this site works. The\n    bug is fixed in Ghostscript 8.64 or newer.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-LaserJet_1010"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1012"
+                }
+            ]
+        }
+    }
+}

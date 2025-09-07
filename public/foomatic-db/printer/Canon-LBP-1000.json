@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-1000",
+        "make": "Canon",
+        "model": "LBP-1000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL-XL",
+                "description": "LBP-1000",
+                "manufacturer": "Canon",
+                "model": "LBP-1000"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Laser printer, mostly compatible to the HP\nLaserJet 1100, but classical design (horizontal\npaper input tray on the bottom, output on the\ntop) and maximum resolution of 1200 dpi. To print\nin that resolution you simply tell it to \nGhostscript (\"-r\" command line option or\nappropriate PostScript command), no PJL commands\nare needed. Use PJL commands to access the \nmanual sheet feeder and the toner saving mode.<p>\n\nBe careful, many other LBP models are \n\"Paperweights\".<p>\n\nThis printer works also with the Gimp-Print \"stp\"\ndriver when one uses the foomatic configuration\nfiles for the HP LaserJet 1100."
+        }
+    }
+}

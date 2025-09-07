@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-6500",
+        "make": "Kyocera",
+        "model": "FS-6500",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.kyoceramita.com/",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Kyocera;MDL:FS-6500;",
+                "description": "Kyocera FS-6500",
+                "manufacturer": "Kyocera",
+                "model": "FS-6500"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4d",
+        "comments": {
+            "en": "PCL5e but limited to 300x300dpi <br>\n      In case of duplex option use ljet4d for PCL5e and duplex <br>\n      PostScript option (use the\n      <a href=\"/download/PPD/Kyocera/\">Kyocera PPD file</a>\n      for PostScript, <a href=\"ppd-doc.html\">Instructions</a>)"
+        }
+    }
+}

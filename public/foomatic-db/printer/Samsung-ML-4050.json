@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-4050",
+        "make": "Samsung",
+        "model": "ML-4050",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:PCL6,POSTSCRIPT,PDF;MDL:ML-4050 Series;CLS:PRINTER;",
+                "manufacturer": "ML-4050 Series",
+                "model": "ML-4050 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Samsung",
+        "drivers": {
+            "driver": {
+                "id": "Postscript-Samsung",
+                "ppd": "PPD/Samsung/PS/Samsung_ML-4050_Series.ppd"
+            }
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 40 pages/min<p>"
+        }
+    }
+}

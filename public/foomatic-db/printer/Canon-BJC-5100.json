@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-5100",
+        "make": "Canon",
+        "model": "BJC-5100",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.ccsi.canon.com/bjc/bjc5100/index.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "If someone believes this printer works -clearly document how to get it to work HERE.  It simply does not work since the protocol is proprietary and undisclosed.\n<br>From all accounts, this printer does not use the same protocol as the BJC-4x00 line or the BJC-600.  No free driver is known to exist, and the protocol is not known to be documented.<p>\n\n      Consumables/Refills: black/color, color/photo, or black/black cart pairs<p>"
+        }
+    }
+}

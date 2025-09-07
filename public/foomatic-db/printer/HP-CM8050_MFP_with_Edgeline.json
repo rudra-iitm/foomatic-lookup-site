@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-CM8050_MFP_with_Edgeline",
+        "make": "HP",
+        "model": "CM8050 MFP with Edgeline",
+        "mechanism": {
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:HP;MDL:HP CM8050 MFP with Edgeline;",
+                "manufacturer": "HP",
+                "model": "HP CM8050 MFP with Edgeline"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hplip"
+                },
+                {
+                    "id": "Postscript"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 12.0 inches / 30.5 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 60 pages/min<p>"
+        }
+    }
+}

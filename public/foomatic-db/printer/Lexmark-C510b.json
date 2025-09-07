@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-C510b",
+        "make": "Lexmark",
+        "model": "C510b",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Lexmark-black-only",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Lexmark-black-only",
+                    "ppd": "PPD/Lexmark/PS/Lexmark-C510b.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "For the grayscale-only model\n\n      Throughput = 29\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

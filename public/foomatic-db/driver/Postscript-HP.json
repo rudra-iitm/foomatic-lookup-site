@@ -1,0 +1,43 @@
+{
+    "driver": {
+        "@id": "driver/Postscript-HP",
+        "name": "Postscript-HP",
+        "url": "http://hplipopensource.com/",
+        "supplier": "HP",
+        "manufacturersupplied": "HP|Apollo",
+        "license": "MIT",
+        "licensetext": {
+            "en": "MIT Open Source License\n\n      See http://www.opensource.org/\n\n      Permission is hereby granted, free of charge, to any person obtaining\n      a copy of this software and associated documentation files (the\n      \"Software\"), to deal in the Software without restriction, including\n      without limitation the rights to use, copy, modify, merge, publish,\n      distribute, sublicense, and/or sell copies of the Software, and to\n      permit persons to whom the Software is furnished to do so, subject to\n      the following conditions:\n\n      The above copyright notice and this permission notice shall be\n      included in all copies or substantial portions of the Software.\n\n      THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n      MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\n      NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\n      LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\n      OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\n      WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+        },
+        "supportcontacts": {
+            "supportcontact": {
+                "@url": "https://launchpad.net/hplip",
+                "@level": "voluntary",
+                "#text": "HPLIP support and bug tracking system"
+            }
+        },
+        "shortdescription": {
+            "en": "PPD files for HP's PostScript printers which are not supported by HPLIP, supplied by HP"
+        },
+        "packages": {
+            "package": {
+                "@scope": "general",
+                "@fingerprint": "https://www.openprinting.org/download/printdriver/keys/openprinting",
+                "#text": "openprinting-ppds-postscript-hp"
+            }
+        },
+        "functionality": {
+            "color": null,
+            "text": "100",
+            "lineart": "100",
+            "graphics": "100",
+            "photo": "100"
+        },
+        "execution": {
+            "postscript": null
+        },
+        "comments": {
+            "en": "<B>All PPD files of this driver entry are available in the <A href=\"https://github.com/OpenPrinting/ps-printer-app\">PostScript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ps-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      Under this entry HP's PPD files for those PostScript printers\n      are hosted which are not supported by HPLIP. These are most\n      DesignJets (large format printers) and one PostScript standard\n      format inkjet (OfficeJet 9100, HPLIP supports it only in PCL\n      mode).<p>\n\n      See the \"<a\n      href=\"show_driver.cgi?driver=hplip\">hplip</a>\" driver\n      entry for all HP PostScript printers not mentioned\n      here.<p>\n\n      PostScript printers are supported natively in Linux and Unix\n      environments, so you only need the PPD file for your printer, no\n      driver executables, to get access to all printing\n      functionality. The PPD contains all information about properties\n      and user-settable options which are specific to the printer and\n      makes printing dialogs show these options and allow the user to\n      control all the printer's functionality.<p>\n\n      Note that the PPDs are originally developed for the Mac OS X\n      operating system. So they contain entries which are not made use\n      of under Linux.<p>\n\n      The PPDs only support the printing functionality of the\n      printers. To use additional functionality, like ink/toner level\n      check, inkjet head cleaning, scanning, faxing, ... you need\n      <a href=\"http://hplipopensource.com/\">HPLIP</a> in\n      addition to the PPD files.<p>\n\n      Note that these printers work, like all other PostScript\n      printers, with <a\n      href=\"show_driver.cgi?driver=Postscript\">generic PostScript\n      PPD files</a>, but then you will not get access to all the\n      printer specific functionality.<p>"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_C40",
+        "make": "Epson",
+        "model": "Stylus C40",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://www.epson.co.uk/sohoprod/printers/inkjet/styc40/index.htm",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "manufacturer": "EPSON",
+                "model": "Stylus C40"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Cheap 4-ink home printer with a medium resolution (1440x720 dpi), but\n      in contrary to the Stylus Color 480/580 with a power and a cancel\n      button. There is an \"SX\" model with parallel port and an \"UX\" model\n      with USB port.<p>\n\n      Supported by Gimp-Print 4.1.99 or newer."
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4600_PS",
+        "make": "Oki",
+        "model": "B4600 PS",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com.sg/binaryData/18733/B4400_B4600.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 26\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-06-23"
+        }
+    }
+}

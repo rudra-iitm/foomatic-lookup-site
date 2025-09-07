@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Epson-EM_930CN",
+        "make": "Epson",
+        "model": "EM 930CN",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2880",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "drivers": {
+            "driver": {
+                "id": "gutenprint"
+            }
+        },
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Color 980N.<p>\n\n    Works perfectly with Gutenprint.<p>"
+        }
+    }
+}

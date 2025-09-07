@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PM_820C",
+        "make": "Epson",
+        "model": "PM 820C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "drivers": {
+            "driver": {
+                "id": "gutenprint"
+            }
+        },
+        "comments": {
+            "en": "Japanese version of the Epson Stylus Photo 870.<p>\n\n    48 nozzles per color, 6-color CMYKcm printing.<p>\n\n    USB or Parallel.<p>"
+        }
+    }
+}

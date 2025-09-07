@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_4L",
+        "make": "HP",
+        "model": "LaserJet 4L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/lj4l.html",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "HP ENHANCED PCL5,PJL",
+                "manufacturer": "Hewlett-Packard",
+                "model": "LaserJet 4L"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4",
+        "comments": {
+            "en": "For basic printing functionality use the PPD from this site. For\n    advanced functionality such as printer status and maintenance\n    features, use the <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    This printer is of around 1995, it was discontinued some years\n    ago. The HP website carries little to no information about the\n    printer. ZDNet still has spec's if someone needs them.<p>\n\n    The HP 4L is the Model C2003A.  Neither ID is listed as supported\n    by HPLIP.  The series included the 4L, 4L Pro, 4Lc, and\n    4mL. Presumably, any of these uses the same driver.<p>\n\n    The toner cartridge is HP 92274A (No. 74A) and is available for\n    less than 20USD via eBay or a little more via other\n    sources. Refills are of course cheaper. A brand new HP cartridge\n    with super fine toner costs more than the printer.<p>\n\n    The LaserJet 4L printer provides 300 dots per inch description\n    resolution, plus built-in Resolution Enhancement technology (REt)\n    and built-in Memory Enhancement technology with a throughput of up\n    to 4 pages per minute. It has the ability to scale fonts, enhanced\n    PCL 5 Language, EconoMode printing, an Instant-On Fuser, and the\n    HP-GL/2 enhancement for plotter output.<p>\n\n    Slow by today's standards but quite a nice compact LaserJet 10\n    years ago.<p>\n\n    Although the driver may work perfectly, toner is abysmally\n    expensive now. Time to get a new laser printer.<p><p>\n\n      Consumables/Refills: Toner ($70?)<p>"
+        }
+    }
+}

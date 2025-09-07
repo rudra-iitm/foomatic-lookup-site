@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-PSC_950xi",
+        "make": "HP",
+        "model": "PSC 950xi",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://hpshopping.speedera.net/www.shopping.hp.com/shopping/pdf/c8436a.pdf",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:PSC 900 Series;SKU:PSC 950xi;CMD:MLC,PCL,PML;CLASS:PRINTER;DESCRIPTION:Hewlett-Packard PSC 900 Series;",
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard PSC 900 Series",
+                "manufacturer": "Hewlett-Packard",
+                "model": "PSC 900 Series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "There is the standard model and also an \"xi\" model which\n    stores more received faxes but does a lower maximum magnification\n    for copying and a lower maximum amount of copies.<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scamnning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    In addition this device copies, faxes and prints photos directly\n    from CompactFlash, SmartMedia, and Memory Stick, but these\n    functions are currently only controllable by the front panel, not\n    by the PC. To choose photos from your memory card, the machine\n    makes an index sheet with thumbnails of all photos and you can\n    mark which photos you want to print and how they should get\n    printed with a pen on the sheet and then you scan the sheet to\n    execute the printing job.<p><p>\n\n      Consumables/Refills: 2 cartridges<p>"
+        }
+    }
+}

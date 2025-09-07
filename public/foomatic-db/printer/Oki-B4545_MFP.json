@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Oki-B4545_MFP",
+        "make": "Oki",
+        "model": "B4545 MFP",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "D",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Throughput = 21\n      \n      Foomatic entry made by PPDtoXML T/G 0.19 on 2008-06-29"
+        }
+    }
+}

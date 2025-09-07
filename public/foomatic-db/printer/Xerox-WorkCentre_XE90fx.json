@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_XE90fx",
+        "make": "Xerox",
+        "model": "WorkCentre XE90fx",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/PT_1_1_1.jsp?id=XE90fx&cat=%2fEquipment%2fPrinting%2fMultifunction&catOID=-8162&catOID=-816",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "Nice flatbed multifunction (P/S/C/F) Shame it's a paperweight:-(<p>\n\n      Consumables/Refills: toner cartridge, drum cartridge<p>"
+        }
+    }
+}

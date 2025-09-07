@@ -1,0 +1,32 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1740",
+        "make": "Samsung",
+        "model": "ML-1740",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.samsung.com/Products/PrinterandMultifunction/DiscontinuedProducts/ML_1740XAA.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "GDI",
+                "manufacturer": "Samsung",
+                "model": "ML-1740"
+            }
+        },
+        "functionality": "A",
+        "driver": "splix",
+        "comments": {
+            "en": "1) A Linux driver is included on the CD that comes with the printer, or it can be downloaded from Samsung.<p>\n\nGet the Linux driver package (one package for all models from <a href=\"http://www.samsung.com/\">Samsung's web site</a>.<p>\n\nNote: You cannot just use the PPD coming with Samsungs's driver package with CUPS/Ghostscript.  You must also install the proprietary Samsung driver applications, as well as the PPD.<p>\n\n2) Or, you can try using the configuration for the Samsung ML-1710 printer, which several users have reported to work (see information page for that printer).<p>  Please see the comments in the GDI driver section below re issues with landscape printing.<p><p>\n\n      Consumables/Refills: toner cartridge (3,000 pages, ~$70 US)<p>"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LIPS-IV",
+        "make": "Canon",
+        "model": "LIPS-IV",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "lips4",
+        "comments": {
+            "en": "Imported from old Red Hat japanese printer database"
+        }
+    }
+}

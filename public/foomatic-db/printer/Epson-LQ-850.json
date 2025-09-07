@@ -1,0 +1,21 @@
+{
+    "printer": {
+        "@id": "printer/Epson-LQ-850",
+        "make": "Epson",
+        "model": "LQ-850",
+        "mechanism": {
+            "dotmatrix": null
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "lq850",
+        "comments": {
+            "en": "Gs driver works at 360dpi."
+        }
+    }
+}

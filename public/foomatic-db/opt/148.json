@@ -1,0 +1,35 @@
+{
+    "option": {
+        "@type": "int",
+        "@id": "opt/148",
+        "arg_shortname": {
+            "en": "Black"
+        },
+        "arg_longname": {
+            "en": "Black Level"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "200",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dBlack=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "md2k",
+                    "arg_defval": "1024"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "md5k",
+                    "arg_defval": "1024"
+                }
+            ]
+        },
+        "arg_max": "2048",
+        "arg_min": "0"
+    }
+}

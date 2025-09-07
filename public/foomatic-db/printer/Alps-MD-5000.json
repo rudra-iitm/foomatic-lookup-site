@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Alps-MD-5000",
+        "make": "Alps",
+        "model": "MD-5000",
+        "mechanism": {
+            "transfer": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "url": "http://www.alpsusa.com/Product/MDP/index.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "ppmtomd",
+        "contrib_url": "http://www.openprinting.org/clippings/MD5000-translation.txt",
+        "comments": {
+            "en": "J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files (\"ppmtomd\"). He started\n    hacking ghostscript, but abandoned it.<p>\n\n    Dye sublimation option available.<p>\n\n    The \"md5k\" driver appears to support 1200x600, 600, and\n    300dpi operation on a variety of papers. Unfortunately it is\n    documented in Japanese.<p><p>\n\n      Consumables/Refills: several types of ribbon cartridges, black, cyan, magenta, yellow<p>"
+        }
+    }
+}

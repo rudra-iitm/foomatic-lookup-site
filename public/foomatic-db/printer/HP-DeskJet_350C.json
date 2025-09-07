@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_350C",
+        "make": "HP",
+        "model": "DeskJet 350C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.bstore.hp.com/",
+        "lang": {
+            "pcl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 350",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 350"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Portable printer, does 600x600 in bw and 600x300 in\n    colour.<p>\n\n    If you need a portable printer with a higher output quality, you\n    should take the Canon BJC-50/55/80/85.<p>\n\n    Michael Sweet, author of CUPS wrote about this printer:<p>\n \n    You can't get high quality out of the 350 *at all*. Not\n    even under Windows.  I had one in our lab for about a month. We\n    sent it back rather than keeping the printer because it looked so\n    bad.  IIRC it only prints at 300 DPI; a driver for the DeskJet\n    500C is the best match...<p>\n\n    (What do you expect? It's a portable printer.)"
+        }
+    }
+}

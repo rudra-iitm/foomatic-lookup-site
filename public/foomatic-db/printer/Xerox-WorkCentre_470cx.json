@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-WorkCentre_470cx",
+        "make": "Xerox",
+        "model": "WorkCentre 470cx",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=470cx&cat=%2fEquipment%2fPrinting%2fDesktop&trk=/Printing/Desktop/470cx/ove",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "D",
+        "driver": "lxm5700m",
+        "comments": {
+            "en": "Works Black and White only with the\nGhostscript 5.50 Lexmark 5700 driver.\nNote: only prints using Ghostscript\nfrom Postscript input.\nUse a2ps to convert print plain text\nto Postscript.<p>\n\n      Consumables/Refills: black (like XJ8C) and color<p>"
+        }
+    }
+}

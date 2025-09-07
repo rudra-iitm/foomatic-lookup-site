@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_8200N",
+        "make": "Xerox",
+        "model": "Phaser 8200N",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MANUFACTURER:Xerox;COMMAND SET:Adobe Level 3 PostScript;MODEL:Phaser 8200N;CLASS:Printer;DESCRIPTION:Phaser 8200 Color Page Printer, PostScript Level 3,    Letter / Legal / A4 Size",
+                "commandset": "Adobe Level 3 PostScript",
+                "description": "Phaser 8200 Color Page Printer, PostScript Level 3,    Letter / Legal / A4 Size",
+                "manufacturer": "Xerox",
+                "model": "Phaser 8200N"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx8200n.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 16\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 16 pages/min<p>"
+        }
+    }
+}

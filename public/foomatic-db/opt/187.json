@@ -1,0 +1,113 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/187",
+        "arg_shortname": {
+            "en": "MPTray"
+        },
+        "arg_longname": {
+            "en": "MP Tray"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_pjl": null,
+            "arg_proto": "SET MPTRAY=%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5L",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5M",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5MP",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5P",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_5Si",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6L",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6MP",
+                    "arg_defval": "ev/956"
+                },
+                {
+                    "@sense": "true",
+                    "printer": "printer/HP-LaserJet_6P",
+                    "arg_defval": "ev/956"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/956",
+                    "ev_longname": {
+                        "en": "First"
+                    },
+                    "ev_shortname": {
+                        "en": "First"
+                    },
+                    "ev_driverval": "FIRST"
+                },
+                {
+                    "@id": "ev/957",
+                    "ev_longname": {
+                        "en": "Cassette"
+                    },
+                    "ev_shortname": {
+                        "en": "Cassette"
+                    },
+                    "ev_driverval": "CASSETTE"
+                },
+                {
+                    "@id": "ev/969",
+                    "ev_longname": {
+                        "en": "Manual Feeder"
+                    },
+                    "ev_shortname": {
+                        "en": "Manual"
+                    },
+                    "ev_driverval": "MANUAL",
+                    "constraints": {
+                        "constraint": {
+                            "@sense": "false",
+                            "make": "HP"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

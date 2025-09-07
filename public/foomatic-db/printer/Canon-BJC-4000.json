@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJC-4000",
+        "make": "Canon",
+        "model": "BJC-4000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bjc600",
+        "comments": {
+            "en": "Use gs option -sProcessColorModel=DeviceGray for bw.\n<br>Needs a little utility to load, but there seems to be a funky button combination that works, too.<p>\n\n      Consumables/Refills: cartridge with head, or two ink tanks<p>"
+        }
+    }
+}

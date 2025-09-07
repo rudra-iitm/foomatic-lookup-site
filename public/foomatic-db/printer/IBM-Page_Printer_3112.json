@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/IBM-Page_Printer_3112",
+        "make": "IBM",
+        "model": "Page Printer 3112",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PCL 5 Emulation, PostScript Le",
+                "description": "IBM 3112 Page Printer",
+                "manufacturer": "Lexmark International",
+                "model": "IBM 3112 Page Printer"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Built by Lexmark, similar to \nOptra R/R+. PPD driver lexoptra.ppd \navailable at Lexmark's web site in \nthe file PS_PPD.TAR, includes \nsupport for about all printer \nspecialties. Printcap filters only\navailable for generic 600 dpi PS \nprinter, as far as I know.\nSupports also HP PCL 5, emulates \nLaserjet 4.<p>\n\n      Consumables/Refills: toner & drum in one, 7000 and 14000 pages, 14000 costs 200DM<p>"
+        }
+    }
+}

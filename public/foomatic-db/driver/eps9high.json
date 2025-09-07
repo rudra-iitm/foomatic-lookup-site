@@ -1,0 +1,31 @@
+{
+    "driver": {
+        "@id": "driver/eps9high",
+        "name": "eps9high",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=eps9high%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-Dot_Matrix"
+                },
+                {
+                    "id": "printer/Generic-ESC_P_Dot_Matrix_Printer"
+                },
+                {
+                    "id": "printer/Panasonic-KX-P1150"
+                },
+                {
+                    "id": "printer/Star-NX-1001"
+                }
+            ]
+        }
+    }
+}

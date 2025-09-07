@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Sharp-AR-161",
+        "make": "Sharp",
+        "model": "AR-161",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.sharpelectronics.com/products/business/spec_161.html",
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "PCL",
+                "manufacturer": "SHARP",
+                "model": "AR-160/200 series"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Digital copier; printer functionality is option AR-PB8.\n<br>Postscript option available.\n<br>Network option avaialble (NC3D).\n<br>Fax option available.\n<br>16 ppm; 8MB std(?), but takes regular DIMMs to 136MB.<br><p>\n\n      Consumables/Refills: toner?<p>"
+        }
+    }
+}

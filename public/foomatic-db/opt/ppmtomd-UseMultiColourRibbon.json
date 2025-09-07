@@ -1,0 +1,29 @@
+{
+    "option": {
+        "@type": "bool",
+        "@id": "opt/ppmtomd-UseMultiColourRibbon",
+        "arg_shortname": {
+            "en": "UseMultiColourRibbon"
+        },
+        "arg_longname": {
+            "en": "Use multi-color ribbon"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "260",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-usemulticolourribbon"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "0"
+            }
+        },
+        "arg_shortname_false": {
+            "en": "UseStandardRibbons"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Alps-MD-5500",
+        "make": "Alps",
+        "model": "MD-5500",
+        "mechanism": {
+            "transfer": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "2400"
+                }
+            }
+        },
+        "url": "http://www.alpsusa.com/Product/MDP/index.htm",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "ppmtomd",
+        "contrib_url": "http://www.openprinting.org/clippings/MD5000-translation.txt",
+        "comments": {
+            "en": "J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files (\"ppmtomd\"). He started\n    hacking ghostscript, but abandoned it.<p>\n\n    Some features of this printer are not supported.<p>\n\n      Consumables/Refills: several types of ribbon cartridges, black, cyan, magenta, yellow<p>"
+        }
+    }
+}

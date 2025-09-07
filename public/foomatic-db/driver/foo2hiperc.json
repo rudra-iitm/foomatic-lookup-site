@@ -1,0 +1,69 @@
+{
+    "driver": {
+        "@id": "driver/foo2hiperc",
+        "name": "foo2hiperc",
+        "url": "http://foo2hiperc.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This is a driver developed for the Oki Data Color Laser Printers\n      C301dn, C310dn, C3200, C3300, C3400, C5100, C5200, C56xx and C5800.\n\n      <p>\n\n      PPD files (and the Foomatic XML files to generate them) come\n      with the driver, therefore we do not supply PPDs here on the\n      OpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Oki-C301dn"
+                },
+                {
+                    "id": "printer/Oki-C310dn"
+                },
+                {
+                    "id": "printer/Oki-C511dn"
+                },
+                {
+                    "id": "printer/Oki-C3100"
+                },
+                {
+                    "id": "printer/Oki-C3200"
+                },
+                {
+                    "id": "printer/Oki-C3300"
+                },
+                {
+                    "id": "printer/Oki-C3400"
+                },
+                {
+                    "id": "printer/Oki-C3530_MFP"
+                },
+                {
+                    "id": "printer/Oki-C5100"
+                },
+                {
+                    "id": "printer/Oki-C5150"
+                },
+                {
+                    "id": "printer/Oki-C5200"
+                },
+                {
+                    "id": "printer/Oki-C5500"
+                },
+                {
+                    "id": "printer/Oki-C5600"
+                },
+                {
+                    "id": "printer/Oki-C5650"
+                },
+                {
+                    "id": "printer/Oki-C5800"
+                },
+                {
+                    "id": "printer/Olivetti-d-Color_P160W"
+                },
+                {
+                    "id": "printer/Generic-GDI_Printer"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Star-WinType_4000",
+        "make": "Star",
+        "model": "WinType 4000",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "WinPrinter - Uses GDI interface, supports PCL and DOS in software mode only<p>\n\n      Consumables/Refills: Cartridge<p>"
+        }
+    }
+}

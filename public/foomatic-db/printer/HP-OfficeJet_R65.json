@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_R65",
+        "make": "HP",
+        "model": "OfficeJet R65",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML,SCL",
+                "description": "Hewlett-Packard OfficeJet R65",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "OFFICEJET R65"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multifunction device: printer/scanner/copier. The integrated\n    flatbed scanner has an automatic document feeder.<p>\n\n\n    Prints also reasonably well with various \"cdj...\",\n    \"gimp-print\"/\"stp\", or\n    \"pcl3\"/\"hpdj\" drivers.<p>\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    Copying works fine from the front panel.<p><p>\n\n      Consumables/Refills: HP51645A $25-35, HP C1823D $35-40<p>"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "driver": {
+        "@id": "driver/pnm2ppa",
+        "name": "pnm2ppa",
+        "url": "http://sourceforge.net/projects/pnm2ppa/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null,
+            "prototype": "gs -q -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -dPARANOIDSAFER -dBATCH -r600%A%Z -sOutputFile=- - | pnm2ppa%C%B -i - -o -",
+            "ppdentry": "*DefaultResolution: 600dpi"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n    Color driver for PPA DeskJets. It can run PPA printers at 600dpi\n    in color or mono. In the version 1.0.4 many bugs are fixed. All\n    paper sizes known to Ghostscript up to 11x17 (DeskJet 1000C) are\n    supported.<p>\n\n    There is an <a href=\"/macosx/pnm2ppa/\">installer\n    package</a> to use this driver under Mac OS X.<p>\n\n    IMPORTANT: This is a driver for \"host-based\" printing: its output\n    should usually be streamed directly to a local printer port on the\n    same host that runs the driver.  The output may be large: writing\n    it to disk (as PDQ does) is also not recommended.  (PDQ users\n    should not use the PDQ-matic-generated driver because of this. A\n    correct PDQ driver is supplied with pnm2ppa).<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/HP-DeskJet_1000C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_710C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_712C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_720C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_722C"
+                },
+                {
+                    "id": "printer/HP-DeskJet_820C"
+                }
+            ]
+        }
+    }
+}

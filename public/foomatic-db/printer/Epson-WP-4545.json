@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Epson-WP-4545",
+        "make": "Epson",
+        "model": "WP-4545",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;WP-4545 Series;CLS:PRINTER;DES:EPSON WP-4545 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON WP-4545 Series",
+                "manufacturer": "EPSON",
+                "model": "WP-4545 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201113w",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "epson-201113w"
+                },
+                {
+                    "id": "epson-escpr"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

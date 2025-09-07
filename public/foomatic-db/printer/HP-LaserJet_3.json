@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_3",
+        "make": "HP",
+        "model": "LaserJet 3",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/ljiii.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet3",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Make sure you have at least 2MB RAM, otherwise it won't be\n    able to print complex pages.<p>\n\n    Widely available this workhorse just keeps going and going. It\n    also uses about the cheapest toner available. Remanufactured toner\n    is about $25, and Xerox sells new units for about $50. Cheaper to\n    run than ANY inkjet. Keep your eyes open for used HP LJIII or\n    IIID's they are a good buy.<p>\n\n    Warning !!!<p>\n\n    If you have only 1MB of printer RAM: This printer supports 300dpi\n    only under text mode.  If you try to print graphic pages with this\n    resolution, only 3/4 of the page will get printed and you'll\n    get MEM OVERFLOW.  For a full page in graphics mode, you have to\n    set the resolution to 150x150dpi...<p>\n\n      Consumables/Refills: Toner, ~$50<p>"
+        }
+    }
+}

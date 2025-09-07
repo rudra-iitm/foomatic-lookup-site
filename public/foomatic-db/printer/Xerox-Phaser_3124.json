@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_3124",
+        "make": "Xerox",
+        "model": "Phaser 3124",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "gdi",
+        "comments": {
+            "en": "Throughput = 25\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "printer": {
+        "@id": "printer/Infotec-MP_9001",
+        "make": "Infotec",
+        "model": "MP 9001",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": null,
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:infotec;MDL:MP 9001;CMD:POSTSCRIPT,PCLXL,PDF;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-Infotec",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Infotec",
+                    "ppd": "PPD/Infotec/PS/Infotec-MP_9001_PS.ppd"
+                },
+                {
+                    "id": "pxlmono-Infotec",
+                    "ppd": "PPD/Infotec/PXL/Infotec-MP_9001_PXL.ppd"
+                },
+                {
+                    "id": "PDF-Infotec",
+                    "ppd": "PPD/Infotec/PDF/Infotec-MP_9001_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Optional Adobe Postscript 3. <p>\n\nUse Postscript driver for best result <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Does_my_printer_support_Postscript_.2F_PCL_XL_.2F_PCL5_.3F\"> if your printer supports Postscript. </a> <p>\n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 90."
+        }
+    }
+}

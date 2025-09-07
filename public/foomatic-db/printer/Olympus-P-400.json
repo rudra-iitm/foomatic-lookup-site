@@ -1,0 +1,24 @@
+{
+    "printer": {
+        "@id": "printer/Olympus-P-400",
+        "make": "Olympus",
+        "model": "P-400",
+        "mechanism": {
+            "sublimation": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "314",
+                    "y": "314"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "comments": {
+            "en": "Dye-sublimation photo printer in A4 size (8x12in/21x30cm). 314\n    dpi, full 24-bit color depth (256 levels per CMY color component),\n    full-bleed (border-less). Produces laboratory-like photos. Does\n    not print on normal paper, so it is not suitable for documents, it\n    is only for photos. Parallel port and USB 1.1 connection.<p>\n\n    Direct printing from Olympus cameras or from flash cards (of any\n    DPOF-capable camera) possible. Photos on the cards can be shown\n    and selected on an 1.8inch LCD monochrome display or on a TV\n    set.<p><p>\n\n      Consumables/Refills: Packs with special paper and three-color ribbon<p>"
+        }
+    }
+}

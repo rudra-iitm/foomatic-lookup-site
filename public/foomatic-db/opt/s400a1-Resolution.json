@@ -1,0 +1,50 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/s400a1-Resolution",
+        "arg_shortname": {
+            "en": "Resolution"
+        },
+        "arg_longname": {
+            "en": "Resolution"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "B",
+            "arg_substitution": null,
+            "arg_proto": "@s400%s.upp"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "s400X1.upp",
+                "arg_defval": "ev/s400a1-360"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/s400a1-360",
+                    "ev_longname": {
+                        "en": "360x360 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "360dpi"
+                    },
+                    "ev_driverval": "a1"
+                },
+                {
+                    "@id": "ev/s400a1-720",
+                    "ev_longname": {
+                        "en": "720x720 DPI"
+                    },
+                    "ev_shortname": {
+                        "en": "720dpi"
+                    },
+                    "ev_driverval": "b1"
+                }
+            ]
+        }
+    }
+}

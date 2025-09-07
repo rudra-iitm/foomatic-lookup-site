@@ -1,0 +1,19 @@
+{
+    "printer": {
+        "@id": "printer/Alps-MD-4000",
+        "make": "Alps",
+        "model": "MD-4000",
+        "mechanism": {
+            "sublimation": null,
+            "color": null
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "ppmtomd",
+        "comments": {
+            "en": "This is a multi-function device with scanner, scanning is not\n    supported but printing works perfectly.<p>\n\n    J.C. Bradfield (jcb@dcs.ed.ac.uk) has written a fully functional\n    driver which converts PPM files. He started hacking ghostscript, but\n    abandoned it.<p>\n\n    Also listed as supported at 300/600/1200x600 dpi in the\n    \"md2k\" driver documentation.<p>"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-DocuPrint_XJ6C",
+        "make": "Xerox",
+        "model": "DocuPrint XJ6C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.xerox.com/go/xrx/products/overview.jsp?id=XJ6C&cat=%2fEquipment%2fPrinting%2fColor&trk=/Printing/Color/XJ6C/overview/",
+        "lang": {
+            "pcl": {
+                "@level": "3c"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "D",
+        "driver": "cdj550",
+        "comments": {
+            "en": "Preseumably works reasonably at 300dpi.<p>\n\n      Consumables/Refills: Separate Carts for each color ~$10US<p>"
+        }
+    }
+}

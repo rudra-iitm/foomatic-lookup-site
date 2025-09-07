@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_850",
+        "make": "Epson",
+        "model": "Stylus Color 850",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc850_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "used stc800ih.upp for making some color overheads, including\nsome molecular model pictures.\n<br>4 color CMYK printing with 64 jets per color.\nAll the stc800 upp files will work with this printer at a very \ngood speed.\n<br>\nThe uniprint .upp files need some color tuning! If red comes \nout as brown, you may need to swap the Cyan and Magenta lines \nin the stc800p.upp file, for example, and even then the colors \nwill be sort fo dark. Ghostscript's dithering is also \nnot very good.\n<br>\nThe good news is the Gimp-derived ghostscript driver \"stp\" is really\ngood, so use it; it works perfectly with stp.<p>\n\n      Consumables/Refills: seperate black and color ink cartridges<p>"
+        }
+    }
+}

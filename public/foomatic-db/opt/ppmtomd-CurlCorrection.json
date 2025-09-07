@@ -1,0 +1,60 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-CurlCorrection",
+        "arg_shortname": {
+            "en": "CurlCorrection"
+        },
+        "arg_longname": {
+            "en": "Curl Correction"
+        },
+        "arg_execution": {
+            "arg_group": "Finishing",
+            "arg_order": "160",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "ppmtomd",
+                "arg_defval": "ev/ppmtomd-CurlCorrection-Default"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-CurlCorrection-Always",
+                    "ev_longname": {
+                        "en": "Always"
+                    },
+                    "ev_shortname": {
+                        "en": "Always"
+                    },
+                    "ev_driverval": "-forcecurlcorrection"
+                },
+                {
+                    "@id": "ev/ppmtomd-CurlCorrection-Default",
+                    "ev_longname": {
+                        "en": "Default"
+                    },
+                    "ev_shortname": {
+                        "en": "Default"
+                    },
+                    "ev_driverval": null
+                },
+                {
+                    "@id": "ev/ppmtomd-CurlCorrection-Never",
+                    "ev_longname": {
+                        "en": "Never"
+                    },
+                    "ev_shortname": {
+                        "en": "Never"
+                    },
+                    "ev_driverval": "-nocurlcorrection"
+                }
+            ]
+        }
+    }
+}

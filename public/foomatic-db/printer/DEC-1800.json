@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/DEC-1800",
+        "make": "DEC",
+        "model": "1800",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "ljet3",
+        "comments": {
+            "en": "appears to be same as Acer 506G11 also Citizen ProLaser 600, Minolta SP-6,\nEpson 5200, only partial function - ok for text/ASCII, some graphics, but HP\nPJL not supported. still resolving - watch this space.\n\nIs a 3rd party product which is OEM badged, even by Epson ! (who don't make it)<p>\n\n      Consumables/Refills: UKP110+ (sterling) - v.high cost<p>"
+        }
+    }
+}

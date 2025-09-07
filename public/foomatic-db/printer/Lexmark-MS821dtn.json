@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-MS821dtn",
+        "make": "Lexmark",
+        "model": "MS821dtn",
+        "mechanism": null,
+        "lang": {
+            "pjl": null
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Lexmark ;MDL:Lexmark MS821dtn;",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark MS821dtn"
+            }
+        },
+        "functionality": "A",
+        "driver": "PCL6",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "PCL6"
+                },
+                {
+                    "id": "Postscript-Lexmark",
+                    "ppd": "PPD/Lexmark/Lexmark_MS820_Series.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 55 pages/min<p>"
+        }
+    }
+}

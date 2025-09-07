@@ -1,0 +1,46 @@
+{
+    "driver": {
+        "@id": "driver/lxm3200",
+        "name": "lxm3200",
+        "url": "http://lxm3200.sourceforge.net/",
+        "obsolete": {
+            "@replace": "lxm3200-tweaked"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=lxm3200%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<b>New Maintainer Wanted!</b> Daniel Gordini, the\n    current maintainer of this driver, cannot maintain it any more for\n    personal reasons. After not being able to do anything on it in the\n    last nine months he told me that the best is that someone else\n    overtakes the project. He also cannot maintain the driver inside\n    Gimp-Print any more and due to the fast development of Gimp-Print\n    this driver stopped working.<p>\n\n    So I ask all people with a Lexmark 3200 and programming skills for\n    thinking about overtaking this project, especially as Gimp-Print\n    driver. Because the protocols of the Z22, Z31, and Z32 are similar\n    you do not work on a dead driver, expand it to work correctly also\n    on these models (it already works partially). The Z52 (completely\n    different protocol) advanced from \"Paperweight\" to\n    \"Perfectly\" by a Gimp-Print driver having been written\n    for it.<p>\n\n    Please contact Daniel Gordini (dgordin at tin dot it) and the\n    Gimp-Print team (gimp-print-devel at sourceforge dot net) if you\n    want to volunteer.<p>\n\n    If you want to print on a Lexmark 3200 <b>do not</b>\n    use Gimp-Print, the driver inside there does not work.<p>\n\n    This is version 0.4.1 of Daniel Gordini's driver for the Lexmark\n    3200. It replaces the old version 0.3 (driver entries <a\n    href=\"show_driver.cgi?driver=lxm3200m\">lxm3200m</a>,\n    <a\n    href=\"show_driver.cgi?driver=lxm3200c\">lxm3200c</a>, and\n    <a\n    href=\"show_driver.cgi?driver=lxm3200p\">lxm3200p</a>). It\n    is nearly completely rewritten and supports now all resolutions\n    (up to the 1200 dpi which the printer is able to do by its\n    hardware), all colour modes (as before), bidirectional printing,\n    multipass printing, and head alignment.<p>\n\n    This is now the first stable release of the driver, the versions\n    0.3 and 0.4 are not supported any more by the author.<p>\n\n    Notes:<p>\n\n    The 1200 dpi will come out somewhat dark, correct this by the\n    gamma correction of CUPS, or use the 600dpi resolution (native\n    resolution of the printer).<p>\n\n    The Z22, Z31, Z32 have protocols similar to the Lexmark 3200 and\n    work partially with this driver. Note that you have to turn off\n    and on the Z22/Z32 after the job has finished. For black text\n    printing this driver is usable on the Z22/Z32. But note that these\n    printers are not officially supported by this driver. Use\n    Lexmark's drivers for the Z22/Z32.<p>\n\n    On the Z31 printouts will be not well centered. Use the\n    \"lxm3200-tweaked\" driver for this printer.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Compaq-IJ750"
+                },
+                {
+                    "id": "printer/Lexmark-3200"
+                },
+                {
+                    "id": "printer/Lexmark-Z22",
+                    "comments": {
+                        "en": "You have to turn off and on the printer after the job has\n\t  finished. For black text printing this driver is usable on the\n\t  Z22/Z32."
+                    }
+                },
+                {
+                    "id": "printer/Lexmark-Z31"
+                },
+                {
+                    "id": "printer/Lexmark-Z32",
+                    "comments": {
+                        "en": "You have to turn off and on the printer after the job has\n\t  finished. For black text printing this driver is usable on the\n\t  Z22/Z32."
+                    }
+                },
+                {
+                    "id": "printer/Xerox-WorkCentre_XK35c"
+                }
+            ]
+        }
+    }
+}

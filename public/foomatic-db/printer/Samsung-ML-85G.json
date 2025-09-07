@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-85G",
+        "make": "Samsung",
+        "model": "ML-85G",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://samsungelectronics.com/support/downloads/files/Emul85g_plus.pdf",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "ml85p",
+        "comments": {
+            "en": "A host-based printer, with a proprietary protocol.  Apparently based on Microsoft asics?\n<br>Rildo Pragana has written a driver that drives this pretty well.\n<br>This printer apparently has a bidirectional protocol!"
+        }
+    }
+}

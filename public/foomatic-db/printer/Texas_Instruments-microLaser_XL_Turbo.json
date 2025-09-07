@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Texas_Instruments-microLaser_XL_Turbo",
+        "make": "Texas Instruments",
+        "model": "microLaser XL Turbo",
+        "url": "ftp://ftp.tallygenicom.com/pub/genicom/docs/ti/dsTI-mLXL.pdf",
+        "lang": {
+            "postscript": {
+                "@level": "2"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "drivers": {
+            "driver": {
+                "id": "Postscript"
+            }
+        },
+        "comments": {
+            "en": "Foomatic entry made by PPDtoXML T/G 0.20 on 2009-03-17"
+        }
+    }
+}

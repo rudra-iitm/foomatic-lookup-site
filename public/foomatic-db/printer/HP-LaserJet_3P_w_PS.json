@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_3P_w_PS",
+        "make": "HP",
+        "model": "LaserJet 3P w/PS",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "postscript": {
+                "@level": "1"
+            },
+            "pcl": null
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    This printer only works \"Perfectly\" in the PCL mode\n    (ljet3/ljet3d Ghostscript drivers).<p>\n\n    Same as a IIIP, just with a postscript cartridge.<p>\n\n    Under Red Hat \"install a printer\" and select\n    \"PostScript\" as the printer.<p>\n\n    lpr installs and uses the Gnu Magicfilter by default.<p>\n\n    High quality print.<p>\n\n    Some pdf documents do not translate to a PostScript file that this\n    printer can print, even if Level 1 is explicitly selected on the\n    xpdf command line.  Same result with Adobe Acroreader.  May be\n    related to the age of the PS cartridge (1991).<p>\n\n    The old PS cartdrige cannot handle the output of some recent\n    applications.<p>\n\n    Using the ljet3 and ljet3d Ghostscript drivers can speed up\n    printing because your PC can do the converting from PS to ljet\n    much faster than the PS Cartridge<p>\n\n    In PS mode, input trays can be selected by the following PS\n    command: 'statusdict /setpapertray known {statusdict begin 0\n    setpapertray end} if {} pop' where '0' is the first\n    tray, '1' the second.<p>\n\n      Consumables/Refills: Toner cartridge $80<p>"
+        }
+    }
+}

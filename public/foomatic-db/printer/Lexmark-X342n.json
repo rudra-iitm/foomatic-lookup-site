@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-X342n",
+        "make": "Lexmark",
+        "model": "X342n",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "pxlmono",
+        "comments": {
+            "en": "Throughput = 27\n\n      Foomatic entry made by PPDtoXML T/G 0.05"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_990C",
+        "make": "HP",
+        "model": "DeskJet 990C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.hp.com/itrc_pdi/products/dj990cxi_overview.html",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 990C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 990C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This printer is equipped with a duplex unit, which is not\n    supported by Gimp-Print, but by HP's HPLIP,\n    \"cdj970\" or \"pcl3\".<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Best output quality reachable with the HPLIP\n    driver, especially the 1200-dpi high resolution mode gives\n    excellent photo quality.<p>\n    \n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and does appropriate dithering and\n    colour adjustment internally, controlled by the hardware. So even\n    when Ghostscript with the HPLIP driver only renders\n    the image with 300 or 600 dpi, the 2400x1200 dpi are used for the\n    internal dithering. So if you insert photo paper, the printer will\n    print in its highest quality, no paper type choice in the\n    driver's options is needed. There is also a special high\n    resolution mode where the image is rendered in 1200 dpi, without\n    paper detection, intended for photo paper only.<p><p>\n\n      Consumables/Refills: Color(CMY), Black<p>"
+        }
+    }
+}

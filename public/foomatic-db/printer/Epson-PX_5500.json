@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Epson-PX_5500",
+        "make": "Epson",
+        "model": "PX 5500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Japanese equivalent of R2400.<p>\n\n    8-color (CcMmYKkk) A3/tabloid prosumer printer using \"UltraChrome\n    K3\" inkset.  Successor to the 2100/2200.  Light light black\n    produces very smooth grayscale prints.  Interchangeable matte\n    black and photo black inksets; matte black ink must not be used on\n    glossy paper.  Maximum resolution is 2880x2880 (Epson claims\n    5760x1440; Gutenprint uses 2880x2880).  Minimum drop size is 3.5\n    pl.  Support level is somewhere between partial and mostly\n    (additional tuning may be required).<p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

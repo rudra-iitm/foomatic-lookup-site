@@ -1,0 +1,37 @@
+{
+    "printer": {
+        "@id": "printer/Epson-XP-312_313_315_Series",
+        "make": "Epson",
+        "model": "XP-312 313 315 Series",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:XP-312 313 315 Series;CLS:PRINTER;DES:EPSON XP-312 313 315 Series",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "description": "EPSON XP-312 313 315 Series",
+                "manufacturer": "EPSON",
+                "model": "XP-312 313 315 Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-201301w",
+        "drivers": {
+            "driver": {
+                "id": "epson-201301w"
+            }
+        },
+        "comments": {
+            "en": "Epson color inkjet printer.<p>\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

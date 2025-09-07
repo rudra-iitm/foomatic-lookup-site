@@ -1,0 +1,26 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Scan_2000",
+        "make": "Epson",
+        "model": "Stylus Scan 2000",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/allinone/ss2k__/documentation.html",
+        "lang": {
+            "escp": null
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Printing works with Gimp-Print 4.1.99b3 or newer, for scanning see\n    the entry for the <a\n    href=\"show_printer.cgi?recnum=Epson-Stylus_Scan_2500\">Epson Stylus\n    Scan 2500</a>."
+        }
+    }
+}

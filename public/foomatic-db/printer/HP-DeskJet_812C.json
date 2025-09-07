@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_812C",
+        "make": "HP",
+        "model": "DeskJet 812C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 810C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 810C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n\n    User report:<p>\n\n    Colour resolution under Linux is 600x600 dpi. HP claims the\n    Windows driver they ship with the printer enhances this using\n    <a\n    href=\"http://www.hp.com/all-in-one/products/1170-faqs.html#faq7\">\"PhotoRet\n    II\"</a> technology. The driver basically changes the\n    amount of colors per dot by reducing the size of the\n    inkdrops. Supposedly the inkdrops are 70% smaller per dot than\n    those produced by the average DeskJet.  After checking their site,\n    I found no driver to enable this same technology under any\n    UNICES. Still, this should be a nice printer overall under Linux,\n    so unleash that GIMP! This printer appears to be functionally\n    identical to the DeskJet 810C. I am currently using the 300dpi\n    DeskJet 550C colour Ghostscript setup as shipped with Red Hat\n    Linux 6.0, and the output is excellent in every respect. I have\n    marked the suggested driver as cdj880 as I am 99.9% certain it\n    will work and this driver should give the best output.\n    <p>\n\n    Good output should also be possible from the\n    \"pcl3\"/\"hpdj\" drivers.<p>\n\n    I believe that various papers like transparency, glossy, etc, are\n    supported by one or the other \"cdjXXX\" driver.<p>\n\n      Consumables/Refills: C1823 (CMY) and C6615A (K)<p>"
+        }
+    }
+}

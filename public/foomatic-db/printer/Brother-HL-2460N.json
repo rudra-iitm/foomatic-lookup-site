@@ -1,0 +1,34 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2460N",
+        "make": "Brother",
+        "model": "HL-2460N",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.brother.com/usa/printer/info/hl2460n/hl2460n_ove.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Fast 25 ppm. 10/100 MBit ethernet connection, 16 MB, expandable to\n    272MB (100-pin SIMM).<p>\n\n    Best results are probably obtained when the printer is used in\n    PostScript mode with a PPD file from the printer's driver\n    CD.<p>\n\n    You can also get an <a\n    href=\"http://solutions.brother.com/Library/sol/printer/7050/rpmfiles/brhl24_2-1.0.0-0-noarch.rpm\">RPM\n    with the PPD file</a> from <a\n    href=\"http://solutions.brother.com/linux/\">Brother</a>.<p><p>\n\n      Consumables/Refills: Separate Toner and Drum<p>"
+        }
+    }
+}

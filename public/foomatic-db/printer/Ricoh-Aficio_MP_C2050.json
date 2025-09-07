@@ -1,0 +1,56 @@
+{
+    "printer": {
+        "@id": "printer/Ricoh-Aficio_MP_C2050",
+        "make": "Ricoh",
+        "model": "Aficio MP C2050",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://www.ricoh.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:RICOH;MDL:Aficio MP C2050;CMD:POSTSCRIPT,PCLXL,PDF;"
+            }
+        },
+        "functionality": "A",
+        "driver": "PDF-Ricoh",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "Postscript-Ricoh",
+                    "ppd": "PPD/Ricoh/PS/Ricoh-Aficio_MP_C2050_PS.ppd"
+                },
+                {
+                    "id": "pxlcolor-Ricoh",
+                    "ppd": "PPD/Ricoh/PXL/Ricoh-Aficio_MP_C2050_PXL.ppd"
+                },
+                {
+                    "id": "PDF-Ricoh",
+                    "ppd": "PPD/Ricoh/PDF/Ricoh-Aficio_MP_C2050_PDF.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Optional Adobe Postscript 3. <p>\n\nUse Postscript driver for best result <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Does_my_printer_support_Postscript_.2F_PCL_XL_.2F_PCL5_.3F\"> if your printer supports Postscript. </a> <p>\n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#Ricoh_FAQ\"> FAQ section </a> for questions regarding user code, printing lots of blank pages, error code SC738, printing protocol, multiple copies, duplex on Mac, etc. <p>\n\nDownload the PPD directly is easier and faster since it has no dependency requirement and the file size is much smaller. \n\nVisit <a href=\"http://www.freestandards.org/en/OpenPrinting/Database/RicohFAQ#How_do_I_install_a_PPD_file.3F\"> FAQ section </a> for installing a PPD file. \n\nDownload the driver package if you want to install all drivers (100+). <p>\n\nThroughput 20."
+        }
+    }
+}

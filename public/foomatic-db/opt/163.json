@@ -1,0 +1,107 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/163",
+        "arg_shortname": {
+            "en": "PageSize"
+        },
+        "arg_longname": {
+            "en": "Label Size"
+        },
+        "arg_execution": {
+            "arg_group": "General",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-g%s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Avery-Personal_Label_Printer",
+                    "arg_defval": "ev/913"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-ASCII_250",
+                    "arg_defval": "ev/913"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-EL40",
+                    "arg_defval": "ev/913"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-LabelWriter_II",
+                    "arg_defval": "ev/913"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "pbm2lwxl",
+                    "printer": "printer/Dymo_CoStar-LabelWriter_XL",
+                    "arg_defval": "ev/913"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/913",
+                    "ev_longname": {
+                        "en": "1.125x3.5in, 28x89mm (Standard address)"
+                    },
+                    "ev_shortname": {
+                        "en": "StandardAddr"
+                    },
+                    "ev_driverval": "128x448"
+                },
+                {
+                    "@id": "ev/914",
+                    "ev_longname": {
+                        "en": "1.4x3.5in, 36x89mm (Large address)"
+                    },
+                    "ev_shortname": {
+                        "en": "LargeAddr"
+                    },
+                    "ev_driverval": "179x448"
+                },
+                {
+                    "@id": "ev/918",
+                    "ev_longname": {
+                        "en": "1.4x7.5in, 38x190mm (Lever archive - small)"
+                    },
+                    "ev_shortname": {
+                        "en": "ArchSmall"
+                    },
+                    "ev_driverval": "179x960"
+                },
+                {
+                    "@id": "ev/919",
+                    "ev_longname": {
+                        "en": "0.5x2in, 12x50mm (Suspension file)"
+                    },
+                    "ev_shortname": {
+                        "en": "SuspensionFile"
+                    },
+                    "ev_driverval": "64x256"
+                },
+                {
+                    "@id": "ev/920",
+                    "ev_longname": {
+                        "en": "0.75x5.875in, 19x147mm (Video tape spine)"
+                    },
+                    "ev_shortname": {
+                        "en": "VideoSpine"
+                    },
+                    "ev_driverval": "96x752"
+                }
+            ]
+        }
+    }
+}

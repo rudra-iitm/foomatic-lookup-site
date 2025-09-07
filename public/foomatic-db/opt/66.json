@@ -1,0 +1,80 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/66",
+        "arg_shortname": {
+            "en": "pnmFormat"
+        },
+        "arg_longname": {
+            "en": "Ghostscript Rendering Format"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "100",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-sDEVICE=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "pnm2ppa",
+                "arg_defval": "ev/578"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/577",
+                    "ev_longname": {
+                        "en": "256-shade greyscale format"
+                    },
+                    "ev_shortname": {
+                        "en": "GreyMap"
+                    },
+                    "ev_driverval": "pgmraw"
+                },
+                {
+                    "@id": "ev/578",
+                    "ev_longname": {
+                        "en": "Format for color images (includes monochrome)."
+                    },
+                    "ev_shortname": {
+                        "en": "PixMap"
+                    },
+                    "ev_driverval": "ppmraw"
+                },
+                {
+                    "@id": "ev/579",
+                    "ev_longname": {
+                        "en": "A fast monochrome format; best for B&W text and li"
+                    },
+                    "ev_shortname": {
+                        "en": "BitMap"
+                    },
+                    "ev_driverval": "pbmraw"
+                },
+                {
+                    "@id": "ev/580",
+                    "ev_longname": {
+                        "en": "Attempts to choose best PNM format for document; n"
+                    },
+                    "ev_shortname": {
+                        "en": "AnyMap"
+                    },
+                    "ev_driverval": "pnmraw"
+                },
+                {
+                    "@id": "ev/598",
+                    "ev_longname": {
+                        "en": "Attempts to choose best monochrome PNM format for"
+                    },
+                    "ev_shortname": {
+                        "en": "AnyNonColorMap"
+                    },
+                    "ev_driverval": "pgnmraw"
+                }
+            ]
+        }
+    }
+}

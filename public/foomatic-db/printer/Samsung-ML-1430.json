@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-ML-1430",
+        "make": "Samsung",
+        "model": "ML-1430",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "general": {
+                "commandset": "GDI",
+                "manufacturer": "Samsung",
+                "model": "ML-1430"
+            }
+        },
+        "functionality": "A",
+        "driver": "gdi",
+        "comments": {
+            "en": "One of Samsung's line of host-based lasers.  They generally work\n    well and cost little.\n\n    Samsung sort of supports Linux use, with installable Linux/x86\n    cups drivers often in the box, a penguin often on the box, etc.\n\n    <p>\n\n    Note that there is a minor USB timing issue.  Specifically, when\n    you turn on the printer, it whirs (I guess booting and heating up)\n    for some 15-45 seconds.  For the first 15, the device is present\n    and detectable on the USB bus, but will not completely initialize\n    in the kernel because it won't accept an address.\n\n    The USB hub code tries exactly twice - once with a fast timeout\n    and once for slow devices with a slightly longer timeout.  There\n    is a patch in the archives if this is still a problem.<p>\n\n      Consumables/Refills: Toner and drum in one unit<p>"
+        }
+    }
+}

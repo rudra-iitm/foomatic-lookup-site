@@ -1,0 +1,48 @@
+{
+    "driver": {
+        "@id": "driver/foo2zjs",
+        "name": "foo2zjs",
+        "url": "http://foo2zjs.rkkda.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n\tThis is a driver originally developed for the Minolta\n\tmagicolor 2300 DL network color laser printer which uses\n\tthe Zenographics protocol.\n\n\t<p>\n\n\tThis driver will also work for the HP LaserJet 1000, 1005,\n\t1018, 1020, 1022, P1102, P1566, P1606dn, P2035, and other\n\tZenographics-based printers.\n\n\t<p>\n\n\tNote that these HP LaserJet models need their firmware loaded\n\tinto the printer everytime when the printer is turned\n\ton. Please follow the instructions comming with the driver.\n\n\t<p>\n\n\tTill Kamppeter has tested this driver on the LaserJet 1022 and\n        there the driver works very well. It is faster and more\n        reliable then the HPIJS driver for the PCL 5e mode of this\n        model.\n\n\t<p>\n\n\tPPD files (and the Foomatic XML files to generate them) come\n\twith the driver, therefore we do not supply PPDs here on the\n\tOpenPrinting site."
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Generic-GDI_Printer"
+                },
+                {
+                    "id": "printer/Generic-ZjStream_Printer"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1000"
+                },
+                {
+                    "id": "printer/HP-LaserJet_1005"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2300_DL"
+                },
+                {
+                    "id": "printer/KONICA_MINOLTA-magicolor_2430_DL"
+                },
+                {
+                    "id": "printer/Minolta-Color_PageWorks_Pro_L"
+                },
+                {
+                    "id": "printer/Minolta-magicolor_2200_DL"
+                },
+                {
+                    "id": "printer/Minolta-magicolor_2300_DL"
+                },
+                {
+                    "id": "printer/Minolta-magicolor_2430_DL"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_632C",
+        "make": "HP",
+        "model": "DeskJet 632C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "This printer is probably the same as the HP DeskJet 630C.<p>\n\n    This printer comes only with a 3-colour (CMY) cartridge. So if you\n    do not buy an additional black cartridge text printing gets slow\n    and expensive.<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n600 dpi in colour is not supported by the hardware.<p>\n\n    Other drivers as Gimp-Print\n    (\"gimp-print\"/\"stp\") or some of the\n    \"cdj...\" work, too.<p><p>\n\n      Consumables/Refills: HP C6614A (black),  HP 51649A (color), C1816A (photo)<p>"
+        }
+    }
+}

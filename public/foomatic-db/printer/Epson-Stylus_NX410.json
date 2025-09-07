@@ -1,0 +1,36 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_NX410",
+        "make": "Epson",
+        "model": "Stylus NX410",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "5760",
+                    "y": "1440"
+                }
+            }
+        },
+        "url": "http://www.epson.com/",
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:EPSON;CMD:ESCPL2,BDC,D4,D4PX,ESCPR2;MDL:Stylus NX410;CLS:PRINTER;DES:Epson Stylus NX410",
+                "commandset": "ESCPL2,BDC,D4,D4PX,ESCPR2",
+                "manufacturer": "EPSON",
+                "model": "Stylus NX410"
+            }
+        },
+        "functionality": "A",
+        "driver": "epson-escpr",
+        "drivers": {
+            "driver": {
+                "id": "epson-escpr"
+            }
+        },
+        "comments": {
+            "en": "All-in-One color inkjet printer.<p>\n      Epson provides a free (GPL) driver for this printer.<p>\n\n      Maximum paper width: 21.0 cm / 8.3 inches<p>"
+        }
+    }
+}

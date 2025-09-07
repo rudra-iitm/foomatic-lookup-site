@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Mitsubishi-CP50_Color_Printer",
+        "make": "Mitsubishi",
+        "model": "CP50 Color Printer",
+        "mechanism": {
+            "dotmatrix": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "154",
+                    "y": "187"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "cp50",
+        "comments": {
+            "en": "Special gs driver; should work fine."
+        }
+    }
+}

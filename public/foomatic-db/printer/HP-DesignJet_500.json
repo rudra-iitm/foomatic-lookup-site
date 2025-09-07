@@ -1,0 +1,40 @@
+{
+    "printer": {
+        "@id": "printer/HP-DesignJet_500",
+        "make": "HP",
+        "model": "DesignJet 500",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "5",
+                    "left": "5",
+                    "right": "5",
+                    "bottom": "12"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "proprietary": null,
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "cdnj500",
+        "comments": {
+            "en": "Large-format printer.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

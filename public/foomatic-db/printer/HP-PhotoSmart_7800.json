@@ -1,0 +1,43 @@
+{
+    "printer": {
+        "@id": "printer/HP-PhotoSmart_7800",
+        "make": "HP",
+        "model": "PhotoSmart 7800",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "4800",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "www.hp.com",
+        "lang": {
+            "pcl": {
+                "@level": "3e"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML,DW-PCL,DYN,DESKJET",
+                "description": "hp photosmart 7800",
+                "manufacturer": "hp",
+                "model": "photosmart 7800"
+            },
+            "usb": {
+                "ieee1284": "MFG:HP;MDL:Photosmart 7800 series;CMD:MLC,PCL,PML,DW-PCL,DESKJET,DYN;CLS:PRINTER;DES:7850;",
+                "commandset": "MLC,PCL,PML,DW-PCL,DESKJET,DYN",
+                "description": "7850",
+                "manufacturer": "HP",
+                "model": "Photosmart 7800"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "Duplex unit optional, connection via USB<p>\n\n    The best printout quality you will get with the HPLIP\n    driver, provided by <a\n    href=\"http://hplipopensource.com/\">HP</a>\n    (compatible to the HP DeskJet 990C), especially the 1200-dpi high\n    resolution mode gives excellent photo quality (the rendered bitmap\n    is 1200x1200 dpi, but the printer hardware does an interpolation\n    then and prints with the printer's highest resolution). Also\n    the Gimp-Print driver is reported to work (Model setting:\n    \"pcl-900\").<p>\n\n    To get all functionality of this printer working under Linux,\n    especially also the non-printing features, like scanning, printer\n    status, maintenance, and photo download from memory cards, use the\n    <a href=\"show_driver.cgi?driver=hplip\">HPLIP\n    driver package from HP</a>.<p>\n\n    When used with HP's HPLIP driver, this printer\n    auto-detects the paper type and ink cartridge type and does\n    appropriate dithering and colour adjustment internally, controlled\n    by the hardware. So when Ghostscript with the HPLIP\n    driver only renders the image with 300 or 600 dpi, higher\n    resolutions are used for the internal dithering. So if you insert\n    photo paper, the printer will print in photo quality, no paper\n    type choice in the driver's options is needed. There is also\n    a special high resolution mode where the image is rendered in 1200\n    dpi and interpolated to 4800x1200 dpi by the hardware, without\n    paper detection, intended for photo paper only.<p>\n\n    Current border-less (full bleed) support is 3-sided for paper sizes\n    Oufuku-Hagaki or smaller. The HPIJS team is currently evaluating\n    4-sided large paper size (A4/Letter) or smaller full bleed support\n    and expect to address this issue in a future release.\n\n    The duplex unit does not work with Gimp-Print, use\n    HPLIP, \"cdj970\" or \"pcl3\" instead.<p>\n\n      Consumables/Refills: One Color(CMY) + one Black(K) or Photo (cmK)<p>"
+        }
+    }
+}

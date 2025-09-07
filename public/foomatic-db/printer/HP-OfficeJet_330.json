@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-OfficeJet_330",
+        "make": "HP",
+        "model": "OfficeJet 330",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/oj330.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Hewlett-Packard;MDL:OfficeJet Series 300;CMD:MLC,PCL,PML;DESCRIPTION:Hewlett-Packard OfficeJet Series 300;CLASS:PRINTER;",
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard OfficeJet Series 300",
+                "manufacturer": "Hewlett-Packard",
+                "model": "OfficeJet Series 300"
+            }
+        },
+        "functionality": "B",
+        "driver": "hplip",
+        "comments": {
+            "en": "Multi-function device (printer/copier/scanner/fax).<p>\n\n    For basic printing functionality use the <a href=\"\n    http://hplipopensource.com/\">HPIJS driver </a>. \n    For advanced functionality such as printer status, maintenance \n    features, scanning and photo card unload use the <a href=\"\n    http://hplipopensource.com/\">HPLIP driver</a> (which includes \n    HPIJS). <p>\n\n    The printing engine of this device is the same as in the\n    monochrome DeskJet 520 printer, so printing will work with various\n    drivers.<p>\n\n    This printer has a 600x300-dpi-REt mode which is probably not accessable\n    with free software.<p><p>\n\n      Consumables/Refills: Black ink cartridge 51626A<p>"
+        }
+    }
+}

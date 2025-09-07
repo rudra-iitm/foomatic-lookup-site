@@ -1,0 +1,33 @@
+{
+    "printer": {
+        "@id": "printer/Lexmark-Winwriter_200",
+        "make": "Lexmark",
+        "model": "Winwriter 200",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "lpt1",
+                "manufacturer": "Lexmark",
+                "model": "Lexmark WinWriter 200"
+            }
+        },
+        "functionality": "F",
+        "comments": {
+            "en": "From the Lexmark support database:\n \nThe WinWriter 200 requires that Windows has been invoked. The PCL4 emulation is host-based and runs under Windows."
+        }
+    }
+}

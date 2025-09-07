@@ -1,0 +1,59 @@
+{
+    "printer": {
+        "@id": "printer/Xerox-Phaser_4400B",
+        "make": "Xerox",
+        "model": "Phaser 4400B",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Xerox;CMD:Adobe PostScript 3, PCL, PJL;MDL:Phaser 4400B;CLS:Printer;DES:Xerox Phaser 4400 Laser Printer, Page Printer, PostScript 3, Letter/A4 Size",
+                "commandset": "Adobe PostScript 3, PCL, PJL",
+                "description": "Xerox Phaser 4400 Laser Printer, Page Printer, PostScript 3, Letter/A4 Size",
+                "manufacturer": "Xerox",
+                "model": "Phaser 4400B"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript-Xerox",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Xerox",
+                    "ppd": "PPD/Xerox/xrx4400b.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Throughput = 26\n      \n      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25\n      \n      <p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 26 pages/min<p>"
+        }
+    }
+}

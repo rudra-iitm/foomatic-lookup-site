@@ -1,0 +1,42 @@
+{
+    "printer": {
+        "@id": "printer/Kyocera-FS-1016MFP",
+        "make": "Kyocera",
+        "model": "FS-1016MFP",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "relative": null,
+                    "top": "4",
+                    "left": "4",
+                    "right": "4",
+                    "bottom": "4"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "MFPXDMA",
+                "description": "Kyocera  FS-1016MFP Printer",
+                "manufacturer": "Kyocera",
+                "model": "FS-1016MFP Printer"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2kyo",
+        "comments": {
+            "en": "One of the few printers made by Kyocera which do not\n        understand PCL or PostScript.<p>\n\n        Thanks to Florian Demski for writing this printer driver for\n        this device.<p>\n\n\tFor now only printing is supported, but work on scanning\n\tsupport is in progress.<p>\n\n        Please everyone who has a Kyocera printer or MFP which does\n        not understand PCL or PostScript (or is too slow when using\n        these languages), test this driver and report the results,\n        preferably by a new printer entry.<p><p>\n\n      Consumables/Refills: Cartridge containing toner and imaging drum<p>"
+        }
+    }
+}

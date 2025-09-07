@@ -1,0 +1,61 @@
+{
+    "driver": {
+        "@id": "driver/cljet5",
+        "name": "cljet5",
+        "url": "http://www.ghostscript.com/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "ghostscript": null,
+            "prototype": "gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE -sDEVICE=cljet5%B%A%Z -sOutputFile=- -"
+        },
+        "comments": {
+            "en": "<B>This driver is available in the <A href=\"https://github.com/OpenPrinting/ghostscript-printer-app\">Ghostscript Printer Application</A></B><P>\n<iframe src=\"https://snapcraft.io/ghostscript-printer-app/embedded?button=black&summary=true\" frameborder=\"0\" width=\"100%\" height=\"300px\" style=\"border: 1px solid #CCC; border-radius: 2px;\"></iframe>\n\n      This entry is for Ghostscript's built-in PCL 5c driver,\n      accessible through the output devices \"cljet5\" and\n      \"cljet5c\". PCL 5c is the color flavor of PCL\n      5.<p>\n\n      The \"cljet5\" output device in GNU Ghostscript 6.51 is\n      buggy, often only the first page gets printed and then\n      Ghostscript quits with an error message. Use \"cljet5c\"\n      instead (when using Foomatic keep the default setting\n      \"Contone\" for the \"Mode\" option).<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-imageRunner_C3200"
+                },
+                {
+                    "id": "printer/Canon-imageRunner_C5180"
+                },
+                {
+                    "id": "printer/Canon-LBP-5360"
+                },
+                {
+                    "id": "printer/Canon-LBP-5960"
+                },
+                {
+                    "id": "printer/Generic-PCL_5c_Printer"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5"
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5000",
+                    "comments": {
+                        "en": "Not tested, probably works."
+                    }
+                },
+                {
+                    "id": "printer/HP-Color_LaserJet_5M"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5800C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-5900C"
+                },
+                {
+                    "id": "printer/Kyocera-FS-8000C"
+                },
+                {
+                    "id": "printer/Xerox-DocuPrint_C20",
+                    "comments": {
+                        "en": "Should work fine with this Color LaserJet driver."
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "printer": {
+        "@id": "printer/Oki-Okipage_6w",
+        "make": "Oki",
+        "model": "Okipage 6w",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.okidata.com/mkt/html/nf/OP6WHome.html",
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "B",
+        "driver": "oki4w",
+        "comments": {
+            "en": "It seems to have the same firmware as Okipage 4w.<p>\n\n    Only seems to generate 300x300dpi class output.<p>\n\n    Fl&aacute;vio Coelho (fccoelho at uerj dot br) reports that\n    this printer only works with the old 2.0 version of the\n    \"oki4drv\" driver.<p>\n\n    Please report whether it works with the \"oki4w\"\n    Ghostscript driver.<p>"
+        }
+    }
+}

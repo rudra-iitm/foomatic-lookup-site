@@ -1,0 +1,39 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_694C",
+        "make": "HP",
+        "model": "DeskJet 694C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/prodhome/dj694c.html",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "MLC,PCL,PML",
+                "description": "Hewlett-Packard DeskJet 690C",
+                "manufacturer": "HEWLETT-PACKARD",
+                "model": "DESKJET 690C"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n600 dpi in colour is not supported by the hardware.<p>\n\n    Older user comments:<p>\n\n    Reported on Usenet to work fine; probably works with\n    \"cdj850\", too.<p>\n\n    Printer does 600x300 in color.  <p>\n\n    The HP DeskJets 690-694 should all work fine...  <p>\n\n    Fast text-only printing can be had with the\n    \"pcl3\"/\"hpdj\" drivers.  <p>\n\n    High quality color photo printing with the uniprint drivers.<p>\n\n      Consumables/Refills: cartridges (2)<p>"
+        }
+    }
+}

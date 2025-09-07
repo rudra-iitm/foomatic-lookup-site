@@ -1,0 +1,23 @@
+{
+    "printer": {
+        "@id": "printer/Dymo-CoStar-LabelWriter_II",
+        "make": "Dymo-CoStar",
+        "model": "LabelWriter II",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "128",
+                    "y": "128"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "A",
+        "driver": "pbm2lwxl",
+        "comments": {
+            "en": "1.5 inch wide label printer; driver by Mark Whitis<br>Should work fine; untested.<br>Maybe only 128dpi?<p>\n\n      Consumables/Refills: thermal; special labels<p>"
+        }
+    }
+}

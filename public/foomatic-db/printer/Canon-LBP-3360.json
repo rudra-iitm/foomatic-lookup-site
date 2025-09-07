@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/Canon-LBP-3360",
+        "make": "Canon",
+        "model": "LBP-3360",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.canon-europe.com/for_home/product_finder/printers/laser/i-SENSYS_LBP3360/index.asp",
+        "lang": {
+            "pcl": {
+                "@level": "5e, 6"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "hpijs-pcl5e",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "gutenprint"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                },
+                {
+                    "id": "lj4dith"
+                },
+                {
+                    "id": "ljet4"
+                },
+                {
+                    "id": "ljet4d"
+                },
+                {
+                    "id": "pxlmono"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This is a PCL-XL printer but using it with \"pxlmono\" does not\n      work reliably, probably due to firmware incompatibility. See\n      <a href=\"https://bugs.launchpad.net/bugs/504841\">this bug\n      report</a>. So best choice is the HPLIP driver\n      \"hpijs-pcl5e\".<p>\n      \n      Foomatic entry made by PPDtoXML T/G 0.20 on 2008-09-06"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "printer": {
+        "@id": "printer/Brother-HL-2240D",
+        "make": "Brother",
+        "model": "HL-2240D",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://welcome.solutions.brother.com/bsc/public_s/id/eu/gb/en/monolaserpri/hl2240d_all/spec",
+        "lang": {
+            "pcl": {
+                "@level": "5e"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "usb": {
+                "commandset": "PJL,HBP",
+                "manufacturer": "Brother",
+                "model": "HL-2240D series"
+            }
+        },
+        "functionality": "B",
+        "driver": "hpijs-pcl5e",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "hl1250"
+                },
+                {
+                    "id": "hpijs-pcl5e"
+                }
+            ]
+        },
+        "comments": {
+            "en": "Brother also publishes proprietary Linux drivers for CUPS and LPD\n    on their <a\n    href=\"http://welcome.solutions.brother.com/bsc/public_s/id/linux/en/\">Linux\n    driver page</a>.<p>"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_6L",
+        "make": "HP",
+        "model": "LaserJet 6L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.hp.com/cposupport/eschome.html",
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "description": "Hewlett-Packard LaserJet 6L Printer",
+                "manufacturer": "Hewlett-Packard",
+                "model": "HP LaserJet 6L"
+            }
+        },
+        "functionality": "A",
+        "driver": "ljet4",
+        "comments": {
+            "en": "For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n\n    Remember that the 6L is more like the LaserJet 4 family than the\n    LaserJet 6 family (as with most \"L\" printers from\n    HP). For example it does not work with the\n    \"lj5gray\" drivers but only with the\n    \"ljet4\" or \"lj4dith\" drivers (and\n    also Gimp-Print and HPIJS).<p>\n\n    The layout is off center and slightly rotated when using\n    Ghostscript.  (could someone else please confirm this?)<p>\n\n    [Ed] I find the slight rotation bit hard to beleive, but until I\n    head otherwise, I'll leave this printer where it is.  The\n    centering problem can be solved by simply adjusting the margins in\n    Ghostscript.<p>\n\n    ---<p>\n\n    Works fine for me, with Ghostscript 5.50 and FreeBSD 3.2, and no\n    special settings. /Karl-Johan Grahn<p>\n\n    Unfortunately, this printer has a little hardware problem: The\n    paper separation pad hardens with the time and the printer pulls\n    in several sheets of paper at once. HP is aware of this and offers\n    a kit to fix this without needing to disassemble the printer for\n    free. It can be ordered for delivery into any country via their\n    <a href=\"http://h20015.www2.hp.com/en/document.jhtml?lc=en&docName=bpl08107\">web site</a>.<p>"
+        }
+    }
+}

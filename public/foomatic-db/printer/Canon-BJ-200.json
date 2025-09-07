@@ -1,0 +1,27 @@
+{
+    "printer": {
+        "@id": "printer/Canon-BJ-200",
+        "make": "Canon",
+        "model": "BJ-200",
+        "mechanism": {
+            "inkjet": null,
+            "resolution": {
+                "dpi": {
+                    "x": "360",
+                    "y": "360"
+                }
+            }
+        },
+        "lang": {
+            "proprietary": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "bj200",
+        "comments": {
+            "en": "Prints fine in linux.<p>\n\n      Consumables/Refills: $30 for cartridges<p>"
+        }
+    }
+}

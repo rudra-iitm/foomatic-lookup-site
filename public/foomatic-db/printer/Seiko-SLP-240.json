@@ -1,0 +1,17 @@
+{
+    "printer": {
+        "@id": "printer/Seiko-SLP-240",
+        "make": "Seiko",
+        "model": "SLP-240",
+        "url": "http://www.seikosmart.com/products/slp240.html",
+        "lang": {
+            "proprietary": null
+        },
+        "functionality": "B",
+        "driver": "slap",
+        "contrib_url": "http://members.tripod.com/uutil/slap",
+        "comments": {
+            "en": "Not a postscript or pcl driver; slap only prints text in various fonts.<p>\n\n      Consumables/Refills: None; uses Seiko Instruments thermal labels<p>"
+        }
+    }
+}

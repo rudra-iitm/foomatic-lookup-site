@@ -1,0 +1,20 @@
+{
+    "printer": {
+        "@id": "printer/Oce-im7520",
+        "make": "Oce",
+        "model": "im7520",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            }
+        },
+        "functionality": "B",
+        "driver": "Postscript",
+        "comments": {
+            "en": "Throughput = 75\n\n      Foomatic entry made by PPDtoXML T/G 0.06"
+        }
+    }
+}

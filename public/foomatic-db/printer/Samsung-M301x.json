@@ -1,0 +1,51 @@
+{
+    "printer": {
+        "@id": "printer/Samsung-M301x",
+        "make": "Samsung",
+        "model": "M301x",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Samsung;CMD:SPL,PCL5E,PCL6,URF,FWV,PIC,SPDS,EXT;MDL:M301x Series;",
+                "manufacturer": "Samsung",
+                "model": "M301x Series"
+            }
+        },
+        "functionality": "A",
+        "driver": "pxlmono-Samsung",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "lj5gray"
+                },
+                {
+                    "id": "pxlmono"
+                },
+                {
+                    "id": "pxlmono-Samsung",
+                    "ppd": "PPD/Samsung/PXL/Samsung_M301x_Series_PXL.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "This database entry was automatically generated\n      from the PPD file for this printer.<p>\n\n      Maximum paper width: 8.5 inches / 21.6 cm\n      (Standard format printer)<p>\n\n      Printing engine speed: 22 pages/min<p>"
+        }
+    }
+}

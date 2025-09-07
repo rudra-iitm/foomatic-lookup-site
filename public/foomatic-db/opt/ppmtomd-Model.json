@@ -1,0 +1,433 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/ppmtomd-Model",
+        "arg_shortname": {
+            "en": "Model"
+        },
+        "arg_longname": {
+            "en": "Model"
+        },
+        "arg_execution": {
+            "arg_group": "Miscellaneous",
+            "arg_order": "210",
+            "arg_spot": "C",
+            "arg_substitution": null,
+            "arg_proto": "-model %s"
+        },
+        "constraints": {
+            "constraint": [
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-1000",
+                    "arg_defval": "ev/ppmtomd-Model-MD-1000"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-1300",
+                    "arg_defval": "ev/ppmtomd-Model-MD-1300"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-1500",
+                    "arg_defval": "ev/ppmtomd-Model-MD-1500"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-2000",
+                    "arg_defval": "ev/ppmtomd-Model-MD-2000"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-2010",
+                    "arg_defval": "ev/ppmtomd-Model-MD-2010"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-2300",
+                    "arg_defval": "ev/ppmtomd-Model-MD-2300"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-4000",
+                    "arg_defval": "ev/ppmtomd-Model-MD-4000"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-5000",
+                    "arg_defval": "ev/ppmtomd-Model-MD-5000"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Alps-MD-5500",
+                    "arg_defval": "ev/ppmtomd-Model-MD-5500"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Citizen-printiva1700",
+                    "arg_defval": "ev/ppmtomd-Model-Printiva-1700"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Citizen-printiva600C",
+                    "arg_defval": "ev/ppmtomd-Model-Printiva-600"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Citizen-printiva600U",
+                    "arg_defval": "ev/ppmtomd-Model-Printiva-600U"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Citizen-printiva700",
+                    "arg_defval": "ev/ppmtomd-Model-Printiva-700"
+                },
+                {
+                    "@sense": "true",
+                    "driver": "ppmtomd",
+                    "printer": "printer/Oki-DP_5000",
+                    "arg_defval": "ev/ppmtomd-Model-DP-5000"
+                }
+            ]
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/ppmtomd-Model-DP-5000",
+                    "ev_longname": {
+                        "en": "Oki DP-5000"
+                    },
+                    "ev_shortname": {
+                        "en": "DP-5000"
+                    },
+                    "ev_driverval": "DP-5000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Oki-DP_5000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-1000",
+                    "ev_longname": {
+                        "en": "Alps MD-1000"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-1000"
+                    },
+                    "ev_driverval": "MD-1000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-1000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-1300",
+                    "ev_longname": {
+                        "en": "Alps MD-1300"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-1300"
+                    },
+                    "ev_driverval": "MD-1300",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-1300"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-1500",
+                    "ev_longname": {
+                        "en": "Alps MD-1500"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-1500"
+                    },
+                    "ev_driverval": "MD-1500",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-1500"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-2000",
+                    "ev_longname": {
+                        "en": "Alps MD-2000"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-2000"
+                    },
+                    "ev_driverval": "MD-2000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-2000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-2010",
+                    "ev_longname": {
+                        "en": "Alps MD-2010"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-2010"
+                    },
+                    "ev_driverval": "MD-2010",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-2010"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-2300",
+                    "ev_longname": {
+                        "en": "Alps MD-2300"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-2300"
+                    },
+                    "ev_driverval": "MD-2300",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-2300"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-4000",
+                    "ev_longname": {
+                        "en": "Alps MD-4000"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-4000"
+                    },
+                    "ev_driverval": "MD-4000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-4000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-5000",
+                    "ev_longname": {
+                        "en": "Alps MD-5000"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-5000"
+                    },
+                    "ev_driverval": "MD-5000",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-5000"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-MD-5500",
+                    "ev_longname": {
+                        "en": "Alps MD-5500"
+                    },
+                    "ev_shortname": {
+                        "en": "MD-5500"
+                    },
+                    "ev_driverval": "MD-5500",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Alps-MD-5500"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-Printiva-1700",
+                    "ev_longname": {
+                        "en": "Citizen printiva1700"
+                    },
+                    "ev_shortname": {
+                        "en": "Printiva-1700"
+                    },
+                    "ev_driverval": "Printiva-1700",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Citizen-printiva1700"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-Printiva-600",
+                    "ev_longname": {
+                        "en": "Citizen printiva600C"
+                    },
+                    "ev_shortname": {
+                        "en": "Printiva-600"
+                    },
+                    "ev_driverval": "Printiva-600",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Citizen-printiva600C"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-Printiva-600U",
+                    "ev_longname": {
+                        "en": "Citizen printiva600U"
+                    },
+                    "ev_shortname": {
+                        "en": "Printiva-600U"
+                    },
+                    "ev_driverval": "Printiva-600U",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Citizen-printiva600U"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "@id": "ev/ppmtomd-Model-Printiva-700",
+                    "ev_longname": {
+                        "en": "Citizen printiva700"
+                    },
+                    "ev_shortname": {
+                        "en": "Printiva-700"
+                    },
+                    "ev_driverval": "Printiva-700",
+                    "constraints": {
+                        "constraint": [
+                            {
+                                "@sense": "false",
+                                "driver": "ppmtomd"
+                            },
+                            {
+                                "@sense": "true",
+                                "driver": "ppmtomd",
+                                "printer": "printer/Citizen-printiva700"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

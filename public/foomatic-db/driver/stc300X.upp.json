@@ -1,0 +1,29 @@
+{
+    "driver": {
+        "@id": "driver/stc300X.upp",
+        "name": "stc300X.upp",
+        "url": "http://www.ghostscript.com/",
+        "obsolete": {
+            "@replace": "gutenprint"
+        },
+        "thirdpartysupplied": null,
+        "execution": {
+            "uniprint": null,
+            "prototype": "gs %B -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -dNOMEDIAATTRS -dNOINTERPOLATE %A%Z -sOutputFile=- -",
+            "ppdentry": "*DefaultResolution: 360dpi"
+        },
+        "comments": {
+            "en": "UPP files of this driver: stc300bl.upp, stc300bm.upp,\n      stc300.upp<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Epson-MJ_520C"
+                },
+                {
+                    "id": "printer/Epson-Stylus_Color_300"
+                }
+            ]
+        }
+    }
+}

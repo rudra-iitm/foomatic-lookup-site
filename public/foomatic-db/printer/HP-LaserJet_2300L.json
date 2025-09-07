@@ -1,0 +1,47 @@
+{
+    "printer": {
+        "@id": "printer/HP-LaserJet_2300L",
+        "make": "HP",
+        "model": "LaserJet 2300L",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1200",
+                    "y": "1200"
+                }
+            }
+        },
+        "url": "http://h10010.www1.hp.com/wwpc/us/en/en/WF05a/18972-236251-236263-14638-236263-238800.html",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "6"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "parallel": {
+                "commandset": "PJL,MLC,BIDI-ECP,PCLXL,PCL,PJL",
+                "description": "Hewlett-Packard LaserJet 2300L",
+                "manufacturer": "Hewlett-Packard",
+                "model": "hp LaserJet 2300L"
+            }
+        },
+        "functionality": "A",
+        "driver": "hplip",
+        "drivers": {
+            "driver": {
+                "id": "hplip"
+            }
+        },
+        "comments": {
+            "en": "For basic printing functionality use the Postscript PPD (for the\n    LaserJet 2300). For advanced functionality such as printer status\n    and maintenance features, use the <a\n    href=\"http://hplip.sf.net/\"> HPLIP\n    driver</a>.<p>\n\n    PostScript level 3, PCL 5e, and PCL 6 out of the box, parallel and\n    USB connection, \"n\" models with ethernet connection, 250-sheet\n    tray built-in, extra 250- or 500-sheet tray available (included in\n    \"t\" models), duplex unit in \"d\" models.<p>\n\n    The \"L\" model is software-compatible to the other models, it is\n    only somewhat slower (20 ppm instead of 25 ppm).<p>"
+        }
+    }
+}

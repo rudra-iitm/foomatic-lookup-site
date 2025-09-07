@@ -1,0 +1,24 @@
+{
+    "driver": {
+        "@id": "driver/lbp660",
+        "name": "lbp660",
+        "url": "http://www.boichat.ch/nicolas/lbp660/",
+        "thirdpartysupplied": null,
+        "execution": {
+            "filter": null
+        },
+        "comments": {
+            "en": "Driver for the Canon LBP-460 and LBP-660 laser winprinters.<p>\n\n    Note that the driver talks directly to the parallel port. It must\n    be configured for bidirectional access and it must use the I/O\n    address 0x378. The driver must run SUID \"root\", so the printer is\n    not suitable for security-critical systems. Any output destination\n    specified in the printer spooler will be ignored.<p>\n\n    The Foomatic PPD files for this driver are not available on\n    OpenPrinting because they are already contained in the driver\n    package.<p>"
+        },
+        "printers": {
+            "printer": [
+                {
+                    "id": "printer/Canon-LBP-460"
+                },
+                {
+                    "id": "printer/Canon-LBP-660"
+                }
+            ]
+        }
+    }
+}

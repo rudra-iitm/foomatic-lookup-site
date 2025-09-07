@@ -1,0 +1,25 @@
+{
+    "printer": {
+        "@id": "printer/Generic-PCL_5_Printer",
+        "make": "Generic",
+        "model": "PCL 5 Printer",
+        "mechanism": {
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "lang": {
+            "pcl": {
+                "@level": "5"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "This entry allows you to use any printer which understands PCL 5\n    (compatible to the HP LaserJet 3) with Foomatic, at least with the\n    basic options. See your printer's manual to know whether your\n    printer supports PCL 5.<p>\n\n    Use it only for setting up your printer if your printer is not\n    explicitly listed in the <a\n    href=\"printer_list.cgi\">Foomatic\n    database</a>.<p>\n\n    If you use this entry to set up your printer, note that not all\n    features of your printer will be supported and that the options\n    offered to you do not all necessarily apply to your\n    printer.<p><p>\n\n      Consumables/Refills: <p>"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "printer": {
+        "@id": "printer/Oce-VarioPrint_2070PS",
+        "make": "Oce",
+        "model": "VarioPrint 2070",
+        "mechanism": {
+            "laser": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.oce.com/en/Products/Printers-copiers-plotters/Black+and+white/General+office/VP2050-70/default.htm",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "pcl": {
+                "@level": "5"
+            },
+            "pjl": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "autodetect": {
+            "general": {
+                "ieee1284": "MFG:Oce;MDL:Oce VarioPrint 2070;",
+                "manufacturer": "Oce",
+                "model": "Oce VarioPrint 2070"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript-Oce",
+        "drivers": {
+            "driver": [
+                {
+                    "id": "ljet3"
+                },
+                {
+                    "id": "ljet3d"
+                },
+                {
+                    "id": "Postscript"
+                },
+                {
+                    "id": "Postscript-Oce",
+                    "ppd": "PPD/Oce/Oce-VarioPrint_2070PS/1/OCVP2070.ppd"
+                }
+            ]
+        },
+        "comments": {
+            "en": "<b>Productive, versatile document system </b><br/>\nEffectively handle document processes.\n<UL>\n<LI>Multifunctional digital network printer/scanner/copier </LI>\n<LI>62 A4 prints per min </LI>\n<LI>Optional Digital Mailbox for controlled printing </LI>\n<LI>Page programming and accounting via driver</LI>\n</UL>\n    \n      <p>\n\n      Maximum paper width: 11.7 inches / 29.7 cm\n      (Wide format printer)<p>\n\n      Printing engine speed: 65 pages/min<p><p>\n\n      Consumables/Refills: Toner\n      <p>"
+        }
+    }
+}

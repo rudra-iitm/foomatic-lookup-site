@@ -1,0 +1,30 @@
+{
+    "printer": {
+        "@id": "printer/Heidelberg-Digimaster_9110",
+        "make": "Heidelberg",
+        "model": "Digimaster 9110",
+        "mechanism": {
+            "led": null,
+            "resolution": {
+                "dpi": {
+                    "x": "600",
+                    "y": "600"
+                }
+            }
+        },
+        "url": "http://www.heidelberg.com",
+        "lang": {
+            "postscript": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "Postscript",
+        "comments": {
+            "en": "I used the original PPD (supposedly just written to support MacOS\n    and MS Win printing) with CUPS, which used its LPD backend to send\n    the PostScript to the printer. In this way all options can be\n    used: select 1 of 6 trays; choose A4, Letter, A3 etc.; use cover,\n    chapter and insert sheets; duplex printing; impose as a booklet;\n    inline finishing with stapling or (in the case of a booklet)\n    folding, saddle-stitching, edge trimming to a finished A4 or A5\n    booklet.<p>\n\n    This is a professional 110 ppm printer for large commercial print\n    shops, originally developed by Kodak; also marketed by DANKA\n    (http://www.danka.de or http://www.danka.com) internationally, who\n    might have even more experience with service and maintenance of\n    this device than Heidelberg who bought its manufacturing and\n    further development off Kodak. This more than 1 million prints per\n    month capable monster prints TIFF, PDF 1.2, PostScript 3, PCL 5;\n    it runs on the output of an Adobe RIP powered by a SUN UltraSparc\n    60.<p>\n\n    (tested by Kurt Pfeifle)<p>"
+        }
+    }
+}

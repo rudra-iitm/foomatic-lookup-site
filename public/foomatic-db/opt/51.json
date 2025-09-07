@@ -1,0 +1,100 @@
+{
+    "option": {
+        "@type": "enum",
+        "@id": "opt/51",
+        "arg_shortname": {
+            "en": "DryingTime"
+        },
+        "arg_longname": {
+            "en": "Page Drying Time"
+        },
+        "arg_execution": {
+            "arg_group": "Adjustment",
+            "arg_order": "140",
+            "arg_spot": "A",
+            "arg_substitution": null,
+            "arg_proto": "-dDryingTime=%s"
+        },
+        "constraints": {
+            "constraint": {
+                "@sense": "true",
+                "driver": "lx5000",
+                "arg_defval": "ev/382"
+            }
+        },
+        "enum_vals": {
+            "enum_val": [
+                {
+                    "@id": "ev/380",
+                    "ev_longname": {
+                        "en": "10 sec."
+                    },
+                    "ev_shortname": {
+                        "en": "10s"
+                    },
+                    "ev_driverval": "10"
+                },
+                {
+                    "@id": "ev/381",
+                    "ev_longname": {
+                        "en": "20 sec."
+                    },
+                    "ev_shortname": {
+                        "en": "20s"
+                    },
+                    "ev_driverval": "20"
+                },
+                {
+                    "@id": "ev/382",
+                    "ev_longname": {
+                        "en": "30 sec"
+                    },
+                    "ev_shortname": {
+                        "en": "30s"
+                    },
+                    "ev_driverval": "30"
+                },
+                {
+                    "@id": "ev/383",
+                    "ev_longname": {
+                        "en": "40 sec."
+                    },
+                    "ev_shortname": {
+                        "en": "40s"
+                    },
+                    "ev_driverval": "40"
+                },
+                {
+                    "@id": "ev/384",
+                    "ev_longname": {
+                        "en": "0 sec"
+                    },
+                    "ev_shortname": {
+                        "en": "0s"
+                    },
+                    "ev_driverval": "0"
+                },
+                {
+                    "@id": "ev/385",
+                    "ev_longname": {
+                        "en": "50 sec"
+                    },
+                    "ev_shortname": {
+                        "en": "50s"
+                    },
+                    "ev_driverval": "50"
+                },
+                {
+                    "@id": "ev/386",
+                    "ev_longname": {
+                        "en": "60 sec"
+                    },
+                    "ev_shortname": {
+                        "en": "60s"
+                    },
+                    "ev_driverval": "60"
+                }
+            ]
+        }
+    }
+}

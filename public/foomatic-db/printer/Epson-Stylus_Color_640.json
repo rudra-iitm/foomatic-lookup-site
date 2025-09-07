@@ -1,0 +1,29 @@
+{
+    "printer": {
+        "@id": "printer/Epson-Stylus_Color_640",
+        "make": "Epson",
+        "model": "Stylus Color 640",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "1440",
+                    "y": "720"
+                }
+            }
+        },
+        "url": "http://support.epson.com/hardware/printer/inkjet/sc640_/index.html",
+        "lang": {
+            "escp": null,
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Only works at 360x360 with stcolor and ghostscript 4.03. \n<br>Redhat users (and probably others) can upgrade to ghostscript 5.50, printtool 3.40 and rhs-printfilters 1.50 and use the Epson Stylus Color modes stc600ih, stc600p and st600pl (1440, 720 and 360 dpi).\n<br>4 color CMYK printing with 32 jets per color.\n<br>Works perfectly with the stp driver.<p>\n\n      Consumables/Refills: separate black ($25) and color ($30) ink cartridges<p>"
+        }
+    }
+}

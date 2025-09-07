@@ -1,0 +1,31 @@
+{
+    "printer": {
+        "@id": "printer/HP-DeskJet_540C",
+        "make": "HP",
+        "model": "DeskJet 540C",
+        "mechanism": {
+            "inkjet": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "300",
+                    "y": "300"
+                }
+            }
+        },
+        "url": "http://www.hp.com/",
+        "lang": {
+            "pcl": {
+                "@level": "3"
+            },
+            "text": {
+                "charset": "us-ascii"
+            }
+        },
+        "functionality": "A",
+        "driver": "gutenprint",
+        "comments": {
+            "en": "Works fine with ghostscript.<p>\n\n    This model uses both color and bw cartridges. It cannot really mix\n    black with the other colours, but only print them side by side\n    (CMY+K mode). See the man page of the\n    \"pcl3\"/\"hpdj\" driver packages (\"man\n    gs-pcl3\"/\"man gs-hpdj\").<p>\n\n    For basic printing functionality use the <a \n    href=\"http://hplipopensource.com/\">HPIJS \n    driver </a>. For advanced functionality such\n    as printer status and maintenance features, use the\n    <a href=\"http://hplipopensource.com/\">\n    HPLIP driver</a> (which includes HPIJS). <p>\n    \n    Works with uniprint driver cdj550.upp, too.<p>\n\n      Consumables/Refills: two cartridges, include printhead<p>"
+        }
+    }
+}

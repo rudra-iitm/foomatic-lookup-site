@@ -1,0 +1,46 @@
+{
+    "printer": {
+        "@id": "printer/KONICA_MINOLTA-magicolor_4690MF",
+        "make": "KONICA MINOLTA",
+        "model": "magicolor 4690MF",
+        "mechanism": {
+            "laser": null,
+            "color": null,
+            "resolution": {
+                "dpi": {
+                    "x": "2400",
+                    "y": "600"
+                }
+            },
+            "margins": {
+                "general": {
+                    "unit": "mm",
+                    "top": "4",
+                    "bottom": "4",
+                    "left": "4",
+                    "right": "4"
+                }
+            }
+        },
+        "url": "http://www.minolta-qms.com/products/mfp/mc4690MF/index.asp",
+        "lang": {
+            "proprietary": null
+        },
+        "autodetect": {
+            "usb": {
+                "ieee1284": "CLASS:PRINTER;MODEL:magicolor 4690MF;MANUFACTURER:KONICA MINOLTA;COMMAND SET:ZJS,PJL;",
+                "manufacturer": "KONICA MINOLTA",
+                "model": "magicolor 4690MF",
+                "commandset": "ZJS,PJL"
+            },
+            "snmp": {
+                "description": "KONICA MINOLTA magicolor 4690MF"
+            }
+        },
+        "functionality": "B",
+        "driver": "foo2lava",
+        "comments": {
+            "en": "The magicolor 4690MF is a network color all-in-one printer/scanner.\n      The printer *only* is supported by the foo2lava open software printer\n      driver.<p>\n\n      Consumables: Separate toner cartridges black (4500 prints, ~$79),\n      yellow/magenta/cyan (4500 prints, ~$119 each), drum Cartridge (45000\n      prints, ~$149)"
+        }
+    }
+}
