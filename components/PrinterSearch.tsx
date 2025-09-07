@@ -3,23 +3,16 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Search, Filter, X } from "lucide-react";
-import { manufacturers, connectivityOptions, printerTypes } from "@/data/printers";
-
-export interface SearchFilters {
-  query: string;
-  manufacturer: string;
-  connectivity: string;
-  type: string;
-  status: string;
-}
-
 interface PrinterSearchProps {
   filters: SearchFilters;
   onFiltersChange: (filters: SearchFilters) => void;
   resultCount: number;
+  manufacturers: string[];
+  connectivityOptions: string[];
+  printerTypes: string[];
 }
 
-const PrinterSearch = ({ filters, onFiltersChange, resultCount }: PrinterSearchProps) => {
+const PrinterSearch = ({ filters, onFiltersChange, resultCount, manufacturers, connectivityOptions, printerTypes }: PrinterSearchProps) => {
   const clearFilters = () => {
     onFiltersChange({
       query: '',
