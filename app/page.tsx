@@ -14,6 +14,9 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedManufacturer, setSelectedManufacturer] = useState("all")
   const [loading, setLoading] = useState(true)
+  const [currentPage, setCurrentPage] = useState(1)
+  
+  const ITEMS_PER_PAGE = 20
 
   useEffect(() => {
     async function fetchData() {
@@ -45,19 +48,84 @@ export default function HomePage() {
     }
 
     if (searchQuery) {
-      result = result.filter(
-        (p) =>
-          p.model.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          p.manufacturer.toLowerCase().includes(searchQuery.toLowerCase()),
-      )
-    }
+      result = result.filter(
+        (p) =>
+          (p.model ? String(p.model).toLowerCase().includes(searchQuery.toLowerCase()) : false) ||
+          (p.manufacturer ? String(p.manufacturer).toLowerCase().includes(searchQuery.toLowerCase()) : false),
+      )
+    }
 
-    if (searchQuery === "" && selectedManufacturer === "all") {
-      setFilteredPrinters([])
-    } else {
-      setFilteredPrinters(result)
-    }
+    setFilteredPrinters(result)
+    
+    // Reset pagination when filters change
+    setCurrentPage(1)
   }, [searchQuery, selectedManufacturer, printers])
+
+  // Calculate pagination data
+  const totalPages = Math.ceil(filteredPrinters.length / ITEMS_PER_PAGE)
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
+  const endIndex = startIndex + ITEMS_PER_PAGE
+  const displayedPrinters = filteredPrinters.slice(startIndex, endIndex)
+
+  // Pagination functions
+  const goToPage = (page: number) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page)
+    }
+  }
+
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      goToPage(currentPage + 1)
+    }
+  }
+
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      goToPage(currentPage - 1)
+    }
+  }
+
+  // Generate page numbers to display
+  const getPageNumbers = () => {
+    const pages = []
+    const maxVisiblePages = 7 // Show up to 7 page numbers
+    
+    if (totalPages <= maxVisiblePages) {
+      // Show all pages if total is small
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i)
+      }
+    } else {
+      // Show smart pagination with ellipsis
+      if (currentPage <= 4) {
+        // Show first pages + ellipsis + last page
+        for (let i = 1; i <= 5; i++) {
+          pages.push(i)
+        }
+        pages.push('...')
+        pages.push(totalPages)
+      } else if (currentPage >= totalPages - 3) {
+        // Show first page + ellipsis + last pages
+        pages.push(1)
+        pages.push('...')
+        for (let i = totalPages - 4; i <= totalPages; i++) {
+          pages.push(i)
+        }
+      } else {
+        // Show first page + ellipsis + current range + ellipsis + last page
+        pages.push(1)
+        pages.push('...')
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+          pages.push(i)
+        }
+        pages.push('...')
+        pages.push(totalPages)
+      }
+    }
+    
+    return pages
+  }
 
   return (
     <div className="min-h-screen">
@@ -143,9 +211,73 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        ) : filteredPrinters.length > 0 ? (
+        ) : displayedPrinters.length > 0 ? (
           <div className="animate-fade-in">
-            <Printers printers={filteredPrinters} />
+            <Printers printers={displayedPrinters} />
+            
+            {/* Pagination Section */}
+            {totalPages > 1 && (
+              <div className="mt-12">
+                {/* Results Summary */}
+                <div className="text-center mb-6 text-sm text-muted-foreground">
+                  Showing {startIndex + 1}-{Math.min(endIndex, filteredPrinters.length)} of {filteredPrinters.length} printers
+                  {searchQuery && ` matching "${searchQuery}"`}
+                  {selectedManufacturer !== "all" && ` from ${selectedManufacturer}`}
+                </div>
+                
+                {/* Pagination Controls */}
+                <div className="flex items-center justify-center gap-4">
+                  {/* Previous Button */}
+                  <button
+                    onClick={goToPreviousPage}
+                    disabled={currentPage === 1}
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border/50 bg-gradient-card text-foreground hover:bg-muted/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Previous
+                  </button>
+                  
+                  {/* Page Numbers */}
+                  <div className="flex items-center gap-2">
+                    {getPageNumbers().map((page, index) => (
+                      <button
+                        key={index}
+                        onClick={() => typeof page === 'number' && goToPage(page)}
+                        disabled={page === '...'}
+                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                          page === currentPage
+                            ? 'bg-primary text-primary-foreground shadow-lg cursor-pointer'
+                            : page === '...'
+                            ? 'text-muted-foreground cursor-default'
+                            : 'text-foreground hover:bg-muted/50 border border-border/30 cursor-pointer'
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    ))}
+                  </div>
+                  
+                  {/* Next Button */}
+                  <button
+                    onClick={goToNextPage}
+                    disabled={currentPage === totalPages}
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border/50 bg-gradient-card text-foreground hover:bg-muted/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    Next
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
+                
+                {/* Page Info */}
+                <div className="text-center mt-4 text-xs text-muted-foreground">
+                  Page {currentPage} of {totalPages}
+                </div>
+              </div>
+            )}
           </div>
         ) : (
           <div className="text-center py-24 animate-fade-in">

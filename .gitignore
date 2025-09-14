@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated foomatic data
+public/foomatic-db/printer/
+public/foomatic-db/driver/
+public/foomatic-db/printers/
+public/foomatic-db/printers.json
+public/foomatic-db/printersMap.json

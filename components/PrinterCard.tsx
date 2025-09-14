@@ -14,6 +14,46 @@ interface PrinterCardProps {
 export default function PrinterCard({ printer }: PrinterCardProps) {
   const printerId = printer.id.replace("printer/", "")
 
+  const getStatusStyling = (status: string) => {
+    switch (status.toLowerCase()) {
+      case 'recommended':
+        return {
+          variant: 'default' as const,
+          className: 'bg-green-500/20 text-green-300 border-green-400/30'
+        }
+      case 'basic':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-blue-500/20 text-blue-300 border-blue-400/30'
+        }
+      case 'partial':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
+        }
+      case 'unsupported':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-red-500/20 text-red-300 border-red-400/30'
+        }
+      case 'deprecated':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-orange-500/20 text-orange-300 border-orange-400/30'
+        }
+      case 'unknown':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-gray-500/20 text-gray-300 border-gray-400/30'
+        }
+      default:
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-purple-500/20 text-purple-300 border-purple-400/30'
+        }
+    }
+  }
+
   return (
     <Link href={`/printer/${printerId}`} className="h-full">
       <Card className="h-full flex flex-col bg-gradient-card border border-border/50 rounded-2xl shadow-card backdrop-blur-sm group transition-all duration-300 hover:border-primary/50">
@@ -41,12 +81,8 @@ export default function PrinterCard({ printer }: PrinterCardProps) {
               {printer.type}
             </Badge>
             <Badge
-              variant={printer.status === "recommended" ? "default" : "secondary"}
-              className={
-                printer.status === "recommended"
-                  ? "bg-green-500/20 text-green-300 border-green-400/30"
-                  : "bg-yellow-500/20 text-yellow-300 border-yellow-400/30"
-              }
+              variant={getStatusStyling(printer.status).variant}
+              className={getStatusStyling(printer.status).className}
             >
               {printer.status}
             </Badge>

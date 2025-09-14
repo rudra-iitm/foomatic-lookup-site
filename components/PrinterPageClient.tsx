@@ -24,6 +24,46 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
+  const getStatusStyling = (status: string) => {
+    switch (status.toLowerCase()) {
+      case 'recommended':
+        return {
+          variant: 'default' as const,
+          className: 'bg-green-500/20 text-green-300 border-green-400/30'
+        }
+      case 'basic':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-blue-500/20 text-blue-300 border-blue-400/30'
+        }
+      case 'partial':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
+        }
+      case 'unsupported':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-red-500/20 text-red-300 border-red-400/30'
+        }
+      case 'deprecated':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-orange-500/20 text-orange-300 border-orange-400/30'
+        }
+      case 'unknown':
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-gray-500/20 text-gray-300 border-gray-400/30'
+        }
+      default:
+        return {
+          variant: 'secondary' as const,
+          className: 'bg-purple-500/20 text-purple-300 border-purple-400/30'
+        }
+    }
+  }
+
   useEffect(() => {
     async function fetchPrinter() {
       try {
@@ -193,12 +233,8 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
               <p className="text-xl text-muted-foreground">{printer.manufacturer}</p>
               <div className="flex items-center gap-3 mt-3">
                 <Badge
-                  variant={printer.status === "recommended" ? "default" : "secondary"}
-                  className={
-                    printer.status === "recommended"
-                      ? "bg-green-500/20 text-green-300 border-green-400/30"
-                      : "bg-yellow-500/20 text-yellow-300 border-yellow-400/30"
-                  }
+                  variant={getStatusStyling(printer.status).variant}
+                  className={getStatusStyling(printer.status).className}
                 >
                   {printer.status}
                 </Badge>
@@ -230,12 +266,8 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                   <div>
                     <p className="text-sm font-medium text-muted-foreground mb-1">Status</p>
                     <Badge
-                      variant={printer.status === "recommended" ? "default" : "secondary"}
-                      className={
-                        printer.status === "recommended"
-                          ? "bg-green-500/20 text-green-300 border-green-400/30"
-                          : "bg-yellow-500/20 text-yellow-300 border-yellow-400/30"
-                      }
+                      variant={getStatusStyling(printer.status).variant}
+                      className={getStatusStyling(printer.status).className}
                     >
                       {printer.status}
                     </Badge>
@@ -245,7 +277,10 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                       <Separator className="bg-border" />
                       <div>
                         <h3 className="font-semibold mb-2 text-foreground">Notes</h3>
-                        <p className="whitespace-pre-wrap text-sm text-muted-foreground leading-relaxed">{printer.notes}</p>
+                        <div
+                          className="prose prose-sm prose-invert max-w-none text-muted-foreground"
+                          dangerouslySetInnerHTML={{ __html: printer.notes }}
+                        />
                       </div>
                     </>
                   )}
