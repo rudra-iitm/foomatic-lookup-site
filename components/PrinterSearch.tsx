@@ -45,7 +45,7 @@ export default function PrinterSearch({ manufacturers, onSearch, onFilter }: Pri
                   <SelectValue placeholder="Filter by manufacturer" />
                 </div>
               </SelectTrigger>
-              <SelectContent className="bg-gradient-card border-border">
+              <SelectContent className="bg-white dark:bg-neutral-900 border border-border/50 shadow-lg rounded-lg z-[100] text-foreground max-h-64 overflow-y-auto">
                 <SelectItem value="all" className="text-foreground hover:bg-muted/50">
                   All Manufacturers
                 </SelectItem>
