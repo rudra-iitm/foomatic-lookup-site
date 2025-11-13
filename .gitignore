@@ -39,11 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-<<<<<<< HEAD
-=======
-
 public/foomatic-db
-
 public/ppds/
 cache/
->>>>>>> 6d92c5d (feat: add PPD generation script and view/download pages with fluid UI)
