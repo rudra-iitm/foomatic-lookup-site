@@ -72,7 +72,6 @@ async function combineData() {
     const drivers = new Map();
     const printerToDrivers = new Map(); 
 
-    console.log('Loading printers...');
     const printerFiles = fs.readdirSync(PRINTERS_DIR);
     for (const file of printerFiles) {
         if (file.endsWith('.json')) {
@@ -110,8 +109,7 @@ async function combineData() {
             }
         }
     }
-    console.log(`Loaded ${printers.size} printers`);
-    console.log('Loading drivers...');
+
     const driverFiles = fs.readdirSync(DRIVERS_DIR);
     for (const file of driverFiles) {
         if (file.endsWith('.json')) {
@@ -208,11 +206,11 @@ async function combineData() {
 
         combinedPrinters.push({
             id: printer['@id'].replace('printer/', ''),
-            manufacturer: printer.make || 'Unknown',
-            model: printer.model || 'Unknown',
-            series: series,
-            connectivity: parseConnectivity(printer),
-            recommended_driver: recommendedDriverId || null,
+            manufacturer: printer.make,
+            model: printer.model,
+            series: '',
+            connectivity: [],
+            recommended_driver: recommendedDriverId,
             drivers: driverDetails,
             type: getPrinterType(printer),
             status: getFunctionalityStatus(printer.functionality || '?'),
