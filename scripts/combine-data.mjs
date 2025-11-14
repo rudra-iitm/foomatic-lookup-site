@@ -6,16 +6,19 @@ const DRIVERS_DIR = 'public/foomatic-db/driver';
 const OUTPUT_FILE = 'public/foomatic-db/printers.json';
 
 function getFunctionalityStatus(func) {
-    switch (func) {
-        case 'A':
-            return 'perfect';
-        case 'B':
-            return 'good';
-        case 'C':
-            return 'partial';
-        default:
-            return 'unsupported';
+    if (!func || func === '?') {
+        return 'unknown';
     }
+    switch (func) {
+        case 'A':
+            return 'perfect';
+        case 'B':
+            return 'good';
+        case 'C':
+            return 'partial';
+        default:
+            return 'unsupported';
+    }
 }
 
 function getPrinterType(printer) {
