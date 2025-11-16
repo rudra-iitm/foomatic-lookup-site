@@ -14,6 +14,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
 import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2 } from "lucide-react"
+import { calculateAccurateStatus } from "@/lib/utils/status"
 
 interface PrinterPageClientProps {
   printerId: string
@@ -233,10 +234,10 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
               <p className="text-xl text-muted-foreground">{printer.manufacturer}</p>
               <div className="flex items-center gap-3 mt-3">
                 <Badge
-                  variant={getStatusStyling(printer.status).variant}
-                  className={getStatusStyling(printer.status).className}
+                  variant={getStatusStyling(calculateAccurateStatus(printer)).variant}
+                  className={getStatusStyling(calculateAccurateStatus(printer)).className}
                 >
-                  {printer.status}
+                  {calculateAccurateStatus(printer)}
                 </Badge>
                 <Badge variant="outline" className="border-border bg-muted/50 text-muted-foreground">
                   {printer.type}
@@ -266,10 +267,10 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                   <div>
                     <p className="text-sm font-medium text-muted-foreground mb-1">Status</p>
                     <Badge
-                      variant={getStatusStyling(printer.status).variant}
-                      className={getStatusStyling(printer.status).className}
+                      variant={getStatusStyling(calculateAccurateStatus(printer)).variant}
+                      className={getStatusStyling(calculateAccurateStatus(printer)).className}
                     >
-                      {printer.status}
+                      {calculateAccurateStatus(printer)}
                     </Badge>
                   </div>
                   {printer.notes && (

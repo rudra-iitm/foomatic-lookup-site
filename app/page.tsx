@@ -6,17 +6,41 @@ import PrinterSearch from "@/components/PrinterSearch"
 import Printers from "@/components/Printers"
 import { Skeleton } from "@/components/ui/skeleton"
 import { PrinterIcon, Database, Zap, Shield } from "lucide-react"
+import { calculateAccurateStatus } from "@/lib/utils/status"
 
 export default function HomePage() {
   const [printers, setPrinters] = useState<PrinterSummary[]>([])
   const [filteredPrinters, setFilteredPrinters] = useState<PrinterSummary[]>([])
   const [manufacturers, setManufacturers] = useState<string[]>([])
+  // Initialize with default values to avoid hydration mismatch
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedManufacturer, setSelectedManufacturer] = useState("all")
+  const [selectedType, setSelectedType] = useState("all")
+  const [selectedStatus, setSelectedStatus] = useState("all")
+  const [selectedDriverFilter, setSelectedDriverFilter] = useState("all")
   const [loading, setLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
-  
-  const ITEMS_PER_PAGE = 20
+  const [itemsPerPage, setItemsPerPage] = useState<number>(20)
+
+  // Load filters from localStorage after mount (client-side only)
+  useEffect(() => {
+    const savedSearchQuery = localStorage.getItem("printerSearchQuery")
+    const savedManufacturer = localStorage.getItem("printerManufacturer")
+    const savedType = localStorage.getItem("printerType")
+    const savedStatus = localStorage.getItem("printerStatus")
+    const savedDriverFilter = localStorage.getItem("printerDriverFilter")
+    const savedPageSize = localStorage.getItem("printerPageSize")
+
+    if (savedSearchQuery) setSearchQuery(savedSearchQuery)
+    if (savedManufacturer) setSelectedManufacturer(savedManufacturer)
+    if (savedType) setSelectedType(savedType)
+    if (savedStatus) setSelectedStatus(savedStatus)
+    if (savedDriverFilter) setSelectedDriverFilter(savedDriverFilter)
+    if (savedPageSize) {
+      const num = parseInt(savedPageSize, 10)
+      if ([20, 50, 100, 200].includes(num)) setItemsPerPage(num)
+    }
+  }, [])
 
   useEffect(() => {
     async function fetchData() {
@@ -25,7 +49,25 @@ export default function HomePage() {
         // Use process.env.NODE_ENV to determine the correct base path
         const basePath = process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : ''
         const res = await fetch(`${basePath}/foomatic-db/printersMap.json`)
+        
+        // Check if response is ok
+        if (!res.ok) {
+          throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`)
+        }
+        
+        // Check content type to ensure it's JSON
+        const contentType = res.headers.get('content-type')
+        if (!contentType || !contentType.includes('application/json')) {
+          const text = await res.text()
+          throw new Error(`Expected JSON but got ${contentType}. Response: ${text.substring(0, 100)}`)
+        }
+        
         const data = await res.json()
+        
+        if (!data || !Array.isArray(data.printers)) {
+          throw new Error('Invalid data format: expected printers array')
+        }
+        
         setPrinters(data.printers)
         setFilteredPrinters(data.printers)
 
@@ -33,6 +75,10 @@ export default function HomePage() {
         setManufacturers(uniqueManufacturers as string[])
       } catch (error) {
         console.error('Failed to load printer data:', error)
+        // Set empty arrays on error to prevent UI crashes
+        setPrinters([])
+        setFilteredPrinters([])
+        setManufacturers([])
       } finally {
         setLoading(false)
       }
@@ -40,13 +86,101 @@ export default function HomePage() {
     fetchData()
   }, [])
 
+  // Update items per page and persist to localStorage
+  const handleItemsPerPageChange = (value: string) => {
+    const num = parseInt(value, 10)
+    setItemsPerPage(num)
+    localStorage.setItem("printerPageSize", num.toString())
+    setCurrentPage(1) // Reset to first page when changing page size
+  }
+
+  // Reset all filters
+  const handleResetFilters = () => {
+    setSearchQuery("")
+    setSelectedManufacturer("all")
+    setSelectedType("all")
+    setSelectedStatus("all")
+    setSelectedDriverFilter("all")
+    setItemsPerPage(20)
+    setCurrentPage(1)
+    // Clear from localStorage
+    localStorage.removeItem("printerSearchQuery")
+    localStorage.removeItem("printerManufacturer")
+    localStorage.removeItem("printerType")
+    localStorage.removeItem("printerStatus")
+    localStorage.removeItem("printerDriverFilter")
+    localStorage.removeItem("printerPageSize")
+  }
+
+  // Persist filters to localStorage when they change
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (searchQuery) {
+        localStorage.setItem("printerSearchQuery", searchQuery)
+      } else {
+        localStorage.removeItem("printerSearchQuery")
+      }
+    }
+  }, [searchQuery])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("printerManufacturer", selectedManufacturer)
+    }
+  }, [selectedManufacturer])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("printerType", selectedType)
+    }
+  }, [selectedType])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("printerStatus", selectedStatus)
+    }
+  }, [selectedStatus])
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("printerDriverFilter", selectedDriverFilter)
+    }
+  }, [selectedDriverFilter])
+
   useEffect(() => {
     let result = printers
 
+    // Filter by manufacturer
     if (selectedManufacturer !== "all") {
       result = result.filter((p) => p.manufacturer === selectedManufacturer)
     }
 
+    // Filter by type
+    if (selectedType !== "all") {
+      result = result.filter((p) => {
+        const type = p.type || "unknown"
+        return type.toLowerCase() === selectedType.toLowerCase()
+      })
+    }
+
+    // Filter by status (using accurate status calculation)
+    if (selectedStatus !== "all") {
+      result = result.filter((p) => {
+        const accurateStatus = calculateAccurateStatus(p)
+        return accurateStatus.toLowerCase() === selectedStatus.toLowerCase()
+      })
+    }
+
+    // Filter by driver availability
+    if (selectedDriverFilter !== "all") {
+      if (selectedDriverFilter === "has_drivers") {
+        result = result.filter((p) => (p.driverCount ?? 0) > 0)
+      } else if (selectedDriverFilter === "no_drivers") {
+        result = result.filter((p) => (p.driverCount ?? 0) === 0)
+      }
+    }
+
+    // Search filter
     if (searchQuery) {
       result = result.filter(
         (p) =>
@@ -59,12 +193,12 @@ export default function HomePage() {
     
     // Reset pagination when filters change
     setCurrentPage(1)
-  }, [searchQuery, selectedManufacturer, printers])
+  }, [searchQuery, selectedManufacturer, selectedType, selectedStatus, selectedDriverFilter, printers])
 
   // Calculate pagination data
-  const totalPages = Math.ceil(filteredPrinters.length / ITEMS_PER_PAGE)
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
-  const endIndex = startIndex + ITEMS_PER_PAGE
+  const totalPages = Math.ceil(filteredPrinters.length / itemsPerPage)
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
   const displayedPrinters = filteredPrinters.slice(startIndex, endIndex)
 
   // Pagination functions
@@ -175,8 +309,19 @@ export default function HomePage() {
         <div className="mb-12">
           <PrinterSearch 
             manufacturers={manufacturers} 
-            onSearch={setSearchQuery} 
-            onFilter={setSelectedManufacturer} 
+            onSearch={setSearchQuery}
+            searchQuery={searchQuery}
+            selectedManufacturer={selectedManufacturer}
+            selectedType={selectedType}
+            selectedStatus={selectedStatus}
+            selectedDriverFilter={selectedDriverFilter}
+            itemsPerPage={itemsPerPage}
+            onManufacturerFilter={setSelectedManufacturer}
+            onTypeFilter={setSelectedType}
+            onStatusFilter={setSelectedStatus}
+            onDriverFilter={setSelectedDriverFilter}
+            onItemsPerPageChange={handleItemsPerPageChange}
+            onResetFilters={handleResetFilters}
           />
         </div>
 
@@ -213,71 +358,74 @@ export default function HomePage() {
           </div>
         ) : displayedPrinters.length > 0 ? (
           <div className="animate-fade-in">
+            {/* Results Summary */}
+            <div className="mb-6 text-sm text-muted-foreground">
+              Showing {startIndex + 1}-{Math.min(endIndex, filteredPrinters.length)} of {filteredPrinters.length} printers
+              {searchQuery && ` matching "${searchQuery}"`}
+              {selectedManufacturer !== "all" && ` from ${selectedManufacturer}`}
+            </div>
+            
             <Printers printers={displayedPrinters} />
             
             {/* Pagination Section */}
-            {totalPages > 1 && (
-              <div className="mt-12">
-                {/* Results Summary */}
-                <div className="text-center mb-6 text-sm text-muted-foreground">
-                  Showing {startIndex + 1}-{Math.min(endIndex, filteredPrinters.length)} of {filteredPrinters.length} printers
-                  {searchQuery && ` matching "${searchQuery}"`}
-                  {selectedManufacturer !== "all" && ` from ${selectedManufacturer}`}
-                </div>
-                
-                {/* Pagination Controls */}
-                <div className="flex items-center justify-center gap-4">
-                  {/* Previous Button */}
-                  <button
-                    onClick={goToPreviousPage}
-                    disabled={currentPage === 1}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border/50 bg-gradient-card text-foreground hover:bg-muted/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                    Previous
-                  </button>
-                  
-                  {/* Page Numbers */}
-                  <div className="flex items-center gap-2">
-                    {getPageNumbers().map((page, index) => (
-                      <button
-                        key={index}
-                        onClick={() => typeof page === 'number' && goToPage(page)}
-                        disabled={page === '...'}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                          page === currentPage
-                            ? 'bg-primary text-primary-foreground shadow-lg cursor-pointer'
-                            : page === '...'
-                            ? 'text-muted-foreground cursor-default'
-                            : 'text-foreground hover:bg-muted/50 border border-border/30 cursor-pointer'
-                        }`}
-                      >
-                        {page}
-                      </button>
-                    ))}
+            <div className="mt-12">
+              
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <>
+                  <div className="flex items-center justify-center gap-4">
+                    {/* Previous Button */}
+                    <button
+                      onClick={goToPreviousPage}
+                      disabled={currentPage === 1}
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border/50 bg-gradient-card text-foreground hover:bg-muted/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                      Previous
+                    </button>
+                    
+                    {/* Page Numbers */}
+                    <div className="flex items-center gap-2">
+                      {getPageNumbers().map((page, index) => (
+                        <button
+                          key={index}
+                          onClick={() => typeof page === 'number' && goToPage(page)}
+                          disabled={page === '...'}
+                          className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                            page === currentPage
+                              ? 'bg-primary text-primary-foreground shadow-lg cursor-pointer'
+                              : page === '...'
+                              ? 'text-muted-foreground cursor-default'
+                              : 'text-foreground hover:bg-muted/50 border border-border/30 cursor-pointer'
+                          }`}
+                        >
+                          {page}
+                        </button>
+                      ))}
+                    </div>
+                    
+                    {/* Next Button */}
+                    <button
+                      onClick={goToNextPage}
+                      disabled={currentPage === totalPages}
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border/50 bg-gradient-card text-foreground hover:bg-muted/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    >
+                      Next
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
                   </div>
                   
-                  {/* Next Button */}
-                  <button
-                    onClick={goToNextPage}
-                    disabled={currentPage === totalPages}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border/50 bg-gradient-card text-foreground hover:bg-muted/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                  >
-                    Next
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                </div>
-                
-                {/* Page Info */}
-                <div className="text-center mt-4 text-xs text-muted-foreground">
-                  Page {currentPage} of {totalPages}
-                </div>
-              </div>
-            )}
+                  {/* Page Info */}
+                  <div className="text-center mt-4 text-xs text-muted-foreground">
+                    Page {currentPage} of {totalPages}
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         ) : (
           <div className="text-center py-24 animate-fade-in">
