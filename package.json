@@ -9,7 +9,7 @@
     "lint": "eslint",
     "generate-ppds": "./scripts/generate-ppds.sh",
     "generate:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs",
-    "prebuild": "npm run generate:data"
+    "prebuild": "npm run generate-ppds && npm run generate:data"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.16",
