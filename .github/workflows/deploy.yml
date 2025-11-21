@@ -25,7 +25,6 @@ jobs:
            sudo apt-get update
            sudo apt-get install -y \
            foomatic-db-engine \
-           foomatic-db-engine-ppds \
            cups-filters \
            ghostscript \
            bsdmainutils \
