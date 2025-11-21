@@ -6,9 +6,18 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Set the base path for GitHub Pages deployment
   basePath: process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : '',
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.watchOptions = {
+        ...config.watchOptions,
+        ignored: ['**/public/ppds/**', '**/node_modules/**'],
+        poll: false, 
+      };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

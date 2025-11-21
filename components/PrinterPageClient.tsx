@@ -1,95 +1,113 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import type { Printer } from "@/lib/types"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
-import { Separator } from "@/components/ui/separator"
-import { Skeleton } from "@/components/ui/skeleton"
-import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2 } from "lucide-react"
+import { useEffect, useState } from "react";
+import type { Printer } from "@/lib/types";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
+import {
+  ArrowLeft,
+  PrinterIcon,
+  ExternalLink,
+  Code,
+  Info,
+  Loader2,
+} from "lucide-react";
 
 interface PrinterPageClientProps {
-  printerId: string
+  printerId: string;
 }
 
-export default function PrinterPageClient({ printerId }: PrinterPageClientProps) {
-  const [printer, setPrinter] = useState<Printer | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+export default function PrinterPageClient({
+  printerId,
+}: PrinterPageClientProps) {
+  const [printer, setPrinter] = useState<Printer | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const getStatusStyling = (status: string) => {
     switch (status.toLowerCase()) {
-      case 'recommended':
+      case "recommended":
         return {
-          variant: 'default' as const,
-          className: 'bg-green-500/20 text-green-300 border-green-400/30'
-        }
-      case 'basic':
+          variant: "default" as const,
+          className: "bg-green-500/20 text-green-300 border-green-400/30",
+        };
+      case "basic":
         return {
-          variant: 'secondary' as const,
-          className: 'bg-blue-500/20 text-blue-300 border-blue-400/30'
-        }
-      case 'partial':
+          variant: "secondary" as const,
+          className: "bg-blue-500/20 text-blue-300 border-blue-400/30",
+        };
+      case "partial":
         return {
-          variant: 'secondary' as const,
-          className: 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
-        }
-      case 'unsupported':
+          variant: "secondary" as const,
+          className: "bg-yellow-500/20 text-yellow-300 border-yellow-400/30",
+        };
+      case "unsupported":
         return {
-          variant: 'secondary' as const,
-          className: 'bg-red-500/20 text-red-300 border-red-400/30'
-        }
-      case 'deprecated':
+          variant: "secondary" as const,
+          className: "bg-red-500/20 text-red-300 border-red-400/30",
+        };
+      case "deprecated":
         return {
-          variant: 'secondary' as const,
-          className: 'bg-orange-500/20 text-orange-300 border-orange-400/30'
-        }
-      case 'unknown':
+          variant: "secondary" as const,
+          className: "bg-orange-500/20 text-orange-300 border-orange-400/30",
+        };
+      case "unknown":
         return {
-          variant: 'secondary' as const,
-          className: 'bg-gray-500/20 text-gray-300 border-gray-400/30'
-        }
+          variant: "secondary" as const,
+          className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
+        };
       default:
         return {
-          variant: 'secondary' as const,
-          className: 'bg-purple-500/20 text-purple-300 border-purple-400/30'
-        }
+          variant: "secondary" as const,
+          className: "bg-purple-500/20 text-purple-300 border-purple-400/30",
+        };
     }
-  }
+  };
 
   useEffect(() => {
     async function fetchPrinter() {
       try {
-        setLoading(true)
-        setError(null)
-        
+        setLoading(true);
+        setError(null);
+
         // Use process.env.NODE_ENV to determine the correct base path
-        const basePath = process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : ''
-        const res = await fetch(`${basePath}/foomatic-db/printers/${printerId}.json`)
-        
+        const basePath =
+          process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
+        const res = await fetch(
+          `${basePath}/foomatic-db/printers/${printerId}.json`
+        );
+
         if (!res.ok) {
-          throw new Error(`Failed to load printer: ${res.status}`)
+          throw new Error(`Failed to load printer: ${res.status}`);
         }
-        
-        const data = await res.json()
-        setPrinter(data)
+
+        const data = await res.json();
+        setPrinter(data);
       } catch (err) {
-        console.error('Failed to load printer:', err)
-        setError(err instanceof Error ? err.message : 'Failed to load printer')
+        console.error("Failed to load printer:", err);
+        setError(err instanceof Error ? err.message : "Failed to load printer");
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
     }
 
-    fetchPrinter()
-  }, [printerId])
+    fetchPrinter();
+  }, [printerId]);
 
   if (loading) {
     return (
@@ -156,7 +174,10 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
               </div>
               <div className="space-y-6">
                 {[...Array(2)].map((_, i) => (
-                  <Card key={i} className="bg-gradient-card border-border/50 shadow-card">
+                  <Card
+                    key={i}
+                    className="bg-gradient-card border-border/50 shadow-card"
+                  >
                     <CardHeader>
                       <Skeleton className="h-6 w-32" />
                       <Skeleton className="h-4 w-48" />
@@ -176,7 +197,7 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   if (error || !printer) {
@@ -187,9 +208,12 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
             <div className="p-6 rounded-full bg-destructive/10 border border-destructive/20 text-destructive w-24 h-24 mx-auto mb-8 flex items-center justify-center">
               <PrinterIcon className="h-12 w-12" />
             </div>
-            <h1 className="text-3xl font-bold text-foreground mb-4">Printer not found</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-4">
+              Printer not found
+            </h1>
             <p className="text-muted-foreground text-lg mb-8">
-              {error || "This printer may have been removed or doesn't exist in the OpenPrinting database."}
+              {error ||
+                "This printer may have been removed or doesn't exist in the OpenPrinting database."}
             </p>
             <Link href="/">
               <Button className="gap-2">
@@ -200,7 +224,7 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -229,8 +253,12 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
               <PrinterIcon className="h-8 w-8 text-primary" />
             </div>
             <div>
-              <h1 className="text-4xl font-bold text-foreground mb-2">{printer.model}</h1>
-              <p className="text-xl text-muted-foreground">{printer.manufacturer}</p>
+              <h1 className="text-4xl font-bold text-foreground mb-2">
+                {printer.model}
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                {printer.manufacturer}
+              </p>
               <div className="flex items-center gap-3 mt-3">
                 <Badge
                   variant={getStatusStyling(printer.status).variant}
@@ -238,7 +266,10 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                 >
                   {printer.status}
                 </Badge>
-                <Badge variant="outline" className="border-border bg-muted/50 text-muted-foreground">
+                <Badge
+                  variant="outline"
+                  className="border-border bg-muted/50 text-muted-foreground"
+                >
                   {printer.type}
                 </Badge>
               </div>
@@ -254,17 +285,23 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                   <Info className="h-5 w-5 text-primary" />
                   Printer Information
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">{printer.manufacturer}</CardDescription>
+                <CardDescription className="text-muted-foreground">
+                  {printer.manufacturer}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground mb-1">Type</p>
+                    <p className="text-sm font-medium text-muted-foreground mb-1">
+                      Type
+                    </p>
                     <p className="text-foreground">{printer.type}</p>
                   </div>
                   <Separator className="bg-border" />
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground mb-1">Status</p>
+                    <p className="text-sm font-medium text-muted-foreground mb-1">
+                      Status
+                    </p>
                     <Badge
                       variant={getStatusStyling(printer.status).variant}
                       className={getStatusStyling(printer.status).className}
@@ -276,7 +313,9 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                     <>
                       <Separator className="bg-border" />
                       <div>
-                        <h3 className="font-semibold mb-2 text-foreground">Notes</h3>
+                        <h3 className="font-semibold mb-2 text-foreground">
+                          Notes
+                        </h3>
                         <div
                           className="prose prose-sm prose-invert max-w-none text-muted-foreground"
                           dangerouslySetInnerHTML={{ __html: printer.notes }}
@@ -304,71 +343,101 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                     return 0;
                   })
                   .map((driver) => (
-                  <Card key={driver.id} className="bg-gradient-card border-border/50 shadow-card">
-                    <CardHeader className="flex flex-row items-start justify-between">
-                      <div className="flex-1">
-                        <CardTitle className="text-xl text-foreground">{driver.name}</CardTitle>
-                        {driver.url && (
-                          <Link
-                            href={driver.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm text-primary hover:text-primary/90 hover:underline flex items-center gap-1 mt-2"
-                          >
-                            <ExternalLink className="h-3 w-3" />
-                            {driver.url}
-                          </Link>
-                        )}
-                      </div>
-                      {driver.id === printer.recommended_driver && (
-                        <Badge className="bg-green-500/20 text-green-300 border-green-400/30">Recommended</Badge>
-                      )}
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-4">
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-2">Comments</h4>
-                          <div
-                            className="prose prose-sm prose-invert max-w-none text-muted-foreground"
-                            dangerouslySetInnerHTML={{ __html: driver.comments || "No comments available." }}
-                          />
+                    <Card
+                      key={driver.id}
+                      className="bg-gradient-card border-border/50 shadow-card"
+                    >
+                      <CardHeader className="flex flex-row items-start justify-between">
+                        <div className="flex-1">
+                          <CardTitle className="text-xl text-foreground">
+                            {driver.name}
+                          </CardTitle>
+                          {driver.url && (
+                            <Link
+                              href={driver.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-primary hover:text-primary/90 hover:underline flex items-center gap-1 mt-2"
+                            >
+                              <ExternalLink className="h-3 w-3" />
+                              {driver.url}
+                            </Link>
+                          )}
                         </div>
-                        {driver.execution && (
-                          <div>
-                            <details className="group">
-                              <summary className="cursor-pointer font-semibold text-foreground hover:text-primary transition-colors list-none">
-                                <div className="flex items-center gap-2">
-                                  <Code className="h-4 w-4" />
-                                  View PPD Generation Command
-                                  <span className="text-xs text-muted-foreground group-open:hidden">(click to expand)</span>
-                                </div>
-                              </summary>
-                              <div className="mt-3 rounded-lg overflow-hidden border border-border/50">
-                                <SyntaxHighlighter
-                                  language="bash"
-                                  style={vscDarkPlus}
-                                  customStyle={{
-                                    background: "hsl(var(--muted))",
-                                    border: "none",
-                                    padding: "1rem",
-                                    margin: 0,
-                                  }}
-                                >
-                                  {driver.execution.prototype}
-                                </SyntaxHighlighter>
-                              </div>
-                            </details>
-                          </div>
+                        {driver.id === printer.recommended_driver && (
+                          <Badge className="bg-green-500/20 text-green-300 border-green-400/30">
+                            Recommended
+                          </Badge>
                         )}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-2">
+                              Comments
+                            </h4>
+                            <div
+                              className="prose prose-sm prose-invert max-w-none text-muted-foreground"
+                              dangerouslySetInnerHTML={{
+                                __html:
+                                  driver.comments || "No comments available.",
+                              }}
+                            />
+                          </div>
+                          {/* --- START NEW BUTTONS (Fixed for Flat Files) --- */}
+                          <div className="mt-4 pt-4 border-t border-border/50">
+                            {(() => {
+                              // 1. Clean the IDs to match the actual filename format
+                              // printer.id is "printer/Alps-MD-1000" -> we want "Alps-MD-1000"
+                              const cleanPrinterId = printer.id.replace(
+                                "printer/",
+                                ""
+                              );
+
+                              // driver.id is "driver/md2k" -> we want "md2k"
+                              const cleanDriverId = driver.id.replace(
+                                "driver/",
+                                ""
+                              );
+
+                              // 2. Combine them: Alps-MD-1000-md2k
+                              const ppdName = `${cleanPrinterId}-${cleanDriverId}`;
+
+                              return (
+                                <div className="flex flex-wrap gap-3">
+                                  {/* View Button */}
+                                  <Link
+                                    href={`/view/${ppdName}`}
+                                    target="_blank"
+                                    className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground bg-secondary/50 border border-border rounded-md hover:bg-secondary/80 transition-colors"
+                                  >
+                                    <Code className="h-4 w-4" />
+                                    View PPD Source
+                                  </Link>
+
+                                  {/* Download Button */}
+                                  <a
+                                    href={`/ppds/${ppdName}.ppd`}
+                                    download
+                                    className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors shadow-sm"
+                                  >
+                                    <ExternalLink className="h-4 w-4" />
+                                    Download PPD
+                                  </a>
+                                </div>
+                              );
+                            })()}
+                          </div>
+                          {/* --- END NEW BUTTONS --- */}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
