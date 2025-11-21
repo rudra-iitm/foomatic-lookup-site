@@ -22,12 +22,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Foomatic Tools
         run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-          foomatic-db-engine \
-          foomatic-db-compressed-ppds \
-          foomatic-db \
-          cups-filters
+           sudo apt-get update
+           sudo apt-get install -y \
+           foomatic-db-engine \
+           foomatic-db \
+            foomatic-db-compressed-ppds \
+            cups-filters \
+            ghostscript \
+            bsdmainutils
+
+
 
       - name: Detect package manager
         id: detect-package-manager
