@@ -20,10 +20,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Foomatic Engine
+      - name: Install Foomatic Tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y foomatic-db-engine libxml2-utils xsltproc
+          sudo apt-get install -y \
+          foomatic-db-engine \
+          foomatic-db-compressed-ppds \
+          foomatic-db \
+          cups-filters
 
       - name: Detect package manager
         id: detect-package-manager

@@ -1,14 +1,7 @@
-
 if ! command -v foomatic-compiledb &> /dev/null; then
-    echo "⚠️ foomatic-compiledb not found. Attempting to install..."
-
-    if [ "$EUID" -ne 0 ]; then
-        sudo apt-get update && sudo apt-get install -y foomatic-db-engine libxml2-utils xsltproc
-    else
-        apt-get update && apt-get install -y foomatic-db-engine libxml2-utils xsltproc
-    fi
+    echo "❌ foomatic-compiledb not found. Please install dependencies before running this script."
+    exit 1
 fi
-
 
 BASE_DIR=$(pwd)
 DB_SOURCE_DIR="$BASE_DIR/cache/foomatic-sources"
