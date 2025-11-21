@@ -32,7 +32,7 @@ fi
 
 echo "⚙️  Compiling PPD files (This may take a while)..."
 
-export FOOMATICDB="$DB_SOURCE_DIR/foomatic-db:$DB_SOURCE_DIR/foomatic-db-nonfree"
+export FOOMATICDB="$DB_SOURCE_DIR/foomatic-db/db:$DB_SOURCE_DIR/foomatic-db-nonfree/db"
 
 echo "DEBUG: FOOMATICDB is set to: $FOOMATICDB"
 
