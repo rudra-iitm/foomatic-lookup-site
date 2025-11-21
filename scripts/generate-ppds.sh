@@ -1,4 +1,5 @@
-# Check if foomatic-compiledb exists
+export PATH="/usr/bin:/usr/sbin:/sbin:/bin:$PATH"
+
 if ! which foomatic-compiledb >/dev/null 2>&1; then
     echo "❌ foomatic-compiledb not found. Please install dependencies before running this script."
     exit 1
