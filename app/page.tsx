@@ -48,12 +48,12 @@ export default function HomePage() {
     }
 
     if (searchQuery) {
-      result = result.filter(
-        (p) =>
-          p.model.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          p.manufacturer.toLowerCase().includes(searchQuery.toLowerCase()),
-      )
-    }
+      result = result.filter(
+        (p) =>
+          (p.model ? String(p.model).toLowerCase().includes(searchQuery.toLowerCase()) : false) ||
+          (p.manufacturer ? String(p.manufacturer).toLowerCase().includes(searchQuery.toLowerCase()) : false),
+      )
+    }
 
     setFilteredPrinters(result)
     
