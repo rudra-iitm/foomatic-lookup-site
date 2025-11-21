@@ -26,6 +26,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Install Foomatic Tools
+        run: |
+           sudo apt-get update
+           sudo apt-get install -y \
+           foomatic-db-engine \
+           foomatic-db \
+            foomatic-db-compressed-ppds \
+            cups-filters \
+            ghostscript \
+            bsdmainutils
+
       - name: Detect package manager
         id: pm
         run: |
