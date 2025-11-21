@@ -1,7 +1,9 @@
-if ! command -v foomatic-compiledb &> /dev/null; then
+# Check if foomatic-compiledb exists
+if ! which foomatic-compiledb >/dev/null 2>&1; then
     echo "❌ foomatic-compiledb not found. Please install dependencies before running this script."
     exit 1
 fi
+
 
 BASE_DIR=$(pwd)
 DB_SOURCE_DIR="$BASE_DIR/cache/foomatic-sources"
