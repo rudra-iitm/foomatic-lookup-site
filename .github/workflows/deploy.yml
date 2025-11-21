@@ -25,11 +25,12 @@ jobs:
            sudo apt-get update
            sudo apt-get install -y \
            foomatic-db-engine \
-           foomatic-db \
-            foomatic-db-compressed-ppds \
-            cups-filters \
-            ghostscript \
-            bsdmainutils
+           foomatic-db-engine-ppds \
+           cups-filters \
+           ghostscript \
+           bsdmainutils \
+           libxml2-utils \
+           xsltproc
 
 
 
