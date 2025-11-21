@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "./scripts/generate-ppds.sh",
+    "prebuild": "./scripts/generate-ppds.sh && npm run build:data",
     "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs"
   },
   "dependencies": {

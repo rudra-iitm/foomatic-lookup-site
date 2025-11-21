@@ -71,8 +71,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       
-      - name: Generate Data from XML
-        run: ${{ steps.detect-package-manager.outputs.manager }} run build:data
+
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.manager }} run build

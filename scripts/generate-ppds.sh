@@ -32,9 +32,13 @@ fi
 
 echo "⚙️  Compiling PPD files (This may take a while)..."
 
-export FOOMATICDB="$DB_SOURCE_DIR/foomatic-db/db:$DB_SOURCE_DIR/foomatic-db-nonfree/db"
-
-echo "DEBUG: FOOMATICDB is set to: $FOOMATICDB"
+# Symlink the database to the system location where foomatic-compiledb expects it
+echo "🔗 Symlinking Foomatic database to /usr/share/foomatic/db..."
+sudo mkdir -p /usr/share/foomatic
+if [ -d "/usr/share/foomatic/db" ]; then
+    sudo rm -rf /usr/share/foomatic/db
+fi
+sudo ln -s "$DB_SOURCE_DIR/foomatic-db/db" /usr/share/foomatic/db
 
 foomatic-compiledb -t ppd -j 4 -d "$OUTPUT_DIR" -f
 
