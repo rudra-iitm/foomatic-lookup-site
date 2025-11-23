@@ -15,8 +15,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
@@ -38,6 +37,10 @@ export default function PrinterPageClient({
   const [printer, setPrinter] = useState<Printer | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Use process.env.NODE_ENV to determine the correct base path
+  const basePath =
+    process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
 
   const getStatusStyling = (status: string) => {
     switch (status.toLowerCase()) {
@@ -85,9 +88,7 @@ export default function PrinterPageClient({
         setLoading(true);
         setError(null);
 
-        // Use process.env.NODE_ENV to determine the correct base path
-        const basePath =
-          process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
+
         const res = await fetch(
           `${basePath}/foomatic-db/printers/${printerId}.json`
         );
@@ -107,7 +108,7 @@ export default function PrinterPageClient({
     }
 
     fetchPrinter();
-  }, [printerId]);
+  }, [printerId, basePath]);
 
   if (loading) {
     return (
@@ -407,7 +408,7 @@ export default function PrinterPageClient({
                                 <div className="flex flex-wrap gap-3">
                                   {/* View Button */}
                                   <Link
-                                    href={`/view/${ppdName}`}
+                                    href={`${basePath}/view/${ppdName}`}
                                     target="_blank"
                                     className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground bg-secondary/50 border border-border rounded-md hover:bg-secondary/80 transition-colors"
                                   >
@@ -417,7 +418,7 @@ export default function PrinterPageClient({
 
                                   {/* Download Button */}
                                   <a
-                                    href={`/ppds/${ppdName}.ppd`}
+                                    href={`${basePath}/ppds/${ppdName}.ppd`}
                                     download
                                     className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors shadow-sm"
                                   >
