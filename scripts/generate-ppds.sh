@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export PATH="/usr/bin:/usr/sbin:/sbin:/bin:$PATH"
 
 if ! which foomatic-compiledb >/dev/null 2>&1; then
@@ -20,14 +22,14 @@ if [ ! -d "$DB_SOURCE_DIR/foomatic-db" ]; then
     git clone --depth 1 https://github.com/OpenPrinting/foomatic-db.git "$DB_SOURCE_DIR/foomatic-db"
 else
     echo "Updating foomatic-db..."
-    cd "$DB_SOURCE_DIR/foomatic-db" && git pull -q && cd "$BASE_DIR"
+    (cd "$DB_SOURCE_DIR/foomatic-db" && git pull -q) || { echo "Failed to update foomatic-db repository"; exit 1; }
 fi
 
 if [ ! -d "$DB_SOURCE_DIR/foomatic-db-nonfree" ]; then
     git clone --depth 1 https://github.com/OpenPrinting/foomatic-db-nonfree.git "$DB_SOURCE_DIR/foomatic-db-nonfree"
 else
     echo "Updating foomatic-db-nonfree..."
-    cd "$DB_SOURCE_DIR/foomatic-db-nonfree" && git pull -q && cd "$BASE_DIR"
+    (cd "$DB_SOURCE_DIR/foomatic-db-nonfree" && git pull -q) || { echo "Failed to update foomatic-db-nonfree repository"; exit 1; }
 fi
 
 echo "⚙️  Compiling PPD files (This may take a while)..."
@@ -40,7 +42,10 @@ if [ -d "/usr/share/foomatic/db" ]; then
 fi
 sudo ln -s "$DB_SOURCE_DIR/foomatic-db/db" /usr/share/foomatic/db
 
-foomatic-compiledb -t ppd -j 4 -d "$OUTPUT_DIR" -f
+if ! foomatic-compiledb -t ppd -j 4 -d "$OUTPUT_DIR" -f; then
+    echo "❌ Compilation failed"
+    exit 1
+fi
 
 FILE_COUNT=$(find "$OUTPUT_DIR" -type f | wc -l)
 

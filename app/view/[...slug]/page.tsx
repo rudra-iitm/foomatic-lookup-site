@@ -1,11 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ArrowLeft, FileText, Download, AlertCircle } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 
 interface ViewPageProps {
   params: Promise<{ slug: string[] }>;
@@ -13,7 +11,7 @@ interface ViewPageProps {
 
 export default async function ViewPPD({ params }: ViewPageProps) {
   const resolvedParams = await params;
-  const filenameWithoutExt = resolvedParams.slug.join('-'); 
+  const filenameWithoutExt = resolvedParams.slug.join('-');
   const filename = `${filenameWithoutExt}.ppd`;
   const filePath = path.join(process.cwd(), 'public', 'ppds', filename);
 
@@ -24,11 +22,11 @@ export default async function ViewPPD({ params }: ViewPageProps) {
     if (fs.existsSync(filePath)) {
       content = fs.readFileSync(filePath, 'utf8');
     } else {
-      error = `PPD file not found.`;
+      error = `File not found.`;
     }
   } catch (e) {
     console.error("Error reading file:", e);
-    error = "System error reading file.";
+    error = "An error occurred while reading the file.";
   }
   if (error) {
     return (
@@ -60,9 +58,9 @@ export default async function ViewPPD({ params }: ViewPageProps) {
       <div className="w-full px-6 md:px-12 py-6 mx-auto">
         <div className="flex items-center mb-6">
           <Link href="/">
-            <Button 
-              variant="outline" 
-              size="sm" 
+            <Button
+              variant="outline"
+              size="sm"
               className="gap-2 bg-gradient-card border-border/50 text-muted-foreground hover:bg-muted/50"
             >
               <ArrowLeft className="h-4 w-4" />
