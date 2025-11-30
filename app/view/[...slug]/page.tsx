@@ -64,30 +64,27 @@ export default async function ViewPPD({ params }: ViewPageProps) {
               className="gap-2 bg-gradient-card border-border/50 text-muted-foreground hover:bg-muted/50"
             >
               <ArrowLeft className="h-4 w-4" />
-              Back to Home
+              Back
             </Button>
           </Link>
           <div className="ml-4 flex items-center gap-2 text-sm text-muted-foreground">
             <FileText className="h-4 w-4" />
-            <span>PPD Source Viewer</span>
+            <span>PPD Source</span>
           </div>
         </div>
         <Card className="bg-gradient-card border-border/50 shadow-card overflow-hidden w-full">
-          <CardHeader className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-border/40 bg-muted/20 pb-6 px-8">
+          <CardHeader className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-border/40 pb-6 px-8">
             <div className="space-y-1">
               <CardTitle className="text-xl md:text-2xl text-foreground flex items-center gap-2">
                 <FileText className="h-6 w-6 text-primary" />
                 {filename}
               </CardTitle>
-              <CardDescription className="text-muted-foreground font-mono text-xs break-all">
-                public/ppds/{filename}
-              </CardDescription>
             </div>
 
             <a href={`/ppds/${filename}`} download>
               <Button className="gap-2 shadow-md" size="default">
                 <Download className="h-4 w-4" />
-                Download Raw File
+                Download PPD File
               </Button>
             </a>
           </CardHeader>
