@@ -35,12 +35,25 @@ fi
 echo "⚙️  Compiling PPD files (This may take a while)..."
 
 # Symlink the database to the system location where foomatic-compiledb expects it
-echo "🔗 Symlinking Foomatic database to /usr/share/foomatic/db..."
-sudo mkdir -p /usr/share/foomatic
-if [ -d "/usr/share/foomatic/db" ]; then
-    sudo rm -rf /usr/share/foomatic/db
+# Define sudo command if not root
+SUDO=""
+if [ "$(id -u)" -ne 0 ]; then
+    if command -v sudo >/dev/null 2>&1; then
+        SUDO="sudo"
+    else
+        echo "⚠️  Running as non-root and 'sudo' is not available."
+        echo "   This script requires permissions to write to /usr/share/foomatic/db."
+        echo "   Please run as root or ensure you have sudo privileges."
+        exit 1
+    fi
 fi
-sudo ln -s "$DB_SOURCE_DIR/foomatic-db/db" /usr/share/foomatic/db
+
+echo "🔗 Symlinking Foomatic database to /usr/share/foomatic/db..."
+$SUDO mkdir -p /usr/share/foomatic
+if [ -d "/usr/share/foomatic/db" ]; then
+    $SUDO rm -rf /usr/share/foomatic/db
+fi
+$SUDO ln -s "$DB_SOURCE_DIR/foomatic-db/db" /usr/share/foomatic/db
 
 if ! foomatic-compiledb -t ppd -j 4 -d "$OUTPUT_DIR" -f; then
     echo "❌ Compilation failed"
