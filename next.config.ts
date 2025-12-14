@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   output: 'export',
+  outputFileTracingRoot: path.join(process.cwd()),
   trailingSlash: true,
   images: {
     unoptimized: true
@@ -13,7 +15,7 @@ const nextConfig: NextConfig = {
       config.watchOptions = {
         ...config.watchOptions,
         ignored: ['**/public/ppds/**', '**/node_modules/**'],
-        poll: false, 
+        poll: false,
       };
     }
     return config;
