@@ -12,7 +12,7 @@ async function getPrinterSummaries(): Promise<PrinterSummary[]> {
     const data = await fs.readFile(filePath, "utf-8")
     const json = JSON.parse(data)
     return json.printers
-  } catch (error) {
+  } catch {
     // If file is missing or invalid, we handle it upstream or return empty
     // But generateStaticParams needs to handle the existence check explicitly
     return []
