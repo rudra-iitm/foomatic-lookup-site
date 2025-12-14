@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
-const PRINTERS_DIR = 'public/foomatic-db/printer';
-const DRIVERS_DIR = 'public/foomatic-db/driver';
-const OUTPUT_FILE = 'public/foomatic-db/printers.json';
+const PRINTERS_DIR = 'cache/foomatic-sources/foomatic-db/printer';
+const DRIVERS_DIR = 'cache/foomatic-sources/foomatic-db/driver';
+const OUTPUT_FILE = 'public/foomatic-db/printersMap.json';
 
 function getFunctionalityStatus(func) {
     if (!func || func === '?') {
@@ -211,6 +211,7 @@ async function combineData() {
         return aModel.localeCompare(bModel);
     });
 
+    fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify({ printers: combinedPrinters }, null, 2));
     console.log(` Combined data written to ${OUTPUT_FILE}`);
     console.log(`   Total printers: ${combinedPrinters.length}`);
