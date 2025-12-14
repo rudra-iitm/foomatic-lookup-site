@@ -1,25 +1,21 @@
 #!/bin/bash
 
 export PATH="/usr/bin:/usr/sbin:/sbin:/bin:$PATH"
+BASE_DIR=$(pwd)
+DB_SOURCE_DIR="$BASE_DIR/cache/foomatic-sources"
+OUTPUT_DIR="$BASE_DIR/public/ppds"
+
+# Ensure output directory exists even if skipping generation
+mkdir -p "$OUTPUT_DIR"
 
 if [ "${SKIP_PPD_GEN}" = "true" ]; then
   echo "⏭️  Skipping PPD generation"
   exit 0
 fi
 
-if ! which foomatic-compiledb >/dev/null 2>&1; then
-    echo "❌ foomatic-compiledb not found. Please install dependencies before running this script."
-    exit 1
-fi
-
-
-BASE_DIR=$(pwd)
-DB_SOURCE_DIR="$BASE_DIR/cache/foomatic-sources"
-OUTPUT_DIR="$BASE_DIR/public/ppds"
-
 echo "🔧 Setting up directories..."
 mkdir -p "$DB_SOURCE_DIR"
-mkdir -p "$OUTPUT_DIR"
+
 
 echo "⬇️  Fetching Foomatic Database..."
 
