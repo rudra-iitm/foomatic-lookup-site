@@ -11,5 +11,8 @@
 			]
 		}
 	},
-	"remoteUser": "node"
+	"remoteUser": "node",
+	"containerEnv": {
+		"SKIP_PPD_GEN": "true"
+	}
 }

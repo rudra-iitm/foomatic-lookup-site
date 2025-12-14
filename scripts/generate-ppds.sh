@@ -2,6 +2,11 @@
 
 export PATH="/usr/bin:/usr/sbin:/sbin:/bin:$PATH"
 
+if [ "${SKIP_PPD_GEN}" = "true" ]; then
+  echo "⏭️  Skipping PPD generation"
+  exit 0
+fi
+
 if ! which foomatic-compiledb >/dev/null 2>&1; then
     echo "❌ foomatic-compiledb not found. Please install dependencies before running this script."
     exit 1
