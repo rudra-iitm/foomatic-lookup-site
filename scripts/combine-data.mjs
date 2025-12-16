@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
-const PRINTERS_DIR = 'cache/foomatic-sources/foomatic-db/printer';
-const DRIVERS_DIR = 'cache/foomatic-sources/foomatic-db/driver';
-const OUTPUT_FILE = 'public/foomatic-db/printersMap.json';
+const PRINTERS_DIR = 'cache/json/printer';
+const DRIVERS_DIR = 'cache/json/driver';
+const OUTPUT_FILE = 'public/foomatic-db/printers.json';
 
 function getFunctionalityStatus(func) {
     if (!func || func === '?') {
