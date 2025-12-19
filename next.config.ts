@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   basePath: process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/foomatic-lookup-site' : '',
   webpack: (config, { dev }) => {
     if (dev) {
       config.watchOptions = {

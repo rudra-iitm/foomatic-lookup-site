@@ -105,7 +105,6 @@ export default async function ViewPPD({ params }: ViewPageProps) {
     );
 }
 export async function generateStaticParams() {
-    // Use printers.json (full data with drivers), not printersMap.json (summary only)
     const printersPath = path.join(process.cwd(), 'public', 'foomatic-db', 'printers.json');
 
     if (!fs.existsSync(printersPath)) {
@@ -132,8 +131,6 @@ export async function generateStaticParams() {
         }
 
         console.log(`[generateStaticParams] Generated ${params.length} PPD view routes`);
-
-        // If no routes generated, return stub to satisfy static export requirement
         if (params.length === 0) {
             console.log('[generateStaticParams] No routes found, returning stub');
             return [{ slug: ['__static_export_stub__'] }];
