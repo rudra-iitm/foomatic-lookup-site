@@ -40,8 +40,9 @@ jobs:
       - name: Detect package manager
         id: pm
         run: |
-          # Prefer pnpm, then yarn, otherwise npm
           if [ -f pnpm-lock.yaml ]; then
+
+
             echo "manager=pnpm" >> $GITHUB_OUTPUT
             echo "install=install --frozen-lockfile" >> $GITHUB_OUTPUT
             echo "runner=pnpm run" >> $GITHUB_OUTPUT
@@ -66,6 +67,10 @@ jobs:
 
       - name: Run linter
         run: ${{ steps.pm.outputs.runner }} lint
+
+      - name: Run data generation
+        run: ${{ steps.pm.outputs.runner }} generate:data
+
 
 
 

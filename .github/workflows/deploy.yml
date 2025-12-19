@@ -74,6 +74,10 @@ jobs:
       
 
 
+
+      - name: Run data generation
+        run: ${{ steps.detect-package-manager.outputs.manager }} run generate:data
+
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
 
