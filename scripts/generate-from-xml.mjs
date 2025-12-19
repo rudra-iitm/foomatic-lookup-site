@@ -3,7 +3,6 @@ import path from 'path';
 import { XMLParser } from 'fast-xml-parser';
 import { execSync } from 'child_process';
 const FDB_REPO = 'https://github.com/OpenPrinting/foomatic-db.git';
-// Resolve to absolute path to avoid UNC path issues with cmd.exe in execSync
 const FDB_DIR = path.resolve('cache/foomatic-db');
 const FDB_PATH = path.join(FDB_DIR, 'db/source');
 const PRINTER_XML_DIR = path.join(FDB_PATH, 'printer');

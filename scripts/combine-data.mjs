@@ -7,17 +7,16 @@ const OUTPUT_FILE = 'public/foomatic-db/printers.json';
 
 function getFunctionalityStatus(func) {
     if (!func || func === '?') {
-        return 'unknown';
+        return 'Unknown';
     }
     switch (func) {
         case 'A':
-            return 'perfect';
+            return 'Perfect';
         case 'B':
-            return 'good';
         case 'C':
-            return 'partial';
+                return 'Mostly';
         default:
-            return 'unsupported';
+            return 'Unsupported';
     }
 }
 
@@ -25,9 +24,9 @@ function getPrinterType(printer) {
     if (!printer.mechanism) {
         return 'unknown';
     }
-
+    
     const mechanism = printer.mechanism;
-
+    
     if (mechanism.inkjet !== undefined) {
         return 'inkjet';
     }
@@ -44,16 +43,36 @@ function getPrinterType(printer) {
     if (mechanism.transfer === 't') {
         return 'laser';
     }
-
+    
     return 'unknown';
 }
 
-
+function parseConnectivity(printer) {
+    const connectivity = [];
+    if (!printer.autodetect) {
+        return connectivity;
+    }
+    
+    if (printer.autodetect.usb) {
+        connectivity.push('USB');
+    }
+    if (printer.autodetect.parallel) {
+        connectivity.push('Parallel');
+    }
+    if (printer.autodetect.serial) {
+        connectivity.push('Serial');
+    }
+    if (printer.autodetect.network) {
+        connectivity.push('Network');
+    }
+    
+    return connectivity;
+}
 
 async function combineData() {
     const printers = new Map();
     const drivers = new Map();
-    const printerToDrivers = new Map();
+    const printerToDrivers = new Map(); 
 
     const printerFiles = fs.readdirSync(PRINTERS_DIR);
     for (const file of printerFiles) {
@@ -170,6 +189,19 @@ async function combineData() {
             recommendedDriverId = driverIds[0];
         }
 
+        let recommendedDriverId = null;
+        if (printer.driver) {
+            recommendedDriverId = `driver/${printer.driver}`;
+       
+            if (!driverIdSet.has(recommendedDriverId)) {
+                driverIdSet.add(recommendedDriverId);
+                driverIds.push(recommendedDriverId);
+            }
+        } else if (driverIds.length > 0) {
+          
+            recommendedDriverId = driverIds[0];
+        }
+        
         const driverDetails = driverIds
             .map(driverId => drivers.get(driverId))
             .filter(Boolean)
@@ -187,6 +219,10 @@ async function combineData() {
             series = typeof printer.series === 'string' ? printer.series : '';
         }
 
+        const functionality = printer.functionality || '?';
+        const status = getFunctionalityStatus(functionality);
+        const finalStatus = driverDetails.length === 0 && status === 'Unknown' ? 'Unsupported' : status;
+        
         combinedPrinters.push({
             id: printer['@id'].replace('printer/', ''),
             manufacturer: printer.make,

@@ -1,31 +1,15 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
+"use client"
 
-"use client";
-
-import { useEffect, useState } from "react";
-import type { Printer } from "@/lib/types";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-
-import { Separator } from "@/components/ui/separator";
-import { Skeleton } from "@/components/ui/skeleton";
-import {
-  ArrowLeft,
-  PrinterIcon,
-  ExternalLink,
-  Code,
-  Info,
-  Loader2,
-} from "lucide-react";
+import { useEffect, useState } from "react"
+import type { Printer } from "@/lib/types"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
+import { Skeleton } from "@/components/ui/skeleton"
+import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2 } from "lucide-react"
+import { calculateAccurateStatus } from "@/lib/utils"
 
 interface PrinterPageClientProps {
   printerId: string;
@@ -38,70 +22,62 @@ export default function PrinterPageClient({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Use process.env.NODE_ENV to determine the correct base path
   const basePath =
     process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
 
   const getStatusStyling = (status: string) => {
-    switch (status.toLowerCase()) {
-      case "recommended":
-        return {
-          variant: "default" as const,
-          className: "bg-green-500/20 text-green-300 border-green-400/30",
-        };
-      case "basic":
-        return {
-          variant: "secondary" as const,
-          className: "bg-blue-500/20 text-blue-300 border-blue-400/30",
-        };
-      case "partial":
-        return {
-          variant: "secondary" as const,
-          className: "bg-yellow-500/20 text-yellow-300 border-yellow-400/30",
-        };
-      case "unsupported":
-        return {
-          variant: "secondary" as const,
-          className: "bg-red-500/20 text-red-300 border-red-400/30",
-        };
-      case "deprecated":
-        return {
-          variant: "secondary" as const,
-          className: "bg-orange-500/20 text-orange-300 border-orange-400/30",
-        };
-      case "unknown":
-        return {
-          variant: "secondary" as const,
-          className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
-        };
-      default:
-        return {
-          variant: "secondary" as const,
-          className: "bg-purple-500/20 text-purple-300 border-purple-400/30",
-        };
-    }
-  };
+  switch (status.toLowerCase()) {
+    case "perfect":
+      return {
+        variant: "default" as const,
+        className: "bg-green-500/20 text-green-300 border-green-400/30",
+      }
+    case "mostly":
+    case "partial":
+      return {
+        variant: "secondary" as const,
+        className: "bg-yellow-500/20 text-yellow-300 border-yellow-400/30",
+      }
+    case "unsupported":
+      return {
+        variant: "secondary" as const,
+        className: "bg-red-500/20 text-red-300 border-red-400/30",
+      }
+    case "unknown":
+      return {
+        variant: "secondary" as const,
+        className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
+      }
+    default:
+      return {
+        variant: "secondary" as const,
+        className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
+      }
+  }
+};
 
   useEffect(() => {
     async function fetchPrinter() {
       try {
-        setLoading(true);
-        setError(null);
+        setLoading(true)
+        setError(null)
 
+        const basePath =
+          typeof window !== "undefined" && window.location.pathname.startsWith("/foomatic-lookup-site")
+            ? "/foomatic-lookup-site"
+            : ""
 
-        const res = await fetch(
-          `${basePath}/foomatic-db/printers/${printerId}.json`
-        );
+        const res = await fetch(`${basePath}/foomatic-db/printers/${printerId}.json`)
 
         if (!res.ok) {
           throw new Error(`Failed to load printer: ${res.status}`);
         }
 
-        const data = await res.json();
-        setPrinter(data);
+        const data = await res.json()
+        setPrinter(data)
       } catch (err) {
-        console.error("Failed to load printer:", err);
-        setError(err instanceof Error ? err.message : "Failed to load printer");
+        console.error("Failed to load printer:", err)
+        setError(err instanceof Error ? err.message : "Failed to load printer")
       } finally {
         setLoading(false);
       }
@@ -112,124 +88,6 @@ export default function PrinterPageClient({
 
   if (loading) {
     return (
-      <div className="min-h-screen">
-        <div className="container mx-auto p-4">
-          <div className="flex items-center mb-6">
-            <Link href="/">
-              <Button
-                variant="outline"
-                size="sm"
-                className="gap-2 bg-gradient-card border-border/50 text-muted-foreground hover:bg-muted/50"
-              >
-                <ArrowLeft className="h-4 w-4" />
-                Back
-              </Button>
-            </Link>
-            <div className="ml-4 flex items-center gap-2 text-sm text-muted-foreground">
-              <PrinterIcon className="h-4 w-4" />
-              <span>OpenPrinting Database</span>
-            </div>
-          </div>
-
-          <div className="mb-8">
-            <div className="flex items-start gap-4 mb-6">
-              <Skeleton className="h-16 w-16 rounded-xl" />
-              <div className="flex-1">
-                <Skeleton className="h-10 w-64 mb-2" />
-                <Skeleton className="h-6 w-32 mb-3" />
-                <div className="flex gap-3">
-                  <Skeleton className="h-6 w-20" />
-                  <Skeleton className="h-6 w-16" />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-1">
-              <Card className="bg-gradient-card border-border/50 shadow-card">
-                <CardHeader>
-                  <Skeleton className="h-6 w-48" />
-                  <Skeleton className="h-4 w-24" />
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <Skeleton className="h-4 w-12 mb-1" />
-                      <Skeleton className="h-5 w-20" />
-                    </div>
-                    <Separator className="bg-border" />
-                    <div>
-                      <Skeleton className="h-4 w-16 mb-1" />
-                      <Skeleton className="h-6 w-24" />
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="lg:col-span-2">
-              <div className="flex items-center gap-3 mb-6">
-                <Loader2 className="h-7 w-7 text-primary animate-spin" />
-                <Skeleton className="h-8 w-48" />
-              </div>
-              <div className="space-y-6">
-                {[...Array(2)].map((_, i) => (
-                  <Card
-                    key={i}
-                    className="bg-gradient-card border-border/50 shadow-card"
-                  >
-                    <CardHeader>
-                      <Skeleton className="h-6 w-32" />
-                      <Skeleton className="h-4 w-48" />
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-4">
-                        <div>
-                          <Skeleton className="h-5 w-20 mb-2" />
-                          <Skeleton className="h-16 w-full" />
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error || !printer) {
-    return (
-      <div className="min-h-screen">
-        <div className="container mx-auto p-4 text-center">
-          <div className="py-20">
-            <div className="p-6 rounded-full bg-destructive/10 border border-destructive/20 text-destructive w-24 h-24 mx-auto mb-8 flex items-center justify-center">
-              <PrinterIcon className="h-12 w-12" />
-            </div>
-            <h1 className="text-3xl font-bold text-foreground mb-4">
-              Printer not found
-            </h1>
-            <p className="text-muted-foreground text-lg mb-8">
-              {error ||
-                "This printer may have been removed or doesn't exist in the OpenPrinting database."}
-            </p>
-            <Link href="/">
-              <Button className="gap-2">
-                <ArrowLeft className="h-4 w-4" />
-                Back to all printers
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="min-h-screen">
       <div className="container mx-auto p-4">
         <div className="flex items-center mb-6">
           <Link href="/">
@@ -248,87 +106,158 @@ export default function PrinterPageClient({
           </div>
         </div>
 
-        <div className="mb-8">
-          <div className="flex items-start gap-4 mb-6">
-            <div className="p-4 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 border border-primary/30">
-              <PrinterIcon className="h-8 w-8 text-primary" />
-            </div>
-            <div>
-              <h1 className="text-4xl font-bold text-foreground mb-2">
-                {printer.model}
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                {printer.manufacturer}
-              </p>
-              <div className="flex items-center gap-3 mt-3">
-                <Badge
-                  variant={getStatusStyling(printer.status).variant}
-                  className={getStatusStyling(printer.status).className}
-                >
-                  {printer.status}
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="border-border bg-muted/50 text-muted-foreground"
-                >
-                  {printer.type}
-                </Badge>
-              </div>
+        <div className="flex items-start gap-4 mb-6">
+          <Skeleton className="h-16 w-16 rounded-xl" />
+          <div className="flex-1">
+            <Skeleton className="h-10 w-64 mb-2" />
+            <Skeleton className="h-6 w-32 mb-3" />
+            <div className="flex gap-3">
+              <Skeleton className="h-6 w-20" />
+              <Skeleton className="h-6 w-16" />
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
-            <Card className="bg-gradient-card border-border/50 shadow-card">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground flex items-center gap-2">
-                  <Info className="h-5 w-5 text-primary" />
-                  Printer Information
-                </CardTitle>
-                <CardDescription className="text-muted-foreground">
-                  {printer.manufacturer}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground mb-1">
-                      Type
-                    </p>
-                    <p className="text-foreground">{printer.type}</p>
-                  </div>
-                  <Separator className="bg-border" />
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground mb-1">
-                      Status
-                    </p>
-                    <Badge
-                      variant={getStatusStyling(printer.status).variant}
-                      className={getStatusStyling(printer.status).className}
-                    >
-                      {printer.status}
-                    </Badge>
-                  </div>
-                  {printer.notes && (
-                    <>
-                      <Separator className="bg-border" />
-                      <div>
-                        <h3 className="font-semibold mb-2 text-foreground">
-                          Notes
-                        </h3>
-                        <div
-                          className="prose prose-sm prose-invert max-w-none text-muted-foreground"
-                          dangerouslySetInnerHTML={{ __html: printer.notes }}
-                        />
-                      </div>
-                    </>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+          <Card className="bg-gradient-card border-border/50 shadow-card">
+            <CardHeader>
+              <Skeleton className="h-6 w-48" />
+              <Skeleton className="h-4 w-24" />
+            </CardHeader>
+            <CardContent>
+              <Skeleton className="h-4 w-12 mb-1" />
+              <Skeleton className="h-5 w-20" />
+            </CardContent>
+          </Card>
 
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-3 mb-6">
+              <Loader2 className="h-7 w-7 text-primary animate-spin" />
+              <Skeleton className="h-8 w-48" />
+            </div>
+
+            {[...Array(2)].map((_, i) => (
+              <Card key={i} className="bg-gradient-card border-border/50 shadow-card">
+                <CardHeader>
+                  <Skeleton className="h-6 w-32" />
+                </CardHeader>
+                <CardContent>
+                  <Skeleton className="h-16 w-full" />
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || !printer) {
+    return (
+      <div className="container mx-auto p-4 text-center">
+        <div className="py-20">
+          <div className="p-6 rounded-full bg-destructive/10 border border-destructive/20 text-destructive w-24 h-24 mx-auto mb-8 flex items-center justify-center">
+            <PrinterIcon className="h-12 w-12" />
+          </div>
+          <h1 className="text-3xl font-bold text-foreground mb-4">Printer not found</h1>
+          <p className="text-muted-foreground text-lg mb-8">
+            {error || "This printer may have been removed or doesn't exist in the OpenPrinting database."}
+          </p>
+          <Link href="/">
+            <Button className="gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to all printers
+            </Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="container mx-auto p-4">
+      <div className="flex items-center mb-6">
+        <Link href="/">
+          <Button
+            variant="outline"
+            size="sm"
+            className="gap-2 bg-gradient-card border-border/50 text-muted-foreground hover:bg-muted/50"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+          </Button>
+        </Link>
+
+        <div className="ml-4 flex items-center gap-2 text-sm text-muted-foreground">
+          <PrinterIcon className="h-4 w-4" />
+          <span>OpenPrinting Database</span>
+        </div>
+      </div>
+
+      {/* HEADER */}
+      <div className="flex items-start gap-4 mb-8">
+        <div className="p-4 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 border border-primary/30">
+          <PrinterIcon className="h-8 w-8 text-primary" />
+        </div>
+
+        <div>
+          <h1 className="text-4xl font-bold text-foreground mb-2">{printer.model}</h1>
+          <p className="text-xl text-muted-foreground">{printer.manufacturer}</p>
+
+          <div className="flex items-center gap-3 mt-3">
+            {(() => {
+              const accurateStatus = calculateAccurateStatus(printer)
+              const style = getStatusStyling(accurateStatus)
+              return <Badge variant={style.variant} className={style.className}>{accurateStatus}</Badge>
+            })()}
+
+            <Badge variant="outline" className="border-border bg-muted/50 text-muted-foreground">
+              {printer.type}
+            </Badge>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* LEFT CARD */}
+        <div>
+          <Card className="bg-gradient-card border-border/50 shadow-card">
+            <CardHeader>
+              <CardTitle className="text-2xl text-foreground flex items-center gap-2">
+                <Info className="h-5 w-5 text-primary" />
+                Printer Information
+              </CardTitle>
+              <CardDescription className="text-muted-foreground">{printer.manufacturer}</CardDescription>
+            </CardHeader>
+
+            <CardContent>
+              <p className="text-sm font-medium text-muted-foreground mb-1">Type</p>
+              <p className="text-foreground">{printer.type}</p>
+
+              <Separator className="my-4 bg-border" />
+
+              <p className="text-sm font-medium text-muted-foreground mb-1">Status</p>
+              {(() => {
+                const accurateStatus = calculateAccurateStatus(printer)
+                const style = getStatusStyling(accurateStatus)
+                return <Badge variant={style.variant} className={style.className}>{accurateStatus}</Badge>
+              })()}
+
+              {printer.notes && (
+                <>
+                  <Separator className="my-4 bg-border" />
+                  <h3 className="font-semibold mb-2 text-foreground">Notes</h3>
+                  <div
+                    className="prose prose-sm prose-invert max-w-none text-muted-foreground"
+                    dangerouslySetInnerHTML={{ __html: printer.notes }}
+                  />
+                </>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* RIGHT SECTION — DRIVERS */}
           <div className="lg:col-span-2">
             <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-3">
@@ -336,7 +265,7 @@ export default function PrinterPageClient({
                 Available Drivers
               </h2>
               <div className="space-y-6">
-                {printer.drivers
+                {(printer.drivers ?? [])
                   .sort((a, b) => {
                     // Put recommended driver first
                     if (a.id === printer.recommended_driver) return -1;
@@ -385,23 +314,22 @@ export default function PrinterPageClient({
                               }}
                             />
                           </div>
-                          {/* --- START NEW BUTTONS (Fixed for Flat Files) --- */}
+                          
                           <div className="mt-4 pt-4 border-t border-border/50">
                             {(() => {
-                              // 1. Clean the IDs to match the actual filename format
-                              // printer.id is "printer/Alps-MD-1000" -> we want "Alps-MD-1000"
+                              
                               const cleanPrinterId = printer.id.replace(
                                 "printer/",
                                 ""
                               );
 
-                              // driver.id is "driver/md2k" -> we want "md2k"
+                              
                               const cleanDriverId = driver.id.replace(
                                 "driver/",
                                 ""
                               );
 
-                              // 2. Combine them: Alps-MD-1000-md2k
+                      
                               const ppdName = `${cleanPrinterId}-${cleanDriverId}`;
 
                               return (

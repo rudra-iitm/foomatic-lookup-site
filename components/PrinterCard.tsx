@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
-
 import type { PrinterSummary } from "@/lib/types"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { PrinterIcon } from "lucide-react"
+import { calculateAccurateStatus } from "@/lib/utils"
 
 interface PrinterCardProps {
   printer: PrinterSummary
@@ -13,20 +11,21 @@ interface PrinterCardProps {
 
 export default function PrinterCard({ printer }: PrinterCardProps) {
   const printerId = printer.id.replace("printer/", "")
+  const accurateStatus = calculateAccurateStatus(printer)
 
   const getStatusStyling = (status: string) => {
     switch (status.toLowerCase()) {
-      case 'recommended':
+      case 'perfect':
         return {
           variant: 'default' as const,
           className: 'bg-green-500/20 text-green-300 border-green-400/30'
         }
-      case 'basic':
+      case 'partial':
         return {
           variant: 'secondary' as const,
-          className: 'bg-blue-500/20 text-blue-300 border-blue-400/30'
+          className: 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
         }
-      case 'partial':
+      case 'mostly':
         return {
           variant: 'secondary' as const,
           className: 'bg-yellow-500/20 text-yellow-300 border-yellow-400/30'
@@ -36,11 +35,6 @@ export default function PrinterCard({ printer }: PrinterCardProps) {
           variant: 'secondary' as const,
           className: 'bg-red-500/20 text-red-300 border-red-400/30'
         }
-      case 'deprecated':
-        return {
-          variant: 'secondary' as const,
-          className: 'bg-orange-500/20 text-orange-300 border-orange-400/30'
-        }
       case 'unknown':
         return {
           variant: 'secondary' as const,
@@ -49,7 +43,7 @@ export default function PrinterCard({ printer }: PrinterCardProps) {
       default:
         return {
           variant: 'secondary' as const,
-          className: 'bg-purple-500/20 text-purple-300 border-purple-400/30'
+          className: 'bg-gray-500/20 text-gray-300 border-gray-400/30'
         }
     }
   }
@@ -81,10 +75,10 @@ export default function PrinterCard({ printer }: PrinterCardProps) {
               {printer.type}
             </Badge>
             <Badge
-              variant={getStatusStyling(printer.status).variant}
-              className={getStatusStyling(printer.status).className}
+              variant={getStatusStyling(accurateStatus).variant}
+              className={getStatusStyling(accurateStatus).className}
             >
-              {printer.status}
+              {accurateStatus}
             </Badge>
             {
               (printer.driverCount ?? 0) >= 0 && (

@@ -21,9 +21,15 @@ export interface Printer {
   type?: string
   status?: string
   notes?: string
+  functionality?: string
 }
 
-// Lightweight version for the index map
+export type PrinterStatus = 'Perfect' | 'Mostly' | 'Unsupported' | 'Unknown'
+export type DriverType = string
+export type MechanismType = 'inkjet' | 'laser' | 'dot-matrix' | 'unknown'
+export type SupportLevel = 'Perfect' | 'Mostly' | 'Unsupported' | 'Unknown'
+export type ColorCapability = 'color' | 'monochrome' | 'unknown'
+
 export interface PrinterSummary {
   id: string
   manufacturer: string
@@ -31,4 +37,5 @@ export interface PrinterSummary {
   type?: string
   status?: string
   driverCount?: number
+  functionality?: string
 }

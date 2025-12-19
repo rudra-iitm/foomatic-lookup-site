@@ -25,24 +25,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
-      - name: Install Foomatic Tools
-        run: |
-           sudo apt-get update
-           sudo apt-get install -y \
-           foomatic-db-engine \
-           cups-filters \
-           ghostscript \
-           bsdmainutils \
-           libxml2-utils \
-           xsltproc
-
+        
       - name: Detect package manager
         id: pm
         run: |
+        
           if [ -f pnpm-lock.yaml ]; then
-
-
             echo "manager=pnpm" >> $GITHUB_OUTPUT
             echo "install=install --frozen-lockfile" >> $GITHUB_OUTPUT
             echo "runner=pnpm run" >> $GITHUB_OUTPUT
@@ -67,12 +55,9 @@ jobs:
 
       - name: Run linter
         run: ${{ steps.pm.outputs.runner }} lint
-
-      - name: Run data generation
-        run: ${{ steps.pm.outputs.runner }} generate:data
-
-
-
+        
+      - name: Generate static data
+        run: ${{ steps.pm.outputs.runner }} build:data
 
       - name: Build Next.js
         run: ${{ steps.pm.outputs.runner }} build

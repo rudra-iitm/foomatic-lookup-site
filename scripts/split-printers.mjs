@@ -23,7 +23,8 @@ async function splitPrintersData() {
         manufacturer: printer.manufacturer,
         model: printer.model,
         type: printer.type || 'unknown',
-        status: printer.status || 'unknown',
+        status: printer.status || 'Unknown',
+        functionality: printer.functionality || '?',
         driverCount: printer.drivers ? printer.drivers.length : 0
       }))
     }
