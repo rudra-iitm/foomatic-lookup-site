@@ -26,35 +26,35 @@ export default function PrinterPageClient({
     process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
 
   const getStatusStyling = (status: string) => {
-  switch (status.toLowerCase()) {
-    case "perfect":
-      return {
-        variant: "default" as const,
-        className: "bg-green-500/20 text-green-300 border-green-400/30",
-      }
-    case "mostly":
-    case "partial":
-      return {
-        variant: "secondary" as const,
-        className: "bg-yellow-500/20 text-yellow-300 border-yellow-400/30",
-      }
-    case "unsupported":
-      return {
-        variant: "secondary" as const,
-        className: "bg-red-500/20 text-red-300 border-red-400/30",
-      }
-    case "unknown":
-      return {
-        variant: "secondary" as const,
-        className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
-      }
-    default:
-      return {
-        variant: "secondary" as const,
-        className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
-      }
-  }
-};
+    switch (status.toLowerCase()) {
+      case "perfect":
+        return {
+          variant: "default" as const,
+          className: "bg-green-500/20 text-green-300 border-green-400/30",
+        }
+      case "mostly":
+      case "partial":
+        return {
+          variant: "secondary" as const,
+          className: "bg-yellow-500/20 text-yellow-300 border-yellow-400/30",
+        }
+      case "unsupported":
+        return {
+          variant: "secondary" as const,
+          className: "bg-red-500/20 text-red-300 border-red-400/30",
+        }
+      case "unknown":
+        return {
+          variant: "secondary" as const,
+          className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
+        }
+      default:
+        return {
+          variant: "secondary" as const,
+          className: "bg-gray-500/20 text-gray-300 border-gray-400/30",
+        }
+    }
+  };
 
   useEffect(() => {
     async function fetchPrinter() {
@@ -258,111 +258,110 @@ export default function PrinterPageClient({
         </div>
 
         {/* RIGHT SECTION — DRIVERS */}
-          <div className="lg:col-span-2">
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-3">
-                <Code className="h-7 w-7 text-primary" />
-                Available Drivers
-              </h2>
-              <div className="space-y-6">
-                {(printer.drivers ?? [])
-                  .sort((a, b) => {
-                    // Put recommended driver first
-                    if (a.id === printer.recommended_driver) return -1;
-                    if (b.id === printer.recommended_driver) return 1;
-                    return 0;
-                  })
-                  .map((driver) => (
-                    <Card
-                      key={driver.id}
-                      className="bg-gradient-card border-border/50 shadow-card"
-                    >
-                      <CardHeader className="flex flex-row items-start justify-between">
-                        <div className="flex-1">
-                          <CardTitle className="text-xl text-foreground">
-                            {driver.name}
-                          </CardTitle>
-                          {driver.url && (
-                            <Link
-                              href={driver.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-sm text-primary hover:text-primary/90 hover:underline flex items-center gap-1 mt-2"
-                            >
-                              <ExternalLink className="h-3 w-3" />
-                              {driver.url}
-                            </Link>
-                          )}
-                        </div>
-                        {driver.id === printer.recommended_driver && (
-                          <Badge className="bg-green-500/20 text-green-300 border-green-400/30">
-                            Recommended
-                          </Badge>
+        <div className="lg:col-span-2">
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-3">
+              <Code className="h-7 w-7 text-primary" />
+              Available Drivers
+            </h2>
+            <div className="space-y-6">
+              {(printer.drivers ?? [])
+                .sort((a, b) => {
+                  // Put recommended driver first
+                  if (a.id === printer.recommended_driver) return -1;
+                  if (b.id === printer.recommended_driver) return 1;
+                  return 0;
+                })
+                .map((driver) => (
+                  <Card
+                    key={driver.id}
+                    className="bg-gradient-card border-border/50 shadow-card"
+                  >
+                    <CardHeader className="flex flex-row items-start justify-between">
+                      <div className="flex-1">
+                        <CardTitle className="text-xl text-foreground">
+                          {driver.name}
+                        </CardTitle>
+                        {driver.url && (
+                          <Link
+                            href={driver.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-primary hover:text-primary/90 hover:underline flex items-center gap-1 mt-2"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            {driver.url}
+                          </Link>
                         )}
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-4">
-                          <div>
-                            <h4 className="font-semibold text-foreground mb-2">
-                              Comments
-                            </h4>
-                            <div
-                              className="prose prose-sm prose-invert max-w-none text-muted-foreground"
-                              dangerouslySetInnerHTML={{
-                                __html:
-                                  driver.comments || "No comments available.",
-                              }}
-                            />
-                          </div>
-                          
-                          <div className="mt-4 pt-4 border-t border-border/50">
-                            {(() => {
-                              
-                              const cleanPrinterId = printer.id.replace(
-                                "printer/",
-                                ""
-                              );
-
-                              
-                              const cleanDriverId = driver.id.replace(
-                                "driver/",
-                                ""
-                              );
-
-                      
-                              const ppdName = `${cleanPrinterId}-${cleanDriverId}`;
-
-                              return (
-                                <div className="flex flex-wrap gap-3">
-                                  {/* View Button */}
-                                  <Link
-                                    href={`${basePath}/view/${ppdName}`}
-                                    target="_blank"
-                                    className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground bg-secondary/50 border border-border rounded-md hover:bg-secondary/80 transition-colors"
-                                  >
-                                    <Code className="h-4 w-4" />
-                                    View PPD Source
-                                  </Link>
-
-                                  {/* Download Button */}
-                                  <a
-                                    href={`${basePath}/ppds/${ppdName}.ppd`}
-                                    download
-                                    className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors shadow-sm"
-                                  >
-                                    <ExternalLink className="h-4 w-4" />
-                                    Download PPD
-                                  </a>
-                                </div>
-                              );
-                            })()}
-                          </div>
-                          {/* --- END NEW BUTTONS --- */}
+                      </div>
+                      {driver.id === printer.recommended_driver && (
+                        <Badge className="bg-green-500/20 text-green-300 border-green-400/30">
+                          Recommended
+                        </Badge>
+                      )}
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">
+                            Comments
+                          </h4>
+                          <div
+                            className="prose prose-sm prose-invert max-w-none text-muted-foreground"
+                            dangerouslySetInnerHTML={{
+                              __html:
+                                driver.comments || "No comments available.",
+                            }}
+                          />
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-              </div>
+
+                        <div className="mt-4 pt-4 border-t border-border/50">
+                          {(() => {
+
+                            const cleanPrinterId = printer.id.replace(
+                              "printer/",
+                              ""
+                            );
+
+
+                            const cleanDriverId = driver.id.replace(
+                              "driver/",
+                              ""
+                            );
+
+
+                            const ppdName = `${cleanPrinterId}-${cleanDriverId}`;
+
+                            return (
+                              <div className="flex flex-wrap gap-3">
+                                {/* View Button */}
+                                <Link
+                                  href={`${basePath}/view/${ppdName}`}
+                                  target="_blank"
+                                  className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground bg-secondary/50 border border-border rounded-md hover:bg-secondary/80 transition-colors"
+                                >
+                                  <Code className="h-4 w-4" />
+                                  View PPD Source
+                                </Link>
+
+                                {/* Download Button */}
+                                <a
+                                  href={`${basePath}/ppds/${ppdName}.ppd`}
+                                  download
+                                  className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors shadow-sm"
+                                >
+                                  <ExternalLink className="h-4 w-4" />
+                                  Download PPD
+                                </a>
+                              </div>
+                            );
+                          })()}
+                        </div>
+                        {/* --- END NEW BUTTONS --- */}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
             </div>
           </div>
         </div>

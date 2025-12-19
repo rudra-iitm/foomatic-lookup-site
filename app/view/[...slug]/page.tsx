@@ -11,6 +11,10 @@ interface ViewPageProps {
 
 export default async function ViewPPD({ params }: ViewPageProps) {
     const resolvedParams = await params;
+    if (resolvedParams.slug[0] === '__static_export_stub__') {
+        return null;
+    }
+
     const basePath = process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
     const filenameWithoutExt = resolvedParams.slug.join('-');
     const filename = `${filenameWithoutExt}.ppd`;
@@ -103,31 +107,34 @@ export default async function ViewPPD({ params }: ViewPageProps) {
 export async function generateStaticParams() {
     const printersPath = path.join(process.cwd(), 'public', 'foomatic-db', 'printersMap.json');
 
-    if (fs.existsSync(printersPath)) {
-        try {
-            const data = fs.readFileSync(printersPath, 'utf8');
-            const json = JSON.parse(data);
-            const printers = json.printers || [];
-
-            const params = [];
-
-            for (const printer of printers) {
-                const printerId = printer.id;
-                if (printer.drivers) {
-                    for (const driver of printer.drivers) {
-                        const driverId = driver.id.replace('driver/', '');
-                        const slug = `${printerId}-${driverId}`;
-                        params.push({ slug: [slug] });
-                    }
-                }
-            }
-            return params;
-        } catch (e) {
-            console.error("Error generating static params:", e);
-            return [];
-        }
+    if (!fs.existsSync(printersPath)) {
+        console.log('[generateStaticParams] printersMap.json not found, returning stub for lightweight build');
+        return [{ slug: ['__static_export_stub__'] }];
     }
 
-    return [];
+    try {
+        const data = fs.readFileSync(printersPath, 'utf8');
+        const json = JSON.parse(data);
+        const printers = json.printers || [];
+
+        const params = [];
+
+        for (const printer of printers) {
+            const printerId = printer.id;
+            if (printer.drivers) {
+                for (const driver of printer.drivers) {
+                    const driverId = driver.id.replace('driver/', '');
+                    const slug = `${printerId}-${driverId}`;
+                    params.push({ slug: slug.split('-') });
+                }
+            }
+        }
+
+        console.log(`[generateStaticParams] Generated ${params.length} PPD view routes`);
+        return params;
+    } catch (e) {
+        console.error('[generateStaticParams] Error:', e);
+        return [];
+    }
 }
 

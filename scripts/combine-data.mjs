@@ -14,7 +14,7 @@ function getFunctionalityStatus(func) {
             return 'Perfect';
         case 'B':
         case 'C':
-                return 'Mostly';
+            return 'Mostly';
         default:
             return 'Unsupported';
     }
@@ -24,9 +24,9 @@ function getPrinterType(printer) {
     if (!printer.mechanism) {
         return 'unknown';
     }
-    
+
     const mechanism = printer.mechanism;
-    
+
     if (mechanism.inkjet !== undefined) {
         return 'inkjet';
     }
@@ -43,36 +43,14 @@ function getPrinterType(printer) {
     if (mechanism.transfer === 't') {
         return 'laser';
     }
-    
-    return 'unknown';
-}
 
-function parseConnectivity(printer) {
-    const connectivity = [];
-    if (!printer.autodetect) {
-        return connectivity;
-    }
-    
-    if (printer.autodetect.usb) {
-        connectivity.push('USB');
-    }
-    if (printer.autodetect.parallel) {
-        connectivity.push('Parallel');
-    }
-    if (printer.autodetect.serial) {
-        connectivity.push('Serial');
-    }
-    if (printer.autodetect.network) {
-        connectivity.push('Network');
-    }
-    
-    return connectivity;
+    return 'unknown';
 }
 
 async function combineData() {
     const printers = new Map();
     const drivers = new Map();
-    const printerToDrivers = new Map(); 
+    const printerToDrivers = new Map();
 
     const printerFiles = fs.readdirSync(PRINTERS_DIR);
     for (const file of printerFiles) {
@@ -192,16 +170,16 @@ async function combineData() {
         let recommendedDriverId = null;
         if (printer.driver) {
             recommendedDriverId = `driver/${printer.driver}`;
-       
+
             if (!driverIdSet.has(recommendedDriverId)) {
                 driverIdSet.add(recommendedDriverId);
                 driverIds.push(recommendedDriverId);
             }
         } else if (driverIds.length > 0) {
-          
+
             recommendedDriverId = driverIds[0];
         }
-        
+
         const driverDetails = driverIds
             .map(driverId => drivers.get(driverId))
             .filter(Boolean)
@@ -222,7 +200,7 @@ async function combineData() {
         const functionality = printer.functionality || '?';
         const status = getFunctionalityStatus(functionality);
         const finalStatus = driverDetails.length === 0 && status === 'Unknown' ? 'Unsupported' : status;
-        
+
         combinedPrinters.push({
             id: printer['@id'].replace('printer/', ''),
             manufacturer: printer.make,
@@ -232,7 +210,7 @@ async function combineData() {
             recommended_driver: recommendedDriverId,
             drivers: driverDetails,
             type: getPrinterType(printer),
-            status: getFunctionalityStatus(printer.functionality || '?'),
+            status: finalStatus,
             notes: printer.comments ? (printer.comments.en || printer.comments || '') : '',
         });
     }
