@@ -163,20 +163,6 @@ async function combineData() {
                 driverIds.push(recommendedDriverId);
             }
         } else if (driverIds.length > 0) {
-
-            recommendedDriverId = driverIds[0];
-        }
-
-        let recommendedDriverId = null;
-        if (printer.driver) {
-            recommendedDriverId = `driver/${printer.driver}`;
-
-            if (!driverIdSet.has(recommendedDriverId)) {
-                driverIdSet.add(recommendedDriverId);
-                driverIds.push(recommendedDriverId);
-            }
-        } else if (driverIds.length > 0) {
-
             recommendedDriverId = driverIds[0];
         }
 
