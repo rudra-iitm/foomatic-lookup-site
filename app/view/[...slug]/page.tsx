@@ -11,15 +11,10 @@ interface ViewPageProps {
 
 export default async function ViewPPD({ params }: ViewPageProps) {
     const resolvedParams = await params;
-
-    if (resolvedParams.slug?.[0] === "__static_export_stub__") {
-        return null;
-    }
-
+    const basePath = process.env.NODE_ENV === "production" ? "/foomatic-lookup-site" : "";
     const filenameWithoutExt = resolvedParams.slug.join('-');
     const filename = `${filenameWithoutExt}.ppd`;
     const filePath = path.join(process.cwd(), 'public', 'ppds', filename);
-
     let content = "";
     let error = null;
 
@@ -27,11 +22,11 @@ export default async function ViewPPD({ params }: ViewPageProps) {
         if (fs.existsSync(filePath)) {
             content = fs.readFileSync(filePath, 'utf8');
         } else {
-            error = `File not found.`;
+            error = "PPD file is not available.";
         }
     } catch (e) {
         console.error("Error reading file:", e);
-        error = "An error occurred while reading the file.";
+        error = "PPD file is not available.";
     }
     if (error) {
         return (
@@ -86,7 +81,7 @@ export default async function ViewPPD({ params }: ViewPageProps) {
                             </CardTitle>
                         </div>
 
-                        <a href={`/ppds/${filename}`} download>
+                        <a href={`${basePath}/ppds/${filename}`} download>
                             <Button className="gap-2 shadow-md" size="default">
                                 <Download className="h-4 w-4" />
                                 Download PPD File
@@ -105,17 +100,34 @@ export default async function ViewPPD({ params }: ViewPageProps) {
         </div>
     );
 }
-
-/**
- * NOTE:
- * This project uses `output: "export"` (static export).
- * Next.js requires dynamic routes to provide at least one static path.
- *
- * PPD files may not exist at build time, so we provide a
- * build-only placeholder slug to satisfy static export requirements.
- *
- * This route is not user-facing and is safely ignored at runtime.
- */
 export async function generateStaticParams() {
-    return [{ slug: ["__static_export_stub__"] }];
+    const printersPath = path.join(process.cwd(), 'public', 'foomatic-db', 'printersMap.json');
+
+    if (fs.existsSync(printersPath)) {
+        try {
+            const data = fs.readFileSync(printersPath, 'utf8');
+            const json = JSON.parse(data);
+            const printers = json.printers || [];
+
+            const params = [];
+
+            for (const printer of printers) {
+                const printerId = printer.id;
+                if (printer.drivers) {
+                    for (const driver of printer.drivers) {
+                        const driverId = driver.id.replace('driver/', '');
+                        const slug = `${printerId}-${driverId}`;
+                        params.push({ slug: [slug] });
+                    }
+                }
+            }
+            return params;
+        } catch (e) {
+            console.error("Error generating static params:", e);
+            return [];
+        }
+    }
+
+    return [];
 }
+
