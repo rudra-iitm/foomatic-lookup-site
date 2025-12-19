@@ -1,18 +1,18 @@
 import fs from 'fs';
 import path from 'path';
 import { XMLParser } from 'fast-xml-parser';
-import { execSync } from 'child_process'; 
+import { execSync } from 'child_process';
 const FDB_REPO = 'https://github.com/OpenPrinting/foomatic-db.git';
-const FDB_DIR = '../foomatic-db'; 
-const FDB_PATH = path.join(FDB_DIR, 'db/source'); 
+const FDB_DIR = path.resolve('cache/foomatic-db');
+const FDB_PATH = path.join(FDB_DIR, 'db/source');
 const PRINTER_XML_DIR = path.join(FDB_PATH, 'printer');
 const DRIVER_XML_DIR = path.join(FDB_PATH, 'driver');
-const PRINTER_JSON_DIR = 'public/foomatic-db/printer';
-const DRIVER_JSON_DIR = 'public/foomatic-db/driver';
+const PRINTER_JSON_DIR = 'cache/json/printer';
+const DRIVER_JSON_DIR = 'cache/json/driver';
 const parserOptions = {
   ignoreAttributes: false,
   attributeNamePrefix: '@',
-  textNodeName: '#text', 
+  textNodeName: '#text',
   allowBooleanAttributes: true,
 };
 const parser = new XMLParser(parserOptions);
@@ -57,7 +57,7 @@ function processDirectory(sourceDir, outputDir) {
         const xmlContent = fs.readFileSync(xmlPath, 'utf-8');
         let parsedData = parser.parse(xmlContent);
         if (sourceDir === DRIVER_XML_DIR && parsedData.driver?.printers?.printer) {
-          
+
           let printerRefs = parsedData.driver.printers.printer;
           if (!Array.isArray(printerRefs)) {
             printerRefs = [printerRefs];
@@ -73,11 +73,11 @@ function processDirectory(sourceDir, outputDir) {
 
             } else if (typeof printerRef === 'object' && printerRef !== null) {
               newRef = { ...printerRef };
-              
+
               if (printerRef.id) printerId = printerRef.id;
               else if (printerRef['@id']) printerId = printerRef['@id'];
               else if (printerRef['#text']) printerId = printerRef['#text'];
-              
+
               if (printerId) {
                 newRef.id = printerId;
               }

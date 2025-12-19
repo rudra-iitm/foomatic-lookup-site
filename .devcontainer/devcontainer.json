@@ -1,0 +1,19 @@
+{
+    "name": "Foomatic Lookup Site",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    },
+    "remoteUser": "node",
+    "containerEnv": {
+        "SKIP_PPD_GEN": "true",
+        "SKIP_DATA_GEN": "true"
+    }
+}

@@ -27,7 +27,6 @@ function PaginationControls({
   startIndex,
   endIndex,
   filteredLength,
-  totalPages,
 }: {
   itemsPerPage: number
   setItemsPerPage: (n: number) => void
@@ -35,7 +34,6 @@ function PaginationControls({
   startIndex: number
   endIndex: number
   filteredLength: number
-  totalPages: number
 }) {
   const displayStart = filteredLength === 0 ? 0 : startIndex + 1
   const displayEnd = filteredLength === 0 ? 0 : endIndex
@@ -72,14 +70,14 @@ export default function HomePage() {
   const [manufacturers, setManufacturers] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  
+
   const [searchQuery, setSearchQuery] = useState("")
   const [selectedManufacturer, setSelectedManufacturer] = useState("all")
   const [selectedDriverType, setSelectedDriverType] = useState("all")
   const [selectedMechanismType, setSelectedMechanismType] = useState("all")
   const [selectedSupportLevel, setSelectedSupportLevel] = useState("all")
   const [selectedColorCapability, setSelectedColorCapability] = useState("all")
-  
+
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage, setItemsPerPage] = useState(20)
 
@@ -93,7 +91,7 @@ export default function HomePage() {
       const savedColorCapability = localStorage.getItem(STORAGE_KEYS.COLOR_CAPABILITY)
       const savedPage = localStorage.getItem(STORAGE_KEYS.PAGE)
       const savedItemsPerPage = localStorage.getItem(STORAGE_KEYS.ITEMS_PER_PAGE)
-      
+
       if (savedSearch) setSearchQuery(String(savedSearch))
       if (savedManufacturer) setSelectedManufacturer(String(savedManufacturer))
       if (savedDriverType) setSelectedDriverType(String(savedDriverType))
@@ -116,20 +114,20 @@ export default function HomePage() {
       setLoading(true)
       setError(null)
       try {
-        const basePath = typeof window !== 'undefined' && window.location.pathname.startsWith('/foomatic-lookup-site') 
-          ? '/foomatic-lookup-site' 
+        const basePath = typeof window !== 'undefined' && window.location.pathname.startsWith('/foomatic-lookup-site')
+          ? '/foomatic-lookup-site'
           : ''
         const res = await fetch(`${basePath}/foomatic-db/printersMap.json`)
-        
+
         if (!res.ok) {
           throw new Error(`Failed to load printer data: ${res.status}`)
         }
-        
+
         const data = await res.json()
-        
+
         const printersWithStatus: PrinterSummary[] = []
         const manufacturerSet = new Set<string>()
-        
+
         for (const p of data.printers) {
           // Normalize data-provided status values and map legacy 'Partial' to 'Mostly'
           let status = (p.status || calculateAccurateStatus(p)) as string
@@ -145,7 +143,7 @@ export default function HomePage() {
             manufacturerSet.add(p.manufacturer)
           }
         }
-        
+
         setPrinters(printersWithStatus)
         setManufacturers(Array.from(manufacturerSet).sort())
       } catch (err) {
@@ -242,7 +240,7 @@ export default function HomePage() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return
-    
+
     localStorage.setItem(STORAGE_KEYS.SEARCH, String(searchQuery).trim())
     localStorage.setItem(STORAGE_KEYS.MANUFACTURER, selectedManufacturer)
     localStorage.setItem(STORAGE_KEYS.DRIVER_TYPE, selectedDriverType)
@@ -262,7 +260,7 @@ export default function HomePage() {
     setSelectedColorCapability("all")
     setCurrentPage(1)
     setItemsPerPage(20)
-    
+
     if (typeof window !== 'undefined') {
       Object.values(STORAGE_KEYS).forEach(key => {
         localStorage.removeItem(key)
@@ -316,7 +314,7 @@ export default function HomePage() {
   const getPageNumbers = useCallback(() => {
     const pages: (number | string)[] = []
     const maxVisiblePages = 7
-    
+
     if (totalPages <= maxVisiblePages) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i)
@@ -344,11 +342,11 @@ export default function HomePage() {
         pages.push(totalPages)
       }
     }
-    
+
     return pages
   }, [totalPages, currentPage])
 
-  
+
 
   return (
     <div>
@@ -360,7 +358,7 @@ export default function HomePage() {
               <span className="text-sm font-semibold text-foreground tracking-wide">OpenPrinting Project</span>
             </div>
           </div>
-          
+
           <h1 className="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-tight">
             <span className="bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
               Foomatic
@@ -370,12 +368,12 @@ export default function HomePage() {
               Printer Database
             </span>
           </h1>
-          
+
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-12 font-light">
             Discover and explore printers from the comprehensive Foomatic database maintained by the OpenPrinting
             community. Find drivers, specifications, and compatibility information for seamless Linux printing.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-gradient-card border border-border/30 shadow-card backdrop-blur-sm">
               <Database className="h-4 w-4 text-primary" />
@@ -393,7 +391,7 @@ export default function HomePage() {
         </div>
 
         <div className="mb-12">
-          <PrinterSearch 
+          <PrinterSearch
             manufacturers={manufacturers}
             driverTypes={driverTypes}
             mechanismTypes={mechanismTypes}
@@ -427,8 +425,8 @@ export default function HomePage() {
         ) : loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {[...Array(8)].map((_, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="bg-gradient-card border border-border/50 rounded-2xl p-6 shadow-card backdrop-blur-sm"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
@@ -463,18 +461,17 @@ export default function HomePage() {
               startIndex={startIndex}
               endIndex={endIndex}
               filteredLength={filteredPrinters.length}
-              totalPages={totalPages}
             />
             <Printers printers={displayedPrinters} />
-            
+
             {totalPages > 1 && (
               <div className="mt-12">
-                
+
                 <div className="text-center mb-6 text-sm text-muted-foreground">
                   {searchQuery && ` matching "${searchQuery}"`}
                   {selectedManufacturer !== "all" && ` from ${selectedManufacturer}`}
                 </div>
-                
+
                 <div className="flex items-center justify-center gap-4">
                   <button
                     onClick={goToPreviousPage}
@@ -486,26 +483,25 @@ export default function HomePage() {
                     </svg>
                     Previous
                   </button>
-                  
+
                   <div className="flex items-center gap-2">
                     {getPageNumbers().map((page, index) => (
                       <button
                         key={index}
                         onClick={() => typeof page === 'number' && goToPage(page)}
                         disabled={page === '...'}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                          page === currentPage
-                            ? 'bg-primary text-primary-foreground shadow-lg cursor-pointer'
-                            : page === '...'
+                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${page === currentPage
+                          ? 'bg-primary text-primary-foreground shadow-lg cursor-pointer'
+                          : page === '...'
                             ? 'text-muted-foreground cursor-default'
                             : 'text-foreground hover:bg-muted/50 border border-border/30 cursor-pointer'
-                        }`}
+                          }`}
                       >
                         {page}
                       </button>
                     ))}
                   </div>
-                  
+
                   <button
                     onClick={goToNextPage}
                     disabled={currentPage === totalPages}
@@ -517,7 +513,7 @@ export default function HomePage() {
                     </svg>
                   </button>
                 </div>
-                
+
                 <div className="text-center mt-4 text-xs text-muted-foreground">
                   Page {currentPage} of {totalPages}
                 </div>

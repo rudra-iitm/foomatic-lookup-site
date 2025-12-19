@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs",
+    "generate-ppds": "./scripts/generate-ppds.sh",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -40,6 +41,7 @@
     "eslint-config-next": "15.5.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
+    "source-map-js": "^1.2.1",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5"

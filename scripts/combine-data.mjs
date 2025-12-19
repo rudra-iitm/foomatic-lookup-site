@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const PRINTERS_DIR = 'public/foomatic-db/printer';
-const DRIVERS_DIR = 'public/foomatic-db/driver';
+const PRINTERS_DIR = 'cache/json/printer';
+const DRIVERS_DIR = 'cache/json/driver';
 const OUTPUT_FILE = 'public/foomatic-db/printers.json';
 
 function getFunctionalityStatus(func) {
@@ -14,7 +14,7 @@ function getFunctionalityStatus(func) {
             return 'Perfect';
         case 'B':
         case 'C':
-                return 'Mostly';
+            return 'Mostly';
         default:
             return 'Unsupported';
     }
@@ -24,9 +24,9 @@ function getPrinterType(printer) {
     if (!printer.mechanism) {
         return 'unknown';
     }
-    
+
     const mechanism = printer.mechanism;
-    
+
     if (mechanism.inkjet !== undefined) {
         return 'inkjet';
     }
@@ -43,36 +43,14 @@ function getPrinterType(printer) {
     if (mechanism.transfer === 't') {
         return 'laser';
     }
-    
-    return 'unknown';
-}
 
-function parseConnectivity(printer) {
-    const connectivity = [];
-    if (!printer.autodetect) {
-        return connectivity;
-    }
-    
-    if (printer.autodetect.usb) {
-        connectivity.push('USB');
-    }
-    if (printer.autodetect.parallel) {
-        connectivity.push('Parallel');
-    }
-    if (printer.autodetect.serial) {
-        connectivity.push('Serial');
-    }
-    if (printer.autodetect.network) {
-        connectivity.push('Network');
-    }
-    
-    return connectivity;
+    return 'unknown';
 }
 
 async function combineData() {
     const printers = new Map();
     const drivers = new Map();
-    const printerToDrivers = new Map(); 
+    const printerToDrivers = new Map();
 
     const printerFiles = fs.readdirSync(PRINTERS_DIR);
     for (const file of printerFiles) {
@@ -85,10 +63,10 @@ async function combineData() {
 
                     printerToDrivers.set(printer['@id'], new Set());
                     if (printer.drivers && printer.drivers.driver) {
-                        const driverRefs = Array.isArray(printer.drivers.driver) 
-                            ? printer.drivers.driver 
+                        const driverRefs = Array.isArray(printer.drivers.driver)
+                            ? printer.drivers.driver
                             : [printer.drivers.driver];
-                        
+
                         for (const driverRef of driverRefs) {
                             let driverId = null;
                             if (typeof driverRef === 'string') {
@@ -96,7 +74,7 @@ async function combineData() {
                             } else if (driverRef && typeof driverRef === 'object') {
                                 driverId = driverRef.id || driverRef['@id'] || driverRef['#text'];
                             }
-                            
+
                             if (driverId) {
                                 if (!driverId.startsWith('driver/')) {
                                     driverId = `driver/${driverId}`;
@@ -122,10 +100,10 @@ async function combineData() {
                     drivers.set(driver['@id'], driver);
 
                     if (driver.printers && driver.printers.printer) {
-                        const printerRefs = Array.isArray(driver.printers.printer) 
-                            ? driver.printers.printer 
+                        const printerRefs = Array.isArray(driver.printers.printer)
+                            ? driver.printers.printer
                             : [driver.printers.printer];
-                        
+
                         for (const printerRef of printerRefs) {
                             let printerId = null;
 
@@ -134,17 +112,17 @@ async function combineData() {
                             } else if (printerRef && typeof printerRef === 'object') {
                                 printerId = printerRef.id || printerRef['@id'] || printerRef['#text'];
                             }
-                            
+
                             if (printerId) {
                                 if (!printerId.startsWith('printer/')) {
                                     printerId = `printer/${printerId}`;
                                 }
-                                
+
                                 if (!printerToDrivers.has(printerId)) {
                                     printerToDrivers.set(printerId, new Set());
                                 }
                                 printerToDrivers.get(printerId).add(driver['@id']);
-                                
+
                                 if (!printers.has(printerId)) {
                                     const newPrinter = {};
                                     newPrinter['@id'] = printerId;
@@ -171,7 +149,7 @@ async function combineData() {
 
     console.log('Combining data...');
     const combinedPrinters = [];
-    
+
     for (const [printerId, printer] of printers.entries()) {
         const driverIdSet = printerToDrivers.get(printerId) || new Set();
         const driverIds = Array.from(driverIdSet);
@@ -179,16 +157,15 @@ async function combineData() {
         let recommendedDriverId = null;
         if (printer.driver) {
             recommendedDriverId = `driver/${printer.driver}`;
-       
+
             if (!driverIdSet.has(recommendedDriverId)) {
                 driverIdSet.add(recommendedDriverId);
                 driverIds.push(recommendedDriverId);
             }
         } else if (driverIds.length > 0) {
-          
             recommendedDriverId = driverIds[0];
         }
-        
+
         const driverDetails = driverIds
             .map(driverId => drivers.get(driverId))
             .filter(Boolean)
@@ -209,18 +186,17 @@ async function combineData() {
         const functionality = printer.functionality || '?';
         const status = getFunctionalityStatus(functionality);
         const finalStatus = driverDetails.length === 0 && status === 'Unknown' ? 'Unsupported' : status;
-        
+
         combinedPrinters.push({
             id: printer['@id'].replace('printer/', ''),
             manufacturer: printer.make,
             model: printer.model,
-            series: '',
+            series: series,
             connectivity: [],
             recommended_driver: recommendedDriverId,
             drivers: driverDetails,
             type: getPrinterType(printer),
             status: finalStatus,
-            functionality: functionality,
             notes: printer.comments ? (printer.comments.en || printer.comments || '') : '',
         });
     }
@@ -235,6 +211,7 @@ async function combineData() {
         return aModel.localeCompare(bModel);
     });
 
+    fs.mkdirSync(path.dirname(OUTPUT_FILE), { recursive: true });
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify({ printers: combinedPrinters }, null, 2));
     console.log(` Combined data written to ${OUTPUT_FILE}`);
     console.log(`   Total printers: ${combinedPrinters.length}`);
