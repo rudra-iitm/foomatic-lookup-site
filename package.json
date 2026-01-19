@@ -7,17 +7,13 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-<<<<<<< HEAD
-    "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs",
-    "prepare": "husky"
+    "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs && node scripts/generate-drivers.mjs",
+    "prepare": "node -e \"process.env.CI || require('husky').install()\""
   },
   "lint-staged": {
     "*.{ts,tsx}": [
       "eslint --fix"
     ]
-=======
-    "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs && node scripts/generate-drivers.mjs"
->>>>>>> 4173d62 (fix: wire drivers generation, remove supplier, fix view links)
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.16",
