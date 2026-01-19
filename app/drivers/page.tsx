@@ -63,9 +63,8 @@ export default function DriversPage() {
     const query = searchQuery.toLowerCase().trim()
     return drivers.filter((driver) => {
       const nameMatch = (driver.name || '').toLowerCase().includes(query)
-      const supplierMatch = (driver.supplier || '').toLowerCase().includes(query)
       const descMatch = (driver.description || '').toLowerCase().includes(query)
-      return nameMatch || supplierMatch || descMatch
+      return nameMatch || descMatch
     })
   }, [searchQuery, drivers])
 
@@ -155,7 +154,7 @@ export default function DriversPage() {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
               type="text"
-              placeholder="Search by name, supplier, or description..."
+              placeholder="Search by name or description..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10 h-12 bg-muted/50 border-border/50 text-foreground focus:border-primary/50 focus:ring-primary/20"
@@ -202,7 +201,6 @@ export default function DriversPage() {
                 <thead>
                   <tr className="border-b border-border/50">
                     <th className="text-left py-3 px-4 font-semibold text-foreground">Driver Name</th>
-                    <th className="text-left py-3 px-4 font-semibold text-foreground">Supplier</th>
                     <th className="text-left py-3 px-4 font-semibold text-foreground">Printers</th>
                     <th className="text-left py-3 px-4 font-semibold text-foreground">Description</th>
                     <th className="text-left py-3 px-4 font-semibold text-foreground">Actions</th>
@@ -221,9 +219,6 @@ export default function DriversPage() {
                         )}
                       </td>
                       <td className="py-4 px-4 text-muted-foreground">
-                        {driver.supplier || 'N/A'}
-                      </td>
-                      <td className="py-4 px-4 text-muted-foreground">
                         {driver.printerCount || 0}
                       </td>
                       <td className="py-4 px-4 text-muted-foreground text-sm max-w-md">
@@ -231,27 +226,22 @@ export default function DriversPage() {
                       </td>
                       <td className="py-4 px-4">
                         <div className="flex items-center gap-2">
-                          {driver.url && (
-                            <Button
-                              asChild
-                              variant="outline"
-                              size="sm"
-                              className="flex items-center gap-1"
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            className="flex items-center gap-1"
+                          >
+                            <Link
+                              href={`https://openprinting.org/${driver.id}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={`View ${driver.name} driver`}
                             >
-                              <Link
-                                href={driver.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={`View ${driver.name} driver`}
-                              >
-                                <ExternalLink className="h-3 w-3" />
-                                View
-                              </Link>
-                            </Button>
-                          )}
-                          {!driver.url && (
-                            <span className="text-xs text-muted-foreground">N/A</span>
-                          )}
+                              <ExternalLink className="h-3 w-3" />
+                              View
+                            </Link>
+                          </Button>
                         </div>
                       </td>
                     </tr>
@@ -273,30 +263,24 @@ export default function DriversPage() {
                         <div className="text-xs text-muted-foreground">{driver.license}</div>
                       )}
                     </div>
-                    {driver.url && (
-                      <Button
-                        asChild
-                        variant="outline"
-                        size="sm"
-                        className="flex items-center gap-1"
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="flex items-center gap-1"
+                    >
+                      <Link
+                        href={`https://openprinting.org/${driver.id}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View ${driver.name} driver`}
                       >
-                        <Link
-                          href={driver.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`View ${driver.name} driver`}
-                        >
-                          <ExternalLink className="h-3 w-3" />
-                          View
-                        </Link>
-                      </Button>
-                    )}
+                        <ExternalLink className="h-3 w-3" />
+                        View
+                      </Link>
+                    </Button>
                   </div>
                   <div className="space-y-2 text-sm">
-                    <div>
-                      <span className="text-muted-foreground">Supplier: </span>
-                      <span className="text-foreground">{driver.supplier || 'N/A'}</span>
-                    </div>
                     <div>
                       <span className="text-muted-foreground">Printers: </span>
                       <span className="text-foreground">{driver.printerCount || 0}</span>
