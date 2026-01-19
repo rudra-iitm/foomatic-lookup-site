@@ -27,7 +27,6 @@ function PaginationControls({
   startIndex,
   endIndex,
   filteredLength,
-  totalPages,
 }: {
   itemsPerPage: number
   setItemsPerPage: (n: number) => void
@@ -35,7 +34,6 @@ function PaginationControls({
   startIndex: number
   endIndex: number
   filteredLength: number
-  totalPages: number
 }) {
   const displayStart = filteredLength === 0 ? 0 : startIndex + 1
   const displayEnd = filteredLength === 0 ? 0 : endIndex
@@ -463,7 +461,6 @@ export default function HomePage() {
               startIndex={startIndex}
               endIndex={endIndex}
               filteredLength={filteredPrinters.length}
-              totalPages={totalPages}
             />
             <Printers printers={displayedPrinters} />
             
