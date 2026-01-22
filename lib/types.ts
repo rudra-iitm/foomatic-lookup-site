@@ -2,12 +2,13 @@ export interface Driver {
   id: string
   name: string
   url?: string
-  comments?: string
+  comments?: string | { en: string }
   execution?: {
     ghostscript?: string | null
     filter?: string | null
     prototype: string
   }
+  [key: string]: unknown
 }
 
 export interface Printer {
@@ -20,8 +21,9 @@ export interface Printer {
   drivers?: Driver[]
   type?: string
   status?: string
-  notes?: string
+  notes?: string | { en: string }
   functionality?: string
+  [key: string]: unknown
 }
 
 export type PrinterStatus = 'Perfect' | 'Mostly' | 'Unsupported' | 'Unknown'

@@ -10,22 +10,22 @@ export function calculateAccurateStatus(
   printer: PrinterSummary | Printer
 ): PrinterStatus {
   const rawFunctionality =
-  typeof (printer as PrinterSummary).functionality === "string"
-    ? (printer as PrinterSummary).functionality
-    : typeof (printer as Printer).status === "string"
-    ? (printer as Printer).status
-    : undefined
+    typeof (printer as PrinterSummary).functionality === "string"
+      ? (printer as PrinterSummary).functionality
+      : typeof (printer as Printer).status === "string"
+        ? (printer as Printer).status
+        : undefined
 
   const functionality = typeof rawFunctionality === "string" ? rawFunctionality : undefined
 
   const driverCount =
-  "driverCount" in printer
-    ? (printer as PrinterSummary).driverCount
-    : "drivers" in printer
-    ? Array.isArray((printer as Printer).drivers)
-      ? (printer as Printer).drivers!.length
-      : 0
-    : 0
+    "driverCount" in printer
+      ? (printer as PrinterSummary).driverCount
+      : "drivers" in printer
+        ? Array.isArray((printer as Printer).drivers)
+          ? (printer as Printer).drivers!.length
+          : 0
+        : 0
 
 
   if (!functionality || functionality === "?" || functionality === "unknown") {
@@ -60,4 +60,13 @@ export function calculateAccurateStatus(
       }
       return "Unknown"
   }
+}
+
+export function getLegacyPpdUrl(printerId: string, driverId: string): string {
+  // Bridge to the legacy OpenPrinting PHP backend
+  // Clean IDs (remove 'printer/' or 'driver/' prefixes if present)
+  const cleanPrinterId = printerId.replace(/^printer\//, '')
+  const cleanDriverId = driverId.replace(/^driver\//, '')
+
+  return `https://www.openprinting.org/ppd-o-matic.php?driver=${encodeURIComponent(cleanDriverId)}&printer=${encodeURIComponent(cleanPrinterId)}&shortgui=1`
 }

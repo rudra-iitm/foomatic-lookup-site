@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import type { Printer } from "@/lib/types"
+import type { Printer, Driver } from "@/lib/types"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -11,7 +11,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
 import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2 } from "lucide-react"
-import { calculateAccurateStatus } from "@/lib/utils"
+import { calculateAccurateStatus, getLegacyPpdUrl } from "@/lib/utils"
 
 interface PrinterPageClientProps {
   printerId: string
@@ -68,14 +68,30 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
             ? "/foomatic-lookup-site"
             : ""
 
-        const res = await fetch(`${basePath}/foomatic-db/printers/${printerId}.json`)
+        const res = await fetch(`${basePath}/foomatic-db/printer/${printerId}.json?t=${new Date().getTime()}`)
 
         if (!res.ok) {
           throw new Error(`Failed to load printer: ${res.status}`)
         }
 
         const data = await res.json()
-        setPrinter(data)
+        // Handle unwrapped vs wrapped responses
+        let printerData = data.printer || data
+
+        // Normalize data: specific fix for @id vs id
+        const normalize = (obj: unknown) => {
+          if (!obj || typeof obj !== 'object') return obj
+          const o = obj as Record<string, unknown>
+          if (o['@id'] && !o.id) o.id = o['@id']
+          return o
+        }
+
+        printerData = normalize(printerData) as Printer
+        if (printerData.drivers) {
+          printerData.drivers = printerData.drivers.map((d: unknown) => normalize(d) as Driver)
+        }
+
+        setPrinter(printerData)
       } catch (err) {
         console.error("Failed to load printer:", err)
         setError(err instanceof Error ? err.message : "Failed to load printer")
@@ -244,13 +260,21 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                 return <Badge variant={style.variant} className={style.className}>{accurateStatus}</Badge>
               })()}
 
-              {printer.notes && (
+              {(printer.notes || printer.comments) && (
                 <>
                   <Separator className="my-4 bg-border" />
                   <h3 className="font-semibold mb-2 text-foreground">Notes</h3>
                   <div
                     className="prose prose-sm prose-invert max-w-none text-muted-foreground"
-                    dangerouslySetInnerHTML={{ __html: printer.notes }}
+                    dangerouslySetInnerHTML={{
+                      __html: (() => {
+                        const content = printer.notes || printer.comments
+                        if (!content) return ""
+                        if (typeof content === "string") return content
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                        return (content as any).en || ""
+                      })()
+                    }}
                   />
                 </>
               )}
@@ -267,77 +291,102 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
 
           <div className="space-y-6">
             {(printer.drivers ?? [])
-              .sort((a, b) => {
-                if (a.id === printer.recommended_driver) return -1
-                if (b.id === printer.recommended_driver) return 1
-                return 0
-              })
-              .map((driver) => (
-                <Card key={driver.id} className="bg-gradient-card border-border/50 shadow-card">
-                  <CardHeader className="flex flex-row items-start justify-between">
-                    <div className="flex-1">
-                      <CardTitle className="text-xl text-foreground">{driver.name}</CardTitle>
-                      
-                      {driver.url && (
-                        <Link
-                          href={driver.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm text-primary hover:underline flex items-center gap-1 mt-2"
-                        >
-                          <ExternalLink className="h-3 w-3" />
-                          {driver.url}
-                        </Link>
-                      )}
-                    </div>
+              .map((driver, index) => {
+                if (!driver) return null;
+                return (
+                  <Card key={driver.id || index} className="bg-gradient-card border-border/50 shadow-card">
+                    <CardHeader className="flex flex-row items-start justify-between">
+                      <div className="flex-1">
+                        <CardTitle className="text-xl text-foreground">{driver.name}</CardTitle>
 
-                    {driver.id === printer.recommended_driver && (
-                      <Badge className="bg-green-500/20 text-green-300 border-green-400/30">Recommended</Badge>
-                    )}
-                  </CardHeader>
-
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-2">Comments</h4>
-                        <div
-                          className="prose prose-sm prose-invert max-w-none text-muted-foreground"
-                          dangerouslySetInnerHTML={{
-                            __html: driver.comments || "No comments available.",
-                          }}
-                        />
+                        {driver.url && (
+                          <Link
+                            href={driver.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-primary hover:underline flex items-center gap-1 mt-2"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            {driver.url}
+                          </Link>
+                        )}
                       </div>
 
-                      {driver.execution && (
-                        <details className="group">
-                          <summary className="cursor-pointer font-semibold text-foreground hover:text-primary list-none flex items-center gap-2">
-                            <Code className="h-4 w-4" />
-                            View PPD Generation Command
-                            <span className="text-xs text-muted-foreground group-open:hidden">
-                              (click to expand)
-                            </span>
-                          </summary>
-
-                          <div className="mt-3 rounded-lg overflow-hidden border border-border/50">
-                            <SyntaxHighlighter
-                              language="bash"
-                              style={vscDarkPlus}
-                              customStyle={{
-                                background: "hsl(var(--muted))",
-                                border: "none",
-                                padding: "1rem",
-                                margin: 0,
-                              }}
-                            >
-                              {driver.execution.prototype}
-                            </SyntaxHighlighter>
-                          </div>
-                        </details>
+                      {driver.id === printer.recommended_driver && (
+                        <Badge className="bg-green-500/20 text-green-300 border-green-400/30">Recommended</Badge>
                       )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardHeader>
+
+                    <CardContent>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Comments</h4>
+                          <div
+                            className="prose prose-sm prose-invert max-w-none text-muted-foreground"
+                            dangerouslySetInnerHTML={{
+                              __html: (() => {
+                                const content = driver.comments
+                                if (!content) return "No comments available."
+                                if (typeof content === "string") return content
+                                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                                return (content as any).en || "No comments available."
+                              })()
+                            }}
+                          />
+                        </div>
+
+                        {driver.execution && (
+                          <details className="group">
+                            <summary className="cursor-pointer font-semibold text-foreground hover:text-primary list-none flex items-center gap-2">
+                              <Code className="h-4 w-4" />
+                              View PPD Generation Command
+                              <span className="text-xs text-muted-foreground group-open:hidden">
+                                (click to expand)
+                              </span>
+                            </summary>
+
+                            <div className="mt-3 rounded-lg overflow-hidden border border-border/50">
+                              <SyntaxHighlighter
+                                language="bash"
+                                style={vscDarkPlus}
+                                customStyle={{
+                                  background: "hsl(var(--muted))",
+                                  border: "none",
+                                  padding: "1rem",
+                                  margin: 0,
+                                }}
+                              >
+                                {driver.execution.prototype}
+                              </SyntaxHighlighter>
+                            </div>
+                          </details>
+                        )}
+
+                        <div className="mt-4">
+                          <Button
+                            onClick={() => {
+                              // Robust ID resolution: Try prop, then id, then @id
+                              const pId = printerId || printer.id || (printer['@id'] as string)
+                              if (pId && driver.id) {
+                                window.open(getLegacyPpdUrl(pId, driver.id), '_blank')
+                              } else {
+                                console.error("Missing ID for PPD download", { pId, driverId: driver.id })
+                              }
+                            }}
+                            className="w-full sm:w-auto gap-2"
+                          >
+                            <PrinterIcon className="h-4 w-4" />
+                            Download PPD (Legacy)
+                          </Button>
+                          <p className="text-xs text-muted-foreground mt-2">
+                            Downloads directly from the legacy OpenPrinting database.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                )
+              })}
           </div>
         </div>
       </div>
