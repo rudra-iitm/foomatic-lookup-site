@@ -1,6 +1,2 @@
-# Skip Husky hooks in CI
-if [ "$CI" = "true" ]; then
-  exit 0
-fi
-
-npx lint-staged
+# Skip pre-commit hook entirely - linting runs in CI
+exit 0
