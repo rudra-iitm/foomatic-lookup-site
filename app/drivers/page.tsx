@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo } from "react"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Code, Search, ExternalLink } from "lucide-react"
+import { Code, Search } from "lucide-react"
 import Link from "next/link"
 
 interface Driver {
@@ -225,24 +225,14 @@ export default function DriversPage() {
                         {driver.description ? getShortDescription(driver.description) : 'No description available'}
                       </td>
                       <td className="py-4 px-4">
-                        <div className="flex items-center gap-2">
-                          <Button
-                            asChild
-                            variant="outline"
-                            size="sm"
-                            className="flex items-center gap-1"
+                        <Button asChild variant="outline" size="sm">
+                          <Link
+                            href={`/drivers/${driver.id}`}
+                            aria-label={`View ${driver.name} driver`}
                           >
-                            <Link
-                              href={`https://openprinting.org/${driver.id}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label={`View ${driver.name} driver`}
-                            >
-                              <ExternalLink className="h-3 w-3" />
-                              View
-                            </Link>
-                          </Button>
-                        </div>
+                            View
+                          </Link>
+                        </Button>
                       </td>
                     </tr>
                   ))}
@@ -263,19 +253,11 @@ export default function DriversPage() {
                         <div className="text-xs text-muted-foreground">{driver.license}</div>
                       )}
                     </div>
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="sm"
-                      className="flex items-center gap-1"
-                    >
+                    <Button asChild variant="outline" size="sm">
                       <Link
-                        href={`https://openprinting.org/${driver.id}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href={`/drivers/${driver.id}`}
                         aria-label={`View ${driver.name} driver`}
                       >
-                        <ExternalLink className="h-3 w-3" />
                         View
                       </Link>
                     </Button>
