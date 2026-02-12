@@ -1,2 +1,0 @@
-# Skip pre-commit hook entirely - linting runs in CI
-exit 0
