@@ -47,28 +47,6 @@ function getPrinterType(printer) {
     return 'unknown';
 }
 
-function parseConnectivity(printer) {
-    const connectivity = [];
-    if (!printer.autodetect) {
-        return connectivity;
-    }
-    
-    if (printer.autodetect.usb) {
-        connectivity.push('USB');
-    }
-    if (printer.autodetect.parallel) {
-        connectivity.push('Parallel');
-    }
-    if (printer.autodetect.serial) {
-        connectivity.push('Serial');
-    }
-    if (printer.autodetect.network) {
-        connectivity.push('Network');
-    }
-    
-    return connectivity;
-}
-
 async function combineData() {
     const printers = new Map();
     const drivers = new Map();
@@ -201,10 +179,6 @@ async function combineData() {
                     execution: driver.execution || null,
                 };
             });
-        let series = '';
-        if (printer.series) {
-            series = typeof printer.series === 'string' ? printer.series : '';
-        }
 
         const functionality = printer.functionality || '?';
         const status = getFunctionalityStatus(functionality);
