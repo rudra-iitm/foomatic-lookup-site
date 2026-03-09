@@ -1,9 +1,7 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Code, Cpu, Info } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import DriverPpdTools from "@/components/DriverPpdTools"
 import fs from "node:fs/promises"
 import path from "node:path"
@@ -14,6 +12,8 @@ type DriverIndexItem = {
   license?: string | null
   description?: string
   printerCount?: number
+  url?: string | null
+  type?: string | null
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -40,32 +40,54 @@ async function readDriverIndex(): Promise<DriverIndexItem[]> {
 
 export async function generateStaticParams() {
   const index = await readDriverIndex()
-  // ids look like "driver/bj10" → URL becomes `/drivers/driver/bj10`
   return index
     .filter((d) => typeof d.id === "string" && d.id.length > 0)
     .map((d) => ({ id: d.id.split("/") }))
 }
 
-function stripHtmlPreserveNewlines(html: string): string {
+const GHOSTSCRIPT_PLACEHOLDER_HTML = `<p class="ghostscript-app-holder"><strong>Ghostscript Printer Application:</strong> <a href="https://github.com/OpenPrinting/ghostscript-printer-app" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://snapcraft.io/ghostscript-printer-app" target="_blank" rel="noopener noreferrer">Snapcraft</a></p>`
+
+/** Strip the standard "This driver is available in the Ghostscript Printer Application" intro so we show only one holder block. */
+function stripGhostscriptIntro(html: string): string {
+  return html.replace(
+    /^\s*<B>\s*This driver is available in the\s+<A\s+[^>]*>Ghostscript Printer Application<\/A>\s*<\/B>\s*<P>\s*/gi,
+    ""
+  )
+}
+
+function sanitizeCommentsHtml(html: string): string {
   if (!html) return ""
 
-  // Drop embedded widgets (OpenPrinting embeds iframes in comments).
-  const withoutIframes = html.replace(/<iframe[\s\S]*?<\/iframe>/gi, "")
+  let cleaned = stripGhostscriptIntro(html)
+  cleaned = cleaned
+    .replace(/<iframe[\s\S]*?<\/iframe>/gi, GHOSTSCRIPT_PLACEHOLDER_HTML)
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
 
-  // Preserve paragraph-ish breaks before stripping tags.
-  const withBreaks = withoutIframes
-    .replace(/<\s*br\s*\/?>/gi, "\n")
-    .replace(/<\s*\/\s*p\s*>/gi, "\n")
-    .replace(/<\s*p(\s+[^>]*)?>/gi, "\n")
-    .replace(/<\s*\/\s*div\s*>/gi, "\n")
+  cleaned = cleaned.replace(
+    /<a\s+([^>]*?)>/gi,
+    (_match, attrs: string) => {
+      const hrefMatch = attrs.match(/href\s*=\s*["']([^"']+)["']/i)
+      if (hrefMatch) {
+        return `<a href="${hrefMatch[1]}" target="_blank" rel="noopener noreferrer">`
+      }
+      return "<a>"
+    },
+  )
 
-  // Strip tags; normalize whitespace but keep newlines meaningful.
-  const stripped = withBreaks.replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ")
-  return stripped
-    .split("\n")
-    .map((l) => l.replace(/\s+/g, " ").trim())
-    .filter(Boolean)
-    .join("\n")
+  const allowedTags = new Set([
+    "a", "b", "strong", "i", "em", "p", "br", "ul", "ol", "li", "code", "pre",
+  ])
+
+  cleaned = cleaned.replace(/<\/?([a-zA-Z][a-zA-Z0-9]*)\b[^>]*>/g, (tag, tagName: string) => {
+    const name = tagName.toLowerCase()
+    if (allowedTags.has(name)) return tag
+    if (tag.startsWith("</")) return ""
+    const isBlock = ["div", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote"].includes(name)
+    return isBlock ? "<br/>" : " "
+  })
+
+  return cleaned.replace(/&nbsp;/g, " ").trim()
 }
 
 async function readDriverFile(driverId: string): Promise<unknown | null> {
@@ -122,23 +144,35 @@ function extractExecutionPrototype(driverData: unknown): string | null {
   return typeof proto === "string" ? proto : null
 }
 
-function inferDriverType(driverData: unknown): string | null {
-  const proto = extractExecutionPrototype(driverData)
-  if (!proto) return null
-  if (/\bgs\b/.test(proto) || /\bghostscript\b/i.test(proto)) return "Ghostscript built-in"
-  return null
+function inferDriverType(driverData: unknown): string {
+  const driver = getDriverObject(driverData)
+  if (!driver) return "Unknown"
+  const execution = driver["execution"]
+  if (!isRecord(execution)) return "Unknown"
+
+  const keys = Object.keys(execution)
+
+  if (keys.includes("uniprint")) return "Ghostscript Uniprint"
+  if (keys.includes("ghostscript")) return "Ghostscript built-in"
+  if (keys.includes("cups")) return "CUPS Raster"
+  if (keys.includes("ijs")) return "IJS"
+  if (keys.includes("postscript")) return "PostScript"
+  if (keys.includes("pdf")) return "PDF"
+  if (keys.includes("filter")) return "Filter"
+
+  return "Unknown"
 }
 
-function extractGhostscriptDevice(driverData: unknown): string | null {
-  const proto = extractExecutionPrototype(driverData)
-  if (!proto) return null
-  const m = proto.match(/-sDEVICE=([^\s]+)/)
-  return m?.[1] ?? null
+function isFreeDriver(driverData: unknown): boolean {
+  const driver = getDriverObject(driverData)
+  if (!driver) return true
+  const ts = driver["thirdpartysupplied"]
+  if (typeof ts === "string" && ts.trim().length > 0) return false
+  return true
 }
 
 function humanizePrinterSlug(slug: string): string {
-  // Turn "Canon-BJ-10v" -> "Canon BJ-10v", and replace underscores with spaces.
-  return slug.replace("-", " ").replace(/_/g, " ")
+  return slug.replace(/-/g, " ").replace(/_/g, " ")
 }
 
 interface DriverDetailPageProps {
@@ -161,169 +195,125 @@ export default async function DriverDetailPage({ params }: DriverDetailPageProps
     idx?.name ||
     "Unknown driver"
 
-  const license =
-    (typeof driverObj?.["license"] === "string" ? (driverObj["license"] as string) : null) ??
-    idx?.license ??
+  const driverUrl =
+    (typeof driverObj?.["url"] === "string" ? (driverObj["url"] as string) : null) ??
+    idx?.url ??
     null
 
-  const description = stripHtmlPreserveNewlines(
-    extractCommentsText(driverObj?.["comments"]) || idx?.description || ""
-  )
+  const rawComments = extractCommentsText(driverObj?.["comments"]) || idx?.description || ""
+  const commentsHtml = sanitizeCommentsHtml(rawComments)
+
   const printerIds = extractPrinterIds(driverData)
   const printerNames = printerIds.map((pid) => pid.replace(/^printer\//, ""))
-  const driverType = inferDriverType(driverData)
-  const gsDevice = extractGhostscriptDevice(driverData)
+  const driverType = driverData ? inferDriverType(driverData) : (idx?.type ?? "Unknown")
+  const freeSoftware = driverData ? isFreeDriver(driverData) : true
   const executionPrototype = extractExecutionPrototype(driverData)
-  const thirdPartySuppliedRaw = driverObj?.["thirdpartysupplied"]
-  const thirdPartySupplied =
-    typeof thirdPartySuppliedRaw === "string"
-      ? thirdPartySuppliedRaw.trim().length > 0
-      : Boolean(thirdPartySuppliedRaw)
-
   const printerCount = printerNames.length || idx?.printerCount || 0
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex items-center justify-between gap-4 mb-6">
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="mb-6">
         <Button variant="ghost" size="sm" asChild>
           <Link href="/drivers" className="flex items-center gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back to drivers
           </Link>
         </Button>
-        <div className="text-xs text-muted-foreground truncate">
-          {driverId}
+      </div>
+
+      <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+        {driverUrl ? (
+          <a
+            href={driverUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            {name}
+          </a>
+        ) : (
+          name
+        )}
+      </h1>
+
+      <div className="rounded-lg border border-border/50 bg-muted/30 p-4 mb-6">
+        <p className="text-sm text-foreground font-medium">
+          {freeSoftware ? "This driver is free software." : "This driver contains third-party supplied components."}
+        </p>
+        <p className="text-sm text-muted-foreground mt-1">
+          Type: {driverType}
+        </p>
+      </div>
+
+      <div className="mb-6 space-y-3 text-sm text-muted-foreground">
+        <p>
+          <span className="font-medium text-foreground">Generic Instructions: </span>
+          <a href="https://openprinting.github.io/cups-doc.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">CUPS</a>
+          {", "}
+          <a href="https://openprinting.github.io/direct-doc.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">no spooler</a>
+          {", "}
+          <a href="https://openprinting.github.io/ppd-doc.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">PPD aware applications/clients</a>
+        </p>
+        <div className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-3">
+          <p className="text-sm text-foreground">
+            <span className="font-semibold">Important for Windows clients: </span>
+            The CUPS PostScript driver for Windows has a bug which makes it choking on PPD files
+            which contain GUI texts longer than 39 characters. Therefore it is recommended to use
+            Adobe&apos;s PostScript driver. If you still want to use the CUPS driver, please mark
+            &ldquo;GUI texts limited to 39 characters&rdquo; to get an appropriate PPD file.
+          </p>
         </div>
       </div>
 
-      <Card className="bg-gradient-card border-border/50 shadow-elegant mb-8">
-        <CardHeader>
-          <div className="flex items-start justify-between gap-4">
-            <div className="min-w-0">
-              <CardTitle className="text-3xl sm:text-4xl text-foreground flex items-center gap-3">
-                <Code className="h-6 w-6 text-primary shrink-0" />
-                <span className="truncate">{name}</span>
-              </CardTitle>
-              <CardDescription className="mt-2">
-                {printerCount} supported printer{printerCount === 1 ? "" : "s"}
-              </CardDescription>
-            </div>
-            <div className="flex flex-wrap gap-2 justify-end">
-              <Badge variant={thirdPartySupplied ? "destructive" : "secondary"}>
-                {thirdPartySupplied ? "Third-party" : "Free software"}
-              </Badge>
-              {driverType ? <Badge variant="outline">{driverType}</Badge> : null}
-              {license ? <Badge variant="outline">License: {license}</Badge> : null}
-              {gsDevice ? <Badge variant="outline">Device: {gsDevice}</Badge> : null}
-            </div>
-          </div>
-        </CardHeader>
-      </Card>
+      <div className="mb-8">
+        <DriverPpdTools
+          driverId={driverId}
+          driverName={name}
+          printerSlugs={printerNames}
+          executionPrototype={executionPrototype}
+        />
+      </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 space-y-6">
-          <Card className="bg-gradient-card border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-foreground">Description</CardTitle>
-              <CardDescription>Driver notes and upstream comments.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              {description ? (
-                <p className="text-muted-foreground whitespace-pre-wrap leading-relaxed">
-                  {description}
-                </p>
-              ) : (
-                <p className="text-muted-foreground">No description available.</p>
-              )}
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-card border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-foreground">Supported printers</CardTitle>
-              <CardDescription>
-                Models known to work with this driver (from the database).
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              {printerNames.length > 0 ? (
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2">
-                  {printerNames.map((p) => (
-                    <li key={p} className="text-sm">
-                      <Link
-                        href={`/printer/${encodeURIComponent(p)}`}
-                        className="text-primary hover:underline"
-                      >
-                        {humanizePrinterSlug(p)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-muted-foreground">No supported printers listed.</p>
-              )}
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="space-y-6">
-          <Card className="bg-gradient-card border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-foreground flex items-center gap-2">
-                <Info className="h-4 w-4 text-primary" />
-                Quick facts
-              </CardTitle>
-              <CardDescription>Details about this driver entry.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-3 text-sm">
-              <div className="flex items-start justify-between gap-4">
-                <span className="text-muted-foreground">Driver ID</span>
-                <span className="text-foreground font-medium text-right break-all">{driverId}</span>
-              </div>
-              <div className="flex items-start justify-between gap-4">
-                <span className="text-muted-foreground">Supported printers</span>
-                <span className="text-foreground font-medium">{printerCount}</span>
-              </div>
-              {driverType ? (
-                <div className="flex items-start justify-between gap-4">
-                  <span className="text-muted-foreground">Type</span>
-                  <span className="text-foreground font-medium">{driverType}</span>
-                </div>
-              ) : null}
-              {gsDevice ? (
-                <div className="flex items-start justify-between gap-4">
-                  <span className="text-muted-foreground">Ghostscript device</span>
-                  <span className="text-foreground font-medium">{gsDevice}</span>
-                </div>
-              ) : null}
-              <div className="flex items-start justify-between gap-4">
-                <span className="text-muted-foreground">Third-party supplied</span>
-                <span className="text-foreground font-medium">{thirdPartySupplied ? "Yes" : "No"}</span>
-              </div>
-
-              {executionPrototype ? (
-                <details className="mt-3 rounded-lg border border-border/50 bg-muted/30">
-                  <summary className="cursor-pointer select-none px-3 py-2 text-sm text-foreground flex items-center gap-2">
-                    <Cpu className="h-4 w-4" />
-                    Execution prototype
-                  </summary>
-                  <pre className="text-xs overflow-auto p-3 whitespace-pre-wrap">
-                    {executionPrototype}
-                  </pre>
-                </details>
-              ) : null}
-            </CardContent>
-          </Card>
-
-          <DriverPpdTools
-            driverId={driverId}
-            driverName={name}
-            printerSlugs={printerNames}
-            executionPrototype={executionPrototype}
+      <section className="mb-8">
+        <h2 className="text-2xl font-bold text-foreground mb-4 border-b border-border pb-2">
+          Comments
+        </h2>
+        {commentsHtml ? (
+          <div
+            className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground [&_a]:text-primary [&_a]:underline [&_b]:text-foreground [&_strong]:text-foreground [&_.ghostscript-app-holder]:rounded-lg [&_.ghostscript-app-holder]:border [&_.ghostscript-app-holder]:border-border/50 [&_.ghostscript-app-holder]:bg-muted/20 [&_.ghostscript-app-holder]:p-3 [&_.ghostscript-app-holder]:text-sm"
+            dangerouslySetInnerHTML={{ __html: commentsHtml }}
           />
-        </div>
-      </div>
+        ) : (
+          <p className="text-muted-foreground text-sm">No description available.</p>
+        )}
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold text-foreground mb-4 border-b border-border pb-2">
+          Printer list
+        </h2>
+        {printerNames.length > 0 ? (
+          <ul className="space-y-1">
+            {printerNames.map((p) => (
+              <li key={p} className="text-sm">
+                <Link
+                  href={`/printer/${encodeURIComponent(p)}`}
+                  className="text-primary hover:underline"
+                >
+                  {humanizePrinterSlug(p)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-muted-foreground text-sm">No supported printers listed.</p>
+        )}
+        {printerCount > 0 && (
+          <p className="text-xs text-muted-foreground mt-4">
+            {printerCount} printer{printerCount === 1 ? "" : "s"} supported
+          </p>
+        )}
+      </section>
     </div>
   )
 }
-

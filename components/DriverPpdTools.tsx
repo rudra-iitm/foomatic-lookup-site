@@ -2,8 +2,6 @@
 
 import { useMemo, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import {
   Select,
   SelectContent,
@@ -11,7 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { Copy, Download, Eye, Loader2 } from "lucide-react"
+import { Download, Eye, Loader2 } from "lucide-react"
 
 type Props = {
   driverId: string
@@ -100,7 +98,7 @@ export default function DriverPpdTools({
     () =>
       [...printerSlugs].sort((a, b) => a.localeCompare(b)).map((slug) => ({
         slug,
-        label: slug.replace("-", " ").replace(/_/g, " "),
+        label: slug.replace(/-/g, " ").replace(/_/g, " "),
       })),
     [printerSlugs]
   )
@@ -110,18 +108,16 @@ export default function DriverPpdTools({
   const [ppdText, setPpdText] = useState<string>("")
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [copied, setCopied] = useState(false)
 
   async function generatePpd(): Promise<string | null> {
     if (!selectedPrinter) return null
 
     setBusy(true)
     setError(null)
-    setCopied(false)
     try {
       const basePath = detectBasePath()
       const res = await fetch(
-        `${basePath}/foomatic-db/printer/${encodeURIComponent(selectedPrinter)}.json`
+        `${basePath}/foomatic-db/printers/${encodeURIComponent(selectedPrinter)}.json`
       )
       if (!res.ok) {
         throw new Error(`Failed to load printer data (${res.status})`)
@@ -176,114 +172,74 @@ export default function DriverPpdTools({
     }
   }
 
-  async function onCopy() {
-    if (!ppdText) return
-    try {
-      await navigator.clipboard.writeText(ppdText)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1500)
-    } catch {
-      // ignore
-    }
-  }
+  if (printers.length === 0) return null
 
   return (
-    <Card className="bg-gradient-card border-border/50 shadow-card">
-      <CardHeader>
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <CardTitle className="text-foreground">PPD file</CardTitle>
-            <CardDescription>
-              Select a printer and download or preview a generated PPD.
-            </CardDescription>
-          </div>
-          <Badge variant="outline">Experimental</Badge>
-        </div>
-      </CardHeader>
-
-      <CardContent className="space-y-4">
-        <div className="grid grid-cols-1 gap-4">
-          <div className="space-y-2">
-            <label className="block text-sm text-muted-foreground">Select printer</label>
-            <Select
-              value={selectedPrinter}
-              onValueChange={(v) => setSelectedPrinter(v)}
-              disabled={printers.length === 0}
-            >
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Choose a printer…" />
-              </SelectTrigger>
-              <SelectContent>
-                {printers.map((p) => (
-                  <SelectItem key={p.slug} value={p.slug}>
-                    {p.label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
-
-          <label className="flex items-center gap-2 text-sm text-muted-foreground">
-            <input
-              type="checkbox"
-              checked={guiTextsLimitedTo39}
-              onChange={(e) => setGuiTextsLimitedTo39(e.target.checked)}
-              className="h-4 w-4 accent-primary"
-            />
-            GUI texts limited to 39 characters
-          </label>
-
-          <div className="flex flex-wrap items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={onDownload}
-              disabled={busy || !selectedPrinter}
-              className="gap-2"
-            >
-              {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
-              Download
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={onView}
-              disabled={busy || !selectedPrinter}
-              className="gap-2"
-            >
-              {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Eye className="h-4 w-4" />}
-              Display
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={onCopy}
-              disabled={!ppdText}
-              className="gap-2"
-            >
-              <Copy className="h-4 w-4" />
-              {copied ? "Copied" : "Copy"}
-            </Button>
-          </div>
+    <div className="space-y-3">
+      <div className="flex flex-col sm:flex-row items-start sm:items-end gap-3">
+        <div className="w-full sm:w-64 space-y-1">
+          <label className="block text-sm font-medium text-foreground">Select printer:</label>
+          <Select
+            value={selectedPrinter}
+            onValueChange={(v) => { setSelectedPrinter(v); setPpdText(""); setError(null) }}
+          >
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="Choose a printer…" />
+            </SelectTrigger>
+            <SelectContent>
+              {printers.map((p) => (
+                <SelectItem key={p.slug} value={p.slug}>
+                  {p.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
 
-        {error ? <p className="text-sm text-destructive">{error}</p> : null}
+        <div className="flex flex-wrap items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={onDownload}
+            disabled={busy || !selectedPrinter}
+            className="gap-2"
+          >
+            {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
+            download
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={onView}
+            disabled={busy || !selectedPrinter}
+            className="gap-2"
+          >
+            {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <Eye className="h-4 w-4" />}
+            display the PPD file
+          </Button>
+        </div>
+      </div>
 
-        <p className="text-xs text-muted-foreground leading-relaxed">
-          Note: this site currently generates a lightweight placeholder PPD from the database JSON
-          (static export). Full OpenPrinting/Foomatic PPD generation is not yet implemented.
-        </p>
+      <label className="flex items-center gap-2 text-sm text-muted-foreground">
+        <input
+          type="checkbox"
+          checked={guiTextsLimitedTo39}
+          onChange={(e) => setGuiTextsLimitedTo39(e.target.checked)}
+          className="h-4 w-4 accent-primary"
+        />
+        GUI texts limited to 39 characters
+      </label>
 
-        {ppdText ? (
-          <details className="rounded-lg border border-border/50 bg-muted/30">
-            <summary className="cursor-pointer select-none px-3 py-2 text-sm text-foreground">
-              PPD preview
-            </summary>
-            <pre className="text-xs overflow-auto p-3 whitespace-pre-wrap">{ppdText}</pre>
-          </details>
-        ) : null}
-      </CardContent>
-    </Card>
+      {error ? <p className="text-sm text-destructive">{error}</p> : null}
+
+      {ppdText ? (
+        <details className="rounded-lg border border-border/50 bg-muted/30" open>
+          <summary className="cursor-pointer select-none px-3 py-2 text-sm font-medium text-foreground">
+            PPD preview
+          </summary>
+          <pre className="text-xs overflow-auto p-3 whitespace-pre-wrap border-t border-border/50">{ppdText}</pre>
+        </details>
+      ) : null}
+    </div>
   )
 }
-

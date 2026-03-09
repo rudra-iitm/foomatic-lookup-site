@@ -34,6 +34,21 @@ function countPrinters(printers) {
   return 1;
 }
 
+function inferDriverType(execution) {
+  if (!execution || typeof execution !== 'object') return 'Unknown';
+  const keys = Object.keys(execution);
+
+  if (keys.includes('uniprint')) return 'Ghostscript Uniprint';
+  if (keys.includes('ghostscript')) return 'Ghostscript built-in';
+  if (keys.includes('cups')) return 'CUPS Raster';
+  if (keys.includes('ijs')) return 'IJS';
+  if (keys.includes('postscript')) return 'PostScript';
+  if (keys.includes('pdf')) return 'PDF';
+  if (keys.includes('filter')) return 'Filter';
+
+  return 'Unknown';
+}
+
 async function generateDrivers() {
   const drivers = [];
 
@@ -69,13 +84,23 @@ async function generateDrivers() {
       const license = driver.license || null;
       const description = extractDescription(driver.comments);
       const printerCount = countPrinters(driver.printers);
+      const url = driver.url || null;
+      const type = inferDriverType(driver.execution);
+      const thirdpartysupplied = !!(
+        driver.thirdpartysupplied &&
+        typeof driver.thirdpartysupplied === 'string' &&
+        driver.thirdpartysupplied.trim().length > 0
+      );
 
       drivers.push({
         id,
         name,
         license,
         description,
-        printerCount
+        printerCount,
+        url,
+        type,
+        thirdpartysupplied,
       });
     } catch (error) {
       console.error(`Error processing ${file}:`, error.message);
