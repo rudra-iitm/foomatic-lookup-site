@@ -82,6 +82,14 @@ export default function HomePage() {
   
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage, setItemsPerPage] = useState(20)
+  const [miniSearchResults, setMiniSearchResults] = useState<import("@/lib/foomatic-search").SearchResult[] | null>(null)
+
+  const handleMiniSearchResults = useCallback(
+    (results: import("@/lib/foomatic-search").SearchResult[] | null) => {
+      setMiniSearchResults(results)
+    },
+    []
+  )
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -191,17 +199,26 @@ export default function HomePage() {
   const filteredPrinters = useMemo(() => {
     let result = printers
 
-    if (selectedManufacturer !== "all") {
-      result = result.filter((p) => p.manufacturer === selectedManufacturer)
-    }
-
-    if (searchQuery) {
-      const queryLower = searchQuery.toLowerCase()
-      result = result.filter(
-        (p) =>
-          (p.model && String(p.model).toLowerCase().includes(queryLower)) ||
-          (p.manufacturer && String(p.manufacturer).toLowerCase().includes(queryLower)),
+    if (miniSearchResults !== null) {
+      const printerIds = new Set(
+        miniSearchResults.filter((r) => r.type === "printer").map((r) => r.id)
       )
+      result = result.filter((p) => printerIds.has(p.id))
+      if (selectedManufacturer !== "all") {
+        result = result.filter((p) => p.manufacturer === selectedManufacturer)
+      }
+    } else {
+      if (selectedManufacturer !== "all") {
+        result = result.filter((p) => p.manufacturer === selectedManufacturer)
+      }
+      if (searchQuery) {
+        const queryLower = searchQuery.toLowerCase()
+        result = result.filter(
+          (p) =>
+            (p.model && String(p.model).toLowerCase().includes(queryLower)) ||
+            (p.manufacturer && String(p.manufacturer).toLowerCase().includes(queryLower)),
+        )
+      }
     }
 
     if (selectedDriverType !== "all") {
@@ -234,7 +251,7 @@ export default function HomePage() {
     }
 
     return result
-  }, [searchQuery, selectedManufacturer, selectedDriverType, selectedMechanismType, selectedSupportLevel, selectedColorCapability, printers])
+  }, [miniSearchResults, searchQuery, selectedManufacturer, selectedDriverType, selectedMechanismType, selectedSupportLevel, selectedColorCapability, printers])
 
   useEffect(() => {
     setCurrentPage(1)
@@ -411,6 +428,7 @@ export default function HomePage() {
             selectedSupportLevel={selectedSupportLevel}
             selectedColorCapability={selectedColorCapability}
             onReset={resetFilters}
+            onMiniSearchResults={handleMiniSearchResults}
           />
         </div>
 

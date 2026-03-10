@@ -6,7 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 import { useDebounce } from "@/lib/hooks/use-debounce"
-import { Search, X } from "lucide-react"
+import { Search, X, Loader2 } from "lucide-react"
+import { getSearchInstance, search, type SearchResult } from "@/lib/foomatic-search"
 
 interface PrinterSearchProps {
   manufacturers: string[]
@@ -26,6 +27,7 @@ interface PrinterSearchProps {
   selectedSupportLevel: string
   selectedColorCapability: string
   onReset: () => void
+  onMiniSearchResults?: (results: SearchResult[] | null) => void
 }
 
 export default function PrinterSearch({
@@ -46,13 +48,40 @@ export default function PrinterSearch({
   selectedSupportLevel,
   selectedColorCapability,
   onReset,
+  onMiniSearchResults,
 }: PrinterSearchProps) {
   const [searchQuery, setSearchQuery] = useState("")
+  const [indexLoading, setIndexLoading] = useState(true)
   const debouncedSearchQuery = useDebounce(searchQuery, 300)
 
   useEffect(() => {
-    onSearch(debouncedSearchQuery)
-  }, [debouncedSearchQuery, onSearch])
+    getSearchInstance()
+      .then(() => setIndexLoading(false))
+      .catch((e) => {
+        console.error("Failed to load search index:", e)
+        setIndexLoading(false)
+      })
+  }, [])
+
+  useEffect(() => {
+    const trimmed = debouncedSearchQuery.trim()
+    if (trimmed.length < 2) {
+      onMiniSearchResults?.(null)
+      onSearch("")
+      return
+    }
+    getSearchInstance()
+      .then((instance) => {
+        const results = search(instance, trimmed)
+        onMiniSearchResults?.(results)
+        onSearch(debouncedSearchQuery)
+      })
+      .catch((e) => {
+        console.error("MiniSearch error:", e)
+        onMiniSearchResults?.(null)
+        onSearch(debouncedSearchQuery)
+      })
+  }, [debouncedSearchQuery, onSearch, onMiniSearchResults])
 
   const hasActiveFilters = 
     selectedManufacturer !== "all" ||
@@ -92,8 +121,11 @@ export default function PrinterSearch({
               placeholder="Search by model or make..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 h-12 bg-muted/50 border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary/50 focus:ring-primary/20"
+              className={`pl-10 h-12 bg-muted/50 border-border/50 text-foreground placeholder:text-muted-foreground focus:border-primary/50 focus:ring-primary/20 ${indexLoading ? "pr-10" : ""}`}
             />
+            {indexLoading && (
+              <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 animate-spin text-muted-foreground" />
+            )}
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
