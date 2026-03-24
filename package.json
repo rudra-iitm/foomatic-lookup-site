@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs",
+    "build:data": "node scripts/generate-from-xml.mjs && node scripts/combine-data.mjs && node scripts/split-printers.mjs && node scripts/generate-ppd.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
