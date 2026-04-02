@@ -10,8 +10,8 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
-import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2 } from "lucide-react"
-import { calculateAccurateStatus } from "@/lib/utils"
+import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2, Download, Eye } from "lucide-react"
+import { calculateAccurateStatus, getPPDUrl, getPPDViewUrl } from "@/lib/utils"
 
 interface PrinterPageClientProps {
   printerId: string
@@ -306,6 +306,21 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
                             __html: driver.comments || "No comments available.",
                           }}
                         />
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 pt-1">
+                        <a href={getPPDViewUrl(printer.id, driver.id)}>
+                          <Button variant="outline" size="sm" className="gap-2 border-border/50 text-muted-foreground hover:text-foreground hover:bg-muted/50">
+                            <Eye className="h-4 w-4" />
+                            View PPD
+                          </Button>
+                        </a>
+                        <a href={getPPDUrl(printer.id, driver.id)} download={`${printer.id}-${driver.id.replace(/^driver\//, "")}.ppd`}>
+                          <Button variant="outline" size="sm" className="gap-2 border-border/50 text-muted-foreground hover:text-foreground hover:bg-muted/50">
+                            <Download className="h-4 w-4" />
+                            Download PPD
+                          </Button>
+                        </a>
                       </div>
 
                       {driver.execution && (

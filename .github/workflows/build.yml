@@ -53,6 +53,9 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.pm.outputs.manager }} ${{ steps.pm.outputs.install }}
 
+      - name: Install foomatic-db-engine
+        run: sudo apt-get install -y foomatic-db-engine
+
       - name: Run linter
         run: ${{ steps.pm.outputs.runner }} lint
 
