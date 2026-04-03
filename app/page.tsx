@@ -6,6 +6,7 @@ import PrinterSearch from "@/components/PrinterSearch"
 import Printers from "@/components/Printers"
 import { Skeleton } from "@/components/ui/skeleton"
 import { PrinterIcon, Database, Zap, Shield } from "lucide-react"
+import { withBasePath } from "@/lib/base-path"
 import { calculateAccurateStatus } from "@/lib/utils"
 
 const ITEMS_PER_PAGE_OPTIONS = [20, 50, 100, 200, -1] as const
@@ -27,7 +28,6 @@ function PaginationControls({
   startIndex,
   endIndex,
   filteredLength,
-  totalPages,
 }: {
   itemsPerPage: number
   setItemsPerPage: (n: number) => void
@@ -35,7 +35,6 @@ function PaginationControls({
   startIndex: number
   endIndex: number
   filteredLength: number
-  totalPages: number
 }) {
   const displayStart = filteredLength === 0 ? 0 : startIndex + 1
   const displayEnd = filteredLength === 0 ? 0 : endIndex
@@ -116,10 +115,7 @@ export default function HomePage() {
       setLoading(true)
       setError(null)
       try {
-        const basePath = typeof window !== 'undefined' && window.location.pathname.startsWith('/foomatic-lookup-site') 
-          ? '/foomatic-lookup-site' 
-          : ''
-        const res = await fetch(`${basePath}/foomatic-db/printersMap.json`)
+        const res = await fetch(withBasePath("/foomatic-db/printersMap.json"))
         
         if (!res.ok) {
           throw new Error(`Failed to load printer data: ${res.status}`)
@@ -463,7 +459,6 @@ export default function HomePage() {
               startIndex={startIndex}
               endIndex={endIndex}
               filteredLength={filteredPrinters.length}
-              totalPages={totalPages}
             />
             <Printers printers={displayedPrinters} />
             

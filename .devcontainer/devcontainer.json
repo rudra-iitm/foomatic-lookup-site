@@ -1,0 +1,16 @@
+{
+  "name": "foomatic-lookup-site",
+  "build": { "dockerfile": "Dockerfile" },
+  "forwardPorts": [3000],
+  "postCreateCommand": "yarn install",
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}

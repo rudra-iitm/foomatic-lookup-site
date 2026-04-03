@@ -6,11 +6,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
-import { ArrowLeft, PrinterIcon, ExternalLink, Code, Info, Loader2 } from "lucide-react"
+import { ArrowLeft, Download, ExternalLink, Eye, Info, Loader2, PrinterIcon } from "lucide-react"
+import { withBasePath } from "@/lib/base-path"
 import { calculateAccurateStatus } from "@/lib/utils"
 
 interface PrinterPageClientProps {
@@ -21,6 +20,7 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
   const [printer, setPrinter] = useState<Printer | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const hasAnyPpd = Boolean(printer?.drivers?.some((driver) => driver.hasPpd && driver.ppdPath))
 
   const getStatusStyling = (status: string) => {
     switch (status.toLowerCase()) {
@@ -63,12 +63,7 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
         setLoading(true)
         setError(null)
 
-        const basePath =
-          typeof window !== "undefined" && window.location.pathname.startsWith("/foomatic-lookup-site")
-            ? "/foomatic-lookup-site"
-            : ""
-
-        const res = await fetch(`${basePath}/foomatic-db/printers/${printerId}.json`)
+        const res = await fetch(withBasePath(`/foomatic-db/printers/${printerId}.json`))
 
         if (!res.ok) {
           throw new Error(`Failed to load printer: ${res.status}`)
@@ -260,10 +255,13 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
 
         {/* RIGHT SECTION — DRIVERS */}
         <div className="lg:col-span-2">
-          <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-3">
-            <Code className="h-7 w-7 text-primary" />
-            Available Drivers
-          </h2>
+          <div className="mb-6 flex flex-col gap-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <h2 className="text-3xl font-bold text-foreground">Available Drivers</h2>
+
+              {!hasAnyPpd && <p className="text-sm text-muted-foreground">No PPD file available for this printer.</p>}
+            </div>
+          </div>
 
           <div className="space-y-6">
             {(printer.drivers ?? [])
@@ -298,42 +296,34 @@ export default function PrinterPageClient({ printerId }: PrinterPageClientProps)
 
                   <CardContent>
                     <div className="space-y-4">
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-2">Comments</h4>
-                        <div
-                          className="prose prose-sm prose-invert max-w-none text-muted-foreground"
-                          dangerouslySetInnerHTML={{
-                            __html: driver.comments || "No comments available.",
-                          }}
-                        />
-                      </div>
+                      <h4 className="font-semibold text-foreground mb-2">Comments</h4>
+                      <div
+                        className="prose prose-sm prose-invert max-w-none text-muted-foreground"
+                        dangerouslySetInnerHTML={{
+                          __html: driver.comments || "No comments available.",
+                        }}
+                      />
 
-                      {driver.execution && (
-                        <details className="group">
-                          <summary className="cursor-pointer font-semibold text-foreground hover:text-primary list-none flex items-center gap-2">
-                            <Code className="h-4 w-4" />
-                            View PPD Generation Command
-                            <span className="text-xs text-muted-foreground group-open:hidden">
-                              (click to expand)
-                            </span>
-                          </summary>
-
-                          <div className="mt-3 rounded-lg overflow-hidden border border-border/50">
-                            <SyntaxHighlighter
-                              language="bash"
-                              style={vscDarkPlus}
-                              customStyle={{
-                                background: "hsl(var(--muted))",
-                                border: "none",
-                                padding: "1rem",
-                                margin: 0,
-                              }}
+                      {driver.hasPpd && driver.ppdPath ? (
+                        <div className="flex flex-wrap gap-3 border-t border-border/50 pt-4">
+                          <Button asChild className="gap-2">
+                            <a
+                              href={withBasePath(driver.ppdPath)}
+                              download={`${printer.id}-${driver.id.replace(/^driver\//, "")}.ppd`}
                             >
-                              {driver.execution.prototype}
-                            </SyntaxHighlighter>
-                          </div>
-                        </details>
-                      )}
+                              <Download className="h-4 w-4" />
+                              Download PPD
+                            </a>
+                          </Button>
+
+                          <Button asChild variant="outline" className="gap-2">
+                            <Link href={`/view-ppd?path=${encodeURIComponent(driver.ppdPath)}`}>
+                              <Eye className="h-4 w-4" />
+                              View PPD
+                            </Link>
+                          </Button>
+                        </div>
+                      ) : null}
                     </div>
                   </CardContent>
                 </Card>

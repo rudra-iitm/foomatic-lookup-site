@@ -3,11 +3,27 @@ export interface Driver {
   name: string
   url?: string
   comments?: string
+  hasPpd?: boolean
+  ppdPath?: string
   execution?: {
     ghostscript?: string | null
     filter?: string | null
     prototype: string
   }
+}
+
+export interface SupportContact {
+  name?: string
+  url?: string
+  email?: string
+  phone?: string
+  text?: string
+}
+
+export interface PpdOption {
+  name?: string
+  text?: string
+  value?: string
 }
 
 export interface Printer {
@@ -22,6 +38,14 @@ export interface Printer {
   status?: string
   notes?: string
   functionality?: string
+  hasPpd?: boolean
+  ppdPath?: string
+  supportContacts?: SupportContact[]
+  commandsets?: string[]
+  ppdOptions?: PpdOption[]
+  color?: boolean | "unknown"
+  duplex?: boolean | "unknown"
+  recommended?: boolean
 }
 
 export type PrinterStatus = 'Perfect' | 'Mostly' | 'Unsupported' | 'Unknown'
